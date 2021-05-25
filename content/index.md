@@ -44,8 +44,6 @@ footer: >
 
 ---
 
-# Heading Level 1 ?
-
 ## Heading Level 2
 
 Here is some **bold text**
