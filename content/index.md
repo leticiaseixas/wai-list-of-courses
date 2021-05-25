@@ -44,43 +44,37 @@ footer: >
 
 ---
 
-## Heading Level 2
+{::nomarkdown}
+<a class="button button-more submit-an-offer" href="submit-an-offer"><span>Submit an offer</span></a>
+ {:/}
 
-Here is some **bold text**
-
-Here is some _italic text_
-
-**Link markdown template in markdown**:
-* [[Exact Title of Page on WAI website]](/permalink/to/page/)
-* [WAI website but not exact title](/permalink/to/page/)
-* [link off WAI website](https://example.com)
-
-Description of link markdown:
-* When the linked text is the **exact same as the title of the page** on the WAI website, use **double brackets** and permalink, e.g.:<br>
-    ```[[W3C Accessibility Standards Overview]](/standards-guidelines/)```<br>
-  In GitHub rich text, it will have an extra bracket. You can ignore that.
-* When linked text is not the title of the page and goes to WAI website, use single brackets and permalink, e.g.:<br>
-    ```[about our standards](/standards-guidelines/)```
-* When it links off the WAI website, use single brackets and full URI, e.g.:<br>
-   ``` [ISO standards](https://example.com) ```
-
-### Heading Level 3
-
-1. This is 
-2. a nice
-3. ordered
-4. list.
-
-#### Heading Level 4
-
-* And this is a
-* bullet list
-
-- You can use asterisks
-- or dashes. Whatever floats
-- your boat :-)
-
-##### Heading Level 5
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
-
+<div id="app" class="tools">
+  <form class="tools-filters" data-filter-form action="" method="POST">
+    <h2 class="visuallyhidden">Filters</h2>
+    {% for filter in site.data.filters %}
+    <fieldset id="{{ filter.id }}">
+      <legend>{{ filter.name }}</legend>
+      {% for option in filter.options %}
+      <div class="tools-filters__filter">
+        <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
+        <label for="filter-{{ option.id }}">{{ option.name }}</label>
+      </div>
+      {% endfor %}
+    </fieldset>
+    {% endfor %}
+    <button>Filter</button> 
+  </form>
+  <div class="tools-tools">
+    <h2 class="visuallyhidden">List of offers</h2>
+    <div role="alert">
+      <p class="status status-busy" hidden>Loading offers</p>
+      <p class="status status-failure" hidden>something went wrong…</p>
+    </div>
+    <div id="tools-list">
+    <p>Showing {{ site.data.offers | size }} offers</p>
+    {% for tool in site.data.offers %}
+      {% include tool.liquid %}
+    {% endfor %}
+    </div>
+  </div>
+</div>
