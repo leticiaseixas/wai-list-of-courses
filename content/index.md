@@ -87,7 +87,7 @@ footer: >
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
     <div id="tools-list">
-      <p>Showing {{ site.data.offers | size }} authoring tools</p>
+      <p>Showing {{ site.data.offers | size }} offers</p>
       {% for offer in site.offers.tools %}
         <p>{{offers.name}}</p>
       {% endfor %}
