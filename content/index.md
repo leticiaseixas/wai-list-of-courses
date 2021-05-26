@@ -8,6 +8,9 @@ title: "List of courses"
 lang: en
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
 
+doc-note-type: draft
+layout: list-with-filters
+
 # translators:    # remove from the beginning of this line and the lines below: "# " (the hash sign and the space)
 # - name: "Jan Doe"   # Replace Jan Doe with translator name
 # - name: "Jan Doe"   # Replace Jan Doe with name, or delete this line if not multiple translators
