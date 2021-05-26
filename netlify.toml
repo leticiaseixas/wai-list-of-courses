@@ -1,14 +1,12 @@
-[build]
-command = "git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
-publish = "_site"
+[Settings]
 
-[build.environment]
-RUBY_VERSION = "2.6.2" 
+ID = "wai-authoring-tools"
+
+[build]
+
+command = "bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
+publish = "_site"
 
 [[redirects]]
   from = "/"
-  to = "/link/to/page/"
-
-[dev]
-publish = "_site"
-framework = "#static"
+  to = "/authoring-tools/"

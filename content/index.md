@@ -1,87 +1,101 @@
 ---
-title: "List of courses"
+title: "Authoring Tools with Accessibility Support"
+permalink: /authoring-tools/
+ref: /authoring-tools/
 lang: en
-last_updated: 2021-05-25   # Put the date of this translation YYYY-MM-DD (with month in the middle)
-
-# translators:    # remove from the beginning of this line and the lines below: "# " (the hash sign and the space)
-# - name: "Jan Doe"   # Replace Jan Doe with translator name
-
+doc-note-type: draft
+layout: list-with-filters
+# translators: # Uncomment (remove #) for translations, one - name line per translator.
+# - name: Translator 1
+# - name: Translator 2
 contributors:
-  - name: "Carlos Duarte"
-  - name: "Letícia Seixas Pereira"
-
+ - name: Hidde de Vries
 github:
-  repository: leticiaseixas/wai-list-of-courses
-  path: content/index.md   
-permalink: /list-of-courses/
-
-# NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
-# navigation:
-  # previous: /path/to/previous/file/
-  # next: /path/to/next/file/
-# @@SLH To Do: figure out if need to add lang here, too, and if this replaces "order" from older resources?
-
-ref: /list-of-courses/   # Translators, do not change this
-changelog: /@@/changelog/
-acknowledgements: /@@/acknowledgements/  # NEW: delete if don"t have a separate acknowledgements page. And delete it in the footer below.
-license: creative-commons   # NEW: delete if not creative-commons
-
-description:  # NEW: add a 150ish-character-description for social media   # translate the description
-image: /content-images/wai-@@repo/social.png  # NEW: image for social media
-feedbackmail: wai@w3.org  # NEW: delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
-
-# NEW: Footer below has several options, and not all will be relevant for specific pages. (Ask Shawn if questions.)
-
-# In the footer below:
-# Do not translate or change CHANGELOG or ACKNOWLEDGEMENTS.
-# Translate the other words below, including "Date:" and "Editor:"
-# Translate the Working Group name. Leave the Working Group acronym in English.
-# Do not change the dates in the footer below.
-footer: >
-   <p><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@. CHANGELOG.</p>
-   <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/@@wg/participants">participants of the @@WG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
-   <p>Developed by the @@ Working Group (<a href="http://www.w3.org/WAI/@@/">@@WG</a>). Developed as part of the <a href="https://www.w3.org/WAI/@@/">WAI-@@ project</a>, @@co-funded by the European Commission.</p>
-
+  repository: w3c/wai-authoring-tools
+  path: content/index.md
 ---
 
 <style> 
 {% include css/styles.css %}
 </style>
 
+<div class="header-sup">
+  <p>Browse <a href="selecting">tools that create web content</a>, like <abbr title="content management systems">CMSes</abbr> and <abbr title="learning management systems">LMSes</abbr>, website creators, discussion forums and other authoring tools, and filter for <a href="selecting#features">accessibility features</a>.</p>
+  <p><em>Note: tools are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer for vendor-submitted content</a>.</em></p>
+</div>
+
 {::nomarkdown}
-<a class="button button-more submit-an-offer" href="submit-an-offer"><span>Submit an offer</span></a>
+<a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
  {:/}
 
-<div id="app" class="offers">
-  <form class="offers-filters" data-filter-form action="" method="POST">
+<div id="app" class="tools">
+  <form class="tools-filters" data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
     <h2 class="visuallyhidden">Filters</h2>
     {% for filter in site.data.filters %}
     <fieldset id="{{ filter.id }}">
       <legend>{{ filter.name }}</legend>
       {% for option in filter.options %}
-      <div class="offers-filters__filter">
+      <div class="tools-filters__filter">
         <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
         <label for="filter-{{ option.id }}">{{ option.name }}</label>
       </div>
       {% endfor %}
     </fieldset>
     {% endfor %}
+    <fieldset id="filters-features-content-editors">
+      <legend>Content Editor Features (editing experience)
+        <a href="selecting#editing-experience-for-content-editors" class="more-info">
+          <span class="visuallyhidden">All features for content editors explained</span>
+          <span aria-hidden="true" class="more-info__icon">
+           {% include icons/info.svg %}
+          </span>
+        </a>
+      </legend>
+      {% for feature in site.data.features_a %}
+      {% for guideline in feature.guidelines %}
+      <div class="tools-filters__filter">
+        <input type="checkbox" id="filter-{{ guideline.id }}" name="features-content-editors">
+        <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </fieldset>
+    <fieldset id="filters-features-outpput">
+      <legend>End User Features (output)
+        <a href="selecting#output" class="more-info">
+          <span class="visuallyhidden">All features for end users explained</span>
+          <span aria-hidden="true" class="more-info__icon">
+           {% include icons/info.svg %}
+          </span>
+        </a>
+      </legend>
+      {% for feature in site.data.features_b %}
+      {% for guideline in feature.guidelines %}
+      <div class="tools-filters__filter">
+        <input type="checkbox" id="filter-{{ guideline.id }}" name="features-output">
+        <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </fieldset>
     <button>Filter</button> 
   </form>
-  <div class="offers-offers">
-    <h2 class="visuallyhidden">List of offers</h2>
+  <div class="tools-tools">
+    <h2 class="visuallyhidden">List of tools</h2>
     <div role="alert">
-      <p class="status status-busy" hidden>Loading offers</p>
+      <p class="status status-busy" hidden>Loading tools…</p>
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
-    <div id="offers-list">
-    <p>Showing {{ site.data.offers | size }} offers</p>
-    {% for offer in site.data.offers %}
-      {% include offer.liquid %}
+    <div id="tools-list">
+    <p>Showing {{ site.data.tools | size }} authoring tools</p>
+    {% for tool in site.data.tools %}
+      {% include tool.liquid %}
     {% endfor %}
     </div>
   </div>
 </div>
+
 <script>
-{% include js/offers.js %}
+{% include js/tools.js %}
 </script>
+

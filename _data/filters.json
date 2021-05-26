@@ -1,28 +1,81 @@
 [
   {
-    "id": "course_type",
-    "name": "Course type",
+  "id": "type-of-tool",
+  "name": "Type of tool",
+  "type": "checkbox",
+  "options": [
+    {
+      "id": "cms",
+      "name": "Content management system (CMS)"
+    },
+    {
+      "id": "lms",
+      "name": "Learning management system (LMS)"
+    },
+    {
+      "id": "form",
+      "name": "Forum or discussion software"
+    },
+    {
+      "id": "creators",
+      "name": "Website creators"
+    },
+    {
+      "id": "wiki",
+      "name": "Wiki"
+    }
+  ],
+  },
+  {
+    "id": "cost",
+    "name": "Cost model",
+    "type": "radio",
+    "options": [
+      {
+        "id": "free",
+        "name": "Free"
+      },
+      {
+        "id": "freemium",
+        "name": "Freemium"
+      },
+      {
+        "id": "paid",
+        "name": "Paid"
+      }
+    ]
+  },
+  {
+    "id": "license",
+    "name": "License",
     "type": "checkbox",
     "options": [
       {
-        "id": "non_credit",
-        "name": "Non-credit"
+        "id": "open-source",
+        "name": "Open source"
       },
       {
-        "id": "undergrad",
-        "name": "Undergrad"
+        "id": "commercial",
+        "name": "Commercial"
       },
       {
-        "id": "graduate",
-        "name": "Graduate"
+        "id": "enterprise",
+        "name": "Enterprise"
       },
       {
-        "id": "professional",
-        "name": "Professional"
-      },
+        "id": "trial-or-demo",
+        "name": "Trial or demo available"
+      }
+    ]
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "type": "checkbox",
+    "options": [
       {
-        "id": "other",
-        "name": "Other"
+        "id": "statement-available",
+        "name": "Public accessibility statement available"
       }
     ]
   }
