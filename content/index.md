@@ -62,7 +62,7 @@ footer: >
 </div>
 
 {::nomarkdown}
-<a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit an offer</span></a>
+<a class="button button-more submit-a-tool" href="submit-an-offer"><span>Submit an offer</span></a>
  {:/}
 
 <div id="app" class="tools">
