@@ -128,6 +128,7 @@
 .tool__features { 
   margin: 1em -1em -1em -3em;
   background-color: var(--off-white);
+  padding: auto;
 }
   .tool__features dd {
     margin-left: 0;
