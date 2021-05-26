@@ -1,7 +1,7 @@
 ---
 title: "Authoring Tools with Accessibility Support"
-permalink: /authoring-tools/
-ref: /authoring-tools/
+permalink: /list-of-courses/
+ref: /list-of-courses/
 lang: en
 doc-note-type: draft
 layout: list-with-filters
@@ -9,9 +9,9 @@ layout: list-with-filters
 # - name: Translator 1
 # - name: Translator 2
 contributors:
- - name: Hidde de Vries
+ - name: Letícia Seixas
 github:
-  repository: w3c/wai-authoring-tools
+  repository: leticiaseixas/wai-list-of-courses
   path: content/index.md
 ---
 
