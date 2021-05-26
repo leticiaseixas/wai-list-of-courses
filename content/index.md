@@ -89,7 +89,7 @@ footer: >
     <div id="tools-list">
       <p>Showing {{ site.data.offers | size }} offers</p>
       {% for offer in site.offers.tools %}
-        <p>{{offers.name}}</p>
+        <p>{{offer.name}}</p>
       {% endfor %}
     </div>
   </div>
