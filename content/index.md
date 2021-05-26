@@ -4,7 +4,7 @@
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
-title: "[Draft] List of courses"
+title: "List of courses"
 lang: en
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
 
@@ -49,6 +49,28 @@ footer: >
 
 ---
 
+
+<style> 
+{% include css/styles.css %}
+</style>
+
+
 Browse for offers.
 
-
+<div id="app" class="tools">
+  <form class="tools-filters" data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
+    <h2 class="visuallyhidden">Filters</h2>
+    <p>filtros</p>
+    <button>Filter</button> 
+  </form>
+  <div class="tools-tools">
+    <h2 class="visuallyhidden">List of tools</h2>
+    <div role="alert">
+      <p class="status status-busy" hidden>Loading tools…</p>
+      <p class="status status-failure" hidden>something went wrong…</p>
+    </div>
+    <div id="tools-list">
+    <p>Showing total</p>
+    </div>
+  </div>
+</div>
