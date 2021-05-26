@@ -44,18 +44,22 @@ footer: >
 
 ---
 
+<style> 
+{% include css/styles.css %}
+</style>
+
 {::nomarkdown}
 <a class="button button-more submit-an-offer" href="submit-an-offer"><span>Submit an offer</span></a>
  {:/}
 
-<div id="app" class="tools">
-  <form class="tools-filters" data-filter-form action="" method="POST">
+<div id="app" class="offers">
+  <form class="offers-filters" data-filter-form action="" method="POST">
     <h2 class="visuallyhidden">Filters</h2>
     {% for filter in site.data.filters %}
     <fieldset id="{{ filter.id }}">
       <legend>{{ filter.name }}</legend>
       {% for option in filter.options %}
-      <div class="tools-filters__filter">
+      <div class="offers-filters__filter">
         <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
         <label for="filter-{{ option.id }}">{{ option.name }}</label>
       </div>
@@ -64,17 +68,20 @@ footer: >
     {% endfor %}
     <button>Filter</button> 
   </form>
-  <div class="tools-tools">
+  <div class="offers-offers">
     <h2 class="visuallyhidden">List of offers</h2>
     <div role="alert">
       <p class="status status-busy" hidden>Loading offers</p>
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
-    <div id="tools-list">
+    <div id="offers-list">
     <p>Showing {{ site.data.offers | size }} offers</p>
-    {% for tool in site.data.offers %}
-      {% include tool.liquid %}
+    {% for offer in site.data.offers %}
+      {% include offer.liquid %}
     {% endfor %}
     </div>
   </div>
 </div>
+<script>
+{% include js/offers.js %}
+</script>
