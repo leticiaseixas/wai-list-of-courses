@@ -16,8 +16,8 @@
     "platform": "mooc",
     "cost": "free with certificates for purchase",
     "duration": "6 months",
-    "offer_link": "www.link.com",
-    "offer_link_reviews": "www.link.com/reviews",
+    "offer_link": "https://www.link.com",
+    "offer_link_reviews": "https://www.link.com/reviews",
     "offer_info_last_update": "12-01-2021",
     "offer_content_last_update": "31-08-2020"
   },
@@ -38,8 +38,8 @@
     "platform": "mooc",
     "cost": "free with certificates for purchase",
     "duration": "6 months",
-    "offer_link": "www.link.com",
-    "offer_link_reviews": "www.link.com/reviews",
+    "offer_link": "https://www.link.com",
+    "offer_link_reviews": "https://www.link.com/reviews",
     "offer_info_last_update": "12-01-2021",
     "offer_content_last_update": "31-08-2020"
   }
