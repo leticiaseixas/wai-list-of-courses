@@ -7,4 +7,15 @@
     {% endif %}
      <span>by {{ offer.provider }}</span> <a href="#" class="tag">{{ offer.type_of_offer }}</a>
   </h3>
+<details>
+    <summary><h4>Details<span class="visuallyhidden"> for {{ offer.name }}</span></h4></summary>
+    <div class="tool__features" data-do-tabs>
+      <dl>
+          <dt>Offer type</dt>
+          <dd>{{ offer.offer_type }}</dd>
+          <dt>Degree of certification</dt>
+          <dd>{{ offer.degree_certification}}</dd>
+        </dl>
+    </div>
+  </details>
 </article>
