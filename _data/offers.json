@@ -1,9 +1,9 @@
 [
   {
     "id": "maecenas",
-    "name": "Maecenas",
+    "name": "Maecenas - Name offer 1",
     "provider": "Provider 1",
-    "course_type": "Graduate",
+    "offer_type": "Graduate",
     "degree_certification": "None",
     "prerequisites": "None",
     "target_role": "Developer",
@@ -16,16 +16,16 @@
     "platform": "mooc",
     "cost": "free with certificates for purchase",
     "duration": "6 months",
-    "link_offer": "www.link.com",
-    "link_offer_reviews": "www.link.com/reviews",
-    "last_update_offer_info": "12-01-2021",
-    "last_update_offer_content": "31-08-2020"
+    "offer_link": "www.link.com",
+    "offer_link_reviews": "www.link.com/reviews",
+    "offer_info_last_update": "12-01-2021",
+    "offer_content_last_update": "31-08-2020"
   },
   {
     "id": "adipiscing",
-    "name": "Adipiscing",
+    "name": "Adipiscing - Name offer 2",
     "provider": "Provider 2 ",
-    "course_type": "Graduate",
+    "offer_type": "Graduate",
     "degree_certification": "None",
     "prerequisites": "None",
     "target_role": "Developer",
@@ -38,9 +38,9 @@
     "platform": "mooc",
     "cost": "free with certificates for purchase",
     "duration": "6 months",
-    "link_offer": "www.link.com",
-    "link_offer_reviews": "www.link.com/reviews",
-    "last_update_offer_info": "12-01-2021",
-    "last_update_offer_content": "31-08-2020"
+    "offer_link": "www.link.com",
+    "offer_link_reviews": "www.link.com/reviews",
+    "offer_info_last_update": "12-01-2021",
+    "offer_content_last_update": "31-08-2020"
   }
 ]
