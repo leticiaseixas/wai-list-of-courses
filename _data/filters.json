@@ -1,0 +1,29 @@
+[
+  {
+    "id": "course_type",
+    "name": "Course type",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "non_credit",
+        "name": "Non-credit"
+      },
+      {
+        "id": "undergrad",
+        "name": "Undergrad"
+      },
+      {
+        "id": "graduate",
+        "name": "Graduate"
+      },
+      {
+        "id": "professional",
+        "name": "Professional"
+      },
+      {
+        "id": "other",
+        "name": "Other"
+      }
+    ]
+  }
+]
