@@ -1,26 +1,28 @@
 [
   {
-  "name": "Maecenas",
-  "provider": "Provider 1",
-  "course_type": "Graduate",
-  "degree_certification": "None",
-  "prerequisites": "None",
-  "target_role": "Developer",
-  "level": "basic",
-  "curricula_correspondence": "Getting Started with accessibility",
-  "keywords_topics": "nibh, fringilla, quam tempus",
-  "language": "English",
-  "country": "PT",
-  "format": "online",
-  "platform": "mooc",
-  "cost": "free with certificates for purchase",
-  "duration": "6 months",
-  "link_offer": "www.link.com",
-  "link_offer_reviews":"www.link.com/reviews",
-  "last_update_offer_info":"12-01-2021",
-  "last_update_offer_content":"31-08-2020"
+    "id": "maecenas",
+    "name": "Maecenas",
+    "provider": "Provider 1",
+    "course_type": "Graduate",
+    "degree_certification": "None",
+    "prerequisites": "None",
+    "target_role": "Developer",
+    "level": "basic",
+    "curricula_correspondence": "Getting Started with accessibility",
+    "keywords_topics": "nibh, fringilla, quam tempus",
+    "language": "English",
+    "country": "PT",
+    "format": "online",
+    "platform": "mooc",
+    "cost": "free with certificates for purchase",
+    "duration": "6 months",
+    "link_offer": "www.link.com",
+    "link_offer_reviews": "www.link.com/reviews",
+    "last_update_offer_info": "12-01-2021",
+    "last_update_offer_content": "31-08-2020"
   },
   {
+    "id": "adipiscing",
     "name": "Adipiscing",
     "provider": "Provider 2 ",
     "course_type": "Graduate",
@@ -37,8 +39,8 @@
     "cost": "free with certificates for purchase",
     "duration": "6 months",
     "link_offer": "www.link.com",
-    "link_offer_reviews":"www.link.com/reviews",
-    "last_update_offer_info":"12-01-2021",
-    "last_update_offer_content":"31-08-2020"
-    } 
+    "link_offer_reviews": "www.link.com/reviews",
+    "last_update_offer_info": "12-01-2021",
+    "last_update_offer_content": "31-08-2020"
+  }
 ]

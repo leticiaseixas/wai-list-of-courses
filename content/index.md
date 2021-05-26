@@ -54,19 +54,33 @@ footer: >
 {% include css/styles.css %}
 </style>
 
+<div class="header-sup">
+  <p>Browse for offers.</p>
+</div>
 
-Browse for offers.
+{::nomarkdown}
+<a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit an offer</span></a>
+ {:/}
 
 <div id="app" class="tools">
   <form class="tools-filters" data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
     <h2 class="visuallyhidden">Filters</h2>
-    <p>filtros</p>
-    <button>Filter</button> 
+    {% for filter in site.data.filters %}
+    <fieldset id="{{ filter.id }}">
+      <legend>{{ filter.name }}</legend>
+      {% for option in filter.options %}
+      <div class="tools-filters__filter">
+        <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
+        <label for="filter-{{ option.id }}">{{ option.name }}</label>
+      </div>
+      {% endfor %}
+    </fieldset>
+    {% endfor %} 
   </form>
   <div class="tools-tools">
-    <h2 class="visuallyhidden">List of tools</h2>
+    <h2 class="visuallyhidden">List of offers</h2>
     <div role="alert">
-      <p class="status status-busy" hidden>Loading tools…</p>
+      <p class="status status-busy" hidden>Loading offers…</p>
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
     <div id="tools-list">
