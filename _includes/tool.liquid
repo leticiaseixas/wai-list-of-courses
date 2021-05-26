@@ -1,26 +1,26 @@
-<article class="tool" id="{{ tool.id }}">
+<article class="offer" id="{{ offer.id }}">
   <h3>
-    {% if tool.website %}
-      <a href="{{ tool.website }}" rel="external">{{ tool.name }}</a>
+    {% if offer.website %}
+      <a href="{{ offer.website }}" rel="external">{{ offer.name }}</a>
     {% else %}
-      {{ tool.name }}
+      {{ offer.name }}
     {% endif %}
-     <span>by {{ tool.vendor }}</span> <a href="#" class="tag">{{ tool.type_of_tool }}</a>
+     <span>by {{ offer.vendor }}</span> <a href="#" class="tag">{{ offer.type_of_offer }}</a>
   </h3>
-  <p>{{ tool.description }}</p>
+  <p>{{ offer.description }}</p>
   <details>
-    <summary><h4>Details<span class="visuallyhidden"> for {{ tool.name }}</span></h4></summary>
-    <div class="tool__features" data-do-tabs>
-      <div class="tool__tabs">
-        <a href="#{{ tool.id }}-supported" data-tab>Supported</a>
-        <a href="#{{ tool.id }}-not-supported" data-tab>Not Supported</a>
-        <a href="#{{ tool.id }}-meta" data-tab>About this tool</a>
+    <summary><h4>Details<span class="visuallyhidden"> for {{ offer.name }}</span></h4></summary>
+    <div class="offer__features" data-do-tabs>
+      <div class="offer__tabs">
+        <a href="#{{ offer.id }}-supported" data-tab>Supported</a>
+        <a href="#{{ offer.id }}-not-supported" data-tab>Not Supported</a>
+        <a href="#{{ offer.id }}-meta" data-tab>About this offer</a>
       </div>
-      <div class="tool_tabpanels">
-        <div id="{{ tool.id }}-supported" tabindex="-1" data-tabpanel>
+      <div class="offer_tabpanels">
+        <div id="{{ offer.id }}-supported" tabindex="-1" data-tabpanel>
           <dl>
-            {% if tool.conforms_to.a %}
-            <dt class="tool__features-a11y">Content Editor Features (editing experience)
+            {% if offer.conforms_to.a %}
+            <dt class="offer__features-a11y">Content Editor Features (editing experience)
               <a href="selecting#editing-experience-for-content-editors" class="more-info">
                 <span class="visuallyhidden">All features for content editors explained</span>
                 <span aria-hidden="true" class="more-info__icon">
@@ -28,9 +28,9 @@
                 </span>
               </a>
             </dt>
-            <dd class="tool__features-a11y">
+            <dd class="offer__features-a11y">
               <ul>
-                {% for feature in tool.conforms_to.a %}
+                {% for feature in offer.conforms_to.a %}
                 {% case feature %}
                 {% when 'Works with keyboard' %}
                 <li><strong>{{ feature }} (partly)</strong><br>
@@ -51,8 +51,8 @@
               </ul>
             </dd>
             {% endif %}
-            {% if tool.conforms_to.b %}
-            <dt class="tool__features-a11y">End User Features (output)
+            {% if offer.conforms_to.b %}
+            <dt class="offer__features-a11y">End User Features (output)
               <a href="selecting#output" class="more-info">
                 <span class="visuallyhidden">All features for end users explained</span>
                 <span aria-hidden="true" class="more-info__icon">
@@ -60,9 +60,9 @@
                 </span>
               </a>
             </dt>
-            <dd class="tool__features-a11y">
+            <dd class="offer__features-a11y">
               <ul>
-                {% for feature in tool.conforms_to.b %}
+                {% for feature in offer.conforms_to.b %}
                 <li><strong>{{ feature }}</strong></li>
                 {% endfor %}
               </ul>
@@ -70,9 +70,9 @@
             {% endif %}
           </dl>
         </div>
-        <div id="{{ tool.id }}-not-supported" tabindex="-1" data-tabpanel hidden>
+        <div id="{{ offer.id }}-not-supported" tabindex="-1" data-tabpanel hidden>
           <dl>
-            <dt class="tool__features-a11y">End User (output)
+            <dt class="offer__features-a11y">End User (output)
               <a href="selecting#output" class="more-info">
                 <span class="visuallyhidden">All features for end users explained</span>
                 <span aria-hidden="true" class="more-info__icon">
@@ -80,7 +80,7 @@
                 </span>
               </a>
             </dt>
-            <dd class="tool__features-a11y">
+            <dd class="offer__features-a11y">
               <ul>
                 <li>Helps user prevent mistakes</li>
                 <li>Previews are accessible</li>
@@ -89,20 +89,20 @@
             </dd>
           </dl>
         </div>
-        <div id="{{ tool.id }}-meta" tabindex="-1" data-tabpanel hidden>
+        <div id="{{ offer.id }}-meta" tabindex="-1" data-tabpanel hidden>
           <dl>
           <dt>License</dt>
-          <dd>{{ tool.license }}</dd>
-          <dt>Type of tool</dt>
-          <dd>{{ tool.type_of_tool }}</dd>
+          <dd>{{ offer.license }}</dd>
+          <dt>Type of offer</dt>
+          <dd>{{ offer.type_of_offer }}</dd>
           <dt>Cost model</dt>
-          <dd>{{ tool.cost }}</dd>
+          <dd>{{ offer.cost }}</dd>
           <dt>Version</dt>
-          <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
+          <dd>{{ offer.version }} (released: {{ offer.date_released }})</dd>
           <dt>Accessibility statement</dt>
           <dd>
-            {% if tool.accessibility_statement %} 
-            <a href="{{ tool.accessibility_statement }}">{{ tool.name }} statement</a>
+            {% if offer.accessibility_statement %} 
+            <a href="{{ offer.accessibility_statement }}">{{ offer.name }} statement</a>
             {% else %}
               Not available
             {% endif %}
