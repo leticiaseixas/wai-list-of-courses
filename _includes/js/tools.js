@@ -36,11 +36,11 @@ if (filterForm) {
       .then(doc => {
 
         // Create result message container and copy HTML from doc
-        const toolsList = document.getElementById('tools-list');
-        toolsList.innerHTML = doc.body.innerHTML;
+        const offersList = document.getElementById('offers-list');
+        offersList.innerHTML = doc.body.innerHTML;
 
         // Allow focussing this element with JavaScript
-        toolsList.tabIndex = -1;
+        offersList.tabIndex = -1;
 
 
         // Hide the busy state
