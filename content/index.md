@@ -94,3 +94,7 @@ footer: >
     </div>
   </div>
 </div>
+
+<script>
+{% include js/offers.js %}
+</script>
