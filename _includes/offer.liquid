@@ -4,6 +4,7 @@
       <a href="{{ offer.offer_link }}" rel="external">{{ offer.name }}</a>
     {% else %}
       {{ offer.name }}
+      {{ offer.description }}
     {% endif %}
      <span>by {{ offer.provider }}</span> <a href="#" class="tag">{{ offer.type_of_offer }}</a>
   </h3>
