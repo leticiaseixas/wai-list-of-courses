@@ -5,9 +5,9 @@
     {% else %}
       {{ offer.name }}
     {% endif %}
-     <span>by {{ offer.provider }}</span> <a href="#" class="tag">
+     <span>by {{ offer.provider }}</span>
+     {{ offer.description }}
   </h3>
-  <p>{{ offer.description }}</p>
 <details>
     <summary><h4>Details<span class="visuallyhidden"> for {{ offer.name }}</span></h4></summary>
     <div class="offer__features">
