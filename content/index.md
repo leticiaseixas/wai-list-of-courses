@@ -61,9 +61,9 @@ footer: >
   <p>Browse for offers.</p>
 </div>
 
-{::nomarkdown}
-<a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a>
- {:/}
+
+<!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
+-->
 
 <div id="app" class="offers">
   <form class="offers-filters" data-filter-form action="" method="POST">
