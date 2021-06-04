@@ -4,9 +4,12 @@
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
-title: "[Draft] List of courses"
+title: "List of courses"
 lang: en
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
+
+doc-note-type: draft
+layout: list-with-filters
 
 # translators:    # remove from the beginning of this line and the lines below: "# " (the hash sign and the space)
 # - name: "Jan Doe"   # Replace Jan Doe with translator name
@@ -18,7 +21,7 @@ last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with m
 github:
   repository: leticiaseixas/wai-list-of-courses
   path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
-permalink: /   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
+permalink: /list-of-courses/   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
 
 # NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
 # navigation:
@@ -49,6 +52,49 @@ footer: >
 
 ---
 
-Browse for offers.
+
+<style> 
+{% include css/styles.css %}
+</style>
+
+<div class="header-sup">
+  <p>Browse for offers.</p>
+</div>
 
 
+<!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
+-->
+
+<div id="app" class="offers">
+  <form class="offers-filters" data-filter-form action="" method="POST">
+    <h2 class="visuallyhidden">Filters</h2>
+    {% for filter in site.data.filters %}
+    <fieldset id="{{ filter.id }}">
+      <legend>{{ filter.name }}</legend>
+      {% for option in filter.options %}
+      <div class="offers-filters__filter">
+        <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
+        <label for="filter-{{ option.id }}">{{ option.name }}</label>
+      </div>
+      {% endfor %}
+    </fieldset>
+    {% endfor %} 
+  </form>
+  <div class="offers-offers">
+    <h2 class="visuallyhidden">List of offers</h2>
+    <div role="alert">
+      <p class="status status-busy" hidden>Loading offers…</p>
+      <p class="status status-failure" hidden>something went wrong…</p>
+    </div>
+    <div id="offers-list">
+      <p>Showing {{ site.data.offers | size }} offers</p>
+      {% for offer in site.data.offers %}
+        {% include offer.liquid %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+{% include js/offers.js %}
+</script>
