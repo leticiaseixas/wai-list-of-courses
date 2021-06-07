@@ -1,7 +1,7 @@
 const filterForm = document.querySelector('[data-filter-form]');
 
 if (filterForm) {
-  console.log(filterForm);
+  
   filterForm.addEventListener('change', e => {
     submitForm(filterForm);
   });
@@ -21,6 +21,8 @@ if (filterForm) {
     // get status message references
     const statusBusy = document.querySelector('.status-busy');
     const statusFailure = document.querySelector('.status-failure');
+    
+    console.log(form.action);
 
     // Post data using the Fetch API
     fetch(form.action, {
