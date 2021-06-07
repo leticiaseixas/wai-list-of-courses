@@ -85,25 +85,3 @@ if (filterForm) {
     statusFailure.hidden = true;
   };
 }
-
-const options = document.querySelectorAll('[data-indicate-feature-conformance]');
-
-if (options) {
-  [].forEach.call(options, option => {
-    
-    option.addEventListener('change', e => {
-      const triggers = option.querySelectorAll('[data-trigger]');
-
-      if (triggers) {
-        [].forEach.call(triggers, trigger => {
-          trigger.setAttribute('hidden', 'true');
-        });
-      }
-
-      if (e.target.getAttribute('data-triggers')) {
-        const triggered = option.querySelector(`#${e.target.getAttribute('data-triggers')}`);
-        triggered.removeAttribute('hidden');
-      }
-    });
-  });
-}
