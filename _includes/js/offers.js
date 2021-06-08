@@ -26,8 +26,8 @@ if (filterForm) {
 
     // Post data using the Fetch API
     fetch(form.action, {
-        method: form.method,
-        body: new FormData(form)
+        method: form.method
+        //body: new FormData(form)
       })
       // We turn the response into text as we expect HTML
       .then(res => res.text())
