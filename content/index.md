@@ -66,7 +66,7 @@ footer: >
 -->
 
 <div id="app" class="offers">
-  <form class="offers-filters" data-filter-form action="https://wai-list-of-courses.netlify.app/api/" method="POST">
+  <form class="offers-filters" data-filter-form action="http://apebfr.org/api/" method="POST">
     <h2 class="visuallyhidden">Filters</h2>
     {% for filter in site.data.filters %}
     <fieldset id="{{ filter.id }}">
