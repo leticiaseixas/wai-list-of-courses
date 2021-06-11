@@ -22,7 +22,7 @@ if (filterForm) {
     const statusBusy = document.querySelector('.status-busy');
     const statusFailure = document.querySelector('.status-failure');
     
-    console.log(form);
+    console.log(form.target);
 
     // Post data using the Fetch API
     fetch(form.action, {
