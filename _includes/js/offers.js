@@ -16,7 +16,7 @@ if (filterForm) {
     // Prevent the default form submit
     e.preventDefault();
   });
-
+}
 
   function filterJson(form) {
 
