@@ -17,17 +17,31 @@ if (filterForm) {
     e.preventDefault();
   });
 
+
+  function filterJson(){
+
+    fetch(form.action, {
+      method: form.method
+      //body: new FormData(form)
+    })
+    // We turn the response into text as we expect HTML
+    .then(console.log(res));
+
+    console.log(filtersChecked);
+
+  }
+
   function submitForm(form) {
     // get status message references
     const statusBusy = document.querySelector('.status-busy');
     const statusFailure = document.querySelector('.status-failure');
     
-    var filters = form.querySelectorAll("input[type='checkbox']");
-    var filtersChecked = [].filter.call( filters, function( el ) {
+    const filters = form.querySelectorAll("input[type='checkbox']");
+    const filtersChecked = [].filter.call( filters, function( el ) {
       return el.checked;
    });
 
-    console.log(filtersChecked);
+    //console.log(filtersChecked);
 
     // Post data using the Fetch API
     fetch(form.action, {
