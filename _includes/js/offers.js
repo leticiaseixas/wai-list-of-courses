@@ -21,7 +21,7 @@ if (filterForm) {
   function filterJson(){
 
     fetch(filterForm.action, {
-      method: form.method
+      method: filterForm.method
       //body: new FormData(form)
     })
     // We turn the response into text as we expect HTML
