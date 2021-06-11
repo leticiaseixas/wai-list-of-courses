@@ -30,11 +30,11 @@ if (filterForm) {
         
         form.querySelectorAll("input[type='checkbox']").forEach(el => {
           if (el.checked){
-            var label = form.querySelector("label[for='" + el.name + "']");
+            var label = form.querySelector("label[for='" + el.id + "']");
             filtersOn.push(label.innerText);
           }
         });
-        
+
         console.log(jsonData);
         console.log(filtersOn);
 
