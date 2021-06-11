@@ -40,7 +40,8 @@ if (filterForm) {
     const filtersChecked = [].filter.call( filters, function( el ) {
       return el.checked;
    });
-
+   filterJson();
+   
     //console.log(filtersChecked);
 
     // Post data using the Fetch API
