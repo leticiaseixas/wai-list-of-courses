@@ -1,5 +1,5 @@
 const filterForm = document.querySelector('[data-filter-form]');
-const offers = "../_data/offers.json";
+const offers = "../_data/offers";
 
 if (filterForm) {
   
