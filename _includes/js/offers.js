@@ -22,7 +22,12 @@ if (filterForm) {
     const statusBusy = document.querySelector('.status-busy');
     const statusFailure = document.querySelector('.status-failure');
     
-    console.log(form.target);
+    var filters = form.querySelectorAll("input[type='checkbox']");
+    var filtersChecked = [].filter.call( filters, function( el ) {
+      return el.checked;
+   });
+
+    console.log(filtersChecked);
 
     // Post data using the Fetch API
     fetch(form.action, {
