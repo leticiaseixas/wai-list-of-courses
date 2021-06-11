@@ -28,10 +28,10 @@ function filterJson(form) {
   fetch(form.action)
 
     .then((response) => {
-      var jsonData = response;
+      var jsonData = response.json();
 
       console.log(jsonData);
-      console.log(filtersChecked);
+      console.log(filtersOn);
 
       var searchTest = function (varToSearch, jsonData) {
 
