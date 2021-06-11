@@ -28,9 +28,9 @@ function filterJson(form) {
   fetch(form.action)
 
     .then((response) => {
-      var jsonData = response.json();
-
-      console.log(jsonData);
+      var jsonData = response.json().then(function(data) {
+        
+        console.log(jsonData);
       console.log(filtersOn);
 
       var searchTest = function (varToSearch, jsonData) {
@@ -49,13 +49,18 @@ function filterJson(form) {
 
       searchTest(filtersOn, jsonData);
 
+        
+      });
+
+      
 
 
 
 
 
 
-    })
+
+    });
 
 }
 
