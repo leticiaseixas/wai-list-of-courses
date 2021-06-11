@@ -1,4 +1,5 @@
 const filterForm = document.querySelector('[data-filter-form]');
+const offers = "../_data/offers.json";
 
 if (filterForm) {
   
@@ -20,12 +21,9 @@ if (filterForm) {
 
   function filterJson(){
 
-    fetch(filterForm.action, {
-      method: filterForm.method
-      //body: new FormData(form)
-    })
+    fetch(offers)
     // We turn the response into text as we expect HTML
-    .then(console.log(res));
+    .then((response) => response.json());
 
     console.log(filtersChecked);
 
