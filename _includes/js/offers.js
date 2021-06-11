@@ -18,13 +18,18 @@ if (filterForm) {
   });
 
 
-  function filterJson(){
+  function filterJson(form){
 
     console.log(form.action);
   
     fetch(form.action)
     // We turn the response into text as we expect HTML
     .then((response) => response.json());
+
+    const filters = form.querySelectorAll("input[type='checkbox']");
+    const filtersChecked = [].filter.call( filters, function( el ) {
+      return el.checked;
+   });
 
     console.log(filtersChecked);
 
@@ -35,10 +40,7 @@ if (filterForm) {
     const statusBusy = document.querySelector('.status-busy');
     const statusFailure = document.querySelector('.status-failure');
     
-    const filters = form.querySelectorAll("input[type='checkbox']");
-    const filtersChecked = [].filter.call( filters, function( el ) {
-      return el.checked;
-   });
+    
    filterJson(form);
 
     //console.log(filtersChecked);
