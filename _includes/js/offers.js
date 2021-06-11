@@ -20,7 +20,7 @@ if (filterForm) {
 
   function filterJson(){
 
-    fetch(form.action, {
+    fetch(filterForm.action, {
       method: form.method
       //body: new FormData(form)
     })
@@ -41,7 +41,7 @@ if (filterForm) {
       return el.checked;
    });
    filterJson();
-   
+
     //console.log(filtersChecked);
 
     // Post data using the Fetch API
