@@ -25,8 +25,6 @@ if (filterForm) {
       .then(response => response.json())
 
       .then(jsonData => {
-
-
         
         var filtersOn = [];
         
@@ -38,7 +36,6 @@ if (filterForm) {
           }
         });
 
-
         var searchTest = function (varToSearch, jsonData) {
 
           for (var key in jsonData) {
@@ -47,12 +44,7 @@ if (filterForm) {
             } else {
               if (varToSearch.includes(jsonData[key])) {
                 
-                
                 console.log(jsonData);
-                
-
-
-
 
               }
             }
@@ -60,14 +52,26 @@ if (filterForm) {
 
         }
 
+        searchTest(filtersOn, jsonData);
+
         console.log(jsonData);
         console.log(filtersOn);
-
-        searchTest(filtersOn, jsonData);
+        const newResults = jsonData;
 
       //remontar a página
 
-      });
+      })
+
+
+      .then(
+        fetch("/api/")
+        .then(response2 => response2.text())
+        .then(response2 =>{
+          console.log(response2);
+          console.log(newResults);
+        })
+
+      );
 
 
 
