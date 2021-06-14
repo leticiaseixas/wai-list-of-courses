@@ -58,14 +58,21 @@ if (filterForm) {
         console.log("Results");
         console.log(newResults);
 
-      });
+      })
 
 
+     .then(
+        fetch("/api/index.html",
+        {
+          method:'GET',
+        })
+        .then(res2 => res2.text())
+        .then(res2 =>{
+          console.log(res2);
+          console.log(newResults);
+        })
 
-
-
-
-
+      ); 
 
   }
 
