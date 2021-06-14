@@ -21,11 +21,9 @@ if (filterForm) {
 
   function filterJson(form) {
 
-    fetch(form.action)
-
-      .then(res => res.json())
-
-      .then(jsonData => {
+    var jsonData = JSON.parse('{{ site.data.offers | jsonify}}');
+    console.log("jsonData");
+    console.log(jsonData);
 
         var filtersOn = [];
 
@@ -58,16 +56,11 @@ if (filterForm) {
         console.log("Results");
         console.log(newResults);
 
-      });
-
-
-
-
-
-
-
+        //rebuild document
 
   }
+
+
 
   function submitForm(form) {
     // get status message references
