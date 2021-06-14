@@ -67,7 +67,7 @@ if (filterForm) {
       .then(
         fetch("/api/",
           {
-            method: "POST",
+            method: "GET",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: newResults,
           })
