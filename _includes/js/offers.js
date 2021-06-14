@@ -67,9 +67,9 @@ if (filterForm) {
       .then(
         fetch("/api/",
         {
-          headers: { 'Content-Type': 'application/json' }, // tells the server we have json
-          method:'PUT', // can be POST
-          body: JSON.stringify(newResults), // json is sent to the server as text
+          headers: { 'Content-Type': 'application/json' }, 
+          method:'POST',
+          body: JSON.stringify(newResults), 
         })
         .then(response2 => response2.text())
         .then(response2 =>{
