@@ -46,6 +46,7 @@ if (filterForm) {
               if (varToSearch.includes(jsonData[key])) {
                 
                 console.log(jsonData);
+                newResults.push(jsonData);
 
               }
             }
@@ -55,9 +56,8 @@ if (filterForm) {
 
         searchTest(filtersOn, jsonData);
 
-        console.log(jsonData);
+        console.log(newResults);
         console.log(filtersOn);
-        newResults = jsonData;
 
       //remontar a página
 
@@ -65,7 +65,11 @@ if (filterForm) {
 
 
       .then(
-        fetch("/api/")
+        fetch("/api/",
+          {
+            method: "POST",
+            body: newResults,
+          })
         .then(response2 => response2.text())
         .then(response2 =>{
           console.log(response2);
