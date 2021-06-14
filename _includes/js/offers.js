@@ -58,6 +58,8 @@ if (filterForm) {
         console.log("Results");
         console.log(newResults);
 
+        console.log( '{{ site.data.offers }}');
+
       })
 
 
