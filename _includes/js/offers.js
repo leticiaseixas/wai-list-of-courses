@@ -68,6 +68,7 @@ if (filterForm) {
         fetch("/api/",
         {
           headers: { 'Content-Type': 'application/json' }, 
+          method:'POST',
           body: JSON.stringify(newResults), 
         })
         .then(response2 => response2.text())
