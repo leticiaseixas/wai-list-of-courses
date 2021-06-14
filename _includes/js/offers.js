@@ -61,20 +61,35 @@ if (filterForm) {
       })
 
 
-     .then(
+      .then(
         fetch("/api/index.html?view=offer.liquid",
-        {
-          method:'GET',
-        })
-        .then(res2 => res2.text())
-        .then(res2 =>{
-          console.log(res2);
-          console.log(newResults);
-        })
+          {
+            method: 'GET',
+          })
+          .then(res2 => res2.text())
+          .then(res2 => {
+            console.log(res2);
+            console.log(newResults);
+            rebuildDocument(res2, newResults);
+          })
 
-      ); 
+      );
 
   }
+
+  function rebuildDocument(res2, newResults) {
+
+    var text = new DOMParser().parseFromString(res2, 'text/html');
+
+    const offersList = document.getElementById('offers-list');
+    
+    offersList.innerHTML = text.body.innerHTML;
+
+
+  }
+
+
+
 
   function submitForm(form) {
     // get status message references
