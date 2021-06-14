@@ -67,9 +67,7 @@ if (filterForm) {
       .then(
         fetch("/api/",
           {
-            method: "GET",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: newResults,
+            method: "GET"
           })
         .then(response2 => response2.text())
         .then(response2 =>{
