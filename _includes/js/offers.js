@@ -21,11 +21,8 @@ if (filterForm) {
 
   function filterJson(form) {
 
-    fetch(form.action)
-
-      .then(res => res.json())
-
-      .then(jsonData => {
+    var jsonData = JSON.parse('{{ site.data.offers | jsonify}}');
+    console.log(offers);
 
         var filtersOn = [];
 
@@ -58,24 +55,7 @@ if (filterForm) {
         console.log("Results");
         console.log(newResults);
 
-        var offers = JSON.parse('{{ site.data.offers | jsonify}}');
-        console.log(offers);
-      })
-
-
-      .then(
-        fetch("/api/index.html?view=offer.liquid",
-          {
-            method: 'GET',
-          })
-          .then(res2 => res2.text())
-          .then(res2 => {
-            console.log(res2);
-            console.log(newResults);
-            rebuildDocument(res2, newResults);
-          })
-
-      );
+        //rebuild document
 
   }
 
