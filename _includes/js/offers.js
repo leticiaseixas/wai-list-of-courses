@@ -65,7 +65,7 @@ if (filterForm) {
 
 
       .then(
-        fetch("/api/",
+        fetch("/api/index.html",
         {
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, 
           method:'POST',
