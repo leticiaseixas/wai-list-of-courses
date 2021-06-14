@@ -59,26 +59,7 @@ if (filterForm) {
         console.log(newResults);
         console.log(filtersOn);
 
-      //remontar a página
-
-      })
-
-
-      .then(
-        fetch("/api/index.html",
-        {
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, 
-          method:'POST',
-          body: JSON.stringify(newResults), 
-        })
-        .then(res2 => res2.text())
-        .then(res2 =>{
-          console.log(res2);
-          console.log(newResults);
-        })
-
-      )
-      .catch(function(res){ console.log(res) });
+      });
 
 
 
