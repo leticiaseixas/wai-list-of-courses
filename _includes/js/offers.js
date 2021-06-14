@@ -21,17 +21,17 @@ if (filterForm) {
 
   function filterJson(form) {
 
-      fetch(form.action)
+    fetch(form.action)
 
       .then(res => res.json())
 
       .then(jsonData => {
-        
+
         var filtersOn = [];
-        
+
         // verificando filtros ativados
         form.querySelectorAll("input[type='checkbox']").forEach(el => {
-          if (el.checked){
+          if (el.checked) {
             var label = form.querySelector("label[for='" + el.id + "']");
             filtersOn.push(label.innerText);
           }
@@ -44,10 +44,7 @@ if (filterForm) {
               searchTest(filtersOn, jsonData[key]);
             } else {
               if (varToSearch.includes(jsonData[key])) {
-                
-                console.log(jsonData);
                 newResults.push(jsonData);
-
               }
             }
           }
@@ -56,8 +53,10 @@ if (filterForm) {
 
         searchTest(filtersOn, jsonData);
 
-        console.log(newResults);
+        console.log("Filters:");
         console.log(filtersOn);
+        console.log("Results");
+        console.log(newResults);
 
       });
 
