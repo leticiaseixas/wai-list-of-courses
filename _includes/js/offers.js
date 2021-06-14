@@ -27,7 +27,7 @@ if (filterForm) {
 
         var filtersOn = [];
 
-        // verificando filtros ativados
+        // Getting filters on and filtering offers by label
         form.querySelectorAll("input[type='checkbox']").forEach(el => {
           if (el.checked) {
             var label = form.querySelector("label[for='" + el.id + "']");
@@ -42,7 +42,10 @@ if (filterForm) {
               searchTest(filtersOn, jsonData[key]);
             } else {
               if (varToSearch.includes(jsonData[key])) {
+                // filter repeated offers                
+                if(newResults.indexOf(jsonData) === -1) 
                 newResults.push(jsonData);
+              
               }
             }
           }
