@@ -23,7 +23,7 @@ if (filterForm) {
 
       fetch(form.action)
 
-      .then(response => response.json())
+      .then(res => res.json())
 
       .then(jsonData => {
         
@@ -71,13 +71,14 @@ if (filterForm) {
           method:'POST',
           body: JSON.stringify(newResults), 
         })
-        .then(response2 => response2.text())
-        .then(response2 =>{
-          console.log(response2);
+        .then(res2 => res2.text())
+        .then(res2 =>{
+          console.log(res2);
           console.log(newResults);
         })
 
-      );
+      )
+      .catch(function(res){ console.log(res) });
 
 
 
