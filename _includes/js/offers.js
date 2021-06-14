@@ -1,4 +1,5 @@
 const filterForm = document.querySelector('[data-filter-form]');
+const newResults = [];
 
 if (filterForm) {
 
@@ -56,7 +57,7 @@ if (filterForm) {
 
         console.log(jsonData);
         console.log(filtersOn);
-        const newResults = jsonData;
+        newResults = jsonData;
 
       //remontar a página
 
