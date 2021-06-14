@@ -62,7 +62,7 @@ if (filterForm) {
 
 
      .then(
-        fetch("/api/index.html",
+        fetch("/api/index.html?view=offer.liquid",
         {
           method:'GET',
         })
