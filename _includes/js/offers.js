@@ -4,7 +4,7 @@ const newResults = [];
 if (filterForm) {
 
   filterForm.addEventListener('change', e => {
-    submitForm(filterForm);
+    filterJson(filterForm);
   });
 
   filterForm.addEventListener('submit', e => {
@@ -12,7 +12,7 @@ if (filterForm) {
     // Store reference to form to make later code easier to read
     const form = e.target;
 
-    submitForm(form);
+    filterJson(form);
 
     // Prevent the default form submit
     e.preventDefault();
@@ -60,7 +60,7 @@ if (filterForm) {
 
   }
 
-
+/*
 
   function submitForm(form) {
     // get status message references
@@ -68,12 +68,10 @@ if (filterForm) {
     const statusFailure = document.querySelector('.status-failure');
 
 
-    filterJson(form);
-
-    //console.log(filtersChecked);
+    console.log(filtersChecked);
 
     // Post data using the Fetch API
-    /* fetch(form.action, {
+     fetch(form.action, {
         method: form.method
         //body: new FormData(form)
       })
@@ -130,6 +128,8 @@ if (filterForm) {
     Array.from(form.elements).forEach(field => field.disabled = true);
   
     // Make sure connection failure message is hidden
-    statusFailure.hidden = true; */
+    statusFailure.hidden = true; 
   }
+
+*/
 }
