@@ -26,8 +26,11 @@ if (filterForm) {
 
       .then(jsonData => {
 
+
+        
         var filtersOn = [];
         
+        // verificando filtros ativados
         form.querySelectorAll("input[type='checkbox']").forEach(el => {
           if (el.checked){
             var label = form.querySelector("label[for='" + el.id + "']");
@@ -35,8 +38,6 @@ if (filterForm) {
           }
         });
 
-        console.log(jsonData);
-        console.log(filtersOn);
 
         var searchTest = function (varToSearch, jsonData) {
 
@@ -48,6 +49,9 @@ if (filterForm) {
                 
                 
                 console.log(jsonData);
+                
+
+
 
 
               }
@@ -56,8 +60,12 @@ if (filterForm) {
 
         }
 
+        console.log(jsonData);
+        console.log(filtersOn);
+
         searchTest(filtersOn, jsonData);
 
+      //remontar a página
 
       });
 
