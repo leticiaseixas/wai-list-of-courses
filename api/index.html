@@ -1,0 +1,6 @@
+<div id="offers-list">
+    <p>Showing {{ site.data.offers | size }} offers</p>
+    {% for offer in site.data.offers %}
+      {% include offer.liquid %}
+    {% endfor %}
+  </div>

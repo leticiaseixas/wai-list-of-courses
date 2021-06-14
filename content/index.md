@@ -66,7 +66,7 @@ footer: >
 -->
 
 <div id="app" class="offers">
-  <form class="offers-filters" data-filter-form action="" method="POST">
+  <form class="offers-filters" data-filter-form action="/api/offers.json" method="GET">
     <h2 class="visuallyhidden">Filters</h2>
     {% for filter in site.data.filters %}
     <fieldset id="{{ filter.id }}">
