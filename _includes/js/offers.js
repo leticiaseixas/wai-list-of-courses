@@ -60,18 +60,6 @@ if (filterForm) {
 
   }
 
-  function rebuildDocument(res2, newResults) {
-
-    var text = new DOMParser().parseFromString(res2, 'text/html');
-
-    const offersList = document.getElementById('offers-list');
-    
-    offersList.innerHTML = text.body.innerHTML;
-
-
-  }
-
-
 
 
   function submitForm(form) {
