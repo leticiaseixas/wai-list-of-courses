@@ -22,7 +22,8 @@ if (filterForm) {
   function filterJson(form) {
 
     var jsonData = JSON.parse('{{ site.data.offers | jsonify}}');
-    console.log(offers);
+    console.log("jsonData");
+    console.log(jsonData);
 
         var filtersOn = [];
 
