@@ -24,7 +24,7 @@ if (filterForm) {
 
     var filtersOn = [];
     var newResults = [];
-    
+
     // ############
     // no filters means all filters #todo
     // ############
@@ -51,7 +51,7 @@ if (filterForm) {
       }
 
     }
-    
+
 
     searchTest(filtersOn, jsonOffers);
 
@@ -67,23 +67,24 @@ if (filterForm) {
 
   }
 
-  function rebuildList(newResults){
+  function rebuildList(newResults) {
 
-      // Create result message container and copy HTML from doc
-            
-      const articles = offersList.querySelectorAll('ARTICLE');
+    // Create result message container and copy HTML from doc
 
-      articles.forEach(el => {
-        if(newResults.find(o => o.id === el.id))
-          el.hidden = true;
+    const articles = offersList.querySelectorAll('ARTICLE');
 
-      })
-      console.log("offersList");
-      console.log(offersList);
+    articles.forEach(el => {
+      if (!newResults.find(o => o.id === el.id))
+        el.hidden = true;
+      else
+        el.hidden = false;
+    })
+    console.log("offersList");
+    console.log(offersList);
 
 
 
-      //offersList.innerHTML = doc.body.innerHTML;    
+    //offersList.innerHTML = doc.body.innerHTML;    
   }
 
   /*
