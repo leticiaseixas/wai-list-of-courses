@@ -1,5 +1,6 @@
 const filterForm = document.querySelector('[data-filter-form]');
-const newResults = [];
+const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
+const offersList = document.getElementById('offers-list');
 
 if (filterForm) {
 
@@ -21,12 +22,12 @@ if (filterForm) {
 
   function filterJson(form) {
 
-    var jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
-    console.log("Offers:");
-    console.log(jsonOffers);
-
     var filtersOn = [];
     var newResults = [];
+    
+    // ############
+    // no filters means all filters #todo
+    // ############
 
     // Getting filters on and filtering offers by label
     form.querySelectorAll("input[type='checkbox']").forEach(el => {
@@ -50,9 +51,12 @@ if (filterForm) {
       }
 
     }
+    
 
     searchTest(filtersOn, jsonOffers);
 
+    console.log("Offers:");
+    console.log(jsonOffers);
     console.log("Filters:");
     console.log(filtersOn);
     console.log("Results:");
@@ -66,15 +70,14 @@ if (filterForm) {
   function rebuildList(newResults){
 
       // Create result message container and copy HTML from doc
-      const offersList = document.getElementById('offers-list');
-      
+            
       const articles = offersList.querySelectorAll('ARTICLE');
 
       articles.forEach(el => {
         if(newResults.find(o => o.id === el.id))
           el.remove();
       })
-
+      console.log(offersList);
 
 
 
