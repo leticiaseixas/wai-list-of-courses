@@ -75,7 +75,8 @@ if (filterForm) {
 
       articles.forEach(el => {
         if(newResults.find(o => o.id === el.id))
-          el.setAttribute("type", "hidden");
+          el.hidden = true;
+
       })
       console.log("offersList");
       console.log(offersList);
