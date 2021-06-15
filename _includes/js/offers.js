@@ -39,6 +39,21 @@ if (filterForm) {
 
     if (filtersOn.length === 0) newResults = jsonOffers;
 
+    var searchFilter = function (varToSearch, jsonOffers) {
+
+      for (var key in jsonOffers) {
+        if (typeof (jsonOffers[key]) === 'object') {
+          searchFilter(filtersOn, jsonOffers[key]);
+        } else {
+          if (varToSearch.includes(jsonOffers[key])) {
+            newResults.push(jsonOffers);
+
+          }
+        }
+      }
+
+    }
+
     searchFilter(filtersOn, jsonOffers);
 
     //rebuild document
@@ -53,25 +68,10 @@ if (filterForm) {
     console.log(newResults);
     console.log("offersList");
     console.log(offersList);
-    */
-  }
-
-  function searchFilter(varToSearch, jsonOffers) {
-
-    for (var key in jsonOffers) {
-      if (typeof (jsonOffers[key]) === 'object') {
-        searchFilter(filtersOn, jsonOffers[key]);
-      } else {
-        if (varToSearch.includes(jsonOffers[key])) {
-          newResults.push(jsonOffers);
-        }
-      }
-    }
+  */
   }
 
   function rebuildList(newResults) {
-
-    // Create result message container and copy HTML from doc
 
     const articles = offersList.querySelectorAll('ARTICLE');
 
