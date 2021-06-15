@@ -68,7 +68,7 @@ if (filterForm) {
       // Create result message container and copy HTML from doc
       const offersList = document.getElementById('offers-list');
       
-      offersList.forEach(el => {
+      offersList.querySelectorAll('ARTICLE').forEach(el => {
         if(newResults.find(o => o.id === el.id))
           el.remove();
 
