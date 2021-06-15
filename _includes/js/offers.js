@@ -81,6 +81,9 @@ if (filterForm) {
       else
         el.hidden = false;
     })
+
+    offersList.getElementById("total-offers").innerText = "Showing " + newResults.length + " offers";
+
     console.log("offersList");
     console.log(offersList);
 
