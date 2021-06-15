@@ -26,6 +26,7 @@ if (filterForm) {
     console.log(jsonData);
 
         var filtersOn = [];
+        var newResults = [];
 
         // Getting filters on and filtering offers by label
         form.querySelectorAll("input[type='checkbox']").forEach(el => {
@@ -42,8 +43,7 @@ if (filterForm) {
               searchTest(filtersOn, jsonData[key]);
             } else {
               if (varToSearch.includes(jsonData[key])) {
-                // filter repeated offers                
-                if(newResults.indexOf(jsonData) === -1) 
+                // filter repeated offers      #TODO          
                 newResults.push(jsonData);
               
               }
