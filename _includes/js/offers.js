@@ -37,6 +37,8 @@ if (filterForm) {
       }
     });
 
+    if (filtersOn.length === 0) newResults = jsonOffers;
+
     var searchTest = function (varToSearch, jsonOffers) {
 
       for (var key in jsonOffers) {
