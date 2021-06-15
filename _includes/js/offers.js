@@ -63,7 +63,7 @@ if (filterForm) {
     console.log(newResults);
 
     //rebuild document
-    //rebuildList(newResults);
+    rebuildList(newResults);
 
   }
 
@@ -77,6 +77,7 @@ if (filterForm) {
         if(newResults.find(o => o.id === el.id))
           el.remove();
       })
+      console.log(offersList);
       console.log(offersList);
 
 
