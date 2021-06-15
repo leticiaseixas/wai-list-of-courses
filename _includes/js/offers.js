@@ -44,6 +44,7 @@ if (filterForm) {
     //rebuild document
     rebuildList(newResults);
 
+    /*
     console.log("Offers:");
     console.log(jsonOffers);
     console.log("Filters:");
@@ -52,13 +53,14 @@ if (filterForm) {
     console.log(newResults);
     console.log("offersList");
     console.log(offersList);
+    */
   }
 
   function searchFilter(varToSearch, jsonOffers) {
 
     for (var key in jsonOffers) {
       if (typeof (jsonOffers[key]) === 'object') {
-        searchTest(filtersOn, jsonOffers[key]);
+        searchFilter(filtersOn, jsonOffers[key]);
       } else {
         if (varToSearch.includes(jsonOffers[key])) {
           newResults.push(jsonOffers);
