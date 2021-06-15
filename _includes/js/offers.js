@@ -39,23 +39,10 @@ if (filterForm) {
 
     if (filtersOn.length === 0) newResults = jsonOffers;
 
-    var searchTest = function (varToSearch, jsonOffers) {
+    searchFilter(filtersOn, jsonOffers);
 
-      for (var key in jsonOffers) {
-        if (typeof (jsonOffers[key]) === 'object') {
-          searchTest(filtersOn, jsonOffers[key]);
-        } else {
-          if (varToSearch.includes(jsonOffers[key])) {
-            newResults.push(jsonOffers);
-
-          }
-        }
-      }
-
-    }
-
-
-    searchTest(filtersOn, jsonOffers);
+    //rebuild document
+    rebuildList(newResults);
 
     console.log("Offers:");
     console.log(jsonOffers);
@@ -63,10 +50,21 @@ if (filterForm) {
     console.log(filtersOn);
     console.log("Results:");
     console.log(newResults);
+    console.log("offersList");
+    console.log(offersList);
+  }
 
-    //rebuild document
-    rebuildList(newResults);
+  function searchFilter(varToSearch, jsonOffers) {
 
+    for (var key in jsonOffers) {
+      if (typeof (jsonOffers[key]) === 'object') {
+        searchTest(filtersOn, jsonOffers[key]);
+      } else {
+        if (varToSearch.includes(jsonOffers[key])) {
+          newResults.push(jsonOffers);
+        }
+      }
+    }
   }
 
   function rebuildList(newResults) {
@@ -84,12 +82,6 @@ if (filterForm) {
 
     document.getElementById("total-offers").innerText = "Showing " + newResults.length + " offers";
 
-    console.log("offersList");
-    console.log(offersList);
-
-
-
-    //offersList.innerHTML = doc.body.innerHTML;    
   }
 
   /*
