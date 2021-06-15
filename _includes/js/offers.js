@@ -67,18 +67,17 @@ if (filterForm) {
 
       // Create result message container and copy HTML from doc
       const offersList = document.getElementById('offers-list');
-
-      offersList.querySelectorAll('ARTICLE').forEach(el => {
-        console.log(el.id);
+      
+      offersList.forEach(el => {
         if(newResults.find(o => o.id === el.id))
-          console.log(o.id);
+          el.remove();
 
       })
 
 
 
 
-      offersList.innerHTML = doc.body.innerHTML;    
+      //offersList.innerHTML = doc.body.innerHTML;    
   }
 
   /*
