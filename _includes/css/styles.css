@@ -4,11 +4,11 @@
     }
   }
   .header-sup {
-    grid-column: 1 / 8;
+     grid-column: 1 / 8; 
   }
   @media ( min-width: 72em ) {
     .header-sup {
-      grid-column: 2 / 7;
+      grid-column: 2 / 9;
     }
   }
   main > header {
@@ -36,7 +36,7 @@
     font-size: 85%;
   }
 
-  #disclaimer {
+  .disclaimer {
     padding: 1em;
     background-color: gold;
     border: 1px solid var(--line-grey);

@@ -69,7 +69,7 @@ footer: >
 <div id="app" class="offers">
   <div id="left-col" class="offers-filters">
   <form data-filter-form action="/api/offers.json" method="GET">
-    <h2 class="visuallyhidden">Filters</h2>
+    <h2>Filters</h2>
     {% for filter in site.data.filters %}
     <fieldset id="{{ filter.id }}">
       <legend>{{ filter.name }}</legend>
@@ -82,9 +82,12 @@ footer: >
     </fieldset>
     {% endfor %} 
   </form>
-  <div id="disclaimer">
-  Important disclaimer
-  </div>
+<div class="disclaimer">
+        <h2>Important Disclaimer</h2>
+        <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+        <p>Tool descriptions, search criteria, and other information in this database is provided by tool developers, vendors, or others. W3C does not verify the accuracy of the information.</p>
+        <p>The list is not a review of evaluation tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
+      </aside>
   </div>
   <div class="offers-offers">
     <h2 class="visuallyhidden">List of offers</h2>
