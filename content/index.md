@@ -87,7 +87,7 @@ footer: >
         <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
         <p>Tool descriptions, search criteria, and other information in this database is provided by tool developers, vendors, or others. W3C does not verify the accuracy of the information.</p>
         <p>The list is not a review of evaluation tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
-      </aside>
+      
   </div>
   <div class="offers-offers">
     <h2 class="visuallyhidden">List of offers</h2>
