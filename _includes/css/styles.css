@@ -38,10 +38,17 @@
 
   .disclaimer {
     padding: 1em;
-    background-color: gold;
     border: 1px solid var(--line-grey);
     color: var(--off-black);
   }
+  .disclaimer h2{
+
+  }
+
+  .app h2{
+    margin: 20px 0 20px;
+  }
+
 
   @media (min-width: 60em) {
     .offers-filters {
