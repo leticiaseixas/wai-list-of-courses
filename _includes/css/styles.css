@@ -42,7 +42,9 @@
     color: var(--off-black);
   }
   .disclaimer h2{
-
+    margin: 0px !important;
+    padding: 10px;
+    font-size: 1.3em;
   }
 
   #left-col h2 {
