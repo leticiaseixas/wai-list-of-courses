@@ -59,6 +59,7 @@ footer: >
 
 <div class="header-sup">
   <p>Browse for offers.</p>
+  <p>Note: tools are user-submitted, not W3C-endorsed, see disclaimer for vendor-submitted content.</p>
 </div>
 
 
@@ -66,7 +67,8 @@ footer: >
 -->
 
 <div id="app" class="offers">
-  <form class="offers-filters" data-filter-form action="/api/offers.json" method="GET">
+  <div id="left-col" class="offers-filter">
+  <form data-filter-form action="/api/offers.json" method="GET">
     <h2 class="visuallyhidden">Filters</h2>
     {% for filter in site.data.filters %}
     <fieldset id="{{ filter.id }}">
@@ -80,6 +82,10 @@ footer: >
     </fieldset>
     {% endfor %} 
   </form>
+  <div id="disclaimer">
+  Important disclaimer
+  </div>
+  </div>
   <div class="offers-offers">
     <h2 class="visuallyhidden">List of offers</h2>
     <div role="alert">

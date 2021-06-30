@@ -35,6 +35,14 @@
   .offers-filters {
     font-size: 85%;
   }
+
+  #disclaimer {
+    padding: 1em;
+    background-color: gold;
+    border: 1px solid var(--line-grey);
+    color: var(--off-black);
+  }
+
   @media (min-width: 60em) {
     .offers-filters {
       font-size: 85%;
