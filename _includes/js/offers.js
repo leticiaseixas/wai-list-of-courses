@@ -42,10 +42,11 @@ if (filterForm) {
     var searchFilter = function (varToSearch, jsonOffers) {
 
       for (var key in jsonOffers) {
+        
         if (typeof (jsonOffers[key]) === 'object') {
           searchFilter(filtersOn, jsonOffers[key]);
-        } else {
-          if (varToSearch.includes(jsonOffers[key])) {
+        }
+        if (varToSearch.includes(jsonOffers[key])) {
             newResults.push(jsonOffers);
 
           }
