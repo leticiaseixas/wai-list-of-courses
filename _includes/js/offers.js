@@ -39,20 +39,9 @@ if (filterForm) {
 
     if (filtersOn.length === 0) newResults = jsonOffers;
 
-    var searchFilter = function (varToSearch, jsonOffers) {
+    newResults = jsonOffers.filter((contact) => filtersOn.every((tag) => Object.values(contact).includes(tag)))
 
-      for (var key in jsonOffers) {
-        
-        if (typeof (jsonOffers[key]) === 'object') {
-          searchFilter(filtersOn, jsonOffers[key]);
-        } else if ( varToSearch.includes(jsonOffers[key])) {
-            newResults.push(jsonOffers);
-        }
-      }
 
-    }
-
-    searchFilter(filtersOn, jsonOffers);
 
     //rebuild document
     rebuildList(newResults, filtersOn);
