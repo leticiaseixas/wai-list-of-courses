@@ -82,7 +82,11 @@ if (filterForm) {
         el.hidden = false;
     })
 
-    if(newResults.length > 0){
+    if(filtersOn.length === 0){
+      document.getElementById("total-offers").innerText = 
+        "Showing " + newResults.length + " offers";
+    }
+    else if(newResults.length > 0){
       document.getElementById("total-offers").innerText = 
         "Showing " + newResults.length + " offers matching the filters: " + filtersOn.toString();
     }
