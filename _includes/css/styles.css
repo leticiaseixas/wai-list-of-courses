@@ -37,7 +37,6 @@
   }
 
   .disclaimer {
-    padding: 1em;
     border: 1px solid var(--line-grey);
     color: var(--off-black);
   }
@@ -45,12 +44,16 @@
     margin: 0px !important;
     padding: 10px;
     font-size: 1.3em;
+    color: var(--off-black);
+  }
+
+  .disclaimer p{
+    padding: 10px;
   }
 
   #left-col h2 {
      margin: 20px 0 20px;
   }
-
 
   @media (min-width: 60em) {
     .offers-filters {
