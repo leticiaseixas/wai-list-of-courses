@@ -38,8 +38,8 @@
 
   .disclaimer {
     border: 1px solid var(--line-grey);
-    color: var(--off-black);
   }
+  
   .disclaimer h2{
     background-color: gold;
     margin: 0px !important;
