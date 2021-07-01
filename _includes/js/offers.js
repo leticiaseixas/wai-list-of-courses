@@ -82,7 +82,12 @@ if (filterForm) {
         el.hidden = false;
     })
 
-    document.getElementById("total-offers").innerText = "Showing " + newResults.length + " offers";
+    if(newResults.length > 0){
+      document.getElementById("total-offers").innerText = 
+        "Showing " + newResults.length + " offers matching the filters: " + filtersOn.toString();
+    }
+    else
+      document.getElementById("total-offers").innerText = "Sorry, but no items match these criteria";
 
   }
 
