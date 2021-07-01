@@ -34,7 +34,6 @@ if (filterForm) {
       if (el.checked) {
         var label = form.querySelector("label[for='" + el.id + "']");
         filtersOn.push(label.innerText);
-        newResults = [];
       }
     });
 
@@ -46,7 +45,7 @@ if (filterForm) {
         
         if (typeof (jsonOffers[key]) === 'object') {
           searchFilter(filtersOn, jsonOffers[key]);
-        } else if (varToSearch.includes(jsonOffers[key])) {
+        } else if ( varToSearch.includes(jsonOffers[key]) && !newResults.includes(jsonOffers[key])) {
             newResults.push(jsonOffers);
         }
       }
