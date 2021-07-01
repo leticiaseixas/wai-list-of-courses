@@ -60,7 +60,7 @@ footer: >
 <div class="header-sup">
   <p>Browse for offers of education, training, and certification on digital accessibility.</p>
 
-  <p>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</p>
+  <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
 </div>
 
 
