@@ -58,8 +58,9 @@ footer: >
 </style>
 
 <div class="header-sup">
-  <p>Browse for offers.</p>
-  <p>Note: tools are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</p>
+  <p>Browse for offers of education, training, and certification on digital accessibility.</p>
+
+  <p>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</p>
 </div>
 
 
@@ -82,7 +83,7 @@ footer: >
       </fieldset>
       {% endfor %} 
     </form>
-    <div class="disclaimer">
+    <div class="disclaimer" id="disclaimer">
         <h2>Important Disclaimer</h2>
         <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
         <p>Tool descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
