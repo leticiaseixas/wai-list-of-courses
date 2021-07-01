@@ -38,10 +38,10 @@ if (filterForm) {
     });
 
     if (filtersOn.length === 0) newResults = jsonOffers;
-
-    newResults = jsonOffers.filter((contact) => 
-      filtersOn.some((tag) => Object.values(contact).includes(tag)));
-
+    else{
+      newResults = jsonOffers.filter((contact) => 
+        filtersOn.some((tag) => Object.values(contact).includes(tag)));
+    }
 
 
     //rebuild document
