@@ -34,6 +34,7 @@ if (filterForm) {
       if (el.checked) {
         var label = form.querySelector("label[for='" + el.id + "']");
         filtersOn.push(label.innerText);
+        newResults = [];
       }
     });
 
