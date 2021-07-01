@@ -46,7 +46,7 @@ if (filterForm) {
         if (typeof (jsonOffers[key]) === 'object') {
           searchFilter(filtersOn, jsonOffers[key]);
         } else if ( varToSearch.includes(jsonOffers[key])) {
-            newResults.push(jsonOffers[key]);
+            newResults.push(jsonOffers);
         }
       }
 
