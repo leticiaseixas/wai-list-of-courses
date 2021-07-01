@@ -57,7 +57,7 @@ if (filterForm) {
     searchFilter(filtersOn, jsonOffers);
 
     //rebuild document
-    rebuildList(newResults);
+    rebuildList(newResults, filtersOn);
 
     
     console.log("Offers:");
@@ -71,7 +71,7 @@ if (filterForm) {
   
   }
 
-  function rebuildList(newResults) {
+  function rebuildList(newResults, filtersOn) {
 
     const articles = offersList.querySelectorAll('ARTICLE');
 
