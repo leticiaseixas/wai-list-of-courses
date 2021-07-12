@@ -52,9 +52,6 @@
 
     {{ content }}
 
-    {% if page.wcag_success_criteria or page.wcag_techniques %}
-      {% include resources.html %}
-    {% endif %}
 
     {%- if page.navigation -%}
       {%- include prevnext-navigation.html -%}
