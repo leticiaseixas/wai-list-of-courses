@@ -73,14 +73,21 @@ if (filterForm) {
     if(filtersOn.length === 0){
       document.getElementById("total-offers").innerText = 
         "Showing " + newResults.length + " offers";
+        clearFilters(false);  
     }
     else if(newResults.length > 0){
       document.getElementById("total-offers").innerText = 
         "Showing " + newResults.length + " offers matching the filters: " + filtersOn.toString();
+      clearFilters(true);
     }
-    else
+    else {
       document.getElementById("total-offers").innerText = "Sorry, but no items match these criteria";
+      clearFilters(false);
+    }
+  }
 
+  function clearFilters(visible){
+    document.getElementById("clear-filters").hidden = visible;
   }
 
 }

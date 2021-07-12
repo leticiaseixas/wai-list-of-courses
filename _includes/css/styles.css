@@ -205,6 +205,14 @@
     justify-content: center;
     transition: opacity 0.2s;
   }
+
+  .clear{
+    grid-column: 8 / 10;
+    align-self: start;
+    justify-self: end;
+    margin-bottom: 2em;
+  }
+
   .submit-a-offer {
     grid-column: 8 / 10;
     align-self: start;

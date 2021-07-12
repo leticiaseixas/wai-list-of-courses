@@ -97,6 +97,7 @@ footer: >
     </div>
     <div id="offers-list">
       <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+      <a class="button clear" hidden><span>Clear filters</span></a> 
       {% for offer in site.data.offers %}
         {% include offer.liquid %}
       {% endfor %}
