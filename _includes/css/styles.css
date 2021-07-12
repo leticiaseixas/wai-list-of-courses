@@ -208,6 +208,7 @@
 
   .deselect{
     margin-bottom: 2em;
+    visibility: hidden;
   }
 
   .submit-a-offer {
