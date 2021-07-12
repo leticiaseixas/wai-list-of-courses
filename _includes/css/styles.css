@@ -209,6 +209,7 @@
   .deselect{
     margin-bottom: 2em;
   }
+  
   .deselect[hidden] { display: none !important }
 
   .submit-a-offer {
