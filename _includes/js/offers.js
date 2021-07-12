@@ -92,6 +92,7 @@ if (filterForm) {
 
   document.getElementById("deselect").addEventListener('click', e => {
     rebuildList(jsonOffers, []);
+    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
   });
 
 }
