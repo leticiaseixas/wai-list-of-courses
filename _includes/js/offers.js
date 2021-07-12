@@ -87,7 +87,7 @@ if (filterForm) {
   }
 
   function clearFilters(visible){
-    document.getElementById("clear-filters").hidden = visible;
+    document.getElementById("deselect").hidden = visible;
   }
 
 }
