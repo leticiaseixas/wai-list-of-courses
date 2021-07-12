@@ -1,5 +1,6 @@
 const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
+const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const offersList = document.getElementById('offers-list');
 
 if (filterForm) {
@@ -47,10 +48,11 @@ if (filterForm) {
     //rebuild document
     rebuildList(newResults, filtersOn);
 
-    
+    console.log("Filters:");
+    console.log(jsonFilters);
     console.log("Offers:");
     console.log(jsonOffers);
-    console.log("Filters:");
+    console.log("Filters On:");
     console.log(filtersOn);
     console.log("Results:");
     console.log(newResults);
