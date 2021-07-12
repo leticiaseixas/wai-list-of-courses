@@ -73,21 +73,21 @@ if (filterForm) {
     if(filtersOn.length === 0){
       document.getElementById("total-offers").innerText = 
         "Showing " + newResults.length + " offers";
-      showClearFilters("hidden");  
+      showClearFilters(true);  
     }
     else if(newResults.length > 0){
       document.getElementById("total-offers").innerText = 
         "Showing " + newResults.length + " offers matching the filters: " + filtersOn.toString();
-      showClearFilters("visible");
+      showClearFilters(false);
     }
     else {
       document.getElementById("total-offers").innerText = "Sorry, but no items match these criteria";
-      showClearFilters("hidden");
+      showClearFilters(true);
     }
   }
 
   function showClearFilters(visibility){
-      document.getElementById("deselect").style.visibility = visibility;
+      document.getElementById("deselect").hidden = visibility;
   }
 
 }

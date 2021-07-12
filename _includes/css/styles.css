@@ -208,8 +208,8 @@
 
   .deselect{
     margin-bottom: 2em;
-    visibility: hidden;
   }
+  .deselect[hidden] { display: none !important }
 
   .submit-a-offer {
     grid-column: 8 / 10;
