@@ -31,8 +31,7 @@ permalink: /list-of-courses/   # Add the language shortcode to the end, with no 
 
 ref: /   # Translators, do not change this
 changelog: /@@/changelog/
-acknowledgements: /@@/acknowledgements/  # NEW: delete if don"t have a separate acknowledgements page. And delete it in the footer below.
-license: creative-commons   # NEW: delete if not creative-commons
+acknowledgements: /teach-advocate/course-list/acknowledgements/  # NEW: delete if don't have a separate acknowledgements page. And delete it in the footer below.
 
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
 image: /content-images/wai-@@repo/social.png  # NEW: image for social media
@@ -46,9 +45,9 @@ feedbackmail: wai@w3.org  # NEW: delete this line if it’s an EOWG resource (th
 # Translate the Working Group name. Leave the Working Group acronym in English.
 # Do not change the dates in the footer below.
 footer: >
-   <p><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@. CHANGELOG.</p>
-   <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/@@wg/participants">participants of the @@WG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
-   <p>Developed by the @@ Working Group (<a href="http://www.w3.org/WAI/@@/">@@WG</a>). Developed as part of the <a href="https://www.w3.org/WAI/@@/">WAI-@@ project</a>, @@co-funded by the European Commission.</p>
+   <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
+   <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
+   <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 
 ---
 
@@ -58,7 +57,9 @@ footer: >
 </style>
 
 <div class="header-sup">
-  <p>Browse for offers.</p>
+  <p>Browse for offers of education, training, and certification on digital accessibility.</p>
+
+  <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
 </div>
 
 
@@ -66,20 +67,28 @@ footer: >
 -->
 
 <div id="app" class="offers">
-  <form class="offers-filters" data-filter-form action="/api/offers.json" method="GET">
-    <h2 class="visuallyhidden">Filters</h2>
-    {% for filter in site.data.filters %}
-    <fieldset id="{{ filter.id }}">
-      <legend>{{ filter.name }}</legend>
-      {% for option in filter.options %}
-      <div class="offers-filters__filter">
-        <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
-        <label for="filter-{{ option.id }}">{{ option.name }}</label>
-      </div>
-      {% endfor %}
-    </fieldset>
-    {% endfor %} 
-  </form>
+  <div id="left-col" class="offers-filters">
+    <form data-filter-form action="/api/offers.json" method="GET">
+      <h2>Filters</h2>
+      {% for filter in site.data.filters %}
+      <fieldset id="{{ filter.id }}">
+        <legend>{{ filter.name }}</legend>
+        {% for option in filter.options %}
+        <div class="offers-filters__filter">
+          <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
+          <label for="filter-{{ option.id }}">{{ option.name }}</label>
+        </div>
+        {% endfor %}
+      </fieldset>
+      {% endfor %} 
+    </form>
+    <div class="disclaimer" id="disclaimer">
+        <h2>Important Disclaimer</h2>
+        <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+        <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
+        <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
+    </div>
+  </div>
   <div class="offers-offers">
     <h2 class="visuallyhidden">List of offers</h2>
     <div role="alert">
@@ -87,7 +96,8 @@ footer: >
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
     <div id="offers-list">
-      <p>Showing {{ site.data.offers | size }} offers</p>
+      <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+      <a id="deselect" class="button deselect" hidden><span>Clear filters</span></a> 
       {% for offer in site.data.offers %}
         {% include offer.liquid %}
       {% endfor %}

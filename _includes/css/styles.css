@@ -4,11 +4,11 @@
     }
   }
   .header-sup {
-    grid-column: 1 / 8;
+     grid-column: 1 / 8; 
   }
   @media ( min-width: 72em ) {
     .header-sup {
-      grid-column: 2 / 7;
+      grid-column: 2 / 9;
     }
   }
   main > header {
@@ -35,6 +35,27 @@
   .offers-filters {
     font-size: 85%;
   }
+
+  .disclaimer {
+    border: 1px solid var(--line-grey);
+  }
+  
+  .disclaimer h2{
+    background-color: gold;
+    margin: 0px !important;
+    padding: 10px;
+    font-size: 1.3em;
+    color: var(--off-black);
+  }
+
+  .disclaimer p{
+    padding: 10px;
+  }
+
+  #left-col h2 {
+     margin: 20px 0 20px;
+  }
+
   @media (min-width: 60em) {
     .offers-filters {
       font-size: 85%;
@@ -184,6 +205,13 @@
     justify-content: center;
     transition: opacity 0.2s;
   }
+
+  .deselect{
+    margin-bottom: 2em;
+  }
+  
+  .deselect[hidden] { display: none !important }
+
   .submit-a-offer {
     grid-column: 8 / 10;
     align-self: start;
