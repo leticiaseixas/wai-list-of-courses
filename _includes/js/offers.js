@@ -90,4 +90,8 @@ if (filterForm) {
       document.getElementById("deselect").hidden = visibility;
   }
 
+  document.getElementById("deselect").addEventListener('click', e => {
+    rebuildList(jsonOffers, []);
+  });
+
 }
