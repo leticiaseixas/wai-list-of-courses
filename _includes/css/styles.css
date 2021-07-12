@@ -206,10 +206,7 @@
     transition: opacity 0.2s;
   }
 
-  .clear{
-    grid-column: 8 / 10;
-    align-self: start;
-    justify-self: end;
+  .deselect{
     margin-bottom: 2em;
   }
 
