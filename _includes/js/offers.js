@@ -25,9 +25,10 @@ if (filterForm) {
 
     var filtersOn = [];
     var newResults = [];
-    var filterCategory;
+    var groupCategoryName;
     var filterValue;
     var results;
+    
 
 
     // getting filters
@@ -35,20 +36,23 @@ if (filterForm) {
    
 
     // filtering AND
-    form.querySelectorAll('fieldset').forEach(element => {
-      filterCategory = element.id; 
-      newResults[filterCategory] = [];
-      element.querySelectorAll('input[type="checkbox"]').forEach(el => {
-        if (el.checked){
-          filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
+    form.querySelectorAll('fieldset').forEach(groupCategory => {
+      groupCategoryName = groupCategory.id; 
+      
+      groupCategory.querySelectorAll('input[type="checkbox"]').forEach(filter => {
+        if (filter.checked){
+          
+          filterValue = form.querySelector("label[for='" + filter.id + "']").innerText;
           filtersOn.push(filterValue);
           
-          results = jsonOffers.filter(offer => offer[filterCategory] == filterValue); 
+          results = jsonOffers.filter(offer => offer[groupCategoryName] == filterValue); 
           
-          if(results.length > 0) 
-            newResults[filterCategory] = newResults[filterCategory].concat(results); 
+          if(results.length > 0 && typeof(newResults[groupCategoryName]) !== 'undefined')
+            newResults[groupCategoryName] = newResults[groupCategoryName].concat(results); 
+          else if (results.length > 0 && typeof(newResults[groupCategoryName]) === 'undefined')
+            newResults = results;
           else
-            newResults = [];       
+            newResults = [];   
         }
       });
     });
