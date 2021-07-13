@@ -24,6 +24,7 @@ if (filterForm) {
   function filterJson(form) {
 
     var filtersOn = [];
+    var filtersOnQty = 0;
     var filterName;
     var newResults = [];
     //var groupFiltered = [];
@@ -38,7 +39,7 @@ if (filterForm) {
 
       group.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
-
+          filtersOnQty ++;
           filterName = group.querySelector("label[for='" + filter.id + "']").innerText;
           filtersOn.push(filterName);
         }
@@ -61,71 +62,13 @@ if (filterForm) {
 
     // if no filter, rebuild list
     if (newResults.length === 0)
-      rebuildList(jsonOffers, []);
-    else
-      newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    var filtersOn = [];
-    var newResults = [];
-    var filterCategory;
-    var filterValue;
-    var results;
-
-
-    // getting filters
-    // each group and filters on
-
-
-    // filtering AND
-    form.querySelectorAll('fieldset').forEach(element => {
-      filterCategory = element.id;
-      newResults[filterCategory] = [];
-      element.querySelectorAll('input[type="checkbox"]').forEach(el => {
-        if (el.checked) {
-          filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
-          filtersOn.push(filterValue);
-
-          results = jsonOffers.filter(offer => offer[filterCategory] == filterValue);
-
-          if (results.length > 0)
-            newResults[filterCategory] = newResults[filterCategory].concat(results);
-        }
-      });
-    });
-
-    // filtering OR
-    newResults = Object.values(newResults);
-    //newResults = Object.values(clean(newResults));
-    console.log(newResults);
-
-    if (newResults.length === 0)
-      rebuildList(jsonOffers, []);
+      rebuildList(jsonOffers, filtersOnQty);
     else
       newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
 
 
     //rebuild document
-    rebuildList(newResults, filtersOn);
+    rebuildList(newResults, filtersOnQty);
 
     console.log("Filters:");
     console.log(jsonFilters);
