@@ -11,14 +11,14 @@ if (filterForm) {
 
   filterForm.addEventListener('submit', e => {
 
-    // Store reference to form to make later code easier to read
-    const form = e.target;
-
     filterJson(form);
-
-    // Prevent the default form submit
-    e.preventDefault();
   });
+  
+  document.getElementById("deselect").addEventListener('click', e => {
+    rebuildList(jsonOffers, []);
+    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+  });
+
 
 
   function filterJson(form) {
@@ -27,7 +27,6 @@ if (filterForm) {
     var allFiltersOn = [];
     var filterName;
     var newResults = [];
-    //var groupFiltered = [];
     var offersFiltered = [];
 
     // for each group filter category
@@ -51,13 +50,10 @@ if (filterForm) {
           if (filtersOn.includes(offer[group.id]))
             offersFiltered.push(offer);
         })
-        // groupFiltered.push({'group': group.id, 'filtersOn': filtersOn, 'offers': offersFiltered});
         newResults.push(offersFiltered);
 
       }
     });
-
-    console.log(newResults);
 
     // if no filter, show all offers
     if (newResults.length === 0)
@@ -70,28 +66,9 @@ if (filterForm) {
     //rebuild document
     rebuildList(newResults, allFiltersOn);
 
-    console.log("Filters:");
-    console.log(jsonFilters);
-    console.log("Offers:");
-    console.log(jsonOffers);
-    console.log("Filters On:");
-    console.log(filtersOn);
-    console.log("Results:");
-    console.log(newResults);
-    console.log("offersList");
-    console.log(offersList);
+    // callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList);
 
   }
-
-  function clean(obj) {
-    for (var propName in obj) {
-      if (obj[propName].length === 0) {
-        delete obj[propName];
-      }
-    }
-    return obj
-  }
-
 
   function rebuildList(newResults, filtersOn) {
 
@@ -124,9 +101,27 @@ if (filterForm) {
     document.getElementById("deselect").hidden = visibility;
   }
 
-  document.getElementById("deselect").addEventListener('click', e => {
-    rebuildList(jsonOffers, []);
-    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-  });
+  
+  function callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList){
+    console.log("Filters:");
+    console.log(jsonFilters);
+    console.log("Offers:");
+    console.log(jsonOffers);
+    console.log("Filters On:");
+    console.log(filtersOn);
+    console.log("Results:");
+    console.log(newResults);
+    console.log("offersList");
+    console.log(offersList);
+  }
+
+  function clean(obj) {
+    for (var propName in obj) {
+      if (obj[propName].length === 0) {
+        delete obj[propName];
+      }
+    }
+    return obj
+  }
 
 }
