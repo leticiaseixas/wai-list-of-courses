@@ -46,13 +46,16 @@ if (filterForm) {
           results = jsonOffers.filter(offer => offer[filterCategory] == filterValue); 
           
           if(results.length > 0) 
-            newResults[filterCategory] = newResults[filterCategory].concat(results);        
+            newResults[filterCategory] = newResults[filterCategory].concat(results); 
+          else
+            newResults = [];       
         }
       });
     });
 
     // filtering OR
-    newResults = Object.values(clean(newResults))
+    newResults = Object.values(newResults);
+    //newResults = Object.values(clean(newResults));
     console.log(newResults);
     
     if(newResults.length === 0)
