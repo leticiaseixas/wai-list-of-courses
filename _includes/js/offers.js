@@ -24,35 +24,91 @@ if (filterForm) {
   function filterJson(form) {
 
     var filtersOn = [];
+    var filterName;
     var newResults = [];
-    var groupCategoryName;
+    //var groupFiltered = [];
+    var offersFiltered = [];
+
+    // for each group filter category
+    form.querySelectorAll('fieldset').forEach(group => {
+
+      // identify filters on
+      filtersOn = [];
+      offersFiltered = [];
+
+      group.querySelectorAll('input[type="checkbox"]').forEach(filter => {
+        if (filter.checked) {
+
+          filterName = group.querySelector("label[for='" + filter.id + "']").innerText;
+          filtersOn.push(filterName);
+        }
+      });
+
+      if (filtersOn.length > 0) {
+
+        jsonOffers.forEach(offer => {
+          if (filtersOn.includes(offer[group.id]))
+            offersFiltered.push(offer);
+        })
+        // groupFiltered.push({'group': group.id, 'filtersOn': filtersOn, 'offers': offersFiltered});
+        newResults.push(offersFiltered);
+
+      }
+    });
+
+    // intersection between results [offers]
+    console.log(newResults);
+
+    // if no filter, rebuild list
+    if (newResults.length === 0)
+      rebuildList(jsonOffers, []);
+    else
+      newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var filtersOn = [];
+    var newResults = [];
+    var filterCategory;
     var filterValue;
     var results;
-    
 
 
     // getting filters
     // each group and filters on
-   
+
 
     // filtering AND
-    form.querySelectorAll('fieldset').forEach(groupCategory => {
-      groupCategoryName = groupCategory.id; 
-      
-      groupCategory.querySelectorAll('input[type="checkbox"]').forEach(filter => {
-        if (filter.checked){
-          
-          filterValue = form.querySelector("label[for='" + filter.id + "']").innerText;
+    form.querySelectorAll('fieldset').forEach(element => {
+      filterCategory = element.id;
+      newResults[filterCategory] = [];
+      element.querySelectorAll('input[type="checkbox"]').forEach(el => {
+        if (el.checked) {
+          filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
           filtersOn.push(filterValue);
-          
-          results = jsonOffers.filter(offer => offer[groupCategoryName] == filterValue); 
-          
-          if(results.length > 0 && typeof(newResults[groupCategoryName]) !== 'undefined')
-            newResults[groupCategoryName] = newResults[groupCategoryName].concat(results); 
-          else if (results.length > 0 && typeof(newResults[groupCategoryName]) === 'undefined')
-            newResults = results;
-          else
-            newResults = [];   
+
+          results = jsonOffers.filter(offer => offer[filterCategory] == filterValue);
+
+          if (results.length > 0)
+            newResults[filterCategory] = newResults[filterCategory].concat(results);
         }
       });
     });
@@ -61,13 +117,13 @@ if (filterForm) {
     newResults = Object.values(newResults);
     //newResults = Object.values(clean(newResults));
     console.log(newResults);
-    
-    if(newResults.length === 0)
+
+    if (newResults.length === 0)
       rebuildList(jsonOffers, []);
     else
       newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
-    
-    
+
+
     //rebuild document
     rebuildList(newResults, filtersOn);
 
@@ -81,7 +137,7 @@ if (filterForm) {
     console.log(newResults);
     console.log("offersList");
     console.log(offersList);
-  
+
   }
 
   function clean(obj) {
@@ -92,7 +148,7 @@ if (filterForm) {
     }
     return obj
   }
-  
+
 
   function rebuildList(newResults, filtersOn) {
 
@@ -105,13 +161,13 @@ if (filterForm) {
         el.hidden = false;
     })
 
-    if(filtersOn.length === 0){
-      document.getElementById("total-offers").innerText = 
+    if (filtersOn.length === 0) {
+      document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers";
-      hideClearFilters(true);  
+      hideClearFilters(true);
     }
-    else if(newResults.length > 0){
-      document.getElementById("total-offers").innerText = 
+    else if (newResults.length > 0) {
+      document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers matching the filters: " + filtersOn.toString();
       hideClearFilters(false);
     }
@@ -121,8 +177,8 @@ if (filterForm) {
     }
   }
 
-  function hideClearFilters(visibility){
-      document.getElementById("deselect").hidden = visibility;
+  function hideClearFilters(visibility) {
+    document.getElementById("deselect").hidden = visibility;
   }
 
   document.getElementById("deselect").addEventListener('click', e => {
