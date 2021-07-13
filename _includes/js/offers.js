@@ -25,26 +25,25 @@ if (filterForm) {
 
     var filtersOn = [];
     var newResults = [];
+    
+    
 
-    // ############
-    // no filters means all filters #todo ?
-    // ############
-
-    // Getting filters on and filtering offers by label
-    form.querySelectorAll("input[type='checkbox']").forEach(el => {
-      if (el.checked) {
-        var label = form.querySelector("label[for='" + el.id + "']");
-        filtersOn.push(label.innerText);
-      }
+    // filtering AND
+    form.querySelectorAll('fieldset').forEach(element => {
+      element.querySelectorAll('input[type="checkbox"]').forEach(el => {
+        if (el.checked){
+          filterCategory = element.id; 
+          filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
+          filtersOn.push(filterValue);
+          newResults.push(jsonOffers.filter(offer => offer[filterCategory] == filterValue));
+        }
+      });
     });
 
-    if (filtersOn.length === 0) newResults = jsonOffers;
-    else{
-      newResults = jsonOffers.filter((contact) => 
-        filtersOn.some((tag) => Object.values(contact).includes(tag)));
-    }
-
-
+    // filtering OR
+    newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
+    
+    
     //rebuild document
     rebuildList(newResults, filtersOn);
 
