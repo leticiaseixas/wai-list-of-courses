@@ -32,10 +32,12 @@ if (filterForm) {
     form.querySelectorAll('fieldset').forEach(element => {
       element.querySelectorAll('input[type="checkbox"]').forEach(el => {
         if (el.checked){
-          filterCategory = element.id; 
-          filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
+          var filterCategory = element.id; 
+          var filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
           filtersOn.push(filterValue);
-          newResults.push(jsonOffers.filter(offer => offer[filterCategory] == filterValue));
+          var results = jsonOffers.filter(offer => offer[filterCategory] == filterValue); 
+          if(results.length > 0) 
+            newResults.push(results);        
         }
       });
     });
