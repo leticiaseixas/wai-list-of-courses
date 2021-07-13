@@ -25,22 +25,25 @@ if (filterForm) {
 
     var filtersOn = [];
     var newResults = [];
-    
-    
+    var filterCategory;
+    var filterValue;
+    var results;
+
+
     // getting filters
     // each group and filters on
    
 
     // filtering AND
     form.querySelectorAll('fieldset').forEach(element => {
-      var filterCategory = element.id; 
+      filterCategory = element.id; 
       newResults[filterCategory] = [];
       element.querySelectorAll('input[type="checkbox"]').forEach(el => {
         if (el.checked){
-          var filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
+          filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
           filtersOn.push(filterValue);
           
-          var results = jsonOffers.filter(offer => offer[filterCategory] == filterValue); 
+          results = jsonOffers.filter(offer => offer[filterCategory] == filterValue); 
           
           if(results.length > 0) 
             newResults[filterCategory] = newResults[filterCategory].concat(results);        
@@ -49,8 +52,13 @@ if (filterForm) {
     });
 
     // filtering OR
+    newResults = Object.values(clean(newResults))
+    console.log(newResults);
     
-    newResults = Object.values(clean(newResults)).reduce((a, c) => a.filter(i => c.includes(i)));
+    if(newResults.length === 0)
+      rebuildList(jsonOffers, []);
+    else
+      newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
     
     
     //rebuild document
