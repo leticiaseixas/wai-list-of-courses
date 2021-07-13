@@ -27,23 +27,30 @@ if (filterForm) {
     var newResults = [];
     
     
+    // getting filters
+    // each group and filters on
+   
 
     // filtering AND
     form.querySelectorAll('fieldset').forEach(element => {
+      var filterCategory = element.id; 
+      newResults[filterCategory] = [];
       element.querySelectorAll('input[type="checkbox"]').forEach(el => {
         if (el.checked){
-          var filterCategory = element.id; 
           var filterValue = form.querySelector("label[for='" + el.id + "']").innerText;
           filtersOn.push(filterValue);
+          
           var results = jsonOffers.filter(offer => offer[filterCategory] == filterValue); 
+          
           if(results.length > 0) 
-            newResults.push(results);        
+            newResults[filterCategory] = newResults[filterCategory].concat(results);        
         }
       });
     });
 
     // filtering OR
-    newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
+    
+    newResults = Object.values(clean(newResults)).reduce((a, c) => a.filter(i => c.includes(i)));
     
     
     //rebuild document
@@ -61,6 +68,16 @@ if (filterForm) {
     console.log(offersList);
   
   }
+
+  function clean(obj) {
+    for (var propName in obj) {
+      if (obj[propName].length === 0) {
+        delete obj[propName];
+      }
+    }
+    return obj
+  }
+  
 
   function rebuildList(newResults, filtersOn) {
 
