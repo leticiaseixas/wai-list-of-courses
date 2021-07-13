@@ -24,7 +24,7 @@ if (filterForm) {
   function filterJson(form) {
 
     var filtersOn = [];
-    var filtersOnQty = 0;
+    var allFiltersOn = [];
     var filterName;
     var newResults = [];
     //var groupFiltered = [];
@@ -39,9 +39,9 @@ if (filterForm) {
 
       group.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
-          filtersOnQty ++;
           filterName = group.querySelector("label[for='" + filter.id + "']").innerText;
           filtersOn.push(filterName);
+          allFiltersOn.push(filterName);
         }
       });
 
@@ -57,18 +57,18 @@ if (filterForm) {
       }
     });
 
-    // intersection between results [offers]
     console.log(newResults);
 
-    // if no filter, rebuild list
+    // if no filter, show all offers
     if (newResults.length === 0)
-      rebuildList(jsonOffers, filtersOnQty);
+      newResults = jsonOffers;
+    // intersection between results [offers]
     else
       newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
 
 
     //rebuild document
-    rebuildList(newResults, filtersOnQty);
+    rebuildList(newResults, allFiltersOn);
 
     console.log("Filters:");
     console.log(jsonFilters);
