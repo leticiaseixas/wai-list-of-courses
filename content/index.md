@@ -4,12 +4,14 @@
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
-title: "List of courses"
-lang: en
+title: "List of Accessibility Courses"
+title_html: "List of Accessibility Courses:<br>Education and training" 
+nav_title: "List of Courses"
+
+lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
 
-doc-note-type: draft
-layout: list-with-filters
+
 
 # translators:    # remove from the beginning of this line and the lines below: "# " (the hash sign and the space)
 # - name: "Jan Doe"   # Replace Jan Doe with translator name
@@ -22,22 +24,17 @@ github:
   repository: leticiaseixas/wai-list-of-courses
   path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
 permalink: /list-of-courses/   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
-
 # NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
 # navigation:
-  # previous: /path/to/previous/file/
-  # next: /path/to/next/file/
-# @@SLH To Do: figure out if need to add lang here, too, and if this replaces "order" from older resources?
+  # previous: /teach-advocate/course-list/@@
+  # next: /teach-advocate/course-list/@@
 
-ref: /   # Translators, do not change this
-changelog: /@@/changelog/
+ref: /teach-advocate/course-list/   # Translators, do not change this
+changelog: /teach-advocate/course-list/changelog/  # NEW: set up a changelog so it's ready for later
 acknowledgements: /teach-advocate/course-list/acknowledgements/  # NEW: delete if don't have a separate acknowledgements page. And delete it in the footer below.
 
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
-image: /content-images/wai-@@repo/social.png  # NEW: image for social media
-feedbackmail: wai@w3.org  # NEW: delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
-
-# NEW: Footer below has several options, and not all will be relevant for specific pages. (Ask Shawn if questions.)
+# image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
 
 # In the footer below:
 # Do not translate or change CHANGELOG or ACKNOWLEDGEMENTS.
@@ -48,6 +45,7 @@ footer: >
    <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
+
 
 ---
 
