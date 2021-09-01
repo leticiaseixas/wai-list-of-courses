@@ -92,7 +92,7 @@ if (filterForm) {
       hideClearFilters(false);
     }
     else {
-      document.getElementById("total-offers").innerText = "Sorry, but no items match these criteria";
+      document.getElementById("no-offers").hidden = visibility;
       hideClearFilters(false);
     }
   }

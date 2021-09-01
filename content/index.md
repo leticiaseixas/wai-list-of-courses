@@ -98,7 +98,10 @@ footer: >
         <p>Showing {{ site.data.offers | size }} offers</p>
       <button>Expand all sections</button>
       </span>
-      <a id="deselect" class="button deselect" hidden><span>Clear filters</span></a> 
+      <span id="no-offers" hidden>
+        <p>Sorry, but no items match these criteria</p>
+        <a id="deselect" class="button deselect" hidden><span>Clear filters</span></a> 
+      </span>
       {% for offer in site.data.offers %}
         {% include offer.liquid %}
       {% endfor %}
