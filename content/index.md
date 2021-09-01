@@ -99,7 +99,7 @@ footer: >
       <button>Expand all sections</button>
       </span>
       <span id="no-offers" hidden>
-        <p>Sorry, but no items match these criteria</p>
+        <p>Sorry, but no items match these criteria.</p>
       </span>
       <a id="deselect" class="button deselect" hidden><span>Clear filters</span></a> 
       {% for offer in site.data.offers %}
