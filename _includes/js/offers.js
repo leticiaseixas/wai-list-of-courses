@@ -87,13 +87,17 @@ if (filterForm) {
       hideClearFilters(true);
     }
     else if (newResults.length > 0) {
+
+      document.getElementById("no-offers").hidden = true;
+      document.getElementById("yes-offers").hidden = false;
+
       document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers matching the following criteria: " + filtersOn.toString();
       hideClearFilters(false);
     }
     else {
-      document.getElementById("no-offers").hidden = true;
-      document.getElementById("total-offers").hidden = false;
+      document.getElementById("no-offers").hidden = false;
+      document.getElementById("yes-offers").hidden = true;
       hideClearFilters(false);
     }
   }

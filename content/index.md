@@ -94,8 +94,8 @@ footer: >
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
     <div id="offers-list">
-      <span id="total-offers">
-        <p>Showing {{ site.data.offers | size }} offers</p>
+      <span id="yes-offers">
+        <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
       <button>Expand all sections</button>
       </span>
       <span id="no-offers" hidden>
