@@ -94,8 +94,10 @@ footer: >
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
     <div id="offers-list">
-      <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+      <span id="total-offers">
+        <p>Showing {{ site.data.offers | size }} offers</p>
       <button>Expand all sections</button>
+      </span>
       <a id="deselect" class="button deselect" hidden><span>Clear filters</span></a> 
       {% for offer in site.data.offers %}
         {% include offer.liquid %}
