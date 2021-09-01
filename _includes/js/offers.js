@@ -88,11 +88,12 @@ if (filterForm) {
     }
     else if (newResults.length > 0) {
       document.getElementById("total-offers").innerText =
-        "Showing " + newResults.length + " offers matching the filters: " + filtersOn.toString();
+        "Showing " + newResults.length + " offers matching the following criteria: " + filtersOn.toString();
       hideClearFilters(false);
     }
     else {
-      document.getElementById("no-offers").visibility = true;
+      document.getElementById("no-offers").hidden = true;
+      document.getElementById("total-offers").hidden = false;
       hideClearFilters(false);
     }
   }
