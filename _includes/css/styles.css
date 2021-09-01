@@ -34,8 +34,8 @@
     font-size: 85%;
   }
 
-  .offers-filters #button{
-    margin-bottom: 10px;
+  #total-offers button {
+    margin-bottom: 1em;
   }
 
   .disclaimer {
