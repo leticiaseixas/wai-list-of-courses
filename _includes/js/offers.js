@@ -82,6 +82,9 @@ if (filterForm) {
     })
 
     if (filtersOn.length === 0) {
+      document.getElementById("no-offers").hidden = true;
+      document.getElementById("yes-offers").hidden = false;
+      
       document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers";
       hideClearFilters(true);
