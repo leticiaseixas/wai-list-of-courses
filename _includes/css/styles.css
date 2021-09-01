@@ -34,6 +34,10 @@
     font-size: 85%;
   }
 
+  .offers-filters #button{
+    margin-bottom: 10px;
+  }
+
   .disclaimer {
     border: 1px solid var(--line-grey);
   }

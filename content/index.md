@@ -4,8 +4,8 @@
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
-title: "List of Accessibility Courses"
-title_html: "List of Accessibility Courses:<br>Education and training" 
+title: "[Draft] List of Accessibility Courses"
+title_html: "[Draft] List of Accessibility Courses:<br>Education and training" 
 nav_title: "List of Courses"
 
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
