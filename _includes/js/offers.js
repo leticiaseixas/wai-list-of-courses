@@ -92,7 +92,7 @@ if (filterForm) {
       hideClearFilters(false);
     }
     else {
-      document.getElementById("no-offers").hidden = visibility;
+      document.getElementById("no-offers").visibility = true;
       hideClearFilters(false);
     }
   }

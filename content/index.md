@@ -100,8 +100,8 @@ footer: >
       </span>
       <span id="no-offers" hidden>
         <p>Sorry, but no items match these criteria</p>
-        <a id="deselect" class="button deselect" hidden><span>Clear filters</span></a> 
       </span>
+      <a id="deselect" class="button deselect" hidden><span>Clear filters</span></a> 
       {% for offer in site.data.offers %}
         {% include offer.liquid %}
       {% endfor %}
