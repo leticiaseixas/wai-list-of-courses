@@ -123,11 +123,11 @@ if (filterForm) {
     document.getElementById("deselect").hidden = visibility;
   }
 
-  function hideExpandCollapseAllButton(button, visibility) {
-    if (visibility) button.setProperty("display", "none", "important");
-    else button.setProperty("display", "inline", "important");
+  function hideExpandCollapseAllButton(el, visibility) {
+    if (visibility) el.setProperty("display", "none", "important");
+    else el.setProperty("display", "inline", "important");
     
-    button.hidden = visibility;
+    el.hidden = visibility;
   }
 
 
