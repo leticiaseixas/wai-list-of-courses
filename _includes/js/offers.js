@@ -20,12 +20,13 @@ if (filterForm) {
   });
 
   document.getElementById("expand-sections").addEventListener('click', e => {
-    document.getElementById("col-sections").hidden = false;
+    
+    document.getElementById("offers-list").querySelectorAll("details").forEach(el => el.open = true);
 
   });
 
   document.getElementById("col-sections").addEventListener('click', e => {
-    document.getElementById("expand-sections").hidden = true;
+    document.getElementById("offers-list").querySelectorAll("details").forEach(el => el.open = false);
 
   });
 
