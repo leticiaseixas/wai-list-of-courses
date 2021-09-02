@@ -96,8 +96,8 @@ footer: >
     <div id="offers-list">
       <span id="yes-offers">
         <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
-      <a id="expand-sections" class="button">Expand all sections</a>
-      <a id="col-sections" class="button" hidden>Collapse all sections</a>
+      <a id="expand-sections" class="button"><span>Expand all sections</span></a>
+      <a id="col-sections" class="button" hidden><span>Collapse all sections</span></a>
       </span>
       <span id="no-offers" hidden>
         <p id="total-offers">Sorry, but no items match these criteria.</p>

@@ -103,7 +103,7 @@ if (filterForm) {
 
       document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers";
-      hideClearFilters(true);
+        document.getElementById("deselect").hidden = true;
     }
     else if (newResults.length > 0) {
 
@@ -112,29 +112,17 @@ if (filterForm) {
 
       document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers matching the following criteria: " + filtersOn.toString();
-      hideClearFilters(false);
+        document.getElementById("deselect").hidden = false;
     }
     else {
       document.getElementById("no-offers").hidden = false;
       document.getElementById("yes-offers").hidden = true;
       document.getElementById("total-no-offers").innerText =
       "Sorry, but no items match the following criteria: " + filtersOn.toString();
-      hideClearFilters(false);
+      document.getElementById("deselect").hidden = false;
     }
   }
 
-  function hideClearFilters(visibility) {
-    document.getElementById("deselect").hidden = visibility;
-  }
-
-  function hideExpandCollapseAllButton(el, visibility) {
-    // if (visibility) el.style.setProperty("display", "none", "important");
-    // else el.style.setProperty("display", "inline", "important");
-    
-    el.hidden = visibility;
-  }
-
-  
 
   
   
