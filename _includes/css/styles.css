@@ -39,7 +39,7 @@
   }
 
   #yes-offers button #col-sections{
-    display: none;
+    display: none !important;
   }
 
 
