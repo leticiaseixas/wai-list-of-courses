@@ -272,3 +272,21 @@
       grid-template-columns: 1fr 4fr;
     }
   }
+
+  dl {
+    display: grid;
+    grid-template-columns: 33% auto;
+  }
+  
+  dt {
+    grid-column: 1;
+  }
+
+  dt::after{
+    content: ':';
+  }
+  
+  dd {
+    grid-column: 2;
+  }
+
