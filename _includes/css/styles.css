@@ -296,4 +296,7 @@
   dt::after {
     content: ": ";
   }
+  #offer__features dd dt {
+    margin-top: 0 !important;
+  }
 
