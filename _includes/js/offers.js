@@ -124,8 +124,8 @@ if (filterForm) {
   }
 
   function hideExpandCollapseAllButton(el, visibility) {
-    if (visibility) el.setProperty("display", "none", "important");
-    else el.setProperty("display", "inline", "important");
+    if (visibility) el.style.setProperty("display", "none", "important");
+    else el.style.setProperty("display", "inline", "important");
     
     el.hidden = visibility;
   }
