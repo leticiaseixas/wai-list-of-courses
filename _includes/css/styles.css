@@ -217,7 +217,10 @@
     margin-bottom: 2em;
   }
   
-  .deselect[hidden] { display: none !important }
+  .deselect[hidden] .col-sections[hidden] .expand-sections[hidden]
+  { 
+    display: none !important 
+  }
 
   .submit-a-offer {
     grid-column: 8 / 10;
