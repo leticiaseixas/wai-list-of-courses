@@ -24,8 +24,12 @@ if (filterForm) {
 
   buttonExpandAll.addEventListener('click', e => {
     offersList.querySelectorAll("details").forEach(el => el.open = true);
-    hideExpandCollapseAllButton(buttonExpandAll, true);
-    hideExpandCollapseAllButton(buttonColapseAll, false);
+
+    buttonColapseAll.hidden = false;
+    buttonExpandAll.hidden = true;
+
+   // hideExpandCollapseAllButton(buttonExpandAll, true);
+    //hideExpandCollapseAllButton(buttonColapseAll, false);
   });
 
   buttonColapseAll.addEventListener('click', e => {
