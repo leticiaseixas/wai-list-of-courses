@@ -274,19 +274,20 @@
   }
 
   dl {
-    display: grid;
-    grid-template-columns: 33% auto;
+    padding: 0.5em;
   }
-  
   dt {
-    grid-column: 1;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
   }
-
-  dt::after{
-    content: ':';
+  dt::after {
+    content: ":";
   }
-  
   dd {
-    grid-column: 2;
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
   }
 
