@@ -1,7 +1,10 @@
 const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
-const offersList = document.getElementById('offers-list');
+
+var offersList = document.getElementById('offers-list');
+var buttonExpandAll = document.getElementById("expand-sections");
+var buttonColapseAll = document.getElementById("col-sections");
 
 if (filterForm) {
 
@@ -19,15 +22,16 @@ if (filterForm) {
     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
   });
 
-  document.getElementById("expand-sections").addEventListener('click', e => {
-    
-    document.getElementById("offers-list").querySelectorAll("details").forEach(el => el.open = true);
-
+  buttonExpandAll.addEventListener('click', e => {
+    offersList.querySelectorAll("details").forEach(el => el.open = true);
+    hideExpandCollapseAllButton(buttonExpandAll, true);
+    hideExpandCollapseAllButton(buttonColapseAll, false);
   });
 
-  document.getElementById("col-sections").addEventListener('click', e => {
-    document.getElementById("offers-list").querySelectorAll("details").forEach(el => el.open = false);
-
+  buttonColapseAll.addEventListener('click', e => {
+    offersList.querySelectorAll("details").forEach(el => el.open = false);
+    hideExpandCollapseAllButton(buttonExpandAll, false);
+    hideExpandCollapseAllButton(buttonColapseAll, true);
   });
 
 
@@ -119,6 +123,15 @@ if (filterForm) {
     document.getElementById("deselect").hidden = visibility;
   }
 
+  function hideExpandCollapseAllButton(button, visibility) {
+    button.hidden = visibility;
+    if (visibility) button.style.display = 'none';
+    else button.style.display = 'inline';
+  }
+
+
+
+  
   
   function callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList){
     console.log("Filters:");
