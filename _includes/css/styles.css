@@ -213,13 +213,12 @@
     transition: opacity 0.2s;
   }
 
-  .deselect, .col-sections, .expand-sections{
+  #deselect, #col-sections, #expand-sections {
     margin-bottom: 2em;
     cursor: pointer;
   }
   
-  .deselect[hidden], .col-sections[hidden], .expand-sections[hidden]
-  { 
+  #deselect[hidden], #col-sections[hidden], #expand-sections[hidden] { 
     display: none !important 
   }
 
