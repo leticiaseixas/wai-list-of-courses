@@ -213,8 +213,9 @@
     transition: opacity 0.2s;
   }
 
-  .deselect{
+  .deselect, .col-sections, .expand-sections{
     margin-bottom: 2em;
+    cursor: pointer;
   }
   
   .deselect[hidden], .col-sections[hidden], .expand-sections[hidden]
