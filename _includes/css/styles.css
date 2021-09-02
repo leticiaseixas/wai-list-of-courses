@@ -217,7 +217,7 @@
     margin-bottom: 2em;
   }
   
-  .deselect[hidden] .col-sections[hidden] .expand-sections[hidden]
+  .deselect[hidden], .col-sections[hidden], .expand-sections[hidden]
   { 
     display: none !important 
   }
