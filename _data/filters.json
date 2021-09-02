@@ -28,7 +28,7 @@
   },
   {
     "id": "target_role",
-    "name": "Target role",
+    "name": "Audience",
     "type": "checkbox",
     "options": [
       {
