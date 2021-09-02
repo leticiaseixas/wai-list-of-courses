@@ -22,9 +22,9 @@
           <dd>{{ offer.target_role}}</dd>
           <dt>Level</dt>
           <dd>{{ offer.level}}</dd>
-          <dt>WAI Curricula correspondence</dt>
+          <dt>WAI Curricula module</dt>
           <dd>{{ offer.curricula_correspondence}}</dd>
-          <dt>Keywords/Topics</dt>
+          <dt>Topics</dt>
           <dd>{{ offer.keywords_topics}}</dd>
           <dt>Language</dt>
           <dd>{{ offer.language}}</dd>
@@ -38,15 +38,17 @@
           <dd>{{ offer.cost}}</dd>
           <dt>Duration</dt>
           <dd>{{ offer.duration}}</dd>
-          <dt>Link to offer page</dt>
+          <dt>Website</dt>
           <dd>{{ offer.offer_link}}</dd>
-          <dt>Link to offer reviews page</dt>
+          <dt>Reviews page</dt>
           <dd>{{ offer.offer_link_reviews}}</dd>
           <dt>Date of last information update</dt>
           <dd>{{ offer.offer_info_last_update}}</dd>
           <dt>Date of last update to course contents</dt>
           <dd>{{ offer.offer_content_last_update}}</dd>
         </dl>
+        <p>This information was last updated on {{ offer.offer_info_last_update}}</p>
+        <p>This offer was last updated on {{ offer.offer_content_last_update}}</p>
     </div>
   </details>
 </article>

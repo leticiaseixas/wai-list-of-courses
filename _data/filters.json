@@ -110,7 +110,7 @@
       },
       {
         "id": "free_limited_time",
-        "name": "Free for limited time"
+        "name": "Free for limited content or duration"
       },
       {
         "id": "free_or_reduced_for_some",
@@ -118,7 +118,7 @@
       },
       {
         "id": "for_fee",
-        "name": "For fee"
+        "name": "Paid"
       }
     ]
   }

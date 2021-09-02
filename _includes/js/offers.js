@@ -115,6 +115,8 @@ if (filterForm) {
     else {
       document.getElementById("no-offers").hidden = false;
       document.getElementById("yes-offers").hidden = true;
+      document.getElementById("total-no-offers").innerText =
+      "Sorry, but no items match the following criteria: " + filtersOn.toString();
       hideClearFilters(false);
     }
   }
@@ -130,7 +132,7 @@ if (filterForm) {
     el.hidden = visibility;
   }
 
-
+  
 
   
   
