@@ -67,6 +67,12 @@ if (filterForm) {
         }
       });
 
+      if (form.getElementById('language').value !=null && form.getElementById('language').value != ""){
+        filtersOn.push('language-filter');
+
+      }
+      console.log(filtersOn);
+
       if (filtersOn.length > 0) {
 
         jsonOffers.forEach(offer => {
@@ -89,7 +95,7 @@ if (filterForm) {
     //rebuild document
     rebuildList(newResults, allFiltersOn);
 
-    // callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList);
+    callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList);
 
   }
 

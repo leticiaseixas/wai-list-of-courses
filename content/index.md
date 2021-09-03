@@ -80,7 +80,7 @@ footer: >
         {% endfor %}
       </fieldset>
       {% endfor %} 
-    <fieldset id="language">
+    <fieldset id="language-filter">
         <legend>Language</legend>
         <div class="offers-filters__filter">
         <select name="language" id="language">
