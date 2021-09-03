@@ -79,9 +79,11 @@ footer: >
         {% endfor %}
       </fieldset>
       {% endfor %} 
-      {% for language in site.data.lang %}
-      <p>{% language %}</p>
+      <fieldset id="language">
+      {% for l in site.data.lang %}
+      <p>{% l %}</p>
       {% endfor %}
+      </fieldset>
 <!--       <fieldset id="language">
         <legend>Language</legend>
         <div class="offers-filters__filter">
