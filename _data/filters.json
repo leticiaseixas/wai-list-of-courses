@@ -88,6 +88,29 @@
     ]
   },
   {
+    "id": "learning",
+    "name": "Learning",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "guided",
+        "name": "Guided"
+      },
+      {
+        "id": "non-guided",
+        "name": "Non-guided"
+      },
+      {
+        "id": "synchronous",
+        "name": "Synchronous"
+      },
+      {
+        "id": "asynchronous",
+        "name": "Asynchronous"
+      }
+    ]
+  },
+  {
     "id": "cost",
     "name": "Cost",
     "type": "checkbox",
