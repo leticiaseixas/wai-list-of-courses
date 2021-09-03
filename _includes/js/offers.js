@@ -58,25 +58,25 @@ if (filterForm) {
       // identify filters on
       filtersOn = [];
       offersFiltered = [];
-      filtersSelect = [];
 
       group.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
-          filterName = group.querySelector("label[for='" + filter.id + "']").innerText;
-          filtersOn.push(filterName);
-          allFiltersOn.push(filterName);
+          filterValue = group.querySelector("label[for='" + filter.id + "']").innerText;
+          filtersOn.push({filterName: group.id, filterValue: filterValue});
+          
+          // TODO = Rebuild List
+          allFiltersOn.push(filterValue);
         }
       });
 
       group.querySelectorAll('select').forEach(filter => {
         if (filter.value != "") {
-          
-          filtersSelect.push(filter.id, filter.value);
-          
+          filtersOn.push({filterName: filter.id, filterValue: filter.value});
         }
       });
+
       console.log('Filter Select:');
-      console.log(filtersSelect);
+      console.log(filtersOn);
 
       if (filtersOn.length > 0) {
 
@@ -85,8 +85,10 @@ if (filterForm) {
             offersFiltered.push(offer);
         })
         newResults.push(offersFiltered);
-
       }
+
+
+
     });
 
     // if no filter, show all offers
