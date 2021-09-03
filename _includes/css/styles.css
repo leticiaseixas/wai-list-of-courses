@@ -229,7 +229,7 @@
     cursor: pointer;
   }
 
-  .list_buttons [hidden] {
+  .list_buttons[hidden] {
     display: none !important
   }
 
