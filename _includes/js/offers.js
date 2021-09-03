@@ -58,7 +58,7 @@ if (filterForm) {
       // identify filters on
       filtersOn = [];
       offersFiltered = [];
-      filterSelect = [];
+      filtersSelect = [];
 
       group.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
