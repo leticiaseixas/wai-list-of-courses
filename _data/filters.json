@@ -5,24 +5,16 @@
     "type": "checkbox",
     "options": [
       {
-        "id": "non_credit",
-        "name": "Non-credit"
+        "id": "education",
+        "name": "Education"
       },
       {
-        "id": "undergrad",
-        "name": "Undergrad"
+        "id": "training",
+        "name": "Training"
       },
       {
-        "id": "graduate",
-        "name": "Graduate"
-      },
-      {
-        "id": "professional",
-        "name": "Professional"
-      },
-      {
-        "id": "other",
-        "name": "Other"
+        "id": "certification",
+        "name": "Certification"
       }
     ]
   },

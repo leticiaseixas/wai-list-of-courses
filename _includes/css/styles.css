@@ -230,7 +230,7 @@
   }
 
   .list_buttons[hidden] {
-    display: none !important
+    display: none !important;
   }
 
   .submit-a-offer {
