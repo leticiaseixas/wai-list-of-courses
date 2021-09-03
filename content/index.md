@@ -54,6 +54,8 @@ footer: >
 {% include css/styles.css %}
 </style>
 
+{{ site.data.lang | jsonify }}
+
 <div class="header-sup">
   <p>Browse for offers of education, training, and certification on digital accessibility.</p>
 
@@ -63,7 +65,7 @@ footer: >
 
 <!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
 -->
-{{ site.data.lang | jsonify }}
+
 
 <div id="app" class="offers">
   <div id="left-col" class="offers-filters">
@@ -86,7 +88,7 @@ footer: >
         <select name="language" id="language">
           {% for language in site.data.lang %}
             {{ language | inspect }} 
-          <option value="">{{ language.name }}</option>
+          <option value="{{ language[1].name }}">{{ language[0] }}</option>
         {% endfor %}
         </select>
         </div>
