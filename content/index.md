@@ -63,7 +63,7 @@ footer: >
 
 <!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
 -->
-{{ site.data.lang | inspect }}
+{{ site.data.lang | jsonify }}
 
 <div id="app" class="offers">
   <div id="left-col" class="offers-filters">
@@ -85,6 +85,7 @@ footer: >
         <div class="offers-filters__filter">
         <select name="language" id="language">
           {% for language in site.data.lang %}
+            {{ language | inspect }} 
           <option value="">{{ language.name }}</option>
         {% endfor %}
         </select>
