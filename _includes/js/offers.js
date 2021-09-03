@@ -62,6 +62,7 @@ if (filterForm) {
       group.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
           filterValue = group.querySelector("label[for='" + filter.id + "']").innerText;
+          console.log('filterName: ' + group.id +' filterValue: ' + filterValue);
           filtersOn.push({filterName: group.id, filterValue: filterValue});
           
           // TODO = Rebuild List
@@ -102,7 +103,7 @@ if (filterForm) {
     //rebuild document
     rebuildList(newResults, allFiltersOn);
 
-    callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList);
+    // callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList);
 
   }
 
