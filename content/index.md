@@ -86,7 +86,6 @@ footer: >
         {% 
         console.log({{ site.data.lang | json }});
         for language in site.data.lang 
-        
         %}
           <option value="">{{ language.name }}</option>
         {% endfor %}
