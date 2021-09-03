@@ -17,10 +17,16 @@ if (filterForm) {
     filterJson(form);
   });
 
-  document.getElementById("deselect").addEventListener('click', e => {
+  document.getElementById("deselect-1").addEventListener('click', e => {
     rebuildList(jsonOffers, []);
     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
   });
+
+  document.getElementById("deselect-2").addEventListener('click', e => {
+    rebuildList(jsonOffers, []);
+    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+  });
+
 
   buttonExpandAll.addEventListener('click', e => {
     offersList.querySelectorAll("details").forEach(el => el.open = true);
@@ -103,7 +109,8 @@ if (filterForm) {
 
       document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers";
-        document.getElementById("deselect").hidden = true;
+        document.getElementById("deselect-1").hidden = true;
+        document.getElementById("deselect-2").hidden = true;
     }
     else if (newResults.length > 0) {
 
@@ -112,14 +119,16 @@ if (filterForm) {
 
       document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers matching the following criteria: " + filtersOn.toString();
-        document.getElementById("deselect").hidden = false;
+        document.getElementById("deselect-1").hidden = false;
+        document.getElementById("deselect-2").hidden = false;
     }
     else {
       document.getElementById("no-offers").hidden = false;
       document.getElementById("yes-offers").hidden = true;
       document.getElementById("total-no-offers").innerText =
       "Sorry, but no items match the following criteria: " + filtersOn.toString();
-      document.getElementById("deselect").hidden = false;
+      document.getElementById("deselect-1").hidden = false;
+      document.getElementById("deselect-2").hidden = false;
     }
   }
 

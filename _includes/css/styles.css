@@ -224,12 +224,12 @@
     transition: opacity 0.2s;
   }
 
-  #deselect, #col-sections, #expand-sections {
+  .list_buttons {
     margin-bottom: 2em;
     cursor: pointer;
   }
 
-  #deselect[hidden], #col-sections[hidden], #expand-sections[hidden] {
+  .list_buttons [hidden] {
     display: none !important
   }
 

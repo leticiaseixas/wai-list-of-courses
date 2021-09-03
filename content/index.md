@@ -80,6 +80,7 @@ footer: >
       </fieldset>
       {% endfor %} 
     </form>
+    <a id="deselect-1" class="button list_buttons" hidden><span>Clear filters</span></a> 
     <div class="disclaimer" id="disclaimer">
         <h2>Important Disclaimer</h2>
         <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
@@ -96,13 +97,13 @@ footer: >
     <div id="offers-list">
       <span id="yes-offers">
         <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
-      <a id="expand-sections" class="button"><span>Expand all sections</span></a>
-      <a id="col-sections" class="button" hidden><span>Collapse all sections</span></a>
+      <a id="expand-sections" class="button list_buttons"><span>Expand all sections</span></a>
+      <a id="col-sections" class="button list_buttons" hidden><span>Collapse all sections</span></a>
       </span>
       <span id="no-offers" hidden>
         <p id="total-no-offers"></p>
       </span>
-      <a id="deselect" class="button" hidden><span>Clear filters</span></a> 
+      <a id="deselect-2" class="button list_buttons" hidden><span>Clear filters</span></a> 
       {% for offer in site.data.offers %}
         {% include offer.liquid %}
       {% endfor %}
