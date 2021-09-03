@@ -165,7 +165,7 @@
     "name": "Screen Reader Testing",
     "provider": "Provider 8",
     "description": "An overview of screen reader testing techniques for informational websites and complex web applications.",
-    "offer_type": "Educational",
+    "offer_type": "Education",
     "degree_certification": "None",
     "prerequisites": "None",
     "target_role": "Tester",
