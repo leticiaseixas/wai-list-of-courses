@@ -38,11 +38,6 @@
     margin-bottom: 1em;
   }
 
-  #col-sections{
-    display: none !important;
-  }
-
-
   .disclaimer {
     border: 1px solid var(--line-grey);
   }

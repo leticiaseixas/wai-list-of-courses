@@ -100,7 +100,7 @@ footer: >
       <a id="col-sections" class="button" hidden><span>Collapse all sections</span></a>
       </span>
       <span id="no-offers" hidden>
-        <p id="total-offers">Sorry, but no items match these criteria.</p>
+        <p id="total-no-offers"></p>
       </span>
       <a id="deselect" class="button" hidden><span>Clear filters</span></a> 
       {% for offer in site.data.offers %}
