@@ -79,12 +79,7 @@ footer: >
         {% endfor %}
       </fieldset>
       {% endfor %} 
-      <fieldset id="language">
-      {% for l in site.data.lang %}
-      <p>{% l %}</p>
-      {% endfor %}
-      </fieldset>
-<!--       <fieldset id="language">
+    <fieldset id="language">
         <legend>Language</legend>
         <div class="offers-filters__filter">
         <select name="language" id="language">
@@ -93,7 +88,7 @@ footer: >
         {% endfor %}
         </select>
         </div>
-      </fieldset> -->
+      </fieldset>
     </form>
     <a id="deselect-1" class="button list_buttons" hidden><span>Clear filters</span></a> 
     <div class="disclaimer" id="disclaimer">
