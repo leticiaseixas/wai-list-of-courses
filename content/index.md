@@ -83,7 +83,7 @@ footer: >
         <legend>Language</legend>
         <div class="offers-filters__filter">
         <select name="language" id="language">
-        {% console.log({{ site.data.lang | json }}) %}
+        <p>{% {{ site.data.lang | json }} %}</p>
         {% for language in site.data.lang %}
           <option value="">{{ language.name }}</option>
         {% endfor %}
