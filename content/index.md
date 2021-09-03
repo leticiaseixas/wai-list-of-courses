@@ -85,7 +85,7 @@ footer: >
         <div class="offers-filters__filter">
         <select name="language" id="language">
           {% for language in site.data.lang %}
-          <option value="{{ language[0] }}">{{ language[1].name (language[1].nativeName)}}</option>
+          <option value="{{ language[0] }}">{{ language[1].name }} ({{ language[1].nativeName}})</option>
         {% endfor %}
         </select>
         </div>

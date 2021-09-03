@@ -41,6 +41,10 @@
     font-size: 85%;
   }
 
+  #language select{
+    max-width: 49%;
+  }
+
   #yes-offers button {
     margin-bottom: 1em;
   }
