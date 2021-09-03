@@ -228,50 +228,19 @@
     .submit-a-offer {
       grid-column: 7 / 9;
     }
-  }
-
-  .offer__tabs {
-    background-color: var(--cloudy-subtle);
-    display: flex;
-  }
-    .offer__tabs a {
-      color: var(--off-black);
-    }
-  [data-do-tabs] {
-    border-top: 1px solid var(--line-grey);
-  }
-  [data-tab] {
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-  }
-  [data-tabpanel] {
-    padding: 1.5em 2em;
-  }
-  [data-tabpanel] dl {
-    margin-top: 0;
-  }
-  [data-tabpanel] dt {
-    margin-top: 1em;
-  }
-  [data-tabpanel] dl:first-child dt:first-child {
-    margin-top: 0;
-  }
-  [data-tab-current] {
-    background-color: var(--off-white);
-  } 
-
-  @media (min-width: 60em) {
-    .offer__tabs {
-      display: block;
-    }
-    [data-do-tabs] {
-      display: grid;
-      grid-template-columns: 1fr 4fr;
-    }
+  
   }
 
 dt::after {
     content: ":";
 }
 
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 0.5rem 1.5rem;
+}
+
+#offer__features dl, dd{
+  margin-top: 0px !important;
+}
