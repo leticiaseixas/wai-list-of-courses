@@ -84,7 +84,7 @@ footer: >
         <div class="offers-filters__filter">
         <select name="language" id="language">
         {% for lang in site.data.lang %}
-          <option value="{{ lang }}">{{ lang.name }}</option>
+          <option value="">{{ lang.name }}</option>
         {% endfor %}
         </select>
         </div>
