@@ -67,10 +67,14 @@ if (filterForm) {
         }
       });
 
-      if (form.getElementById('language').value !=null && form.getElementById('language').value != ""){
-        filtersOn.push('language-filter');
+      group.querySelectorAll('select').forEach(filter => {
+        if (filter.value != "") {
+          filterName = filter.id;
+          filtersOn.push(filterName);
+          allFiltersOn.push(filterName);
+        }
+      });
 
-      }
       console.log(filtersOn);
 
       if (filtersOn.length > 0) {
