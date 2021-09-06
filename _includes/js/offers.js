@@ -107,7 +107,7 @@ if (filterForm) {
 
     var listFiltersOnString = '';
     filtersOn.forEach(f => {
-      listFiltersOnString += f.filterName + f.filterValues.toString();
+      listFiltersOnString += '<strong>' + f.filterName + ': </strong>' + f.filterValues.toString();
     });
 
 
