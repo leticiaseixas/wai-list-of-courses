@@ -76,8 +76,7 @@ if (filterForm) {
         }
       });
 
-      console.log('Filter Select:');
-      console.log(filtersOn);
+
 
       if (filtersOn.length > 0) {
 
@@ -91,6 +90,9 @@ if (filterForm) {
 
 
     });
+
+    console.log('Filter Select:');
+    console.log(filtersOn);
 
     // if no filter, show all offers
     if (newResults.length === 0)
