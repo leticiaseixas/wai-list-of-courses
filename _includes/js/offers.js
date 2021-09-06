@@ -33,10 +33,8 @@ if (filterForm) {
 
   buttonExpandAll.addEventListener('click', e => {
     offersList.querySelectorAll("details").forEach(el => el.open = true);
-
     buttonColapseAll.hidden = false;
     buttonExpandAll.hidden = true;
-
   });
 
   buttonColapseAll.addEventListener('click', e => {
