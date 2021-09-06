@@ -109,10 +109,12 @@ footer: >
     <div id="offers-list">
       <span id="status">
         <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
-      <a id="expand-sections" class="button list_buttons"><span>Expand all sections</span></a>
-      <a id="col-sections" class="button list_buttons" hidden><span>Collapse all sections</span></a>
       </span>
-      <a id="deselect-2" class="button list_buttons" hidden><span>Clear filters</span></a> 
+      <span id="buttons-top">
+        <a id="expand-sections" class="button list_buttons"><span>Expand all sections</span></a>
+        <a id="col-sections" class="button list_buttons" hidden><span>Collapse all sections</span></a>
+        <a id="deselect-2" class="button list_buttons" hidden><span>Clear filters</span></a> 
+      </span>
       {% for offer in site.data.offers %}
         {% include offer.liquid %}
       {% endfor %}

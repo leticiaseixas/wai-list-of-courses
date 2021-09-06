@@ -120,20 +120,20 @@ if (filterForm) {
 
     if (filtersOn.length === 0) {
 
-      document.getElementById("status").innerText =
+      document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers";
       document.getElementById("deselect-1").hidden = true;
       document.getElementById("deselect-2").hidden = true;
     }
     else if (newResults.length > 0) {
 
-      document.getElementById("status").innerText =
+      document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers matching the following criteria: " + listFiltersOnString;
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
     }
     else {
-      document.getElementById("status").innerText =
+      document.getElementById("total-offers").innerText =
         "Sorry, but no items match the following criteria: " + listFiltersOnString;
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
