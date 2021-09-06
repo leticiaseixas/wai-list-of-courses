@@ -21,11 +21,13 @@ if (filterForm) {
   document.getElementById("deselect-1").addEventListener('click', e => {
     rebuildList(jsonOffers, []);
     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+    filterForm.querySelectorAll("select").forEach(el => el.selected = 0);
   });
 
   document.getElementById("deselect-2").addEventListener('click', e => {
     rebuildList(jsonOffers, []);
     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+    filterForm.querySelectorAll("select").forEach(el => el.selected = 0);
   });
 
 
@@ -75,6 +77,7 @@ if (filterForm) {
         }
       });
     });
+
     // filtering results
     var newResults = [];
 
@@ -95,7 +98,7 @@ if (filterForm) {
     console.log(filtersOn);
 
     //rebuild document
-    rebuildList(newResults, allFiltersOn);
+    rebuildList(newResults, filtersOn);
 
     // callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList);
 
