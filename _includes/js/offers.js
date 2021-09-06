@@ -46,53 +46,42 @@ if (filterForm) {
 
   function filterJson(form) {
 
+    form = document.querySelector('[data-filter-form]');
+    // selecting filters on
+
+    var attValues = [];
     var filtersOn = [];
-    var allFiltersOn = [];
-    var filterName;
-    var newResults = [];
-    var offersFiltered = [];
 
-    // for each group filter category
-    form.querySelectorAll('fieldset').forEach(group => {
+    // for each attribute group
+    form.querySelectorAll('fieldset').forEach(att => {
 
-      // identify filters on
-      filtersOn = [];
-      offersFiltered = [];
-
-      group.querySelectorAll('input[type="checkbox"]').forEach(filter => {
+      // [att, [checked values]]
+      attValues = [];
+      att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
-          filterValue = group.querySelector("label[for='" + filter.id + "']").innerText;
-          console.log('filterName: ' + group.id +' filterValue: ' + filterValue);
-          filtersOn.push({filterName: group.id, filterValue: filterValue});
-          
-          // TODO = Rebuild List
-          allFiltersOn.push(filterValue);
+          attValues.push(att.querySelector("label[for='" + filter.id + "']").innerText);
         }
-      });
+      })
 
-      group.querySelectorAll('select').forEach(filter => {
+      if (attValues.length > 0)
+        filtersOn.push({ filterName: att.id, filterValues: attValues });
+
+      att.querySelectorAll('select').forEach(filter => {
+        attValues = [];
+
         if (filter.value != "") {
-          filtersOn.push({filterName: filter.id, filterValue: filter.value});
+          attValues.push(filter.value)
+          filtersOn.push({ filterName: filter.id, filterValues: attValues });
         }
       });
-
-
-
-      if (filtersOn.length > 0) {
-
-        jsonOffers.forEach(offer => {
-          if (filtersOn.includes(offer[group.id]))
-            offersFiltered.push(offer);
-        })
-        newResults.push(offersFiltered);
-      }
-
-
-
     });
+    // filtering results
+    var newResults = [];
 
-    console.log('Filter Select:');
-    console.log(filtersOn);
+    // by attribute
+    filtersOn.forEach(filter => {
+      newResults.push(jsonOffers.filter((x) => filter.filterValues.includes(x[filter.filterName])));
+    })
 
     // if no filter, show all offers
     if (newResults.length === 0)
@@ -101,6 +90,9 @@ if (filterForm) {
     else
       newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
 
+
+    console.log('Filter Select:');
+    console.log(filtersOn);
 
     //rebuild document
     rebuildList(newResults, allFiltersOn);
@@ -126,8 +118,8 @@ if (filterForm) {
 
       document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers";
-        document.getElementById("deselect-1").hidden = true;
-        document.getElementById("deselect-2").hidden = true;
+      document.getElementById("deselect-1").hidden = true;
+      document.getElementById("deselect-2").hidden = true;
     }
     else if (newResults.length > 0) {
 
@@ -136,23 +128,23 @@ if (filterForm) {
 
       document.getElementById("total-offers").innerText =
         "Showing " + newResults.length + " offers matching the following criteria: " + filtersOn.toString();
-        document.getElementById("deselect-1").hidden = false;
-        document.getElementById("deselect-2").hidden = false;
+      document.getElementById("deselect-1").hidden = false;
+      document.getElementById("deselect-2").hidden = false;
     }
     else {
       document.getElementById("no-offers").hidden = false;
       document.getElementById("yes-offers").hidden = true;
       document.getElementById("total-no-offers").innerText =
-      "Sorry, but no items match the following criteria: " + filtersOn.toString();
+        "Sorry, but no items match the following criteria: " + filtersOn.toString();
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
     }
   }
 
 
-  
-  
-  function callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList){
+
+
+  function callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList) {
     console.log("Filters:");
     console.log(jsonFilters);
     console.log("Offers:");
