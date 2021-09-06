@@ -21,13 +21,13 @@ if (filterForm) {
   document.getElementById("deselect-1").addEventListener('click', e => {
     rebuildList(jsonOffers, []);
     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-    filterForm.querySelectorAll("select").forEach(el => el.selected = 0);
+    filterForm.querySelectorAll("select").forEach(el => el.selectIndex = 0);
   });
 
   document.getElementById("deselect-2").addEventListener('click', e => {
     rebuildList(jsonOffers, []);
     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-    filterForm.querySelectorAll("select").forEach(el => el.selected = 0);
+    filterForm.querySelectorAll("select").forEach(el => el.selectIndex = 0);
   });
 
 
