@@ -57,6 +57,8 @@ if (filterForm) {
 
       // [att, [checked values]]
       attValues = [];
+      filterName = att.querySelectorAll('legend')[0].innerText;
+      
       att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
           attValues.push(att.querySelector("label[for='" + filter.id + "']").innerText);
@@ -64,15 +66,14 @@ if (filterForm) {
       })
 
       if (attValues.length > 0) 
-        filtersOn.push({ filterName: att.id, filterValues: attValues });
+        filtersOn.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
 
       att.querySelectorAll('select').forEach(filter => {
         attValues = [];
 
         if (filter.value != "") {
           attValues.push(filter.value)
-          filtersOn.push({ filterName: filter.id, filterValues: attValues });
-
+          filtersOn.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
         }
       });
       
@@ -83,7 +84,7 @@ if (filterForm) {
 
     // by attribute
     filtersOn.forEach(filter => {
-      newResults.push(jsonOffers.filter((x) => filter.filterValues.includes(x[filter.filterName])));
+      newResults.push(jsonOffers.filter((x) => filter.filterValues.includes(x[filter.filterId])));
     })
 
     // if no filter, show all offers
@@ -105,7 +106,9 @@ if (filterForm) {
     const articles = offersList.querySelectorAll('ARTICLE');
 
     var listFiltersOnString = '';
-    filtersOn.forEach(f => listFiltersOnString += '['+f.filterValues.toString()+']');
+    filtersOn.forEach(f => {
+      listFiltersOnString = f.filterName + f.filterValues.toString();
+    });
 
 
     articles.forEach(el => {
