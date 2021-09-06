@@ -84,7 +84,7 @@ footer: >
         <legend>Language</legend>
         <div class="offers-filters__filter">
         <select name="language" id="language">
-          <option disabled selected value> -- select an option -- </option>
+          <option selected value> -- select an option -- </option>
           {% for language in site.data.lang %}
           <option value="{{ language[0] }}">{{ language[1].name }} ({{ language[1].nativeName}})</option>
         {% endfor %}
