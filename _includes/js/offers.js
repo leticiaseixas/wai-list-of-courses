@@ -48,12 +48,12 @@ if (filterForm) {
 
   function filterJson(form) {
 
-    form = document.querySelector('[data-filter-form]');
+    //form = document.querySelector('[data-filter-form]');
     // selecting filters on
 
     var attValues = [];
     var filtersOn = [];
-
+    
     // for each attribute group
     form.querySelectorAll('fieldset').forEach(att => {
 
@@ -65,7 +65,7 @@ if (filterForm) {
         }
       })
 
-      if (attValues.length > 0)
+      if (attValues.length > 0) 
         filtersOn.push({ filterName: att.id, filterValues: attValues });
 
       att.querySelectorAll('select').forEach(filter => {
@@ -74,8 +74,10 @@ if (filterForm) {
         if (filter.value != "") {
           attValues.push(filter.value)
           filtersOn.push({ filterName: filter.id, filterValues: attValues });
+
         }
       });
+      
     });
 
     // filtering results
@@ -93,10 +95,6 @@ if (filterForm) {
     else
       newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
 
-
-    console.log('Filter Select:');
-    console.log(filtersOn);
-
     //rebuild document
     rebuildList(newResults, filtersOn);
 
@@ -107,6 +105,10 @@ if (filterForm) {
   function rebuildList(newResults, filtersOn) {
 
     const articles = offersList.querySelectorAll('ARTICLE');
+
+    var listFiltersOnString = '';
+    filtersOn.forEach(f => listFiltersOnString += '['+f.filterValues.toString()+']');
+
 
     articles.forEach(el => {
       if (!newResults.find(o => o.id === el.id))
@@ -130,7 +132,7 @@ if (filterForm) {
       document.getElementById("yes-offers").hidden = false;
 
       document.getElementById("total-offers").innerText =
-        "Showing " + newResults.length + " offers matching the following criteria: " + filtersOn.toString();
+        "Showing " + newResults.length + " offers matching the following criteria: " + listFiltersOnString;
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
     }
@@ -138,7 +140,7 @@ if (filterForm) {
       document.getElementById("no-offers").hidden = false;
       document.getElementById("yes-offers").hidden = true;
       document.getElementById("total-no-offers").innerText =
-        "Sorry, but no items match the following criteria: " + filtersOn.toString();
+        "Sorry, but no items match the following criteria: " + listFiltersOnString;
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
     }
