@@ -107,13 +107,10 @@ footer: >
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
     <div id="offers-list">
-      <span id="yes-offers">
+      <span id="status">
         <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
       <a id="expand-sections" class="button list_buttons"><span>Expand all sections</span></a>
       <a id="col-sections" class="button list_buttons" hidden><span>Collapse all sections</span></a>
-      </span>
-      <span id="no-offers" hidden>
-        <p id="total-no-offers"></p>
       </span>
       <a id="deselect-2" class="button list_buttons" hidden><span>Clear filters</span></a> 
       {% for offer in site.data.offers %}

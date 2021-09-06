@@ -107,7 +107,7 @@ if (filterForm) {
 
     var listFiltersOnString = '';
     filtersOn.forEach(f => {
-      listFiltersOnString = f.filterName + f.filterValues.toString();
+      listFiltersOnString += f.filterName + f.filterValues.toString();
     });
 
 
@@ -119,28 +119,21 @@ if (filterForm) {
     })
 
     if (filtersOn.length === 0) {
-      document.getElementById("no-offers").hidden = true;
-      document.getElementById("yes-offers").hidden = false;
 
-      document.getElementById("total-offers").innerText =
+      document.getElementById("status").innerText =
         "Showing " + newResults.length + " offers";
       document.getElementById("deselect-1").hidden = true;
       document.getElementById("deselect-2").hidden = true;
     }
     else if (newResults.length > 0) {
 
-      document.getElementById("no-offers").hidden = true;
-      document.getElementById("yes-offers").hidden = false;
-
-      document.getElementById("total-offers").innerText =
+      document.getElementById("status").innerText =
         "Showing " + newResults.length + " offers matching the following criteria: " + listFiltersOnString;
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
     }
     else {
-      document.getElementById("no-offers").hidden = false;
-      document.getElementById("yes-offers").hidden = true;
-      document.getElementById("total-no-offers").innerText =
+      document.getElementById("status").innerText =
         "Sorry, but no items match the following criteria: " + listFiltersOnString;
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
