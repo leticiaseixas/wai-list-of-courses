@@ -6,11 +6,11 @@
     "options": [
       {
         "id": "undergraduate",
-        "name": "Undergraduate program"
+        "name": "Undergraduate Program"
       },
       {
         "id": "graduate",
-        "name": "Graduate program"
+        "name": "Graduate Program"
       },
       {
         "id": "training",
@@ -18,7 +18,7 @@
       },
       {
         "id": "professional",
-        "name": "Professional certification"
+        "name": "Professional Certification"
       },
       {
         "id": "other",

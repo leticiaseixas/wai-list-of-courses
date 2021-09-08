@@ -2,7 +2,7 @@
   "id": "offer1",
   "name": "Web Accessibility Compliance",
   "provider": "Provider1",
-  "description": "In this course you'll learn about the standards in place to guide developers in creating a web that is accessible to all users as well as techniques to help bring your projects up to those standards",
+  "description": "In this course, you will learn about the standards in place to guide developers in creating a web that is accessible to all users as well as techniques to help bring your projects up to those standards.",
   "offer_type": "Training",
   "prerequisites": "Not provided",
   "target_role": "Not provided",
@@ -21,13 +21,11 @@
   "offer_info_last_update": "08 September 2021",
   "offer_content_last_update": "Not provided"
   },
-  
-  
   {
   "id": "offer2",
   "name": "Web Accessibility",
   "provider": "Sagittis Feugiat",
-  "description": "In this course you'll get hands-on experience making web applications accessible.",
+  "description": "In this course, you will get hands-on experience making web applications accessible.",
   "offer_type": "Training",
   "prerequisites": "HTML, CSS, Javascript",
   "target_role": "Not provided",
@@ -46,13 +44,12 @@
   "offer_info_last_update": "08 September 2021",
   "offer_content_last_update": "Not provided"
   },
-  
   {
   "id": "offer3",
   "name": "Certified Professional in Accessible Technologies",
   "provider": "Accumsan Viverra",
   "description": "Recognition of professionals who have acquired the knwoledge and skills to implement accessible technologies.",
-  "offer_type": "Training",
+  "offer_type": "Professional certification",
   "prerequisites": "Not provided",
   "target_role": "Not provided",
   "level": "Not provided",
@@ -93,7 +90,6 @@
   "offer_info_last_update": "08 September 2021",
   "offer_content_last_update": "Not provided"
   },
-  
   {
   "id": "offer5",
   "name": "Accessible Documents",
@@ -117,7 +113,6 @@
   "offer_info_last_update": "08 September 2021",
   "offer_content_last_update": "Not provided"
   },
-  
   {
   "id": "offer6",
   "name": "Web Accessibility Training",
@@ -141,7 +136,6 @@
   "offer_info_last_update": "08 September 2021",
   "offer_content_last_update": "Not provided"
   },
-  
   {
   "id": "offer7",
   "name": "Introduction to Course Accessibility",
@@ -165,8 +159,6 @@
   "offer_info_last_update": "08 September 2021",
   "offer_content_last_update": "Not provided"
   },
-  
-  
   {
   "id": "offer8",
   "name": "Online Courses and Resources",
