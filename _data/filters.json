@@ -1,6 +1,6 @@
 [
   {
-    "id": "degree_certification",
+    "id": "offer_type",
     "name": "Offer type",
     "type": "checkbox",
     "options": [
