@@ -1,28 +1,24 @@
 [
   {
     "id": "degree_certification",
-    "name": "Certification",
+    "name": "Offer type",
     "type": "checkbox",
     "options": [
       {
         "id": "undergraduate",
-        "name": "Undergraduate degree"
+        "name": "Undergraduate program"
       },
       {
         "id": "graduate",
-        "name": "Graduate degree"
+        "name": "Graduate program"
+      },
+      {
+        "id": "training",
+        "name": "Training"
       },
       {
         "id": "professional",
         "name": "Professional certification"
-      },
-      {
-        "id": "completion",
-        "name": "Certificate of completion"
-      },
-      {
-        "id": "none",
-        "name": "None"
       },
       {
         "id": "other",
