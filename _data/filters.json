@@ -21,7 +21,7 @@
         "name": "Professional Certification"
       },
       {
-        "id": "other",
+        "id": "other_offer_type",
         "name": "Other"
       }                        
     ]
@@ -52,7 +52,7 @@
         "name": "Tester"
       },
       {
-        "id": "other",
+        "id": "other_target_role",
         "name": "Other"
       }
     ]
