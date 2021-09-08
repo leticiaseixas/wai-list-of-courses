@@ -104,10 +104,21 @@ if (filterForm) {
   function rebuildList(newResults, filtersOn) {
 
     const articles = offersList.querySelectorAll('ARTICLE');
+    var totalOffers =  document.getElementById("total-offers");
 
-    var listFiltersOnString = '';
+    //var listFiltersOnString = '';
+    var listFiltersOnString = document.createElement('dl');
+
     filtersOn.forEach(f => {
-      listFiltersOnString += f.filterName + ': ' + f.filterValues.toString();
+      
+      var attName = document.createElement('dt');
+      attName.innerText = f.filterName + ':';
+      listFiltersOnString.appendChild(attName);
+      var attValues = document.createElement('dd');
+      attValues.innerText = f.filterValues.toString();
+      listFiltersOnString.appendChild(attValues);
+
+      //listFiltersOnString += f.filterName + ': ' + f.filterValues.toString();
     });
 
 
@@ -120,21 +131,20 @@ if (filterForm) {
 
     if (filtersOn.length === 0) {
 
-      document.getElementById("total-offers").innerText =
-        "Showing " + newResults.length + " offers";
+      totalOffers.innerText = "Showing " + newResults.length + " offers";
       document.getElementById("deselect-1").hidden = true;
       document.getElementById("deselect-2").hidden = true;
     }
     else if (newResults.length > 0) {
 
-      document.getElementById("total-offers").innerText =
-        "Showing " + newResults.length + " offers matching the following criteria: " + listFiltersOnString;
+      totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: "; 
+      totalOffers.appendChild(listFiltersOnString);
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
     }
     else {
-      document.getElementById("total-offers").innerText =
-        "Sorry, but no items match the following criteria: " + listFiltersOnString;
+      totalOffers.innerText = "Sorry, but no items match the following criteria: ";
+      totalOffers.appendChild(listFiltersOnString);
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
     }
