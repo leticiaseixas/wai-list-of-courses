@@ -63,7 +63,7 @@ footer: >
 
 <!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
 -->
-<p >Position papers must be submitted in the <a href="../title_of_the_contribution_-_submission_for_wai-coop_and_w3c_apa_symposium.html" download="" >template</a> provided, be valid HTML, and meet WCAG 2.1 Level AA.</p>
+<p >Position papers must be submitted in the <a href="../template.html" download="" >template</a> provided, be valid HTML, and meet WCAG 2.1 Level AA.</p>
 
 <div id="app" class="offers">
   <div id="left-col" class="offers-filters">
