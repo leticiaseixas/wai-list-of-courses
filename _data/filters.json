@@ -28,24 +28,24 @@
         "name": "Non-credit"
       },
       {
-        "id": "Undergraduate",
-        "name": "undergrad"
+        "id": "undergraduate",
+        "name": "Undergraduate"
       },
       {
-        "id": "Graduate",
-        "name": "graduate"
+        "id": "graduate",
+        "name": "Graduate"
       },
       {
-        "id": "Professional",
-        "name": "professional"
+        "id": "professional",
+        "name": "Professional"
       },
       {
-        "id": "None",
-        "name": "none"
+        "id": "none",
+        "name": "None"
       },
       {
-        "id": "Other",
-        "name": "other"
+        "id": "other",
+        "name": "Other"
       }                        
     ]
   },
