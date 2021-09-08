@@ -1,26 +1,7 @@
 [
   {
-    "id": "offer_type",
-    "name": "Offer type",
-    "type": "checkbox",
-    "options": [
-      {
-        "id": "education",
-        "name": "Education"
-      },
-      {
-        "id": "training",
-        "name": "Training"
-      },
-      {
-        "id": "certification",
-        "name": "Certification"
-      }
-    ]
-  },
-  {
     "id": "degree_certification",
-    "name": "Degree or Certification",
+    "name": "Degree",
     "type": "checkbox",
     "options": [
       {
@@ -29,15 +10,23 @@
       },
       {
         "id": "undergraduate",
-        "name": "Undergraduate"
+        "name": "Undergraduate degree"
       },
       {
         "id": "graduate",
-        "name": "Graduate"
+        "name": "Graduate degree"
       },
       {
         "id": "professional",
-        "name": "Professional"
+        "name": "Professional certification"
+      },
+      {
+        "id": "professional",
+        "name": "Professional certification"
+      },
+      {
+        "id": "completion",
+        "name": "Certificate of completion"
       },
       {
         "id": "none",
