@@ -167,11 +167,5 @@
         "name": "Paid"
       }
     ]
-  },
-  {
-    "id": "Lang",
-    "name": "Lang",
-    "type": "select"
-    
   }
 ]
