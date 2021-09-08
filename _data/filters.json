@@ -1,7 +1,7 @@
 [
   {
     "id": "degree_certification",
-    "name": "Degree",
+    "name": "Certification",
     "type": "checkbox",
     "options": [
       {
