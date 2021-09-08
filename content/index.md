@@ -5,7 +5,7 @@
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
 title: "[Draft] List of Accessibility Courses"
-title_html: "[Draft] List of Accessibility Courses:<br>Education and training" 
+title_html: "[Draft] List of Accessibility Courses:<br>Education, training, and certification" 
 nav_title: "List of Courses"
 
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry

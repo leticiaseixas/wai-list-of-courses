@@ -5,10 +5,6 @@
     "type": "checkbox",
     "options": [
       {
-        "id": "non-credit",
-        "name": "Non-credit"
-      },
-      {
         "id": "undergraduate",
         "name": "Undergraduate degree"
       },
