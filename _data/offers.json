@@ -24,7 +24,7 @@
   {
   "id": "offer2",
   "name": "Web Accessibility",
-  "provider": "Sagittis Feugiat",
+  "provider": "Provider2",
   "description": "In this course, you will get hands-on experience making web applications accessible.",
   "offer_type": "Training",
   "prerequisites": "HTML, CSS, Javascript",
@@ -47,9 +47,9 @@
   {
   "id": "offer3",
   "name": "Certified Professional in Accessible Technologies",
-  "provider": "Accumsan Viverra",
+  "provider": "Provider3",
   "description": "Recognition of professionals who have acquired the knwoledge and skills to implement accessible technologies.",
-  "offer_type": "Professional certification",
+  "offer_type": "Professional Certification",
   "prerequisites": "Not provided",
   "target_role": "Not provided",
   "level": "Not provided",
@@ -70,7 +70,7 @@
   {
   "id": "offer4",
   "name": "Web Accessibility Specialist",
-  "provider": "Accumsan Viverra",
+  "provider": "Provider4",
   "description": "This credential is intendend for accessibility professionals who are expected to evaluate the accessibility of existing content according to technical standards and guidelines.",
   "offer_type": "Training",
   "prerequisites": "Not provided",
@@ -93,7 +93,7 @@
   {
   "id": "offer5",
   "name": "Accessible Documents",
-  "provider": "Malesuada",
+  "provider": "Provider5",
   "description": "This online training covers creating accessible document content and structure, evaluating the accessibility of documents, and optimizing the accessibility of PDFs.",
   "offer_type": "Training",
   "prerequisites": "Not provided",
@@ -116,7 +116,7 @@
   {
   "id": "offer6",
   "name": "Web Accessibility Training",
-  "provider": "Malesuada",
+  "provider": "Provider6",
   "description": "Training session from accessibility principles to advanced accessibility techniques.",
   "offer_type": "Training",
   "prerequisites": "A basic understanding of HTML is recommended",
@@ -139,7 +139,7 @@
   {
   "id": "offer7",
   "name": "Introduction to Course Accessibility",
-  "provider": "Bibendum",
+  "provider": "Provider7",
   "description": "This resource provides an introduction to online course accessibility for faculty, staff, and instructional designers.",
   "offer_type": "Training",
   "prerequisites": "Not provided",
@@ -162,7 +162,7 @@
   {
   "id": "offer8",
   "name": "Online Courses and Resources",
-  "provider": "Vitae Tincidunt",
+  "provider": "Provider8",
   "description": "This resource provides the training and resources for designing, building, and testing digital systems for your organization with accessibility in mind.",
   "offer_type": "Training",
   "prerequisites": "Not provided",
@@ -185,7 +185,7 @@
   {
   "id": "offer9",
   "name": "Accessibility Tutor",
-  "provider": "Scelerisque",
+  "provider": "Provider9",
   "description": "Resource to train your staff in accessibility.",
   "offer_type": "Training",
   "prerequisites": "Not provided",
@@ -208,7 +208,7 @@
   {
   "id": "offer10",
   "name": "UX Foundations: Accessibility",
-  "provider": "Nulla",
+  "provider": "Provider10",
   "description": "This course provides the core concepts of accessibility as they apply to UX design, including an overview of the assistive technology visitors may use to access your projects.",
   "offer_type": "Training",
   "prerequisites": "Not provided",
