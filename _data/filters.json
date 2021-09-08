@@ -19,6 +19,37 @@
     ]
   },
   {
+    "id": "degree_certification",
+    "name": "Degree or Certification",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "non-credit",
+        "name": "Non-credit"
+      },
+      {
+        "id": "Undergraduate",
+        "name": "undergrad"
+      },
+      {
+        "id": "Graduate",
+        "name": "graduate"
+      },
+      {
+        "id": "Professional",
+        "name": "professional"
+      },
+      {
+        "id": "None",
+        "name": "none"
+      },
+      {
+        "id": "Other",
+        "name": "other"
+      }                        
+    ]
+  },
+  {
     "id": "target_role",
     "name": "Audience",
     "type": "checkbox",

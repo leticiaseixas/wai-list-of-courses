@@ -14,7 +14,7 @@
       <dl>
           <dt>Offer type</dt>
           <dd>{{ offer.offer_type }}</dd>
-          <dt>Degree or certification</dt>
+          <dt>Degree or Certification</dt>
           <dd>{{ offer.degree_certification}}</dd>
           <dt>Prerequisites</dt>
           <dd>{{ offer.prerequisites}}</dd>
@@ -41,9 +41,9 @@
           <dt>Duration</dt>
           <dd>{{ offer.duration}}</dd>
           <dt>Website</dt>
-          <dd>{{ offer.offer_link}}</dd>
+          <dd><a href="{{ offer.curricula_link}}" rel="external">{{ offer.offer_link}}</a></dd>
           <dt>Reviews page</dt>
-          <dd>{{ offer.offer_link_reviews}}</dd>
+          <dd><a href="{{ offer.curricula_link}}" rel="external">{{ offer.offer_link_reviews}}</a></dd>
         </dl>
         <p>This information was last updated on {{ offer.offer_info_last_update}}.</p>
         <p>This offer was last updated on {{ offer.offer_content_last_update}}.</p>
