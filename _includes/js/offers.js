@@ -116,7 +116,7 @@ if (filterForm) {
       listFiltersOnString.appendChild(attName);
       var attValues = document.createElement('dd');
       if(f.filterId == 'language')
-        attValues.innerText = jsonLang[f.filterValues[0]].name + "(" + jsonLang[f.filterValues[0]].nativeName + ")";
+        attValues.innerText = jsonLang[f.filterValues[0]].name + " (" + jsonLang[f.filterValues[0]].nativeName + ")";
       else
         attValues.innerText = f.filterValues.toString();
       listFiltersOnString.appendChild(attValues);
@@ -139,8 +139,10 @@ if (filterForm) {
       document.getElementById("deselect-2").hidden = true;
     }
     else if (newResults.length > 0) {
-
-      totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: "; 
+      if(newResults.length === 1)
+        totalOffers.innerText = "Showing " + newResults.length + " offer matching the following criteria: "; 
+      else
+        totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: "; 
       totalOffers.appendChild(listFiltersOnString);
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
