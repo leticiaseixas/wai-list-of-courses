@@ -116,7 +116,7 @@ if (filterForm) {
       listFiltersOnString.appendChild(attName);
       var attValues = document.createElement('dd');
       if(f.filterId == 'language')
-        attValues.innerText = jsonLang[f.filterValues[0]].nativeName;
+        attValues.innerText = jsonLang[f.filterValues[0]].name + "(" + jsonLang[f.filterValues[0]].nativeName + ")";
       else
         attValues.innerText = f.filterValues.toString();
       listFiltersOnString.appendChild(attValues);
