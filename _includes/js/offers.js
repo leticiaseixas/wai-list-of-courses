@@ -148,7 +148,7 @@ if (filterForm) {
       document.getElementById("deselect-2").hidden = false;
     }
     else {
-      totalOffers.innerText = "Sorry, but no items match the following criteria: ";
+      totalOffers.innerText = "Sorry, but no offers match the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
       document.getElementById("deselect-1").hidden = false;
       document.getElementById("deselect-2").hidden = false;
