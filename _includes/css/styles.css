@@ -41,7 +41,7 @@
     font-size: 85%;
   }
 
-  #language {
+  #language, #country {
     max-width: 30%;
   }
 
