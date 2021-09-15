@@ -30,8 +30,9 @@
           <dd>{{ offer.keywords_topics}}</dd>
           <dt>Language</dt>
           <dd>lang</dd>
-          <dd>{{ site.data.lang[offer.language[0]] }}</dd>
-          <dd>{{ offer.language[0]}}</dd>
+          {% assign langIndex = offer.language[0] %}
+          <dd>{{ site.data.lang[langIndex] }}</dd>
+          <dd>{{ langIndex }}</dd>
           <dt>Country</dt>
           <dd>{{ offer.country}}</dd>
           <dt>Format</dt>
