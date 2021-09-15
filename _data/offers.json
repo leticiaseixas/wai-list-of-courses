@@ -1,5 +1,5 @@
 [{
-  "id": ["offer1"],
+  "id": "offer1",
   "name": ["Web Accessibility Compliance"],
   "provider": ["Provider1"],
   "description": ["In this course, you will learn about the standards in place to guide developers in creating a web that is accessible to all users as well as techniques to help bring your projects up to those standards."],
@@ -21,7 +21,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },
   {
-  "id": ["offer2"],
+  "id": "offer2",
   "name": ["Web Accessibility"],
   "provider": ["Provider2"],
   "description": ["In this course, you will get hands-on experience making web applications accessible."],
@@ -44,7 +44,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },
   {
-  "id": ["offer3"],
+  "id": "offer3",
   "name": ["Certified Professional in Accessible Technologies"],
   "provider": ["Provider3"],
   "description": ["Recognition of professionals who have acquired the knwoledge and skills to implement accessible technologies."],
@@ -66,7 +66,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },
   {
-  "id": ["offer4"],
+  "id": "offer4",
   "name": ["Web Accessibility Specialist"],
   "provider": ["Provider4"],
   "description": ["This credential is intendend for accessibility professionals who are expected to evaluate the accessibility of existing content according to technical standards and guidelines."],
@@ -88,7 +88,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },
   {
-  "id": ["offer5"],
+  "id": "offer5",
   "name": ["Accessible Documents"],
   "provider": ["Provider5"],
   "description": ["This online training covers creating accessible document content and structure, evaluating the accessibility of documents, and optimizing the accessibility of PDFs."],
@@ -110,7 +110,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },
   {
-  "id": ["offer6"],
+  "id": "offer6",
   "name": ["Web Accessibility Training"],
   "provider": ["Provider6"],
   "description": ["Training session from accessibility principles to advanced accessibility techniques."],
@@ -132,7 +132,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },
   {
-  "id": ["offer7"],
+  "id": "offer7",
   "name": ["Introduction to Course Accessibility"],
   "provider": ["Provider7"],
   "description": ["This resource provides an introduction to online course accessibility for faculty, staff, and instructional designers."],
@@ -154,7 +154,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },
   {
-  "id": ["offer8"],
+  "id": "offer8",
   "name": ["Online Courses and Resources"],
   "provider": ["Provider8"],
   "description": ["This resource provides the training and resources for designing, building, and testing digital systems for your organization with accessibility in mind."],
@@ -176,7 +176,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },
   {
-  "id": ["offer9"],
+  "id": "offer9",
   "name": ["Accessibility Tutor"],
   "provider": ["Provider9"],
   "description": ["Resource to train your staff in accessibility."],
@@ -198,7 +198,7 @@
   "offer_info_last_update": ["08 September 2021"]
   },  
   {
-  "id": ["offer10"],
+  "id": "offer10",
   "name": ["UX Foundations: Accessibility"],
   "provider": ["Provider10"],
   "description": ["This course provides the core concepts of accessibility as they apply to UX design, including an overview of the assistive technology visitors may use to access your projects."],
