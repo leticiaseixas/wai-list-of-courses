@@ -84,8 +84,8 @@ if (filterForm) {
 
     // by attribute
     filtersOn.forEach(filter => {
-      newResults.push(jsonOffers.filter((x) => filter.filterValues.includes(x[filter.filterId])));
-      //newResults.push(jsonOffers.filter((x) => filter.filterValues.some(r=>x[filter.filterId].includes(r))));
+      //newResults.push(jsonOffers.filter((x) => filter.filterValues.includes(x[filter.filterId])));
+      newResults.push(jsonOffers.filter((x) => filter.filterValues.some(r=>x[filter.filterId].includes(r))));
 
     })
 
