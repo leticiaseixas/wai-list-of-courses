@@ -30,6 +30,7 @@
           <dd>{{ offer.keywords_topics}}</dd>
           <dt>Language</dt>
           <dd>{{ site.data.lang[offer.language[0]].name}}</dd>
+          <dd>{{ offer.language[0] | join: ", "}}</dd>
           <dt>Country</dt>
           <dd>{{ offer.country}}</dd>
           <dt>Format</dt>
