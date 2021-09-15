@@ -47,8 +47,8 @@ if (filterForm) {
   function filterJson(form) {
 
     //form = document.querySelector('[data-filter-form]');
-    // selecting filters on
 
+    // selecting filters on
     var attValues = [];
     var filtersOn = [];
     
@@ -85,6 +85,8 @@ if (filterForm) {
     // by attribute
     filtersOn.forEach(filter => {
       newResults.push(jsonOffers.filter((x) => filter.filterValues.includes(x[filter.filterId])));
+      //newResults.push(jsonOffers.filter((x) => filter.filterValues.some(r=>x[filter.filterId].includes(r))));
+
     })
 
     // if no filter, show all offers
@@ -135,8 +137,7 @@ if (filterForm) {
     if (filtersOn.length === 0) {
 
       totalOffers.innerText = "Showing " + newResults.length + " offers";
-      document.getElementById("deselect-1").hidden = true;
-      document.getElementById("deselect-2").hidden = true;
+      hideClearFilters(true);
     }
     else if (newResults.length > 0) {
       if(newResults.length === 1)
@@ -144,17 +145,21 @@ if (filterForm) {
       else
         totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: "; 
       totalOffers.appendChild(listFiltersOnString);
-      document.getElementById("deselect-1").hidden = false;
-      document.getElementById("deselect-2").hidden = false;
+      hideClearFilters(false);
     }
     else {
       totalOffers.innerText = "Sorry, but no offers match the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
-      document.getElementById("deselect-1").hidden = false;
-      document.getElementById("deselect-2").hidden = false;
+      hideClearFilters(false);
     }
   }
 
+
+
+  function hideClearFilters(isHidden){
+    document.getElementById("deselect-1").hidden = isHidden;
+    document.getElementById("deselect-2").hidden = isHidden;
+  }
 
 
 
