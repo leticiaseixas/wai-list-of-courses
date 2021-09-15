@@ -95,7 +95,7 @@ footer: >
         <div class="offers-filters__filter">
         <select name="country" id="country">
         <option value="">--Select an option--</option>
-          {% for language in site.data.countries %}
+          {% for country in site.data.countries %}
           <option value="{{ country[0] }}">{{ country[1].name }} ({{ country[1].nativeName}})</option>
         {% endfor %}
         </select>
