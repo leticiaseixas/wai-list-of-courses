@@ -90,6 +90,17 @@ footer: >
         </select>
         </div>
       </fieldset>
+    <fieldset id="contry-filter">
+        <legend>Country</legend>
+        <div class="offers-filters__filter">
+        <select name="country" id="country">
+        <option value="">--Select an option--</option>
+          {% for language in site.data.countries %}
+          <option value="{{ country[0] }}">{{ country[1].name }} ({{ country[1].nativeName}})</option>
+        {% endfor %}
+        </select>
+        </div>
+      </fieldset>  
     </form>
     <a id="deselect-1" class="button list_buttons" hidden><span>Clear filters</span></a> 
     <div class="disclaimer" id="disclaimer">
