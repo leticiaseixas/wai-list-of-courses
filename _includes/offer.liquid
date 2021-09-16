@@ -14,20 +14,20 @@
       <dl>
           <dt>Offer type</dt>
           <dd>{{ offer.offer_type }}</dd>
-          <dt>Prerequisites</dt>
-          <dd>{{ offer.prerequisites}}</dd>
           <dt>Audience</dt>
           <dd>{{ offer.audience | join: ", "}}</dd>
           <dt>Level</dt>
           <dd>{{ offer.level}}</dd>
+          <dt>Prerequisites</dt>
+          <dd>{{ offer.prerequisites}}</dd>
+          <dt>Topics</dt>
+          <dd>{{ offer.keywords_topics }}</dd>
           <dt>WAI Curricula module</dt>
           {% if offer.curricula_link %}
             <dd><a href="{{ offer.curricula_link}}" rel="external">{{ offer.curricula_correspondence }}</a></dd>
           {% else %}
             <dd>Not provided</dd>
           {% endif %}
-          <dt>Topics</dt>
-          <dd>{{ offer.keywords_topics }}</dd>
           <dt>Language</dt>
           {% assign langIndex = offer.language[0] %}
           <dd>{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})</dd>
