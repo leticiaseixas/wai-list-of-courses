@@ -79,26 +79,26 @@ footer: >
         {% endfor %}
       </fieldset>
       {% endfor %} 
-      {% assign langAvailable = site.data.offers | map: "language" | uniq %}
-      {{langAvailable}}
+    {% assign langAvailable = site.data.offers | map: "language" | uniq %}
     <fieldset id="language-filter">
         <legend>Language</legend>
         <div class="offers-filters__filter">
         <select name="language" id="language">
         <option value="">--Select an option--</option>
           {% for language in langAvailable %}
-          <option value="{{ language[0] }}">{{ site.data.lang[language].name }} ({{ site.data.lang[language].nativeName}})</option>
+          <option value="{{ language }}">{{ site.data.lang[language].name }} ({{ site.data.lang[language].nativeName}})</option>
         {% endfor %}
         </select>
         </div>
       </fieldset>
+    {% assign countriesAvailable = site.data.offers | map: "country" | uniq %}  
     <fieldset id="contry-filter">
         <legend>Country</legend>
         <div class="offers-filters__filter">
         <select name="country" id="country">
         <option value="">--Select an option--</option>
-          {% for country in site.data.countries %}
-          <option value="{{ country[0] }}">{{ country[1].name }} ({{ country[1].nativeName}})</option>
+          {% for country in countriesAvailable %}
+          <option value="{{ country }}">{{ site.data.country[country].name }} ({{ site.data.country[country].nativeName}})</option>
         {% endfor %}
         </select>
         </div>
