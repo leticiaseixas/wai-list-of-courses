@@ -98,7 +98,7 @@ footer: >
         <select name="country" id="country">
         <option value="">--Select an option--</option>
           {% for country in countriesAvailable %}
-          <option value="{{ country }}">{{ site.data.country[country].name }} ({{ site.data.country[country].nativeName}})</option>
+          <option value="{{ country }}">{{ site.data.countries[country].name }} ({{ site.data.countries[country].nativeName}})</option>
         {% endfor %}
         </select>
         </div>
