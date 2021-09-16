@@ -14,23 +14,14 @@ if (filterForm) {
     filterJson(filterForm);
   });
 
-  filterForm.addEventListener('submit', e => {
-
-    filterJson(form);
-  });
-
-  document.getElementById("deselect-1").addEventListener('click', e => {
-    rebuildList(jsonOffers, []);
-    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-    filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-  });
-
-  document.getElementById("deselect-2").addEventListener('click', e => {
-    rebuildList(jsonOffers, []);
-    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-    filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-  });
-
+  document.querySelectorAll('.clear_filter').forEach(item => {
+    item.addEventListener('click', e => {
+      rebuildList(jsonOffers, []);
+      filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+      filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
+    });
+  })
+  
 
   buttonExpandAll.addEventListener('click', e => {
     offersList.querySelectorAll("details").forEach(el => el.open = true);

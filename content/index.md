@@ -66,7 +66,7 @@ footer: >
 
 <div id="app" class="offers">
   <div id="left-col" class="offers-filters">
-    <form data-filter-form action="/api/offers.json" method="GET">
+    <form data-filter-form method="GET">
       <h2>Filters</h2>
       {% for filter in site.data.filters %}
       <fieldset id="{{ filter.id }}">
@@ -104,7 +104,7 @@ footer: >
         </div>
       </fieldset>  
     </form>
-    <a id="deselect-1" class="button list_buttons" hidden><span>Clear filters</span></a> 
+    <a id="deselect-1" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a> 
     <div class="disclaimer" id="disclaimer">
         <h2>Important Disclaimer</h2>
         <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
@@ -125,7 +125,7 @@ footer: >
       <span id="buttons-top">
         <a id="expand-sections" class="button list_buttons"><span>Expand all sections</span></a>
         <a id="col-sections" class="button list_buttons" hidden><span>Collapse all sections</span></a>
-        <a id="deselect-2" class="button list_buttons" hidden><span>Clear filters</span></a> 
+        <a id="deselect-2" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a> 
       </span>
       {% assign offers = site.data.offers | sort: 'name' %}
       {% for offer in offers %}
