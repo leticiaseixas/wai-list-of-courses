@@ -42,7 +42,7 @@
   }
 
   #language, #country {
-    max-width: 30%;
+    width: 30%;
   }
 
   #yes-offers button {
