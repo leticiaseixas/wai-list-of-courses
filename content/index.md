@@ -79,6 +79,8 @@ footer: >
         {% endfor %}
       </fieldset>
       {% endfor %} 
+      {% assign langAvailable = site.data.offers | where: "lang" %}
+      {{langAvailable}}
     <fieldset id="language-filter">
         <legend>Language</legend>
         <div class="offers-filters__filter">
