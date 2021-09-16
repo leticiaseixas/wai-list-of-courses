@@ -2,8 +2,7 @@ const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
-console.log('{{site.data.countries | jsonify}}');
-//const jsonCountry = JSON.parse('{{site.data.countries | jsonify}}');
+const jsonCountry = JSON.parse('{{site.data.countries | jsonify | escape}}');
 
 var offersList = document.getElementById('offers-list');
 var buttonExpandAll = document.getElementById("expand-sections");
