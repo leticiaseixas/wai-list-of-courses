@@ -32,7 +32,8 @@
           {% assign langIndex = offer.language[0] %}
           <dd>{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})</dd>
           <dt>Country</dt>
-          <dd>{{ offer.country}}</dd>
+          {% assign countryIndex = offer.country[0] %}
+          <dd>{{ site.data.country[countryIndex].name }} ({{ site.data.country[countryIndex].nativeName }})</dd>
           <dt>Format</dt>
           <dd>{{ offer.format}}</dd>
           <dt>Learning</dt>
