@@ -701,7 +701,7 @@
       "en"
     ],
     "country": [
-      "us"
+      "au"
     ],
     "format": [
       "Online"
@@ -827,7 +827,7 @@
       "en"
     ],
     "country": [
-      "us"
+      "au"
     ],
     "format": [
       "Online"
@@ -844,6 +844,190 @@
     ],
     "duration": [
       "3 days"
+    ],
+    "offer_link": [
+      "www.link.com"
+    ],
+    "offer_link_reviews": [
+      "www.link.com/reviews"
+    ],
+    "offer_info_last_update": [
+      "08 September 2021"
+    ]
+  },
+  {
+    "id": "offer15",
+    "name": [
+      "Master in Inclusive Design"
+    ],
+    "provider": [
+      "JKL University"
+    ],
+    "description": [
+      "This program provides the resources needed to tackle equity and diversity issues facing contemporary socitey."
+    ],
+    "offer_type": [
+      "Graduate program"
+    ],
+    "prerequisites": [
+      "Undergraduate degree"
+    ],
+    "audience": [
+      "Not provided"
+    ],
+    "level": [
+      "Basic"
+    ],
+    "curricula_correspondence": [
+      "Not provided"
+    ],
+    "keywords_topics": [
+      "Not provided"
+    ],
+    "language": [
+      "en"
+    ],
+    "country": [
+      "us"
+    ],
+    "format": [
+      "Online"
+    ],
+    "learning": [
+      "Guided",
+      "Synchronous"
+    ],
+    "platform": [
+      "Not provided"
+    ],
+    "cost": [
+      "Paid"
+    ],
+    "duration": [
+      "2 years"
+    ],
+    "offer_link": [
+      "www.link.com"
+    ],
+    "offer_link_reviews": [
+      "www.link.com/reviews"
+    ],
+    "offer_info_last_update": [
+      "08 September 2021"
+    ]
+  },
+  {
+    "id": "offer16",
+    "name": [
+      "Certificate in Assistive Technologies and Inclusive Design"
+    ],
+    "provider": [
+      "College of Provider H92"
+    ],
+    "description": [
+      "This Certificate will help you to sit for certification examinations as an Accessibility Specialist."
+    ],
+    "offer_type": [
+      "Non-degree program"
+    ],
+    "prerequisites": [
+      "Basic knowledge of disability and computer applications"
+    ],
+    "audience": [
+      "Not provided"
+    ],
+    "level": [
+      "Intermediate"
+    ],
+    "curricula_correspondence": [
+      "Not provided"
+    ],
+    "keywords_topics": [
+      "Not provided"
+    ],
+    "language": [
+      "en"
+    ],
+    "country": [
+      "us"
+    ],
+    "format": [
+      "Hybrid"
+    ],
+    "learning": [
+      "Guided",
+      "Synchronous"
+    ],
+    "platform": [
+      "Not provided"
+    ],
+    "cost": [
+      "Paid"
+    ],
+    "duration": [
+      "3 years"
+    ],
+    "offer_link": [
+      "www.link.com"
+    ],
+    "offer_link_reviews": [
+      "www.link.com/reviews"
+    ],
+    "offer_info_last_update": [
+      "08 September 2021"
+    ]
+  },
+  {
+    "id": "offer17",
+    "name": [
+      "Web Accessibility for Developers"
+    ],
+    "provider": [
+      "J89 University"
+    ],
+    "description": [
+      "This course focus is on developing expertise using WAI-ARIA."
+    ],
+    "offer_type": [
+      "Non-degree program"
+    ],
+    "prerequisites": [
+      "HTML and Javascript experience"
+    ],
+    "audience": [
+      "Developer",
+      "Designer"
+    ],
+    "level": [
+      "Intermediate"
+    ],
+    "curricula_correspondence": [
+      "Not provided"
+    ],
+    "keywords_topics": [
+      "Not provided"
+    ],
+    "language": [
+      "en"
+    ],
+    "country": [
+      "us"
+    ],
+    "format": [
+      "Online"
+    ],
+    "learning": [
+      "Guided",
+      "Synchronous"
+    ],
+    "platform": [
+      "Not provided"
+    ],
+    "cost": [
+      "Free or reduced fee for some"
+    ],
+    "duration": [
+      "30 hours"
     ],
     "offer_link": [
       "www.link.com"
