@@ -22,7 +22,6 @@ if (filterForm) {
     });
   })
   
-
   buttonExpandAll.addEventListener('click', e => {
     offersList.querySelectorAll("details").forEach(el => el.open = true);
     buttonColapseAll.hidden = false;
@@ -76,9 +75,7 @@ if (filterForm) {
 
     // by attribute
     filtersOn.forEach(filter => {
-      //newResults.push(jsonOffers.filter((x) => filter.filterValues.includes(x[filter.filterId])));
       newResults.push(jsonOffers.filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
-
     })
 
     // if no filter, show all offers
@@ -100,7 +97,6 @@ if (filterForm) {
     const articles = offersList.querySelectorAll('ARTICLE');
     var totalOffers = document.getElementById("total-offers");
 
-    //var listFiltersOnString = '';
     var listFiltersOnString = document.createElement('dl');
 
     filtersOn.forEach(f => {
@@ -148,7 +144,6 @@ if (filterForm) {
       hideClearFilters(false);
     }
   }
-
 
 
   function hideClearFilters(isHidden) {
