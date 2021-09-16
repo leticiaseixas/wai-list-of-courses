@@ -5,20 +5,24 @@
     "type": "checkbox",
     "options": [
       {
-        "id": "undergraduate",
-        "name": "Undergraduate Program"
+        "id": "grad",
+        "name": "Graduate program"
       },
       {
-        "id": "graduate",
-        "name": "Graduate Program"
+        "id": "undergrad",
+        "name": "Undergraduate program"
+      },
+      {
+        "id": "non-credit",
+        "name": "Non-credit course"
       },
       {
         "id": "training",
-        "name": "Training"
+        "name": "Training program"
       },
       {
-        "id": "professional",
-        "name": "Certification"
+        "id": "certification",
+        "name": "Professional certification"
       },
       {
         "id": "other_offer_type",
