@@ -17,7 +17,7 @@
           <dt>Prerequisites</dt>
           <dd>{{ offer.prerequisites}}</dd>
           <dt>Audience</dt>
-          <dd>{{ offer.audience}}</dd>
+          <dd>{{ offer.audience | join: ", "}}</dd>
           <dt>Level</dt>
           <dd>{{ offer.level}}</dd>
           <dt>WAI Curricula module</dt>
@@ -27,7 +27,7 @@
             <dd>Not provided</dd>
           {% endif %}
           <dt>Topics</dt>
-          <dd>{{ offer.keywords_topics}}</dd>
+          <dd>{{ offer.keywords_topics }}</dd>
           <dt>Language</dt>
           {% assign langIndex = offer.language[0] %}
           <dd>{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})</dd>
