@@ -58,8 +58,6 @@ defaults:
 #    values:
 #      layout: "sidenav"
 
-encoding: utf-8
-
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
