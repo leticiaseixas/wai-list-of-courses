@@ -10,7 +10,7 @@ var buttonColapseAll = document.getElementById("col-sections");
 
 if (filterForm) {
 
-  filterForm.addEventListener('change', e => {
+  filterForm.addEventListener('change', el => {
     filterJson(filterForm);
   });
 
