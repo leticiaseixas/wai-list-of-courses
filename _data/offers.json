@@ -16,7 +16,7 @@
     "prerequisites": [
       "Not provided"
     ],
-    "target_role": [
+    "audience": [
       "Not provided"
     ],
     "level": [
@@ -77,7 +77,7 @@
     "prerequisites": [
       "HTML, CSS, Javascript"
     ],
-    "target_role": [
+    "audience": [
       "Not provided"
     ],
     "level": [
@@ -140,7 +140,7 @@
     "prerequisites": [
       "Not provided"
     ],
-    "target_role": [
+    "audience": [
       "Tester",
       "Developer"
     ],
@@ -201,7 +201,7 @@
     "prerequisites": [
       "Not provided"
     ],
-    "target_role": [
+    "audience": [
       "Not provided"
     ],
     "level": [
@@ -261,7 +261,7 @@
     "prerequisites": [
       "Not provided"
     ],
-    "target_role": [
+    "audience": [
       "Not provided"
     ],
     "level": [
@@ -322,7 +322,7 @@
     "prerequisites": [
       "A basic understanding of HTML is recommended"
     ],
-    "target_role": [
+    "audience": [
       "Other"
     ],
     "level": [
@@ -382,7 +382,7 @@
     "prerequisites": [
       "Not provided"
     ],
-    "target_role": [
+    "audience": [
       "Other"
     ],
     "level": [
@@ -442,7 +442,7 @@
     "prerequisites": [
       "Not provided"
     ],
-    "target_role": [
+    "audience": [
       "Other"
     ],
     "level": [
@@ -502,7 +502,7 @@
     "prerequisites": [
       "Not provided"
     ],
-    "target_role": [
+    "audience": [
       "Other"
     ],
     "level": [
@@ -563,7 +563,7 @@
     "prerequisites": [
       "Not provided"
     ],
-    "target_role": [
+    "audience": [
       "Designer"
     ],
     "level": [
@@ -624,7 +624,7 @@
     "prerequisites": [
       "Academic writing"
     ],
-    "target_role": [
+    "audience": [
       "Not provided"
     ],
     "level": [
@@ -685,7 +685,7 @@
     "prerequisites": [
       "None"
     ],
-    "target_role": [
+    "audience": [
       "Not provided"
     ],
     "level": [
@@ -747,7 +747,7 @@
       "University Degree",
       "Proof of English proficiency"
     ],
-    "target_role": [
+    "audience": [
       "Not provided"
     ],
     "level": [
@@ -809,7 +809,7 @@
     "prerequisites": [
       "Accessibility 101"
     ],
-    "target_role": [
+    "audience": [
       "Developer",
       "Designer",
       "Other"

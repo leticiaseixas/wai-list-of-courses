@@ -31,7 +31,7 @@
     ]
   },
   {
-    "id": "target_role",
+    "id": "audience",
     "name": "Audience",
     "type": "checkbox",
     "options": [
@@ -56,7 +56,7 @@
         "name": "Tester"
       },
       {
-        "id": "other_target_role",
+        "id": "other_audience",
         "name": "Other"
       }
     ]
