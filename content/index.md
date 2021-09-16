@@ -79,7 +79,7 @@ footer: >
         {% endfor %}
       </fieldset>
       {% endfor %} 
-      {% assign langAvailable = site.data.offers | where: "language" %}
+      {% assign langAvailable = site.data.offers | map: "language" %}
       {{langAvailable}}
     <fieldset id="language-filter">
         <legend>Language</legend>
