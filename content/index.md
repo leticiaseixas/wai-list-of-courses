@@ -127,7 +127,8 @@ footer: >
         <a id="col-sections" class="button list_buttons" hidden><span>Collapse all sections</span></a>
         <a id="deselect-2" class="button list_buttons" hidden><span>Clear filters</span></a> 
       </span>
-      {% for offer in site.data.offers %}
+      {% assign offers = site.data.offers | sort: 'name' %}
+      {% for offer in offers %}
         {% include offer.liquid %}
       {% endfor %}
     </div>
