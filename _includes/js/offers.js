@@ -2,7 +2,7 @@ const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
-const jsonCountry = JSON.parse('{{site.data.country | jsonify}}');
+const jsonCountry = JSON.parse('{{site.data.countries | jsonify}}');
 
 var offersList = document.getElementById('offers-list');
 var buttonExpandAll = document.getElementById("expand-sections");
@@ -52,21 +52,21 @@ if (filterForm) {
     // selecting filters on
     var attValues = [];
     var filtersOn = [];
-    
+
     // for each attribute group
     form.querySelectorAll('fieldset').forEach(att => {
 
       // [att, [checked values]]
       attValues = [];
       filterName = att.querySelectorAll('legend')[0].innerText;
-      
+
       att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
           attValues.push(att.querySelector("label[for='" + filter.id + "']").innerText);
         }
       })
 
-      if (attValues.length > 0) 
+      if (attValues.length > 0)
         filtersOn.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
 
       att.querySelectorAll('select').forEach(filter => {
@@ -77,7 +77,7 @@ if (filterForm) {
           filtersOn.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
         }
       });
-      
+
     });
 
     // filtering results
@@ -86,7 +86,7 @@ if (filterForm) {
     // by attribute
     filtersOn.forEach(filter => {
       //newResults.push(jsonOffers.filter((x) => filter.filterValues.includes(x[filter.filterId])));
-      newResults.push(jsonOffers.filter((x) => filter.filterValues.some(r=>x[filter.filterId].includes(r))));
+      newResults.push(jsonOffers.filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
 
     })
 
@@ -107,26 +107,27 @@ if (filterForm) {
   function rebuildList(newResults, filtersOn) {
 
     const articles = offersList.querySelectorAll('ARTICLE');
-    var totalOffers =  document.getElementById("total-offers");
+    var totalOffers = document.getElementById("total-offers");
 
     //var listFiltersOnString = '';
     var listFiltersOnString = document.createElement('dl');
 
     filtersOn.forEach(f => {
-      
+
       var attName = document.createElement('dt');
       attName.innerText = f.filterName + ':';
       listFiltersOnString.appendChild(attName);
+
       var attValues = document.createElement('dd');
-      if(f.filterId == 'language')
+
+      if (f.filterId == 'language')
         attValues.innerText = jsonLang[f.filterValues[0]].name + " (" + jsonLang[f.filterValues[0]].nativeName + ")";
-      else if(f.filterId == 'country')
-        attValues.innerText = jsonCountry[f.filterValues[0]].name + " (" + jsonCountry[f.filterValues[0]].nativeName + ")";  
+      else if (f.filterId == 'country')
+        attValues.innerText = jsonCountry[f.filterValues[0]].name + " (" + jsonCountry[f.filterValues[0]].nativeName + ")";
       else
         attValues.innerText = f.filterValues.toString();
-      listFiltersOnString.appendChild(attValues);
 
-      //listFiltersOnString += f.filterName + ': ' + f.filterValues.toString();
+      listFiltersOnString.appendChild(attValues);
     });
 
 
@@ -143,10 +144,10 @@ if (filterForm) {
       hideClearFilters(true);
     }
     else if (newResults.length > 0) {
-      if(newResults.length === 1)
-        totalOffers.innerText = "Showing " + newResults.length + " offer matching the following criteria: "; 
+      if (newResults.length === 1)
+        totalOffers.innerText = "Showing " + newResults.length + " offer matching the following criteria: ";
       else
-        totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: "; 
+        totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
       hideClearFilters(false);
     }
@@ -159,7 +160,7 @@ if (filterForm) {
 
 
 
-  function hideClearFilters(isHidden){
+  function hideClearFilters(isHidden) {
     document.getElementById("deselect-1").hidden = isHidden;
     document.getElementById("deselect-2").hidden = isHidden;
   }
