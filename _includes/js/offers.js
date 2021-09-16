@@ -2,6 +2,7 @@ const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
+const jsonCountry = JSON.parse('{{site.data.country | jsonify}}');
 
 var offersList = document.getElementById('offers-list');
 var buttonExpandAll = document.getElementById("expand-sections");
@@ -117,8 +118,10 @@ if (filterForm) {
       attName.innerText = f.filterName + ':';
       listFiltersOnString.appendChild(attName);
       var attValues = document.createElement('dd');
-      if(f.filterId == 'language' || f.filterId == 'country')
+      if(f.filterId == 'language')
         attValues.innerText = jsonLang[f.filterValues[0]].name + " (" + jsonLang[f.filterValues[0]].nativeName + ")";
+      else if(f.filterId == 'country')
+        attValues.innerText = jsonCountry[f.filterValues[0]].name + " (" + jsonCountry[f.filterValues[0]].nativeName + ")";  
       else
         attValues.innerText = f.filterValues.toString();
       listFiltersOnString.appendChild(attValues);
