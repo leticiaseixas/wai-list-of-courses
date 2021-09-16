@@ -87,7 +87,7 @@ footer: >
         <select name="language" id="language">
         <option value="">--Select an option--</option>
           {% for language in langAvailable %}
-          <option value="{{ site.data.lang[language] }}">{{ site.data.lang[language].name }} ({{ site.data.lang[language].nativeName}})</option>
+          <option value="{{ language[0] }}">{{ site.data.lang[language].name }} ({{ site.data.lang[language].nativeName}})</option>
         {% endfor %}
         </select>
         </div>
