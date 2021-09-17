@@ -17,13 +17,16 @@
       "Not provided"
     ],
     "audience": [
-      "Not provided"
+      "Developer", "Designer", "Tester", "Other"
     ],
     "level": [
       "Basic"
     ],
     "curricula_correspondence": [
-      "Not provided"
+      "Foundation Modules"
+    ],
+    "curricula_link": [
+      "https://www.w3.org/WAI/curricula/foundation-modules/"
     ],
     "keywords_topics": [
       "Development Tools"
@@ -78,7 +81,7 @@
       "HTML, CSS, Javascript"
     ],
     "audience": [
-      "Not provided"
+      "Developer", "Tester"
     ],
     "level": [
       "Advanced"
@@ -90,7 +93,7 @@
       "https://www.w3.org/WAI/curricula/developer-modules/"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessible web applications"
     ],
     "language": [
       "en"
@@ -151,13 +154,13 @@
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Certification", "Accessible technologies"
     ],
     "language": [
       "en"
     ],
     "country": [
-      "de"
+      "en"
     ],
     "format": [
       "Not provided"
@@ -199,31 +202,31 @@
       "Training program"
     ],
     "prerequisites": [
-      "Not provided"
+      "Principles of Web Accessibility"
     ],
     "audience": [
-      "Not provided"
+      "Developer", "Tester"
     ],
     "level": [
-      "Not provided"
+      "Intermediate"
     ],
     "curricula_correspondence": [
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessibility evaluation"
     ],
     "language": [
-      "en"
+      "fr"
     ],
     "country": [
       "fr"
     ],
     "format": [
-      "Not provided"
+      "Online"
     ],
     "learning": [
-      "Not provided"
+      "Non-guided", "Asynchronous"
     ],
     "platform": [
       "Not provided"
@@ -232,7 +235,7 @@
       "Paid"
     ],
     "duration": [
-      "Not provided"
+      "2 weeks"
     ],
     "offer_link": [
       "www.link.com"
@@ -259,10 +262,10 @@
       "Training program"
     ],
     "prerequisites": [
-      "Not provided"
+      "None"
     ],
     "audience": [
-      "Not provided"
+      "Developer", "Designer", "Tester", "Other"
     ],
     "level": [
       "Basic"
@@ -271,7 +274,7 @@
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessible documents"
     ],
     "language": [
       "en"
@@ -293,7 +296,7 @@
       "Free or reduced fee for some"
     ],
     "duration": [
-      "60 business days"
+      "60 days"
     ],
     "offer_link": [
       "www.link.com"
@@ -335,10 +338,10 @@
       "Not provided"
     ],
     "language": [
-      "en"
+      "de"
     ],
     "country": [
-      "us"
+      "de"
     ],
     "format": [
       "face-to-face"
@@ -380,25 +383,25 @@
       "Training program"
     ],
     "prerequisites": [
-      "Not provided"
+      "Basic knowledge of disability and computer applications"
     ],
     "audience": [
-      "Other"
+      "Manager","Content author", "Other"
     ],
     "level": [
-      "Not provided"
+      "Basic"
     ],
     "curricula_correspondence": [
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Foundations of ICT accessibility"
     ],
     "language": [
-      "en"
+      "it"
     ],
     "country": [
-      "us"
+      "it"
     ],
     "format": [
       "Online"
@@ -428,7 +431,7 @@
   {
     "id": "offer8",
     "name": [
-      "Online Courses and Resources"
+      "Accessible product design"
     ],
     "provider": [
       "Provider 8UY"
@@ -440,19 +443,19 @@
       "Training program"
     ],
     "prerequisites": [
-      "Not provided"
+      "Basic knowledge of disability and computer applications"
     ],
     "audience": [
-      "Other"
+      "Manager","Developer", "Content author", "Other"
     ],
     "level": [
-      "Not provided"
+      "Basic"
     ],
     "curricula_correspondence": [
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessible resources"
     ],
     "language": [
       "en"
@@ -464,16 +467,16 @@
       "Online"
     ],
     "learning": [
-      "Not provided"
+      "Online"
     ],
     "platform": [
       "Not provided"
     ],
     "cost": [
-      "Not provided"
+      "Free for limited content or duration"
     ],
     "duration": [
-      "Not provided"
+      "6 weeks"
     ],
     "offer_link": [
       "www.link.com"
@@ -500,10 +503,10 @@
       "Training program"
     ],
     "prerequisites": [
-      "Not provided"
+      "None"
     ],
     "audience": [
-      "Other"
+      "Manager"
     ],
     "level": [
       "Not provided"
@@ -928,7 +931,7 @@
       "This Certificate will help you to sit for certification examinations as an Accessibility Specialist."
     ],
     "offer_type": [
-      "Non-degree program"
+      "Training program"
     ],
     "prerequisites": [
       "Basic knowledge of disability and computer applications"
@@ -989,7 +992,7 @@
       "This course focus is on developing expertise using WAI-ARIA."
     ],
     "offer_type": [
-      "Non-degree program"
+      "Training program"
     ],
     "prerequisites": [
       "HTML and Javascript experience"
