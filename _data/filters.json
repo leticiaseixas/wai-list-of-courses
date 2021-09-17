@@ -13,10 +13,6 @@
         "name": "Undergraduate program"
       },
       {
-        "id": "non-degree",
-        "name": "Non-degree program"
-      },
-      {
         "id": "training",
         "name": "Training program"
       },
