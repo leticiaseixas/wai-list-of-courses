@@ -112,13 +112,8 @@ footer: >
         <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
     </div>
   </div>
-  <div class="offers-offers">
+  <div class="offers-list">
     <h2 class="visuallyhidden">List of offers</h2>
-    <div role="alert">
-      <p class="status status-busy" hidden>Loading offers…</p>
-      <p class="status status-failure" hidden>something went wrong…</p>
-    </div>
-    <div id="offers-list">
       <span id="status">
         <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
       </span>
@@ -131,7 +126,6 @@ footer: >
         {% include offer.liquid %}
       {% endfor %}
       {% include excol.html type="end" %}
-    </div>
   </div>
 </div>
 
