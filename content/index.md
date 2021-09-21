@@ -52,62 +52,9 @@ footer: >
 ---
 
 
-
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- This will be replaced by an automatically generated TOC when using Markdown formatting.
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
-
-## Heading Level 2
-
-Here is some **bold text**
-
-Here is some _italic text_
-
-**Link markdown template in markdown**:
-* [[Exact Title of Page on WAI website]](/permalink/to/page/)
-* [WAI website but not exact title](/permalink/to/page/)
-* [link off WAI website](https://example.com)
-
-Description of link markdown:
-* When the linked text is the **exact same as the title of the page** on the WAI website, use **double brackets** and permalink, e.g.:<br>
-    ```[[W3C Accessibility Standards Overview]](/standards-guidelines/)```<br>
-  In GitHub rich text, it will have an extra bracket. You can ignore that.
-* When linked text is not the title of the page and goes to WAI website, use single brackets and permalink, e.g.:<br>
-    ```[about our standards](/standards-guidelines/)```
-* When it links off the WAI website, use single brackets and full URI, e.g.:<br>
-   ``` [ISO standards](https://example.com) ```
-
-### Heading Level 3
-
-1. This is 
-2. a nice
-3. ordered
-4. list.
-
-#### Heading Level 4
-
-* And this is a
-* bullet list
-
-- You can use asterisks
-- or dashes. Whatever floats
-- your boat :-)
-
-##### Heading Level 5
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
-
-## Heading Level 2
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
-
-### Heading Level 3
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
+<div id="filters">
+Filters
+</div>
+<div class="results">
+Results
+</div>
