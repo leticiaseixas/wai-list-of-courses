@@ -1,3 +1,19 @@
+#offers-list dt::after {
+  content: ":";
+}
+
+#offers-list dt {
+  float: left;
+  clear: left;
+  margin: 0 0.5em 0 !important;
+}
+
+#offers-list dt, dd {
+  margin-bottom: 0.5em !important;
+}
+#t {margin-left: -32px;  }
+  
+  
   @media (min-width: 40em) {
     main {
       display: contents;
@@ -251,19 +267,7 @@
     }
   }
 
-  #offers-list dt::after {
-    content: ":";
-  }
 
-  #offers-list dt {
-    float: left;
-    clear: left;
-    margin: 0 0.5em 0 !important;
-  }
-
-  #offers-list dt, dd {
-    margin-bottom: 0.5em !important;
-  }
 
   /* @media (min-width: 30em) {
   .offer__features dt small {
