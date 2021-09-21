@@ -1,17 +1,17 @@
-#offers-list dt::after {
+#details dt::after {
   content: ":";
 }
 
-#offers-list dt {
+#details dt {
   float: left;
   clear: left;
   margin: 0 0.5em 0 !important;
 }
 
-#offers-list dt, dd {
+#details dt, dd {
   margin-bottom: 0.5em !important;
 }
-#t {margin-left: -32px;  }
+#details div {margin-left: -32px;  }
   
   
   @media (min-width: 40em) {
