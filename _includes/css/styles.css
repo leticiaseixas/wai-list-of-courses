@@ -24,10 +24,22 @@ main p:first-child {
   grid-column: 1 / 9;
 }
 
-
+#left-col{
+  grid-column: 2/9;
+}
 
 #left-col h2 {
   margin: 20px 0 20px;
+}
+
+.header-sup {
+  grid-column: 1 / 8;
+}
+
+@media ( min-width: 72em) {
+  .header-sup {
+    grid-column: 2 / 9;
+  }
 }
 
 

@@ -55,8 +55,8 @@ footer: >
 {% include css/styles.css %}
 </style>
 
-Browse for offers of education, training, and certification on digital accessibility.
-<br/>
+<p class="header-sup"> Browse for offers of education, training, and certification on digital accessibility. </p>
+
 *Note: offers are user-submitted, not W3C-endorsed, see [disclaimer](#disclaimer) for vendor-submitted content.*
 
 
