@@ -255,6 +255,12 @@
     content: ":";
   }
 
+  .offers_details {
+    float: left;
+    clear: left;
+    margin: 0 0.5em 0 !important;
+  }
+
   #offer__features dt {
     float: left;
     clear: left;
