@@ -112,7 +112,7 @@ footer: >
         <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
     </div>
   </div>
-  <div class="offers-list">
+  <div class="offers-offers">
     <h2 class="visuallyhidden">List of offers</h2>
       <span id="status">
         <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
