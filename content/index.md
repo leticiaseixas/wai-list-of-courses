@@ -65,10 +65,10 @@ Browse for offers of education, training, and certification on digital accessibi
 
 
 <div class="offers">
-  <div id="left-col" class="offers-filters">
+  <div id="left-col">
   Filters
   </div>
-  <div class="offers-results">
+  <div>
     Results
     
   </div>
