@@ -1,9 +1,8 @@
 {% capture offer_title %}
-{{offer.name}} by {{offer.provider}}
+<a href="{{ offer.offer_link }}">{{ offer.name }}</a> by {{ offer.provider }}
 {% endcapture %}
 
 
 {% include box.html type="start" title=offer_title %}
 {{ offer.description }}
-[name](link)
 {% include box.html type="end" %}
