@@ -7,6 +7,7 @@
 {% include excol.html type="start" id="one" %}
 #### Details
 {% include excol.html type="middle" %}
+{% include box.html type="start" class="highlighted" %}
 
 Offer type
 : {{ offer.offer_type }}
@@ -14,6 +15,6 @@ Offer type
 Audience
 : {{ offer.audience | join: ", " }}
 
-
+{% include box.html type="end" %}
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
