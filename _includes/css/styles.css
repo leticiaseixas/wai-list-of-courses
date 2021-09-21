@@ -1,17 +1,17 @@
-#details dt::after {
+details dt::after {
   content: ":";
 }
 
-#details dt {
+details dt {
   float: left;
   clear: left;
   margin: 0 0.5em 0 !important;
 }
 
-#details dt, dd {
+details dt, dd {
   margin-bottom: 0.5em !important;
 }
-#details div {margin-left: -32px;  }
+details div {margin-left: -32px;  }
   
   
   @media (min-width: 40em) {
