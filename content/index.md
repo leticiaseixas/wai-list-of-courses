@@ -54,11 +54,9 @@ footer: >
 {% include css/styles.css %}
 </style>
 
-<div class="header-sup">
-  <p>Browse for offers of education, training, and certification on digital accessibility.</p>
+Browse for offers of education, training, and certification on digital accessibility.
 
-  <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
-</div>
+*Note: offers are user-submitted, not W3C-endorsed, see [disclaimer](#disclaimer) for vendor-submitted content.*
 
 
 <!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 

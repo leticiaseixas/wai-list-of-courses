@@ -19,6 +19,9 @@ details div {
   border: solid 1px var(--line-grey); */
 }
 
+
+
+
 @media (min-width: 40em) {
   main {
     display: contents;
