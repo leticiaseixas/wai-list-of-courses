@@ -101,5 +101,19 @@ footer: >
         </div>
     </div>
     <div class="offers-offers">
+        <div id="offers-list">
+            <span id="status">
+                <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+            </span>
+            <span id="buttons-top">
+                <a id="deselect-2" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a>
+            </span>
+            {% include excol.html type="all" %}
+            {% assign offers = site.data.offers | sort: 'name' %}
+            {% for offer in offers %}
+              {% include offer.liquid %}
+            {% endfor %}
+            {% include excol.html type="end" %}
+        </div>
     </div>
 </div>
