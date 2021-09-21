@@ -51,7 +51,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "sidenav"
+      layout: "default"
 #  -
 #    scope:
 #      path: "_business-case"
