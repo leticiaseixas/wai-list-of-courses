@@ -42,10 +42,10 @@ description:  # NEW: add a 150ish-character-description for social media   # tra
 # Translate the Working Group name. Leave the Working Group acronym in English.
 # Do not change the dates in the footer below.
 footer: >
-   <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
-   <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
-   <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
-
+  <p><strong>Date:</strong> Reviewed 00 Month 202X. Updated 00 Month 202X. First published 00 Month 202X. CHANGELOG.<br>
+  History: ...</p>
+  <p><strong>Editors:</strong> Name and Name. Contributors: Name, Name, and <a href="https://www.w3.org/WAI/EO/participants">EOWG Participants</a>. ACKNOWLEDGEMENTS lists contributors. Previous editors: Name; previous contributors: Name.</p>
+  <p>Developed [by|with input from]  the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>), with the <a href="@@">Acme Task Force</a>. Previously developed  as part of the <a href="@@">Acme Project</a> funded by the Money Org. Updated as part of the <a href="@@">Acme Project</a> funded by the Money Org.</p>
 
 ---
 
@@ -62,4 +62,10 @@ Browse for offers of education, training, and certification on digital accessibi
 <!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
 -->
 
-<div class="default-grid compact-grid"></div>
+<div class="default-grid compact-grid">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+  <div>Five</div>
+</div>
