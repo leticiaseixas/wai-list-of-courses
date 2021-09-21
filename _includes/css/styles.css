@@ -9,7 +9,7 @@ main>header {
   grid-column: 1 / 10;
 }
 
-.main p:first-child {
+main p:first-child {
   grid-column: 2/9;
 }
 
