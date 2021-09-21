@@ -56,7 +56,7 @@ footer: >
 </style>
 
 Browse for offers of education, training, and certification on digital accessibility.
-
+<br/>
 *Note: offers are user-submitted, not W3C-endorsed, see [disclaimer](#disclaimer) for vendor-submitted content.*
 
 
