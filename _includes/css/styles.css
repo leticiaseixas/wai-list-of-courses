@@ -1,35 +1,7 @@
-
 @media (min-width: 40em) {
   main {
     display: contents;
   }
-}
-
-main>header {
-  grid-column: 1 / 10;
-}
-
-main p:first-child {
-  grid-column: 2/9;
-}
-
-
-@media ( min-width: 72em) {
-  main>header {
-    grid-column: 2 / 9;
-  }
-}
-
-.box {
-  grid-column: 1 / 9;
-}
-
-#left-col{
-  grid-column: 2/9;
-}
-
-#left-col h2 {
-  margin: 20px 0 20px;
 }
 
 .header-sup {
@@ -42,10 +14,28 @@ main p:first-child {
   }
 }
 
-#helpimprove{
-  grid-area: content !important;
+main>header {
+  grid-column: 1 / 10;
 }
 
+@media ( min-width: 72em) {
+  main>header {
+    grid-column: 2 / 9;
+  }
+}
+
+.box {
+  grid-column: 1 / 9;
+}
+
+.header-sup {
+  margin-bottom: 48px;
+}
+
+.header-sup p:first-child {
+  margin-top: 0;
+  font-size: 125%;
+}
 
 details dt::after {
   content: ":";
