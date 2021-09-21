@@ -64,15 +64,14 @@ Browse for offers of education, training, and certification on digital accessibi
 -->
 
 
-<div class="offers">
-  <div id="left-col">
+
+<div id="left-col">
   Filters
-  </div>
-  <div>
-    Results
-    
-  </div>
 </div>
+<div>
+    Results
+</div>
+
 
 <script>
 {% include js/offers.js %}
