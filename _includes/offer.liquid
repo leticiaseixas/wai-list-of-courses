@@ -1,0 +1,22 @@
+{% capture offer_title %}<a href="{{ offer.offer_link }}">{{ offer.name }}</a> by {{ offer.provider }}{% endcapture %}
+
+
+{% include box.html type="start" title=offer_title id=offer.id h="3" %}
+
+{{ offer.description }}
+
+
+
+
+{% include excol.html type="start" id="one" %}
+
+#### Details
+
+{% include excol.html type="middle" %}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus incidunt velit quia quisquam odio, minus, blanditiis molestias deserunt facere consequuntur placeat minima odit ex officia est nemo neque aut provident?
+
+{% include excol.html type="end" %}
+
+
+{% include box.html type="end" %}
