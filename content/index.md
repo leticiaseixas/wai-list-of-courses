@@ -114,6 +114,7 @@ footer: >
   </div>
   <div class="offers-offers">
     <h2 class="visuallyhidden">List of offers</h2>
+    <div id="offers-list">
       <span id="status">
         <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
       </span>
@@ -126,6 +127,7 @@ footer: >
         {% include offer.liquid %}
       {% endfor %}
       {% include excol.html type="end" %}
+    </div>
   </div>
 </div>
 
