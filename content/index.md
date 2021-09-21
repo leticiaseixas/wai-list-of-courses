@@ -57,7 +57,7 @@ footer: >
 
 <p class="header-sup"> Browse for offers of education, training, and certification on digital accessibility. </p>
 
-*Note: offers are user-submitted, not W3C-endorsed, see [disclaimer](#disclaimer) for vendor-submitted content.*
+<p>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</p>
 
 
 <!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
