@@ -1,7 +1,5 @@
-{% assign name = [offer.name](offer.offer_link) %}
-
 {% capture offer_title %}
-{{ name }} by {{offer.provider}}
+[{{offer.name}}]({{offer.offer_link}}) by {{offer.provider}}
 {% endcapture %}
 
 
