@@ -1,18 +1,15 @@
-{% capture offer_title %}
-<a href="{{ offer.offer_link }}">{{ offer.name }}</a> by {{ offer.provider }}
-{% endcapture %}
+{% capture offer_title %}<a href="{{ offer.offer_link }}">{{ offer.name }}</a> by {{ offer.provider }}{% endcapture %}
 
 
 {% include box.html type="start" title=offer_title id=offer.id%}
+
 {{ offer.description }}
-{% include box.html type="end" %}
 
-{% include excol.html type="start" %}
-
+{% capture details_id %}detail_{{ offer.id }}{% endcapture %}
+{% include excol.html type="start" id=details_id open="false"%}
 ### Details
-
 {% include excol.html type="middle" %}
-
 Content of the expand/collapse.
-
 {% include excol.html type="end" %}
+
+{% include box.html type="end" %}
