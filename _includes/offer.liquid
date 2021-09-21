@@ -1,6 +1,10 @@
-{% assign name = offer.name%}
-{% include box.html type="start" title=name %}
+{% assign name = [offer.name](offer.offer_link) %}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laudantium, molestias perspiciatis corporis aspernatur earum quibusdam, sequi, error pariatur delectus accusantium, cum! Maxime ad, eos ea. Ab labore aliquam quam!
+{% capture offer_title %}
+{{ [offer.name](offer.offer_link) }} by {{offer.provider}}
+{% endcapture %}
 
+
+{% include box.html type="start" title=offer_title %}
+offer.description 
 {% include box.html type="end" %}
