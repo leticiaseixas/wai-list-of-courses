@@ -7,7 +7,7 @@
 {% include excol.html type="start" id="one" %}
 #### Details
 {% include excol.html type="middle" %}
-{% include box.html type="start" class="highlighted" %}
+<div id="offer__features">
 
 Offer type
 : {{ offer.offer_type }}
@@ -15,6 +15,6 @@ Offer type
 Audience
 : {{ offer.audience | join: ", " }}
 
-{% include box.html type="end" %}
+</div>
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
