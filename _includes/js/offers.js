@@ -21,7 +21,7 @@ if (filterForm) {
       filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
     });
   })
-  
+ /*  
   buttonExpandAll.addEventListener('click', e => {
     offersList.querySelectorAll("details").forEach(el => el.open = true);
     buttonColapseAll.hidden = false;
@@ -33,7 +33,7 @@ if (filterForm) {
     buttonColapseAll.hidden = true;
     buttonExpandAll.hidden = false;
   });
-
+ */
 
   function filterJson(form) {
 
