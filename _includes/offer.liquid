@@ -1,10 +1,10 @@
 {% assign name = [offer.name](offer.offer_link) %}
 
 {% capture offer_title %}
-{{ [offer.name](offer.offer_link) }} by {{offer.provider}}
+{{ name }} by {{offer.provider}}
 {% endcapture %}
 
 
 {% include box.html type="start" title=offer_title %}
-offer.description 
+{{ offer.description }}
 {% include box.html type="end" %}
