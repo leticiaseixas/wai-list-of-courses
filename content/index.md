@@ -51,10 +51,13 @@ footer: >
 
 ---
 
+<style> 
+{% include css/styles.css %}
+</style>
 
 <div id="filters">
 Filters
 </div>
-<div class="results">
+<div id="results">
 Results
 </div>
