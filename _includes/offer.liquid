@@ -5,11 +5,19 @@
 
 {{ offer.description }}
 
-{% capture details_id %}detail_{{ offer.id }}{% endcapture %}
-{% include excol.html type="start" id=details_id open="false"%}
+
+
+{% include excol.html type="all" %}
+
+{% include excol.html type="start" id="one" %}
+
 ### Details
+
 {% include excol.html type="middle" %}
-Content of the expand/collapse.
-{% include excol.html type="end" %}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus incidunt velit quia quisquam odio, minus, blanditiis molestias deserunt facere consequuntur placeat minima odit ex officia est nemo neque aut provident?
+
+
+
 
 {% include box.html type="end" %}
