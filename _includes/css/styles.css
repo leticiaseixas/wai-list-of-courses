@@ -179,7 +179,7 @@
     font-size: 100%;
   }
 
-  #offers-list {
+  #offer__features {
     margin: 1em -1em -1em -3em;
     background-color: var(--off-white);
     padding: 1em;
@@ -266,16 +266,16 @@
   }
 
   /* @media (min-width: 30em) {
-  .offers-list dt small {
+  .offer__features dt small {
     font-weight: normal;
     margin-left: 1em;
   }
-  .offers-list p:last-child {
+  .offer__features p:last-child {
     margin-bottom: 0;
   }  
 }
 @media (min-width: 50em) {
-  .offers-list dl { 
+  .offer__features dl { 
     grid-template-columns: repeat(2, auto 1fr);
   }
 } */
