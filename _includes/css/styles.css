@@ -2,9 +2,6 @@ main>header {
   grid-column: 2 / 9;
 }
 
-#left-col{
-  grid-column: 2/4;
-}
 
 main>header p:first-child {
   margin-top: 0;
