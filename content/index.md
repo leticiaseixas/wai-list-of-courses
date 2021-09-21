@@ -113,7 +113,7 @@ footer: >
             {% for offer in offers %}
               {% include offer.liquid %}
             {% endfor %}
-            {% include excol.html type="end" %}
+            
         </div>
     </div>
 </div>
