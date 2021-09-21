@@ -251,17 +251,17 @@
     }
   }
 
-  #offers-list dt::after {
+  #offer__features dt::after {
     content: ":";
   }
 
-  #offers-list dt {
+  #offer__features dt {
     float: left;
     clear: left;
     margin: 0 0.5em 0 !important;
   }
 
-  #offers-list dt, dd {
+  #offer__features dt, dd {
     margin-bottom: 0.5em !important;
   }
 
