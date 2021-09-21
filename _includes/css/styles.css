@@ -251,23 +251,17 @@
     }
   }
 
-  #offer__features dt::after {
+  #offers-list dt::after {
     content: ":";
   }
 
-  .offers_details {
+  #offers-list dt {
     float: left;
     clear: left;
     margin: 0 0.5em 0 !important;
   }
 
-  #offer__features dt {
-    float: left;
-    clear: left;
-    margin: 0 0.5em 0 !important;
-  }
-
-  #offer__features dt, dd {
+  #offers-list dt, dd {
     margin-bottom: 0.5em !important;
   }
 
