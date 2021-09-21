@@ -1,8 +1,9 @@
 {% capture offer_title %}
-[{{offer.name}}]({{offer.offer_link}}) by {{offer.provider}}
+{{offer.name}} by {{offer.provider}}
 {% endcapture %}
 
 
 {% include box.html type="start" title=offer_title %}
 {{ offer.description }}
+[{{offer.name}}]({{offer.offer_link}})
 {% include box.html type="end" %}
