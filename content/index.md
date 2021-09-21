@@ -1,4 +1,4 @@
----
+ ---
 # NEW: Comments for new repos start with "NEW". Please delete the NEW comments. Leave the other comments for translators. Also, search for @@s to replace. For multi-page resources and other frontmatter info, see: https://wai-website-theme.netlify.app/writing/frontmatter/
 
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
@@ -32,8 +32,6 @@ permalink: /list-of-courses/   # Add the language shortcode to the end, with no 
 ref: /teach-advocate/course-list/   # Translators, do not change this
 changelog: /teach-advocate/course-list/changelog/  # NEW: set up a changelog so it's ready for later
 acknowledgements: /teach-advocate/course-list/acknowledgements/  # NEW: delete if don't have a separate acknowledgements page. And delete it in the footer below.
-license: creative-commons   # NEW: delete if not creative-commons
-
 
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
@@ -44,34 +42,91 @@ description:  # NEW: add a 150ish-character-description for social media   # tra
 # Translate the Working Group name. Leave the Working Group acronym in English.
 # Do not change the dates in the footer below.
 footer: >
-  <p><strong>Date:</strong> Reviewed 00 Month 202X. Updated 00 Month 202X. First published 00 Month 202X. CHANGELOG.<br>
-  History: ...</p>
-  <p><strong>Editors:</strong> Name and Name. Contributors: Name, Name, and <a href="https://www.w3.org/WAI/EO/participants">EOWG Participants</a>. ACKNOWLEDGEMENTS lists contributors. Previous editors: Name; previous contributors: Name.</p>
-  <p>Developed [by|with input from]  the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>), with the <a href="@@">Acme Task Force</a>. Previously developed  as part of the <a href="@@">Acme Project</a> funded by the Money Org. Updated as part of the <a href="@@">Acme Project</a> funded by the Money Org.</p>
+   <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
+   <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
+   <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
+
 
 ---
+
 
 <style> 
 {% include css/styles.css %}
 </style>
 
-<p class="header-sup"> Browse for offers of education, training, and certification on digital accessibility. </p>
+<div class="header-sup">
+  <p>Browse for offers of education, training, and certification on digital accessibility.</p>
 
-<p>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</p>
-
-
-<!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
--->
-
-
-
-<div id="left-col">
-  Filters
-</div>
-<div>
-    Results
+  <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
 </div>
 
+
+<div id="app" class="offers">
+  <div id="left-col" class="offers-filters">
+    <form data-filter-form method="GET">
+      <h2>Filters</h2>
+      {% for filter in site.data.filters %}
+      <fieldset id="{{ filter.id }}">
+        <legend>{{ filter.name }}</legend>
+        {% for option in filter.options %}
+        <div class="offers-filters__filter">
+          <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
+          <label for="filter-{{ option.id }}">{{ option.name }}</label>
+        </div>
+        {% endfor %}
+      </fieldset>
+      {% endfor %} 
+    {% assign langAvailable = site.data.offers | map: "language" | uniq %}
+    <fieldset id="language-filter">
+        <legend>Language</legend>
+        <div class="offers-filters__filter">
+        <select name="language" id="language">
+        <option value="">--Select an option--</option>
+          {% for language in langAvailable %}
+          <option value="{{ language }}">{{ site.data.lang[language].name }} ({{ site.data.lang[language].nativeName}})</option>
+        {% endfor %}
+        </select>
+        </div>
+      </fieldset>
+    {% assign countriesAvailable = site.data.offers | map: "country" | uniq %}  
+    <fieldset id="contry-filter">
+        <legend>Country</legend>
+        <div class="offers-filters__filter">
+        <select name="country" id="country">
+        <option value="">--Select an option--</option>
+          {% for country in countriesAvailable %}
+          <option value="{{ country }}">{{ site.data.countries[country].name }} ({{ site.data.countries[country].nativeName}})</option>
+        {% endfor %}
+        </select>
+        </div>
+      </fieldset>  
+    </form>
+    <a id="deselect-1" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a> 
+    <div class="disclaimer" id="disclaimer">
+        <h2>Important Disclaimer</h2>
+        <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+        <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
+        <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
+    </div>
+  </div>
+  <div class="offers-offers">
+    <h2 class="visuallyhidden">List of offers</h2>
+    <div id="offers-list">
+      <span id="status">
+        <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+      </span>
+      <span id="buttons-top">
+        <a id="deselect-2" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a> 
+      </span>
+      {% include excol.html type="all" %}
+      {% assign offers = site.data.offers | sort: 'name' %}
+      {% for offer in offers %}
+        {% include offer.liquid %}
+      {% endfor %}
+      {% include excol.html type="end" %}
+    </div>
+  </div>
+</div>
 
 <script>
 {% include js/offers.js %}
