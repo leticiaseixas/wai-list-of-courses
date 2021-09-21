@@ -14,5 +14,56 @@ Offer type
 Audience
 : {{ offer.audience | join: ", " }}
 
+Level
+: {{ offer.level}}
+
+Prerequisites
+: {{ offer.prerequisites | join: ", "}}
+
+Topics
+: {{ offer.keywords_topics | join: ", "}}
+  
+WAI Curricula module
+{% if offer.curricula_link %}
+: <a href="{{ offer.curricula_link}}" rel="external">{{ offer.curricula_correspondence }}</a>
+{% else %}
+: Not provided
+{% endif %}
+
+Language
+{% assign langIndex = offer.language[0] %}
+: {{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
+
+Country
+{% assign countryIndex = offer.country[0] %}
+: {{ site.data.countries[countryIndex].name }} ({{ site.data.countries[countryIndex].nativeName }})
+
+Format
+: {{ offer.format}}
+
+Learning
+: {{ offer.learning | join: ", "}}
+
+Platform
+: {{ offer.platform}}
+
+Duration
+: {{ offer.duration}}
+
+Cost
+: {{ offer.cost}}
+
+Web site
+: <a href="{{ offer.curricula_link}}" rel="external">{{ offer.offer_link}}</a>
+
+Reviews page
+: <a href="{{ offer.curricula_link}}" rel="external">{{ offer.offer_link_reviews}}</a>
+        
+        
+This information was last updated on {{ offer.offer_info_last_update}}.
+{% if offer.offer_content_last_update %}
+  The content of this offer was last updated on {{ offer.offer_content_last_update}}.
+{% endif %} 
+
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
