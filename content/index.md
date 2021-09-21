@@ -62,10 +62,7 @@ Browse for offers of education, training, and certification on digital accessibi
 <!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
 -->
 
-<div class="default-grid compact-grid">
+<div class="default-grid right-col">
   <div>One</div>
   <div>Two</div>
-  <div>Three</div>
-  <div>Four</div>
-  <div>Five</div>
 </div>
