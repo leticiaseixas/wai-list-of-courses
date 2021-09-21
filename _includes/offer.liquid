@@ -1,7 +1,7 @@
 {% capture offer_title %}<a href="{{ offer.offer_link }}">{{ offer.name }}</a> by {{ offer.provider }}{% endcapture %}
 
 
-{% include box.html type="start" title=offer_title id=offer.id%}
+{% include box.html type="start" title=offer_title id=offer.id h="3" %}
 
 {{ offer.description }}
 
@@ -10,7 +10,7 @@
 
 {% include excol.html type="start" id="one" %}
 
-### Heading 3
+###$ Details
 
 {% include excol.html type="middle" %}
 
