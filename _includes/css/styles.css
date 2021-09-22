@@ -147,7 +147,7 @@ details>div{
   margin-bottom: 32px;
   margin-right: 32px;
 }
-*/
+
 
 details>div{
   border-top: solid 1px var(--line-grey);
@@ -156,6 +156,7 @@ details>div{
   padding-left: 16px;
 
 }
+*/
 
 #disclaimer {
   border: 1px solid var(--line-grey);
