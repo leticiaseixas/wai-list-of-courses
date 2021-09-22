@@ -80,7 +80,15 @@ main>header {
 /* .offers-filters legend {
   font-size: 1em;
   margin-bottom: 8px;
-} */
+} 
+
+.offers-filters__filter {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+*/
 
 
 
@@ -139,11 +147,6 @@ a.more-info:hover {
   height: 1.5em;
 }
 
-.offers-filters__filter {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 8px;
-}
 
 
 
