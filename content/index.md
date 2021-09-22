@@ -101,7 +101,7 @@ footer: >
         </div>
     </div>
     <div class="offers-offers">
-        <div id="offers-list">
+        
             <span id="status">
                 <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
             </span>
@@ -111,7 +111,7 @@ footer: >
             {% for offer in offers %}
               {% include offer.liquid %}
             {% endfor %}      
-        </div>
+        
     </div>
 </div>
 
