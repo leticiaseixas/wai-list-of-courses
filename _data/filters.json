@@ -1,7 +1,7 @@
 [
   {
     "id": "offer_type",
-    "name": "Type",
+    "name": "Offer type",
     "type": "checkbox",
     "options": [
       {
