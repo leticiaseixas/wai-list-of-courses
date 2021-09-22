@@ -58,6 +58,11 @@ footer: >
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
                     <label for="filter-{{ option.id }}">{{ option.name }}</label>
+                    {% include excol.html type="start" id="optional-id" %}
+                    Show info
+                    {% include excol.html type="middle" %}
+                    Content of the expand/collapse.
+                    {% include excol.html type="end" %}
                 </div>
                 {% endfor %}
             </fieldset>
