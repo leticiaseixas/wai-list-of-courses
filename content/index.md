@@ -64,7 +64,7 @@ footer: >
             {% assign langAvailable = site.data.offers | map: "language" | uniq %}
             <fieldset id="language-filter">
                 <legend>Language</legend>
-                <div>
+                <div class="field">
                     <select name="language" id="language">
                         <option value="">--Select an option--</option>
                         {% for language in langAvailable %}
@@ -72,6 +72,7 @@ footer: >
                             site.data.lang[language].nativeName}})</option>
                         {% endfor %}
                     </select>
+                      <label for="language" hidden>Language</label>
                 </div>
             </fieldset>
             {% assign countriesAvailable = site.data.offers | map: "country" | uniq %}
