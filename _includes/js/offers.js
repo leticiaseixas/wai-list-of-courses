@@ -80,7 +80,7 @@ if (filterForm) {
 
   function rebuildList(newResults, filtersOn) {
 
-    const articles = offersList.querySelectorAll('ASIDE');
+    const articles = offersList.querySelectorAll('aside');
     var totalOffers = document.getElementById("total-offers");
 
     var listFiltersOnString = document.createElement('dl');
