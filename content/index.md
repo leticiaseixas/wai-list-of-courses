@@ -43,10 +43,8 @@ footer: >
 <div class="header-sup">
   <p>Browse for offers of education, training, and certification on digital accessibility.</p>
   <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
+    {% include_cached button.html label="Submit an offer" %}
 </div>
-<!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
--->
-{% include_cached button.html label="Submit an offer" %}
 <div id="app">
     <div id="left-col" class="offers-filters">
         <form data-filter-form>
