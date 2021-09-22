@@ -5,8 +5,7 @@ const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
 
 var offersList = document.getElementById('offers-list');
-var buttonExpandAll = document.getElementById("expand-sections");
-var buttonColapseAll = document.getElementById("col-sections");
+
 
 if (filterForm) {
 
@@ -21,19 +20,6 @@ if (filterForm) {
       filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
     });
   })
- /*  
-  buttonExpandAll.addEventListener('click', e => {
-    offersList.querySelectorAll("details").forEach(el => el.open = true);
-    buttonColapseAll.hidden = false;
-    buttonExpandAll.hidden = true;
-  });
-
-  buttonColapseAll.addEventListener('click', e => {
-    offersList.querySelectorAll("details").forEach(el => el.open = false);
-    buttonColapseAll.hidden = true;
-    buttonExpandAll.hidden = false;
-  });
- */
 
   function filterJson(form) {
 
@@ -94,7 +80,7 @@ if (filterForm) {
 
   function rebuildList(newResults, filtersOn) {
 
-    const articles = offersList.querySelectorAll('ARTICLE');
+    const articles = offersList.querySelectorAll('ASIDE');
     var totalOffers = document.getElementById("total-offers");
 
     var listFiltersOnString = document.createElement('dl');
