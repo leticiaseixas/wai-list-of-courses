@@ -79,6 +79,10 @@ main>header {
   margin-bottom: 2em;
 }
 
+.button-clear-button[hidden] {
+  display: none !important;
+}
+
 .filter-options {
   margin: 0;
 }
