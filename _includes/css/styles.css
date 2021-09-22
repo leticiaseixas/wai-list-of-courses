@@ -106,7 +106,26 @@ main>header {
 }
 
 
+details dt::after {
+  content: ":";
+}
 
+#offers-list dt {
+  float: left;
+  clear: left;
+  margin: 0 0.5em 0 !important;
+}
+
+#offers-list dt, dd {
+  margin-bottom: 0.5em !important;
+}
+
+#offers-list div {
+  margin-left: -32px;
+  padding: 8px 16px;
+  /* background-color: var(--off-white);
+  border: solid 1px var(--line-grey); */
+}
 
 
 
@@ -279,24 +298,4 @@ a.more-info:hover {
 } */
 
 
-details dt::after {
-  content: ":";
-}
-
-details dt {
-  float: left;
-  clear: left;
-  margin: 0 0.5em 0 !important;
-}
-
-details dt, dd {
-  margin-bottom: 0.5em !important;
-}
-
-details div {
-  margin-left: -32px;
-  padding: 8px 16px;
-  /* background-color: var(--off-white);
-  border: solid 1px var(--line-grey); */
-}
 
