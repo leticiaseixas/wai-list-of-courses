@@ -142,18 +142,19 @@ details>div{
 }
 
 details>div{
-  border-top: solid 1px var(--line-grey);
-  margin-left: -47px;
-  margin-right: -16px;
-  padding-left: 16px;
-}
-*/
-
-details>div{
   border: solid 1px var(--line-grey);
   padding-left: 16px;
   margin-bottom: 32px;
   margin-right: 32px;
+}
+*/
+
+details>div{
+  border-top: solid 1px var(--line-grey);
+  margin-left: -47px;
+  margin-right: -16px;
+  padding-left: 16px;
+
 }
 
 #disclaimer {
