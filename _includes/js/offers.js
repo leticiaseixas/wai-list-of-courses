@@ -6,17 +6,9 @@ const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
 
 var offersList = document.getElementById('offers-list');
 
-document.getElementById('clearButton1').addEventListener('click', e => {
-  rebuildList(jsonOffers, []);
-  filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-  filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-});
-document.getElementById('clearButton2').addEventListener('click', e => {
-  rebuildList(jsonOffers, []);
-  filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-  filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-});
-
+document.querySelectorAll('clear-button').forEach(item => {
+  item.addEventListener('click', e => {clearFilters()});
+})
 
 if (filterForm) {
 
@@ -140,6 +132,13 @@ if (filterForm) {
   function disabledClearFilters(isDisabled) {
     document.getElementById("clearButton1").disabled = isDisabled;
     document.getElementById("clearButton2").disabled = isDisabled;
+  }
+
+
+  function clearFilters() {
+    rebuildList(jsonOffers, []);
+    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+    filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
   }
 
 
