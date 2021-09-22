@@ -112,8 +112,12 @@ footer: >
             {% assign offers = site.data.offers | sort: 'name' %}
             {% for offer in offers %}
               {% include offer.liquid %}
-            {% endfor %}
-            
+            {% endfor %}      
         </div>
     </div>
 </div>
+
+
+<script>
+{% include js/offers.js %}
+</script>
