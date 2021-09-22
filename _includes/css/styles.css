@@ -132,7 +132,7 @@ details dt::after {
 }
 */
 
-#details_offer11 div:first-child{
+html > body:nth-child(2) > div:nth-child(6) > main:nth-child(2) > div:nth-child(4) > div:nth-child(2) > aside:nth-child(4) > div:nth-child(2) > details:nth-child(1) > div:nth-child(2){
   margin-bottom: -8px;
   margin-right: -16px;
   margin-left: -48px;
