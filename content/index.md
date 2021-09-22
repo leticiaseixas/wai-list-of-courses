@@ -88,7 +88,7 @@ footer: >
                 </div>
             </fieldset>
         </form>
-        {% include_cached button.html label="Clear filters" id="clearButton" disabled="true"%}
+        {% include_cached button.html label="Clear filters" id="clearButton1" disabled="true"%}
         <a id="deselect-1" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a>
         <div class="disclaimer" id="disclaimer">
             <h2>Important Disclaimer</h2>
@@ -106,6 +106,7 @@ footer: >
             <span id="status">
                 <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
             </span>
+            {% include_cached button.html label="Clear filters" id="clearButton2" disabled="true"%}
             <span id="buttons-top">
                 <a id="deselect-2" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a>
             </span>

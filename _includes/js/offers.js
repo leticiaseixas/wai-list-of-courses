@@ -6,6 +6,17 @@ const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
 
 var offersList = document.getElementById('offers-list');
 
+document.getElementById('.clearButton1').addEventListener('click', e => {
+  rebuildList(jsonOffers, []);
+  filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+  filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
+});
+document.getElementById('.clearButton2').addEventListener('click', e => {
+  rebuildList(jsonOffers, []);
+  filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+  filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
+});
+
 
 if (filterForm) {
 
@@ -13,13 +24,7 @@ if (filterForm) {
     filterJson(filterForm);
   });
 
-  document.querySelectorAll('.clear_filter').forEach(item => {
-    item.addEventListener('click', e => {
-      rebuildList(jsonOffers, []);
-      filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-      filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-    });
-  })
+
 
   function filterJson(form) {
 
@@ -114,7 +119,7 @@ if (filterForm) {
     if (filtersOn.length === 0) {
 
       totalOffers.innerText = "Showing " + newResults.length + " offers";
-      hideClearFilters(true);
+      disabledClearFilters(true);
     }
     else if (newResults.length > 0) {
       if (newResults.length === 1)
@@ -122,19 +127,19 @@ if (filterForm) {
       else
         totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
-      hideClearFilters(false);
+      disabledClearFilters(false);
     }
     else {
       totalOffers.innerText = "Sorry, but no offers match the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
-      hideClearFilters(false);
+      disabledClearFilters(false);
     }
   }
 
 
-  function hideClearFilters(isHidden) {
-    document.getElementById("deselect-1").hidden = isHidden;
-    document.getElementById("deselect-2").hidden = isHidden;
+  function disabledClearFilters(isDisabled) {
+    document.getElementById("clearButton1").disabled = isDisabled;
+    document.getElementById("clearButton2").disabled = isDisabled;
   }
 
 

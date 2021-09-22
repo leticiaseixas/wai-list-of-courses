@@ -73,19 +73,32 @@ main>header {
   margin-right: .5em;
 }
 
-
-
-
-
-
-
-
-
-
-
 #language, #country {
   width: 100%;
 }
+
+#clearButton1, #clearButton2 {
+  margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #yes-offers button {
   margin-bottom: 1em;
@@ -244,14 +257,7 @@ a.more-info:hover {
   transition: opacity 0.2s;
 }
 
-.list_buttons {
-  margin-bottom: 2em;
-  cursor: pointer;
-}
 
-.list_buttons[hidden] {
-  display: none !important;
-}
 
 .submit-a-offer {
   grid-column: 8 / 10;
