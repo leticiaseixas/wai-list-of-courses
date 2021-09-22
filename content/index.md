@@ -54,7 +54,7 @@ footer: >
             <fieldset id="{{ filter.id }}">
                 <legend class="label">{{ filter.name }}</legend>
                 {% for option in filter.options %}
-                <div class="filter-options">
+                <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
                     <label for="filter-{{ option.id }}">{{ option.name }}</label>
                 </div>
@@ -72,13 +72,12 @@ footer: >
                             site.data.lang[language].nativeName}})</option>
                         {% endfor %}
                     </select>
-                      <label for="language" hidden>Language</label>
                 </div>
             </fieldset>
             {% assign countriesAvailable = site.data.offers | map: "country" | uniq %}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
-                <div>
+                <div class="field">
                     <select name="country" id="country">
                         <option value="">--Select an option--</option>
                         {% for country in countriesAvailable %}
