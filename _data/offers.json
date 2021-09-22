@@ -189,7 +189,7 @@
     ],
     "accessibility_resources": [
       "Audio descriptions",
-      "Transcripts"
+      "Real-time captioning"
     ],
     "platform": [
       "Not provided"
@@ -401,7 +401,7 @@
     ],
     "accessibility_resources": [
       "Audio descriptions",
-      "Transcripts"
+      "Real-time captioning"
     ],
     "platform": [
       "edx"
@@ -542,7 +542,7 @@
       "Guided"
     ],
     "accessibility_resources": [
-      "Audio descriptions",
+      "International sign interpretation",
       "Transcripts"
     ],
     "platform": [
@@ -823,7 +823,7 @@
       "Asynchronous"
     ],
     "accessibility_resources": [
-      "Audio descriptions",
+      "International sign interpretation",
       "Transcripts"
     ],
     "platform": [
@@ -895,7 +895,7 @@
       "Synchronous"
     ],
     "accessibility_resources": [
-      "Audio descriptions",
+      "International sign interpretation",
       "Transcripts"
     ],
     "platform": [
@@ -1036,7 +1036,7 @@
       "Synchronous"
     ],
     "accessibility_resources": [
-      "Audio descriptions",
+      "Captioning",
       "Transcripts"
     ],
     "platform": [
@@ -1107,7 +1107,7 @@
       "Synchronous"
     ],
     "accessibility_resources": [
-      "Audio descriptions",
+      "Captioning",
       "Transcripts"
     ],
     "platform": [
