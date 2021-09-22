@@ -7,6 +7,7 @@ const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
 var offersList = document.getElementById('offers-list');
 
 document.querySelectorAll('.button-clear-button').forEach(item => {
+  item.hidden = true;
   item.addEventListener('click', e => { clearFilters() });
 })
 
