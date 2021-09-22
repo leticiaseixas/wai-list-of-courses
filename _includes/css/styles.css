@@ -38,9 +38,50 @@ main>header {
   font-size: 125%;
 }
 
+#app {
+  display: contents;
+}
+
+#left-col h2 {
+  margin: 20px 0 20px;
+}
+
 .offers-filters {
   font-size: 85%;
+  padding-right: 2em;  
 }
+
+@media (min-width: 60em) {
+  .offers-filters {
+    grid-column: 1 / 4;
+    border-right: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 72em) {
+  .offers-filters {
+    grid-column: 2 / 4;
+  }
+}
+
+.offers-filters legend {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.offers-filters input {
+  margin-right: .5em;
+}
+
+
+
+
+
+
+
+
+
+
 
 #language, #country {
   width: 100%;
@@ -66,30 +107,8 @@ main>header {
   padding: 10px;
 }
 
-#left-col h2 {
-  margin: 20px 0 20px;
-}
 
-@media (min-width: 60em) {
-  .offers-filters {
-    font-size: 85%;
-    grid-column: 1 / 4;
-    padding-right: 2em;
-    border-right: 1px solid #ccc;
-  }
-}
 
-@media (min-width: 72em) {
-  .offers-filters {
-    grid-column: 2 / 4;
-    padding-right: 2em;
-  }
-}
-
-.offers-filters legend {
-  font-size: 1em;
-  margin-bottom: 8px;
-}
 
 a.more-info {
   color: var(--light-blue);
@@ -116,13 +135,8 @@ a.more-info:hover {
   margin-bottom: 8px;
 }
 
-.offers-filters input {
-  margin-right: .5em;
-}
 
-.offers {
-  display: contents;
-}
+
 
 .offers-offers {
   display: flex;
@@ -288,3 +302,4 @@ details div {
   /* background-color: var(--off-white);
   border: solid 1px var(--line-grey); */
 }
+
