@@ -44,7 +44,11 @@
       "Guided",
       "Synchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -110,7 +114,11 @@
     "learning": [
       "Guided"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Udacity"
     ],
     "cost": [
@@ -174,7 +182,11 @@
     "learning": [
       "Not provided"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -237,7 +249,11 @@
     "learning": [
       "Non-guided", "Asynchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -301,7 +317,11 @@
       "Non-guided",
       "Asynchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Canvas"
     ],
     "cost": [
@@ -364,7 +384,11 @@
     "learning": [
       "Not provided"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -427,7 +451,11 @@
     "learning": [
       "Non-guided"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Canvas"
     ],
     "cost": [
@@ -490,7 +518,11 @@
     "learning": [
       "Online"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -554,7 +586,11 @@
       "Non-guided",
       "Asynchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "ARC"
     ],
     "cost": [
@@ -618,7 +654,11 @@
       "Non-guided",
       "Asynchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "LinkedIn"
     ],
     "cost": [
@@ -682,7 +722,11 @@
       "Guided",
       "Asynchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -746,7 +790,11 @@
       "Non-guided",
       "Asynchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "edx"
     ],
     "cost": [
@@ -812,7 +860,11 @@
       "Asynchronous",
       "Synchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -878,7 +930,11 @@
       "Guided",
       "Synchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -942,7 +998,11 @@
       "Guided",
       "Synchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -1006,7 +1066,11 @@
       "Guided",
       "Synchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
@@ -1071,7 +1135,11 @@
       "Guided",
       "Synchronous"
     ],
+    "accessibility_resources":[
+      "Audio descriptions", "Transcripts"
+    ],
     "platform": [
+
       "Not provided"
     ],
     "cost": [
