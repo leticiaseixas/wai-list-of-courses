@@ -103,15 +103,16 @@ footer: >
         </div>
     </div>
     <div id="offers-list">
-            <span id="status">
-                <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
-            </span>
-            {% include excol.html type="all" %}
-            {% include_cached button.html label="Clear filters" class="clear-button"%}
-            {% assign offers = site.data.offers | sort: 'name' %}
-            {% for offer in offers %}
-              {% include offer.liquid %}
-            {% endfor %}      
+        <span id="status">
+            <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+        </span>
+        {% include excol.html type="all" %}
+        {% include_cached button.html label="Clear filters" class="clear-button"%}
+        {% assign offers = site.data.offers | sort: 'name' %}
+        {% for offer in offers %}
+            {% include offer.liquid %}
+        {% endfor %}      
+        {% include_cached button.html label="Submit an offer" %}    
     </div>
 </div>
 

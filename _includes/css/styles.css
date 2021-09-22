@@ -37,6 +37,10 @@ main>header {
   font-size: 125%;
 }
 
+.button{
+  margin-top:2em;
+}
+
 #app {
   display: contents;
 }
