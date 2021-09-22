@@ -126,7 +126,7 @@ details dt::after {
 }
 
 /* 
-#details div {
+details>div{
   margin-bottom: -8px;
   margin-right: -16px;
   margin-left: -48px;
@@ -137,7 +137,7 @@ details dt::after {
   border-radius: 3px;
 }
 
-#details div {
+details>div{
   border-top: solid 1px var(--line-grey);
   margin-left: -47px;
   margin-right: -16px;

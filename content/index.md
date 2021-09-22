@@ -52,9 +52,9 @@ footer: >
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
                 <legend class="label">{{ filter.name }}</legend>
-                {% if filter.name == "Format" %}
+<!--                 {% if filter.name == "Format" %}
                     {% include resource-link.html label="Show info" href="#"%}
-                {% endif %}
+                {% endif %} -->
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
