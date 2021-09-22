@@ -80,6 +80,10 @@ main>header {
   margin-top: 10px;
 }
 
+.field label {
+ display: inline !important;
+}
+
 /* .offers-filters legend {
   font-size: 1em;
   margin-bottom: 8px;
