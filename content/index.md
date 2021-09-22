@@ -58,7 +58,10 @@ footer: >
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
                     <label for="filter-{{ option.id }}">{{ option.name }}</label>
-                                    </div>
+                    {% if filter.name == "Format" %}
+                        {% include resource-link.html label="Show info" href="https://www.w3.org/TR/ATAG20/#principle_a1"%}
+                    {% endif %}
+                </div>
                 {% endfor %}
             </fieldset>
             {% endfor %}
