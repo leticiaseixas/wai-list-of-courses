@@ -105,6 +105,9 @@ main>header {
   }
 }
 
+#offers-list dd {
+  margin: 1em;
+}
 
 details dt::after {
   content: ":";
@@ -112,13 +115,9 @@ details dt::after {
 
 #offers-list dt {
   float: left;
-  clear: left;
   margin: 0 0.5em 0 !important;
 }
 
-#offers-list dt, dd {
-  margin-bottom: 0.5em !important;
-}
 
 #details div {
   margin-left: -32px;
