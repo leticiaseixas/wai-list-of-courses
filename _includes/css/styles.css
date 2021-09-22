@@ -76,6 +76,9 @@ main>header {
   margin-bottom: 2em;
 }
 
+.filter-options{
+  margin-bottom: 8px;
+}
 
 /* .offers-filters legend {
   font-size: 1em;

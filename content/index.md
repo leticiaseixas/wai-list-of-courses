@@ -52,9 +52,9 @@ footer: >
             <h2>Filters</h2>
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
-                <legend>{{ filter.name }}</legend>
+                <legend class="label">{{ filter.name }}</legend>
                 {% for option in filter.options %}
-                <div>
+                <div class="filter-options">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
                     <label for="filter-{{ option.id }}">{{ option.name }}</label>
                 </div>
