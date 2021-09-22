@@ -46,9 +46,9 @@ footer: >
 </div>
 <!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
 -->
-<div id="app" class="offers">
+<div id="app">
     <div id="left-col" class="offers-filters">
-        <form data-filter-form method="GET">
+        <form data-filter-form>
             <h2>Filters</h2>
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
@@ -88,6 +88,7 @@ footer: >
                 </div>
             </fieldset>
         </form>
+        {% include_cached button.html label="Clear filters" id="clearButton" disabled="true"%}
         <a id="deselect-1" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a>
         <div class="disclaimer" id="disclaimer">
             <h2>Important Disclaimer</h2>
