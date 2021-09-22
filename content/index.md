@@ -100,8 +100,7 @@ footer: >
                 change at any time.</p>
         </div>
     </div>
-    <div class="offers-offers">
-        
+    <div class="offers-list">
             <span id="status">
                 <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
             </span>
@@ -111,7 +110,6 @@ footer: >
             {% for offer in offers %}
               {% include offer.liquid %}
             {% endfor %}      
-        
     </div>
 </div>
 
