@@ -96,7 +96,7 @@ if (filterForm) {
       else if (f.filterId == 'country')
         attValues.innerText = jsonCountry[f.filterValues[0]].name + " (" + jsonCountry[f.filterValues[0]].nativeName + ")";
       else
-        attValues.innerText = f.filterValues.toString();
+        attValues.innerText = f.filterValues.join(', ');
       listFiltersOnString.appendChild(attValues);
     });
 
