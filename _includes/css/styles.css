@@ -1,4 +1,3 @@
-
 @media (min-width: 40em) {
   main {
     display: contents;
@@ -46,13 +45,13 @@ main>header {
   margin: 20px 0 20px;
 }
 
-#left-col legend{
+#left-col legend {
   font-size: 85%;
 }
 
 .offers-filters {
   font-size: 85%;
-  padding-right: 2em;  
+  padding-right: 2em;
 }
 
 @media (min-width: 60em) {
@@ -80,15 +79,15 @@ main>header {
   margin-bottom: 2em;
 }
 
-.filter-options{
+.filter-options {
   margin: 0;
 }
 
 .field label {
- display: inline !important;
+  display: inline !important;
 }
 
-#offers-list{
+#offers-list {
   padding-top: 2em;
   margin-top: 2em;
   border-top: 1px solid #ccc;
@@ -122,7 +121,6 @@ details dt::after {
   margin: 0 0.5em 0 0;
 }
 
-
 /* 
 #details div {
   margin-bottom: -8px;
@@ -136,7 +134,7 @@ details dt::after {
 }
 */
 
-html > body:nth-child(2) > div:nth-child(6) > main:nth-child(2) > div:nth-child(4) > div:nth-child(2) > aside:nth-child(4) > div:nth-child(2) > details:nth-child(1) > div:nth-child(2){
+html > body:nth-child(2) > div:nth-child(6) > main:nth-child(2) > div:nth-child(4) > div:nth-child(2) > aside:nth-child(4) > div:nth-child(2) > details:nth-child(1) > div:nth-child(2) {
   margin-bottom: -8px;
   margin-right: -16px;
   margin-left: -48px;
@@ -147,7 +145,19 @@ html > body:nth-child(2) > div:nth-child(6) > main:nth-child(2) > div:nth-child(
   border-radius: 3px;
 }
 
+html > body:nth-child(2) > div:nth-child(6) > main:nth-child(2) > div:nth-child(4) > div:nth-child(2) > aside:nth-child(5) > div:nth-child(2) > details:nth-child(1) > div:nth-child(2) {
+  border-top: solid 1px var(--line-grey);
+  margin-left: -47px;
+  margin-right: -16px;
+  padding-left: 16px;
+}
 
+html > body:nth-child(2) > div:nth-child(6) > main:nth-child(2) > div:nth-child(4) > div:nth-child(2) > aside:nth-child(6) > div:nth-child(2) > details:nth-child(1) > div:nth-child(2) {
+  border: solid 1px var(--line-grey);
+  padding-left: 16px;
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
 
 #disclaimer {
   border: 1px solid var(--line-grey);
@@ -177,8 +187,6 @@ html > body:nth-child(2) > div:nth-child(6) > main:nth-child(2) > div:nth-child(
   transition: opacity 0.2s;
 }
 
-
-
 /*
 .submit-a-offer {
   grid-column: 8 / 10;
@@ -193,6 +201,3 @@ html > body:nth-child(2) > div:nth-child(6) > main:nth-child(2) > div:nth-child(
   }
 }
 */
-
-
-
