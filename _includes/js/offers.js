@@ -108,9 +108,8 @@ if (filterForm) {
     })
 
     if (filtersOn.length === 0) {
-
       totalOffers.innerText = "Showing " + newResults.length + " offers";
-      disabledClearFilters(true);
+      hideClearButton(true);
     }
     else if (newResults.length > 0) {
       if (newResults.length === 1)
@@ -118,18 +117,18 @@ if (filterForm) {
       else
         totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
-      disabledClearFilters(false);
+      hideClearButton(false);
     }
     else {
       totalOffers.innerText = "Sorry, but no offers match the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
-      disabledClearFilters(false);
+      hideClearButton(false);
     }
   }
 
 
-  function disabledClearFilters(isDisabled) {
-    document.querySelectorAll('.button-clear-button').forEach(item => { item.disabled = isDisabled });
+  function hideClearButton(isHidden) {
+    document.querySelectorAll('.button-clear-button').forEach(item => { item.hidden = isHidden });
   }
 
 
