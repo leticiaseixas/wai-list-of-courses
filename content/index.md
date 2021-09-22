@@ -51,10 +51,10 @@ footer: >
         <form data-filter-form>
             <h2>Filters</h2>
             {% for filter in site.data.filters %}
-            <fieldset id="{{ filter.id }}">
-                <legend>{{ filter.name }}</legend>
+            <fieldset id="{{ filter.id }}" class="field">
+                <legend class="label">{{ filter.name }}</legend>
                 {% for option in filter.options %}
-                <div class="offers-filters__filter">
+                <div class="field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
                     <label for="filter-{{ option.id }}">{{ option.name }}</label>
                 </div>
@@ -105,8 +105,8 @@ footer: >
             <span id="status">
                 <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
             </span>
-            {% include_cached button.html label="Clear filters" class="clear-button" disabled="true"%}
             {% include excol.html type="all" %}
+            {% include_cached button.html label="Clear filters" class="clear-button" disabled="true"%}
             {% assign offers = site.data.offers | sort: 'name' %}
             {% for offer in offers %}
               {% include offer.liquid %}
