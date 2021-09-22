@@ -100,7 +100,7 @@ footer: >
                 change at any time.</p>
         </div>
     </div>
-    <div class="offers-list">
+    <div id="offers-list">
             <span id="status">
                 <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
             </span>

@@ -84,14 +84,14 @@ main>header {
  display: inline !important;
 }
 
-.offers-list{
+#offers-list{
   padding-top: 2em;
   margin-top: 2em;
   border-top: 1px solid #ccc;
 }
 
 @media (min-width: 60em) {
-  .offers-list {
+  #offers-list {
     grid-column: 4 / span 7;
     padding-top: 0;
     margin-top: 0;
@@ -100,7 +100,7 @@ main>header {
 }
 
 @media (min-width: 72em) {
-  .offers-list {
+  #offers-list {
     grid-column: 4 / span 5;
   }
 }
