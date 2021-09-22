@@ -14,10 +14,13 @@
       "Training program"
     ],
     "prerequisites": [
-      "Not provided"
+      "None"
     ],
     "audience": [
-      "Developer", "Designer", "Tester", "Other"
+      "Developer",
+      "Designer",
+      "Tester",
+      "Other"
     ],
     "level": [
       "Basic"
@@ -44,18 +47,18 @@
       "Guided",
       "Synchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Not provided"
     ],
     "cost": [
-      "Not provided"
+      "Paid"
     ],
     "duration": [
-      "Not provided"
+      "2 weeks"
     ],
     "offer_link": [
       "www.link.com"
@@ -88,7 +91,8 @@
       "HTML, CSS, Javascript"
     ],
     "audience": [
-      "Developer", "Tester"
+      "Developer",
+      "Tester"
     ],
     "level": [
       "Advanced"
@@ -114,11 +118,11 @@
     "learning": [
       "Guided"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Udacity"
     ],
     "cost": [
@@ -168,7 +172,8 @@
       "Not provided"
     ],
     "keywords_topics": [
-      "Certification", "Accessible technologies"
+      "Certification",
+      "Accessible technologies"
     ],
     "language": [
       "en"
@@ -182,11 +187,11 @@
     "learning": [
       "Not provided"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Not provided"
     ],
     "cost": [
@@ -226,7 +231,8 @@
       "Principles of Web Accessibility"
     ],
     "audience": [
-      "Developer", "Tester"
+      "Developer",
+      "Tester"
     ],
     "level": [
       "Intermediate"
@@ -247,13 +253,14 @@
       "Online"
     ],
     "learning": [
-      "Non-guided", "Asynchronous"
+      "Non-guided",
+      "Asynchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Not provided"
     ],
     "cost": [
@@ -293,7 +300,10 @@
       "None"
     ],
     "audience": [
-      "Developer", "Designer", "Tester", "Other"
+      "Developer",
+      "Designer",
+      "Tester",
+      "Other"
     ],
     "level": [
       "Basic"
@@ -317,11 +327,11 @@
       "Non-guided",
       "Asynchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Canvas"
     ],
     "cost": [
@@ -367,10 +377,14 @@
       "Not provided"
     ],
     "curricula_correspondence": [
-      "Not provided"
+      "Developer Modules"
+    ],
+    "curricula_link": [
+      "https://www.w3.org/WAI/curricula/developer-modules/"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessibility techniques",
+      "Accessible design"
     ],
     "language": [
       "de"
@@ -382,14 +396,15 @@
       "Face-to-face"
     ],
     "learning": [
-      "Not provided"
+      "Non-guided",
+      "Asynchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
-      "Not provided"
+      "edx"
     ],
     "cost": [
       "Paid"
@@ -428,13 +443,18 @@
       "Basic knowledge of disability and computer applications"
     ],
     "audience": [
-      "Manager","Content author", "Other"
+      "Manager",
+      "Content author",
+      "Other"
     ],
     "level": [
       "Basic"
     ],
     "curricula_correspondence": [
-      "Not provided"
+      "Developer Modules"
+    ],
+    "curricula_link": [
+      "https://www.w3.org/WAI/curricula/developer-modules/"
     ],
     "keywords_topics": [
       "Foundations of ICT accessibility"
@@ -451,11 +471,11 @@
     "learning": [
       "Non-guided"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Canvas"
     ],
     "cost": [
@@ -495,7 +515,10 @@
       "Basic knowledge of disability and computer applications"
     ],
     "audience": [
-      "Manager","Developer", "Content author", "Other"
+      "Manager",
+      "Developer",
+      "Content author",
+      "Other"
     ],
     "level": [
       "Basic"
@@ -518,11 +541,11 @@
     "learning": [
       "Guided"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Not provided"
     ],
     "cost": [
@@ -565,13 +588,13 @@
       "Manager"
     ],
     "level": [
-      "Not provided"
+      "Basic"
     ],
     "curricula_correspondence": [
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessible tutoring"
     ],
     "language": [
       "en"
@@ -586,18 +609,18 @@
       "Non-guided",
       "Asynchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "ARC"
     ],
     "cost": [
       "Paid"
     ],
     "duration": [
-      "Not provided"
+      "8 weeks"
     ],
     "offer_link": [
       "www.link.com"
@@ -627,7 +650,7 @@
       "Training program"
     ],
     "prerequisites": [
-      "Not provided"
+      "Basic knowledge in web design"
     ],
     "audience": [
       "Designer"
@@ -639,7 +662,8 @@
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "UX",
+      "Accessible design"
     ],
     "language": [
       "en"
@@ -654,11 +678,11 @@
       "Non-guided",
       "Asynchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "LinkedIn"
     ],
     "cost": [
@@ -698,16 +722,20 @@
       "Academic writing"
     ],
     "audience": [
-      "Not provided"
+      "Other"
     ],
     "level": [
       "Basic"
     ],
     "curricula_correspondence": [
-      "Not provided"
+      "Foundation Modules"
+    ],
+    "curricula_link": [
+      "https://www.w3.org/WAI/curricula/foundation-modules/"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessibiliy principles",
+      "Policies and guidelines"
     ],
     "language": [
       "en"
@@ -722,12 +750,12 @@
       "Guided",
       "Asynchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
-      "Not provided"
+      "edx"
     ],
     "cost": [
       "Paid"
@@ -766,16 +794,20 @@
       "None"
     ],
     "audience": [
-      "Not provided"
+      "Basic"
     ],
     "level": [
       "Basic"
     ],
     "curricula_correspondence": [
-      "Not provided"
+      "Foundation Modules"
+    ],
+    "curricula_link": [
+      "https://www.w3.org/WAI/curricula/foundation-modules/"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessibility principles",
+      "Accessible technologies"
     ],
     "language": [
       "en"
@@ -790,11 +822,11 @@
       "Non-guided",
       "Asynchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "edx"
     ],
     "cost": [
@@ -835,7 +867,7 @@
       "Proof of English proficiency"
     ],
     "audience": [
-      "Not provided"
+      "Other"
     ],
     "level": [
       "Basic"
@@ -844,7 +876,9 @@
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessible media",
+      "Accessible documents",
+      "Audio descriptions"
     ],
     "language": [
       "en"
@@ -860,11 +894,11 @@
       "Asynchronous",
       "Synchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Not provided"
     ],
     "cost": [
@@ -915,7 +949,8 @@
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessible online courses",
+      "Accessibility policies and guidelines"
     ],
     "language": [
       "en"
@@ -930,12 +965,12 @@
       "Guided",
       "Synchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
-      "Not provided"
+      "edx"
     ],
     "cost": [
       "Paid"
@@ -974,7 +1009,7 @@
       "Undergraduate degree"
     ],
     "audience": [
-      "Not provided"
+      "Other"
     ],
     "level": [
       "Basic"
@@ -983,7 +1018,9 @@
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Inclusive design",
+      "Accessible design",
+      "Accessibility principles"
     ],
     "language": [
       "en"
@@ -992,17 +1029,17 @@
       "us"
     ],
     "format": [
-      "Online"
+      "Hybrid"
     ],
     "learning": [
       "Guided",
       "Synchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Not provided"
     ],
     "cost": [
@@ -1042,7 +1079,8 @@
       "Basic knowledge of disability and computer applications"
     ],
     "audience": [
-      "Not provided"
+      "Designer",
+      "Developer"
     ],
     "level": [
       "Intermediate"
@@ -1051,7 +1089,9 @@
       "Not provided"
     ],
     "keywords_topics": [
-      "Not provided"
+      "Accessibility specialist",
+      "Inclusive design",
+      "Accessible design"
     ],
     "language": [
       "en"
@@ -1066,11 +1106,11 @@
       "Guided",
       "Synchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Not provided"
     ],
     "cost": [
@@ -1129,17 +1169,17 @@
       "us"
     ],
     "format": [
-      "Online"
+      "Face-to-face"
     ],
     "learning": [
       "Guided",
       "Synchronous"
     ],
-    "accessibility_resources":[
-      "Audio descriptions", "Transcripts"
+    "accessibility_resources": [
+      "Audio descriptions",
+      "Transcripts"
     ],
     "platform": [
-
       "Not provided"
     ],
     "cost": [
