@@ -7,7 +7,7 @@ const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
 var offersList = document.getElementById('offers-list');
 
 document.querySelectorAll('clear-button').forEach(item => {
-  item.addEventListener('click', e => {clearFilters()});
+  item.addEventListener('click', e => { clearFilters() });
 })
 
 if (filterForm) {
@@ -96,7 +96,6 @@ if (filterForm) {
         attValues.innerText = jsonCountry[f.filterValues[0]].name + " (" + jsonCountry[f.filterValues[0]].nativeName + ")";
       else
         attValues.innerText = f.filterValues.toString();
-
       listFiltersOnString.appendChild(attValues);
     });
 
@@ -130,8 +129,9 @@ if (filterForm) {
 
 
   function disabledClearFilters(isDisabled) {
-    document.getElementById("clearButton1").disabled = isDisabled;
-    document.getElementById("clearButton2").disabled = isDisabled;
+    document.querySelectorAll('clear-button').forEach(item => {
+      item.addEventListener('click', e => { e.disabled = isDisabled });
+    })
   }
 
 
@@ -140,7 +140,6 @@ if (filterForm) {
     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
     filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
   }
-
 
 
   function callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList) {

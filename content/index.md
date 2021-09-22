@@ -89,7 +89,6 @@ footer: >
             </fieldset>
         </form>
         {% include_cached button.html label="Clear filters" class="clearButton" disabled="true"%}
-        <a id="deselect-1" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a>
         <div class="disclaimer" id="disclaimer">
             <h2>Important Disclaimer</h2>
             <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion
@@ -107,9 +106,6 @@ footer: >
                 <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
             </span>
             {% include_cached button.html label="Clear filters" class="clear-button" disabled="true"%}
-            <span id="buttons-top">
-                <a id="deselect-2" class="button list_buttons clear_filter" hidden><span>Clear filters</span></a>
-            </span>
             {% include excol.html type="all" %}
             {% assign offers = site.data.offers | sort: 'name' %}
             {% for offer in offers %}
