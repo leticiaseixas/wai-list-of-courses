@@ -6,7 +6,7 @@ const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
 
 var offersList = document.getElementById('offers-list');
 
-document.querySelectorAll('clear-button').forEach(item => {
+document.querySelectorAll('button-clear-button').forEach(item => {
   item.addEventListener('click', e => { clearFilters() });
 })
 
@@ -129,7 +129,7 @@ if (filterForm) {
 
 
   function disabledClearFilters(isDisabled) {
-    document.querySelectorAll('clear-button').forEach(item => {
+    document.querySelectorAll('button-clear-button').forEach(item => {
       item.addEventListener('click', e => { e.disabled = isDisabled });
     })
   }

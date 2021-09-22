@@ -88,7 +88,7 @@ footer: >
                 </div>
             </fieldset>
         </form>
-        {% include_cached button.html label="Clear filters" class="clearButton" disabled="true"%}
+        {% include_cached button.html label="Clear filters" class="clear-button" disabled="true"%}
         <div class="disclaimer" id="disclaimer">
             <h2>Important Disclaimer</h2>
             <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion
