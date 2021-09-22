@@ -46,6 +46,10 @@ main>header {
   margin: 20px 0 20px;
 }
 
+#left-col legend{
+  font-size: 85%;
+}
+
 .offers-filters {
   font-size: 85%;
   padding-right: 2em;  
