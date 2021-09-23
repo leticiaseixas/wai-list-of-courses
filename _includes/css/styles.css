@@ -158,6 +158,14 @@ details>div{
 }
 */
 
+details>div{
+  border-top: solid 1px var(--line-grey);
+  margin-left: -48px;
+  margin-right: -16px;
+  padding-left: 16px;
+  background-color: var(--off-white);
+}
+
 #disclaimer {
   border: 1px solid var(--line-grey);
 }

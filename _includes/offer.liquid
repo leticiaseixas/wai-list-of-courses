@@ -2,7 +2,7 @@
 {% capture offer_section_identifier %}aside_{{ offer.id }}{% endcapture %}
 {% capture offer_details_id %}details_{{offer.id}}{% endcapture %}
 
-{% include box.html type="start" title=offer_title id=offer.id %}
+{% include box.html type="start" class="simple" title=offer_title id=offer.id %}
 {{ offer.description }}
 {% include excol.html type="start" id=offer_details_id %}
 #### Details
