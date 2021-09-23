@@ -1,3 +1,5 @@
+[Preview](https://614c42623e94470008d04ab1--wai-list-of-courses.netlify.app/list-of-courses/)
+
 # Eagle Review Updates
 * Components updated according to the [Design Style Guide](https://wai-website-theme.netlify.app/components/)
 * Expand/Collapse buttons included
@@ -50,5 +52,4 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ef0441b4-e316-47ea-9961-e769a5c4407e/deploy-status)](https://app.netlify.com/sites/wai-course-list/deploys)
 
-[Preview](https://614c42623e94470008d04ab1--wai-list-of-courses.netlify.app/list-of-courses/)
-//
+
