@@ -1,4 +1,4 @@
-[Preview](https://614c42623e94470008d04ab1--wai-list-of-courses.netlify.app/list-of-courses/)
+[Preview](https://deploy-preview-7--wai-list-of-courses.netlify.app/list-of-courses/)
 
 # Eagle Review Updates
 * Components updated according to the [Design Style Guide](https://wai-website-theme.netlify.app/components/)
