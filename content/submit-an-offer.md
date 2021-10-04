@@ -43,8 +43,8 @@ main > header { grid-column: 4 / span 4; }
 
 
 <div class="field">
-    <label for="submitter-name">Name (required)</label>
-    <input type="text" id="submitter-name" required>
+    <label for="offer-name">Title</label>
+    <input type="text" id="offer-name" required>
 </div>
 
 <div class="field">
@@ -57,14 +57,67 @@ main > header { grid-column: 4 / span 4; }
         <option value="offer-type-other">Other</option>
     </select>
 </div>
----
 
+<div class="field">
+    <label for="offer-audience">Audience</label>
+    <select id="offer-audience">
+        <option value="offer-audience-developer">Developer</option>
+        <option value="offer-audience-designer">Designer</option>
+        <option value="offer-audience-content-author">Content author</option>
+        <option value="offer-audience-manager">Manager</option>
+        <option value="offer-audience-tester">Tester</option>        
+        <option value="offer-audience-other">Other</option>
+    </select>
+</div>
+
+<div class="field">
+    <label for="offer-level">Level</label>
+    <select id="offer-level">
+        <option value="offer-level-basic">Basic</option>
+        <option value="offer-level-intermediate">Intermediate</option>
+        <option value="offer-level-advanced">Advanced</option>
+    </select>
+</div>
+
+<div class="field">
+    <label for="offer-prerequisites">Prerequisites</label>
+    <input type="text" id="prerequisites">
+</div>
+
+<div class="field">
+    <label for="offer-topics">Topics</label>
+    <input type="text" id="topics">
+</div>
+
+<div class="field">
+    <label for="offer-curricula_correspondence">WAI Curricula module</label>
+    <select id="offer-curricula_correspondence">
+        <option value="offer-curricula_correspondence-foundations">Foundations modules</option>
+        <option value="offer-curricula_correspondence-developer">Developer modules</option>
+        <option value="offer-curricula_correspondence-none">None</option>
+    </select>
+</div>
+
+<div class="field">
+    <label for="offer-language">Language</label>
+    <select name="language" id="language">
+        <option value="">--Select an option--</option>
+        {% for language in site.data.lang %}
+            <option value="{{ language }}">{{ language.name }} ({{language.nativeName}})</option>
+        {% endfor %}
+    </select>
+</div>
+<div class="field">
+    <label for="country">Country</legend>
+    <select name="country" id="country">
+        <option value="">--Select an option--</option>
+        {% for country in site.data.countries %}
+            <option value="{{ country.id }}">{{ country.name }} ({{country.nativeName}})</option>
+        {% endfor %}
+    </select>
+</div>
+
+<p>---</p>
 {% include submit-an-offer.liquid %}
-
-
-
-
-
 </form>
-
 </div>
