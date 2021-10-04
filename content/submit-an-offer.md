@@ -121,3 +121,6 @@ main > header { grid-column: 4 / span 4; }
 {% include submit-an-offer.liquid %}
 </form>
 </div>
+<script>
+{% include js/offers.js %}
+</script>
