@@ -49,29 +49,17 @@ main > header { grid-column: 4 / span 4; }
 
   {% include submit-an-offer.liquid %}
 ---
-  <div class="field">
-    <legend>Type</legend>
-    <div class="radio-field">
-      <input id="offer-type-graduate" type="radio" name="offer-type">
-      <label for="offer-type-graduate">Graduate program</label>
-    </div>
-    <div class="radio-field">
-      <input id="offer-type-undergraduate" type="radio" name="offer-type">
-      <label for="offer-type-undergraduate">Undergraduate program</label>
-    </div>
-    <div class="radio-field">
-      <input id="offer-type-training" type="radio" name="offer-type">
-      <label for="offer-type-training">Training program</label>
-    </div>
-    <div class="radio-field">
-      <input id="offer-type-certification" type="radio" name="offer-type">
-      <label for="offer-type-certification">Professional certification</label>
-    </div>
-    <div class="radio-field">
-      <input id="offer-type-other" type="radio" name="offer-type">
-      <label for="offer-type-other">Other</label>
-    </div>    
-  </div>
+
+<div class="field">
+    <label for="offer-type">Type</label>
+    <select id="offer-type">
+        <option value="offer-type-graduate">Graduate program</option>
+        <option value="offer-type-undergraduate">Undergraduate program</option>
+        <option value="offer-type-training">Training program</option>
+        <option value="offer-type-certification">Professional certification</option>
+        <option value="offer-type-other">Other</option>
+    </select>
+</div>
     <div class="field">
     <legend>Audience</legend>
     <div class="radio-field">
