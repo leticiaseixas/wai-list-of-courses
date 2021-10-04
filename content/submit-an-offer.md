@@ -107,6 +107,10 @@ main > header { grid-column: 4 / span 4; }
         {% endfor %}
     </select>
 </div>
+<select name="country">
+  
+{{ all_country_option_tags }}
+</select>
 <div class="field">
     <label for="country">Country</label>
     <select name="country" id="country">
