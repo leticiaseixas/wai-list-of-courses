@@ -108,7 +108,7 @@ main > header { grid-column: 4 / span 4; }
     </select>
 </div>
         {% for country in site.data.countries %}
-            <p>{{country}}</p>
+            <p>{{country[0]}}</p>
         {% endfor %}
 <div class="field">
     <label for="country">Country</label>
