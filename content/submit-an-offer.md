@@ -5,7 +5,7 @@ lang: en   # Change "en" to the translated-language shortcode from https://www.i
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
 github:
   repository: leticiaseixas/wai-list-of-courses
-  path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
+  path: content/submit-an-offer.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
 permalink: /list-of-courses/submit-an-offer   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
 # NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
 # navigation:
@@ -33,4 +33,3 @@ footer:
 
 <a href="../">Back to List of Authoring tools</a>
 
-</div>
