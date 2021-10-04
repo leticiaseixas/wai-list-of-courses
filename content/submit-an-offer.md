@@ -32,36 +32,5 @@ footer:
 </style>
 
 <a href="../">Back to List of Authoring tools</a>
-<div>
 
-<form action="…" class="searchform">
-<fieldset class="field" id="conformance-status">
-  <legend class="label">Conformance status</legend>
-  <p class="expl">Describe the current conformance status.</p>
-
-  <div class="radio-field">
-    <input type="radio" name="accstmnt_conformance" id="accstmnt_conformance_inapplicable" checked="">
-    <label for="accstmnt_conformance_inapplicable">None</label>
-  </div>
-  <div class="radio-field">
-    <input type="radio" name="accstmnt_conformance" id="accstmnt_conformance_full">
-    <label for="accstmnt_conformance_full"><span class="status">Fully conformant</span>: <span class="meaning">the content fully meets the standard  without any exceptions</span></label>
-  </div>
-  <div class="radio-field">
-    <input type="radio" name="accstmnt_conformance" id="accstmnt_conformance_partial">
-    <label for="accstmnt_conformance_partial"><span class="status">Partially conformant</span>: <span class="meaning">Some parts of the content do not fully meet the standard</span></label>
-  </div>
-  <div class="radio-field">
-    <input type="radio" name="accstmnt_conformance" id="accstmnt_conformance_nonconformant">
-    <label for="accstmnt_conformance_nonconformant"><span class="status">Non conformant</span>: <span class="meaning">the content does not meet the standard</span></label>
-  </div>
-  <div class="radio-field">
-    <input type="radio" name="accstmnt_conformance" id="accstmnt_conformance_unknown">
-    <label for="accstmnt_conformance_unknown"><span class="status">Not assessed</span>: the content has not been assessed or the evaluation results are not available</label>
-  </div>
-</fieldset>
-    <button class="button button--icon" type="submit">
-      <span>Submit</span>
-    </button>
-</form>
 </div>
