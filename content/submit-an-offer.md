@@ -1,6 +1,6 @@
 ---
-title: "Submit an offer"
-nav_title: "Submit an offer"
+title: "[Draft] Submit an offer"
+nav_title: "[Draft] Submit an offer"
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
 github:
@@ -42,13 +42,10 @@ main > header { grid-column: 4 / span 4; }
   <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
 
 
-  <div class="field">
+<div class="field">
     <label for="submitter-name">Name (required)</label>
     <input type="text" id="submitter-name" required>
-  </div>
-
-  {% include submit-an-offer.liquid %}
----
+</div>
 
 <div class="field">
     <label for="offer-type">Type</label>
@@ -60,6 +57,12 @@ main > header { grid-column: 4 / span 4; }
         <option value="offer-type-other">Other</option>
     </select>
 </div>
+---
+
+{% include submit-an-offer.liquid %}
+
+
+
 
 
 </form>
