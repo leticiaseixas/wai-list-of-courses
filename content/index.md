@@ -2,9 +2,10 @@
 # NEW: Comments for new repos start with "NEW". Please delete the NEW comments. Leave the other comments for translators. Also, search for @@s to replace. For multi-page resources and other frontmatter info, see: https://wai-website-theme.netlify.app/writing/frontmatter/
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
-title: "[Draft] List of Accessibility Courses"
-title_html: "[Draft] List of Accessibility Courses:<br>Education, training, and certification" 
+title: "List of Accessibility Courses"
+title_html: "List of Accessibility Courses:<br>Education, training, and certification" 
 nav_title: "List of Courses"
+doc-note-type: draft
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
 # translators:    # remove from the beginning of this line and the lines below: "# " (the hash sign and the space)
