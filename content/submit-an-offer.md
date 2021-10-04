@@ -166,29 +166,16 @@ main > header { grid-column: 4 / span 4; }
     <input type="text" id="offer-duration">
 </div>
 
-<fieldset class="field" id="offer-cost">
-    <legend class="label">Cost</legend>
-    <div class="radio-field">
-        <input type="checkbox" id="offer-cost-free" value="offer-cost-free">
-        <label for="offer-cost-free">Free</label>
-    </div>
-    <div class="radio-field">
-        <input type="checkbox" id="offer-cost-free-certificates-for-purchase" value="offer-cost-free-certificates-for-purchase">
-        <label for="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</label>
-    </div>
-    <div class="radio-field">
-        <input type="checkbox" id="offer-cost-free-limited-time" value="offer-cost-free-limite-time">
-        <label for="offer-cost-free-limited-time">Free for limited content or duration</label>
-    </div>
-    <div class="radio-field">
-        <input type="checkbox" id="offer-cost-free-or-reduced-for-some" value="offer-cost-free-or-reduced-for-some">
-        <label for="offer-cost-free-or-reduced-for-some">Free or reduced fee for some</label>
-    </div>            
-    <div class="radio-field">
-        <input type="checkbox" id="offer-cost-paid" value="offer-cost-paid">
-        <label for="offer-cost">Paid</label>
-    </div>                
-</fieldset>
+<div class="field">
+    <label for="offer-cost">Cost</label>
+    <select id="offer-cost">
+        <option value="offer-cost-free">Free</option>
+        <option value="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</option>
+        <option value="offer-cost-free-limited-time">Free for limited content or duration</option>
+        <option value="offer-cost-free-or-reduced-for-some">Free or reduced fee for some</option>
+        <option value="offer-cost">Paid</option>
+    </select>
+</div>
 
 <div class="field">
     <label for="offer-website">Web site</label>
