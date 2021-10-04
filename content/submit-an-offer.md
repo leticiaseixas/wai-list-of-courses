@@ -107,13 +107,15 @@ main > header { grid-column: 4 / span 4; }
         {% endfor %}
     </select>
 </div>
-
+        {% for country in site.data.countries %}
+            {{ country.name }} >{{ country.name }} ({{country.nativeName}})
+        {% endfor %}
 <div class="field">
     <label for="country">Country</label>
     <select name="country" id="country">
         <option value="">--Select an option--</option>
         {% for country in site.data.countries %}
-            <option value="country">{{ country.name }} ({{country.nativeName}})</option>
+            <option value="{{ country.name }} ">{{ country.name }} ({{country.nativeName}})</option>
         {% endfor %}
     </select>
 </div>
