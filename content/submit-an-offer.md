@@ -126,19 +126,19 @@ main > header { grid-column: 4 / span 4; }
 </div>
 <fieldset class="field" id="offer-learning">
     <legend class="label">Learning</legend>
-    <div class="check-field">
+    <div class="radio-field">
         <input type="checkbox" id="offer-learning-guided" value="offer-learning-guided">
         <label for="offer-learning-guided">Guided</label>
     </div>
-    <div class="check-field">
+    <div class="radio-field">
         <input type="checkbox" id="offer-learning-non-guided" value="offer-learning-non-guided">
         <label for="offer-learning">Non-guided</label>
     </div>
-    <div class="check-field">
+    <div class="radio-field">
         <input type="checkbox" id="offer-learning-synchronous" value="offer-learning-synchronous">
         <label for="offer-learning-synchronous">Synchronous</label>
     </div>
-    <div class="check-field">
+    <div class="radio-field">
         <input type="checkbox" id="offer-learning-asynchronous" value="offer-learning-asynchronous">
         <label for="offer-learning-asynchronous">Asynchronous</label>
     </div>            
