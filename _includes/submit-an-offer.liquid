@@ -1,7 +1,7 @@
 {% for filter in site.data.filters %}
             
 <fieldset id="{{ filter.id }}">
-  <legend class="label">{{ filter.name }}</legend>
+  <legend>{{ filter.name }}</legend>
   {% for option in filter.options %}
   <div class="radio-field">
       <input type="radio" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
