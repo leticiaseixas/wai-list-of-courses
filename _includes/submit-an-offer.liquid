@@ -1,0 +1,13 @@
+{% for site.data.filters in filter %}
+            
+<fieldset id="{{ filter.id }}">
+  <legend class="label">{{ filter.name }}</legend>
+  {% for option in filter.options %}
+  <div class="radio-field">
+      <input type="radio" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
+      <label for="offer-{{ option.id }}">{{ option.name }}</label>
+  </div>
+
+  {% endfor %}
+</fieldset>
+{% endfor %}

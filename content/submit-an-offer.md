@@ -42,12 +42,70 @@ main > header { grid-column: 4 / span 4; }
   <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
 
 
-  
   <div class="field">
     <label for="submitter-name">Name (required)</label>
     <input type="text" id="submitter-name" required>
   </div>
-  
+
+  {% include submit-an-offer.liquid %}
+---
+  <div class="field">
+    <legend>Type</legend>
+    <div class="radio-field">
+      <input id="offer-type-graduate" type="radio" name="offer-type">
+      <label for="offer-type-graduate">Graduate program</label>
+    </div>
+    <div class="radio-field">
+      <input id="offer-type-undergraduate" type="radio" name="offer-type">
+      <label for="offer-type-undergraduate">Undergraduate program</label>
+    </div>
+    <div class="radio-field">
+      <input id="offer-type-training" type="radio" name="offer-type">
+      <label for="offer-type-training">Training program</label>
+    </div>
+    <div class="radio-field">
+      <input id="offer-type-certification" type="radio" name="offer-type">
+      <label for="offer-type-certification">Professional certification</label>
+    </div>
+    <div class="radio-field">
+      <input id="offer-type-other" type="radio" name="offer-type">
+      <label for="offer-type-other">Other</label>
+    </div>    
+  </div>
+    <div class="field">
+    <legend>Audience</legend>
+    <div class="radio-field">
+      <input id="offer-audience-developer" type="radio" name="offer-audience">
+      <label for="offer-audience">Developer</label>
+    </div>
+    <div class="radio-field">
+      <input id="offer-audience" type="radio" name="offer-audience">
+      <label for="offer-audience">Designer</label>
+    </div>
+    <div class="radio-field">
+      <input id="offer-audience" type="radio" name="offer-audience">
+      <label for="offer-audience">Content author</label>
+    </div>
+    <div class="radio-field">
+      <input id="offer-audience" type="radio" name="offer-audience">
+      <label for="offer-audience">Manager</label>
+    </div>
+    <div class="radio-field">
+      <input id="offer-type-certification" type="radio" name="offer-audience">
+      <label for="offer-type-certification">Tester</label>
+    </div>    
+    <div class="radio-field">
+      <input id="offer-type-other" type="radio" name="offer-audience">
+      <label for="offer-type-other">Other</label>
+    </div>    
+  </div>
+
+
+
+
+
+
+
   <div class="field">
     <label for="tool-statement">Link to accessibility statement</label>
     <input type="text" id="tool-statement" placeholder="https://">
