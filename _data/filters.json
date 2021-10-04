@@ -140,7 +140,7 @@
         "name": "Free or reduced fee for some"
       },
       {
-        "id": "for_fee",
+        "id": "paid",
         "name": "Paid"
       }
     ]
