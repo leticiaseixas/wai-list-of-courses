@@ -103,7 +103,7 @@ main > header { grid-column: 4 / span 4; }
     <select name="language" id="language">
         <option value="">--Select an option--</option>
         {% for language in site.data.lang %}
-            <option value="{{ language.name }}">{{ language.name }} ({{language.nativeName}})</option>
+            <option value="{{ language.name }}">{{ language["name"] }} ({{language.nativeName}})</option>
         {% endfor %}
     </select>
 </div>
