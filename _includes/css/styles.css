@@ -91,7 +91,7 @@ main>header {
   margin: 0;
 }
 
-.field label {
+#left-col .field label {
   display: inline !important;
 }
 
