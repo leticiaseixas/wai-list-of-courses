@@ -203,6 +203,23 @@ main > header { grid-column: 4 / span 4; }
     <label for="offer-content-update">Content update date</label>
     <input type="date" id="offer-content-update">
 </div>
+
+<h2>Submitting your offer</h2>
+  <p>Let us know if you have any comments.</p>
+  <div class="field">
+    <label for="comments">Comments</label>
+    <textarea id="comments"></textarea>
+  </div>
+
+  <div class="field">
+    <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
+    <label><input type="checkbox" required> I give permission for my information to be published in the W3C's course list.</label>
+  </div>
+  <p>When you submit the form, we will review your offer and add it to the list. This should take 1-4 weeks.</p>
+  <div class="field">
+    <button type="submit">Submit your offer</button>
+  </div>
+
 <p>---</p>
 {% include submit-an-offer.liquid %}
 </form>
