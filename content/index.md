@@ -41,13 +41,13 @@ footer: >
 {% include css/styles.css %}
 </style>
 <div class="header-sup">
-  <p>Browse for offers of education, training, and certification on digital accessibility.</p>
-  <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
-    {% include_cached button.html label="Submit an offer" %}
+    <p>Browse for offers of education, training, and certification on digital accessibility.</p>
+    <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
+    {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}
 </div>
 <div id="app">
     <div id="left-col" class="offers-filters">
-        <form data-filter-form>
+        <form data-filter-form action="...">
             <h2>Filters</h2>
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
@@ -93,13 +93,9 @@ footer: >
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         <div id="disclaimer">
             <h2>Important Disclaimer</h2>
-            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion
-                of products in this list does not indicate endorsement by W3C. Products and search criteria are listed
-                with no quality rating.</p>
-            <p>Offer descriptions, search criteria, and other information in this database is provided by offers
-                providers. W3C does not verify the accuracy of the information.</p>
-            <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can
-                change at any time.</p>
+            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+            <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
+            <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
         </div>
     </div>
     <div id="offers-list">
@@ -112,7 +108,7 @@ footer: >
         {% for offer in offers %}
             {% include offer.liquid %}
         {% endfor %}      
-        {% include_cached button.html label="Submit an offer" %}    
+        {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}  
     </div>
 </div>
 
