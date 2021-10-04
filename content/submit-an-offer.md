@@ -60,88 +60,8 @@ main > header { grid-column: 4 / span 4; }
         <option value="offer-type-other">Other</option>
     </select>
 </div>
-    <div class="field">
-    <legend>Audience</legend>
-    <div class="radio-field">
-      <input id="offer-audience-developer" type="radio" name="offer-audience">
-      <label for="offer-audience">Developer</label>
-    </div>
-    <div class="radio-field">
-      <input id="offer-audience" type="radio" name="offer-audience">
-      <label for="offer-audience">Designer</label>
-    </div>
-    <div class="radio-field">
-      <input id="offer-audience" type="radio" name="offer-audience">
-      <label for="offer-audience">Content author</label>
-    </div>
-    <div class="radio-field">
-      <input id="offer-audience" type="radio" name="offer-audience">
-      <label for="offer-audience">Manager</label>
-    </div>
-    <div class="radio-field">
-      <input id="offer-type-certification" type="radio" name="offer-audience">
-      <label for="offer-type-certification">Tester</label>
-    </div>    
-    <div class="radio-field">
-      <input id="offer-type-other" type="radio" name="offer-audience">
-      <label for="offer-type-other">Other</label>
-    </div>    
-  </div>
 
 
-
-
-
-
-
-  <div class="field">
-    <label for="tool-statement">Link to accessibility statement</label>
-    <input type="text" id="tool-statement" placeholder="https://">
-  </div>
-  <div class="field">
-    <label for="tool-license">License (required)</label>
-    <input type="text" id="tool-license" required>
-  </div>
-  <div class="field">
-    <legend>Cost model (required)</legend>
-    <p>Pick what best describes what using your tool would cost.</p>
-    <div class="radio-field">
-      <input id="tool-cost-model-free" type="radio" name="tool-cost-model">
-      <label for="tool-cost-model-free">Free</label>
-    </div>
-    <div class="radio-field">
-      <input id="tool-cost-model-freemium" type="radio" name="tool-cost-model">
-      <label for="tool-cost-model-freemium">Freemium</label>
-    </div>
-    <div class="radio-field">
-      <input id="tool-cost-model-paid" type="radio" name="tool-cost-model">
-      <label for="tool-cost-model-paid">Paid</label>
-    </div>
-  </div>
-  <div class="field">
-    <label for="tool-version">Version</label>
-    <input type="text" id="tool-version">
-  </div>
-  <div class="field">
-    <label for="tool-release-date">Release date (of this version)</label>
-    <input type="date" id="tool-release-date">
-  </div>
-
-  <h2>Submitting your offer</h2>
-  <p>Let us know if you have any comments.</p>
-  <div class="field">
-    <label for="comments">Comments</label>
-    <textarea id="comments"></textarea>
-  </div>
-
-  <div class="field">
-    <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
-    <label><input type="checkbox" required> I give permission for my information to be published in the W3C's authoring tools list.</label>
-  </div>
-  <p>When you submit the form, we will review your offer and add it to the list. This should take 1-4 weeks.</p>
-  <div class="field">
-    <button type="submit">Submit your offer</button>
-  </div>
 </form>
 
 </div>
