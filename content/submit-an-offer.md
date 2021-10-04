@@ -107,6 +107,7 @@ main > header { grid-column: 4 / span 4; }
         {% endfor %}
     </select>
 </div>
+
 <div class="field">
     <label for="country">Country</label>
     <select name="country" id="country">
@@ -116,6 +117,7 @@ main > header { grid-column: 4 / span 4; }
         {% endfor %}
     </select>
 </div>
+
 <div class="field">
     <label for="offer-format">Format</label>
     <select id="offer-format">
@@ -124,6 +126,7 @@ main > header { grid-column: 4 / span 4; }
         <option value="offer-format-hybrid">Hybrid</option>
     </select>
 </div>
+
 <fieldset class="field" id="offer-learning">
     <legend class="label">Learning</legend>
     <div class="radio-field">
@@ -143,6 +146,58 @@ main > header { grid-column: 4 / span 4; }
         <label for="offer-learning-asynchronous">Asynchronous</label>
     </div>            
 </fieldset>
+
+<div class="field">
+    <label for="offer-platform">Platform</label>
+    <input type="text" id="platform">
+</div>
+
+<div class="field">
+    <label for="offer-accessibility-resources">Accessibility resources</label>
+    <input type="text" id="offer-accessibility-resources">
+</div>
+<div class="field">
+    <label for="offer-duration">Duration</label>
+    <input type="text" id="offer-duration">
+</div>
+
+<fieldset class="field" id="offer-cost">
+    <legend class="label">Cost</legend>
+    <div class="radio-field">
+        <input type="checkbox" id="offer-cost-free" value="offer-cost-free">
+        <label for="offer-cost-free">Free</label>
+    </div>
+    <div class="radio-field">
+        <input type="checkbox" id="offer-cost-free-certificates-for-purchase" value="offer-cost-free-certificates-for-purchase">
+        <label for="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</label>
+    </div>
+    <div class="radio-field">
+        <input type="checkbox" id="offer-cost-free-limited-time" value="offer-cost-free-limite-time">
+        <label for="offer-cost-free-limited-time">Free for limited content or duration</label>
+    </div>
+    <div class="radio-field">
+        <input type="checkbox" id="offer-cost-free-or-reduced-for-some" value="offer-cost-free-or-reduced-for-some">
+        <label for="offer-cost-free-or-reduced-for-some">Free or reduced fee for some</label>
+    </div>            
+    <div class="radio-field">
+        <input type="checkbox" id="offer-cost-paid" value="offer-cost-paid">
+        <label for="offer-cost">Paid</label>
+    </div>                
+</fieldset>
+
+<div class="field">
+    <label for="offer-website">Web site</label>
+    <input type="text" id="offer-website" placeholder="https://">
+</div>
+
+<div class="field">
+    <label for="offer-reviews-page">Reviews page</label>
+    <input type="text" id="offer-reviews-page" placeholder="https://">
+</div>
+<div class="field">
+    <label for="offer-content-update">Content update date</label>
+    <input type="date" id="offer-content-update">
+</div>
 <p>---</p>
 {% include submit-an-offer.liquid %}
 </form>
