@@ -108,7 +108,7 @@ main > header { grid-column: 4 / span 4; }
     </select>
 </div>
         {% for country in site.data.countries %}
-            {{ name }} >{{ country.name }} ({{country.nativeName}})
+            {{country}}
         {% endfor %}
 <div class="field">
     <label for="country">Country</label>
