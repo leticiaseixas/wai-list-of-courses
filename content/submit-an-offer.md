@@ -116,7 +116,33 @@ main > header { grid-column: 4 / span 4; }
         {% endfor %}
     </select>
 </div>
-
+<div class="field">
+    <label for="offer-format">Format</label>
+    <select id="offer-format">
+        <option value="offer-format-online">Online</option>
+        <option value="offer-format-face-to-face">Face-to-face</option>
+        <option value="offer-format-hybrid">Hybrid</option>
+    </select>
+</div>
+<fieldset class="field" id="offer-learning">
+    <legend class="label">Learning</legend>
+    <div class="check-field">
+        <input type="checkbox" id="offer-learning-guided" value="offer-learning-guided">
+        <label for="offer-learning-guided">Guided</label>
+    </div>
+    <div class="check-field">
+        <input type="checkbox" id="offer-learning-non-guided" value="offer-learning-non-guided">
+        <label for="offer-learning">Non-guided</label>
+    </div>
+    <div class="check-field">
+        <input type="checkbox" id="offer-learning-synchronous" value="offer-learning-synchronous">
+        <label for="offer-learning-synchronous">Synchronous</label>
+    </div>
+    <div class="check-field">
+        <input type="checkbox" id="offer-learning-asynchronous" value="offer-learning-asynchronous">
+        <label for="offer-learning-asynchronous">Asynchronous</label>
+    </div>            
+</fieldset>
 <p>---</p>
 {% include submit-an-offer.liquid %}
 </form>
