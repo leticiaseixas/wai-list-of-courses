@@ -1,6 +1,7 @@
 ---
 title: "[Draft] Submit an offer"
 nav_title: "[Draft] Submit an offer"
+doc-note-type: draft
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
 github:
