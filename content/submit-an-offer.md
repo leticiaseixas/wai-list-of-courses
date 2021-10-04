@@ -1,6 +1,6 @@
 ---
-title: "Submit an offer"
-nav_title: "Submit an offer"
+title: "Submit a course, training, or certification offer"
+nav_title: "Submit a course, training, or certification offer"
 doc-note-type: draft
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
@@ -56,6 +56,7 @@ main > header { grid-column: 4 / span 4; }
 <div class="field">
     <label for="offer-type">Type</label>
     <select id="offer-type">
+        <option value=""></option>
         <option value="offer-type-graduate">Graduate program</option>
         <option value="offer-type-undergraduate">Undergraduate program</option>
         <option value="offer-type-training">Training program</option>
@@ -67,6 +68,7 @@ main > header { grid-column: 4 / span 4; }
 <div class="field">
     <label for="offer-audience">Audience</label>
     <select id="offer-audience">
+        <option value=""></option>
         <option value="offer-audience-developer">Developer</option>
         <option value="offer-audience-designer">Designer</option>
         <option value="offer-audience-content-author">Content author</option>
@@ -79,6 +81,7 @@ main > header { grid-column: 4 / span 4; }
 <div class="field">
     <label for="offer-level">Level</label>
     <select id="offer-level">
+        <option value=""></option>
         <option value="offer-level-basic">Basic</option>
         <option value="offer-level-intermediate">Intermediate</option>
         <option value="offer-level-advanced">Advanced</option>
@@ -98,6 +101,7 @@ main > header { grid-column: 4 / span 4; }
 <div class="field">
     <label for="offer-curricula_correspondence">WAI Curricula module</label>
     <select id="offer-curricula_correspondence">
+        <option value=""></option>
         <option value="offer-curricula_correspondence-foundations">Foundations modules</option>
         <option value="offer-curricula_correspondence-developer">Developer modules</option>
         <option value="offer-curricula_correspondence-none">None</option>
@@ -107,7 +111,7 @@ main > header { grid-column: 4 / span 4; }
 <div class="field">
     <label for="offer-language">Language</label>
     <select name="language" id="language">
-        <option value="">--Select an option--</option>
+        <option value=""></option>
         {% for language in site.data.lang %}
             <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
         {% endfor %}
@@ -117,7 +121,7 @@ main > header { grid-column: 4 / span 4; }
 <div class="field">
     <label for="country">Country</label>
     <select name="country" id="country">
-        <option value="">--Select an option--</option>
+        <option value=""></option>
         {% for country in site.data.countries %}
             <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
         {% endfor %}
@@ -127,6 +131,7 @@ main > header { grid-column: 4 / span 4; }
 <div class="field">
     <label for="offer-format">Format</label>
     <select id="offer-format">
+        <option value=""></option>
         <option value="offer-format-online">Online</option>
         <option value="offer-format-face-to-face">Face-to-face</option>
         <option value="offer-format-hybrid">Hybrid</option>
@@ -170,6 +175,7 @@ main > header { grid-column: 4 / span 4; }
 <div class="field">
     <label for="offer-cost">Cost</label>
     <select id="offer-cost">
+        <option value=""></option>
         <option value="offer-cost-free">Free</option>
         <option value="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</option>
         <option value="offer-cost-free-limited-time">Free for limited content or duration</option>
