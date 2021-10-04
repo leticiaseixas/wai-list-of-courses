@@ -48,6 +48,11 @@ main > header { grid-column: 4 / span 4; }
 </div>
 
 <div class="field">
+    <label for="offer-description">Description</label>
+    <textarea id="offer-description"></textarea>
+</div>
+
+<div class="field">
     <label for="offer-type">Type</label>
     <select id="offer-type">
         <option value="offer-type-graduate">Graduate program</option>
