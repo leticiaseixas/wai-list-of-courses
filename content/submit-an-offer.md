@@ -32,7 +32,7 @@ footer:
 </style>
 
 <a href="../">Back to List of Authoring tools</a>
-<div class="default-grid">
+<div>
 
 <form action="…" class="searchform">
 <fieldset class="field" id="conformance-status">
