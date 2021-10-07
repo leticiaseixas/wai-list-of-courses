@@ -3,7 +3,7 @@
 {% for curricula in site.data.wai-curricula %}
  
     <p class="expl">{{ curricula.name }}</p>
-    {% include showhidebutton.html showtext="Show {{ curricula.name }}" hidetext="Hide {{ curricula.name }}" 
+    {% include showhidebutton.html showtext="{{ curricula.name }}" hidetext="{{ curricula.name }}" 
         target=".{{ curricula.id }}" %}
     <div id="{{ curricula.id }}">
     {% for modules in curricula.modules %}
