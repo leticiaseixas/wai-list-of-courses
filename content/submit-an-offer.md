@@ -53,40 +53,79 @@ main > header { grid-column: 4 / span 4; }
     <textarea id="offer-description"></textarea>
 </div>
 
-<div class="field">
-    <label for="offer-type">Type</label>
-    <select id="offer-type">
-        <option value=""></option>
-        <option value="offer-type-graduate">Graduate program</option>
-        <option value="offer-type-undergraduate">Undergraduate program</option>
-        <option value="offer-type-training">Training program</option>
-        <option value="offer-type-certification">Professional certification</option>
-        <option value="offer-type-other">Other</option>
-    </select>
-</div>
+<fieldset class="field" id="offer-type">
+  <legend class="label">Type</legend>
+  <p class="expl">Describe the type of your offer.</p>
 
-<div class="field">
-    <label for="offer-audience">Audience</label>
-    <select id="offer-audience">
-        <option value=""></option>
-        <option value="offer-audience-developer">Developer</option>
-        <option value="offer-audience-designer">Designer</option>
-        <option value="offer-audience-content-author">Content author</option>
-        <option value="offer-audience-manager">Manager</option>
-        <option value="offer-audience-tester">Tester</option>        
-        <option value="offer-audience-other">Other</option>
-    </select>
-</div>
+  <div class="radio-field">
+    <input type="radio" name="offer-type" id="offer-type-graduate">
+    <label for="offer-audience-developer">Graduate program</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-type" id="offer-type-undergraduate">
+    <label for="offer-audience-designer">Undergraduate program</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-type" id="offer-type-training">
+    <label for="offer-audience-content-author">Training program</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-type" id="offer-type-certification">
+    <label for="offer-audience-manager">Professional certification</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-type" id="offer-type-other">
+    <label for="offer-audience-other">Other</label>
+  </div>
+</fieldset>
 
-<div class="field">
-    <label for="offer-level">Level</label>
-    <select id="offer-level">
-        <option value=""></option>
-        <option value="offer-level-basic">Basic</option>
-        <option value="offer-level-intermediate">Intermediate</option>
-        <option value="offer-level-advanced">Advanced</option>
-    </select>
-</div>
+<fieldset class="field" id="offer-audience">
+  <legend class="label">Audience</legend>
+  <p class="expl">Describe the audience.</p>
+
+  <div class="radio-field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-developer">
+    <label for="offer-audience-developer">Developer</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-designer">
+    <label for="offer-audience-designer">Designer</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-content-author">
+    <label for="offer-audience-content-author">Content Author</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-manager">
+    <label for="offer-audience-manager">Manager</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-tester">
+    <label for="offer-audience-tester">Tester</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-other">
+    <label for="offer-audience-other">Other</label>
+  </div>
+</fieldset>
+
+<fieldset class="field" id="offer-level">
+  <legend class="label">Level</legend>
+  <p class="expl">Describe the level of your offer.</p>
+
+  <div class="radio-field">
+    <input type="radio" name="offer-level" id="offer-level-basic">
+    <label for="offer-level-basic">Basic</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-level" id="offer-level-intermediate">
+    <label for="offer-level-intermediate">Intermediate</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-level" id="offer-level-advanced">
+    <label for="offer-level-advanced">Advanced</label>
+  </div>
+</fieldset>
 
 <div class="field">
     <label for="offer-prerequisites">Prerequisites</label>
@@ -128,15 +167,24 @@ main > header { grid-column: 4 / span 4; }
     </select>
 </div>
 
-<div class="field">
-    <label for="offer-format">Format</label>
-    <select id="offer-format">
-        <option value=""></option>
-        <option value="offer-format-online">Online</option>
-        <option value="offer-format-face-to-face">Face-to-face</option>
-        <option value="offer-format-hybrid">Hybrid</option>
-    </select>
-</div>
+<fieldset class="field" id="offer-format">
+  <legend class="label">Format</legend>
+  <p class="expl">Describe the format of your offer.</p>
+
+  <div class="radio-field">
+    <input type="radio" name="offer-format" id="offer-format-online">
+    <label for="offer-format-online">Online</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-format" id="offer-format-face-to-face">
+    <label for="offer-format-face-to-face">Face-to-face</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-format" id="offer-format-hybrid">
+    <label for="offer-format-hybrid">Hybrid</label>
+  </div>
+</fieldset>
+
 
 <fieldset class="field" id="offer-learning">
     <legend class="label">Learning</legend>
@@ -172,17 +220,27 @@ main > header { grid-column: 4 / span 4; }
     <input type="text" id="offer-duration">
 </div>
 
-<div class="field">
-    <label for="offer-cost">Cost</label>
-    <select id="offer-cost">
-        <option value=""></option>
-        <option value="offer-cost-free">Free</option>
-        <option value="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</option>
-        <option value="offer-cost-free-limited-time">Free for limited content or duration</option>
-        <option value="offer-cost-free-or-reduced-for-some">Free or reduced fee for some</option>
-        <option value="offer-cost">Paid</option>
-    </select>
-</div>
+<fieldset class="field" id="offer-cost">
+  <legend class="label">Cost</legend>
+  <p class="expl">Describe the cost of your offer.</p>
+
+  <div class="radio-field">
+    <input type="radio" name="offer-cost" id="offer-cost-free-certificates-for-purchase">
+    <label for="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-cost" id="offer-cost-free-limited-time">
+    <label for="offer-cost-free-limited-time">Free for limited content or duration</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-cost" id="offer-cost-free-or-reduced-for-some">
+    <label for="offer-cost-free-or-reduced-for-some">Free or reduced fee for some</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="offer-cost" id="offer-cost-paid">
+    <label for="offer-cost-paid">Paid</label>
+  </div>  
+</fieldset>
 
 <div class="field">
     <label for="offer-website">Web site</label>
@@ -213,11 +271,3 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
     <button type="submit">Submit your offer</button>
   </div>
-
-<p>---</p>
-{% include submit-an-offer.liquid %}
-</form>
-</div>
-<script>
-{% include js/offers.js %}
-</script>
