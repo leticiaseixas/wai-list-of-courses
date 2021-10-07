@@ -32,7 +32,7 @@
             <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
         </div>
         {% endcapture %}
-        
+        {% raw %} {{divradio}}  {% endraw%}
     {% endfor %}
 {% include excol.html type="end" %}
 {% endfor %}
