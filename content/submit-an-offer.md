@@ -146,8 +146,9 @@ main > header { grid-column: 4 / span 4; }
         <option value="offer-curricula_correspondence-none">None</option>
     </select>
 </div>
-
-{% include wai-curricula.liquid %}
+<fieldset id="offer-wai-curricula">
+    {% include wai-curricula.liquid %}
+</fieldset>
 
 <div class="field">
     <label for="offer-language">Language</label>
