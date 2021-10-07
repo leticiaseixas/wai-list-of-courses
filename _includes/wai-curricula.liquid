@@ -1,9 +1,8 @@
+<fieldset id="offer-wai-curricula"></fieldset>
+
 {% for curricula in site.data.wai-curricula %}
 
-
 {% include excol.html type="start"%}
-
-<fieldset id="{{ curricula.id }}">
 
     <legend>{{ curricula.name }}</legend>
 
@@ -16,8 +15,11 @@
     </div>
     {% endfor %}
 
-</fieldset>
+
 
 {% include excol.html type="end" %}
 
+
 {% endfor %}
+
+</fieldset>
