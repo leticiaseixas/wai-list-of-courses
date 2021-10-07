@@ -147,7 +147,7 @@ main > header { grid-column: 4 / span 4; }
     </select>
 </div>
 <fieldset id="offer-wai-curricula">
-    {% include wai-curricula.liquid %}
+    {% include wai-curricula.md %}
 </fieldset>
 
 <div class="field">

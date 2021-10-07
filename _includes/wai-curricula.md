@@ -1,0 +1,42 @@
+<!-- <legend>WAI Curricula module</legend>
+
+{% for curricula in site.data.wai-curricula %}
+{% capture pname %}.{{ curricula.id }}{% endcapture %}
+    {% include showhidebutton.html showtext=curricula.name hidetext=curricula.name 
+        target=pname %}
+    <div class="{{ curricula.id }}">
+        {% for modules in curricula.modules %}
+        <div class="radio-field">
+            <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
+            <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+ -->
+
+
+
+<legend>WAI Curricula module</legend>
+
+
+{% for curricula in site.data.wai-curricula %}
+
+{% include excol.html type="start" id=curricula.id %}
+
+{{ curricula.name }}
+
+{% include excol.html type="middle" %}
+
+    {% for modules in curricula.modules %}
+        {{ modules.name }}    
+
+        <div class="radio-field">
+            <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
+            <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
+        </div>
+
+    {% endfor %}
+
+{% include excol.html type="end" %}
+{% endfor %}
