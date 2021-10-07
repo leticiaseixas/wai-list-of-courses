@@ -2,9 +2,6 @@
 
 {% for curricula in site.data.wai-curricula %}
 {% capture pname %}.{{ curricula.id }}{% endcapture %}
-
-
-    <p class="expl">{{ curricula.name }}</p>
     {% include showhidebutton.html showtext=curricula.name hidetext=curricula.name 
         target=pname %}
     <div class="{{ curricula.id }}">
