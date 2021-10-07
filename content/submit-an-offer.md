@@ -147,6 +147,8 @@ main > header { grid-column: 4 / span 4; }
     </select>
 </div>
 
+{% include wai-curricula.liquid %}
+
 <div class="field">
     <label for="offer-language">Language</label>
     <select name="language" id="language">
@@ -170,7 +172,6 @@ main > header { grid-column: 4 / span 4; }
 <fieldset class="field" id="offer-format">
   <legend class="label">Format</legend>
   <p class="expl">Describe the format of your offer.</p>
-
   <div class="radio-field">
     <input type="radio" name="offer-format" id="offer-format-online">
     <label for="offer-format-online">Online</label>
@@ -244,12 +245,12 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-website">Web site</label>
-    <input type="text" id="offer-website" placeholder="https://">
+    {% include_cached input.html type="url" label="URL" name="offer-website" %}
 </div>
 
 <div class="field">
     <label for="offer-reviews-page">Reviews page</label>
-    <input type="text" id="offer-reviews-page" placeholder="https://">
+    {% include_cached input.html type="url" label="URL" name="offer-reviews-page" %}
 </div>
 <div class="field">
     <label for="offer-content-update">Content update date</label>

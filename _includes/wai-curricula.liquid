@@ -1,0 +1,13 @@
+{% for curricula in site.data.wai-curricula %}
+            
+<fieldset id="{{ curricula.id }}">
+  <legend>{{ curricula.name }}</legend>
+  {% for modules in curricula.modules %}
+  <div class="radio-field">
+      <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
+      <label for="offer-{{ module.id }}">{{ module.name }}</label>
+  </div>
+
+  {% endfor %}
+</fieldset>
+{% endfor %}
