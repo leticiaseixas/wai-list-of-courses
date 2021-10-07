@@ -1,10 +1,12 @@
 <legend>WAI Curricula module</legend>
 
 {% for curricula in site.data.wai-curricula %}
- 
+{% capture pname %}.{{curricula.id}{% endcapture %}
+
+
     <p class="expl">{{ curricula.name }}</p>
     {% include showhidebutton.html showtext=curricula.name hidetext=curricula.name 
-        target="."curricula.id %}
+        target=pname %}
     <div id="{{ curricula.id }}">
     {% for modules in curricula.modules %}
     <div class="radio-field">
