@@ -1,12 +1,13 @@
 {% for curricula in site.data.wai-curricula %}
-{% include excol.html type="start"%}
-{::nomarkdown}{{ curricula.name }}{:/}
-    {% include excol.html type="middle" %}
-    {::nomarkdown}{% for modules in curricula.modules %}
+
+    <legend>{{ curricula.name }}</legend>
+    
+
+    {% for modules in curricula.modules %}
     <div class="radio-field">
         <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
         <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
     </div>
-    {% endfor %}{:/}
-{% include excol.html type="end" %}
-{::nomarkdown}{% endfor %}{:/}
+    {% endfor %}
+
+{% endfor %}
