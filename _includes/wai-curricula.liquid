@@ -1,13 +1,16 @@
+<legend>WAI Curricula module</legend>
+
 {% for curricula in site.data.wai-curricula %}
-
-    <legend>{{ curricula.name }}</legend>
-    
-
+ 
+    <p class="expl">{{ curricula.name }}</p>
+    {% include showhidebutton.html showtext="Show {{ curricula.name }}" hidetext="Hide {{ curricula.name }}" 
+        target=".{{ curricula.id }}" %}
+    <div id="{{ curricula.id }}">
     {% for modules in curricula.modules %}
     <div class="radio-field">
         <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
         <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
     </div>
     {% endfor %}
-
+</div>
 {% endfor %}
