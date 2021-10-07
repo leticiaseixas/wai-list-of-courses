@@ -59,23 +59,23 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="radio-field">
     <input type="radio" name="offer-type" id="offer-type-graduate">
-    <label for="offer-audience-developer">Graduate program</label>
+    <label for="offer-type-graduate">Graduate program</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="offer-type" id="offer-type-undergraduate">
-    <label for="offer-audience-designer">Undergraduate program</label>
+    <label for="offer-type-undergraduate">Undergraduate program</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="offer-type" id="offer-type-training">
-    <label for="offer-audience-content-author">Training program</label>
+    <label for="offer-type-training">Training program</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="offer-type" id="offer-type-certification">
-    <label for="offer-audience-manager">Professional certification</label>
+    <label for="offer-type-certification">Professional certification</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="offer-type" id="offer-type-other">
-    <label for="offer-audience-other">Other</label>
+    <label for="offer-type-other">Other</label>
   </div>
 </fieldset>
 
