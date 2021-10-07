@@ -14,6 +14,12 @@
 
     {% for modules in curricula.modules %}
         {{ modules.name }}    
+
+        <div class="radio-field">
+            <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
+            <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
+        </div>
+
     {% endfor %}
 
 {% include excol.html type="end" %}
