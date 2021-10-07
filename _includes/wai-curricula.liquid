@@ -26,10 +26,13 @@
 {% include excol.html type="middle" %}
     {% for modules in curricula.modules %}
         {{ modules.name }}    
-        : <div class="radio-field">
-        :    <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
-        :    <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
-        : </div>
+        {% capture divradio %}
+        <div class="radio-field">
+            <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
+            <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
+        </div>
+        {% endcapture %}
+        {{ divradio }}
     {% endfor %}
 {% include excol.html type="end" %}
 {% endfor %}
