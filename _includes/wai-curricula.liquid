@@ -27,12 +27,15 @@
     {% for modules in curricula.modules %}
         {{ modules.name }}    
         {% capture divradio %}
+        {% raw %}
         <div class="radio-field">
             <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
             <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
         </div>
+        {% endraw%}
         {% endcapture %}
-        {% raw %} {{divradio}}  {% endraw%}
+        {% assign divradiowhole = divradio | escape %}
+         {{divradiowhole}}  
     {% endfor %}
 {% include excol.html type="end" %}
 {% endfor %}
