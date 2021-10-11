@@ -41,12 +41,12 @@
 
 -->
 
-
+<legend>WAI Curricula module</legend>
 
 {% for curricula in site.data.wai-curricula %}
 {% include excol.html type="start" id="optional-id" %}
 
-### Heading
+{{ curricula.name }}
 
 {% include excol.html type="middle" %}
 
