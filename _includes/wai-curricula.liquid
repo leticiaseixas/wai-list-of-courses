@@ -29,7 +29,8 @@
 {% for curricula in site.data.wai-curricula %}
 {% include excol.html type="start" id=curricula.id %}
 {{ curricula.name }}
-{% include excol.html type="middle" %}
+{% capture curricula_details_id %}details_{{curricula.id}}{% endcapture %}
+{% include excol.html type="middle" id=curricula_details_id%}
     {% for modules in curricula.modules %}
         <a href="{{ modules.link}}" rel="external">{{ modules.id }} - {{ modules.name }}</a>
     {% endfor %}
