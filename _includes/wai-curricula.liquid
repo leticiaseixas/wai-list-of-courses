@@ -43,7 +43,7 @@
 
 {% include excol.html type="all" %}
 
-
+{% for curricula in site.data.wai-curricula %}
 {% include excol.html type="start" id="optional-id" %}
 
 ### Heading
@@ -53,6 +53,6 @@
 Content of the expand/collapse.
 <a href="link" rel="external"> link</a>
 
-
+{% endfor %}
 
 {% include excol.html type="end" %}
