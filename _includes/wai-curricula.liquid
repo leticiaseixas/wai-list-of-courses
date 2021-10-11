@@ -51,8 +51,7 @@
 {% include excol.html type="middle" %}
 
 {% for modules in curricula.modules %}
-Content of the expand/collapse.
-<a href="link" rel="external"> link</a>
+<a href="{{ modules.link}}" rel="external"> {{ modules.name }}</a>
 {% endfor %}
 
 {% include excol.html type="end" %}
