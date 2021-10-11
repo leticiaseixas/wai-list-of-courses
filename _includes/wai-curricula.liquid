@@ -14,7 +14,7 @@
     </div>
 {% endfor %}
 
-<div class="radio-field"></div>
+<div class="radio-field">
     <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
     <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
 </div>
@@ -31,7 +31,7 @@
 {{ curricula.name }}
 {% include excol.html type="middle" %}
     {% for modules in curricula.modules %}
-        {{ modules.name }}    
+        <a href="{{ modules.link}}" rel="external">{{ modules.id }} - {{ modules.name }}</a>
     {% endfor %}
 {% include excol.html type="end" %}
 {% endfor %}
