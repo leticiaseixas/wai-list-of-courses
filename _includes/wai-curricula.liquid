@@ -40,19 +40,19 @@
 {% include excol.html type="end" %}
 
 -->
+
 {% include excol.html type="all" %}
 
-{% for curricula in site.data.wai-curricula %}
 
-{% include excol.html type="start" id=curricula.id  %}
+{% include excol.html type="start" id="optional-id" %}
 
-{{ curricula.name }}
+### Heading
 
 {% include excol.html type="middle" %}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus incidunt velit quia quisquam odio, minus, blanditiis molestias deserunt facere consequuntur placeat minima odit ex officia est nemo neque aut provident?
+Content of the expand/collapse.
 
 {% include excol.html type="end" %}
-{% endfor %}
+
 
 {% include excol.html type="end" %}
