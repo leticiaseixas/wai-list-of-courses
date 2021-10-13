@@ -223,3 +223,21 @@ details>div{
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+
+
+a.more-info {
+  color: var(--light-blue);
+  margin-left: .5em;
+  font-size: .8rem;
+}
+a.more-info:hover {
+  color: var(--ocean);
+}
+.more-info__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.more-info__icon svg {
+  height: 1.5em;
+}
