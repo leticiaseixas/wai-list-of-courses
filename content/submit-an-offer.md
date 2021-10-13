@@ -236,13 +236,11 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <div class="field">
-    <label for="offer-website">Web site</label>
-    {% include_cached input.html type="url" name="offer-website" %}
+    {% include_cached input.html type="url" label ="Web site" name="offer-website" %}
 </div>
 
 <div class="field">
-    <label for="offer-reviews-page">Reviews page</label>
-    {% include_cached input.html type="url" name="offer-reviews-page" %}
+    {% include_cached input.html type="url" label="Reviews page" name="offer-reviews-page" %}
 </div>
 <div class="field">
     <label for="offer-content-update">Content update date</label>
