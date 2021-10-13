@@ -137,15 +137,6 @@ main > header { grid-column: 4 / span 4; }
     <input type="text" id="topics">
 </div>
 
-<div class="field">
-    <label for="offer-curricula_correspondence">WAI Curricula module</label>
-    <select id="offer-curricula_correspondence">
-        <option value=""></option>
-        <option value="offer-curricula_correspondence-foundations">Foundations modules</option>
-        <option value="offer-curricula_correspondence-developer">Developer modules</option>
-        <option value="offer-curricula_correspondence-none">None</option>
-    </select>
-</div>
 <fieldset id="offer-wai-curricula">
     {% include wai-curricula.liquid %}
 </fieldset>
@@ -246,12 +237,12 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-website">Web site</label>
-    {% include_cached input.html type="url" label="URL" name="offer-website" %}
+    {% include_cached input.html type="url" name="offer-website" %}
 </div>
 
 <div class="field">
     <label for="offer-reviews-page">Reviews page</label>
-    {% include_cached input.html type="url" label="URL" name="offer-reviews-page" %}
+    {% include_cached input.html type="url" name="offer-reviews-page" %}
 </div>
 <div class="field">
     <label for="offer-content-update">Content update date</label>
