@@ -40,7 +40,7 @@ main > header { grid-column: 4 / span 4; }
 <form>
   <p>The <a href="../list-of-courses">List of Courses</a> shows offers from different vendors, so that people can make informed decisions when they choose a course, training, or certification offer.</p>
   <p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>    
-  <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content. All information will be publicly available as this page generates a Pull Request on our GitHub repository.<em></p>
+  <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p>
 
 
 <div class="field">
