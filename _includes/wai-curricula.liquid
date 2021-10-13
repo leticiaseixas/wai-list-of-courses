@@ -2,11 +2,7 @@
 
 {% for curricula in site.data.wai-curricula %}
 {% include excol.html type="start" id="optional-id" %}
-
-  {% include resource-link.html
-    label="A.3 Editing-views are operable"
-    href="{{curricula.link}}"
- %}
+{% include resource-link.html label="{{curricula.link}}" href="" %}
 
 
 <a href="{{curricula.link}}">{{ curricula.name }}</a>
