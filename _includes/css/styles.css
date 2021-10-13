@@ -50,11 +50,10 @@ main>header {
 }
 
 #left-col legend {
-  
+  font-size: 100%;
 }
 
 .offers-filters {
-  
   padding-right: 2em;
 }
 
