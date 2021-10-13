@@ -3,10 +3,7 @@
 {% for curricula in site.data.wai-curricula %}
 {% include excol.html type="start" id="optional-id" %}
 
-{{ curricula.name }} {% include {{curricula.link}}
-    label="{{curricula.name}}"
-    href="{{curricula.link}}"
- %}
+{{ curricula.name }} {% include resource-link.html label="{{curricula.name}}" href="{{curricula.link}}" %}
 
 {% include excol.html type="middle" %}
 
