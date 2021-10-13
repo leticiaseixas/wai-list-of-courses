@@ -2,7 +2,9 @@
 
 {% for curricula in site.data.wai-curricula %}
 {% include excol.html type="start" id="optional-id" %}
-{% include resource-link.html label="{{ curricula.name }}" href="link" %}
+{% capture curricula_link %}{{curricula.link}}{% endcapture %}
+
+{% include resource-link.html label="{{ curricula_link }}" href="link" %}
 
 
 <a href="{{curricula.link}}">{{ curricula.name }}</a>
