@@ -4,7 +4,7 @@
 {% include excol.html type="start" id="optional-id" %}
 {% capture curricula_link %}{{curricula.link}}{% endcapture %}
 
-{% include resource-link.html label="{{ curricula_link }}" href="link" %}
+{% include resource-link.html label="label" href="{{ curricula_link }}" %}
 
 
 <a href="{{curricula.link}}">{{ curricula.name }}</a>
