@@ -143,7 +143,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field" id="divSelectLang">
     <label for="offer-language">Language</label>
-    <select name="language" id="language" class="field-language">
+    <select name="language" id="language" class="field-language select-form">
         <option value=""></option>
         {% for language in site.data.lang %}
             <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -154,7 +154,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field" id="divSelectCountry">
     <label for="offer-country">Country</label>
-    <select name="country" id="country" class="field-country">
+    <select name="country" id="country" class="field-country select-form">
         <option value=""></option>
         {% for country in site.data.countries %}
             <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>

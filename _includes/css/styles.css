@@ -78,6 +78,12 @@ main>header {
   width: 100%;
 }
 
+.select-form {
+  width: 100%;
+  margin-top: 1em;
+}
+
+
 .button-clear-button {
   margin-bottom: 2em;
 }
