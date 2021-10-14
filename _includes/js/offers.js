@@ -165,6 +165,12 @@ if (filterForm) {
 
 }
 
-
+const fieldLang = document.getElementById("fieldLang");
+const selectToClone = document.getElementById("language1");
 const buttonNewLang = document.getElementsByClassName("button-new-lang")[0];
-buttonNewLang.addEventListener('click', e => { alert()});
+buttonNewLang.addEventListener('click', e => { addNewFieldLang()});
+
+function addNewFieldLang(){
+  var cln = selectToClone.cloneNode(true);
+  fieldLang.appendChild(cln);
+}
