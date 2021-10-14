@@ -152,9 +152,9 @@ main > header { grid-column: 4 / span 4; }
     {% include_cached button.html label="Add language" class="small button-new-lang" %}
 </div>
 
-<div class="field">
-    <label for="country">Country</label>
-    <select name="country" id="country">
+<div class="field" id="divSelectCountry">
+    <label for="offer-country">Country</label>
+    <select name="country" id="country" class="field-country">
         <option value=""></option>
         {% for country in site.data.countries %}
             <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
