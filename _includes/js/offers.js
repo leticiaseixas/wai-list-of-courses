@@ -172,5 +172,6 @@ buttonNewLang.addEventListener('click', e => { addNewFieldLang()});
 
 function addNewFieldLang(){
   var cln = selectToClone.cloneNode(true);
-  selectToClone.appendChild(cln);
+  fieldLang.insertBefore(selectToClone, fieldLang.lastChild);
+  //selectToClone.appendChild(cln);
 }
