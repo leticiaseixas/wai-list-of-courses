@@ -249,7 +249,7 @@ main > header { grid-column: 4 / span 4; }
 </div>
 
 <div class="field">
-    <label for="ooffer-reviews-page">Reviews page</label>
+    <label for="offer-reviews-page">Reviews page</label>
     <input type="url" name="offer-reviews-page" id="offer-reviews-page">
 </div>
 <div class="field">
