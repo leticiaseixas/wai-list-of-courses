@@ -238,7 +238,7 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <div class="field">
-    {% include_cached input.html type="url" label ="Web site" name="offer-website" required %}
+    {% include_cached input.html type="url" label ="Web site" name="offer-website" required="true" %}
 </div>
 
 <div class="field">
