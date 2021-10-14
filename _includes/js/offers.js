@@ -169,6 +169,11 @@ const divSelectLang = document.getElementById("divSelectLang");
 const fieldLang = document.getElementsByClassName("field-language")[0];
 document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang,fieldLang)});
 
+const divSelectCountry = document.getElementById("divSelectCountry");
+const fieldCountry = document.getElementsByClassName("field-country")[0];
+document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry,fieldCountry)});
+
+
 function addNewField(divToAppend, fieldToAppend){
   divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
 }
