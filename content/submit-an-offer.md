@@ -149,6 +149,7 @@ main > header { grid-column: 4 / span 4; }
             <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
         {% endfor %}
     </select>
+    {% include_cached button.html label="Add language" class="small" id="button-new-lang" %}
 </div>
 
 <div class="field">
