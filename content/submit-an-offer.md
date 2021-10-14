@@ -83,28 +83,28 @@ main > header { grid-column: 4 / span 4; }
   <legend class="label">Audience</legend>
   <p class="expl">Describe the audience.</p>
 
-  <div class="radio-field">
-    <input type="checkbox" name="offer-audience[]" id="offer-audience-developer" value="offer-audience-developer" required>
+  <div class="field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-developer" value="offer-audience-developer" required>
     <label for="offer-audience-developer">Developer</label>
   </div>
-  <div class="radio-field">
-    <input type="checkbox" name="offer-audience[]" id="offer-audience-designer" value="offer-audience-designer" required>
+  <div class="field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-designer" value="offer-audience-designer" required>
     <label for="offer-audience-designer">Designer</label>
   </div>
-  <div class="radio-field">
-    <input type="checkbox" name="offer-audience[]" id="offer-audience-content-author" value="offer-audience-content-author" required>
+  <div class="field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-content-author" value="offer-audience-content-author" required>
     <label for="offer-audience-content-author">Content Author</label>
   </div>
-  <div class="radio-field">
-    <input type="checkbox" name="offer-audience[]" id="offer-audience-manager" value="offer-audience-manager" required>
+  <div class="field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-manager" value="offer-audience-manager" required>
     <label for="offer-audience-manager">Manager</label>
   </div>
-  <div class="radio-field">
-    <input type="checkbox" name="offer-audience[]" id="offer-audience-tester" value="offer-audience-tester" required>
+  <div class="field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-tester" value="offer-audience-tester" required>
     <label for="offer-audience-tester">Tester</label>
   </div>
-  <div class="radio-field">
-    <input type="checkbox" name="offer-audience[]" id="offer-audience-other" value="offer-audience-other" required>
+  <div class="field">
+    <input type="checkbox" name="offer-audience" id="offer-audience-other" value="offer-audience-other" required>
     <label for="offer-audience-other">Other</label>
   </div>
 </fieldset>
