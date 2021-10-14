@@ -166,11 +166,9 @@ if (filterForm) {
 }
 
 const divSelectLang = document.getElementById("divSelectLang");
-const fieldLang = document.getElementById("language1");
-const buttonNewLang = document.getElementsByClassName("button-new-lang")[0];
-buttonNewLang.addEventListener('click', e => { addNewFieldLang()});
+const fieldLang = document.getElementsByClassName("field-language")[0];
+document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang,fieldLang)});
 
-function addNewField(){
-  divSelectLang.insertBefore(fieldLang.cloneNode(true), buttonNewLang);
-  //selectToClone.appendChild(cln);
+function addNewField(divToAppend, fieldToAppend){
+  divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
 }
