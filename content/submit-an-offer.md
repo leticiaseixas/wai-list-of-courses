@@ -44,17 +44,17 @@ main > header { grid-column: 4 / span 4; }
 
 
 <div class="field">
-    <label for="offer-name">Title</label>
+    <label for="offer-name">Title (required)</label>
     <input type="text" id="offer-name" required>
 </div>
 
 <div class="field">
-    <label for="offer-description">Description</label>
+    <label for="offer-description">Description (required)</label>
     <textarea id="offer-description" required></textarea>
 </div>
 
 <fieldset class="field" id="offer-type">
-  <legend class="label">Type</legend>
+  <legend class="label">Type (required)</legend>
   <p class="expl">Describe the type of your offer.</p>
 
   <div class="radio-field">
@@ -80,7 +80,7 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <fieldset class="field" id="offer-audience">
-  <legend class="label">Audience</legend>
+  <legend class="label">Audience (required)</legend>
   <p class="expl">Describe the audience.</p>
 
   <div class="radio-field">
@@ -110,7 +110,7 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <fieldset class="field" id="offer-level">
-  <legend class="label">Level</legend>
+  <legend class="label">Level (required)</legend>
   <p class="expl">Describe the level of your offer.</p>
 
   <div class="radio-field">
@@ -133,7 +133,7 @@ main > header { grid-column: 4 / span 4; }
 </div>
 
 <div class="field">
-    <label for="offer-topics" required>Topics</label>
+    <label for="offer-topics" required>Topics (required)</label>
     <input type="text" id="topics">
 </div>
 
@@ -142,7 +142,7 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <div class="field" id="divSelectLang">
-    <label for="offer-language">Language</label>
+    <label for="offer-language">Language (required)</label>
     <select name="language" id="language" class="field-language select-form" required> 
         <option value=""></option>
         {% for language in site.data.lang %}
@@ -153,7 +153,7 @@ main > header { grid-column: 4 / span 4; }
 </div>
 
 <div class="field" id="divSelectCountry">
-    <label for="offer-country">Country</label>
+    <label for="offer-country">Country (required)</label>
     <select name="country" id="country" class="field-country select-form" required>
         <option value=""></option>
         {% for country in site.data.countries %}
@@ -164,7 +164,7 @@ main > header { grid-column: 4 / span 4; }
 </div>
 
 <fieldset class="field" id="offer-format">
-  <legend class="label">Format</legend>
+  <legend class="label">Format (required)</legend>
   <p class="expl">Describe the format of your offer.</p>
   <div class="radio-field">
     <input type="radio" name="offer-format" id="offer-format-online" required>
@@ -182,7 +182,7 @@ main > header { grid-column: 4 / span 4; }
 
 
 <fieldset class="field" id="offer-learning">
-    <legend class="label">Learning</legend>
+    <legend class="label">Learning (required)</legend>
     <div class="radio-field">
         <input type="checkbox" id="offer-learning-guided" value="offer-learning-guided" required>
         <label for="offer-learning-guided">Guided</label>
@@ -211,7 +211,7 @@ main > header { grid-column: 4 / span 4; }
     <input type="text" id="offer-accessibility-resources">
 </div>
 <div class="field">
-    <label for="offer-duration">Duration</label>
+    <label for="offer-duration">Duration (required)</label>
     <input type="text" id="offer-number-duration" class="duration-input" required>
     <select id="offer-unity-duration" class="duration-input" required> 
         <option value=""></option>
@@ -224,7 +224,7 @@ main > header { grid-column: 4 / span 4; }
 </div>
 
 <fieldset class="field" id="offer-cost">
-  <legend class="label">Cost</legend>
+  <legend class="label">Cost (required)</legend>
   <p class="expl">Describe the cost of your offer.</p>
 
   <div class="radio-field">
@@ -246,7 +246,7 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <div class="field">
-    <label for="offer-website">Web site</label>
+    <label for="offer-website">Web site (required)</label>
     <input type="url" name="offer-website" id="offer-website" required>
 </div>
 
@@ -255,7 +255,7 @@ main > header { grid-column: 4 / span 4; }
     <input type="url" name="offer-reviews-page" id="offer-reviews-page">
 </div>
 <div class="field">
-    <label for="offer-content-update">Content update date</label>
+    <label for="offer-content-update">Content update date (required)</label>
     <input type="date" id="offer-content-update" required>
 </div>
 
