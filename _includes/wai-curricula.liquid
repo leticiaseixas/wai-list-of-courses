@@ -1,8 +1,9 @@
-<legend>WAI Curricula module</legend>
+<legend>WAI Curricula module{% include resource-link.html label="Curricula on Web Accessibility"
+    href="https://www.w3.org/WAI/curricula/" %}</legend>
 
 {% for curricula in site.data.wai-curricula %}
 {% include excol.html type="start" id="optional-id" %}
-
+{{ curricula.name }}
 <!-- {% capture info_label%}More information about the {{curricula.name}}{% endcapture %}
 {{ curricula.name }}{% include resource-link.html label=info_label href=curricula.link %} -->
 
