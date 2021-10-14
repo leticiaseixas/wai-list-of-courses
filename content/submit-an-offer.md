@@ -38,7 +38,7 @@ main > header { grid-column: 4 / span 4; }
 <a href="../list-of-courses">Back to List of Courses</a>
 
 <form>
-  <p>The <a href="../list-of-courses">List of Courses</a> shows offers from different vendors, so that people can make informed decisions when they choose a course, training, or certification offer.</p>
+  <p>The <a href="../list-of-courses">List of Courses</a> shows course, training, or certification offers from different vendors, so that people can make informed decisions when they choose an offer.</p>
   <p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>    
   <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p>
 
@@ -265,7 +265,12 @@ main > header { grid-column: 4 / span 4; }
     <label for="comments">Comments</label>
     <textarea id="comments"></textarea>
   </div>
-
+<div id="disclaimer">
+            <h2>Important Disclaimer</h2>
+            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+            <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
+            <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
+        </div>
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
     <label><input type="checkbox" required> I give permission for my information to be published in the W3C's list of courses.</label>
@@ -274,6 +279,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
     <button type="submit">Submit your offer</button>
   </div>
+</form>
 
 
 
