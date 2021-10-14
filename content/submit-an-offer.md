@@ -149,7 +149,7 @@ main > header { grid-column: 4 / span 4; }
             <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
         {% endfor %}
     </select>
-    {% include_cached button.html type="link" label="Add language" class="small button-new-lang" %}
+    {% include_cached button.html type="fake" label="Add language" class="small button-new-lang" %}
 </div>
 
 <div class="field" id="divSelectCountry">
@@ -160,7 +160,7 @@ main > header { grid-column: 4 / span 4; }
             <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
         {% endfor %}
     </select>
-    {% include_cached button.html type="link" label="Add country" class="small button-new-country" %}
+    {% include_cached button.html type="fake" label="Add country" class="small button-new-country" %}
 </div>
 
 <fieldset class="field" id="offer-format">
