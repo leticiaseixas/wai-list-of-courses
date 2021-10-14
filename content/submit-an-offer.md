@@ -212,7 +212,15 @@ main > header { grid-column: 4 / span 4; }
 </div>
 <div class="field">
     <label for="offer-duration" required>Duration</label>
-    <input type="text" id="offer-duration">
+    <input type="text" id="offer-number-duration">
+    <select id="offer-unity-duration" class="select-form" required> 
+        <option value=""></option>
+        <option value="hours">Hours</option>
+        <option value="days">Days</option>
+        <option value="weeks">Weeks</option>
+        <option value="months">Months</option>
+        <option value="years">Years</option>
+    </select>
 </div>
 
 <fieldset class="field" id="offer-cost">
@@ -238,11 +246,13 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <div class="field">
-    <input type="url" label="Web site" id="offer-website" required>
+    <label for="offer-website">Web site</label>
+    <input type="url" name="offer-website" id="offer-website" required>
 </div>
 
 <div class="field">
-    <input type="url" label="Reviews page" id="offer-reviews-page">
+    <label for="ooffer-reviews-page">Reviews page</label>
+    <input type="url" name="offer-reviews-page" id="offer-reviews-page">
 </div>
 <div class="field">
     <label for="offer-content-update">Content update date</label>
