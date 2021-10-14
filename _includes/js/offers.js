@@ -166,5 +166,5 @@ if (filterForm) {
 }
 
 
-const buttonNewLang = document.getElementsByClassName("button-new-lang");
+const buttonNewLang = document.getele("button-new-lang")[0];
 buttonNewLang.addEventListener('click', e => { alert()});
