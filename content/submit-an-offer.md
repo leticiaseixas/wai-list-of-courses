@@ -143,13 +143,19 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-language">Language</label>
-    <select name="language" id="language">
+    <select name="language1" id="language1">
         <option value=""></option>
         {% for language in site.data.lang %}
             <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
         {% endfor %}
     </select>
     {% include_cached button.html label="Add language" class="small" id="button-new-lang" %}
+    <select name="language1" id="language1">
+        <option value=""></option>
+        {% for language in site.data.lang %}
+            <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
+        {% endfor %}
+    </select>
 </div>
 
 <div class="field">
@@ -263,3 +269,9 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
     <button type="submit">Submit your offer</button>
   </div>
+
+
+
+<script>
+{% include js/offers.js %}
+</script>

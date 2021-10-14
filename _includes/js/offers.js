@@ -164,3 +164,7 @@ if (filterForm) {
   }
 
 }
+
+
+const buttonNewLang = document.getElementById("button-new-lang");
+buttonNewLang.addEventListener('click', e => { alert()});
