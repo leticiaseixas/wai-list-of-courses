@@ -238,7 +238,7 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <div class="field">
-    <inputl type="url" label ="Web site" id="offer-website" required>
+    <input type="url" label="Web site" id="offer-website" required>
 </div>
 
 <div class="field">
