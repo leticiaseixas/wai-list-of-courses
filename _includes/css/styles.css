@@ -85,9 +85,8 @@ main>header {
 
 .duration-input {
   width: 25% !important;
-  margin-top: 1em;
   padding: 8px;
-  display: inline;
+  display: inline !important;
 }
 
 
