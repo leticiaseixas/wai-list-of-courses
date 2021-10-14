@@ -141,7 +141,7 @@ main > header { grid-column: 4 / span 4; }
     {% include wai-curricula.liquid %}
 </fieldset>
 
-<div class="field" id="fieldLang">
+<div class="field" id="divSelectLang">
     <label for="offer-language">Language</label>
     <select name="language1" id="language1">
         <option value=""></option>
