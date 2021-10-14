@@ -50,10 +50,10 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-description">Description</label>
-    <textarea id="offer-description"></textarea>
+    <textarea id="offer-description" required></textarea>
 </div>
 
-<fieldset class="field" id="offer-type">
+<fieldset class="field" id="offer-type" required>
   <legend class="label">Type</legend>
   <p class="expl">Describe the type of your offer.</p>
 
