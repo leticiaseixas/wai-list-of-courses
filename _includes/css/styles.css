@@ -84,7 +84,7 @@ main>header {
 }
 
 .duration-input {
-  width: 40%;
+  width: 40% !important;
   margin-top: 1em;
 }
 
