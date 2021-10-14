@@ -83,6 +83,11 @@ main>header {
   margin-top: 1em;
 }
 
+.duration-input {
+  width: 40%;
+  margin-top: 1em;
+}
+
 
 .button-clear-button {
   margin-bottom: 2em;
