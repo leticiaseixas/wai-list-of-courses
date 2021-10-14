@@ -53,12 +53,12 @@ main > header { grid-column: 4 / span 4; }
     <textarea id="offer-description" required></textarea>
 </div>
 
-<fieldset class="field" id="offer-type" required>
+<fieldset class="field" id="offer-type">
   <legend class="label">Type</legend>
   <p class="expl">Describe the type of your offer.</p>
 
   <div class="radio-field">
-    <input type="radio" name="offer-type" id="offer-type-graduate">
+    <input type="radio" name="offer-type" id="offer-type-graduate" required>
     <label for="offer-type-graduate">Graduate program</label>
   </div>
   <div class="radio-field">
@@ -84,7 +84,7 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">Describe the audience.</p>
 
   <div class="radio-field">
-    <input type="checkbox" name="offer-audience" id="offer-audience-developer">
+    <input type="checkbox" name="offer-audience" id="offer-audience-developer" required>
     <label for="offer-audience-developer">Developer</label>
   </div>
   <div class="radio-field">
@@ -114,7 +114,7 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">Describe the level of your offer.</p>
 
   <div class="radio-field">
-    <input type="radio" name="offer-level" id="offer-level-basic">
+    <input type="radio" name="offer-level" id="offer-level-basic" required>
     <label for="offer-level-basic">Basic</label>
   </div>
   <div class="radio-field">
@@ -133,7 +133,7 @@ main > header { grid-column: 4 / span 4; }
 </div>
 
 <div class="field">
-    <label for="offer-topics">Topics</label>
+    <label for="offer-topics" required>Topics</label>
     <input type="text" id="topics">
 </div>
 
@@ -143,7 +143,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field" id="divSelectLang">
     <label for="offer-language">Language</label>
-    <select name="language" id="language" class="field-language select-form">
+    <select name="language" id="language" class="field-language select-form" required> 
         <option value=""></option>
         {% for language in site.data.lang %}
             <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -154,7 +154,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field" id="divSelectCountry">
     <label for="offer-country">Country</label>
-    <select name="country" id="country" class="field-country select-form">
+    <select name="country" id="country" class="field-country select-form" required>
         <option value=""></option>
         {% for country in site.data.countries %}
             <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
@@ -167,7 +167,7 @@ main > header { grid-column: 4 / span 4; }
   <legend class="label">Format</legend>
   <p class="expl">Describe the format of your offer.</p>
   <div class="radio-field">
-    <input type="radio" name="offer-format" id="offer-format-online">
+    <input type="radio" name="offer-format" id="offer-format-online" required>
     <label for="offer-format-online">Online</label>
   </div>
   <div class="radio-field">
@@ -184,7 +184,7 @@ main > header { grid-column: 4 / span 4; }
 <fieldset class="field" id="offer-learning">
     <legend class="label">Learning</legend>
     <div class="radio-field">
-        <input type="checkbox" id="offer-learning-guided" value="offer-learning-guided">
+        <input type="checkbox" id="offer-learning-guided" value="offer-learning-guided" required>
         <label for="offer-learning-guided">Guided</label>
     </div>
     <div class="radio-field">
@@ -211,7 +211,7 @@ main > header { grid-column: 4 / span 4; }
     <input type="text" id="offer-accessibility-resources">
 </div>
 <div class="field">
-    <label for="offer-duration">Duration</label>
+    <label for="offer-duration" required>Duration</label>
     <input type="text" id="offer-duration">
 </div>
 
@@ -220,7 +220,7 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">Describe the cost of your offer.</p>
 
   <div class="radio-field">
-    <input type="radio" name="offer-cost" id="offer-cost-free-certificates-for-purchase">
+    <input type="radio" name="offer-cost" id="offer-cost-free-certificates-for-purchase" required>
     <label for="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</label>
   </div>
   <div class="radio-field">
@@ -238,7 +238,7 @@ main > header { grid-column: 4 / span 4; }
 </fieldset>
 
 <div class="field">
-    {% include_cached input.html type="url" label ="Web site" name="offer-website" %}
+    {% include_cached input.html type="url" label ="Web site" name="offer-website" required %}
 </div>
 
 <div class="field">
@@ -246,7 +246,7 @@ main > header { grid-column: 4 / span 4; }
 </div>
 <div class="field">
     <label for="offer-content-update">Content update date</label>
-    <input type="date" id="offer-content-update">
+    <input type="date" id="offer-content-update" required>
 </div>
 
 <h2>Submitting your offer</h2>
