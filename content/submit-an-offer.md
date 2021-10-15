@@ -263,7 +263,7 @@ main > header { grid-column: 4 / span 4; }
     <label for="comments">Comments</label>
     <textarea id="comments"></textarea>
   </div>
-  <p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
+  <p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of offers in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
     <label><input type="checkbox" required> I give permission for my information to be published in the W3C's list of courses.</label>
