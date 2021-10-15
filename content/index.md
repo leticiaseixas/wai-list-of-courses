@@ -94,7 +94,7 @@ footer: >
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         <div id="disclaimer">
             <h2>Important Disclaimer</h2>
-            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of offers in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
             <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
             <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
         </div>
@@ -102,6 +102,7 @@ footer: >
     <div id="offers-list">
         <span id="status">
             <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+            {% include_cached button.html label="Order by" class="secondary" %}
         </span>
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
