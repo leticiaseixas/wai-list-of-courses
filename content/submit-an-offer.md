@@ -43,7 +43,6 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-name">Title (required)</label>
-    <p class="expl">Describe the title of you offer.</p>
     <input type="text" id="offer-name" required>
 </div>
 
@@ -55,7 +54,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-type">
   <legend class="label">Type (required)</legend>
-  <p class="expl">Describe the type of your offer.</p>
+  <p class="expl">Indicate the type of the offer.</p>
 
   <div class="radio-field">
     <input type="radio" name="offer-type" id="offer-type-graduate" required>
@@ -81,7 +80,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-audience">
   <legend class="label">Audience (required)</legend>
-  <p class="expl">Describe who is the intended audience for this offer.</p>
+  <p class="expl">Indicate who is the intended audience for this offer.</p>
 
   <div class="radio-field">
     <input type="checkbox" name="offer-audience" id="offer-audience-developer" value="offer-audience-developer" required>
@@ -111,7 +110,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-level">
   <legend class="label">Level (required)</legend>
-  <p class="expl">Describe the level of understanding or proficiency needed for this offer.</p>
+  <p class="expl">Indicate the level of digital accessibility proficiency required for this offering.</p>
 
   <div class="radio-field">
     <input type="radio" name="offer-level" id="offer-level-basic" required>
@@ -145,7 +144,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field" id="divSelectLang">
     <label for="offer-language">Language (required)</label>
-    <p class="expl">Describe in which language or languages this offer is provided.</p>
+    <p class="expl">Indicate in which language or languages this offer is provided.</p>
     <select name="language" id="language" class="field-language select-form" required> 
         <option value=""></option>
         {% for language in site.data.lang %}
@@ -157,7 +156,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field" id="divSelectCountry">
     <label for="offer-country">Country (required)</label>
-    <p class="expl">Describe from which country our countries this offer is provided.</p>
+    <p class="expl">Indicate by which country or countries this offer is provided.</p>
     <select name="country" id="country" class="field-country select-form" required>
         <option value=""></option>
         {% for country in site.data.countries %}
@@ -169,7 +168,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-format">
   <legend class="label">Format (required)</legend>
-  <p class="expl">Describe the format of your offer.</p>
+  <p class="expl">Indicate in which format this offer is provided.</p>
   <div class="radio-field">
     <input type="radio" name="offer-format" id="offer-format-online" required>
     <label for="offer-format-online">Online</label>
@@ -187,6 +186,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-learning">
     <legend class="label">Learning (required)</legend>
+    <p class="expl">Indicate the type of learning provided in this offer.</p>
     <div class="radio-field">
         <input type="checkbox" id="offer-learning-guided" value="offer-learning-guided" required>
         <label for="offer-learning-guided">Guided</label>
@@ -207,15 +207,18 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-platform">Platform</label>
+    <p class="expl">Indicate on which platform this offer is provided.</p>
     <input type="text" id="platform">
 </div>
 
 <div class="field">
     <label for="offer-accessibility-resources">Accessibility resources</label>
+    <p class="expl">Describe what accessibility resources are provided in this offering.</p>
     <input type="text" id="offer-accessibility-resources">
 </div>
 <div class="field">
     <label for="offer-duration">Duration (required)</label>
+    <p class="expl">Indicate the duration of this offer.</p>
     <input type="number" id="offer-number-duration" class="duration-input" required>
     <select id="offer-unity-duration" class="duration-input" required> 
         <option value=""></option>
@@ -229,8 +232,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-cost">
   <legend class="label">Cost (required)</legend>
-  <p class="expl">Describe the cost of your offer.</p>
-
+  <p class="expl">Indicate the cost of your offer.</p>
   <div class="radio-field">
     <input type="radio" name="offer-cost" id="offer-cost-free-certificates-for-purchase" required>
     <label for="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</label>
@@ -251,15 +253,18 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-website">Web site (required)</label>
+    <p class="expl">Provide the web site containing more information about this offer.</p>
     <input type="url" name="offer-website" id="offer-website" required>
 </div>
 
 <div class="field">
     <label for="offer-reviews-page">Reviews page</label>
+    <p class="expl">Provide the web site containing consumer reviews about this offer.</p>
     <input type="url" name="offer-reviews-page" id="offer-reviews-page">
 </div>
 <div class="field">
     <label for="offer-content-update">Content update date (required)</label>
+    <p class="expl">Please indicate the date when the content of this offer was last updated.</p>
     <input type="date" id="offer-content-update" required>
 </div>
 
