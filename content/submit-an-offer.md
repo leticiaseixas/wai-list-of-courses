@@ -137,7 +137,7 @@ main > header { grid-column: 4 / span 4; }
     <label for="offer-topics" required>Topics (required)</label>
     <p class="expl">Describe the topics covered by this offer.</p>
     <input type="text" id="topics" class="field-topic">
-    {% include_cached button.html type="fake" label="Add topics" class="small button-new-topic" %}
+    {% include_cached button.html type="fake" label="Add topic" class="small button-new-topic" %}
 </div>
 
 <fieldset id="offer-wai-curricula">
