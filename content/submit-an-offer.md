@@ -126,16 +126,18 @@ main > header { grid-column: 4 / span 4; }
   </div>
 </fieldset>
 
-<div class="field">
+<div class="field" id="divInputPrerequisite">
     <label for="offer-prerequisites">Prerequisites</label>
     <p class="expl">Describe what are the prerequisites for this offer.</p>
-    <input type="text" id="prerequisites">
+    <input type="text" id="prerequisites1" class="field-prerequisite">
+    {% include_cached button.html type="fake" label="Add prerequisite" class="small button-new-prerequisite" %}
 </div>
 
-<div class="field">
+<div class="field" id="divInputTopic">
     <label for="offer-topics" required>Topics (required)</label>
-    <p class="expl">Describe at least 3 and up to 6 topics covered by this offer.</p>
-    <input type="text" id="topics">
+    <p class="expl">Describe the topics covered by this offer.</p>
+    <input type="text" id="topics" class="field-topic">
+    {% include_cached button.html type="fake" label="Add topics" class="small button-new-topic" %}
 </div>
 
 <fieldset id="offer-wai-curricula">

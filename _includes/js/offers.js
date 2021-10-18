@@ -173,6 +173,15 @@ const divSelectCountry = document.getElementById("divSelectCountry");
 const fieldCountry = document.getElementsByClassName("field-country")[0];
 document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry,fieldCountry)});
 
+const divInputPrerequisite = document.getElementById("divInputPrerequisite");
+const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
+document.getElementsByClassName("button-new-prerequisite")[0].addEventListener('click', e => { addNewField(divInputPrerequisite,fieldPrequisite)});
+
+const divInputTopic = document.getElementById("divInputTopic");
+const fieldTopic = document.getElementsByClassName("field-topics")[0];
+document.getElementsByClassName("button-new-topic")[0].addEventListener('click', e => { addNewField(divInputTopic,fieldTopic)});
+
+
 
 function addNewField(divToAppend, fieldToAppend){
   divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
