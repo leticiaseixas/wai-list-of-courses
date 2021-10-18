@@ -38,16 +38,18 @@ main > header { grid-column: 4 / span 4; }
 <a href="../list-of-courses">Back to List of Courses</a>
 
 <form>
-  <p>The <a href="../list-of-courses">List of Courses</a> shows course, training, or certification offers from different vendors, so that people can make informed decisions when they choose an offer.</p>
+  <p>The <a href="../list-of-courses">List of Courses</a> shows course, training, or certification offers on digital accessibility from different vendors, so that people can make informed decisions when they choose an offer.</p>
   <p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>    
 
 <div class="field">
     <label for="offer-name">Title (required)</label>
+    <p class="expl">Describe the title of you offer.</p>
     <input type="text" id="offer-name" required>
 </div>
 
 <div class="field">
     <label for="offer-description">Description (required)</label>
+    <p class="expl">Provide a brief description of you offer.</p>
     <textarea id="offer-description" required></textarea>
 </div>
 
@@ -79,7 +81,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-audience">
   <legend class="label">Audience (required)</legend>
-  <p class="expl">Describe the audience.</p>
+  <p class="expl">Describe who is the intended audience for this offer.</p>
 
   <div class="radio-field">
     <input type="checkbox" name="offer-audience" id="offer-audience-developer" value="offer-audience-developer" required>
@@ -109,7 +111,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-level">
   <legend class="label">Level (required)</legend>
-  <p class="expl">Describe the level of your offer.</p>
+  <p class="expl">Describe the level of understanding or proficiency needed for this offer.</p>
 
   <div class="radio-field">
     <input type="radio" name="offer-level" id="offer-level-basic" required>
@@ -127,11 +129,13 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-prerequisites">Prerequisites</label>
+    <p class="expl">Describe what are the prerequisites for this offer.</p>
     <input type="text" id="prerequisites">
 </div>
 
 <div class="field">
     <label for="offer-topics" required>Topics (required)</label>
+    <p class="expl">Describe at least 3 and up to 6 topics covered by this offer.</p>
     <input type="text" id="topics">
 </div>
 
@@ -141,6 +145,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field" id="divSelectLang">
     <label for="offer-language">Language (required)</label>
+    <p class="expl">Describe in which language or languages this offer is provided.</p>
     <select name="language" id="language" class="field-language select-form" required> 
         <option value=""></option>
         {% for language in site.data.lang %}
@@ -152,6 +157,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field" id="divSelectCountry">
     <label for="offer-country">Country (required)</label>
+    <p class="expl">Describe from which country our countries this offer is provided.</p>
     <select name="country" id="country" class="field-country select-form" required>
         <option value=""></option>
         {% for country in site.data.countries %}
