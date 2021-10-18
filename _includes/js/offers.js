@@ -178,7 +178,7 @@ const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0]
 document.getElementsByClassName("button-new-prerequisite")[0].addEventListener('click', e => { addNewField(divInputPrerequisite,fieldPrequisite)});
 
 const divInputTopic = document.getElementById("divInputTopic");
-const fieldTopic = document.getElementsByClassName("field-topics")[0];
+const fieldTopic = document.getElementsByClassName("field-topic")[0];
 document.getElementsByClassName("button-new-topic")[0].addEventListener('click', e => { addNewField(divInputTopic,fieldTopic)});
 
 
