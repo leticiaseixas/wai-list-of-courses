@@ -46,6 +46,12 @@ main > header { grid-column: 4 / span 4; }
     <input type="text" id="offer-name" required>
 </div>
 
+
+<div class="field">
+    <label for="offer-provider">Provider (required)</label>
+    <input type="text" id="offer-provider" required>
+</div>
+
 <div class="field">
     <label for="offer-description">Description (required)</label>
     <p class="expl">Provide a brief description of you offer.</p>
