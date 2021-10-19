@@ -60,8 +60,8 @@ This form allows you to provide information about offers of courses, training, a
   {% include excol.html type="end" %}
 
   {% include excol.html type="start" %}
-    <h2 id="the-tool">About the offer</h2>
-    <p>Provide some information about your offer. We will list this with the offer.</p>
+  <h2 id="the-tool">About the offer</h2>
+  <p>Provide some information about your offer. We will list this with the offer.</p>
 
   {% include excol.html type="middle" %}
 
