@@ -98,10 +98,6 @@ main>header {
   display: none !important;
 }
 
-.sort-by{
-  float:right;
-}
-
 .filter-options {
   margin: 0;
 }
