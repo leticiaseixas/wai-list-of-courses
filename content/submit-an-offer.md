@@ -50,11 +50,11 @@ This form allows you to provide information about offers of courses, training, a
 
   {% include excol.html type="middle" %}
   <div class="field">
-    <label for="submitter-name">Name (Required)</label>
+    <label for="submitter-name" class="label-input">Name (Required)</label>
     <input type="text" id="submitter-name" required>
   </div>
   <div class="field">
-    <label for="submitter-email">Email (Required)</label>
+    <label for="submitter-email" class="label-input">Email (Required)</label>
     <input type="email" id="submitter-email" required>
   </div>
   {% include excol.html type="end" %}
@@ -67,18 +67,18 @@ This form allows you to provide information about offers of courses, training, a
 
 
 <div class="field">
-    <label for="offer-name">Title (Required)</label>
+    <label for="offer-name" class="label-input">Title (Required)</label>
     <input type="text" id="offer-name" required>
 </div>
 
 
 <div class="field">
-    <label for="offer-provider">Provider (Required)</label>
+    <label for="offer-provider" class="label-input">Provider (Required)</label>
     <input type="text" id="offer-provider" required>
 </div>
 
 <div class="field">
-    <label for="offer-description">Description (Required)</label>
+    <label for="offer-description" class="label-input">Description (Required)</label>
     <p class="expl">Provide a brief description of the offer (max.: 300 chars).</p>
     <textarea id="offer-description" required></textarea>
     <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
@@ -159,14 +159,14 @@ This form allows you to provide information about offers of courses, training, a
 </fieldset>
 
 <div class="field" id="divInputPrerequisite">
-    <label for="offer-prerequisites">Prerequisites</label>
+    <label for="offer-prerequisites" class="label-input">Prerequisites</label>
     <p class="expl">Describe what are the prerequisites for this offer.</p>
     <input type="text" id="prerequisites1" class="field-prerequisite">
     {% include_cached button.html type="fake" label="Add prerequisite" class="small button-new-prerequisite" %}
 </div>
 
 <div class="field" id="divInputTopic">
-    <label for="offer-topics" required>Topics (Required)</label>
+    <label for="offer-topics" class="label-input" required>Topics (Required)</label>
     <p class="expl">Describe the topics covered by this offer.</p>
     <input type="text" id="topics" class="field-topic">
     {% include_cached button.html type="fake" label="Add topic" class="small button-new-topic" %}
@@ -177,7 +177,7 @@ This form allows you to provide information about offers of courses, training, a
 </fieldset>
 
 <div class="field" id="divSelectLang">
-    <label for="offer-language">Language (Required)</label>
+    <label for="offer-language" class="label-input" >Language (Required)</label>
     <p class="expl">Indicate in which language or languages this offer is provided.</p>
     <select name="language" id="language" class="field-language select-form" required> 
         <option value=""></option>
@@ -189,7 +189,7 @@ This form allows you to provide information about offers of courses, training, a
 </div>
 
 <div class="field" id="divSelectCountry">
-    <label for="offer-country">Country (Required)</label>
+    <label for="offer-country" class="label-input">Country (Required)</label>
     <p class="expl">Indicate by which country or countries this offer is provided.</p>
     <select name="country" id="country" class="field-country select-form" required>
         <option value=""></option>
@@ -240,18 +240,18 @@ This form allows you to provide information about offers of courses, training, a
 </fieldset>
 
 <div class="field">
-    <label for="offer-platform">Platform</label>
+    <label for="offer-platform" class="label-input">Platform</label>
     <p class="expl">Indicate on which platform this offer is provided.</p>
     <input type="text" id="platform">
 </div>
 
 <div class="field">
-    <label for="offer-accessibility-resources">Accessibility resources</label>
+    <label for="offer-accessibility-resources"  class="label-input">Accessibility resources</label>
     <p class="expl">Describe what accessibility resources are provided in this offering.</p>
     <input type="text" id="offer-accessibility-resources">
 </div>
 <div class="field">
-    <label for="offer-duration">Duration (Required)</label>
+    <label for="offer-duration"  class="label-input">Duration (Required)</label>
     <p class="expl">Indicate the duration of this offer.</p>
     <input type="number" id="offer-number-duration" class="duration-input" required>
     <select id="offer-unity-duration" class="duration-input" required> 
@@ -286,26 +286,27 @@ This form allows you to provide information about offers of courses, training, a
 </fieldset>
 
 <div class="field">
-    <label for="offer-website">Web site (Required)</label>
+    <label for="offer-website" class="label-input">Web site (Required)</label>
     <p class="expl">Provide the web site containing more information about this offer.</p>
     <input type="url" name="offer-website" id="offer-website" required>
 </div>
 
 <div class="field">
-    <label for="offer-reviews-page">Reviews page</label>
+    <label for="offer-reviews-page" class="label-input">Reviews page</label>
     <p class="expl">Provide the web site containing consumer reviews about this offer.</p>
     <input type="url" name="offer-reviews-page" id="offer-reviews-page">
 </div>
 <div class="field">
-    <label for="offer-content-update">Content update date (Required)</label>
+    <label for="offer-content-update"  class="label-input">Content update date (Required)</label>
     <p class="expl">Please indicate the date when the content of this offer was last updated.</p>
     <input type="date" id="offer-content-update" required>
 </div>
-  {% include excol.html type="end" %}
+{% include excol.html type="end" %}
+
 <h2>Submitting your offer</h2>
   <p>Let us know if you have any comments.</p>
   <div class="field">
-    <label for="comments">Comments</label>
+    <label for="comments"  class="label-input">Comments</label>
     <textarea id="comments"></textarea>
   </div>
   <div class="field">
