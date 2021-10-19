@@ -42,7 +42,7 @@ This form allows you to provide information about offers of courses, training, a
 <p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>
 <p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific offer providers. Inclusion of offers in this list does not indicate endorsement by W3C. Offers and search criteria are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
-<form>
+<form id="form-submit-offer">
 
   {% include excol.html type="start" open="true" %}
   <h2 id="about-you">About you</h2>
@@ -50,11 +50,11 @@ This form allows you to provide information about offers of courses, training, a
 
   {% include excol.html type="middle" %}
   <div class="field">
-    <label for="submitter-name">Name (required)</label>
+    <label for="submitter-name">Name (Required)</label>
     <input type="text" id="submitter-name" required>
   </div>
   <div class="field">
-    <label for="submitter-email">Email (required)</label>
+    <label for="submitter-email">Email (Required)</label>
     <input type="email" id="submitter-email" required>
   </div>
   {% include excol.html type="end" %}
@@ -67,25 +67,25 @@ This form allows you to provide information about offers of courses, training, a
 
 
 <div class="field">
-    <label for="offer-name">Title (required)</label>
+    <label for="offer-name">Title (Required)</label>
     <input type="text" id="offer-name" required>
 </div>
 
 
 <div class="field">
-    <label for="offer-provider">Provider (required)</label>
+    <label for="offer-provider">Provider (Required)</label>
     <input type="text" id="offer-provider" required>
 </div>
 
 <div class="field">
-    <label for="offer-description">Description (required)</label>
+    <label for="offer-description">Description (Required)</label>
     <p class="expl">Provide a brief description of the offer (max.: 300 chars).</p>
-    <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
     <textarea id="offer-description" required></textarea>
+    <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
 </div>
 
 <fieldset class="field" id="offer-type">
-  <legend class="label">Type (required)</legend>
+  <legend class="label">Type (Required)</legend>
   <p class="expl">Indicate the type of the offer.</p>
 
   <div class="radio-field">
@@ -111,7 +111,7 @@ This form allows you to provide information about offers of courses, training, a
 </fieldset>
 
 <fieldset class="field" id="offer-audience">
-  <legend class="label">Audience (required)</legend>
+  <legend class="label">Audience (Required)</legend>
   <p class="expl">Indicate who is the intended audience for this offer.</p>
 
   <div class="radio-field">
@@ -141,7 +141,7 @@ This form allows you to provide information about offers of courses, training, a
 </fieldset>
 
 <fieldset class="field" id="offer-level">
-  <legend class="label">Level (required)</legend>
+  <legend class="label">Level (Required)</legend>
   <p class="expl">Indicate the level of digital accessibility proficiency required for this offer.</p>
 
   <div class="radio-field">
@@ -166,7 +166,7 @@ This form allows you to provide information about offers of courses, training, a
 </div>
 
 <div class="field" id="divInputTopic">
-    <label for="offer-topics" required>Topics (required)</label>
+    <label for="offer-topics" required>Topics (Required)</label>
     <p class="expl">Describe the topics covered by this offer.</p>
     <input type="text" id="topics" class="field-topic">
     {% include_cached button.html type="fake" label="Add topic" class="small button-new-topic" %}
@@ -177,7 +177,7 @@ This form allows you to provide information about offers of courses, training, a
 </fieldset>
 
 <div class="field" id="divSelectLang">
-    <label for="offer-language">Language (required)</label>
+    <label for="offer-language">Language (Required)</label>
     <p class="expl">Indicate in which language or languages this offer is provided.</p>
     <select name="language" id="language" class="field-language select-form" required> 
         <option value=""></option>
@@ -189,7 +189,7 @@ This form allows you to provide information about offers of courses, training, a
 </div>
 
 <div class="field" id="divSelectCountry">
-    <label for="offer-country">Country (required)</label>
+    <label for="offer-country">Country (Required)</label>
     <p class="expl">Indicate by which country or countries this offer is provided.</p>
     <select name="country" id="country" class="field-country select-form" required>
         <option value=""></option>
@@ -201,7 +201,7 @@ This form allows you to provide information about offers of courses, training, a
 </div>
 
 <fieldset class="field" id="offer-format">
-  <legend class="label">Format (required)</legend>
+  <legend class="label">Format (Required)</legend>
   <p class="expl">Indicate in which format this offer is provided.</p>
   <div class="radio-field">
     <input type="radio" name="offer-format" id="offer-format-online" required>
@@ -219,7 +219,7 @@ This form allows you to provide information about offers of courses, training, a
 
 
 <fieldset class="field" id="offer-learning">
-    <legend class="label">Learning (required)</legend>
+    <legend class="label">Learning (Required)</legend>
     <p class="expl">Indicate the type of learning provided in this offer.</p>
     <div class="radio-field">
         <input type="checkbox" id="offer-learning-guided" value="offer-learning-guided" required>
@@ -251,7 +251,7 @@ This form allows you to provide information about offers of courses, training, a
     <input type="text" id="offer-accessibility-resources">
 </div>
 <div class="field">
-    <label for="offer-duration">Duration (required)</label>
+    <label for="offer-duration">Duration (Required)</label>
     <p class="expl">Indicate the duration of this offer.</p>
     <input type="number" id="offer-number-duration" class="duration-input" required>
     <select id="offer-unity-duration" class="duration-input" required> 
@@ -265,7 +265,7 @@ This form allows you to provide information about offers of courses, training, a
 </div>
 
 <fieldset class="field" id="offer-cost">
-  <legend class="label">Cost (required)</legend>
+  <legend class="label">Cost (Required)</legend>
   <p class="expl">Indicate the cost of your offer.</p>
   <div class="radio-field">
     <input type="radio" name="offer-cost" id="offer-cost-free-certificates-for-purchase" required>
@@ -286,7 +286,7 @@ This form allows you to provide information about offers of courses, training, a
 </fieldset>
 
 <div class="field">
-    <label for="offer-website">Web site (required)</label>
+    <label for="offer-website">Web site (Required)</label>
     <p class="expl">Provide the web site containing more information about this offer.</p>
     <input type="url" name="offer-website" id="offer-website" required>
 </div>
@@ -297,7 +297,7 @@ This form allows you to provide information about offers of courses, training, a
     <input type="url" name="offer-reviews-page" id="offer-reviews-page">
 </div>
 <div class="field">
-    <label for="offer-content-update">Content update date (required)</label>
+    <label for="offer-content-update">Content update date (Required)</label>
     <p class="expl">Please indicate the date when the content of this offer was last updated.</p>
     <input type="date" id="offer-content-update" required>
 </div>
