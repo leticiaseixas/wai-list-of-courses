@@ -42,9 +42,7 @@ footer: >
 {% include css/styles.css %}
 </style>
 <div class="header-sup">
-    <p>
-    
-    Browse for offers of education, training, and certification on digital accessibility.
+    <p> The List of Courses provides information about offers of courses, training, and certification on web accessibility from different providers, so that people can make informed decisions when they choose an offer. This page provides a list of offers that you can filter to find ones that match your particular needs. 
     </p>
     <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
     {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}
