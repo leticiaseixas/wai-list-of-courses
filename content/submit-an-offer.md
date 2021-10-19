@@ -216,19 +216,19 @@ This form allows you to provide information about offers of courses, training, a
       <legend class="label">Learning (Required)</legend>
       <p class="expl">Indicate the type of learning provided in this offer.</p>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-guided" value="offer-learning-guided" required>
+          <input type="checkbox" id="offer-learning-guided" name="offer-learning-guided" required>
           <label for="offer-learning-guided">Guided</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-non-guided" value="offer-learning-non-guided">
+          <input type="checkbox" id="offer-learning-non-guided" name="offer-learning-non-guided">
           <label for="offer-learning">Non-guided</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-synchronous" value="offer-learning-synchronous">
+          <input type="checkbox" id="offer-learning-synchronous" name="offer-learning-synchronous">
           <label for="offer-learning-synchronous">Synchronous</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-asynchronous" value="offer-learning-asynchronous">
+          <input type="checkbox" id="offer-learning-asynchronous" name="offer-learning-asynchronous">
           <label for="offer-learning-asynchronous">Asynchronous</label>
       </div>            
   </fieldset>
@@ -243,7 +243,11 @@ This form allows you to provide information about offers of courses, training, a
       <label for="offer-accessibility-resources" class="label-input">Accessibility resources</label>
       <p class="expl">Describe what accessibility resources are provided in this offering.</p>
       {% for resource in site.data.accessibility-resources %}
-        {{resource}}
+        <div class="radio-field">
+          <input type="checkbox" id="offer-"{{resource.id}} value="offer-learning-synchronous">
+          <label for="offer-learning-synchronous">{{resource.name}}</label>
+        </div>
+        
       {% endfor %}
   </div>
 
