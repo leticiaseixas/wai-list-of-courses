@@ -141,7 +141,8 @@ details dt::after {
 }
 
 #form-submit-an-offer INPUT:not([type="radio"]):not([type="checkbox"]) ~ LABEL {
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 
