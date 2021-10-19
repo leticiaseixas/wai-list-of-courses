@@ -169,12 +169,7 @@ details>div{
 }
 */
 
-#form-submit-offer details>div{
-
-}
-
-
-details>div{
+#offers-list details>div{
   border-top: solid 1px var(--line-grey);
   margin-left: -48px;
   margin-right: -16px;

@@ -42,7 +42,10 @@ footer: >
 {% include css/styles.css %}
 </style>
 <div class="header-sup">
-    <p>Browse for offers of education, training, and certification on digital accessibility.</p>
+    <p>
+    
+    Browse for offers of education, training, and certification on digital accessibility.
+    </p>
     <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
     {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}
 </div>
