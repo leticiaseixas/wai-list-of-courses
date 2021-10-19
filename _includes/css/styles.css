@@ -140,6 +140,11 @@ details dt::after {
   margin: 0 0.5em 0 0;
 }
 
+#form-submit-an-offer INPUT:not([type="radio"]):not([type="checkbox"]) ~ LABEL {
+  font-weight: bold;
+}
+
+
 /* 
 details>div{
   margin-bottom: -8px;

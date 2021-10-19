@@ -42,7 +42,7 @@ This form allows you to provide information about offers of courses, training, a
 <p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>
 <p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific offer providers. Inclusion of offers in this list does not indicate endorsement by W3C. Offers and search criteria are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
-<form>
+<form id="form-submit-an-offer">
 
   {% include excol.html type="start" open="true" %}
   <h2 id="about-you">About you</h2>
