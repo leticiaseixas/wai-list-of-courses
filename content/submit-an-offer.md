@@ -49,14 +49,14 @@ This form allows you to provide information about offers of courses, training, a
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
 
   {% include excol.html type="middle" %}
-    <div class="field">
-      <label for="submitter-name" class="label-input">Name (Required)</label>
-      <input type="text" id="submitter-name" required>
-    </div>
-    <div class="field">
-      <label for="submitter-email" class="label-input">Email (Required)</label>
-      <input type="email" id="submitter-email" required>
-    </div>
+  <div class="field">
+     <label for="submitter-name" class="label-input">Name (Required)</label>
+     <input type="text" id="submitter-name" required>
+   </div>
+   <div class="field">
+     <label for="submitter-email" class="label-input">Email (Required)</label>
+     <input type="email" id="submitter-email" required>
+  </div>
   {% include excol.html type="end" %}
 
   {% include excol.html type="start" %}
@@ -110,7 +110,6 @@ This form allows you to provide information about offers of courses, training, a
   <fieldset class="field" id="offer-audience">
     <legend class="label">Audience (Required)</legend>
     <p class="expl">Indicate who is the intended audience for this offer.</p>
-
     <div class="radio-field">
       <input type="checkbox" name="offer-audience" id="offer-audience-developer" value="offer-audience-developer" required>
       <label for="offer-audience-developer">Developer</label>
@@ -140,7 +139,6 @@ This form allows you to provide information about offers of courses, training, a
   <fieldset class="field" id="offer-level">
     <legend class="label">Level (Required)</legend>
     <p class="expl">Indicate the level of digital accessibility proficiency required for this offer.</p>
-
     <div class="radio-field">
       <input type="radio" name="offer-level" id="offer-level-basic" required>
       <label for="offer-level-basic">Basic</label>
