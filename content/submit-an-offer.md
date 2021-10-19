@@ -44,6 +44,28 @@ This form allows you to provide information about offers of courses, training, a
 
 <form>
 
+  {% include excol.html type="start" open="true" %}
+  <h2 id="about-you">About you</h2>
+  <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
+
+  {% include excol.html type="middle" %}
+  <div class="field">
+    <label for="submitter-name">Name (required)</label>
+    <input type="text" id="submitter-name" required>
+  </div>
+  <div class="field">
+    <label for="submitter-email">Email (required)</label>
+    <input type="email" id="submitter-email" required>
+  </div>
+  {% include excol.html type="end" %}
+
+  {% include excol.html type="start" %}
+  <h2 id="the-tool">About the offer</h2>
+  <p>Provide some information about your offer. We will list this with the offer.</p>
+
+  {% include excol.html type="middle" %}
+
+
 <div class="field">
     <label for="offer-name">Title (required)</label>
     <input type="text" id="offer-name" required>
@@ -57,7 +79,8 @@ This form allows you to provide information about offers of courses, training, a
 
 <div class="field">
     <label for="offer-description">Description (required)</label>
-    <p class="expl">Provide a brief description of the offer.</p>
+    <p class="expl">Provide a brief description of the offer (max.: 300 chars).</p>
+    <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
     <textarea id="offer-description" required></textarea>
 </div>
 
@@ -278,7 +301,7 @@ This form allows you to provide information about offers of courses, training, a
     <p class="expl">Please indicate the date when the content of this offer was last updated.</p>
     <input type="date" id="offer-content-update" required>
 </div>
-
+  {% include excol.html type="end" %}
 <h2>Submitting your offer</h2>
   <p>Let us know if you have any comments.</p>
   <div class="field">
