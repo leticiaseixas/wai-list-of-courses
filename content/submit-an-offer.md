@@ -242,27 +242,11 @@ This form allows you to provide information about offers of courses, training, a
   <div class="field">
       <label for="offer-accessibility-resources" class="label-input">Accessibility resources</label>
       <p class="expl">Describe what accessibility resources are provided in this offering.</p>
-          {% for country in site.data.countries %}
-              {{ country[0] }}
-          {% endfor %}
-</div>
+  </div>
 
 <!-- {% capture info_label%}More information about the {{curricula.name}}{% endcapture %}
 {{ curricula.name }}{% include resource-link.html label=info_label href=curricula.link %} -->
 
-{% include excol.html type="middle" %}
-
-{% for modules in curricula.modules %}
-<div class="radio-field">
-    <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
-    <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
-</div>
-
-{% endfor %}
-
-{% include excol.html type="end" %}
-
-{% endfor %}
 
   </div>
   <div class="field">
