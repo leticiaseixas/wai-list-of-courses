@@ -242,13 +242,14 @@ This form allows you to provide information about offers of courses, training, a
   <div class="field">
       <label for="offer-accessibility-resources" class="label-input">Accessibility resources</label>
       <p class="expl">Describe what accessibility resources are provided in this offering.</p>
+      {% for country in site.data.countries %}
+        <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
+      {% endfor %}
   </div>
 
 <!-- {% capture info_label%}More information about the {{curricula.name}}{% endcapture %}
 {{ curricula.name }}{% include resource-link.html label=info_label href=curricula.link %} -->
 
-
-  </div>
   <div class="field">
       <label for="offer-duration" class="label-input">Duration (Required)</label>
       <p class="expl">Indicate the duration of this offer.</p>
