@@ -246,10 +246,7 @@ This form allows you to provide information about offers of courses, training, a
       <div class="radio-field">
         <input type="checkbox" id={{aresources.id}} value={{aresources.id}}>
         <label for={{aresources.id}}>{{aresources.name}}</label>
-                {% if aresources.id == "other"%}
-          <input type="text" id="other" name="other" />
-        {% endif %} 
-      </div>
+       </div>
       {% endfor %}
 </div>
 
