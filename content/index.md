@@ -105,8 +105,11 @@ footer: >
             <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
         </span>
         <div class="field">
-        <label for="select">Sort by</label>
-        <select id="select" ><option selected="selected">Alphabetically (A to Z)</option><option>Most recent</option></select>
+            <label for="select">Sort by</label>
+            <select id="select" >
+                <option selected="selected">Alphabetically (A to Z)</option>
+                <option>Most recently updated</option>
+            </select>
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
