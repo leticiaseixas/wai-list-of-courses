@@ -104,6 +104,7 @@ main>header {
 
 #left-col .field label {
   display: inline !important;
+  margin-top: 2em;
 }
 
 #offers-list {
