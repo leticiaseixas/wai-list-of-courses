@@ -104,9 +104,9 @@ footer: >
         <span id="status">
             <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
         </span>
-        <div class="field">
+        <div class="field" class="sort-by">
             <label for="select">Sort by</label>
-            <select id="select" >
+            <select id="select">
                 <option selected="selected">Alphabetically (A to Z)</option>
                 <option>Most recently updated</option>
             </select>
