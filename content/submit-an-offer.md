@@ -240,12 +240,16 @@ This form allows you to provide information about offers of courses, training, a
   </div>
 
   <div class="field">
-      <label for="offer-accessibility-resources"  class="label-input">Accessibility resources</label>
+      <label for="offer-accessibility-resources" class="label-input">Accessibility resources</label>
       <p class="expl">Describe what accessibility resources are provided in this offering.</p>
       {% for aresources in site.data.accessibility-resources %}
       <div class="radio-field">
         <input type="checkbox" id={{aresources.id}} value={{aresources.id}}>
         <label for={{aresources.id}}>{{aresources.name}}</label>
+                {% if aresources.id == "other"%}
+          <input type="text" id="other" name="other" />
+        {% endif %} 
+      </div>
       {% endfor %}
 </div>
 
