@@ -3,8 +3,7 @@ const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
-const jsonWAICurricula = JSON.parse('{{ site.data.wai-curricula | jsonify}}');
-const jsonAResources = JSON.parse('{{ site.data.accessibility-resources | jsonify}}');
+
 
 var offersList = document.getElementById('offers-list');
 
