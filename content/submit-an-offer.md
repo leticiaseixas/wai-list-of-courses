@@ -242,9 +242,9 @@ This form allows you to provide information about offers of courses, training, a
   <div class="field">
       <label for="offer-accessibility-resources" class="label-input">Accessibility resources</label>
       <p class="expl">Describe what accessibility resources are provided in this offering.</p>
-      {% for aresources in site.data.accessibility-resources %}
-
-      {% endfor %}
+          {% for country in site.data.countries %}
+              {{ country[0] }}
+          {% endfor %}
 </div>
 
 <!-- {% capture info_label%}More information about the {{curricula.name}}{% endcapture %}
@@ -266,7 +266,7 @@ This form allows you to provide information about offers of courses, training, a
 
   </div>
   <div class="field">
-      <label for="offer-duration"  class="label-input">Duration (Required)</label>
+      <label for="offer-duration" class="label-input">Duration (Required)</label>
       <p class="expl">Indicate the duration of this offer.</p>
       <input type="number" id="offer-number-duration" class="duration-input" required>
       <select id="offer-unity-duration" class="duration-input" required> 
