@@ -36,10 +36,13 @@ main > header { grid-column: 4 / span 4; }
 </style>
 
 <a href="../list-of-courses">Back to List of Courses</a>
+<p>
+This form allows you to provide information about offers of courses, training, and certification on web accessibility. Offers providers can use this form to add update information about their offers. 
+</p>
+<p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>
+<p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific offer providers. Inclusion of offers in this list does not indicate endorsement by W3C. Offers and search criteria are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
 <form>
-  <p>The <a href="../list-of-courses">List of Courses</a> shows course, training, or certification offers on digital accessibility from different vendors, so that people can make informed decisions when they choose an offer.</p>
-  <p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>    
 
 <div class="field">
     <label for="offer-name">Title (required)</label>
@@ -54,7 +57,7 @@ main > header { grid-column: 4 / span 4; }
 
 <div class="field">
     <label for="offer-description">Description (required)</label>
-    <p class="expl">Provide a brief description of you offer.</p>
+    <p class="expl">Provide a brief description of the offer.</p>
     <textarea id="offer-description" required></textarea>
 </div>
 
@@ -116,7 +119,7 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset class="field" id="offer-level">
   <legend class="label">Level (required)</legend>
-  <p class="expl">Indicate the level of digital accessibility proficiency required for this offering.</p>
+  <p class="expl">Indicate the level of digital accessibility proficiency required for this offer.</p>
 
   <div class="radio-field">
     <input type="radio" name="offer-level" id="offer-level-basic" required>
@@ -282,7 +285,6 @@ main > header { grid-column: 4 / span 4; }
     <label for="comments">Comments</label>
     <textarea id="comments"></textarea>
   </div>
-  <p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of offers in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
     <label><input type="checkbox" required> I give permission for my information to be published in the W3C's list of courses.</label>
