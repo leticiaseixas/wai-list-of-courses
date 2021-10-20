@@ -154,7 +154,8 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field" id="divInputPrerequisite">
       <label for="offer-prerequisites" class="label-input">Prerequisites</label>
-      <p class="expl">Describe what are the prerequisites for this offer.</p>
+      <p class="expl">Describe what are the prerequisites for this offer (for example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.).</p>
+
       <input type="text" id="prerequisites1" class="field-prerequisite">
       {% include_cached button.html type="fake" label="Add prerequisite" class="small button-new-prerequisite" %}
   </div>
@@ -235,7 +236,7 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field">
       <label for="offer-platform" class="label-input">Platform</label>
-      <p class="expl">Indicate on which platform this offer is provided.</p>
+      <p class="expl">Indicate on which e-learning platform this offer is provided.</p>
       <input type="text" id="platform">
   </div>
 
@@ -271,6 +272,10 @@ This form allows you to provide information about offers of courses, training, a
     <legend class="label">Cost (Required)</legend>
     <p class="expl">Indicate the cost of your offer.</p>
     <div class="radio-field">
+      <input type="radio" name="offer-cost" id="offer-cost-free">
+      <label for="offer-cost-free">Free</label>
+    </div> 
+    <div class="radio-field">
       <input type="radio" name="offer-cost" id="offer-cost-free-certificates-for-purchase" required>
       <label for="offer-cost-free-certificates-for-purchase">Free with certificates for purchase</label>
     </div>
@@ -296,7 +301,7 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field">
       <label for="offer-reviews-page" class="label-input">Reviews page</label>
-      <p class="expl">Provide the web site containing consumer reviews about this offer.</p>
+      <p class="expl">Provide the web page containing consumer reviews about this offer.</p>
       <input type="url" name="offer-reviews-page" id="offer-reviews-page">
   </div>
   <div class="field">
@@ -309,12 +314,12 @@ This form allows you to provide information about offers of courses, training, a
 <h2>Submitting your offer</h2>
   <p>Let us know if you have any comments.</p>
   <div class="field">
-    <label for="comments"  class="label-input">Comments</label>
+    <label for="comments" class="label-input">Comments</label>
     <textarea id="comments"></textarea>
   </div>
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
-    <label><input type="checkbox" required> I give permission for my information to be published in the W3C's list of courses.</label>
+    <label><input type="checkbox" required> I give permission for this offer information to be published in the W3C's list of courses.</label>
   </div>
   <p>When you submit the form, we will review your offer and add it to the list. This should take 1-4 weeks.</p>
   <div class="field">
