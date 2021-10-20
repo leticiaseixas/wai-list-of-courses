@@ -61,7 +61,7 @@ This form allows you to provide information about offers of courses, training, a
 
   {% include excol.html type="start" %}
   <h2 id="the-tool">About the offer</h2>
-  <p>Provide some information about your offer. We will list this with the offer.</p>
+  <p>Provide some information about the offer.</p>
 
   {% include excol.html type="middle" %}
 
@@ -155,14 +155,13 @@ This form allows you to provide information about offers of courses, training, a
   <div class="field" id="divInputPrerequisite">
       <label for="offer-prerequisites" class="label-input">Prerequisites</label>
       <p class="expl">Describe what are the prerequisites for this offer (for example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.).</p>
-
       <input type="text" id="prerequisites1" class="field-prerequisite">
       {% include_cached button.html type="fake" label="Add prerequisite" class="small button-new-prerequisite" %}
   </div>
 
   <div class="field" id="divInputTopic">
       <label for="offer-topics" class="label-input" required>Topics (Required)</label>
-      <p class="expl">Describe the topics covered by this offer.</p>
+      <p class="expl">Describe the topics covered by this offer (for example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.).</p>
       <input type="text" id="topics" class="field-topic">
       {% include_cached button.html type="fake" label="Add topic" class="small button-new-topic" %}
   </div>
