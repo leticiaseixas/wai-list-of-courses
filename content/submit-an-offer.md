@@ -46,7 +46,7 @@ This form allows you to provide information about offers of courses, training, a
 
   {% include excol.html type="start" open="true" %}
   <h2 id="about-you">About you</h2>
-  <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
+  <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.</p>
 
   {% include excol.html type="middle" %}
   <div class="field">
@@ -318,7 +318,7 @@ This form allows you to provide information about offers of courses, training, a
   </div>
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
-    <label><input type="checkbox" required> I give permission for this offer information to be published in the W3C's list of courses.</label>
+    <label><input type="checkbox" required> I give permission for information for this offer to be published in the W3C's list of courses.</label>
   </div>
   <p>When you submit the form, we will review your offer and add it to the list. This should take 1-4 weeks.</p>
   <div class="field">
