@@ -306,7 +306,7 @@ This form allows you to provide information about offers of courses, training, a
   </div>
   <div class="field">
       <label for="offer-content-update"  class="label-input">Content update date (Required)</label>
-      <p class="expl">Please indicate the date when the content of this offer was last updated. For offer content consider syllabus, structure, teaching resources, etc. </p>
+      <p class="expl">Please indicate the date when the content of this offer was last updated. For offer content consider items such as syllabus, structure, teaching resources, etc. </p>
       <input type="date" id="offer-content-update" required>
   </div>
 {% include excol.html type="end" %}
