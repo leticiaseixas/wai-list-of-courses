@@ -59,7 +59,7 @@ This form allows you to provide information about offers of courses, training, a
   </div>
   {% include excol.html type="end" %}
 
-  {% include excol.html type="start" %}
+  {% include excol.html type="start" open="true"  %}
   <h2 id="the-tool">About the offer</h2>
   <p>Provide some information about the offer.</p>
 
@@ -307,7 +307,7 @@ This form allows you to provide information about offers of courses, training, a
   <div class="field">
       <label for="offer-content-update"  class="label-input">Content update date (Required)</label>
       <p class="expl">Please indicate the date when the content of this offer was last updated.</p>
-      <input type="date" id="offer-content-update" value="dd/mm/aaaa" required>
+      <input type="date" id="offer-content-update" required>
   </div>
 {% include excol.html type="end" %}
 
