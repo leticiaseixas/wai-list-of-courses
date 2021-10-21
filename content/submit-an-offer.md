@@ -242,7 +242,7 @@ This form allows you to provide information about offers of courses, training, a
   <div class="field">
       <label for="offer-accessibility-resources" class="label-input">Accessibility resources</label>
       <p class="expl">Describe what accessibility resources are provided in this offer.</p>
-      {% for resource in site.data.accessibility-resources %}
+      {% for resource in site.data.accessibility-resources | sort: 'id'%}
         <div class="radio-field">
           <input type="checkbox" id="offer-" value="offer-learning-synchronous">
           <label for="offer-learning-synchronous">{{resource.name}}</label>
@@ -306,7 +306,7 @@ This form allows you to provide information about offers of courses, training, a
   <div class="field">
       <label for="offer-content-update"  class="label-input">Content update date (Required)</label>
       <p class="expl">Please indicate the date when the content of this offer was last updated.</p>
-      <input type="date" id="offer-content-update" required>
+      <input type="date" id="offer-content-update" placeholder="" required>
   </div>
 {% include excol.html type="end" %}
 
