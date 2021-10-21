@@ -110,16 +110,16 @@ This form allows you to provide information about offers of courses, training, a
     <legend class="label">Audience (Required)</legend>
     <p class="expl">Indicate who is the intended audience for this offer.</p>
     <div class="radio-field">
-      <input type="checkbox" name="offer-audience" id="offer-audience-developer" value="offer-audience-developer" required>
-      <label for="offer-audience-developer">Developer</label>
+      <input type="checkbox" name="offer-audience" id="offer-audience-content-author" value="offer-audience-content-author" required>
+      <label for="offer-audience-content-author">Content Author</label>
     </div>
     <div class="radio-field">
       <input type="checkbox" name="offer-audience" id="offer-audience-designer" value="offer-audience-designer" required>
       <label for="offer-audience-designer">Designer</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="offer-audience" id="offer-audience-content-author" value="offer-audience-content-author" required>
-      <label for="offer-audience-content-author">Content Author</label>
+      <input type="checkbox" name="offer-audience" id="offer-audience-developer" value="offer-audience-developer" required>
+      <label for="offer-audience-developer">Developer</label>
     </div>
     <div class="radio-field">
       <input type="checkbox" name="offer-audience" id="offer-audience-manager" value="offer-audience-manager" required>
@@ -242,7 +242,8 @@ This form allows you to provide information about offers of courses, training, a
   <div class="field">
       <label for="offer-accessibility-resources" class="label-input">Accessibility resources</label>
       <p class="expl">Describe what accessibility resources are provided in this offer.</p>
-      {% for resource in site.data.accessibility-resources | sort: 'id'%}
+      {% assign aresources = site.data.accessibility-resources | sort: 'id' %}
+      {% for resource in aresources %}
         <div class="radio-field">
           <input type="checkbox" id="offer-" value="offer-learning-synchronous">
           <label for="offer-learning-synchronous">{{resource.name}}</label>
