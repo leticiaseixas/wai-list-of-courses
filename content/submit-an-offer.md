@@ -249,6 +249,7 @@ This form allows you to provide information about offers of courses, training, a
           <label for="offer-learning-synchronous">{{resource.name}}</label>
           {% if resource.id == "other" %}
           <input type="text" id="offer-new-accessibility-resource" class="new-aresource">
+          {% endif %}
         </div>
       {% endfor %}
   </div>
