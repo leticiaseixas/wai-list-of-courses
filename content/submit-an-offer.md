@@ -294,8 +294,8 @@ This form allows you to provide information about offers of courses, training, a
   </fieldset>
 
   <div class="field">
-      <label for="offer-website" class="label-input">Web site (Required)</label>
-      <p class="expl">Provide the web site containing more information about this offer.</p>
+      <label for="offer-website" class="label-input">Website (Required)</label>
+      <p class="expl">Provide the website containing more information about this offer.</p>
       <input type="url" name="offer-website" id="offer-website" required>
   </div>
 
@@ -306,12 +306,12 @@ This form allows you to provide information about offers of courses, training, a
   </div>
   <div class="field">
       <label for="offer-content-update"  class="label-input">Content update date (Required)</label>
-      <p class="expl">Please indicate the date when the content of this offer was last updated.</p>
+      <p class="expl">Please indicate the date when the content of this offer was last updated. Offer content may include course syllabus, structure, or teachning resources. </p>
       <input type="date" id="offer-content-update" required>
   </div>
 {% include excol.html type="end" %}
 
-<h2>Submitting your offer</h2>
+  <h2>Submitting your offer</h2>
   <p>Let us know if you have any comments.</p>
   <div class="field">
     <label for="comments" class="label-input">Comments</label>
