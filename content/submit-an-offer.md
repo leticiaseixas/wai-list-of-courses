@@ -244,15 +244,17 @@ This form allows you to provide information about offers of courses, training, a
       <p class="expl">Describe what accessibility resources are provided in this offer.</p>
       {% assign aresources = site.data.accessibility-resources | sort: 'id' %}
       {% for resource in aresources %}
+        {% if resource.name != "Other" %}
         <div class="radio-field">
           <input type="checkbox" id="offer-accessibility-resource-{{resource-id}}" value="offer-learning-synchronous">
-          <label for="offer-learning-synchronous">{{resource.name}}</label>
+          <label for="offer-accessibility-resource-{{resource-id}}">{{resource.name}}</label>
         </div>
-          {% if resource.name == "Other" %}
+        {%else%}
           <div>
-            <input type="text" disabled id="offer-new-accessibility-resource" class="new-aresource">
+          <label for="ffer-new-accessibility-resource" class="label-input">Platform</label>
+            <input type="text" id="offer-new-accessibility-resource" class="new-aresource">
           </div>
-          {% endif %}
+        {% endif %}
       {% endfor %}
   </div>
 
