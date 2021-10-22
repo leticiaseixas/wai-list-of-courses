@@ -250,7 +250,7 @@ This form allows you to provide information about offers of courses, training, a
         </div>
       {% endfor %}
       <div>
-        <label for="ffer-new-accessibility-resource" class="visually-hidden">Other</label>
+        <label for="ffer-new-accessibility-resource" class="visuallyhidden">Other</label>
         <input type="text" id="offer-new-accessibility-resource" class="new-aresource">
       </div>
   </div>
