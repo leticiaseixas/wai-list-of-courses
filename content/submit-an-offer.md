@@ -252,7 +252,7 @@ This form allows you to provide information about offers of courses, training, a
         {% endif %}
       {% endfor %}
       <div>
-        <label for="ffer-new-accessibility-resource" class="label-input">Platform</label>
+        <label for="ffer-new-accessibility-resource" class="label-input">Other</label>
         <input type="text" id="offer-new-accessibility-resource" class="new-aresource">
       </div>
   </div>
