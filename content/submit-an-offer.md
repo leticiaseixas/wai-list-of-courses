@@ -61,7 +61,7 @@ This form allows you to provide information about offers of courses, training, a
 
   {% include excol.html type="start" open="true"  %}
   <h2 id="the-tool">About the offer</h2>
-  <p>Provide some information about the offer.</p>
+  <p>Provide some information about the offer. This information will be publicly shared.</p>
 
   {% include excol.html type="middle" %}
 
