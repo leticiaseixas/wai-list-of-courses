@@ -250,7 +250,7 @@ This form allows you to provide information about offers of courses, training, a
         </div>
       {% endfor %}
       <div>
-        <label for="ffer-new-accessibility-resource" class="visuallyhidden">Other</label>
+        <label for="offer-new-accessibility-resource" class="visuallyhidden">Other</label>
         <input type="text" id="offer-new-accessibility-resource" class="new-aresource">
       </div>
   </div>
@@ -259,9 +259,11 @@ This form allows you to provide information about offers of courses, training, a
 {{ curricula.name }}{% include resource-link.html label=info_label href=curricula.link %} -->
 
   <div class="field">
-      <label for="offer-duration" class="label-input">Duration (Required)</label>
+      <legend class="label">Duration (Required)</legend>
       <p class="expl">Indicate the duration of this offer.</p>
-      <input type="number" id="offer-number-duration" class="duration-input" required>
+      <label for="offer-value-duration" class="visuallyhidden">Duration value</label>
+      <input type="number" id="offer-value-duration" class="duration-input" required>
+      <label for="offer-unity-duration" class="visuallyhidden">Duration unity</label>
       <select id="offer-unity-duration" class="duration-input" required> 
           <option value=""></option>
           <option value="hours">Hours</option>
