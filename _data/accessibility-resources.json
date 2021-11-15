@@ -5,7 +5,7 @@
     },
     {
         "id": "presentation-accessible-all",
-        "name": "Content meets relevant good practice in <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\"?>How to Make Your Presentations Accessible to All</a>"
+        "name": "Content meets relevant good practice in <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">How to Make Your Presentations Accessible to All</a>"
     },
     {
         "id": "audio-video-good-practices",
@@ -29,7 +29,7 @@
     },
     {
         "id": "media-player-accessibility",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/player/\"Media player accessibility</a>"
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/player/\">Media player accessibility</a>"
     },
     {
         "id": "z_other",
