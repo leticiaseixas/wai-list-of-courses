@@ -253,20 +253,24 @@ This form allows you to provide information about offers of courses, training, a
 <!-- {% capture info_label%}More information about the {{curricula.name}}{% endcapture %}
 {{ curricula.name }}{% include resource-link.html label=info_label href=curricula.link %} -->
 
-  <div class="field">
+  <div class="field length">
       <legend class="label">Length (Required)</legend>
       <p class="expl">Indicate the estimated amount of time needed to complete the course (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
-      <label for="offer-value-duration" class="length-label">Value</label>
-      <input type="number" id="offer-value-duration" class="length-input" required>
-      <label for="offer-unity-duration" class="length-label">Unity</label>
-      <select id="offer-unity-duration" class="length-input" required> 
-          <option value=""></option>
-          <option value="hours">Hours</option>
-          <option value="days">Days</option>
-          <option value="weeks">Weeks</option>
-          <option value="months">Months</option>
-          <option value="years">Years</option>
-      </select>
+      <div class="length-value-unity">
+        <label for="offer-value-duration">Value</label>
+        <input type="number" id="offer-value-duration" class="length-input" required>
+      </div>
+      <div class="length-value-unity">
+        <label for="offer-unity-duration" class="length-label">Unity</label>
+        <select id="offer-unity-duration" class="length-input" required> 
+            <option value=""></option>
+            <option value="hours">Hours</option>
+            <option value="days">Days</option>
+            <option value="weeks">Weeks</option>
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+        </select>
+      </div>
   </div>
 
   <fieldset class="field" id="offer-cost">
