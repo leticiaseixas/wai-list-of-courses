@@ -87,12 +87,16 @@ main>header {
   display: flex;
 }
 
-.length-value-unity{
+.length-value{
   flex: 1;
   margin-right: 2em;
 }
 
-.length-value-unity select{
+.length-unity{
+  flex: 3;
+}
+
+.length-unity select{
   padding: 8px;
 }
 
