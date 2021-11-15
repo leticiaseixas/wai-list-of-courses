@@ -83,7 +83,7 @@ main>header {
   margin-top: 1em;
 }
 
-.length{
+.length-container{
   display: flex;
 }
 
@@ -92,7 +92,7 @@ main>header {
   margin-right: 2em;
 }
 
-.length-value-unity input[type=select]{
+.length-value-unity select{
   padding: 8px;
 }
 
