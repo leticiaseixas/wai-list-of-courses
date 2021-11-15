@@ -37,8 +37,8 @@ main>header {
   font-size: 125%;
 }
 
-.button{
-  margin-top:2em;
+.button {
+  margin-top: 2em;
 }
 
 #app {
@@ -89,6 +89,17 @@ main>header {
   display: inline !important;
 }
 
+.length {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.length-value-unity{
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border: 2px solid red;
+}
 
 .button-clear-button {
   margin-bottom: 2em;
@@ -145,9 +156,10 @@ details dt::after {
   font-weight: 700;
 }
 
-.field-topic, .field-prerequisite{
+.field-topic, .field-prerequisite {
   margin-top: 2em;
 }
+
 /* 
 details>div{
   margin-bottom: -8px;
@@ -177,7 +189,7 @@ details>div{
 }
 */
 
-#offers-list details>div{
+#offers-list details>div {
   border-top: solid 1px var(--line-grey);
   margin-left: -48px;
   margin-right: -16px;
