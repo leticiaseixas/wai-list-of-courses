@@ -240,7 +240,7 @@ This form allows you to provide information about offers of courses, training, a
       {% assign aresources = site.data.accessibility-resources | sort: 'id' %}
       {% for resource in aresources %}
         <div class="radio-field">
-          <input type="checkbox" id="offer-accessibility-resource-{{resource.id}}" value="offer-accessibility-resource-{{resource.name}}">
+          <input type="checkbox" id="offer-accessibility-resource-{{resource.id}}" value="offer-accessibility-resource-{{resource.id}}">
           <label for="offer-accessibility-resource-{{resource.id}}">{{resource.name}}</label>
         </div>
       {% endfor %}
