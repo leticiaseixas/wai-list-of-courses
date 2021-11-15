@@ -257,9 +257,9 @@ This form allows you to provide information about offers of courses, training, a
       <legend class="label">Length (Required)</legend>
       <p class="expl">Indicate the length of time to complete the course.</p>
       <label for="offer-value-duration">Time period</label>
-      <input type="number" id="offer-value-duration" class="duration-input" required>
+      <input type="number" id="offer-value-duration" class="duration-input" placeholder="3" required>
       <label for="offer-unity-duration">Time unity</label>
-      <select id="offer-unity-duration" class="duration-input" required> 
+      <select id="offer-unity-duration" class="duration-input" placeholder="Weeks" required> 
           <option value=""></option>
           <option value="hours">Hours</option>
           <option value="days">Days</option>
@@ -310,6 +310,7 @@ This form allows you to provide information about offers of courses, training, a
       <label for="offer-duration" class="label-input">Offer availability</label>
       <p class="expl">If applicable, indicate the duration of time the course will be available.</p>
       <input type="date" id="offer-duration">
+      <!-- this course is provided at any time, self-paced-->
   </div>
 
   <div class="field">
