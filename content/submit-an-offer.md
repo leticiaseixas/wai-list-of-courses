@@ -235,8 +235,8 @@ This form allows you to provide information about offers of courses, training, a
   </div>
 
   <div class="field">
-      <label for="offer-accessibility-resources" class="label-input">Accessibility resources</label>
-      <p class="expl">Describe what accessibility resources are provided in this offer.</p>
+      <label for="offer-accessibility-resources" class="label-input">Accessibility support</label>
+      <p class="expl">Indicate what accessibility support is provided. Include details in the text box.</p>
       {% assign aresources = site.data.accessibility-resources | sort: 'id' %}
       {% for resource in aresources %}
         <div class="radio-field">
