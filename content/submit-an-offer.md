@@ -257,11 +257,11 @@ This form allows you to provide information about offers of courses, training, a
       <legend class="label">Length (Required)</legend>
       <p class="expl">Indicate the estimated amount of time needed to complete the course (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
       <div class="length-container">
-        <div class="length-value-unity">
+        <div class="length-value">
           <label for="offer-value-duration">Value</label>
           <input type="number" id="offer-value-duration" required>
         </div>
-        <div class="length-value-unity">
+        <div class="length-unity">
           <label for="offer-unity-duration">Unity</label>
           <select id="offer-unity-duration" required> 
               <option value=""></option>
