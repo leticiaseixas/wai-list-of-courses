@@ -1,31 +1,35 @@
 [
     {
-        "id": "international-sign-interpretation",
-        "name": "International sign interpretation"
+        "id": "wcag-conformance",
+        "name": "All content meets (Web Content Accessibility Guidelines (WCAG) Overview)[https://www.w3.org/WAI/standards-guidelines/wcag/] -- Level A, AA, or AAA"
     },
     {
-        "id": "other-sign-language",
-        "name": "Other sign language"
+        "id": "presentation-accessible-all",
+        "name": "Content meets relevant good practice in How to Make Your Presentations Accessible to All."
     },
     {
-        "id": "captioning",
-        "name": "Captioning"
+        "id": "audio-video-good-practices",
+        "name": "Audio and video content meets the good practice in Audio Content and Video Content"
     },
     {
-        "id": "real-time-captioning",
-        "name": "Real-time captioning"
+        "id": "visual-info-description",
+        "name": "Description of visual information -- integrated description, audio description, or text description"
     },
     {
-        "id": "audio-descriptions",
-        "name": "Audio descriptions"
+        "id": "captions-live-captions",
+        "name": "Captions (also called intralingual subtitles), live captions (also called real-time or CART)"
     },
     {
         "id": "transcripts",
-        "name": "Transcripts"
+        "name": "Transcripts -- basic transcripts, descriptive transcripts, interactive transcripts"
     },
     {
-        "id": "physical-accessibility",
-        "name": "Physical accessibility"
+        "id": "sign-language-interpretation",
+        "name": "Sign language interpretation -- International Sign, or other language"
+    },
+    {
+        "id": "media-player-accessibility",
+        "name": "Media player accessibility"
     },
     {
         "id": "z_other",
