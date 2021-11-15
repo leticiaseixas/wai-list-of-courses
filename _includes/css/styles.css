@@ -89,6 +89,11 @@ main>header {
 
 .length-value-unity{
   flex: 1;
+  margin-right: 2em;
+}
+
+.length-value-unity input[type=select]{
+  padding: 8px;
 }
 
 
