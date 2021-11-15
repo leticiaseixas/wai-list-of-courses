@@ -83,7 +83,7 @@ main>header {
   margin-top: 1em;
 }
 
-.duration-input {
+.length-input {
   width: 25% !important;
   padding: 8px;
   display: inline !important;
@@ -96,10 +96,6 @@ main>header {
 
 .length-label + .length-input{
   clear: left;
-}
-
-.length-input{
-  float: left;
 }
 
 .button-clear-button {
