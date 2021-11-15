@@ -89,14 +89,6 @@ main>header {
   display: inline !important;
 }
 
-.length-label, .length-input{
-  width: 150px;
-  float: left;
-}
-
-.length-label + .length-input{
-  clear: left;
-}
 
 .button-clear-button {
   margin-bottom: 2em;
