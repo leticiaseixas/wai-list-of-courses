@@ -260,7 +260,7 @@ This form allows you to provide information about offers of courses, training, a
         <label for="offer-value-duration">Value</label>
         <input type="number" id="offer-value-duration" required>
       </div>
-      <div>
+      <div class="length-value-unity">
         <label for="offer-unity-duration">Unity</label>
         <select id="offer-unity-duration" required> 
             <option value=""></option>
