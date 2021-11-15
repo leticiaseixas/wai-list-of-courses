@@ -44,11 +44,9 @@ This form allows you to provide information about offers of courses, training, a
 
 <form id="form-submit-an-offer">
 
-  {% include excol.html type="start" open="true" %}
   <h2 id="about-you">About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.</p>
 
-  {% include excol.html type="middle" %}
   <div class="field">
      <label for="submitter-name" class="label-input">Name (Required)</label>
      <input type="text" id="submitter-name" required>
@@ -57,7 +55,7 @@ This form allows you to provide information about offers of courses, training, a
      <label for="submitter-email" class="label-input">Email (Required)</label>
      <input type="email" id="submitter-email" required>
   </div>
-  {% include excol.html type="end" %}
+  
 
   {% include excol.html type="start" open="true"  %}
   <h2 id="the-tool">About the offer</h2>
