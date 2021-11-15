@@ -311,9 +311,13 @@ This form allows you to provide information about offers of courses, training, a
   </div>
 
   <div class="field">
-      <label for="offer-duration" class="label-input">Offer availability</label>
-      <p class="expl">If applicable, indicate the duration of time the course will be available.</p>
-      <input type="date" id="offer-duration">
+      <legend class="label">offer availability</legend>
+      <p class="expl">If applicable, indicate the period of time the course will be available.</p>
+      <label for="offer-availability-start-date" class="label-input">Start date</label>
+      <input type="date" id="offer-availability-start-date">
+      <label for="offer-availability-end-date" class="label-input">End date</label>
+      <input type="date" id="offer-availability-end-date">
+
       <!-- this course is provided at any time, self-paced-->
   </div>
 
