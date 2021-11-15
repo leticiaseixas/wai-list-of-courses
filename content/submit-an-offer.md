@@ -98,6 +98,7 @@ This form allows you to provide information about offers of courses, training, a
     <div class="radio-field">
       <input type="radio" name="offer-type" id="offer-type-other">
       <label for="offer-type-other">Other</label>
+      <label for="offer-new-type-offer" class="visuallyhidden">Other</label>
       <input type="text" id="offer-new-type-offer">
     </div>
   </fieldset>
@@ -242,7 +243,7 @@ This form allows you to provide information about offers of courses, training, a
       {% endfor %}
       <div>
         <label for="offer-new-accessibility-resource" class="visuallyhidden">Other</label>
-        <input type="text" id="offer-new-accessibility-resource" class="new-aresource">
+        <input type="text" id="offer-new-accessibility-resource">
       </div>
   </div>
 
