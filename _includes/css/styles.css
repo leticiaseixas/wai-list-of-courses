@@ -83,13 +83,12 @@ main>header {
   margin-top: 1em;
 }
 
-.length-value-unity{
-  width: 45%;
-  float: left;
+.length{
+  display: flex;
 }
 
-.length-value-unity input{
-  width: 50% !important;
+.length-value-unity{
+  flex: 1;
 }
 
 
