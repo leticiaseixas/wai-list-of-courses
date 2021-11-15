@@ -254,11 +254,11 @@ This form allows you to provide information about offers of courses, training, a
 {{ curricula.name }}{% include resource-link.html label=info_label href=curricula.link %} -->
 
   <div class="field">
-      <legend class="label">Duration (Required)</legend>
-      <p class="expl">Indicate the duration of this offer.</p>
-      <label for="offer-value-duration" class="visuallyhidden">Duration value</label>
+      <legend class="label">Length (Required)</legend>
+      <p class="expl">Indicate the length of time to complete the course.</p>
+      <label for="offer-value-duration">Time period</label>
       <input type="number" id="offer-value-duration" class="duration-input" required>
-      <label for="offer-unity-duration" class="visuallyhidden">Duration unity</label>
+      <label for="offer-unity-duration">Time unity</label>
       <select id="offer-unity-duration" class="duration-input" required> 
           <option value=""></option>
           <option value="hours">Hours</option>
@@ -305,6 +305,13 @@ This form allows you to provide information about offers of courses, training, a
       <p class="expl">Provide the web page containing consumer reviews about this offer.</p>
       <input type="url" name="offer-reviews-page" id="offer-reviews-page">
   </div>
+
+  <div class="field">
+      <label for="offer-duration" class="label-input">Offer availability</label>
+      <p class="expl">If applicable, indicate the duration of time the course will be available.</p>
+      <input type="date" id="offer-duration">
+  </div>
+
   <div class="field">
       <label for="offer-content-update"  class="label-input">Content update date (Required)</label>
       <p class="expl">Please indicate the date when the content of this offer was last updated. For offer content consider items such as syllabus, structure, teaching resources, etc. </p>
