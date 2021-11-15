@@ -98,12 +98,12 @@ This form allows you to provide information about offers of courses, training, a
     <div class="radio-field">
       <input type="radio" name="offer-type" id="offer-type-other">
       <label for="offer-type-other">Other</label>
+      <input type="text" id="offer-new-type-offer">
     </div>
   </fieldset>
 
   <fieldset class="field" id="offer-audience">
     <legend class="label">Audience (Required)</legend>
-    <p class="expl">Indicate who is the intended audience for this offer.</p>
     <div class="radio-field">
       <input type="checkbox" name="offer-audience" id="offer-audience-content-author" value="offer-audience-content-author" required>
       <label for="offer-audience-content-author">Content Author</label>
@@ -149,14 +149,14 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field" id="divInputPrerequisite">
       <label for="offer-prerequisites" class="label-input">Prerequisites</label>
-      <p class="expl">Describe what are the prerequisites for this offer (for example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.).</p>
+      <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
       <input type="text" id="prerequisites1" class="field-prerequisite">
       {% include_cached button.html type="fake" label="Add prerequisite" class="small button-new-prerequisite" %}
   </div>
 
   <div class="field" id="divInputTopic">
       <label for="offer-topics" class="label-input" required>Topics (Required)</label>
-      <p class="expl">Describe the topics covered by this offer (for example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.).</p>
+      <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
       <input type="text" id="topics" class="field-topic">
       {% include_cached button.html type="fake" label="Add topic" class="small button-new-topic" %}
   </div>
@@ -166,8 +166,7 @@ This form allows you to provide information about offers of courses, training, a
   </fieldset>
 
   <div class="field" id="divSelectLang">
-      <label for="offer-language" class="label-input" >Language (Required)</label>
-      <p class="expl">Indicate in which language or languages this offer is provided.</p>
+      <label for="offer-language" class="label-input">Language (Required)</label>
       <select name="language" id="language" class="field-language select-form" required> 
           <option value=""></option>
           {% for language in site.data.lang %}
@@ -179,7 +178,6 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
-      <p class="expl">Indicate by which country or countries this offer is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
           {% for country in site.data.countries %}
@@ -191,7 +189,6 @@ This form allows you to provide information about offers of courses, training, a
 
   <fieldset class="field" id="offer-format">
     <legend class="label">Format (Required)</legend>
-    <p class="expl">Indicate in which format this offer is provided.</p>
     <div class="radio-field">
       <input type="radio" name="offer-format" id="offer-format-online" required>
       <label for="offer-format-online">Online</label>
@@ -209,7 +206,6 @@ This form allows you to provide information about offers of courses, training, a
 
   <fieldset class="field" id="offer-learning">
       <legend class="label">Learning (Required)</legend>
-      <p class="expl">Indicate the type of learning provided in this offer.</p>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-guided" name="offer-learning-guided" required>
           <label for="offer-learning-guided">Guided</label>
@@ -277,7 +273,6 @@ This form allows you to provide information about offers of courses, training, a
 
   <fieldset class="field" id="offer-cost">
     <legend class="label">Cost (Required)</legend>
-    <p class="expl">Indicate the cost of your offer.</p>
     <div class="radio-field">
       <input type="radio" name="offer-cost" id="offer-cost-free">
       <label for="offer-cost-free">Free</label>
