@@ -83,23 +83,15 @@ main>header {
   margin-top: 1em;
 }
 
-.length-input {
-  width: 25% !important;
-  padding: 8px;
-  display: inline !important;
-}
-
-.length {
-  border: 3px solid #fff;
-  padding: 20px;
-}
-
 .length-value-unity{
-  width: 50%;
+  width: 45%;
   float: left;
-  padding: 20px;
-  border: 2px solid red;
 }
+
+.length-value-unity input{
+  width: 50% !important;
+}
+
 
 .button-clear-button {
   margin-bottom: 2em;
