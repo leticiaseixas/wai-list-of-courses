@@ -44,7 +44,7 @@ footer: >
 <div class="header-sup">
     <p> This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions to choose a resource. The page allows you to filter submissions to find ones that match your specific interest and need. Please note that the list items are provider-submitted, not W3C-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about vendor-submitted content.
     </p>
-    {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}
+    {% include_cached button.html type="link" label="Submit a course, training, and certification" class="more" href="submit-an-offer" %}
 </div>
 <div id="app">
     <div id="left-col" class="offers-filters">
@@ -94,14 +94,14 @@ footer: >
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         <div id="disclaimer">
             <h2>Important Disclaimer</h2>
-            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of offers in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
-            <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
-            <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
+            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of resources in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+            <p>Courses descriptions, search criteria, and other information in this database are provider-submitted. W3C does not verify the accuracy of the information.</p>
+            <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
         </div>
     </div>
     <div id="offers-list">
         <span id="status">
-            <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+            <p id="total-offers">Showing {{ site.data.offers | size }} results</p>
         </span>
         <div class="field" class="sort-by">
             <label for="select">Sort by</label>
