@@ -310,7 +310,11 @@ This form allows you to provide information about courses, training, and certifi
       <p class="expl">Provide the web page containing consumer reviews about this resource.</p>
       <input type="url" name="offer-reviews-page" id="offer-reviews-page">
   </div>
-
+  <div class="field">
+      <label for="offer-content-update"  class="label-input">Last updated (Required)</label>
+      <p class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
+      <input type="date" id="offer-content-update" required>
+  </div>
   <div class="field">
       <legend class="label">Availability</legend>
       <p class="expl">If applicable, indicate the period of time this resource will be available.</p>
@@ -320,13 +324,6 @@ This form allows you to provide information about courses, training, and certifi
       <input type="date" id="offer-availability-end-date">
       <!-- this course is provided at any time, self-paced-->
   </div>
-
-  <div class="field">
-      <label for="offer-content-update"  class="label-input">Last updated (Required)</label>
-      <p class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
-      <input type="date" id="offer-content-update" required>
-  </div>
-
   <h2>Submitting your course, training, or certification</h2>
   <p>Let us know if you have any comments.</p>
   <div class="field">
