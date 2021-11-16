@@ -37,9 +37,8 @@ main > header { grid-column: 4 / span 4; }
 
 <a href="../list-of-courses">Back to List of Courses</a>
 <p>
-This form allows you to provide information about courses, training, and certification on web accessibility. If you wish to update a previously updated resource, please, upload the file provided when first submiting through this link.
+This form allows you to provide information about courses, training, and certification on web accessibility. If you wish to update a previously updated resource, please, upload the file provided when first submiting through this link [link].
 </p>
-<p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>
 <p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
 <form id="form-submit-an-offer">
@@ -58,7 +57,7 @@ This form allows you to provide information about courses, training, and certifi
   
 
   <h2 id="the-tool">About the resource</h2>
-  <p>Provide some information about the resource. This information will be publicly shared.</p>
+  <p>Provide some information about the course, training, or certification. This information will be publicly shared.</p>
 
   <div class="field">
       <label for="offer-name" class="label-input">Title (Required)</label>
@@ -71,13 +70,13 @@ This form allows you to provide information about courses, training, and certifi
 
   <div class="field">
       <label for="offer-description" class="label-input">Description (Required)</label>
-      <p class="expl">Provide a brief description of the course, training, or certification (max.: 300 chars).</p>
+      <p class="expl">Provide a brief description of the resource (max.: 300 chars).</p>
       <textarea id="offer-description" required></textarea>
       <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
 
   <fieldset class="field" id="offer-type">
-    <legend class="label">Type of resourse(Required)</legend>
+    <legend class="label">Type of resource (Required)</legend>
     <div class="radio-field">
       <input type="radio" name="offer-type" id="offer-type-graduate" required>
       <label for="offer-type-graduate">Graduate program</label>
