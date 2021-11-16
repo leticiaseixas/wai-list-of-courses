@@ -116,7 +116,7 @@ footer: >
         {% for offer in offers %}
             {% include offer.liquid %}
         {% endfor %}      
-        {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}  
+        {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-an-offer" %}  
     </div>
 </div>
 
