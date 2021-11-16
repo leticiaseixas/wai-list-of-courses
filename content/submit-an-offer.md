@@ -163,6 +163,9 @@ This form allows you to provide information about courses, training, and certifi
   </div>
 
   <fieldset id="offer-wai-curricula">
+    <legend>WAI Curricula module{% include resource-link.html label="Curricula on Web Accessibility"
+    href="https://www.w3.org/WAI/curricula/" %}</legend>
+    <p class="expl">If applicable, indicate the WAI Curricula modules covered.</p>
       {% include wai-curricula.liquid %}
   </fieldset>
 
