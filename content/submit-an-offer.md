@@ -37,7 +37,7 @@ main > header { grid-column: 4 / span 4; }
 
 <a href="../list-of-courses">Back to List of Courses</a>
 <p>
-This form allows you to provide information about courses, training, and certification on web accessibility. If you wish to update a previously updated resource, please, upload the file provided when first submiting through this <a href="#">link</a>.
+This form allows you to provide information about courses, training, and certification on web accessibility. If you wish to update an existing resource, please, upload the file provided when first submiting through this <a href="#">link</a>.
 </p>
 <p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
