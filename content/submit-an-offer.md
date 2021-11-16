@@ -1,6 +1,6 @@
 ---
-title: "Submit a course, training, or certification offer"
-nav_title: "Submit a course, training, or certification offer"
+title: "Submit a course, training, or certification on web accessibility"
+nav_title: "Submit a course, training, or certification on web accessibility"
 doc-note-type: draft
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
@@ -37,10 +37,10 @@ main > header { grid-column: 4 / span 4; }
 
 <a href="../list-of-courses">Back to List of Courses</a>
 <p>
-This form allows you to provide information about offers of courses, training, and certification on web accessibility. Offers providers can use this form to add update information about their offers. 
+This form allows you to provide information about courses, training, and certification on web accessibility. If you wish to update a previously updated resource, please, upload the file provided when first submiting through this link.
 </p>
 <p>We'd like to display as many offers as we can, we welcome you to submit yours using this form.</p>
-<p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific offer providers. Inclusion of offers in this list does not indicate endorsement by W3C. Offers and search criteria are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
+<p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
 <form id="form-submit-an-offer">
 
@@ -57,8 +57,8 @@ This form allows you to provide information about offers of courses, training, a
   </div>
   
 
-  <h2 id="the-tool">About the offer</h2>
-  <p>Provide some information about the offer. This information will be publicly shared.</p>
+  <h2 id="the-tool">About the resource</h2>
+  <p>Provide some information about the resource. This information will be publicly shared.</p>
 
   <div class="field">
       <label for="offer-name" class="label-input">Title (Required)</label>
@@ -71,14 +71,13 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field">
       <label for="offer-description" class="label-input">Description (Required)</label>
-      <p class="expl">Provide a brief description of the offer (max.: 300 chars).</p>
+      <p class="expl">Provide a brief description of the course, training, or certification (max.: 300 chars).</p>
       <textarea id="offer-description" required></textarea>
       <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
 
   <fieldset class="field" id="offer-type">
-    <legend class="label">Type (Required)</legend>
-    <p class="expl">Indicate the type of the offer.</p>
+    <legend class="label">Type of resourse(Required)</legend>
     <div class="radio-field">
       <input type="radio" name="offer-type" id="offer-type-graduate" required>
       <label for="offer-type-graduate">Graduate program</label>
@@ -135,7 +134,7 @@ This form allows you to provide information about offers of courses, training, a
 
   <fieldset class="field" id="offer-level">
     <legend class="label">Level (Required)</legend>
-    <p class="expl">Indicate the level of digital accessibility proficiency required for this offer.</p>
+    <p class="expl">Indicate the level of digital accessibility proficiency required.</p>
     <div class="radio-field">
       <input type="radio" name="offer-level" id="offer-level-basic" required>
       <label for="offer-level-basic">Basic</label>
@@ -229,7 +228,7 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field">
       <label for="offer-platform" class="label-input">Platform</label>
-      <p class="expl">Indicate on which e-learning platform this offer is provided.</p>
+      <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided.</p>
       <input type="text" id="platform">
   </div>
 
@@ -300,19 +299,19 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field">
       <label for="offer-website" class="label-input">Website (Required)</label>
-      <p class="expl">Provide the website containing more information about this offer.</p>
+      <p class="expl">Provide the website containing more information about this resource.</p>
       <input type="url" name="offer-website" id="offer-website" required>
   </div>
 
   <div class="field">
       <label for="offer-reviews-page" class="label-input">Reviews page</label>
-      <p class="expl">Provide the web page containing consumer reviews about this offer.</p>
+      <p class="expl">Provide the web page containing consumer reviews about this resource.</p>
       <input type="url" name="offer-reviews-page" id="offer-reviews-page">
   </div>
 
   <div class="field">
-      <legend class="label">Offer availability</legend>
-      <p class="expl">If applicable, indicate the period of time the course will be available.</p>
+      <legend class="label">Availability</legend>
+      <p class="expl">If applicable, indicate the period of time this resource will be available.</p>
       <label for="offer-availability-start-date">Start date</label>
       <input type="date" id="offer-availability-start-date">
       <label for="offer-availability-end-date">End date</label>
@@ -322,11 +321,11 @@ This form allows you to provide information about offers of courses, training, a
 
   <div class="field">
       <label for="offer-content-update"  class="label-input">Last updated (Required)</label>
-      <p class="expl">Please indicate the date when the content of this offer was last updated. For offer content consider items such as syllabus, structure, teaching resources, etc. </p>
+      <p class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
       <input type="date" id="offer-content-update" required>
   </div>
 
-  <h2>Submitting your offer</h2>
+  <h2>Submitting your course, training, or certification</h2>
   <p>Let us know if you have any comments.</p>
   <div class="field">
     <label for="comments" class="label-input">Comments</label>
@@ -334,11 +333,11 @@ This form allows you to provide information about offers of courses, training, a
   </div>
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
-    <label><input type="checkbox" required> I give permission for information for this offer to be published in the W3C's list of courses.</label>
+    <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
   </div>
-  <p>When you submit the form, we will review your offer and add it to the list. This should take 1-4 weeks.</p>
+  <p>When you submit the form, we will review your submission and add it to the list. This should take 1-4 weeks.</p>
   <div class="field">
-    <button type="submit">Submit your offer</button>
+    <button type="submit">Submit your course, training, or certification</button>
   </div>
 </form>
 
