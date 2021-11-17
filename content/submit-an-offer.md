@@ -171,6 +171,7 @@ This form allows you to provide information about courses, training, and certifi
 
   <div class="field" id="divSelectLang">
       <label for="offer-language" class="label-input">Language (Required)</label>
+      <p class="expl">Indicate in which language or languages this offer is provided.</p>
       <select name="language" id="language" class="field-language select-form" required> 
           <option value=""></option>
           {% for language in site.data.lang %}
@@ -182,6 +183,7 @@ This form allows you to provide information about courses, training, and certifi
 
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
+      <p class="expl">Indicate by which country or countries this offer is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
           {% for country in site.data.countries %}
@@ -317,9 +319,9 @@ This form allows you to provide information about courses, training, and certifi
   </div>
   <div class="field">
       <legend class="label">Availability</legend>
-      <p class="expl">If applicable, indicate the period of time this resource will be available.</p>
-      <label for="offer-availability-start-date">Start date</label>
-      <input type="date" id="offer-availability-start-date">
+      <p class="expl">Indicate the start date for the period of time this resource will be available. If applicable, provide the end date.</p>
+      <label for="offer-availability-start-date">Start date (Required)</label>
+      <input type="date" id="offer-availability-start-date" required>
       <label for="offer-availability-end-date">End date</label>
       <input type="date" id="offer-availability-end-date">
       <!-- this course is provided at any time, self-paced-->
