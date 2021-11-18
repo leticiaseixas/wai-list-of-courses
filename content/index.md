@@ -119,7 +119,7 @@ footer: >
     </div>
     
 </div>
-<div class="header-sup">
+<div class="button-submit-end">
     {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-an-offer" %}  
 </div>
 
