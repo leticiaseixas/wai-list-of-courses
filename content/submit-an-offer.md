@@ -87,7 +87,7 @@ This form allows you to provide information about courses, training, and certifi
     </div>
     <div class="radio-field">
       <input type="radio" name="offer-type" id="offer-type-training">
-      <label for="offer-type-training">Training program</label>
+      <label for="offer-type-training">Training</label>
     </div>
     <div class="radio-field">
       <input type="radio" name="offer-type" id="offer-type-certification">
@@ -196,37 +196,42 @@ This form allows you to provide information about courses, training, and certifi
   <fieldset class="field" id="offer-format">
     <legend class="label">Format (Required)</legend>
     <div class="radio-field">
-      <input type="radio" name="offer-format" id="offer-format-online" required>
-      <label for="offer-format-online">Online</label>
+      <input type="radio" name="offer-format" id="offer-format-face-to-face">
+      <label for="offer-format-face-to-face">Face-to-face - all teaching sessions are provided on-site</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="offer-format" id="offer-format-face-to-face">
-      <label for="offer-format-face-to-face">Face-to-face</label>
+      <input type="radio" name="offer-format" id="offer-format-online" required>
+      <label for="offer-format-online">Online - all teaching sessions are provided online </label>
     </div>
     <div class="radio-field">
       <input type="radio" name="offer-format" id="offer-format-hybrid">
-      <label for="offer-format-hybrid">Hybrid</label>
+      <label for="offer-format-hybrid">Hybrid - teaching sessions are provided simultaneously on-site and online</label>
     </div>
+    <div class="radio-field">
+      <input type="radio" name="offer-format" id="offer-format-blended">
+      <label for="offer-format-blended">Blended - teaching sessions are provided either on-site or online</label>
+    </div>    
   </fieldset>
 
 
   <fieldset class="field" id="offer-learning">
       <legend class="label">Learning (Required)</legend>
+      <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided.</p>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-guided" name="offer-learning-guided" required>
-          <label for="offer-learning-guided">Guided</label>
+          <input type="checkbox" id="offer-learning-self-paced" name="offer-learning-self-paced" required>
+          <label for="offer-learning-self-paced">Self-paced - Progress at your own speed</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-non-guided" name="offer-learning-non-guided">
-          <label for="offer-learning">Non-guided</label>
-      </div>
-      <div class="radio-field">
-          <input type="checkbox" id="offer-learning-synchronous" name="offer-learning-synchronous">
-          <label for="offer-learning-synchronous">Synchronous</label>
+          <input type="checkbox" id="offer-learning-instructor-paced" name="offer-learning-instructor-paced">
+          <label for="offer-learning-instructor-paced">Instructor paced - Instructor-led on a course schedule</label>
       </div>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-asynchronous" name="offer-learning-asynchronous">
-          <label for="offer-learning-asynchronous">Asynchronous</label>
+          <label for="offer-learning-asynchronous">Asynchronous learning - Access at your own schedule</label>
+      </div>
+      <div class="radio-field">
+          <input type="checkbox" id="offer-learning-synchronous" name="offer-learning-synchronous">
+          <label for="offer-learning-synchronous">Synchronous learning - Students and instructors required to be online at the same time</label>
       </div>            
   </fieldset>
 
@@ -338,7 +343,7 @@ This form allows you to provide information about courses, training, and certifi
   </div>
   <p>When you submit the form, we will review your submission and add it to the list. This should take 1-4 weeks.</p>
   <div class="field">
-    <button type="submit">Submit your course, training, or certification</button>
+    <button type="submit">Send information</button>
   </div>
 </form>
 
