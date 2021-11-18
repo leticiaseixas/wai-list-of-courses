@@ -39,6 +39,10 @@ main>header {
   font-size: 125%;
 }
 
+.header-sup button{
+  margin-bottom: 2em;
+}
+
 .button {
   margin-top: 2em;
 }
