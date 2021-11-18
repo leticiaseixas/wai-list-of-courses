@@ -216,7 +216,7 @@ This form allows you to provide information about courses, training, and certifi
 
   <fieldset class="field" id="offer-learning">
       <legend class="label">Learning (Required)</legend>
-      <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided.</p>
+      <p class="expl">Indicate the type of learning provided in this offer. Choose as many as apply.</p>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-self-paced" name="offer-learning-self-paced" required>
           <label for="offer-learning-self-paced">Self-paced - Progress at your own speed</label>
