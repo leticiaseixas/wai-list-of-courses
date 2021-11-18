@@ -39,7 +39,7 @@ main > header { grid-column: 4 / span 4; }
 <p>
 This form allows you to provide information about courses, training, and certification on web accessibility. If you wish to update an existing resource, please, upload the file provided when first submiting through this <a href="#">link</a>.
 </p>
-<p><em>Note: <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
+<p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
 <form id="form-submit-an-offer">
 
