@@ -341,7 +341,7 @@ This form allows you to provide information about courses, training, and certifi
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
     <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
   </div>
-  <p>When you submit the form, we will review your submission and add it to the list. This should take 1-4 weeks.</p>
+  <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
   <div class="field">
     <button type="submit">Send information</button>
   </div>
