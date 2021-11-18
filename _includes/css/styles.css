@@ -9,6 +9,11 @@
   margin-bottom: 48px;
 }
 
+.button-submit-end{
+  grid-column: 1 / 8;
+  margin-top: 2em;
+}
+
 @media ( min-width: 72em) {
   .header-sup {
     grid-column: 2 / 9;
