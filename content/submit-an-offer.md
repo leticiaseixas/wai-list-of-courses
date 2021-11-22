@@ -243,7 +243,7 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-accessibility-resources" class="label-input">Accessibility support</label>
-      <p class="expl">Indicate what accessibility support is provided. Include details in the text box.</p>
+      <p class="expl">Indicate what relevant accessibility support is provided. Include details in the text box.</p>
       {% assign aresources = site.data.accessibility-resources %}
       {% for resource in aresources %}
         <div class="radio-field">
