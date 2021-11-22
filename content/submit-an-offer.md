@@ -268,9 +268,9 @@ main > header { grid-column: 4 / span 4; }
           <label for="offer-value-duration">Value</label>
           <input type="number" id="offer-value-duration" required>
         </div>
-        <div class="length-unity">
-          <label for="offer-unity-duration">Unity</label>
-          <select id="offer-unity-duration" required> 
+        <div class="length-unit">
+          <label for="offer-unit-duration">Unit</label>
+          <select id="offer-unit-duration" required> 
               <option value=""></option>
               <option value="hours">Hours</option>
               <option value="days">Days</option>
