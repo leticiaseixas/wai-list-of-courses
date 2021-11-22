@@ -218,21 +218,13 @@ main > header { grid-column: 4 / span 4; }
       <legend class="label">Learning (Required)</legend>
       <p class="expl">Indicate the type of learning provided in this offer. Choose as many as apply.</p>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-self-paced" name="offer-learning-self-paced" required>
-          <label for="offer-learning-self-paced">Self-paced - Progress at your own speed</label>
+          <input type="checkbox" id="offer-learning-scheduled" name="offer-learning-scheduled" required>
+          <label for="offer-learning-scheduled">Scheduled sessions</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-instructor-paced" name="offer-learning-instructor-paced">
-          <label for="offer-learning-instructor-paced">Instructor paced - Instructor-led on a course schedule</label>
+          <input type="checkbox" id="offer-learning-not-scheduled" name="offer-learning-not-scheduled">
+          <label for="offer-learning-not-scheduled">Not scheduled sessions</label>
       </div>
-      <div class="radio-field">
-          <input type="checkbox" id="offer-learning-asynchronous" name="offer-learning-asynchronous">
-          <label for="offer-learning-asynchronous">Asynchronous learning - Access at your own schedule</label>
-      </div>
-      <div class="radio-field">
-          <input type="checkbox" id="offer-learning-synchronous" name="offer-learning-synchronous">
-          <label for="offer-learning-synchronous">Synchronous learning - Students and instructors required to be online at the same time</label>
-      </div>            
   </fieldset>
 
   <div class="field">
