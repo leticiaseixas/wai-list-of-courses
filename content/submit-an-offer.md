@@ -244,7 +244,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="offer-accessibility-resources" class="label-input">Accessibility support</label>
       <p class="expl">Indicate what accessibility support is provided. Include details in the text box.</p>
-      {% assign aresources = site.data.accessibility-resources | sort: 'id' %}
+      {% assign aresources = site.data.accessibility-resources %}
       {% for resource in aresources %}
         <div class="radio-field">
           <input type="checkbox" id="offer-accessibility-resource-{{resource.id}}" value="offer-accessibility-resource-{{resource.id}}">
