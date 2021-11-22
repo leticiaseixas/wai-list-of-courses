@@ -219,11 +219,11 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">Indicate the type of learning provided in this offer.</p>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-scheduled" name="offer-learning-scheduled" required>
-          <label for="offer-learning-scheduled">Scheduled sessions - Students are required to be online at a specif time</label>
+          <label for="offer-learning-scheduled">Scheduled sessions - Participants are required to be online at a specif time</label>
       </div>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-not-scheduled" name="offer-learning-not-scheduled">
-          <label for="offer-learning-not-scheduled">Not scheduled sessions - Access at your own schedule</label>
+          <label for="offer-learning-not-scheduled">Not scheduled sessions - Participants can access at their own schedule</label>
       </div>
   </fieldset>
 
