@@ -1,7 +1,7 @@
 [
     {
-        "id": "event-planning",
-        "name": "Accessible Sessions",
+        "id": "sessions",
+        "name": "Sessions",
         "options": [
             {
                 "id": "accessible-facility",
@@ -14,12 +14,20 @@
             {
                 "id": "caption-audio",
                 "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio provided"
+            },
+            {
+                "id": "description-of-visual-information",
+                "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+            },        
+            {
+                "id": "pre-check-available",
+                "name": "Pre-session technology check available - dedicated time to participants set up any relevant technology, or additional settings"
             }
         ]
     },
     {
-        "id": "accessible-material-and-media",
-        "name": "Accessible Material and Media",
+        "id": "material-and-media",
+        "name": "Material and Media",
         "options": [
             {
                 "id": "accessible-format-handouts",
