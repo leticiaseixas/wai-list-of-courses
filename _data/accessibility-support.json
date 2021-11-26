@@ -5,7 +5,7 @@
         "options": [
             {
                 "id": "accessible-facility",
-                "name": "Facility and area is accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible."
+                "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible."
             },
             {
                 "id": "assistive-listening-devices",
@@ -13,7 +13,7 @@
             },
             {
                 "id": "caption-audio",
-                "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio provided"
+                "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
             },
             {
                 "id": "description-of-visual-information",
@@ -65,7 +65,7 @@
             },
             {
                 "id": "motions-or-animations",
-                "name": "Considered use motion or animations"
+                "name": "Reduced use motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
             }            
         ]
     }
