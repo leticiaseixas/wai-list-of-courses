@@ -1,7 +1,7 @@
 [
     {
         "id": "event-planning",
-        "name": "Sessions",
+        "name": "Accessible Sessions",
         "options": [
             {
                 "id": "accessible-facility",
@@ -9,11 +9,7 @@
             },
             {
                 "id": "assistive-listening-devices",
-                "name": "Assistive listening devices (ALD), interpreters, and captioners, provided as needed"
-            },
-            {
-                "id": "material-ahead-of-time",
-                "name": "Material provided ahead of time, if requested"
+                "name": "<a href\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), interpreters, and captioners, provided as needed"
             },
             {
                 "id": "caption-audio",
@@ -32,6 +28,10 @@
             {
                 "id": "accessible-electronic-handout",
                 "name": "Handouts, slides, and other electronic material is accessible"
+            },
+            {
+                "id": "material-ahead-of-time",
+                "name": "Material provided ahead of time, if requested"
             },
             {
                 "id": "media-accessible",
