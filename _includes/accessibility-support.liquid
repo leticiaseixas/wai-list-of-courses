@@ -2,8 +2,7 @@
 {% include excol.html type="start" id="optional-id" %}
 {{ support.name }}
 {% if support.link%}
-{% include resource-link.html label="Official name"
-    href="{{support.link}}"%}
+{% include resource-link.html label="Official name" href="#"%}
 {% endif %}
 {% include excol.html type="middle" %}
 {% for option in support.options %}
