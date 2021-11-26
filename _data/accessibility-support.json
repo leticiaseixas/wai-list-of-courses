@@ -9,11 +9,11 @@
             },
             {
                 "id": "assistive-listening-devices",
-                "name": "<a href\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), interpreters, and captioners, provided as needed"
+                "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions>captioners</a>, provided as needed"
             },
             {
                 "id": "caption-audio",
-                "name": "Caption audio available"
+                "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/>Captions</a> and/or transcripts for audio provided"
             }
         ]
     },
@@ -27,7 +27,7 @@
             },
             {
                 "id": "accessible-electronic-handout",
-                "name": "Handouts, slides, and other electronic material is accessible"
+                "name": "Handouts, slides, and other electronic material is accessible - All content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
             },
             {
                 "id": "material-ahead-of-time",
@@ -35,19 +35,7 @@
             },
             {
                 "id": "media-accessible",
-                "name": "Media fully accessible — including audio and video used in sessions, and recordings of sessions provided afterwards"
-            },
-            {
-                "id": "easy-to-read-font",
-                "name": "Easy-to-read font face"
-            },
-            {
-                "id": "sufficient-color-contrast",
-                "name": "Sufficient contrast between colors (\"luminance contrast\")"
-            },
-            {
-                "id": "motion-animations",
-                "name": "Considered use of motion or animations"
+                "name": "Media fully accessible — including audio and video used in sessions, and recordings of sessions provided afterwards (See <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>)"
             }
         ]
     }
