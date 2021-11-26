@@ -12,9 +12,7 @@
     <input type="checkbox" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
     <label for="offer-{{ option.id }}">{{ option.name }}</label>
 </div>
-{% if option.description %}
-<p><em>{{ option.description }}</em></p>
-{% endif %}
+
 {% endfor %}
 {% include excol.html type="end" %}
 {% endfor %}
