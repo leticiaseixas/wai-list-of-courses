@@ -21,7 +21,7 @@
             },        
             {
                 "id": "pre-check-available",
-                "name": "Pre-session technology check available - dedicated time to participants set up any relevant technology, or additional settings"
+                "name": "Pre-session technology check, provided as needed - dedicated time to participants set up any relevant technology, or additional settings"
             }
         ]
     },
@@ -39,7 +39,7 @@
             },
             {
                 "id": "material-ahead-of-time",
-                "name": "Material provided ahead of time, if requested"
+                "name": "Material provided ahead of time, provided as needed"
             },
             {
                 "id": "media-accessible",
