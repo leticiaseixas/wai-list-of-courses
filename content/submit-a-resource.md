@@ -228,6 +228,14 @@ main > header { grid-column: 4 / span 4; }
     <legend>Accessibility support</legend>
     <p class="expl">Indicate what relevant accessibility support is provided. Include details in the text box.</p>
       {% include accessibility-support.liquid %}
+    <div>
+      <input type="checkbox" id="offer-other-accessibility-support" name="offer-other-accessibility-support">
+      <label for="offer-other-accessibility-support">Other</label>
+    </div>
+    <div>
+      <label for="offer-new-accessibility-support" class="visuallyhidden">Other</label>
+      <input type="text" id="offer-new-accessibility-support">
+    </div>
   </fieldset>
 
 <!--   <div class="field">
