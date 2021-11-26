@@ -1,8 +1,7 @@
 {% for support in site.data.accessibility-support %}
 
-
 {% if support.link%}
-<h4><a href={{support.link}} >{{ support.name }}</a></h4>
+<h4><a href="{{support.link}}">{{ support.name }}</a></h4>
 {% else if %}
 <h4>{{ support.name }}</h4>
 {% endif %}
