@@ -3,7 +3,7 @@
 {{ support.name }}
 {%if support.link%}
 {% include resource-link.html label="Official name"
-    href="https://www.w3.org/WAI/curricula/" %}
+    href="{{support.link}}"%}
 
 {% include excol.html type="middle" %}
 {% for option in support.options %}
