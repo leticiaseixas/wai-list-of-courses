@@ -162,7 +162,7 @@ details dt::after {
 }
 
 .label-input {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: 700;
 }
 
