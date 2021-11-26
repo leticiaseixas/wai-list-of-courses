@@ -6,8 +6,8 @@ lang: en
 last_updated: 2021-@@-@@
 github:
   repository: w3c/wai-course-list
-  path: content/submit-an-offer.md
-permalink: course-list/submit-an-offer
+  path: content/submit-a-resource.md
+permalink: course-list/submit-a-resource
 ref: /teach-advocate/course-list/
 changelog: /teach-advocate/course-list/changelog/
 acknowledgements: /teach-advocate/course-list/acknowledgements/
@@ -223,9 +223,15 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided.</p>
       <input type="text" id="platform">
   </div>
+  
+  <fieldset id="offer-accessibility-support">
+    <legend>Accessibility support</legend>
+    <p class="expl">Indicate what relevant accessibility support is provided. Include details in the text box.</p>
+      {% include accessibility-support.liquid %}
+  </fieldset>
 
-  <div class="field">
-      <label for="offer-accessibility-resources" class="label-input">Accessibility support</label>
+<!--   <div class="field">
+     <label for="offer-accessibility-resources" class="label-input">Accessibility support</label>
       <p class="expl">Indicate what relevant accessibility support is provided. Include details in the text box.</p>
       {% assign aresources = site.data.accessibility-resources %}
       {% for resource in aresources %}
@@ -238,10 +244,7 @@ main > header { grid-column: 4 / span 4; }
         <label for="offer-new-accessibility-resource" class="visuallyhidden">Other</label>
         <input type="text" id="offer-new-accessibility-resource">
       </div>
-  </div>
-
-<!-- {% capture info_label%}More information about the {{curricula.name}}{% endcapture %}
-{{ curricula.name }}{% include resource-link.html label=info_label href=curricula.link %} -->
+  </div> --> 
 
   <div class="field">
       <legend class="label">Length (Required)</legend>

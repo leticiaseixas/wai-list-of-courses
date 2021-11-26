@@ -1,0 +1,57 @@
+[
+    {
+        "id": "accessible-material-and-media",
+        "name": "Accessible Material and Media",
+        "link": "https://www.w3.org/WAI/teach-advocate/accessible-presentations/#provide-accessible-material-and-media-organizers--speakers",
+        "details": [
+            {
+                "id": "accessible-format-handouts",
+                "name": "Handouts, slides, and other material in accessible formats",
+                "description": "Word processing formats are often the most flexible to meet different people’s needs. Participants might need material in alternative formats such as large print or braille. If they get the material in advance electronically, they may not need it in hard copy."
+            },
+            {
+                "id": "accessible-electronic-handout",
+                "name": "Slides, handouts, and other electronic material for participants is accessible",
+                "description": "For example, provide alternative text for images and mark up headings. HTML material, such as a conference website, should meet WCAG, at least Level AA. (Preparing Slides and Projected Material below has details for speakers. Some other resources are listed under For More Information below.)"
+            },
+            {
+                "id": "media-accessible",
+                "name": "Media fully accessible — including audio and video used in sessions, and recordings of sessions provided afterwards",
+                "description": "For example, provide captions (called “intralingual subtitles” in some areas) and/or transcripts for audio, and provide audio description of visual information in videos. For guidance on creating accessible media, see Making Audio and Video Media Accessible."
+            }
+        ]
+    },
+    {
+        "id": "pre-session-planning",
+        "name": "Pre Session Planning",
+        "link": "https://www.w3.org/WAI/teach-advocate/accessible-presentations/#planning-your-session-speakers",
+        "details": [
+            {
+                "id": "material-ahead-of-time",
+                "name": "Material provided ahead of time, if requested",
+                "description": "Provide slides, handouts, and other material to participants, interpreters, and captioners, as needed. Make it accessible. (More about providing accessible material is above.)"
+            },
+            {
+                "id": "interpreters-captioners",
+                "name": "Work with interpreters and captioners",
+                "description": "Give them material in advance. Explain acronyms, terms, names, etc. that you will use. Be available to answer questions."
+            },
+            {
+                "id": "caption-audio",
+                "name": "Caption audio, or otherwise make it available",
+                "description": "Ideally, any audio you use is also available in text, for example, videos are captioned. However, if captioning is provided for your presentation, that can provide text of the audio."
+            },
+            {
+                "id": "activities-considered",
+                "name": "Consider activities",
+                "description": "Remember potential accessibility issues with any participant activities. For example, responding to questions, arranging sticky notes, small group projects, etc."
+            },
+            {
+                "id": "multiple-communication-methods",
+                "name": "Multiple communication methods used for different learning styles",
+                "description": "Some people can better understand verbal information. Other people can better understand pictures and diagrams. And others better understand text."
+            }
+        ]
+    }
+]
+
