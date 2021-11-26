@@ -89,6 +89,10 @@ main>header {
   margin-top: 1em;
 }
 
+.accessibility-support{
+  display: inline !important;
+}
+
 .length-container{
   display: flex;
 }
