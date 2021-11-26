@@ -12,8 +12,7 @@
 {% for option in support.options %}
 <div class="radio-field">
     <input type="checkbox" id="offer-accessibility-support-{{ option.id }}" name="offer-accessibility-support-{{ option.id }}">
-    <label for="offer-accessibility-support-{{ option.id }}">{{ option.name }}</label>
-    <p class="expl">{{option.description}}</p>
+    <label for="offer-accessibility-support-{{ option.id }}">{{ option.name }} - {{option.description}}</label>
 </div>
 
 {% endfor %}
