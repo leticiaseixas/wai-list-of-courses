@@ -1,13 +1,9 @@
+
 {% for support in site.data.accessibility-support %}
 
-{% capture support-label %}More information about {{support.name}}{% endcapture %}
+{% capture support-label %}See also: {{support.official-name}}{% endcapture %}
 {% include excol.html type="start" open="true"%}
-<h4>
-{{ support.name }}
-{% if support.link%}
-{% include resource-link.html label=support-label href=support.link%}
-{% endif %}
-</h4>
+<h4>{{ support.name }}</h4>
 {% include excol.html type="middle" %}
 {% for option in support.options %}
 <div class="radio-field">
