@@ -65,7 +65,7 @@
             },
             {
                 "id": "motions-or-animations",
-                "name": "Reduced use motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
+                "name": "Reduced use of motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
             }            
         ]
     }
