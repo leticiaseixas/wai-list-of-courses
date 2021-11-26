@@ -154,7 +154,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
 
   <fieldset id="offer-wai-curricula">
-    <legend>WAI Curricula module{% include resource-link.html label="Curricula on Web Accessibility"
+    <legend><h3>WAI Curricula module</h3>{% include resource-link.html label="Curricula on Web Accessibility"
     href="https://www.w3.org/WAI/curricula/" %}</legend>
     <p class="expl">If applicable, indicate the WAI Curricula modules covered.</p>
       {% include wai-curricula.liquid %}
@@ -204,7 +204,6 @@ main > header { grid-column: 4 / span 4; }
     </div>    
   </fieldset>
 
-
   <fieldset class="field" id="offer-learning">
       <legend class="label">Activities (Required)</legend>
       <p class="expl">Indicate the type of activities provided in this resource. Choose as many as apply.</p>
@@ -225,9 +224,9 @@ main > header { grid-column: 4 / span 4; }
   </div>
   
   <fieldset id="offer-accessibility-support">
-    <legend>Accessibility support</legend>
+    <legend><h3>Accessibility support</h3></legend>
     <p class="expl">Indicate what relevant accessibility support is provided. Include details in the text box.</p>
-      {% include accessibility-support.liquid %}
+    {% include accessibility-support.liquid %}
   </fieldset>
 
 <!--   <div class="field">
