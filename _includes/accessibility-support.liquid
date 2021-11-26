@@ -1,10 +1,10 @@
 {% for support in site.data.accessibility-support %}
 {% include excol.html type="start" id="optional-id" %}
 {{ support.name }}
-{%if support.link%}
+{% if support.link%}
 {% include resource-link.html label="Official name"
     href="{{support.link}}"%}
-
+{% endif %}
 {% include excol.html type="middle" %}
 {% for option in support.options %}
 <div class="radio-field">
@@ -13,7 +13,6 @@
 </div>
 {% endfor %}
 {% include excol.html type="end" %}
-
 {% endfor %}
 
 <div class="radio-field">
