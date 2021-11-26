@@ -8,20 +8,19 @@
 
 {% for option in support.options %}
 <div class="radio-field accessibility-support">
-{% include excol.html type="start" id="optional-id" %}
+
 <input type="checkbox" id="offer-accessibility-support-{{ option.id }}" name="offer-accessibility-support-{{ option.id }}">
 <label for="offer-accessibility-support-{{ option.id }}">{{ option.name }}</label>
-{% include excol.html type="middle" %}
-<p><em>{{option.description}}</em></p> 
-{% include excol.html type="end" %}
 </div>
+
+<p><em>{{option.description}}</em></p> 
 
 {% endfor %}
 
 {% endfor %}
 
 <div class="radio-field">
-    <input type="radio" name="offer-other-accessibility-support" id="offer-other-accessibility-support">
+    <input type="checkbox" name="offer-other-accessibility-support" id="offer-other-accessibility-support">
     <label for="offer-other-accessibility-support">Other</label>
 </div>  
 <div>
