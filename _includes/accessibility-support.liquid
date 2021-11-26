@@ -10,12 +10,13 @@
 <div class="radio-field accessibility-support">
     <input type="checkbox" id="offer-accessibility-support-{{ option.id }}" name="offer-accessibility-support-{{ option.id }}">
     <label for="offer-accessibility-support-{{ option.id }}">{{ option.name }}</label>
+</div>
 {% include excol.html type="start" id="optional-id" %}
 Note
 {% include excol.html type="middle" %}
 <p><em>{{option.description}}</em></p> 
 {% include excol.html type="end" %}
-</div>
+
 
 {% endfor %}
 
