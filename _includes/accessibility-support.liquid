@@ -1,6 +1,11 @@
 {% for support in site.data.accessibility-support %}
 {% include excol.html type="start" id="optional-id" %}
-{{ support.name }}
+
+{% if support.link %}
+    <a href="{{support.link}}" rel="external">{{support.name}}</a>
+{% else %}
+    {{ support.name }}
+{% endif %} 
 
 {% include excol.html type="middle" %}
 
