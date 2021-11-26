@@ -25,7 +25,7 @@
         "id": "pre-session-planning",
         "name": "Pre Session Planning",
         "link": "https://www.w3.org/WAI/teach-advocate/accessible-presentations/#planning-your-session-speakers",
-        "details": [
+        "options": [
             {
                 "id": "material-ahead-of-time",
                 "name": "Material provided ahead of time, if requested",
