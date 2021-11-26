@@ -1,24 +1,18 @@
 {% for support in site.data.accessibility-support %}
+{% include excol.html type="start" id="optional-id" %}
+{{ support.name }}
+{%if support.link%}
+{% include resource-link.html label="Official name"
+    href="https://www.w3.org/WAI/curricula/" %}
 
-{% if support.link %}
-<h3><a href="{{support.link}}" rel="external">{{support.name}}</a></h3>
-{% else %}
-<h3>{{ support.name }}</h3>
-{% endif %} 
-
-{% for option in support.options %}
-<div class="radio-field accessibility-support">
-<input type="checkbox" id="offer-accessibility-support-{{ option.id }}" name="offer-accessibility-support-{{ option.id }}">
-<label for="offer-accessibility-support-{{ option.id }}">{{ option.name }}</label>
-</div>
-{% include excol.html type="start" %}
-Note
 {% include excol.html type="middle" %}
-<p><em>{{option.description}}</em></p> 
-{% include excol.html type="end" %}
-
-
+{% for option in support.options %}
+<div class="radio-field">
+    <input type="checkbox" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
+    <label for="offer-{{ option.id }}">{{ option.name }}</label>
+</div>
 {% endfor %}
+{% include excol.html type="end" %}
 
 {% endfor %}
 
