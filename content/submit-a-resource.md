@@ -225,25 +225,9 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset id="offer-accessibility-support">
     <legend><h3>Accessibility support</h3></legend>
-    <p class="expl">Indicate what relevant accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>. Include details in the text box.</p>
+    <p class="expl">Indicate what relevant accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.</p>
     {% include accessibility-support.liquid %}
   </fieldset>
-
-<!--   <div class="field">
-     <label for="offer-accessibility-resources" class="label-input">Accessibility support</label>
-      <p class="expl">Indicate what relevant accessibility support is provided. Include details in the text box.</p>
-      {% assign aresources = site.data.accessibility-resources %}
-      {% for resource in aresources %}
-        <div class="radio-field">
-          <input type="checkbox" id="offer-accessibility-resource-{{resource.id}}" value="offer-accessibility-resource-{{resource.id}}">
-          <label for="offer-accessibility-resource-{{resource.id}}">{{resource.name}}</label>
-        </div>
-      {% endfor %}
-      <div>
-        <label for="offer-new-accessibility-resource" class="visuallyhidden">Other</label>
-        <input type="text" id="offer-new-accessibility-resource">
-      </div>
-  </div> --> 
 
   <div class="field">
       <legend class="label">Length (Required)</legend>
