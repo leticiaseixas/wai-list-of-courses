@@ -13,7 +13,7 @@
             },
             {
                 "id": "caption-audio",
-                "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or transcripts for audio provided"
+                "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio provided"
             }
         ]
     },
