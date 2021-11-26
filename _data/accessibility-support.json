@@ -3,7 +3,7 @@
         "id": "accessible-material-and-media",
         "name": "Accessible Material and Media",
         "link": "https://www.w3.org/WAI/teach-advocate/accessible-presentations/#provide-accessible-material-and-media-organizers--speakers",
-        "details": [
+        "options": [
             {
                 "id": "accessible-format-handouts",
                 "name": "Handouts, slides, and other material in accessible formats",
