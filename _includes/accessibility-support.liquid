@@ -1,8 +1,10 @@
 {% for support in site.data.accessibility-support %}
-{% include excol.html type="start" id="optional-id" %}
+
+{% capture support-label %}More information about {{support.name}}{% endcapture %}
+{% include excol.html type="start" open="true"%}
 {{ support.name }}
 {% if support.link%}
-{% include resource-link.html label="Official name" href="#"%}
+{% include resource-link.html label=support-label href=support.link%}
 {% endif %}
 {% include excol.html type="middle" %}
 {% for option in support.options %}
