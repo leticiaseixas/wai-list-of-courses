@@ -46,7 +46,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -129,7 +129,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -210,7 +210,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Real-time captioning"
     ],
@@ -284,7 +284,7 @@
     "activities": [
       "Unscheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -360,7 +360,7 @@
     "activities": [
       "Unscheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -438,7 +438,7 @@
       "Unscheduled",
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Real-time captioning"
     ],
@@ -516,7 +516,7 @@
     "activities": [
       "Unscheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -592,7 +592,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "International sign interpretation",
       "Transcripts"
     ],
@@ -666,7 +666,7 @@
       "Unscheduled",
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -741,7 +741,7 @@
       "Unscheduled",
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -818,7 +818,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -895,7 +895,7 @@
     "activities": [
       "Unscheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "International sign interpretation",
       "Transcripts"
     ],
@@ -971,7 +971,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "International sign interpretation",
       "Transcripts"
     ],
@@ -1047,7 +1047,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
@@ -1122,7 +1122,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Captioning",
       "Transcripts"
     ],
@@ -1198,7 +1198,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Captioning",
       "Transcripts"
     ],
@@ -1272,7 +1272,7 @@
     "activities": [
       "Scheduled"
     ],
-    "accessibility_resources": [
+    "accessibility_support": [
       "Audio descriptions",
       "Transcripts"
     ],
