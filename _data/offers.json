@@ -59,10 +59,10 @@
     "duration": [
       "2 weeks"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2020"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "30 June 2021"
     ],
     "offer_link": [
@@ -136,10 +136,10 @@
     "duration": [
       "Approx 2 weeks"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2020"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "31 April 2022"
     ],
     "offer_link": [
@@ -211,7 +211,7 @@
     "duration": [
       "Not provided"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 January 2019"
     ],
     "offer_link": [
@@ -282,7 +282,7 @@
     "duration": [
       "2 weeks"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 January 2021"
     ],
     "offer_link": [
@@ -355,10 +355,10 @@
     "duration": [
       "60 days"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2021"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "31 December 2023"
     ],
     "offer_link": [
@@ -433,7 +433,7 @@
     "duration": [
       "2 days"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2020"
     ],
     "offer_link": [
@@ -508,10 +508,10 @@
     "duration": [
       "Self-paced"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 January 2021"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "30 June 2021"
     ],
     "offer_link": [
@@ -584,10 +584,10 @@
     "duration": [
       "6 weeks"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2020"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "30 June 2021"
     ],
     "offer_link": [
@@ -658,10 +658,10 @@
     "duration": [
       "8 weeks"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2021"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "31 April 2022"
     ],
     "offer_link": [
@@ -733,10 +733,10 @@
     "duration": [
       "1h 20m"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 January 2021"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "31 April 2022"
     ],
     "offer_link": [
@@ -798,8 +798,22 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "edx"
@@ -810,10 +824,10 @@
     "duration": [
       "10 weeks"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2020"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "31 December 2023"
     ],
     "offer_link": [
@@ -887,10 +901,10 @@
     "duration": [
       "6 weeks (2-4 hours per week)"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2020"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "30 June 2021"
     ],
     "offer_link": [
@@ -963,10 +977,10 @@
     "duration": [
       "Two 15-week semesters"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 January 2019"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "30 June 2021"
     ],
     "offer_link": [
@@ -1039,10 +1053,10 @@
     "duration": [
       "3 days"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2020"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "30 June 2021"
     ],
     "offer_link": [
@@ -1114,10 +1128,10 @@
     "duration": [
       "2 years"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2021"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "31 April 2022"
     ],
     "offer_link": [
@@ -1190,10 +1204,10 @@
     "duration": [
       "3 years"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 September 2020"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "31 December 2023"
     ],
     "offer_link": [
@@ -1264,10 +1278,10 @@
     "duration": [
       "30 hours"
     ],
-    "availability_start_date":[
+    "availability_start_date": [
       "01 January 2019"
     ],
-    "availability_end_date":[
+    "availability_end_date": [
       "31 December 2023"
     ],
     "offer_link": [
