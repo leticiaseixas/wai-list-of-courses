@@ -279,7 +279,7 @@ fieldset label:hover a{
 }
 
 fieldset label:hover a:hover{
-  color: var(--lt-off-white);
+  text-decoration: underline gold;
 }
 
 fieldset label:hover a:visited{
