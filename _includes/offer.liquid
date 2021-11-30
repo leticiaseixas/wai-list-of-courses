@@ -57,11 +57,7 @@ Cost
 : {{ offer.cost}}
 
 Availability
-: from {{ offer.availability_start_date}}
-{% if offer.availability_end_date %}
-to 
-{{ offer.availability_end_date }}
-{% endif %}
+: from {{ offer.availability_start_date}}{% if offer.availability_end_date %} to {{ offer.availability_end_date }}{% endif %}
 
 Website
 : <a href="{{ offer.offer_link}}" rel="external">{{ offer.offer_link}}</a>
