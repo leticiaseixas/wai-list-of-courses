@@ -270,3 +270,18 @@ details>div{
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+
+/* quick fix to link contrast - to better discuss */
+
+fieldset label:hover link{
+  color: var(--line-grey);
+}
+
+fieldset label:hover link:hover{
+  color: var(--trans-line-grey);
+}
+
+fieldset label:hover link:visited{
+  color: var(--cloudy);
+}
