@@ -48,7 +48,9 @@ Platform
 : {{ offer.platform}}
 
 Accessibility support
-: {{offer.accessibility_support | join: ", "}}
+{% for support in offer.accessiblity_support %}
+- {{support}}
+{% endfor %}
 
 Length
 : {{ offer.duration}}
@@ -57,7 +59,7 @@ Cost
 : {{ offer.cost}}
 
 Availability
-: from {{ offer.availability_start_date}}{% if offer.availability_end_date %} to {{ offer.availability_end_date }}{% endif %}
+: From {{ offer.availability_start_date}}{% if offer.availability_end_date %} to {{ offer.availability_end_date }}{% endif %}
 
 Website
 : <a href="{{ offer.offer_link}}" rel="external">{{ offer.offer_link}}</a>
