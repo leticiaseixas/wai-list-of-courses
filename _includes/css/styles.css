@@ -161,6 +161,10 @@ details dt::after {
   margin: 0 0.5em 0 0;
 }
 
+#offers-list dt ul {
+  margin-top: 3em;
+}
+
 .label-input {
   /* font-size: 1.25rem; */
   font-weight: 700;
