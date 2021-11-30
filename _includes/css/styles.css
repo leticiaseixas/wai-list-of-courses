@@ -161,7 +161,7 @@ details dt::after {
   margin: 0 0.5em 0 0;
 }
 
-#offers-list dt ul {
+#offers-list dd ul {
   margin-top: 3em;
 }
 
