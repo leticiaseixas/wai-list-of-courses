@@ -282,6 +282,3 @@ fieldset label:hover a:hover{
   text-decoration: underline gold;
 }
 
-fieldset label:hover a:visited{
-  color: var(--line-grey);
-}
