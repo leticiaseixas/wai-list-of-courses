@@ -8,7 +8,7 @@
 #### Details
 {% include excol.html type="middle"%}
 
-Type
+Type of resource
 : {{ offer.type }}
 
 Audience
@@ -41,20 +41,23 @@ Country
 Format
 : {{ offer.format}}
 
-Learning
+Activities
 : {{ offer.learning | join: ", "}}
 
 Platform
 : {{ offer.platform}}
 
-Accessibility resources
+Accessibility support
 : {{offer.accessibility_resources | join: ", "}}
 
-Duration
+Length
 : {{ offer.duration}}
 
 Cost
 : {{ offer.cost}}
+
+Availability
+: {{ offer.availability}}
 
 Website
 : <a href="{{ offer.offer_link}}" rel="external">{{ offer.offer_link}}</a>
