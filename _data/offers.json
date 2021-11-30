@@ -47,8 +47,22 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -124,8 +138,22 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Udacity"
@@ -199,8 +227,26 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Real-time captioning"
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "Not provided"
@@ -270,8 +316,22 @@
       "Unscheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -343,8 +403,22 @@
       "Unscheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Canvas"
@@ -421,8 +495,26 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Real-time captioning"
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "edx"
@@ -496,8 +588,22 @@
       "Unscheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Canvas"
@@ -572,8 +678,22 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "International sign interpretation",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -646,8 +766,22 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      }
     ],
     "platform": [
       "ARC"
@@ -721,8 +855,22 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "text-and-visuals-big-enough",
+        "name": "Text and important visuals big enough to be read even from the back of the room"
+      },
+      {
+        "id": "easy-to-read-font-face",
+        "name": "Easy-to-read font face"
+      },
+      {
+        "id": "sufficient-contrast",
+        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">contrast evaluation tools</a>"
+      },
+      {
+        "id": "motions-or-animations",
+        "name": "Reduced use of motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
+      }
     ],
     "platform": [
       "LinkedIn"
@@ -889,8 +1037,22 @@
       "Unscheduled"
     ],
     "accessibility_support": [
-      "International sign interpretation",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "edx"
@@ -965,8 +1127,22 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "International sign interpretation",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -1041,8 +1217,26 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "edx"
@@ -1116,8 +1310,26 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Captioning",
-      "Transcripts"
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "Not provided"
@@ -1192,8 +1404,26 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Captioning",
-      "Transcripts"
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "Not provided"
@@ -1266,8 +1496,22 @@
       "Scheduled"
     ],
     "accessibility_support": [
-      "Audio descriptions",
-      "Transcripts"
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
