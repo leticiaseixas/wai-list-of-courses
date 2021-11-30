@@ -11,7 +11,7 @@
       "In this course, you will learn about the standards in place to guide developers in creating a web that is accessible to all users as well as techniques to help bring your projects up to those standards."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "None"
@@ -43,9 +43,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -59,6 +58,18 @@
     ],
     "duration": [
       "2 weeks"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -85,7 +96,7 @@
       "In this course, you will get hands-on experience making web applications accessible."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "HTML, CSS, Javascript"
@@ -115,8 +126,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -130,6 +141,18 @@
     ],
     "duration": [
       "Approx 2 weeks"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -182,10 +205,10 @@
       "us"
     ],
     "format": [
-      "Not provided"
+      "Blended"
     ],
-    "learning": [
-      "Not provided"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -199,6 +222,12 @@
     ],
     "duration": [
       "Not provided"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -225,7 +254,7 @@
       "This credential is intendend for accessibility professionals who are expected to evaluate the accessibility of existing content according to technical standards and guidelines."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Principles of Web Accessibility"
@@ -252,9 +281,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -268,6 +296,12 @@
     ],
     "duration": [
       "2 weeks"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -294,7 +328,7 @@
       "This online training covers creating accessible document content and structure, evaluating the accessibility of documents, and optimizing the accessibility of PDFs."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "None"
@@ -323,9 +357,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -339,6 +372,12 @@
     ],
     "duration": [
       "60 days"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -365,7 +404,7 @@
       "Training session from accessibility principles to advanced accessibility techniques."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "A basic understanding of HTML is recommended"
@@ -395,9 +434,9 @@
     "format": [
       "Face-to-face"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled",
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -411,6 +450,12 @@
     ],
     "duration": [
       "2 days"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -437,7 +482,7 @@
       "This resource provides an introduction to online course accessibility for faculty, staff, and instructional designers."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Basic knowledge of disability and computer applications"
@@ -468,8 +513,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided"
+    "activities": [
+      "Unscheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -483,6 +528,12 @@
     ],
     "duration": [
       "Self-paced"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -509,7 +560,7 @@
       "This resource provides the training and resources for designing, building, and testing digital systems for your organization with accessibility in mind."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Basic knowledge of disability and computer applications"
@@ -538,8 +589,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "International sign interpretation",
@@ -553,6 +604,12 @@
     ],
     "duration": [
       "6 weeks"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -579,7 +636,7 @@
       "Resource to train your staff in accessibility."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "None"
@@ -605,9 +662,9 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled",
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -621,6 +678,12 @@
     ],
     "duration": [
       "8 weeks"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -647,7 +710,7 @@
       "This course provides the core concepts of accessibility as they apply to UX design, including an overview of the assistive technology visitors may use to access your projects."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Basic knowledge in web design"
@@ -674,9 +737,9 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled",
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -690,6 +753,12 @@
     ],
     "duration": [
       "1h 20m"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -746,9 +815,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided",
-      "Asynchronous"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -762,6 +830,12 @@
     ],
     "duration": [
       "10 weeks"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -788,7 +862,7 @@
       "In this course you will learn how to identify and design solutions for ICT accessibility for people with disabilities."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "None"
@@ -818,9 +892,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled"
     ],
     "accessibility_resources": [
       "International sign interpretation",
@@ -834,6 +907,12 @@
     ],
     "duration": [
       "6 weeks (2-4 hours per week)"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -889,10 +968,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided",
-      "Asynchronous",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "International sign interpretation",
@@ -906,6 +983,12 @@
     ],
     "duration": [
       "Two 15-week semesters"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -932,7 +1015,7 @@
       "Online digital badging courses on IT Accessibility."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Accessibility 101"
@@ -961,9 +1044,8 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -977,6 +1059,12 @@
     ],
     "duration": [
       "3 days"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -1031,9 +1119,8 @@
     "format": [
       "Hybrid"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Captioning",
@@ -1047,6 +1134,12 @@
     ],
     "duration": [
       "2 years"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -1073,7 +1166,7 @@
       "This Certificate will help you to sit for certification examinations as an Accessibility Specialist."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Basic knowledge of disability and computer applications"
@@ -1102,9 +1195,8 @@
     "format": [
       "Hybrid"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Captioning",
@@ -1118,6 +1210,12 @@
     ],
     "duration": [
       "3 years"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
@@ -1144,7 +1242,7 @@
       "This course focus is on developing expertise using WAI-ARIA."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "HTML and Javascript experience"
@@ -1171,9 +1269,8 @@
     "format": [
       "Face-to-face"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
     "accessibility_resources": [
       "Audio descriptions",
@@ -1187,6 +1284,12 @@
     ],
     "duration": [
       "30 hours"
+    ],
+    "offer_availability_start_date":[
+      "2020-09-01"
+    ],
+    "offer_availability_end_date":[
+      "2021-06-30"
     ],
     "offer_link": [
       "www.link.com"
