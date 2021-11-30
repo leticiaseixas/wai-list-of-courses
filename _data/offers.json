@@ -59,16 +59,16 @@
     "duration": [
       "2 weeks"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -142,16 +142,16 @@
     "duration": [
       "Approx 2 weeks"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -223,10 +223,10 @@
     "duration": [
       "Not provided"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -297,10 +297,10 @@
     "duration": [
       "2 weeks"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -373,10 +373,10 @@
     "duration": [
       "60 days"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -451,10 +451,10 @@
     "duration": [
       "2 days"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -529,10 +529,10 @@
     "duration": [
       "Self-paced"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -605,10 +605,10 @@
     "duration": [
       "6 weeks"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -679,10 +679,10 @@
     "duration": [
       "8 weeks"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -754,10 +754,10 @@
     "duration": [
       "1h 20m"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -831,10 +831,10 @@
     "duration": [
       "10 weeks"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -908,10 +908,10 @@
     "duration": [
       "6 weeks (2-4 hours per week)"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -984,10 +984,10 @@
     "duration": [
       "Two 15-week semesters"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -1060,10 +1060,10 @@
     "duration": [
       "3 days"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -1135,10 +1135,10 @@
     "duration": [
       "2 years"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -1211,10 +1211,10 @@
     "duration": [
       "3 years"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
@@ -1285,10 +1285,10 @@
     "duration": [
       "30 hours"
     ],
-    "offer_availability_start_date":[
+    "availability_start_date":[
       "2020-09-01"
     ],
-    "offer_availability_end_date":[
+    "availability_end_date":[
       "2021-06-30"
     ],
     "offer_link": [
