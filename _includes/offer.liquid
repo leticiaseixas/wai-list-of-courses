@@ -48,8 +48,8 @@ Platform
 : {{ offer.platform}}
 
 Accessibility support
-{% for support in offer.accessiblity_support %}
-- {{support}}
+: {% for support in offer.accessiblity_support %}
+- {{support.name}}
 {% endfor %}
 
 Length
