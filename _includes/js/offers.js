@@ -1,4 +1,4 @@
-console.log('{{ site.data.offers | json}}');
+console.log("{{ site.data.offers | json}}");
 
 
 const filterForm = document.querySelector('[data-filter-form]');
