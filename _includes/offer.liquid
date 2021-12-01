@@ -48,9 +48,8 @@ Platform
 : {{ offer.platform}}
 
 Accessibility support
-{% capture asup%}{{support.name}}{%endcapture%}
 : {% for support in offer.accessibility_support %} 
-* {{asup}}{% endfor %}
+* {% raw %}{{{ support.name }}}{% endraw %}{% endfor %}
 
 Length
 : {{ offer.duration}}
