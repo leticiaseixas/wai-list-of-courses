@@ -110,19 +110,19 @@ if (filterForm) {
     })
 
     if (filtersOn.length === 0) {
-      totalOffers.innerText = "Showing " + newResults.length + " offers";
+      totalOffers.innerText = "Showing " + newResults.length + " results";
       hideClearButton(true);
     }
     else if (newResults.length > 0) {
       if (newResults.length === 1)
-        totalOffers.innerText = "Showing " + newResults.length + " offer matching the following criteria: ";
+        totalOffers.innerText = "Showing " + newResults.length + " result matching the following criteria: ";
       else
-        totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: ";
+        totalOffers.innerText = "Showing " + newResults.length + " results matching the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
       hideClearButton(false);
     }
     else {
-      totalOffers.innerText = "Sorry, but no offers match the following criteria: ";
+      totalOffers.innerText = "Sorry, but no results match the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
       hideClearButton(false);
     }
