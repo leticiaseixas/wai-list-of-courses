@@ -25,7 +25,7 @@ Topics
   
 WAI Curricula module
 {% if offer.curricula_link %}
-: <a href="{{ offer.curricula_link}}" rel="external">{{ offer.curricula_correspondence }}</a>
+: {{ offer.curricula_correspondence | link_to: offer.curricula_link }}
 {% else %}
 : Not provided
 {% endif %}
