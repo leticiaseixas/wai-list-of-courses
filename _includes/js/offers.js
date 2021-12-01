@@ -1,3 +1,10 @@
+
+str = '{{ site.data.offers | jsonify}}';
+console.log(str);
+
+str2 = JSON.parse(str);
+console.log(str2);
+
 const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
 
