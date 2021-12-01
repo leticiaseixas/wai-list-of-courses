@@ -1,5 +1,5 @@
 
-str = '{{ site.data.offers | jsonify}}';
+str = '{{ site.data.offers | json}}';
 console.log(str);
 
 str2 = JSON.parse(str);
