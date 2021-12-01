@@ -1,13 +1,5 @@
-
-str = '{{ site.data.offers | jsonify }}';
-console.log(str);
-
-str2 = JSON.parse(str);
-console.log(str2);
-
 const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
-
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
@@ -173,24 +165,27 @@ if (filterForm) {
 
 }
 
-const divSelectLang = document.getElementById("divSelectLang");
-const fieldLang = document.getElementsByClassName("field-language")[0];
-document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang,fieldLang)});
+if (document.getElementById("form-submit-an-offer")) {
 
-const divSelectCountry = document.getElementById("divSelectCountry");
-const fieldCountry = document.getElementsByClassName("field-country")[0];
-document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry,fieldCountry)});
+  const divSelectLang = document.getElementById("divSelectLang");
+  const fieldLang = document.getElementsByClassName("field-language")[0];
+  document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang, fieldLang) });
 
-const divInputPrerequisite = document.getElementById("divInputPrerequisite");
-const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
-document.getElementsByClassName("button-new-prerequisite")[0].addEventListener('click', e => { addNewField(divInputPrerequisite,fieldPrequisite)});
+  const divSelectCountry = document.getElementById("divSelectCountry");
+  const fieldCountry = document.getElementsByClassName("field-country")[0];
+  document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry, fieldCountry) });
 
-const divInputTopic = document.getElementById("divInputTopic");
-const fieldTopic = document.getElementsByClassName("field-topic")[0];
-document.getElementsByClassName("button-new-topic")[0].addEventListener('click', e => { addNewField(divInputTopic,fieldTopic)});
+  const divInputPrerequisite = document.getElementById("divInputPrerequisite");
+  const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
+  document.getElementsByClassName("button-new-prerequisite")[0].addEventListener('click', e => { addNewField(divInputPrerequisite, fieldPrequisite) });
+
+  const divInputTopic = document.getElementById("divInputTopic");
+  const fieldTopic = document.getElementsByClassName("field-topic")[0];
+  document.getElementsByClassName("button-new-topic")[0].addEventListener('click', e => { addNewField(divInputTopic, fieldTopic) });
 
 
 
-function addNewField(divToAppend, fieldToAppend){
-  divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
+  function addNewField(divToAppend, fieldToAppend) {
+    divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
+  }
 }
