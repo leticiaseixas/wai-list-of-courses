@@ -282,3 +282,6 @@ fieldset label:hover a:hover{
   text-decoration: underline gold;
 }
 
+.small{
+  cursor: pointer;
+}
