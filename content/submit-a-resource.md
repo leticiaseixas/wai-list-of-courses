@@ -55,7 +55,7 @@ main > header { grid-column: 4 / span 4; }
               <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
           {% endfor %}
       </select>
-      {% include_cached button.html type="fake" label="Add country" class="fake small button-new-country" %}
+      {% include_cached button.html type="fake" label="Add new country" class="fake small button-new-country" %}
   </div>
 
 
@@ -155,14 +155,14 @@ main > header { grid-column: 4 / span 4; }
       <label for="offer-prerequisites" class="label-input">Prerequisites</label>
       <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
       <input type="text" id="prerequisites1" class="field-prerequisite">
-      {% include_cached button.html type="fake" label="Add prerequisite" class="small fake button-new-prerequisite" %}
+      {% include_cached button.html type="fake" label="Add new prerequisite" class="small fake button-new-prerequisite" %}
   </div>
 
   <div class="field" id="divInputTopic">
       <label for="offer-topics" class="label-input" required>Topics (Required)</label>
       <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
       <input type="text" id="topics1" class="field-topic">
-      {% include_cached button.html type="fake" label="Add topic" class="small fake button-new-topic" %}
+      {% include_cached button.html type="fake" label="Add new topic" class="small fake button-new-topic" %}
   </div>
 
   <fieldset id="offer-wai-curricula">
@@ -181,7 +181,7 @@ main > header { grid-column: 4 / span 4; }
               <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
           {% endfor %}
       </select>
-      {% include_cached button.html type="fake" label="Add language" class="small fake button-new-lang" %}
+      {% include_cached button.html type="fake" label="Add new language" class="small fake button-new-lang" %}
   </div>
 
   <fieldset class="field" id="offer-format">
