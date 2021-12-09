@@ -161,7 +161,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field" id="divInputTopic">
       <label for="offer-topics" class="label-input" required>Topics (Required)</label>
       <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
-      <input type="text" id="topics" class="field-topic">
+      <input type="text" id="topics1" class="field-topic">
       {% include_cached button.html label="Add topic" class="small button-new-topic" %}
   </div>
 
@@ -175,7 +175,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field" id="divSelectLang">
       <label for="offer-language" class="label-input">Language (Required)</label>
       <p class="expl">Indicate in which language or languages this resource is provided.</p>
-      <select name="language" id="language" class="field-language select-form" required> 
+      <select name="language" id="language1" class="field-language select-form" required> 
           <option value=""></option>
           {% for language in site.data.lang %}
               <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
