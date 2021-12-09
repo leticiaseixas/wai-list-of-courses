@@ -109,27 +109,27 @@ main > header { grid-column: 4 / span 4; }
   <fieldset class="field" id="offer-audience">
     <legend class="label">Audience (Required)</legend>
     <div class="radio-field">
-      <input type="checkbox" name="offer-audience" id="offer-audience-content-author" value="offer-audience-content-author" required>
+      <input type="checkbox" name="offer-audience" id="offer-audience-content-author" value="offer-audience-content-author">
       <label for="offer-audience-content-author">Content Author</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="offer-audience" id="offer-audience-designer" value="offer-audience-designer" required>
+      <input type="checkbox" name="offer-audience" id="offer-audience-designer" value="offer-audience-designer">
       <label for="offer-audience-designer">Designer</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="offer-audience" id="offer-audience-developer" value="offer-audience-developer" required>
+      <input type="checkbox" name="offer-audience" id="offer-audience-developer" value="offer-audience-developer">
       <label for="offer-audience-developer">Developer</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="offer-audience" id="offer-audience-manager" value="offer-audience-manager" required>
+      <input type="checkbox" name="offer-audience" id="offer-audience-manager" value="offer-audience-manager">
       <label for="offer-audience-manager">Manager</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="offer-audience" id="offer-audience-tester" value="offer-audience-tester" required>
+      <input type="checkbox" name="offer-audience" id="offer-audience-tester" value="offer-audience-tester">
       <label for="offer-audience-tester">Tester</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="offer-audience" id="offer-audience-other" value="offer-audience-other" required>
+      <input type="checkbox" name="offer-audience" id="offer-audience-other" value="offer-audience-other">
       <label for="offer-audience-other">Other</label>
     </div>
   </fieldset>
@@ -138,7 +138,7 @@ main > header { grid-column: 4 / span 4; }
     <legend class="label">Level (Required)</legend>
     <p class="expl">Indicate the level of digital accessibility proficiency required.</p>
     <div class="radio-field">
-      <input type="radio" name="offer-level" id="offer-level-basic" required>
+      <input type="radio" name="offer-level" id="offer-level-basic">
       <label for="offer-level-basic">Basic</label>
     </div>
     <div class="radio-field">
@@ -235,7 +235,7 @@ main > header { grid-column: 4 / span 4; }
       <div class="length-container">
         <div class="length-value">
           <label for="offer-value-duration">Value</label>
-          <input type="number" id="offer-value-duration" required>
+          <input type="number" id="offer-value-duration" min="0" required>
         </div>
         <div class="length-unit">
           <label for="offer-unit-duration">Unit</label>
