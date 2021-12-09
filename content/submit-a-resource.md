@@ -225,7 +225,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset id="offer-accessibility-support">
     <legend><h3>Accessibility support</h3></legend>
-    <p class="expl">Indicate what relevant accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.</p>
+    <p class="expl">Indicate what **relevant** accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.</p>
     {% include accessibility-support.liquid %}
   </fieldset>
 
