@@ -51,6 +51,10 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
+          {% assign all_categories = site.data.countries | map: "name" %}
+            {% for item in all_categories %}
+            - {{ item }}
+            {% endfor %}
           {% for country in site.data.countries %}
               <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
           {% endfor %}
