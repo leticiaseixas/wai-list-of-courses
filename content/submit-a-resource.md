@@ -46,11 +46,15 @@ main > header { grid-column: 4 / span 4; }
      <input type="email" id="submitter-email" required>
   </div>
 {% assign newCountry = "" | split: "" %}
+{% assign c = "" | split: "" %}
 {% for country in site.data.countries %}
   {% assign c = country [0] | concat:country[1] %}
-  {% assign newCountry = newCountry | push: country[1] %}
+  {% assign newCountry = newCountry | push: country[0] %}
+{% assign newCountry = newCountry | push: country[1] %}  
 {% endfor %}
-{{ inspect c}}
+{{ c  | inspect }}
+<br/>
+{{ newCountry | inspect }}
 {% assign newCountry = newCountry | sort: "name" %}
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
