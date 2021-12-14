@@ -46,31 +46,6 @@ main > header { grid-column: 4 / span 4; }
      <input type="email" id="submitter-email" required>
   </div>
 
-{% assign orderedCountries = "" | split: "," %}
-{% for country in site.data.countries %}
-  {% assign nCountry = "" %}
-  {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
-  {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
-  {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
-  {% assign nCountry =  nCountry | split: "," %}  
-  {% assign orderedCountries = orderedCountries | push: nCountry %}
-  
-{% endfor %}
-{% assign orderedCountries = orderedCountries | sort %}
-{{ orderedCountries | inspect }}
-  <div class="field" id="divSelectCountry">
-      <label for="offer-country" class="label-input">Country (Required)</label>
-      <p class="expl">Indicate by which country or countries this resource is provided.</p>
-      <select name="country" id="country" class="field-country select-form" required>
-          <option value=""></option>
-          {% for country in orderedCountries %}
-              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
-          {% endfor %}
-      </select>
-      {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
-  </div>
-
-
   <h2 id="the-resource">About the resource</h2>
   <p>Provide some information about the course, training, or certification. This information will be publicly shared.</p>
 
@@ -81,6 +56,27 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="offer-provider" class="label-input">Provider (Required)</label>
       <input type="text" id="offer-provider" required>
+  </div>
+{% assign orderedCountries = "" | split: "," %}
+{% for country in site.data.countries %}
+  {% assign nCountry = "" %}
+  {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
+  {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
+  {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
+  {% assign nCountry =  nCountry | split: "," %}  
+  {% assign orderedCountries = orderedCountries | push: nCountry %}
+{% endfor %}
+{% assign orderedCountries = orderedCountries | sort %}
+  <div class="field" id="divSelectCountry">
+      <label for="offer-country" class="label-input">Country (Required)</label>
+      <p class="expl">Indicate by which country or countries this resource is provided.</p>
+      <select name="country" id="country" class="field-country select-form" required>
+          <option value=""></option>
+          {% for country in orderedCountries %}
+              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+          {% endfor %}
+      </select>
+      {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
   </div>
 
   <div class="field">
@@ -180,6 +176,9 @@ main > header { grid-column: 4 / span 4; }
   <fieldset id="offer-wai-curricula">
     <legend><h3>WAI Curricula module{% include resource-link.html label="Curricula on Web Accessibility"
     href="https://www.w3.org/WAI/curricula/" %}</h3></legend>
+    <p class="expl">  
+    WAI Curricula is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>
+    </p>
     <p class="expl">If applicable, indicate the WAI Curricula modules covered.</p>
       {% include wai-curricula.liquid %}
   </fieldset>
@@ -295,7 +294,7 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-reviews-page" class="label-input">Reviews page</label>
-      <p class="expl">Provide the web page containing consumer reviews about this resource.</p>
+      <p class="expl">Provide the web page containing users reviews about this resource.</p>
       <input type="url" name="offer-reviews-page" id="offer-reviews-page">
   </div>
   <div class="field">
