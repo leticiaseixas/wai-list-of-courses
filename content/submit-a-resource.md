@@ -53,7 +53,7 @@ main > header { grid-column: 4 / span 4; }
   {% assign c = country[0] | concat: country[1]%}
 {% endfor %}
 {% assign newCountry = newCountry | sort: "name" %}
-{{ newCountry | c }}
+{{ c | inspect }}
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
