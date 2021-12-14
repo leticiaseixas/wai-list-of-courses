@@ -45,16 +45,15 @@ main > header { grid-column: 4 / span 4; }
      <label for="submitter-email" class="label-input">Email (Required)</label>
      <input type="email" id="submitter-email" required>
   </div>
-  
+{% assign all_categories = site.data.countries | map: "name" %}
+{% for item in all_categories %}
+- {{ item }}
+{% endfor %}
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
-          {% assign all_categories = site.data.countries | map: "name" %}
-            {% for item in all_categories %}
-            - {{ item }}
-            {% endfor %}
           {% for country in site.data.countries %}
               <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
           {% endfor %}
@@ -63,7 +62,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
 
 
-  <h2 id="the-tool">About the resource</h2>
+  <h2 id="the-resource">About the resource</h2>
   <p>Provide some information about the course, training, or certification. This information will be publicly shared.</p>
 
   <div class="field">
