@@ -51,7 +51,7 @@ main > header { grid-column: 4 / span 4; }
   {% assign newCountry = newCountry | push: country[0] %}
   {% assign newCountry = newCountry | push: country[1] %}  
   {% assign countryId = country[0] | split:"," %}
-  {% assign countryName = country[2] | split:"," %}
+  {% assign countryName = country[1] | split:"," %}
   {% assign c = countryId | concat: countryName %}
 {% endfor %}
 {% assign newCountry = newCountry | sort: "name" %}
@@ -61,7 +61,7 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
-          {% for country in newCountry %}
+          {% for country in site.data.countries %}
               <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
           {% endfor %}
       </select>
