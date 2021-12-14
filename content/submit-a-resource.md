@@ -54,8 +54,7 @@ main > header { grid-column: 4 / span 4; }
   {{ assign nCountry = nCountry | split: "," }}  
   {{ nCountry }}
 {% endfor %}
-{% assign n = "" | split: "" %}
-{% n %}
+
 
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
