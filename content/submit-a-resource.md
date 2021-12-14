@@ -48,7 +48,7 @@ main > header { grid-column: 4 / span 4; }
 {% assign newCountry = "" | split: "" %}
 {% for country in site.data.countries %}
   {% assign newCountry = newCountry | push: country[0] %}
-{% assign newCountry = newCountry | push: country[1] %}  
+  {% assign newCountry = newCountry | push: country[1] %}  
 {% endfor %}
 {% assign newCountry = newCountry | sort: "name" %}
 {{ newCountry | inspect }}
@@ -58,7 +58,7 @@ main > header { grid-column: 4 / span 4; }
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
           {% for country in newCountry %}
-              <option value="{{ country.id }}">{{ country.name }} ({{country.nativeName}})</option>
+              <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
           {% endfor %}
       </select>
       {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
