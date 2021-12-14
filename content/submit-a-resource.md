@@ -45,20 +45,16 @@ main > header { grid-column: 4 / span 4; }
      <label for="submitter-email" class="label-input">Email (Required)</label>
      <input type="email" id="submitter-email" required>
   </div>
-{% assign newCountry = "" | split: "" %}
+
 {% assign c = "" | split: "" %}
 {% assign n = "" | split: "" %}
 {% for country in site.data.countries %}
-  {% assign newCountry = newCountry | push: country[0] %}
-  {% assign newCountry = newCountry | push: country[1] %}  
   {% assign countryId = country[0] | split:"," %}
-  {% assign countryName = country[1].name | split:"," %}
-  {% assign countryNativeName = country[1].nativeName | split:"," %}
-  {% assign c = countryId | concat: countryName  %}
-  {% assign c = c | concat: countryNativeName %}
+  
+  {% capture  newInput %} {{country[0]}},{% country[1] | join ',' %}  {% endcapture %}
+  {% assign c =  newInput |split %}
   {% assign n = n | push: c %}
 {% endfor %}
-{% assign n = n | sort: "name" %}
 {{ n | inspect }}
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
