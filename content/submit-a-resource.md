@@ -51,9 +51,9 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
-          {% assign countries = site.data.countries | order_by: 'name' %}
+          {% assign countries = site.data.countries | sort: 'name' %}
           {% for country in countries %}
-              <option value="{{ alpha2Code }}">{{ name }} ({{nativeName}})</option>
+              <option value="{{ country.alpha2Code }}">{{ country.name }} ({{country.nativeName}})</option>
           {% endfor %}
       </select>
       {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
