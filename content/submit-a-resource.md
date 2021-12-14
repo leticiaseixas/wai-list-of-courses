@@ -46,24 +46,24 @@ main > header { grid-column: 4 / span 4; }
      <input type="email" id="submitter-email" required>
   </div>
 
-{% assign n = "" | split: "," %}
+{% assign orderedCountries = "" | split: "," %}
 {% for country in site.data.countries %}
   {% assign nCountry = "" %}
   {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
   {% assign nCountry =  nCountry | split: "," %}  
-  {% assign n = n | push: nCountry %}
+  {% assign orderedCountries = orderedCountries | push: nCountry %}
 {% endfor %}
-{{ n | inspect }}
+{{ orderedCountries | inspect }}
 
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
-          {% for country in site.data.countries %}
-              <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
+          {% for country in orderedCountries %}
+              <option value="{{ country[0] }}">{{ country[1] }} ({{country[2]}})</option>
           {% endfor %}
       </select>
       {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
