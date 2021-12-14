@@ -49,16 +49,13 @@ main > header { grid-column: 4 / span 4; }
 {% for country in site.data.countries %}
   {% assign newCountry = newCountry | push: country[1] %}
 {% endfor %}
-DEBUG : {{ newCountry | inspect }}
 {% assign newCountry = newCountry | sort: "name" %}
-DEBUG : {{ newCountry | inspect }}
-
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
-          {% for country in site.data.countries %}
+          {% for country in newCountry %}
               <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
           {% endfor %}
       </select>
