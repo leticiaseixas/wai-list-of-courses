@@ -51,7 +51,7 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
       <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
-          {% for country in site.data.countries %}
+          {% for country in (site.data.countries | order_by: 'name' %}
               <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
           {% endfor %}
       </select>
@@ -220,7 +220,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="offer-platform" class="label-input">Platform</label>
       <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided.</p>
-      <input type="text" id="platform">
+      <input type="text" id="offer-platform">
   </div>
   
   <fieldset id="offer-accessibility-support">
