@@ -46,16 +46,14 @@ main > header { grid-column: 4 / span 4; }
      <input type="email" id="submitter-email" required>
   </div>
 
-{% assign c = "" | split: "" %}
-{% assign n = "" | split: "" %}
-{% for country in site.data.countries %}
-  {% assign names = country[1] | join: "," %}
-  {{ assign names = names | split: "," }}
-  {% capture  newInput %} {{country[0]}},{{names}} {% endcapture %}
-  {% assign c =  newInput | split: "," %}
-  {% assign n = n | push: c %}
-{% endfor %}
-{{ n | inspect }}
+{% assign nCountry = "" %}
+    {% for country in site.data.countries %}
+      {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
+      {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
+      {% assign nCountry =  nCountry | append: country[0].nativeName | append: ',' %} 
+      {{ nCountry }}  
+    {% endfor %}
+
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
