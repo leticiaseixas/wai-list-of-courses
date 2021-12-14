@@ -51,7 +51,7 @@ main > header { grid-column: 4 / span 4; }
   {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
-  {{ assign nCountry = nCountry | split: "," }}  
+  {% assign nCountry =  nCountry | split: "," %}  
   {{ nCountry }}
 {% endfor %}
 
