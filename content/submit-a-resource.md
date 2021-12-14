@@ -47,12 +47,14 @@ main > header { grid-column: 4 / span 4; }
   </div>
 {% assign newCountry = "" | split: "" %}
 {% assign c = "" | split: "" %}
+{% assign n = "" | split: "" %}
 {% for country in site.data.countries %}
   {% assign newCountry = newCountry | push: country[0] %}
   {% assign newCountry = newCountry | push: country[1] %}  
   {% assign countryId = country[0] | split:"," %}
   {% assign countryName = country[1] | split:"," %}
   {% assign c = countryId | concat: countryName %}
+  {% assign n = n | push: c %}
 {% endfor %}
 {% assign newCountry = newCountry | sort: "name" %}
 {{ c | inspect }}
