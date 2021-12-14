@@ -532,7 +532,7 @@
     {
         "name": "Ivory Coast",
         "alpha2Code": "CI",
-        "nativeName": "Côte d'Ivoire"
+        "nativeName": "Côte d`Ivoire"
     },
     {
         "name": "Iran (Islamic Republic of)",
@@ -610,7 +610,7 @@
         "nativeName": "Кыргызстан"
     },
     {
-        "name": "Lao People's Democratic Republic",
+        "name": "Lao People`s Democratic Republic",
         "alpha2Code": "LA",
         "nativeName": "ສາທາລະນະລັດ ປະຊາທິປະໄຕ ປະຊາຊົນລາວ"
     },
@@ -825,7 +825,7 @@
         "nativeName": "Norfolk Island"
     },
     {
-        "name": "Korea (Democratic People's Republic of)",
+        "name": "Korea (Democratic People`s Republic of)",
         "alpha2Code": "KP",
         "nativeName": "북한"
     },
