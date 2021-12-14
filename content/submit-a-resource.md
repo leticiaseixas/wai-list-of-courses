@@ -53,7 +53,7 @@ main > header { grid-column: 4 / span 4; }
           <option value=""></option>
           {% assign countries = site.data.countries | order_by: 'name' %}
           {% for country in countries %}
-              <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
+              <option value="{{ alpha2Code }}">{{ name }} ({{nativeName}})</option>
           {% endfor %}
       </select>
       {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
