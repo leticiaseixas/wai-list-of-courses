@@ -532,7 +532,7 @@
     {
         "name": "Ivory Coast",
         "alpha2Code": "CI",
-        "nativeName": "Côte d'Ivoire"
+        "nativeName": "Côte d\u0027Ivoire"
     },
     {
         "name": "Iran (Islamic Republic of)",
