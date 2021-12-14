@@ -50,7 +50,7 @@ main > header { grid-column: 4 / span 4; }
 {% for country in site.data.countries %}
   {% assign newCountry = newCountry | push: country[0] %}
   {% assign newCountry = newCountry | push: country[1] %}  
-  {% assign c = country[0] | concat: country[1]%}
+  {% assign c = country[0] | split:"" | concat: country[1]%}
 {% endfor %}
 {% assign newCountry = newCountry | sort: "name" %}
 {{ c | inspect }}
