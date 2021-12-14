@@ -2,7 +2,7 @@ const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
-const jsonCountry = '{{ site.data.countries | json }}';
+const jsonCountry = ('{{ site.data.countries | json }}').replace(/[\/\(\)\']/g, "&apos;");
 //const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}'.replace(/[\/\(\)\']/g, "&apos;"));
 
 
