@@ -52,11 +52,12 @@ main > header { grid-column: 4 / span 4; }
   {% assign newCountry = newCountry | push: country[0] %}
   {% assign newCountry = newCountry | push: country[1] %}  
   {% assign countryId = country[0] | split:"," %}
-  {% assign countryName = country[1] | split:"," %}
-  {% assign c = countryId | concat: countryName %}
+  {% assign countryName = country[1].name | split:"," %}
+  {% assign countryNativeName = country[1].nativeName | split:"," %}
+  {% assign c = countryId | concat: countryName | concat: countryNativeName%}
   {% assign n = n | push: c %}
 {% endfor %}
-{% assign newCountry = newCountry | sort: "name" %}
+{% assign n = n | sort: "name" %}
 {{ n | inspect }}
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
