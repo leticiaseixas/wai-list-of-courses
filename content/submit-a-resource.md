@@ -49,9 +49,10 @@ main > header { grid-column: 4 / span 4; }
 {% assign c = "" | split: "" %}
 {% assign n = "" | split: "" %}
 {% for country in site.data.countries %}
-  {% capture  names %} {% country[1] | join: "," %} {% endcapture %}
+  {% assign names = country[1] | join: "," %}
+  {{ assign names = names | split: "," }}
   {% capture  newInput %} {{country[0]}},{{names}} {% endcapture %}
-  {% assign c =  newInput | split: ", " %}
+  {% assign c =  newInput | split: "," %}
   {% assign n = n | push: c %}
 {% endfor %}
 {{ n | inspect }}
