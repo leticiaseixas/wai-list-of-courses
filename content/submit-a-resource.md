@@ -47,12 +47,15 @@ main > header { grid-column: 4 / span 4; }
   </div>
 
 {% assign nCountry = "" %}
-    {% for country in site.data.countries %}
-      {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
-      {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
-      {% assign nCountry =  nCountry | append: country[0].nativeName | append: ',' %} 
-      {{ nCountry }}  
-    {% endfor %}
+{% for country in site.data.countries %}
+  {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
+  {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
+  {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
+  {{ assign nCountry = nCountry | split: "," }}  
+  {{ nCountry }}
+{% endfor %}
+{% assign n = "" | split: "" %}
+{% n %}
 
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
