@@ -51,7 +51,8 @@ main > header { grid-column: 4 / span 4; }
   {% assign newCountry = newCountry | push: country[0] %}
   {% assign newCountry = newCountry | push: country[1] %}  
   {% assign countryId = country[0] | split:"," %}
-  {% assign c = countryId | concat: country[1] %}
+  {% assign countryName = country[2] | split:"," %}
+  {% assign c = countryId | concat: countryName %}
 {% endfor %}
 {% assign newCountry = newCountry | sort: "name" %}
 {{ c | inspect }}
