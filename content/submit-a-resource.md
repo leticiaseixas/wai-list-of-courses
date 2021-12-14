@@ -56,8 +56,8 @@ main > header { grid-column: 4 / span 4; }
   {% assign orderedCountries = orderedCountries | push: nCountry %}
   
 {% endfor %}
-{{ orderedCountries | sort }}
-{% orderedCountries | inspect %}
+{% orderedCountries | sort %}
+{{ orderedCountries | inspect }}
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
