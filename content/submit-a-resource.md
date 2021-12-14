@@ -46,7 +46,7 @@ main > header { grid-column: 4 / span 4; }
      <input type="email" id="submitter-email" required>
   </div>
 
-{% assign n = "" | split: "" %}
+{% assign n = "" | split: "," %}
 {% for country in site.data.countries %}
   {% assign nCountry = "" %}
   {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
