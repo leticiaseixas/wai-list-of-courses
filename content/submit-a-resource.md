@@ -45,9 +45,9 @@ main > header { grid-column: 4 / span 4; }
      <label for="submitter-email" class="label-input">Email (Required)</label>
      <input type="email" id="submitter-email" required>
   </div>
-{% assign all_categories = site.data.countries | map: "name" %}
-{% for item in all_categories %}
-- {{ item }}
+{% assign all_countries = site.data.countries | sort: "name" %}
+{% for c in all_countries %}
+- {{ c }}
 {% endfor %}
   <div class="field" id="divSelectCountry">
       <label for="offer-country" class="label-input">Country (Required)</label>
