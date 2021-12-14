@@ -174,8 +174,9 @@ main > header { grid-column: 4 / span 4; }
   </div>
 
   <fieldset id="offer-wai-curricula">
-    <legend><h3>WAI Curricula module{% include resource-link.html label="Curricula on Web Accessibility"
-    href="https://www.w3.org/WAI/curricula/" %}</h3></legend>
+    <legend><h3>WAI Curricula module
+    <!-- {% include resource-link.html label="Curricula on Web Accessibility" href="https://www.w3.org/WAI/curricula/" %} -->
+    </h3></legend>
     <p class="expl">  
     WAI Curricula is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>
     </p>
