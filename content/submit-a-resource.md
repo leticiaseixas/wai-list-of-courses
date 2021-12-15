@@ -81,7 +81,7 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-description" class="label-input">Description (Required)</label>
-      <p class="expl">Provide a brief description of the resource (max.: 300 chars).</p>
+      <p class="expl">Provide a brief description of this resource (max.: 300 chars).</p>
       <textarea id="offer-description" required></textarea>
       <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
@@ -231,7 +231,7 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-platform" class="label-input">Platform</label>
-      <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided (for example, Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
+      <p class="expl">If applicable, indicate on which platform this resource is provided (for example, Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
       <input type="text" id="offer-platform">
   </div>
   
@@ -243,7 +243,7 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <legend class="label">Length (Required)</legend>
-      <p class="expl">Indicate the estimated amount of time needed to complete the course (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
+      <p class="expl">Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
       <div class="length-container">
         <div class="length-value">
           <label for="offer-value-duration">Value</label>
@@ -305,11 +305,11 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="field">
       <legend class="label">Availability</legend>
+      <label for="offer-availability-start-date" class="label-input">Start date (Required)</label>
       <p class="expl">Indicate the start date for the period of time this resource will be available</p>
-      <label for="offer-availability-start-date">Start date (Required)</label>
       <input type="date" id="offer-availability-start-date" required>
-      <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>
-      <label for="offer-availability-end-date">End date</label>
+      <label for="offer-availability-end-date" class="label-input">End date</label>
+      <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
       <input type="date" id="offer-availability-end-date">
       <!-- this course is provided at any time, self-paced-->
   </div>
