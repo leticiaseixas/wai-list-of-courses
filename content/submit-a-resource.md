@@ -279,7 +279,7 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-reviews-page" class="label-input">Reviews page</label>
-      <p class="expl">Indicate the web page containing users reviews about this resource.</p>
+      <p class="expl">Indicate the web page containing reviews about this resource.</p>
       <input type="url" name="offer-reviews-page" id="offer-reviews-page">
   </div>
   <div class="field">
