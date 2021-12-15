@@ -231,7 +231,7 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-platform" class="label-input">Platform</label>
-      <p class="expl">If applicable, indicate on which platform this resource is provided (for example, Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
+      <p class="expl">If applicable, indicate on which platform this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
       <input type="text" id="offer-platform">
   </div>
   
@@ -242,25 +242,9 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
 
   <div class="field">
-      <legend class="label">Length (Required)</legend>
+      <legend class="label">Length</legend>
       <p class="expl">Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
-      <div class="length-container">
-        <div class="length-value">
-          <label for="offer-value-duration">Value</label>
-          <input type="number" id="offer-value-duration" min="0" required>
-        </div>
-        <div class="length-unit">
-          <label for="offer-unit-duration">Unit</label>
-          <select id="offer-unit-duration" required> 
-              <option value=""></option>
-              <option value="hours">Hours</option>
-              <option value="days">Days</option>
-              <option value="weeks">Weeks</option>
-              <option value="months">Months</option>
-              <option value="years">Years</option>
-          </select>
-        </div>
-      </div>
+      <input type="text" id="offer-length">
   </div>
 
   <fieldset class="field" id="offer-cost">
@@ -289,13 +273,13 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-website" class="label-input">Website (Required)</label>
-      <p class="expl">Provide the website containing more information about this resource.</p>
+      <p class="expl">Indicate the website containing more information about this resource.</p>
       <input type="url" name="offer-website" id="offer-website" required>
   </div>
 
   <div class="field">
       <label for="offer-reviews-page" class="label-input">Reviews page</label>
-      <p class="expl">Provide the web page containing users reviews about this resource.</p>
+      <p class="expl">Indicate the web page containing users reviews about this resource.</p>
       <input type="url" name="offer-reviews-page" id="offer-reviews-page">
   </div>
   <div class="field">

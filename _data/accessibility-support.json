@@ -9,7 +9,7 @@
             },
             {
                 "id": "pre-check-available",
-                "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+                "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings"
             }
         ]
     },
@@ -35,7 +35,7 @@
                     },
                     {
                         "id": "sufficient-contrast",
-                        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">contrast evaluation tools</a>"
+                        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">Contrast evaluation tools</a>"
                     },
                     {
                         "id": "motions-or-animations",
@@ -79,7 +79,7 @@
                     },
                     {
                         "id": "description-of-visual-information",
-                        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - audio description, and text description"
+                        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - audio description and text description"
                     }        
                 ]
             }
