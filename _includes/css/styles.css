@@ -175,6 +175,10 @@ details dt::after {
   font-weight: 700;
 }
 
+#availability .label-input{
+  margin-top: 1em;
+}
+
 .field-topic, .field-prerequisite {
   margin-top: 2em;
 }

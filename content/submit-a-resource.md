@@ -303,7 +303,7 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
       <input type="date" id="offer-content-update" required>
   </div>
-  <div class="field">
+  <div class="field" id="availability">
       <legend class="label">Availability</legend>
       <label for="offer-availability-start-date" class="label-input">Start date (Required)</label>
       <p class="expl">Indicate the start date for the period of time this resource will be available</p>
