@@ -178,7 +178,7 @@ main > header { grid-column: 4 / span 4; }
     <!-- {% include resource-link.html label="Curricula on Web Accessibility" href="https://www.w3.org/WAI/curricula/" %} -->
     </h3></legend>
     <p class="expl">  
-    Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>
+    Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
     </p>
     <p class="expl">If applicable, indicate the WAI Curricula modules covered.</p>
       {% include wai-curricula.liquid %}
@@ -231,7 +231,7 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-platform" class="label-input">Platform</label>
-      <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided.</p>
+      <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided (for example, Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
       <input type="text" id="offer-platform">
   </div>
   
@@ -305,9 +305,10 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="field">
       <legend class="label">Availability</legend>
-      <p class="expl">Indicate the start date for the period of time this resource will be available. If applicable, provide the end date.</p>
+      <p class="expl">Indicate the start date for the period of time this resource will be available</p>
       <label for="offer-availability-start-date">Start date (Required)</label>
       <input type="date" id="offer-availability-start-date" required>
+      <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>
       <label for="offer-availability-end-date">End date</label>
       <input type="date" id="offer-availability-end-date">
       <!-- this course is provided at any time, self-paced-->
