@@ -10,8 +10,8 @@
         <p class="expl">Including:</p>
     {% endif %}
     {% for details in option.options %}
-        <input type="checkbox" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
-        <label for="offer-{{ option.id }}">{{ option.name }}</label>
+        <input type="checkbox" id="offer-{{ details.id }}" name="offer-{{ details.id }}">
+        <label for="offer-{{ details.id }}">{{ details.name }}</label>
     {% endfor %}
 </div>
 {% endfor %}
