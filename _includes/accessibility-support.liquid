@@ -5,7 +5,7 @@
 {% for option in support.options %}
 {% assign appendedName = option.name %}
 {% if option.options %}
-    {% assign appendedName = appendedName | concat: ", including:"%}
+    {% appendedName | append: ", including:" %}
 {% endif %}
 <div class="radio-field">
     <input type="checkbox" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
