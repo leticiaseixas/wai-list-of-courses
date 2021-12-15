@@ -306,7 +306,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field" id="availability">
       <legend class="label">Availability</legend>
       <label for="offer-availability-start-date" class="label-input">Start date (Required)</label>
-      <p class="expl">Indicate the start date for the period of time this resource will be available</p>
+      <p class="expl">Indicate the start date for the period of time this resource will be available.</p>
       <input type="date" id="offer-availability-start-date" required>
       <label for="offer-availability-end-date" class="label-input">End date</label>
       <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
