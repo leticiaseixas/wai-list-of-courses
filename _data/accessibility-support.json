@@ -18,36 +18,35 @@
         "type": "Digital accessibility",
         "options": [
             {
-                "id": "text-and-visuals-big-enough",
-                "name": "Text and important visuals big enough to be read"
-            },
-            {
-                "id": "easy-to-read-font-face",
-                "name": "Easy-to-read font face"
-            },
-            {
-                "id": "motions-or-animations",
-                "name": "Reduced use of motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
-            },
-            {
                 "id": "accessible-electronic-handout",
-                "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA",
+                "name": "Handouts, slides, and other electronic material is accessible",
                 "options":[
                     {
                         "id": "caption-audio",
                         "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
                     },
-
+                    {
+                        "id": "easy-to-read-font-face",
+                        "name": "Easy-to-read font face"
+                    },
+                    {
+                        "id": "text-and-visuals-big-enough",
+                        "name": "Text and important visuals big enough to be read"
+                    },
                     {
                         "id": "sufficient-contrast",
                         "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">Contrast evaluation tools</a>"
+                    },
+                    {
+                        "id": "motions-or-animations",
+                        "name": "Reduced use of motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
                     },
                     {
                         "id": "description-of-visual-information",
                         "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
                     }                       
                 ]
-            }
+            },
         ]
     },
     {
@@ -67,12 +66,12 @@
                 "name": "Handouts, slides, and other material in accessible formats",
                 "options": [
                     {
-                        "id": "text-and-visuals-big-enough",
-                        "name": "Text and important visuals big enough to be read even from the back of the room"
-                    },
-                    {
                         "id": "easy-to-read-font-face",
                         "name": "Easy-to-read font face"
+                    },
+                    {
+                        "id": "text-and-visuals-big-enough",
+                        "name": "Text and important visuals big enough to be read even from the back of the room"
                     },
                     {
                         "id": "sufficient-contrast",
