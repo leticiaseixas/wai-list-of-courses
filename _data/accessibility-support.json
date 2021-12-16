@@ -44,9 +44,13 @@
                     {
                         "id": "description-of-visual-information",
                         "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
-                    }                       
+                    },
+                    {
+                        "id": "description-of-visual-information",
+                        "name": "All content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA                       "
+                    }
                 ]
-            },
+            }
         ]
     },
     {
