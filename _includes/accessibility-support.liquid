@@ -3,22 +3,22 @@
 <h4>{{ support.type }}</h4>
 
 {% for option in support.options %}
-{% assign appendedName = option.name %}
+
 {% if option.options %}
-    {% assign appendedName = appendedName | append: ", including:" %}
-{% endif %}
+<h5>{{ option.name }}</h5>>
+{% for details in option.options %}
+<div class="radio-field indent-right-checkgoup">  
+    <input type="checkbox" id="offer-{{ details.id }}" name="offer-{{ details.id }}">
+    <label for="offer-{{ details.id }}">{{ details.name }}</label>
+</div>
+{% endfor %}
+{% else %}
 <div class="radio-field">
     <input type="checkbox" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
     <label for="offer-{{ option.id }}">{{ appendedName }}</label>
 </div>    
-    {% for details in option.options %}
-        <div class="radio-field indent-right-checkgoup">  
-            <input type="checkbox" id="offer-{{ details.id }}" name="offer-{{ details.id }}">
-            <label for="offer-{{ details.id }}">{{ details.name }}</label>
-        </div>
-    {% endfor %}
+{% endif %}
 {% endfor %}
-
 {% endfor %}
 
 <div class="field">
