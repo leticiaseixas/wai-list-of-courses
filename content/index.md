@@ -61,13 +61,23 @@ footer: >
                 </div>
             </fieldset>
             {% assign countriesAvailable = site.data.offers | map: "country" | uniq %}
+            {% assign orderedCountries = "" | split: "," %}
+            {% for country in countriesAvailable %}
+                {% assign nCountry = "" %}
+                {% assign nCountry =  nCountry | append: site.data.countries[country].name | append: ',' %} 
+                {% assign nCountry =  nCountry | append: site.data.countries[country].nativeName | append: ',' %} 
+                {% assign nCountry =  nCountry | append: country | append: ',' %} 
+                {% assign nCountry =  nCountry | split: "," %}  
+                {% assign orderedCountries = orderedCountries | push: nCountry %}
+            {% endfor %}
+            {% assign orderedCountries = orderedCountries | sort %}
+            {{ orderedCountries | inspect }}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
-                {{ countriesAvailable | inspect }}
                 <div class="filter-options field">
                     <select name="country" id="country">
                         <option value="">--Select an option--</option>
-                                                {% for country in countriesAvailable %}
+                        {% for country in countriesAvailable %}
                         <option value="{{ country }}">{{ site.data.countries[country].name }} ({{
                             site.data.countries[country].nativeName}})</option>
                         {% endfor %}
