@@ -77,9 +77,8 @@ footer: >
                 <div class="filter-options field">
                     <select name="country" id="country">
                         <option value="">--Select an option--</option>
-                        {% for country in countriesAvailable %}
-                        <option value="{{ country }}">{{ site.data.countries[country].name }} ({{
-                            site.data.countries[country].nativeName}})</option>
+                        {% for country in orderedCountries %}
+                        <option value="{{ country[2] }}">{{ country[0] }} ({{ country[1] }})</option>
                         {% endfor %}
                     </select>
                 </div>
