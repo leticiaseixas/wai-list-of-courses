@@ -71,7 +71,6 @@ footer: >
                 {% assign orderedCountries = orderedCountries | push: nCountry %}
             {% endfor %}
             {% assign orderedCountries = orderedCountries | sort %}
-            {{ orderedCountries | inspect }}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
                 <div class="filter-options field">
