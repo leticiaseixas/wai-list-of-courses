@@ -63,11 +63,11 @@ footer: >
             {% assign countriesAvailable = site.data.offers | map: "country" | uniq %}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
+                {% countriesAvailable | inspect %}
                 <div class="filter-options field">
                     <select name="country" id="country">
                         <option value="">--Select an option--</option>
-                        {% countriesAvailable | inspect %}
-                        {% for country in countriesAvailable %}
+                                                {% for country in countriesAvailable %}
                         <option value="{{ country }}">{{ site.data.countries[country].name }} ({{
                             site.data.countries[country].nativeName}})</option>
                         {% endfor %}
