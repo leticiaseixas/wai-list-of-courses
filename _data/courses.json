@@ -1,6 +1,6 @@
 [
   {
-    "id": "offer1",
+    "id": "course1",
     "name": [
       "Web Accessibility Compliance"
     ],
@@ -79,21 +79,21 @@
     "availability_end_date": [
       "30 June 2021"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "08 September 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 August 2021"
     ]
   },
   {
-    "id": "offer2",
+    "id": "course2",
     "name": [
       "Web Accessibility"
     ],
@@ -170,21 +170,21 @@
     "availability_end_date": [
       "31 April 2022"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "08 September 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 August 2021"
     ]
   },
   {
-    "id": "offer3",
+    "id": "course3",
     "name": [
       "Certified Professional in Accessible Technologies"
     ],
@@ -260,21 +260,21 @@
     "availability_start_date": [
       "01 January 2019"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "27 July 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 July 2021"
     ]
   },
   {
-    "id": "offer4",
+    "id": "course4",
     "name": [
       "Web Accessibility Specialist"
     ],
@@ -345,21 +345,21 @@
     "availability_start_date": [
       "01 January 2021"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "27 July 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 July 2021"
     ]
   },
   {
-    "id": "offer5",
+    "id": "course5",
     "name": [
       "Accessible Documents"
     ],
@@ -435,21 +435,21 @@
     "availability_end_date": [
       "31 December 2023"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "12 August 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 January 2020"
     ]
   },
   {
-    "id": "offer6",
+    "id": "course6",
     "name": [
       "Web Accessibility Training"
     ],
@@ -528,21 +528,21 @@
     "availability_start_date": [
       "01 September 2020"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "12 August 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 January 2020"
     ]
   },
   {
-    "id": "offer7",
+    "id": "course7",
     "name": [
       "Introduction to Course Accessibility"
     ],
@@ -620,21 +620,21 @@
     "availability_end_date": [
       "30 June 2021"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "12 August 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 January 2020"
     ]
   },
   {
-    "id": "offer8",
+    "id": "course8",
     "name": [
       "Accessible product design"
     ],
@@ -710,21 +710,21 @@
     "availability_end_date": [
       "30 June 2021"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "29 April 2020"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 April 2020"
     ]
   },
   {
-    "id": "offer9",
+    "id": "course9",
     "name": [
       "Accessibility Tutor"
     ],
@@ -794,21 +794,21 @@
     "availability_end_date": [
       "31 April 2022"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "29 April 2020"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 April 2020"
     ]
   },
   {
-    "id": "offer10",
+    "id": "course10",
     "name": [
       "UX Foundations: Accessibility"
     ],
@@ -883,21 +883,21 @@
     "availability_end_date": [
       "31 April 2022"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "29 April 2020"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 April 2020"
     ]
   },
   {
-    "id": "offer11",
+    "id": "course11",
     "name": [
       "Accessibility Studies"
     ],
@@ -974,21 +974,21 @@
     "availability_end_date": [
       "31 December 2023"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "12 December 2020"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 August 2020"
     ]
   },
   {
-    "id": "offer12",
+    "id": "course12",
     "name": [
       "ICT and Accessibility"
     ],
@@ -1065,21 +1065,21 @@
     "availability_end_date": [
       "30 June 2021"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "12 December 2020"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 August 2020"
     ]
   },
   {
-    "id": "offer13",
+    "id": "course13",
     "name": [
       "Accessible Media Production"
     ],
@@ -1155,21 +1155,21 @@
     "availability_end_date": [
       "30 June 2021"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "12 December 2020"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 August 2020"
     ]
   },
   {
-    "id": "offer14",
+    "id": "course14",
     "name": [
       "Designing accessible online courses"
     ],
@@ -1249,21 +1249,21 @@
     "availability_end_date": [
       "30 June 2021"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "12 December 2020"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 August 2020"
     ]
   },
   {
-    "id": "offer15",
+    "id": "course15",
     "name": [
       "Master in Inclusive Design"
     ],
@@ -1342,21 +1342,21 @@
     "availability_end_date": [
       "31 April 2022"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "01 September 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 September 2021"
     ]
   },
   {
-    "id": "offer16",
+    "id": "course16",
     "name": [
       "Certificate in Assistive Technologies and Inclusive Design"
     ],
@@ -1436,21 +1436,21 @@
     "availability_end_date": [
       "31 December 2023"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "01 September 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 September 2021"
     ]
   },
   {
-    "id": "offer17",
+    "id": "course17",
     "name": [
       "Web Accessibility for Developers"
     ],
@@ -1524,16 +1524,16 @@
     "availability_end_date": [
       "31 December 2023"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "01 September 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 September 2021"
     ]
   }

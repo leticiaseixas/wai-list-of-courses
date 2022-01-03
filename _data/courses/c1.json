@@ -1,35 +1,38 @@
+
   {
-    "id": "offer2",
+    "id": "course1",
     "name": [
-      "Web Accessibility"
+      "Web Accessibility Compliance"
     ],
     "provider": [
-      "Provider U65"
+      "Provider J76"
     ],
     "description": [
-      "In this course, you will get hands-on experience making web applications accessible."
+      "In this course, you will learn about the standards in place to guide developers in creating a web that is accessible to all users as well as techniques to help bring your projects up to those standards."
     ],
     "type": [
       "Training"
     ],
     "prerequisites": [
-      "HTML, CSS, Javascript"
+      "None"
     ],
     "audience": [
       "Developer",
-      "Tester"
+      "Designer",
+      "Tester",
+      "Other"
     ],
     "level": [
-      "Advanced"
+      "Basic"
     ],
     "curricula_correspondence": [
-      "Developer Modules"
+      "Foundation Modules"
     ],
     "curricula_link": [
-      "https://www.w3.org/WAI/curricula/developer-modules/"
+      "https://www.w3.org/WAI/curricula/foundation-modules/"
     ],
     "keywords_topics": [
-      "Accessible web applications"
+      "Development Tools"
     ],
     "language": [
       "en"
@@ -62,30 +65,30 @@
       }
     ],
     "platform": [
-      "Udacity"
+      "Not provided"
     ],
     "cost": [
-      "Free"
+      "Paid"
     ],
     "duration": [
-      "Approx 2 weeks"
+      "2 weeks"
     ],
     "availability_start_date": [
       "01 September 2020"
     ],
     "availability_end_date": [
-      "31 April 2022"
+      "30 June 2021"
     ],
-    "offer_link": [
+    "course_link": [
       "www.link.com"
     ],
-    "offer_link_reviews": [
+    "course_link_reviews": [
       "www.link.com/reviews"
     ],
-    "offer_info_last_update": [
+    "course_info_last_update": [
       "08 September 2021"
     ],
-    "offer_content_last_update": [
+    "course_content_last_update": [
       "01 August 2021"
     ]
   }
