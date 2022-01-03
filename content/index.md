@@ -93,7 +93,7 @@ footer: >
     </div>
     <div id="offers-list">
         <span id="status">
-            <p id="total-offers">Showing {{ site.data.resources | size }} results</p>
+            <p id="total-offers">Showing {{ site.data.offers | size }} results</p>
         </span>
         <div class="field" class="sort-by">
             <label for="select">Sort by</label>
@@ -105,7 +105,7 @@ footer: >
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         {% assign offers = site.data.resources | sort: 'name' %}
-        {% for offer in offers %}
+        {% for org_hash in offers %}
             {% include offer.liquid %}
         {% endfor %}      
     </div>
