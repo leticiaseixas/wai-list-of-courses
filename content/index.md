@@ -104,8 +104,8 @@ footer: >
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% assign offers = site.data.resources | sort: 'name' %}
-        {% for offer_hash in offers %}
+        {% for org_hash in site.data.resources %}
+        {% assign offer = org_hash[1] %} 
             {% include offer.liquid %}
         {% endfor %}      
     </div>
