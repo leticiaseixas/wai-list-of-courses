@@ -47,7 +47,7 @@ footer: >
                 {% endfor %}
             </fieldset>
             {% endfor %}
-            {% assign langAvailable = site.data.offers | map: "language" | uniq | sort %}
+            {% assign langAvailable = site.data.resources | map: "language" | uniq | sort %}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
