@@ -37,7 +37,7 @@ remote_theme: w3c/wai-website-theme
 
 collections:
   courses_collection:
-  sort_by: name
+    sort_by: name
 
 defaults:
   -
