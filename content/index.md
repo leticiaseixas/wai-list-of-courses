@@ -104,7 +104,7 @@ footer: >
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% for course in site.courses_collection %}
+        {% for course in site.courses_collection2 %}
             {% include course.liquid %}
         {% endfor %}    
         <hr>
