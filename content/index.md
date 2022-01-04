@@ -107,7 +107,6 @@ footer: >
         {% for course in site.courses_collection %}
             {% include course.liquid %}
         {% endfor %}    
-        {% endfor %} 
     </div>
     
 </div>
