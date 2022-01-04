@@ -108,7 +108,7 @@ footer: >
             <h2>{{ c.name }} - {{ c.id }}</h2>
             <p>{{ staff_member.provider }}</p>
         {% endfor %}
-        {% assign courses_sorted = sita.data.courses | sort: "name" %}
+        {% assign courses_sorted = sita.data.courses %}
         {% for courses_sorted in site.data.courses %}
         {% assign course = courses_sorted[1] %} 
             {% include course.liquid %}
