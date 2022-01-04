@@ -104,7 +104,7 @@ footer: >
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% for c in site._courses_collection %}
+        {% for c in site.courses_collection %}
             <h2>{{ c.name }} - {{ c.id }}</h2>
             <p>{{ staff_member.provider }}</p>
         {% endfor %}
