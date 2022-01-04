@@ -36,7 +36,8 @@ ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 remote_theme: w3c/wai-website-theme
 
 collections:
-  - courses_collection
+  courses_collection:
+  sort_by: name
 
 defaults:
   -
