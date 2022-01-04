@@ -104,6 +104,10 @@ footer: >
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
+        {% for c in site._courses_collection %}
+            <h2>{{ c.name }} - {{ c.id }}</h2>
+            <p>{{ staff_member.provider }}</p>
+        {% endfor %}
         {% assign courses_sorted = sita.data.courses | sort: "name" %}
         {% for courses_sorted in site.data.courses %}
         {% assign course = courses_sorted[1] %} 
