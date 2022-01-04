@@ -109,7 +109,7 @@ footer: >
         {% endfor %}    
         <hr>
         {{ site.data.courses | inspect }}
-        {% for courses_sorted in site.data.courses %}
+        {% for courses_sorted in site.data.courses | sort: id.name%}
         {% assign course = courses_sorted[1] %} 
             {% include course.liquid %}
         {% endfor %}    
