@@ -309,13 +309,10 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
     <fieldset>
-    <legend>Responsible Entities</legend>
-    <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy.</p>
+    <legend>Language</legend>
     <ul class="multiple" id="entities-multiple">
       <li class="template">
         <div class="form-block-mini">
-          <label class="form-row"><span class="l">Name:</span><span><input type="text" name="entity_name[]"></span></label>
-          <label class="form-row"><span class="l">URL:</span> <span><input type="url" name="entity_url[]"></span></label>
           <label class="form-row"><span class="l">Language:</span> <span><select name="entity_lang[]">{% for l in site.data.lang%}<option value="{{l[0]}}"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
         </div>
         <div class="rem"><button type="button" class="remove btn-small">Remove</button></div>
