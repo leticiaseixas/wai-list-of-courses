@@ -308,6 +308,21 @@ main > header { grid-column: 4 / span 4; }
     <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
   </div>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
+    <fieldset>
+    <legend>Responsible Entities</legend>
+    <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy.</p>
+    <ul class="multiple" id="entities-multiple">
+      <li class="template">
+        <div class="form-block-mini">
+          <label class="form-row"><span class="l">Name:</span><span><input type="text" name="entity_name[]"></span></label>
+          <label class="form-row"><span class="l">URL:</span> <span><input type="url" name="entity_url[]"></span></label>
+          <label class="form-row"><span class="l">Language:</span> <span><select name="entity_lang[]">{% for l in site.data.lang%}<option value="{{l[0]}}"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
+        </div>
+        <div class="rem"><button type="button" class="remove btn-small">Remove</button></div>
+      </li>
+    </ul>
+    <button type="button" class="multiple btn-small" data-for="entities-multiple">➕ Add Entity</button>
+  </fieldset>
   <div class="field">
     <button type="submit">Send information</button>
   </div>
