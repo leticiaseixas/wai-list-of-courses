@@ -308,100 +308,26 @@ main > header { grid-column: 4 / span 4; }
     <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
   </div>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
-    <fieldset>
-    <legend>Language</legend>
-    <ul class="multiple" id="entities-multiple">
-      <li class="template">
-        <div class="form-block-mini">
-          <label class="form-row"><span class="l">Language:</span> <span><select name="entity_lang[]">{% for l in site.data.lang%}<option value="{{l[0]}}"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
-        </div>
-        <div class="rem"><button type="button" class="remove btn-small">Remove</button></div>
-      </li>
-    </ul>
-    <button type="button" class="multiple btn-small" data-for="entities-multiple">➕ Add Entity</button>
-  </fieldset>
+  
+<div class="field multiple">
+  <legend>Language (Required)</legend>
+  <p class="expl">Indicate in which language or languages this resource is provided.</p>
+  <label class="form-row">Language</label>
+  <select name="entity_lang[]">
+    {% for l in site.data.lang%}
+    <option value="{{l[0]}}"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>
+    {% endfor %}
+  </select>
+  <button type="button" class="remove btn-small">Remove</button>
+  <button type="button" class="multiple btn-small" data-for="entities-multiple"> Add new language</button>
+</div>
+
+
   <div class="field">
     <button type="submit">Send information</button>
   </div>
 </form>
 
-
-
 <script>
 {% include js/courses.js %}
 </script>
-<script>
-    // Add remove possibility to older browsers
-    // Source: https://stackoverflow.com/questions/8830839/javascript-dom-remove-element#8830882
-
-    (function () {
-        var typesToPatch = ['DocumentType', 'Element', 'CharacterData'],
-            remove = function () {
-                // The check here seems pointless, since we're not adding this
-                // method to the prototypes of any any elements that CAN be the
-                // root of the DOM. However, it's required by spec (see point 1 of
-                // https://dom.spec.whatwg.org/#dom-childnode-remove) and would
-                // theoretically make a difference if somebody .apply()ed this
-                // method to the DOM's root node, so let's roll with it.
-                if (this.parentNode != null) {
-                    this.parentNode.removeChild(this);
-                }
-            };
-
-        for (var i=0; i<typesToPatch.length; i++) {
-            var type = typesToPatch[i];
-            if (window[type] && !window[type].prototype.remove) {
-                window[type].prototype.remove = remove;
-            }
-        }
-    })();
-    //helper function to iterate through elements – it’s just shorter :-D
-    function each(elem, func) {
-      Array.prototype.forEach.call(elem, func);
-    }
-
-    // Each button with class multiple:
-    each(document.querySelectorAll('button.multiple'), function(element) {
-
-      // Add event listener
-      element.addEventListener('click', function(e) {
-
-        // When clicked, find the list this button refers to…
-        var targetMultiple = document.getElementById(e.target.getAttribute('data-for'));
-
-        // Find the template for the list. Clone it.
-        var template = targetMultiple.querySelector('.template').cloneNode(true);
-
-        // Remove Template from the item (not strictly necessary)
-        template.classList.remove("template");
-
-        // Find the first input element in the copied template, add focusHere class
-        template.querySelector('input').classList.add("focusHere");
-
-        // Find the button element in the cloned element and add a class
-        template.querySelector('button').classList.add("needsHandler");
-
-        // Insert the copied template before the end of the list.
-        targetMultiple.insertAdjacentHTML('beforeend', template.outerHTML);
-
-        // Focus the first input in the inserted list item.
-        document.querySelector('.focusHere').focus();
-
-        // Remove focusHere class from all elements that have one. (should always be only one, but better save than sorry before accidentally focussing the wrong element)
-        each(document.querySelectorAll('.focusHere'), function(e) {
-          e.classList.remove('focusHere');
-        });
-
-        // Find the “remove” button and add event listener
-        each(document.querySelectorAll('button.remove.needsHandler'), function(e) {
-          e.addEventListener('click', function(elem) {
-            elem.target.parentNode.parentNode.parentNode.parentNode.querySelector('button.multiple').focus();
-            elem.target.parentNode.parentNode.remove();
-          });
-          e.classList.remove('needsHandler');
-        });
-
-      });
-
-    });
-  </script>
