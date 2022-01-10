@@ -20,6 +20,10 @@ footer: >
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
 
+{% include minimal-header.html
+   title="ATAG Report Tool"
+%}
+
 <style> 
 {% include css/styles.css %}
 </style>
