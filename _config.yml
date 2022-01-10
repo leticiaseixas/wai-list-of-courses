@@ -35,16 +35,12 @@ ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 
 remote_theme: w3c/wai-website-theme
 
-collections:
-  courses_collection:
-    sort_by: name
-
 defaults:
   -
     scope:
       path: ""
     values:
-      layout: "default"
+      layout: "minimal"
 #  -
 #    scope:
 #      path: "_business-case"

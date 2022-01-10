@@ -301,28 +301,16 @@ main > header { grid-column: 4 / span 4; }
   <p>Let us know if you have any comments.</p>
   <div class="field">
     <label for="comments" class="label-input">Comments</label>
+    <p class="expl">This information will not be publicly shared.</p>
     <textarea id="comments"></textarea>
   </div>
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
+  </div>
+  <div class="field">  
     <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
   </div>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
-  
-<div class="field multiple">
-  <legend>Language (Required)</legend>
-  <p class="expl">Indicate in which language or languages this resource is provided.</p>
-  <label class="form-row">Language</label>
-  <select name="entity_lang[]">
-    {% for l in site.data.lang%}
-    <option value="{{l[0]}}"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>
-    {% endfor %}
-  </select>
-  <button type="button" class="remove btn-small">Remove</button>
-  <button type="button" class="multiple btn-small" data-for="entities-multiple"> Add new language</button>
-</div>
-
-
   <div class="field">
     <button type="submit">Send information</button>
   </div>
