@@ -20,20 +20,6 @@ footer: >
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
 
-<div id="site-header" class="minimal-header">
-  <span class="minimal-header-name">
-    Course List
-  </span>
-  <div class="minimal-header-logo">
-    <a href="http://w3.org/">
-      <img alt="W3C" src="/assets/images/w3c2.svg" width="92" height="44" />
-    </a>
-    <a href="/">
-      <img alt="Web Accessibility Initiative" src="/assets/images/wai.svg" />
-    </a>
-  </div>
-</div>
-
 <style> 
 {% include css/styles.css %}
 </style>
