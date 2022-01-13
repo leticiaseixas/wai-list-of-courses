@@ -45,6 +45,13 @@ footer: >
             </fieldset>
             {% endfor %}
             {% assign langAvailable = site.data.courses | map: "language" | uniq | sort %}
+            {% assign langAvailable = "" | split: "," %}
+            {% assign countryAvailable = "" | split: "," %}
+            {% for course in site.data.courses %}
+                {% assign langAvailable = langAvailable | push: course[1].language %} 
+                {% assign countryAvailable = countryAvailable | push: course[1].country %} 
+            {% endfor %}
+            {{langAvailable | inspect }}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
@@ -58,8 +65,6 @@ footer: >
                 </div>
             </fieldset>
             {% assign countriesAvailable = site.data.courses | map: "country" | uniq %}
-            {% assign all_countries = site.data.courses[1] | map: "country" | map: "id" | uniq %}
-            {{ all_countries | inspect }}
             {% assign orderedCountries = "" | split: "," %}
             {% for country in countriesAvailable %}
                 {% assign nCountry = "" %}
