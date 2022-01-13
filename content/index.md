@@ -47,14 +47,19 @@ footer: >
             {% assign langAvailable = site.data.courses | map: "language" | uniq | sort %}
             {% assign langAvailable = "" | split: "," %}
             {% assign countriesAvailable = "" | split: "," %}
+            {% assign nCountry = "" | split: "," %}
             {% for course in site.data.courses %}
                 {% assign langAvailable = langAvailable | concat: course[1].language %} 
                 {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
+                {% assign nCountry =  nCountry | append: site.data.countries[course[1].country].name | append: ',' %} 
+                {% assign nCountry =  nCountry | append: site.data.countries[course[1].country].nativeName | append: ',' %} 
+                {% assign nCountry =  nCountry | append: country | append: ',' %} 
+                {% assign nCountry =  nCountry | split: "," %}  
+                {% assign orderedCountries = orderedCountries | push: nCountry %}
             {% endfor %}
             {% assign langAvailable = langAvailable | uniq %}
             {% assign countriesAvailable = countriesAvailable | uniq %}
-            {{langAvailable | inspect }}
-            {{countriesAvailable | inspect }}
+            {{orderedCountries | inspect }}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
