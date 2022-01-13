@@ -58,7 +58,7 @@ footer: >
                 </div>
             </fieldset>
             {% assign countriesAvailable = site.data.courses | map: "country" | uniq %}
-            {{ site.data.courses[0] | inspect }}
+            {{ site.data.courses[1] | inspect }}
             {% assign orderedCountries = "" | split: "," %}
             {% for country in countriesAvailable %}
                 {% assign nCountry = "" %}
