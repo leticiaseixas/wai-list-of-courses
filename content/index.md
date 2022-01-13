@@ -52,6 +52,7 @@ footer: >
                 {% assign countryAvailable = countryAvailable | push: course[1].country %} 
             {% endfor %}
             {{langAvailable | inspect }}
+            {{countryAvailable | inspect }}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
