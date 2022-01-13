@@ -46,19 +46,21 @@ footer: >
             {% endfor %}
             {% assign langAvailable = site.data.courses | map: "language" | uniq | sort %}
             {% assign langAvailable = "" | split: "," %}
-            {% assign countryAvailable = "" | split: "," %}
+            {% assign countriesAvailable = "" | split: "," %}
             {% for course in site.data.courses %}
                 {% assign langAvailable = langAvailable | concat: course[1].language %} 
-                {% assign countryAvailable = countryAvailable | concat: course[1].country %} 
+                {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
             {% endfor %}
+            {% assign langAvailable = langAvailable | uniq %}
+            {% assign countriesAvailable = countriesAvailable | uniq %}
             {{langAvailable | inspect }}
-            {{countryAvailable | inspect }}
+            {{countriesAvailable | inspect }}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
                     <select name="language" id="language">
                         <option value="">--Select an option--</option>
-                        {% for language in langAvailable | uniq %}
+                        {% for language in langAvailable %}
                         <option value="{{ language }}">{{ site.data.lang[language].name }} ({{
                             site.data.lang[language].nativeName}})</option>
                         {% endfor %}
