@@ -51,7 +51,7 @@ footer: >
                 {% assign langAvailable = langAvailable | push: course[1].language %} 
                 {% assign countryAvailable = countryAvailable | push: course[1].country %} 
             {% endfor %}
-            {{langAvailable | inspect | uniq }}
+            {{langAvailable[0] | inspect  }}
             {{countryAvailable | inspect }}
             {{ site.data.lang | inspect }}
             <fieldset id="language-filter">
