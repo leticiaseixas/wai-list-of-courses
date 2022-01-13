@@ -53,12 +53,13 @@ footer: >
             {% endfor %}
             {{langAvailable | inspect }}
             {{countryAvailable | inspect }}
+            {{ site.data.lang | inspect }}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
                     <select name="language" id="language">
                         <option value="">--Select an option--</option>
-                        {% for language in langAvailable %}
+                        {% for language in langAvailable | uniq %}
                         <option value="{{ language }}">{{ site.data.lang[language].name }} ({{
                             site.data.lang[language].nativeName}})</option>
                         {% endfor %}
