@@ -58,7 +58,7 @@ footer: >
                 </div>
             </fieldset>
             {% assign countriesAvailable = site.data.courses | map: "country" | uniq %}
-            {{ site.data.courses[0] | inspect }}
+            {{ site.data.courses[0].keys | inspect }}
             {% assign orderedCountries = "" | split: "," %}
             {% for country in countriesAvailable %}
                 {% assign nCountry = "" %}
@@ -90,6 +90,9 @@ footer: >
         </div>
     </div>
     <div id="courses-list">
+        <span id="status">
+            <p id="total-courses">Showing {{ site.data.courses | size }} results</p>
+        </span>
         <div class="field" class="sort-by">
             <label for="select">Sort by</label>
             <select id="select">
@@ -97,23 +100,6 @@ footer: >
                 <option>Most recently updated</option>
             </select>
         </div>        
-        <div class="course-list-header">
-            <div class="field">
-                <input type="search" id="search" placeholder="Search courses">
-            </div>
-            <span id="status">
-                <h4 id="total-offers">{{ site.data.courses | size }} results</h4>
-            </span>
-            <div class="field" class="sort-by">
-                <h4><label for="select">Sort by</label></h4>
-                <select id="select" class="field">
-                    <option selected="selected">Alphabetically (A to Z)</option>
-                    <option>Most recently updated</option>
-                </select>
-            </div>        
-            <!-- {% include excol.html type="all" %} -->
-            <!-- {% include_cached button.html label="Clear filters" class="clear-button"%} -->
-        </div>
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         {% for courses_sorted in site.data.courses | sort: id.name%}
@@ -121,8 +107,6 @@ footer: >
             {% include course.liquid %}
         {% endfor %}    
     </div>
- 
-    
     
 </div>
 <div class="button-submit-end">
