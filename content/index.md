@@ -53,8 +53,6 @@ footer: >
             {% endfor %}
             {% assign langAvailable = langAvailable | uniq %}
             {% assign countriesAvailable = countriesAvailable | uniq %}
-            {{langAvailable | inspect }}
-            {{countriesAvailable | inspect }}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
