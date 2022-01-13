@@ -48,10 +48,10 @@ footer: >
             {% assign langAvailable = "" | split: "," %}
             {% assign countryAvailable = "" | split: "," %}
             {% for course in site.data.courses %}
-                {% assign langAvailable = langAvailable | push: course[1].language %} 
-                {% assign countryAvailable = countryAvailable | push: course[1].country %} 
+                {% assign langAvailable = langAvailable | concatArray: course[1].language %} 
+                {% assign countryAvailable = countryAvailable | concatArray: course[1].country %} 
             {% endfor %}
-            {{langAvailable[0] | inspect  }}
+            {{langAvailable | inspect }}
             {{countryAvailable | inspect }}
             {{ site.data.lang | inspect }}
             <fieldset id="language-filter">
