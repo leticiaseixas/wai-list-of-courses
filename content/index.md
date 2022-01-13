@@ -36,9 +36,6 @@ footer: >
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
                 <legend class="label">{{ filter.name }}</legend>
-<!--                {% if filter.name == "Format" %}
-                    {% include resource-link.html label="Show info" href="#"%}
-                {% endif %} -->
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
@@ -60,7 +57,9 @@ footer: >
                     </select>
                 </div>
             </fieldset>
+            {{  }}
             {% assign countriesAvailable = site.data.courses | map: "country" | uniq %}
+            {{ countriesAvailable | inspect }}
             {% assign orderedCountries = "" | split: "," %}
             {% for country in countriesAvailable %}
                 {% assign nCountry = "" %}
