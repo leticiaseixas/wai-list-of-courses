@@ -53,7 +53,6 @@ footer: >
             {% endfor %}
             {{langAvailable | inspect }}
             {{countryAvailable | inspect }}
-            {{ site.data.lang | inspect }}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
@@ -66,7 +65,6 @@ footer: >
                     </select>
                 </div>
             </fieldset>
-            {% assign countriesAvailable = site.data.courses | map: "country" | uniq %}
             {% assign orderedCountries = "" | split: "," %}
             {% for country in countriesAvailable %}
                 {% assign nCountry = "" %}
