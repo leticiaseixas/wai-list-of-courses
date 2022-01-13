@@ -48,8 +48,8 @@ footer: >
             {% assign langAvailable = "" | split: "," %}
             {% assign countryAvailable = "" | split: "," %}
             {% for course in site.data.courses %}
-                {% assign langAvailable = langAvailable | concatArray: course[1].language %} 
-                {% assign countryAvailable = countryAvailable | concatArray: course[1].country %} 
+                {% assign langAvailable = langAvailable | concat: course[1].language %} 
+                {% assign countryAvailable = countryAvailable | concat: course[1].country %} 
             {% endfor %}
             {{langAvailable | inspect }}
             {{countryAvailable | inspect }}
