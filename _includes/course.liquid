@@ -36,7 +36,7 @@ Language
 {% capture langLabel %}
 {{ site.data.lang[language].name }} ({{ site.data.lang[language].nativeName }})
 {% endcapture %}
-{% assign langAvailable = langAvailable | concat: langLabel  %} 
+{% assign langAvailable = langAvailable | push: langLabel  %} 
 {% endfor %}
 : {{ langAvailable | join: ", "}}
 
