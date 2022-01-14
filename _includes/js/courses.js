@@ -1,5 +1,5 @@
 const filterForm = document.querySelector('[data-filter-form]');
-const jsonCourses = JSON.parse('{{ site.data.courses | jsonify}}');
+const jsonCourses = Object.values(JSON.parse('{{ site.data.courses | jsonify}}'));
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
@@ -60,7 +60,7 @@ if (filterForm) {
 
     // by attribute
     filtersOn.forEach(filter => {
-      newResults.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
+      newResults.push(jsonCourses.filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
     })
 
     // if no filter, show all courses
