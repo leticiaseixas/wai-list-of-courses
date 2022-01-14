@@ -33,6 +33,9 @@ WAI Curricula module
 Language
 {% assign langIndex = course.language[0] %}
 : {{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
+{% for language in course.language %}
+: {{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
+{% endfor %}
 
 Country
 {% assign countryIndex = course.country[0] %}
