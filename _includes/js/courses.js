@@ -60,7 +60,7 @@ if (filterForm) {
 
     // by attribute
     filtersOn.forEach(filter => {
-      newResults.push(jsonCourses.filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
+      newResults.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
     })
 
     // if no filter, show all courses
@@ -165,7 +165,8 @@ if (filterForm) {
 
 }
 
-if (document.getElementById("form-submit-an-course")) {
+// TODO
+if (document.getElementById("form-submit-a-resource")) {
 
   const divSelectLang = document.getElementById("divSelectLang");
   const fieldLang = document.getElementsByClassName("field-language")[0];
