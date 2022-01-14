@@ -40,8 +40,6 @@ WAI Curricula module
 Language
 : {{ language | join: ", "}}
 
-{{ course.language | inspect }}
-{{ course.country | inspect }}
 {% assign country = "" | split: "," %}
 {% for countryIndex in course.country %}
 {% capture countryLabel %}
