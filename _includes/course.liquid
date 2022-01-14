@@ -31,15 +31,17 @@ WAI Curricula module
 {% endif %}
 
 {% assign language = "" | split: "," %}
-{% for landIndex in course.language %}
+{% for langIndex in course.language %}
 {% capture langLabel %}
-{{ site.data.lang[landIndex].name }} ({{ site.data.lang[landIndex].nativeName }})
+{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
 {% endcapture %}
 {% assign language = language | push: langLabel  %} 
 {% endfor %}
 Language
 : {{ language | join: ", "}}
 
+{{ course.language | inspect }}
+{{ course.country | inspect }}
 {% assign country = "" | split: "," %}
 {% for countryIndex in course.country %}
 {% capture countryLabel %}
