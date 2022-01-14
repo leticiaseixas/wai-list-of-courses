@@ -34,7 +34,7 @@ Language
 {% assign langIndex = course.language[0] %}
 : {{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
 {% for language in course.language %}
-: {{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
+: {{ site.data.lang[language].name }} ({{ site.data.lang[language].nativeName }})
 {% endfor %}
 
 Country
