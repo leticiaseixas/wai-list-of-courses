@@ -30,7 +30,6 @@ WAI Curricula module
 : Not provided
 {% endif %}
 
-Language
 {% assign langAvailable = "" | split: "," %}
 {% for language in course.language %}
 {% capture langLabel %}
@@ -38,6 +37,7 @@ Language
 {% endcapture %}
 {% assign langAvailable = langAvailable | push: langLabel  %} 
 {% endfor %}
+Language
 : {{ langAvailable | join: ", "}}
 
 
