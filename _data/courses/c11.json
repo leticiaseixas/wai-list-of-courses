@@ -7,7 +7,7 @@
     "type": "Training",
     "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
     "level": "Intermediate",
-    "prerequisites": "Intermediate (knowledge of HTML required)",
+    "prerequisites": "Knowledge of HTML required",
     "topics": "Responsive Design, Zoom, Orientation, Click/Touch Target Size, Quiz",
     "language": ["en"],
     "format": "Online",
