@@ -108,7 +108,7 @@ footer: >
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% for courses_sorted in site.data.courses | sort: id.name%}
+        {% for courses_sorted in site.data.courses | sort: id.title%}
         {% assign course = courses_sorted[1] %} 
             {% include course.liquid %}
         {% endfor %}    
