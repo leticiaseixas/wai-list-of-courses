@@ -44,7 +44,6 @@ footer: >
                 {% endfor %}
             </fieldset>
             {% endfor %}
-            {{ langAvailable | inspect }}
             {% assign langAvailable = "" | split: "," %}
             {% assign countriesAvailable = "" | split: "," %}
             {% for course in site.data.courses %}
@@ -52,7 +51,6 @@ footer: >
                 {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
             {% endfor %}
             {% assign langAvailable = langAvailable | uniq %}
-            {{ langAvailable | inspect }}
             {% assign countriesAvailable = countriesAvailable | uniq %}
             <fieldset id="language-filter">
                 <legend>Language</legend>
