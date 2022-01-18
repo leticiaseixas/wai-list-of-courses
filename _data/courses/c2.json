@@ -5,7 +5,7 @@
     "country": [
         "us"
     ],
-    "description": "Section 508 of the Federal Rehabilitation Act of 1973 is a law that requires the Federal government to provide access to its electronic and information technology, specifically the electronic and information technology Federal agencies develop, use, maintain, and procure. The law applies to various kinds of technology, including hardware, software, office equipment, and government web pages. The goal of the information presented in this course is to provide a comprehensive overview of Section 508, including:\r\n- How 508 is applied and understood in the context of other accessibility laws,\r\n- The technical standards and scope of the law, and\r\n- The technological requirements of the law.",
+    "description": "Section 508 of the Federal Rehabilitation Act of 1973 is a law that requires the Federal government to provide access to its electronic and information technology, specifically the electronic and information technology Federal agencies develop, use, maintain, and procure. The law applies to various kinds of technology, including hardware, software, office equipment, and government web pages. The goal of the information presented in this course is to provide a comprehensive overview of Section 508, including: - How 508 is applied and understood in the context of other accessibility laws, - The technical standards and scope of the law, and - The technological requirements of the law.",
     "type": "Training",
     "audience": [
         "Content author",
