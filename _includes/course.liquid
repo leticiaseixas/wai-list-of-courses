@@ -8,6 +8,16 @@
 #### Details
 {% include excol.html type="middle"%}
 
+{% assign country = "" | split: "," %}
+{% for countryIndex in course.country %}
+{% capture countryLabel %}
+{{ site.data.countries[countryIndex].name }} ({{ site.data.countries[countryIndex].nativeName }})
+{% endcapture %}
+{% assign country = country | push: countryLabel  %} 
+{% endfor %}
+Country
+: {{ country | join: ", "}}
+
 Type of resource
 : {{ course.type }}
 
@@ -24,8 +34,8 @@ Topics
 : {{ course.topics | join: ", "}}
   
 WAI Curricula module
-{% if course.curricula_link %}
-: <a href="{{ course.curricula_link}}" rel="external">{{ course.curricula_correspondence }}</a>
+{% if course.wai_curricula_link %}
+: <a href="{{ course.wai_curricula_link}}" rel="external">{{ course.wai_curricula }}</a>
 {% else %}
 : Not provided
 {% endif %}
@@ -40,15 +50,6 @@ WAI Curricula module
 Language
 : {{ language | join: ", "}}
 
-{% assign country = "" | split: "," %}
-{% for countryIndex in course.country %}
-{% capture countryLabel %}
-{{ site.data.countries[countryIndex].name }} ({{ site.data.countries[countryIndex].nativeName }})
-{% endcapture %}
-{% assign country = country | push: countryLabel  %} 
-{% endfor %}
-Country
-: {{ country | join: ", "}}
 
 Format
 : {{ course.format}}
@@ -70,18 +71,18 @@ Cost
 : {{ course.cost}}
 
 Availability
-: From {{ course.availability_start_date}}{% if course.availability_end_date %} to {{ course.availability_end_date }}{% endif %}
+: From {{ course.start_date}}{% if course.end_date %} to {{ course.end_date }}{% endif %}
 
 Website
-: <a href="{{ course.course_link}}" rel="external">{{ course.course_link}}</a>
+: <a href="{{ course.website}}" rel="external">{{ course.website}}</a>
 
 Reviews page
-: <a href="{{ course.course_link_reviews}}" rel="external">{{ course.course_link_reviews}}</a>
+: <a href="{{ course.reviews}}" rel="external">{{ course.reviews}}</a>
         
         
-This information was last updated on {{ course.course_info_last_update}}.
+This information was last updated on {{ course.info_last_updated}}.
 {% if course.course_content_last_update %}
-  The content of this resource was last updated on {{ course.course_content_last_update}}.
+  The content of this resource was last updated on {{ course.content_last_updated}}.
 {% endif %} 
 {% include excol.html type="end" %}
 {% include box.html type="end" %}

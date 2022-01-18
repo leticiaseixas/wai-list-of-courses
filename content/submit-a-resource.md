@@ -289,12 +289,12 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="field" id="availability">
       <legend class="label">Availability</legend>
-      <label for="course-availability-start-date" class="label-input">Start date (Required)</label>
+      <label for="course-start-date" class="label-input">Start date (Required)</label>
       <p class="expl">Indicate the start date for the period of time this resource will be available.</p>
-      <input type="date" id="course-availability-start-date" required>
-      <label for="course-availability-end-date" class="label-input">End date</label>
+      <input type="date" id="course-start-date" required>
+      <label for="course-end-date" class="label-input">End date</label>
       <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
-      <input type="date" id="course-availability-end-date">
+      <input type="date" id="course-end-date">
       <!-- this course is provided at any time, self-paced-->
   </div>
   <h2>Submitting your course, training, or certification</h2>
