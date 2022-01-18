@@ -44,7 +44,6 @@ footer: >
                 {% endfor %}
             </fieldset>
             {% endfor %}
-            {% assign langAvailable = site.data.courses | map: "language" | uniq | sort %}
             {{ langAvailable | inspect }}
             {% assign langAvailable = "" | split: "," %}
             {% assign countriesAvailable = "" | split: "," %}
@@ -53,6 +52,7 @@ footer: >
                 {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
             {% endfor %}
             {% assign langAvailable = langAvailable | uniq %}
+            {{ langAvailable | inspect }}
             {% assign countriesAvailable = countriesAvailable | uniq %}
             <fieldset id="language-filter">
                 <legend>Language</legend>
