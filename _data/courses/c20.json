@@ -2,15 +2,27 @@
     "id": "course20",
     "title": "Accessibility Fundamentals",
     "provider": "Deque University",
-    "country": ["us"],
-    "description": "This training provides an overview of basic accessibility concepts, such as why digital inclusion matters and how people with disabilities use the Web. Through this training, participants will develop a better understanding about how disabilities affect a person's experience online, as well as a high-level introduction to the Web Content Accessibility Guidelines 2.0 (WCAG). The training will also introduce ways through which the many responsibilities pertinent to Web accessibility can be distributed by roles, so each member of your team understands the role they should play when it comes to successfully integrating accessibility in the project development lifecycle.\r\n\r\nThis training is intended for all audiences, including policy makers and other “non-web” attendees (a.k.a. Management).",
+    "country": [
+        "us"
+    ],
+    "description": "This training provides an overview of basic accessibility concepts, such as why digital inclusion matters and how people with disabilities use the Web. Through this training, participants will develop a better understanding about how disabilities affect a person`s experience online, as well as a high-level introduction to the Web Content Accessibility Guidelines 2.0 (WCAG). The training will also introduce ways through which the many responsibilities pertinent to Web accessibility can be distributed by roles, so each member of your team understands the role they should play when it comes to successfully integrating accessibility in the project development lifecycle.\r\n\r\nThis training is intended for all audiences, including policy makers and other “non-web” attendees (a.k.a. Management).",
     "type": "Training",
-    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
     "level": "Basic",
     "topics": "Accessibility considerations & inclusive design, Why accessibility matters, How people with disabilities use the web, Assistive Technologies and context of use, Statistics, laws and more!, Web Content Accessibility Guidelines, v2.0, Role-based accessibility and shift-left approach",
-    "language": ["en"],
+    "language": [
+        "en"
+    ],
     "format": "Blended",
-    "scheduling": ["Scheduled"],
+    "scheduling": [
+        "Scheduled"
+    ],
     "length": "0.5 day or less",
     "cost": "Paid",
     "website": "https://dequeuniversity.com/curriculum/instructor-led/",
