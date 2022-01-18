@@ -7,13 +7,20 @@
   "type": "Training",
   "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
   "level": "Basic",
-  "topics": "CPACC Certification, Basic Disability Concepts, Theoretical Models of Disability, Types of Disabilities, Disability Statistics, Disability Etiquette, Benefits of Accessible Design, Web Accessibility Principles, Universal Design for the Web, Universal Design for the Physical World, Universal Design for Learning, Usability and Accessibility, Myths and Misconceptions about Accessibility, Accessibility Standards and Laws, Organizational Governance and Management",
+  "prerequisites": [],
+  "topics":["CPACC Certification, Basic Disability Concepts, Theoretical Models of Disability, Types of Disabilities, Disability Statistics, Disability Etiquette, Benefits of Accessible Design, Web Accessibility Principles, Universal Design for the Web, Universal Design for the Physical World, Universal Design for Learning, Usability and Accessibility, Myths and Misconceptions about Accessibility, Accessibility Standards and Laws, Organizational Governance and Management"],
+  "wai_curricula": [],
   "language": ["en"],
   "format": "Online",
   "scheduling": "Scheduled, Unscheduled",
+  "platform":"",
+  "accessibility_support": [],
   "length": "4.5 hours (estimate)",
   "cost": "Paid",
   "website": "https://dequeuniversity.com/curriculum/courses/iaap-cpacc",
+  "reviews": "",
+  "info_last_updated": "1/17/22",
   "content_last_updated": "1/17/22",
-  "start_date": "10/1/21"
+  "start_date": "10/1/21",
+  "end_date": ""
 }
