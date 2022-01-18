@@ -1,0 +1,21 @@
+{
+    "id": "course10",
+    "title": "Web Accessibility, Part 5: Multimedia, Animations, and Motion",
+    "provider": "Deque University",
+    "country": ["us"],
+    "description": "Timed media accessibility, including captions, transcripts, audio descriptions, animations, visual transitions, vestibular disorders, and seizure disorders.",
+    "type": "Training",
+    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "level": "Intermediate",
+    "prerequisites": "Knowledge of HTML required",
+    "topics": "Multimedia Accessibility Decision Matrix, Captions, Transcripts, Audio Descriptions, Sign Language Interpretation, Media Player Accessibility, Background Sounds, Seizure-Inducing Flashes, Animations and Motion, Auto-Play, Legal Requirements",
+    "language": ["en"],
+    "format": "Online",
+    "scheduling": ["Scheduled, Unscheduled"],
+    "length": "105 minutes (estimate)",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/courses/multimedia",
+    "info_last_updated": "1/17/22",
+    "content_last_updated": "1/17/22",
+    "start_date": "1/17/22"
+}

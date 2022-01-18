@@ -1,0 +1,21 @@
+{
+    "id": "course16",
+    "title": "Web Accessibility Testing, Part 2: Basic Methods and Tools",
+    "provider": "Deque University",
+    "country": ["us"],
+    "description": "An in-depth review and practice of testing websites and web-based applications for conformance to major accessibility standards including automatic, manual, and use case testing. This course is designed to cover the following basic topics:\r\n- Overview of testing techniques and methodologies\r\n- Assembling a best practices guide\r\n- Determining test sets, conformance criteria, and test approach\r\n- Automated testing approaches\r\n- Performing manual testing, including code review and assistive technology testing\r\n- Use case testing\r\n- Testing with screen readers (JAWS, NVDA, VoiceOver)\r\n- Reporting, remediation, and regression",
+    "type": "Training",
+    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "level": "Intermediate",
+    "prerequisites": "Knowledge of HTML, CSS, and JavaScript is helpful",
+    "topics": "Accountability for Testing, Checklists and Design Requirements, The Scope of the Test, A Basic Testing Routine, Bug/Issue Management, Automated Testing Tools",
+    "language": ["en"],
+    "format": "Online",
+    "scheduling": ["Scheduled, Unscheduled"],
+    "length": "2 hours",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/courses/testingmethods",
+    "info_last_updated": "1/19/22",
+    "content_last_updated": "1/19/22",
+    "start_date": "1/19/22"
+}

@@ -1,0 +1,21 @@
+{
+    "id": "course13",
+    "title": "Web Accessibility, Part 2: Images, SVG, and Canvas",
+    "provider": "Deque University",
+    "country": ["us"],
+    "description": "Alternative text and other techniques for non-text content, including images, HTML5 canvas, and SVG.",
+    "type": "Training",
+    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "level": "Intermediate",
+    "prerequisites": "Knowledge of HTML required",
+    "topics": "Video Tutorial Library, Image Alt Text, Advanced Alt Text & Extended Descriptions, SVG, Icon Fonts, HTML5 Canvas, Multimedia, Objects, and Documents",
+    "language": ["en"],
+    "format": "Online",
+    "scheduling": ["Scheduled, Unscheduled"],
+    "length": "90 minutes (estimate)",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/courses/images",
+    "info_last_updated": "1/17/22",
+    "content_last_updated": "1/17/22",
+    "start_date": "1/17/22"
+}

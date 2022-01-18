@@ -1,0 +1,32 @@
+{
+    "id": "course4",
+    "title": "Accessibility Fundamentals, Part 2: Designing an Accessible User Experience",
+    "provider": "Deque University",
+    "country": [
+        "us"
+    ],
+    "description": "The purpose of this course is somewhat different from the other Deque University courses. Rather than present a list of accessibility rules, we push the boundaries a little and engage in a few thought experiments. The goal isn't just to comply with guidelines or laws, but to try to create a compelling, enjoyable, and useful experience for people with disabilities.",
+    "type": "Training",
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
+    "level": "Basic",
+    "topics": "Accessibility and Inclusive Design, Avoid Exclusive Design Patterns, Embrace Diversity, Create Inclusive Designs, Rethinking Affordances, The Challenge of User-Generated Content, Web Design Considerations by Disability Type, Basic Web Accessibility Checklist for Designers",
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled, Unscheduled"
+    ],
+    "length": "135 minutes (estimate)",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/courses/accessible-ux",
+    "info_last_updated": "1/5/22",
+    "content_last_updated": "1/5/22",
+    "start_date": "1/17/22"
+}

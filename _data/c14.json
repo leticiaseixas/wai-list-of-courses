@@ -1,0 +1,21 @@
+{
+    "id": "course14",
+    "title": "Web Accessibility, Part 1: Semantic Structure and Navigation",
+    "provider": "Deque University",
+    "country": ["us"],
+    "description": "Understanding semantic markup to allow users with disabilities to read and navigate page title, landmarks, headings, navigation menus, links, tables, lists, iframes, and other elements.",
+    "type": "Training",
+    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "level": "Intermediate",
+    "prerequisites": "Knowledge of HTML required",
+    "topics": "Video Tutorial Library, Page Title, Language, Landmarks, General UI Components, Headings, Links, Navigation Within Pages, Tables, Lists, Iframes, Other Semantic Elements, Parsing and Validity",
+    "language": ["en"],
+    "format": "Online",
+    "scheduling": ["Scheduled, Unscheduled"],
+    "length": "105 minutes (estimate)",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/courses/semantic-structure",
+    "info_last_updated": "1/17/22",
+    "content_last_updated": "1/17/22",
+    "start_date": "1/17/22"
+}
