@@ -28,7 +28,11 @@ Level
 : {{ course.level}}
 
 Prerequisites
+{% if course.prerequisites %}
 : {{ course.prerequisites | join: ", "}}
+{% else %}
+: Not provided
+{% endif %}
 
 Topics
 : {{ course.topics | join: ", "}}
@@ -58,27 +62,46 @@ Scheduling
 : {{ course.activities | join: ", "}}
 
 Platform
+{% if course.platform %}
 : {{ course.platform}}
+{% else %}
+: Not provided
+{% endif %}
 
 Accessibility support
+{% if course.accessibility_support %}
 : {% for support in course.accessibility_support %} 
 * {{ support.name }}{% endfor %}
+{% else %}
+: Not provided
+{% endif %}
 
 Length
-: {{ course.duration}}
+{% if course.length %}
+: {{ course.length}}
+{% else %}
+: Not provided
+{% endif %}
+
 
 Cost
 : {{ course.cost}}
 
 Availability
-: From {{ course.start_date}}{% if course.end_date %} to {{ course.end_date }}{% endif %}
+: From {{ course.start_date}}{% if course.end_date %} 
+{% if course.end_date %}
+to {{ course.end_date }}{% endif %}
+{% endif %}
 
 Website
 : <a href="{{ course.website}}" rel="external">{{ course.website}}</a>
 
 Reviews page
+{% if course.reviews %}
 : <a href="{{ course.reviews}}" rel="external">{{ course.reviews}}</a>
-        
+{% else %}
+: Not provided
+{% endif %}      
         
 This information was last updated on {{ course.info_last_updated}}.
 {% if course.course_content_last_update %}
