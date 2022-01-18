@@ -50,8 +50,8 @@ main > header { grid-column: 4 / span 4; }
   <p>Provide some information about the course, training, or certification. This information will be publicly shared.</p>
 
   <div class="field">
-      <label for="course-name" class="label-input">Title (Required)</label>
-      <input type="text" id="course-name" required>
+      <label for="course-title" class="label-input">Title (Required)</label>
+      <input type="text" id="course-title" required>
   </div>
   <div class="field">
       <label for="course-provider" class="label-input">Provider (Required)</label>
@@ -118,7 +118,7 @@ main > header { grid-column: 4 / span 4; }
     <legend class="label">Audience (Required)</legend>
     <div class="radio-field">
       <input type="checkbox" name="course-audience" id="course-audience-content-author" value="course-audience-content-author">
-      <label for="course-audience-content-author">Content Author</label>
+      <label for="course-audience-content-author">Content author</label>
     </div>
     <div class="radio-field">
       <input type="checkbox" name="course-audience" id="course-audience-designer" value="course-audience-designer">
