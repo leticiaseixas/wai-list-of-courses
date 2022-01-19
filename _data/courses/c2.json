@@ -27,6 +27,14 @@
   "scheduling": [
     "Scheduled, Unscheduled"
   ],
+  "accessibility_support": [
+    "caption-audio",
+    "material-ahead-of-time",
+    "A captioned recording with transcript will be shared with attendees after the live event"
+  ],
+  "other_accessibility_support": [
+    "A captioned recording with transcript will be shared with attendees after the live event"
+  ],
   "length": "90 minutes",
   "cost": "Paid",
   "website": "https://www.link.com",
