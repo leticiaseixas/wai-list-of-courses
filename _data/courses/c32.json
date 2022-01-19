@@ -1,0 +1,41 @@
+{
+    "id": "course32",
+    "title": "How to do accessible, inclusive onboarding",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "Applying technology to support inclusive onboarding in your organisation",
+    "type": "Training",
+    "audience": [
+        "Manager"
+    ],
+    "level": "Basic",
+    "topics": [
+        "Dos and don`ts of inclusive onboarding",
+        "Understand the unintentional barriers we can create that impact on successful onboarding of diverse teams",
+        "Zone in on areas for improvement in your own processes",
+        "Harness the power of technology in supporting inclusive onboarding",
+        "Implement immediate changes to help your onboarding processes cater to the widest audience"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "caption-audio",
+        "material-ahead-of-time",
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h33",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/how-do-accessible-inclusive-onboarding-feb-2022",
+    "info_last_updated": "2/4/22",
+    "content_last_updated": "2/4/22",
+    "start_date": "2/4/22",
+    "end_date": "2/4/22"
+}

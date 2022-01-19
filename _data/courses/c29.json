@@ -1,0 +1,45 @@
+{
+    "id": "course29",
+    "title": "How to use assistive technology at work, in education and at home",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "Learn how assistive technologies can help you and your workforce become more productive. This course will introduce the broad concept of assistive technology and the ways in which assistive technologies can be used to support a range of impairments, permanent, temporary and situational in both education and the workplace. It will demonstrate in-built settings and software and allow you to gain hands-on experience of this, before demonstrating the more specialist standalone software and hardware.",
+    "type": "Training",
+    "audience": [
+        "Manager",
+        "HR managers",
+        "IT managers",
+        "line managers teaching and learning staff",
+        "health and social care professionals",
+        "IT helpdesk",
+        "librarians",
+        "parents and carers"
+    ],
+    "level": "Basic",
+    "topics": [
+        "Definition and purpose of assistive technology",
+        "Visual, hearing, motor and cognitive barriers that assistive technology can remove for people living with permanent, temporary and situational impairments"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "caption-audio",
+        "material-ahead-of-time",
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h30",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/how-use-assistive-technology-work-education-and-home",
+    "info_last_updated": "2/1/22",
+    "content_last_updated": "2/1/22",
+    "start_date": "2/1/22",
+    "end_date": "2/1/22"
+}

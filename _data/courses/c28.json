@@ -1,0 +1,50 @@
+{
+    "id": "course28",
+    "title": "How to do inclusive usability testing",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "Learn how to conduct usability studies with users who have a diverse range of access needs. In this new training course, you will learn how to conduct moderated usability studies using participants with a diverse range of access needs, remotely and lab-based.",
+    "type": "Training",
+    "audience": [
+        "Designer",
+        "Developer",
+        "Manager",
+        "Researchers"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+        "Awareness of usability studies, accessibility and research"
+    ],
+    "topics": [
+        "Introduction to usability testing",
+        "How to be ensure people with diverse access needs are included",
+        "How to determine the number of participants",
+        "Recruiting participants",
+        "Script writing",
+        "The accessibility of platforms used for studies, assistive technologies and browser requirements",
+        "How to moderate usability studies and capture insights",
+        "Report writing and video highlights"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "caption-audio",
+        "material-ahead-of-time",
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h30",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/how-do-inclusive-usability-testing-apr2022",
+    "info_last_updated": "1/31/22",
+    "content_last_updated": "1/31/22",
+    "start_date": "1/31/22",
+    "end_date": "1/31/22"
+}

@@ -1,0 +1,44 @@
+{
+    "id": "course34",
+    "title": "Accessibility for developers - JavaScript and SPA Considerations",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "An introduction to the key aspects of web accessibility and inclusive design, relevant to web developers using modern JavaScript frameworks. Our training helps your team deliver accessible and inclusive products and services first time, every time, by embedding best practice in your processes and offering valuable insights to every member of your teams.",
+    "type": "Training",
+    "audience": [
+        "Designer",
+        "Developer",
+        "Manager"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+        "Knowledge of accessibility standards, coding and testing techniques"
+    ],
+    "topics": [
+        "JavaScript and common accessibility issues",
+        "Event Handling Native vs Custom Controls Progressive Enhancement",
+        "Managing change and focus within SPAs"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "caption-audio",
+        "material-ahead-of-time",
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h35",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/accessibility-developers-javascript-and-spa-considerations-apr2022",
+    "info_last_updated": "2/6/22",
+    "content_last_updated": "2/6/22",
+    "start_date": "2/6/22",
+    "end_date": "2/6/22"
+}

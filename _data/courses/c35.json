@@ -1,0 +1,45 @@
+{
+    "id": "course35",
+    "title": "Accessible mobile development",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "Learn how to include accessibility when building a mobile application. If you're building or releasing a mobile application, you need to be building accessible applications. On this course learn the basics of testing the application, and building the basic components with accessibility in mind.",
+    "type": "Training",
+    "audience": [
+        "Designer",
+        "Developer",
+        "Tester"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+        "Some awareness of accessibility standards"
+    ],
+    "topics": [
+        "The statistics for mobile usage in the UK and assistive technology",
+        "High-level review of design and testing the applications of how to use the screen readers",
+        "Use of advanced testing tools such as the Accessibility Scanner and Accessibility Inspector, as well as lint checks and automated testing frameworks",
+        "How to build accessible components for iOS and Android applications looking at: Buttons, Links, Headings, Images, Colours"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "caption-audio",
+        "material-ahead-of-time",
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h36",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/accessible-mobile-development",
+    "info_last_updated": "2/7/22",
+    "content_last_updated": "2/7/22",
+    "start_date": "2/7/22",
+    "end_date": "2/7/22"
+}

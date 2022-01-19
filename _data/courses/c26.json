@@ -1,0 +1,43 @@
+{
+    "id": "course26",
+    "title": "How to use a screen reader for accessibility testing",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "What screen reading software can highlight about accessibility for blind and visually impaired website visitors. This course will show you how to use some of the most common screen reader software out there to outline any issues you need to rectify on your site.",
+    "type": "Training",
+    "audience": [
+        "Developer",
+        "Tester"
+    ],
+    "level": "Basic",
+    "topics": [
+        "Screen reader basics",
+        "Different mobile and desktop screen reader software",
+        "Browser features and system tools",
+        "Screen magnifiers with screen reader readers",
+        "Literacy tools",
+        "Some cool screen reader-related apps"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "caption-audio",
+        "material-ahead-of-time",
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h30",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/how-use-screen-reader-accessibility-testing",
+    "info_last_updated": "1/29/22",
+    "content_last_updated": "1/29/22",
+    "start_date": "1/29/22",
+    "end_date": "1/29/22"
+}

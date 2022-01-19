@@ -1,0 +1,41 @@
+{
+    "id": "course31",
+    "title": "How to do accessible, inclusive recruitment",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "Harness the power of technology to support inclusive recruitment across your organisation. This course is part of a series during which AbilityNet`s workplace inclusion experts will discuss the importance of embedding inclusivity at every stage of employee journey, starting with the recruitment process.",
+    "type": "Training",
+    "audience": [
+        "Manager"
+    ],
+    "level": "Basic",
+    "topics": [
+        "Dos and don`ts of inclusive recruitment",
+        "Understanding the unintentional barriers we can create that reduce the pool of talent available to our organisations",
+        "Identifying areas for improvement in your own processes",
+        "Harness the power of technology in supporting inclusive recruitment",
+        "Implement immediate changes to help your recruitment processes cater to the widest audience"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "caption-audio",
+        "material-ahead-of-time",
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h32",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/how-develop-accessible-inclusive-recruitment-Feb2022",
+    "info_last_updated": "2/3/22",
+    "content_last_updated": "2/3/22",
+    "start_date": "2/3/22",
+    "end_date": "2/3/22"
+}
