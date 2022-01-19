@@ -75,13 +75,13 @@ Accessibility support
 : {{ assign hasASupport = false }} 
 {% if course.accessibility_support %}
 {% include filtered-accessibility-support.liquid data=course.accessibility_support %}
-{{ assign hasASupport = true }}
+{{  hasASupport = true }}
 {% for accessibilitySupport in filteredItems %}
 * {{ accessibilitySupport[1] }}{% endfor %} 
 {% endif %}
 {% if course.other_accessibility_support %}
 * {{ course.other_accessibility_support }}
-{{ assign hasASupport = true }}
+{{  hasASupport = true }}
 {% endif %}
 {% if hasASupport != true %}
 : Not provided
