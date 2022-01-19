@@ -15,6 +15,7 @@ New Test
         : {{ aSupport.id }}        
         {% endif %}    
         {%- assign newItems = aSupport | map: "options" -%}
+        : {{ newItems }}
         {%- for newItems2 in newItems -%}
         {% if include.data contains newItems2.id %}
             : {{ newItems2.id }}        
