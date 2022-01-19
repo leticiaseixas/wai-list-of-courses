@@ -1,33 +1,91 @@
-{
+  {
     "id": "course2",
-    "title": "Section 508: Fundamentals of the Law and Technical Standards",
-    "provider": "Deque University",
-    "country": [
-        "us"
+    "name": [
+      "Web Accessibility"
     ],
-    "description": "Section 508 of the Federal Rehabilitation Act of 1973 is a law that requires the Federal government to provide access to its electronic and information technology, specifically the electronic and information technology Federal agencies develop, use, maintain, and procure. The law applies to various kinds of technology, including hardware, software, office equipment, and government web pages. The goal of the information presented in this course is to provide a comprehensive overview of Section 508, including: - How 508 is applied and understood in the context of other accessibility laws, - The technical standards and scope of the law, and - The technological requirements of the law.",
-    "type": "Training",
+    "provider": [
+      "Provider U65"
+    ],
+    "description": [
+      "In this course, you will get hands-on experience making web applications accessible."
+    ],
+    "type": [
+      "Training"
+    ],
+    "prerequisites": [
+      "HTML, CSS, Javascript"
+    ],
     "audience": [
-        "Content author",
-        "Designer",
-        "Developer",
-        "Manager",
-        "Tester"
+      "Developer",
+      "Tester"
     ],
-    "level": "Basic",
-    "topics": "Legal Context, Standards, Technical Scope and Exceptions, Electronic Content, Hardware Requirement, Software Requirements, Support Documentation and Services Requirements, Summary and Next Steps",
+    "level": [
+      "Advanced"
+    ],
+    "curricula_correspondence": [
+      "Developer Modules"
+    ],
+    "curricula_link": [
+      "https://www.w3.org/WAI/curricula/developer-modules/"
+    ],
+    "keywords_topics": [
+      "Accessible web applications"
+    ],
     "language": [
-        "en"
+      "en"
     ],
-    "format": "Online",
-    "scheduling": [
-        "Scheduled",
-        "Unscheduled"
+    "country": [
+      "us"
     ],
-    "length": "1 hour",
-    "cost": "Paid",
-    "website": "https://dequeuniversity.com/curriculum/courses/508-fundamentals",
-    "info_last_updated": "11/11/21",
-    "content_last_updated": "11/11/21",
-    "start_date": "1/17/20"
-}
+    "format": [
+      "Online"
+    ],
+    "activities": [
+      "Scheduled"
+    ],
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
+      }
+    ],
+    "platform": [
+      "Udacity"
+    ],
+    "cost": [
+      "Free"
+    ],
+    "duration": [
+      "Approx 2 weeks"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "31 April 2022"
+    ],
+    "course_link": [
+      "www.link.com"
+    ],
+    "course_link_reviews": [
+      "www.link.com/reviews"
+    ],
+    "course_info_last_update": [
+      "08 September 2021"
+    ],
+    "course_content_last_update": [
+      "01 August 2021"
+    ]
+  }
