@@ -11,7 +11,7 @@ Data
     {% assign newItem = aSupport | map: "options" -%}
     {% assign filteredItems = filteredItems | push: newItem -%}
     {%- for aSupport2 in aSupport -%}
-        {% assign newItem = aSupport | map: "options" -%}
+        {% assign newItem = aSupport2 | map: "options" -%}
         {% assign filteredItems = filteredItems | push: newItem -%}
     {%- endfor -%}    
 {%- endfor -%}
