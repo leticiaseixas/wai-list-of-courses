@@ -70,7 +70,7 @@ Platform
 : Not provided
 {% endif %}
 
-{% assign obj = site.data.accessibility-support | where: "type", "digital-accessibility" %}
+{% assign obj = site.data.accessibility-support | where: "id", "digital-accessibility" %}
 {{ obj | inspect }}
 {{ obj['digital-accessibility'] | inspect }}
 
