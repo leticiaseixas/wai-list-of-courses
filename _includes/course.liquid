@@ -72,18 +72,15 @@ Platform
 
 
 Accessibility support
-: {{ assign hasASupport = false | allow_false: true }} 
-{% if course.accessibility_support %}
+: {% if course.accessibility_support %}
 {% include filtered-accessibility-support.liquid data=course.accessibility_support %}
-{{  hasASupport = true }}
 {% for accessibilitySupport in filteredItems %}
 * {{ accessibilitySupport[1] }}{% endfor %} 
 {% endif %}
 {% if course.other_accessibility_support %}
 * {{ course.other_accessibility_support }}
-{{  hasASupport = true }}
 {% endif %}
-{% if hasASupport != true %}
+{% if !course.accessibility_support and !course.other_accessibility_support %}
 : Not provided
 {% endif %}
 
