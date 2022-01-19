@@ -5,13 +5,13 @@ data =
 Data
 : {{ include.data | inspect }}
 {%- assign filteredItems = "" | split: "," -%}
+{%- assign filteredItems = site.data.accessibility-support | map: "options" -%}
 
 {%- for aSupport in site.data.accessibility-support -%}
-    {% if aSupport contains "digital-accessibility" %}
-        {{ aSupport | inspect }}
-    {% endif %}
+    
 {%- endfor -%}
 
-Filteres Items
+
+Filtered Items
 : {{ filteredItems | inspect }}
 
