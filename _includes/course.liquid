@@ -72,10 +72,12 @@ Platform
 
 
 Accessibility support
-:{% if course.accessibility_support %}
-{% include filtered-accessibility-support.liquid data=course.accessibility_support %} 
+{% if course.accessibility_support %}
+: {% include filtered-accessibility-support.liquid data=course.accessibility_support %} 
 {% for accessibilitySupport in filteredItems %}
 * {{ accessibilitySupport[1] }}{% endfor %} 
+{% elseif couse.other_accessibility_support %}
+* {{ couse.other_accessibility_support }}
 {% else %}
 : Not provided
 {% endif %}
