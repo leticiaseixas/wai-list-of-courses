@@ -25,18 +25,9 @@
     ],
     "platform": "Zoom",
     "accessibility_support": [
-        {
-            "id_type": "accessible-electronic-handout",
-            "id_support": "caption-audio"
-        },
-        {
-            "id_type": "general-accessibility",
-            "id_support": "material-ahead-of-time"
-        },
-        {
-            "id_type": "other",
-            "id_support": "A captioned recording with transcript will be shared with attendees after the live event"
-        }
+        "caption-audio",
+        "material-ahead-of-time",
+        "A captioned recording with transcript will be shared with attendees after the live event"
     ],
     "length": "1h31",
     "cost": "Free or reduced fee for some",

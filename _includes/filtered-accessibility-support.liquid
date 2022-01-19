@@ -4,6 +4,7 @@ data =
 -->
 Data
 {{ include.data | inspect }}
+{%- assign filteredItems = "" | split: "," -%}
 
 All Supports
 {% assign aSupports = site.data.accessibility-support | map:"options" %}
@@ -13,4 +14,10 @@ All Supports
 Each Support
 {%- for aSupport in aSupports -%}
     {{ aSupport | inspect }}
+    {%- if include.data contains aSupport[id] -%}
+        {% assign newItem = include.data[1] -%}
+        {% assign filteredItems = filteredItems | push: newItem -%}
+        {{  }}
+    {%- endif -%}
+
 {%- endfor -%}
