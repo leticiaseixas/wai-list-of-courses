@@ -4,24 +4,23 @@ data =
 -->
 Data
 : {{ include.data | inspect }}
-{%- assign filteredItems = "" | split: "," -%}
-{%- assign filteredItems = site.data.accessibility-support | map: "options" -%}
+{%- assign aGroups = "" | split: "," -%}
+{%- assign aGroups = site.data.accessibility-support | map: "options" -%}
 
 
 New Test
-{%- for item in filteredItems -%}
-{%- for aSupport in item -%}
-{% if include.data contains aSupport.id %}
-Support id: {{ aSupport.id }}<br />
-{% endif %}
-{%- assign newItems = aSupport | map: "options" -%}
-{%- for newItems2 in newItems -%}
-{%- for newItems3 in newItems2 -%}
-Support id:{{ newItems3.id }}<br />
-{% if include.data contains newItems3.id %}
-Includes?: {{ newItems3.id }} <br />
-{% endif %}
-{%- endfor -%}
-{%- endfor -%}
-{%- endfor -%}
+{%- for aSubGroup in aGroups -%}
+    {%- for aSupport in aSubGroup -%}
+        {% if include.data contains aSupport.id %}
+            Support id: {{ aSupport.id }}<br />
+        {% endif %}
+        {%- assign newASubGroups = aSupport | map: "options" -%}
+        {%- for newASubGroup in newASubGroups -%}
+            {%- for newASupport in newASubGroup -%}
+                {% if include.data contains newASupport.id %}
+                    Includes?: {{ newItems3.id }} <br />
+                {% endif %}
+            {%- endfor -%}
+        {%- endfor -%}
+    {%- endfor -%}
 {%- endfor -%}
