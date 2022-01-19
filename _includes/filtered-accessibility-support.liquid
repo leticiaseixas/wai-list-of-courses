@@ -2,11 +2,15 @@
 data =     
 "id_support": ["accessible-electronic-handout", "caption-audio", "general-accessibility"] 
 -->
+Data
+{{ include.data | inspect }}
 
-
+All Supports
 {% assign aSupports = site.data.accessibility-support | map:"options" %}
 {{ aSupports | inspect }}
 
+
+Each Support
 {%- for aSupport in aSupports -%}
     {{ aSupport | inspect }}
 {%- endfor -%}
