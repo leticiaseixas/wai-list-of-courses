@@ -73,13 +73,13 @@ Platform
 
 {% assign hasASupport = false %}
 Accessibility support
-: {% if course.accessibility_support %}
+:  {% if course.accessibility_support %}
 {% include filtered-accessibility-support.liquid data = course.accessibility_support %}
 {% assign hasASupport = true %}
-{% for accessibilitySupport in filteredItems %}  
+{% for accessibilitySupport in filteredItems %}
 * {{ accessibilitySupport[1] }}{% endfor %} 
 {% endif %}
-{% if course.other_accessibility_support %}  
+{% if course.other_accessibility_support %}
 * {{ course.other_accessibility_support }}
 {% assign hasASupport = true %}
 {% endif %}
@@ -98,8 +98,8 @@ Cost
 : {{ course.cost}}
 
 Availability
-: From {{ course.start_date | date: "%y %b, %b" }}{% if course.end_date %} 
-{% if course.end_date %} to {{ course.end_date | date: "%y %b, %b"  }}{% endif %}{% endif %}
+: From {{ course.start_date | date: "%y %b, %d" }}{% if course.end_date %} 
+{% if course.end_date %} to {{ course.end_date | date: "%y %b, %d"  }}{% endif %}{% endif %}
 
 Website
 : <a href="{{ course.website}}" rel="external">{{ course.website }}</a>
@@ -111,9 +111,9 @@ Reviews page
 : Not provided
 {% endif %}      
         
-This information was last updated on {{ course.info_last_updated | date: "%y %b, %b" }}.
+This information was last updated on {{ course.info_last_updated | date: "%y %b, %d" }}.
 {% if course.course_content_last_update %}
-  The content of this resource was last updated on {{ course.content_last_updated | date: "%y %b, %b" }}.
+  The content of this resource was last updated on {{ course.content_last_updated | date: "%y %b, %d" }}.
 {% endif %} 
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
