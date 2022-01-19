@@ -71,7 +71,7 @@ Platform
 Accessibility support
 {% if course.accessibility_support %}
 : {% for support in course.accessibility_support %} 
-* {{ support.name }}{% endfor %}
+* {{ accessibility-support[support].name }}{% endfor %}
 {% else %}
 : Not provided
 {% endif %}
@@ -83,15 +83,12 @@ Length
 : Not provided
 {% endif %}
 
-
 Cost
 : {{ course.cost}}
 
 Availability
 : From {{ course.start_date}}{% if course.end_date %} 
-{% if course.end_date %}
-to {{ course.end_date }}{% endif %}
-{% endif %}
+{% if course.end_date %} to {{ course.end_date }}{% endif %} {% endif %}
 
 Website
 : <a href="{{ course.website}}" rel="external">{{ course.website}}</a>
