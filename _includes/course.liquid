@@ -71,7 +71,8 @@ Platform
 {% endif %}
 
 
-Accessibility support: 
+Accessibility support
+: 
 {{ assign hasASupport = false }}
 {% if course.accessibility_support%}
 {% include filtered-accessibility-support.liquid data=course.accessibility_support %}
@@ -83,9 +84,9 @@ Accessibility support:
 * {{ course.other_accessibility_support }}
 {{ assign hasASupport = true }}
 {% endif %}
-{% if hasASupport == false%}
+{% unless hasASupport %}
 : Not provided
-{% endif %}
+{% endunless %}
 
 Length
 {% if course.length %}
