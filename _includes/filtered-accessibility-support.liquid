@@ -10,21 +10,18 @@ Data
 
 New Test
 {%- for item in filteredItems -%}
-    {%- for aSupport in item -%}
-        {% if include.data contains aSupport.id %}
-        Support id: {{ aSupport.id }}<br/> 
-        {% endif %}    
-        {%- assign newItems = aSupport | map: "options" -%}
-        {%- for newItems2 in newItems -%}
-            Support id:{{ newItems2.id }}<br/>
-        {% if include.data contains newItems2.id %}
-            Includes?: {{ newItems2.id }}        <br/>
-        {% endif %}    
-        {%- endfor -%}            
-    {%- endfor -%}        
+{%- for aSupport in item -%}
+{% if include.data contains aSupport.id %}
+Support id: {{ aSupport.id }}<br />
+{% endif %}
+{%- assign newItems = aSupport | map: "options" -%}
+{%- for newItems2 in newItems -%}
+{%- for newItems3 in newItems -%}
+Support id:{{ newItems3.id }}<br />
+{% if include.data contains newItems2.id %}
+Includes?: {{ newItems2.id }} <br />
+{% endif %}
 {%- endfor -%}
-
-
-
-
-
+{%- endfor -%}
+{%- endfor -%}
+{%- endfor -%}
