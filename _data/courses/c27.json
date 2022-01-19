@@ -5,7 +5,7 @@
     "country": [
         "gb"
     ],
-    "description": "Learn how to check that your applications are accessible for all audiences. If you're building or releasing a mobile app, you need to be testing your app is accessible. On this course learn how to test on iOS and Android devices using VoiceOver and TalkBack as well as a number of different testing tools and frameworks, covering mobile app design consideration and best practice.",
+    "description": "Learn how to check that your applications are accessible for all audiences. If you are building or releasing a mobile app, you need to be testing your app is accessible. On this course learn how to test on iOS and Android devices using VoiceOver and TalkBack as well as a number of different testing tools and frameworks, covering mobile app design consideration and best practice.",
     "type": "Training",
     "audience": [
         "Designer",
