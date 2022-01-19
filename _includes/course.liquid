@@ -78,9 +78,11 @@ Accessibility support
 {{ assign hasASupport = true }}
 {% for accessibilitySupport in filteredItems %}
 * {{ accessibilitySupport[1] }}{% endfor %} 
+{% endif %}
 {% if course.other_accessibility_support %}
 * {{ course.other_accessibility_support }}
 {{ assign hasASupport = true }}
+{% endif %}
 {% if !hasASupport %}
 : Not provided
 {% endif %}
