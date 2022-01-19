@@ -2,17 +2,20 @@
 data =     
 "id_support": ["caption-audio", "material-ahead-of-time", "A captioned recording with transcript will be shared with attendees after the live event"] 
 -->
-:Data
-{{ include.data | inspect }}
+Data
+: {{ include.data | inspect }}
 {%- assign filteredItems = "" | split: "," -%}
 
 
-{% assign aSupports = site.data.accessibility-support | map:"options" %}
-
-{%- for aSupport in aSupports -%}
+{%- for aSupport in site.data.accessibility-support -%}
     {% assign newItem = aSupport | map: "options" -%}
     {% assign filteredItems = filteredItems | push: newItem -%}
+    {%- for aSupport2 in aSupport -%}
+        {% assign newItem = aSupport | map: "options" -%}
+        {% assign filteredItems = filteredItems | push: newItem -%}
+    {%- endfor -%}    
 {%- endfor -%}
 
-: Filteres Items
-{{ filteredItems | inspect }}
+Filteres Items
+: {{ filteredItems | inspect }}
+
