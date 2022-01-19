@@ -72,7 +72,8 @@ Platform
 
 {% assign obj = site.data.accessibility-support | map:"options" | where: "id", "digital-accessibility" %}
 {{ obj | inspect }}
-{{ site.data.accessibility-support["digital-accessibility"] | inspect  }}
+{% assign all site.data.accessibility-support | join: "," %}
+{{ all | inspect }}
 
 
 Accessibility support
