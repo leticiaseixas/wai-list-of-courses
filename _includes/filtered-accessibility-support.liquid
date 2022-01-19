@@ -8,7 +8,9 @@ Data
 {%- assign filteredItems = site.data.accessibility-support | map: "options" -%}
 
 {%- for item in filteredItems -%}
-{{ item[0].id }}
+    {%- for aSupport in item -%}
+        {{ aSupport.id }}
+    {%- endfor -%}        
 {%- endfor -%}
 
 
