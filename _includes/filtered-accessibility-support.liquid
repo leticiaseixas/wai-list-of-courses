@@ -1,0 +1,12 @@
+<!-- 
+data =     
+"id_support": ["accessible-electronic-handout", "caption-audio", "general-accessibility"] 
+-->
+
+
+{% assign aSupports = site.data.accessibility-support | map:"options" %}
+{{ aSupports | inspect }}
+
+{%- for aSupport in aSupports -%}
+    {{ aSupport | inspect }}
+{%- endfor -%}

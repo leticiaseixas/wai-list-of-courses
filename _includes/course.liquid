@@ -70,10 +70,7 @@ Platform
 : Not provided
 {% endif %}
 
-{% assign obj = site.data.accessibility-support | map:"options" %}
-{{ obj | inspect }}
-{% assign all = site.data.accessibility-support | join: "," %}
-{{ all | inspect }}
+{% include filtered-accessibility-support.liquid data=course.accessibility_support %} 
 
 
 Accessibility support
