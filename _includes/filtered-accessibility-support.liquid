@@ -16,8 +16,8 @@ data =
         {%- for newASubGroup in newASubGroups -%}
             {%- for newASupport in newASubGroup -%}
                 {% if include.data contains newASupport.id %}
-                    {% assign aSupportAux = aSupportAux | push: aSupport.id %}
-                    {% assign aSupportAux = aSupportAux | push: aSupport.name %}
+                    {% assign aSupportAux = aSupportAux | push: newASupport.id %}
+                    {% assign aSupportAux = aSupportAux | push: newASupport.name %}
                     {% assign filteredItems  = filteredItems | push: aSupportAux %}
                 {% endif %}
             {%- endfor -%}
