@@ -73,19 +73,13 @@ Platform
 
 {% assign hasASupport = false %}
 Accessibility support
-:  
-{% if course.accessibility_support %}  
+: {% if course.accessibility_support %}  
 {% include filtered-accessibility-support.liquid data = course.accessibility_support %}
 {% assign hasASupport = true %}
-{% for accessibilitySupport in filteredItems %}  
-
-* {{ accessibilitySupport[1] }}{% endfor %} 
-{% endif %}
-{% if course.other_accessibility_support %}  
-
-* {{ course.other_accessibility_support }}
-{% assign hasASupport = true %}
-{% endif %}
+{% for accessibilitySupport in filteredItems %} 
+* {{ accessibilitySupport[1] }}{% endfor %} {% endif %}
+{% if course.other_accessibility_support %} 
+* {{ course.other_accessibility_support }}{% assign hasASupport = true %}{% endif %}
 {% unless hasASupport %}
 : Not provided
 {% endunless %}
