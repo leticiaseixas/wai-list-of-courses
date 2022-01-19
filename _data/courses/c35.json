@@ -35,6 +35,9 @@
         "material-ahead-of-time",
         "A captioned recording with transcript will be shared with attendees after the live event"
     ],
+    "other_accessibility_support": [
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
     "length": "1h36",
     "cost": "Free or reduced fee for some",
     "website": "https://abilitynet.org.uk/training/accessible-mobile-development",

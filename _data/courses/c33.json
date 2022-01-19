@@ -37,6 +37,9 @@
         "material-ahead-of-time",
         "A captioned recording with transcript will be shared with attendees after the live event"
     ],
+    "other_accessibility_support": [
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
     "length": "1h34",
     "cost": "Free or reduced fee for some",
     "website": "https://abilitynet.org.uk/training/accessibility-for-developers-intermediate",
