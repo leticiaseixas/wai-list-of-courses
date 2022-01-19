@@ -12,13 +12,13 @@ New Test
 {%- for item in filteredItems -%}
     {%- for aSupport in item -%}
         {% if include.data contains aSupport.id %}
-        : {{ aSupport.id }}        
+        Support id: {{ aSupport.id }}<br/> 
         {% endif %}    
         {%- assign newItems = aSupport | map: "options" -%}
-        : {{ newItems }}
         {%- for newItems2 in newItems -%}
+            Support id:{{ newItems2.id }}<br/>
         {% if include.data contains newItems2.id %}
-            : {{ newItems2.id }}        
+            Includes?: {{ newItems2.id }}        <br/>
         {% endif %}    
         {%- endfor -%}            
     {%- endfor -%}        
