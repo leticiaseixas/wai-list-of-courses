@@ -70,10 +70,15 @@ Platform
 : Not provided
 {% endif %}
 
+{% assign obj = site.data.accessibility-support | map: 'type' %}
+{{ obj | inspect }}
+
 Accessibility support
 {% if course.accessibility_support %}
 : {% for support in course.accessibility_support %} 
-* {{ site.data.accessibility-support[support].name }}{% endfor %}
+{% if support.id_type == 'other' %}
+* {{ support.id_support }}{% else %}
+* {{ site.data.accessibility-support[support.id_type].name }}{% endif %}{% endfor %}
 {% else %}
 : Not provided
 {% endif %}
