@@ -7,8 +7,10 @@ Data
 {%- assign filteredItems = "" | split: "," -%}
 {%- assign filteredItems = site.data.accessibility-support | map: "options" -%}
 
-{%- for aSupport in site.data.accessibility-support -%}
-    
+{%- for item in filteredItems -%}
+{% if item contains "option" %}
+    option
+{% endif %}
 {%- endfor -%}
 
 
