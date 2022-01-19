@@ -83,7 +83,7 @@ Accessibility support
 * {{ course.other_accessibility_support }}
 {{ assign hasASupport = true }}
 {% endif %}
-{% unless !hasASupport %}
+{% unless hasASupport == true%}
 : Not provided
 {% endunless %}
 
