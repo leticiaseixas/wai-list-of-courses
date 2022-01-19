@@ -6,10 +6,9 @@ Data
 : {{ include.data | inspect }}
 {%- assign filteredItems = "" | split: "," -%}
 
-
 {%- for aSupport in site.data.accessibility-support -%}
-    {% if aSupport contains options %}
-        {{ aSupport["options"] | inspect }}
+    {% if aSupport contains "digital-accessibility" %}
+        {{ aSupport | inspect }}
     {% endif %}
 {%- endfor -%}
 
