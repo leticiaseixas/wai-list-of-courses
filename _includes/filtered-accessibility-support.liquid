@@ -8,12 +8,9 @@ Data
 
 
 {%- for aSupport in site.data.accessibility-support -%}
-    {% assign newItem = aSupport | map: "options" -%}
-    {% assign filteredItems = filteredItems | push: newItem -%}
-    {%- for aSupport2 in aSupport -%}
-        {% assign newItem = aSupport2 | map: "options" -%}
-        {% assign filteredItems = filteredItems | push: newItem -%}
-    {%- endfor -%}    
+    {% if aSupport contains options %}
+        {{ aSupport["options"] | inspect }}
+    {% endif %}
 {%- endfor -%}
 
 Filteres Items
