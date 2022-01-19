@@ -9,11 +9,28 @@ Data
 
 {%- for item in filteredItems -%}
     {%- for aSupport in item -%}
-        : {{ aSupport.id }}
+        {% aSupport.id %}
         {%- assign newItems = aSupport | map: "options" -%}
-        : {{ newItems }}
+        : {% newItems %}
     {%- endfor -%}        
 {%- endfor -%}
+
+
+New Test
+{%- for item in filteredItems -%}
+    {%- for aSupport in item -%}
+        {% if include.data contains aSupport.id %}
+        : {{ aSupport.id }}        
+        {% endif %}    
+        {%- assign newItems = aSupport | map: "options" -%}
+        {%- for newItems2 in newItems -%}
+        {% if include.data containsnewItems2.id %}
+            : {{ aSupport.id }}        
+        {% endif %}    
+        {%- endfor -%}            
+    {%- endfor -%}        
+{%- endfor -%}
+
 
 
 
