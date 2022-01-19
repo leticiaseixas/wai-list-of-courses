@@ -1,25 +1,18 @@
 <!-- 
 data =     
-"id_support": ["accessible-electronic-handout", "caption-audio", "general-accessibility"] 
+"id_support": ["caption-audio", "material-ahead-of-time", "A captioned recording with transcript will be shared with attendees after the live event"] 
 -->
-Data
-
+:Data
 {{ include.data | inspect }}
 {%- assign filteredItems = "" | split: "," -%}
 
-All Supports
+
 {% assign aSupports = site.data.accessibility-support | map:"options" %}
 
-
-Each Support
-
 {%- for aSupport in aSupports -%}
-    {%- if include.data contains aSupport[id] -%}
-        {% assign newItem = include.data[1] -%}
-        {% assign filteredItems = filteredItems | push: newItem -%}
-        {{  }}
-    {%- endif -%}
-
+    {% assign newItem = aSupport | map: "options" -%}
+    {% assign filteredItems = filteredItems | push: newItem -%}
 {%- endfor -%}
 
+: Filteres Items
 {{ filteredItems | inspect }}
