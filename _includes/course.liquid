@@ -29,13 +29,15 @@ Level
 
 Prerequisites
 {% if course.prerequisites %}
-: {{ course.prerequisites | join: ", "}}
+: {% for prerequisite in course.prerequisites %} 
+* {{ prerequisite }}{% endfor %}
 {% else %}
 : Not provided
 {% endif %}
 
 Topics
-: {{ course.topics | join: ", "}}
+: {% for topic in course.topics %} 
+* {{ topic }}{% endfor %}
   
 WAI Curricula module
 {% if course.wai_curricula_link %}
@@ -71,7 +73,7 @@ Platform
 Accessibility support
 {% if course.accessibility_support %}
 : {% for support in course.accessibility_support %} 
-* {{ accessibility-support[support].name }}{% endfor %}
+* {{ site.data.accessibility-support[support].name }}{% endfor %}
 {% else %}
 : Not provided
 {% endif %}
