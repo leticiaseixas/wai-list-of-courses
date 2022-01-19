@@ -9,7 +9,9 @@ Data
 
 {%- for item in filteredItems -%}
     {%- for aSupport in item -%}
-        {{ aSupport.id }}
+        : {{ aSupport.id }}
+        {%- assign newItems = aSupport | map: "options" -%}
+        : {{ newItems }}
     {%- endfor -%}        
 {%- endfor -%}
 
