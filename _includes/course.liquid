@@ -73,7 +73,8 @@ Platform
 
 {% assign hasASupport = false %}
 Accessibility support
-:\{% if course.accessibility_support %}
+:  
+{% if course.accessibility_support %}
 {% include filtered-accessibility-support.liquid data = course.accessibility_support %}
 {% assign hasASupport = true %}
 {% for accessibilitySupport in filteredItems %}
