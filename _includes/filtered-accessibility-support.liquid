@@ -16,10 +16,10 @@ Support id: {{ aSupport.id }}<br />
 {% endif %}
 {%- assign newItems = aSupport | map: "options" -%}
 {%- for newItems2 in newItems -%}
-{%- for newItems3 in newItems -%}
+{%- for newItems3 in newItems2 -%}
 Support id:{{ newItems3.id }}<br />
-{% if include.data contains newItems2.id %}
-Includes?: {{ newItems2.id }} <br />
+{% if include.data contains newItems3.id %}
+Includes?: {{ newItems3.id }} <br />
 {% endif %}
 {%- endfor -%}
 {%- endfor -%}
