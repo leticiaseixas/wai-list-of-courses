@@ -75,7 +75,7 @@ Accessibility support
 {% if course.accessibility_support %}
 {% include filtered-accessibility-support.liquid data=course.accessibility_support %} 
 {% for accessibilitySupport in filteredItems %}
-: {{accessibilitySupport.name}}
+: {{ accessibilitySupport[1] }}
 {% endfor %} 
 {% else %}
 : Not provided
