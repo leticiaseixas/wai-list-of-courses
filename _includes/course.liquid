@@ -71,11 +71,11 @@ Platform
 {% endif %}
 
 
-Accessibility support
+Accessibility support: 
 {{ assign hasASupport = false }}
 {% if course.accessibility_support%}
 {% include filtered-accessibility-support.liquid data=course.accessibility_support %}
-: {{ assign hasASupport = true }}
+{{ assign hasASupport = true }}
 {% for accessibilitySupport in filteredItems %}
 * {{ accessibilitySupport[1] }}{% endfor %} 
 {% endif %}
@@ -99,14 +99,14 @@ Cost
 
 Availability
 : From {{ course.start_date | date: "%b %d, %y" }}{% if course.end_date %} 
-{% if course.end_date %} to {{ course.end_date  | date: "%b %d, %y" }}{% endif %} {% endif %}
+{% if course.end_date %} to {{ course.end_date  | date: "%b %d, %y" }}{% endif %}{% endif %}
 
 Website
-: <a href="{{ course.website}}" rel="external">{{ course.website}}</a>
+: <a href="{{ course.website}}" rel="external">{{ course.website }}</a>
 
 Reviews page
 {% if course.reviews %}
-: <a href="{{ course.reviews}}" rel="external">{{ course.reviews}}</a>
+: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}</a>
 {% else %}
 : Not provided
 {% endif %}      
