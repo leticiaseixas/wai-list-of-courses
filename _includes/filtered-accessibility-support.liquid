@@ -7,14 +7,6 @@ Data
 {%- assign filteredItems = "" | split: "," -%}
 {%- assign filteredItems = site.data.accessibility-support | map: "options" -%}
 
-{%- for item in filteredItems -%}
-    {%- for aSupport in item -%}
-        {% aSupport.id %}
-        {%- assign newItems = aSupport | map: "options" -%}
-        : {% newItems %}
-    {%- endfor -%}        
-{%- endfor -%}
-
 
 New Test
 {%- for item in filteredItems -%}
