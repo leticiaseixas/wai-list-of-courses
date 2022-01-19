@@ -70,15 +70,13 @@ Platform
 : Not provided
 {% endif %}
 
-{% include filtered-accessibility-support.liquid data=course.accessibility_support %} 
-
 
 Accessibility support
 {% if course.accessibility_support %}
-: {% for support in course.accessibility_support %} 
-{% if support.id_type == 'other' %}
-* {{ support.id_support }}{% else %}
-* {{ site.data.accessibility-support[support.id_type].name }}{% endif %}{% endfor %}
+{% include filtered-accessibility-support.liquid data=course.accessibility_support %} 
+{% for accessibilitySupport in filteredItems %}
+: {{accessibilitySupport.name}}
+{% endfor %} 
 {% else %}
 : Not provided
 {% endif %}
