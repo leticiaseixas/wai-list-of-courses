@@ -97,14 +97,7 @@ footer: >
     <div id="courses-list">
         <span id="status">
             <p id="total-courses">Showing {{ site.data.courses | size }} results</p>
-        </span>
-        <div class="field" class="sort-by">
-            <label for="select">Sort by</label>
-            <select id="select">
-                <option selected="selected">Alphabetically (A to Z)</option>
-                <option>Most recently updated</option>
-            </select>
-        </div>        
+        </span>      
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         {% include sort-data-folder.liquid data=site.data.courses sortKey="title" %} 
