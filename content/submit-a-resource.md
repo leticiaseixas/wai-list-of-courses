@@ -149,30 +149,33 @@ main > header { grid-column: 4 / span 4; }
     </div>
   </fieldset>
 
-<fieldset class="field" id="course-prerequisites">
-  <legend class="label">Prerequisites</legend>
-  <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
-  <div class="line">
-    <label for="course-prerequisites_1" class="label-input">
-      Prerequisite 1
-    </label>
-    <input type="text" id="course-prerequisites_1" name="course-prerequisites">
-  </div>
-  <div class="proto">
-    <label for="course-prerequisites_[n]" class="label-input">Other prerequisite [n]</label>
-    <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
-  </div>
-  <button type="button" class="add-line small">Add new prerequisite</button>
-</fieldset>
+  <fieldset class="field" id="course-prerequisites">
+    <legend class="label">Prerequisites</legend>
+    <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
+    <div class="line">
+      <label for="course-prerequisites_1" class="label-input">Prerequisite 1</label>
+      <input type="text" id="course-prerequisites_1" name="course-prerequisites">
+    </div>
+    <div class="proto">
+      <label for="course-prerequisites_[n]" class="label-input">Other prerequisite [n]</label>
+      <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
+    </div>
+    <button type="button" class="add-line small">Add new prerequisite</button>
+  </fieldset>
 
-
-
-  <div class="field" id="divInputTopic">
-      <label for="course-topics" class="label-input" required>Topics (Required)</label>
-      <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
-      <input type="text" id="topics1" class="field-topic">
-      {% include_cached button.html type="fake" label="Add new topic" class="small fake button-new-topic" %}
-  </div>
+  <fieldset class="field" id="topics">
+    <legend class="label">Topics</legend>
+    <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
+    <div class="line">
+      <label for="course-topics_1" class="label-input">Topic 1</label>
+      <input type="text" id="course-topics_1" name="course-topics" required>
+    </div>
+    <div class="proto">
+      <label for="course-topics_[n]" class="label-input">Other topic [n]</label>
+      <input type="text" id="course-topics_[n]" name="course-topics" />
+    </div>
+    <button type="button" class="add-line small">Add new topic</button>
+  </fieldset>
 
   <fieldset id="course-wai-curricula">
     <legend>
