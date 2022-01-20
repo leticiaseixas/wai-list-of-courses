@@ -164,9 +164,9 @@ main > header { grid-column: 4 / span 4; }
   </div>
 
   <fieldset id="course-wai-curricula">
-    <legend><h3>WAI Curricula on Web Accessibility
-    <!-- {% include resource-link.html label="Curricula on Web Accessibility" href="https://www.w3.org/WAI/curricula/" %} -->
-    </h3></legend>
+    <legend>
+      <h3>WAI Curricula on Web Accessibility</h3>
+    </legend>
     <p class="expl">  
     Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
     </p>
@@ -285,7 +285,6 @@ main > header { grid-column: 4 / span 4; }
       <label for="course-end-date" class="label-input">End date</label>
       <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
       <input type="date" id="course-end-date">
-      <!-- this course is provided at any time, self-paced-->
   </div>
   <h2>Submitting your course, training, or certification</h2>
   <div class="field">

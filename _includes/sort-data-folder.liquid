@@ -3,5 +3,4 @@
     {% assign newItem = item[1] -%}
     {% assign items = items | push: newItem -%}
 {%- endfor -%}
-{{ include.sortKey | inspect }}
 {%- assign itemsSorted = items | sort: include.sortKey -%}
