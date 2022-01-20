@@ -179,38 +179,6 @@ details dt::after {
   margin-top: 1em;
 }
 
-.field-topic, .field-prerequisite {
-  margin-top: 2em;
-}
-
-/* 
-details>div{
-  margin-bottom: -8px;
-  margin-right: -16px;
-  margin-left: -48px;
-  padding-left: 18px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: #d0e1f1;
-  border-radius: 3px;
-}
-
-details>div{
-  border: solid 1px var(--line-grey);
-  padding-left: 16px;
-  margin-bottom: 32px;
-  margin-right: 32px;
-}
-
-
-details>div{
-  border-top: solid 1px var(--line-grey);
-  margin-left: -47px;
-  margin-right: -16px;
-  padding-left: 16px;
-
-}
-*/
 
 #courses-list details>div {
   border-top: solid 1px var(--line-grey);
@@ -293,11 +261,14 @@ fieldset label:hover a:hover {
 
 
 
-/* test new line button */
+/* new line button */
 .button-group button:hover {
   cursor: pointer;
 }
 .proto
 {
   display: none;
+}
+.add-line {
+  margin-top: 2em;
 }
