@@ -64,16 +64,7 @@ footer: >
                     </select>
                 </div>
             </fieldset>
-            {% assign orderedCountries = "" | split: "," %}
-            {% for country in countriesAvailable %}
-                {% assign nCountry = "" %}
-                {% assign nCountry =  nCountry | append: site.data.countries[country].name | append: ',' %} 
-                {% assign nCountry =  nCountry | append: site.data.countries[country].nativeName | append: ',' %} 
-                {% assign nCountry =  nCountry | append: country | append: ',' %} 
-                {% assign nCountry =  nCountry | split: "," %}  
-                {% assign orderedCountries = orderedCountries | push: nCountry %}
-            {% endfor %}
-            {% assign orderedCountries = orderedCountries | sort %}
+            {% include sort-countries.liquid %} 
             <fieldset id="contry-filter">
                 <legend>Country</legend>
                 <div class="filter-options field">

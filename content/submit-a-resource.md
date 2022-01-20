@@ -56,7 +56,7 @@ main > header { grid-column: 4 / span 4; }
       <label for="course-provider" class="label-input">Provider (Required)</label>
       <input type="text" id="course-provider" required>
   </div>
-{% include sort-countries.liquid %} 
+  {% include sort-countries.liquid %} 
   <div class="field" id="divSelectCountry">
       <label for="course-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
