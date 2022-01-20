@@ -57,6 +57,32 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="course-provider" required>
   </div>
   {% include sort-countries.liquid %} 
+
+  <fieldset class="field" id="country">
+    <legend class="label">Country (Required)</legend>
+    <p class="expl">Indicate by which country or countries this resource is provided.</p>
+    <div class="line">
+      <label for="course-country_1" class="label-input">Country 1 (Required)</label>
+      <select name="country" id="course-country_1" class="field-country select-form" required>
+          <option value=""></option>
+          {% for country in orderedCountries %}
+              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+          {% endfor %}
+      </select>
+    </div>
+    <div class="proto">
+      <label for="course-country_[n]" class="label-input">Other country [n]</label>
+      <select name="country" id="course-country_[n]" class="field-country select-form" required>
+          <option value=""></option>
+          {% for country in orderedCountries %}
+              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+          {% endfor %}
+      </select>    
+      </div>
+    <button type="button" class="add-line small">Add new country</button>
+  </fieldset>
+
+
   <div class="field" id="divSelectCountry">
       <label for="course-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
@@ -164,10 +190,10 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
 
   <fieldset class="field" id="topics">
-    <legend class="label">Topics</legend>
+    <legend class="label">Topics (Required)</legend>
     <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
     <div class="line">
-      <label for="course-topics_1" class="label-input">Topic 1</label>
+      <label for="course-topics_1" class="label-input">Topic 1 (Required)</label>
       <input type="text" id="course-topics_1" name="course-topics" required>
     </div>
     <div class="proto">
