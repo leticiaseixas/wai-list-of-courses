@@ -107,7 +107,7 @@ footer: >
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% include sort-data-folder.liquid data=site.data.courses sortKey="name" %} 
+        {% include sort-data-folder.liquid data=site.data.courses sortKey="title" %} 
         {% for course in itemsSorted %}
             {% include course.liquid %}
         {% endfor %}    
