@@ -151,14 +151,14 @@ main > header { grid-column: 4 / span 4; }
 
 <fieldset  id="course-prerequisites">
   <div class="field">
-    <div class="field line">
+    <div class="line">
       <label for="course-prerequisites_1" class="label-input">
         Prerequisites
       </label>
       <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
       <input type="text" id="course-prerequisites_1" name="course-prerequisites">
     </div>
-    <div class="field proto">
+    <div class="proto">
       <label for="course-prerequisites_[n]">Other Prerequisite [n]</label>
       <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
     </div>
