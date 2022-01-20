@@ -66,6 +66,7 @@ main > header { grid-column: 4 / span 4; }
               <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
           {% endfor %}
       </select>
+      <button type="button" class="small fake button-new-country">Add new country</button>
       {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
   </div>
 
