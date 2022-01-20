@@ -166,13 +166,16 @@ if (filterForm) {
 // TODO
 if (document.getElementById("form-submit-a-course")) {
 
+  const divSelectNewLine = document.getElementsByClassName("div-new-line");
+  const fieldNewLine = document.getElementsByClassName("field-new-line")[0];
+  document.getElementsByClassName("button-new-line")[0].addEventListener('click', e => { addNewField(divSelectNewLine, fieldNewLine) });
+
+
+
   const divSelectLang = document.getElementById("divSelectLang");
   const fieldLang = document.getElementsByClassName("field-language")[0];
   document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang, fieldLang) });
 
-  const divSelectNewLine = document.getElementById("divSelectNewLine");
-  const fieldNewLine = document.getElementsByClassName("field-new-line")[0];
-  document.getElementsByClassName("button-new-line")[0].addEventListener('click', e => { addNewField(divSelectNewLine, fieldNewLine) });
 
   const divInputPrerequisite = document.getElementById("divInputPrerequisite");
   const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
@@ -191,5 +194,30 @@ if (document.getElementById("form-submit-a-course")) {
     //newField.focus();
   }
  
+
+
+  function _addLine() {
+    var buttons = document.querySelectorAll('button.add-line');
+
+    Array.prototype.forEach.call(buttons, function addClickListener(button) {
+      button.addEventListener('click', function(event) {
+        var parent = event.target.parentNode;
+        var lines = parent.querySelectorAll('.line');
+        var proto = parent.querySelector('.proto');
+        var newLine = proto.cloneNode(true);
+
+        newLine.classList.remove('proto');
+        newLine.classList.add('line');
+        newLine.innerHTML = newLine.innerHTML.replace(/\[n\]/g, lines.length + 1);
+
+        proto.parentNode.insertBefore(newLine, proto);
+
+        newLine.querySelector('input, textarea').focus();
+      });
+    });
+  }
+
+
+
 }
 

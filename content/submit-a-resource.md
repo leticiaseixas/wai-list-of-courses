@@ -56,18 +56,16 @@ main > header { grid-column: 4 / span 4; }
       <label for="course-provider" class="label-input">Provider (Required)</label>
       <input type="text" id="course-provider" required>
   </div>
-  
   {% include sort-countries.liquid %} 
-  <div class="field" id="divSelectNewLine">
+  <div class="field" id="divSelectCountry">
       <label for="course-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
-      <select name="country" id="country" class="field-new-line select-form" required>
+      <select name="country" id="country" class="field-country select-form" required>
           <option value=""></option>
           {% for country in orderedCountries %}
               <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
           {% endfor %}
       </select>
-      <button type="button" class="small fake button-new-line">Add new country</button>
       {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
   </div>
 
@@ -156,7 +154,29 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
       <input type="text" id="prerequisites1" class="field-prerequisite">
       {% include_cached button.html type="fake" label="Add new prerequisite" class="small fake button-new-prerequisite" %}
+
+<div id="accstmnt_orginfo_othermeasures" class="group">
+  <div class="field line">
+    <label for="accstmnt_orginfo_othermeasures_1">Other item 1</label>
+    <em>Example</em>
+    <input type="text" id="accstmnt_orginfo_othermeasures_1" name="accstmnt_orginfo_measures" />
   </div>
+  <div class="field proto">
+    <label for="accstmnt_orginfo_othermeasures_[n]">Other item [n]</label>
+    <input type="text" id="accstmnt_orginfo_othermeasures_[n]" name="accstmnt_orginfo_measures" />
+  </div>
+</div>
+<button type="button" class="add-line"> Add button</button>
+
+
+
+
+
+  </div>
+
+
+
+
 
   <div class="field" id="divInputTopic">
       <label for="course-topics" class="label-input" required>Topics (Required)</label>
