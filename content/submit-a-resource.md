@@ -63,7 +63,7 @@ main > header { grid-column: 4 / span 4; }
     <p class="expl">Indicate by which country or countries this resource is provided.</p>
     <div class="line">
       <label for="course-country_1" class="label-input">Country 1 (Required)</label>
-      <select name="country" id="course-country_1" class="field-country select-form" required>
+      <select name="country" id="course-country_1" class="select-form" required>
           <option value=""></option>
           {% for country in orderedCountries %}
               <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -72,7 +72,7 @@ main > header { grid-column: 4 / span 4; }
     </div>
     <div class="proto">
       <label for="course-country_[n]" class="label-input">Other country [n]</label>
-      <select name="country" id="course-country_[n]" class="field-country select-form" required>
+      <select name="country" id="course-country_[n]" class="select-form" required>
           <option value=""></option>
           {% for country in orderedCountries %}
               <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -81,19 +81,6 @@ main > header { grid-column: 4 / span 4; }
       </div>
     <button type="button" class="add-line small">Add new country</button>
   </fieldset>
-
-
-  <div class="field" id="divSelectCountry">
-      <label for="course-country" class="label-input">Country (Required)</label>
-      <p class="expl">Indicate by which country or countries this resource is provided.</p>
-      <select name="country" id="country" class="field-country select-form" required>
-          <option value=""></option>
-          {% for country in orderedCountries %}
-              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
-          {% endfor %}
-      </select>
-      {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
-  </div>
 
   <div class="field">
       <label for="course-description" class="label-input">Description (Required)</label>
@@ -214,17 +201,31 @@ main > header { grid-column: 4 / span 4; }
       {% include wai-curricula.liquid %}
   </fieldset>
 
-  <div class="field" id="divSelectLang">
-      <label for="course-language" class="label-input">Language (Required)</label>
-      <p class="expl">Indicate in which language or languages this resource is provided.</p>
-      <select name="language" id="language1" class="field-language select-form" required> 
+
+  <fieldset class="field" id="language">
+    <legend class="label">Language (Required)</legend>
+    <p class="expl">Indicate in which language or languages this resource is provided.</p>
+    <div class="line">
+      <label for="course-language_1" class="label-input">Language 1 (Required)</label>
+      <select name="language" id="language_1" class="select-form" required> 
           <option value=""></option>
           {% for language in site.data.lang %}
               <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
           {% endfor %}
       </select>
-      {% include_cached button.html type="fake" label="Add new language" class="small fake button-new-lang" %}
-  </div>
+    </div>
+    <div class="proto">
+      <label for="course-language_[n]" class="label-input">Other language [n]</label>
+      <select name="language" id="language_[n]" class="select-form" required> 
+          <option value=""></option>
+          {% for language in site.data.lang %}
+              <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
+          {% endfor %}
+      </select>
+      </div>
+    <button type="button" class="add-line small">Add new language</button>
+  </fieldset>
+
 
   <fieldset class="field" id="course-format">
     <legend class="label">Format (Required)</legend>
