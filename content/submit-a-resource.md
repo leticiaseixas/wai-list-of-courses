@@ -160,7 +160,7 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="course-prerequisites_1" name="course-prerequisites">
     </div>
     <div class="proto">
-      <label for="course-prerequisites_[n]">Other Prerequisite [n]</label>
+      <label for="course-prerequisites_[n]" class="label-input">Other Prerequisite [n]</label>
       <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
     </div>
   <button type="button" class="add-line small">Add new prerequisite</button>
