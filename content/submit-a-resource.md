@@ -157,7 +157,6 @@ main > header { grid-column: 4 / span 4; }
       </label>
       <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
       <input type="text" id="course-prerequisites_1" name="course-prerequisites">
-      {% include_cached button.html type="fake" label="Add new prerequisite" class="small fake button-new-prerequisite" %}
     </div>
     <div class="field proto">
       <label for="course-prerequisites_[n]">Other Prerequisite [n]</label>
