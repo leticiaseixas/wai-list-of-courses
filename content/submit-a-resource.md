@@ -150,12 +150,13 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
 
 <fieldset  id="course-prerequisites">
+  <legend class="label">Prerequisites</legend>
+  <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
   <div class="field">
     <div class="line">
       <label for="course-prerequisites_1" class="label-input">
-        Prerequisites
+        Prerequisite1
       </label>
-      <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
       <input type="text" id="course-prerequisites_1" name="course-prerequisites">
     </div>
     <div class="proto">
