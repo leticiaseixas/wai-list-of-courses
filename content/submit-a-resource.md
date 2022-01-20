@@ -149,8 +149,8 @@ main > header { grid-column: 4 / span 4; }
     </div>
   </fieldset>
 
-<fieldset class="field" id="course-prerequisites">
-  <div class="field group">
+<fieldset  id="course-prerequisites">
+  <div class="field">
     <div class="field line">
       <label for="course-prerequisites_1" class="label-input">
         Prerequisites
