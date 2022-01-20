@@ -165,6 +165,7 @@ if (filterForm) {
 
 // TODO
 if (document.getElementById("form-submit-a-course")) {
+  _addLine();
 
   const divSelectLang = document.getElementById("divSelectLang");
   const fieldLang = document.getElementsByClassName("field-language")[0];

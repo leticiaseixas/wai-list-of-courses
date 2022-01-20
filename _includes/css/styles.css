@@ -294,11 +294,6 @@ fieldset label:hover a:hover {
 
 
 /* test new line button */
-.group button.add-line
-{
-  margin-left: 36px;
-}
-
 .button-group button:hover {
   cursor: pointer;
 }

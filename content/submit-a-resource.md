@@ -155,6 +155,7 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="prerequisites1" class="field-prerequisite">
       {% include_cached button.html type="fake" label="Add new prerequisite" class="small fake button-new-prerequisite" %}
 
+<fieldset id="new-measure">
 <div id="accstmnt_orginfo_othermeasures" class="group">
   <div class="field line">
     <label for="accstmnt_orginfo_othermeasures_1">Other item 1</label>
@@ -167,8 +168,11 @@ main > header { grid-column: 4 / span 4; }
   </div>
 </div>
 <button type="button" class="add-line"> Add button</button>
+</fieldset>
 
+</div>
 
+<fieldset id="new-feature">
 <div id="accstmnt_orginfo_otherfeature" class="group">
   <div class="field line">
     <label for="accstmnt_orginfo_otherfeature_1">Other Featire 1</label>
@@ -182,13 +186,7 @@ main > header { grid-column: 4 / span 4; }
 </div>
 <button type="button" class="add-line"> Add button</button>
 
-
-
-
-
-  </div>
-
-
+</fieldset>
 
 
 
