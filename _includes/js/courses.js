@@ -20,7 +20,6 @@ if (filterForm) {
   });
 
 
-
   function filterJson(form) {
 
     //form = document.querySelector('[data-filter-form]');
@@ -129,11 +128,9 @@ if (filterForm) {
     }
   }
 
-
   function hideClearButton(isHidden) {
     document.querySelectorAll('.button-clear-button').forEach(item => { item.hidden = isHidden });
   }
-
 
   function clearFilters() {
     rebuildList(jsonCourses, []);
@@ -173,9 +170,9 @@ if (document.getElementById("form-submit-a-course")) {
   const fieldLang = document.getElementsByClassName("field-language")[0];
   document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang, fieldLang) });
 
-  const divSelectCountry = document.getElementById("divSelectCountry");
-  const fieldCountry = document.getElementsByClassName("field-country")[0];
-  document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry, fieldCountry) });
+  const divSelectNewLine = document.getElementById("divSelectNewLine");
+  const fieldNewLine = document.getElementsByClassName("field-new-line")[0];
+  document.getElementsByClassName("button-new-line")[0].addEventListener('click', e => { addNewField(divSelectNewLine, fieldNewLine) });
 
   const divInputPrerequisite = document.getElementById("divInputPrerequisite");
   const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
