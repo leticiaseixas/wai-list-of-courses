@@ -155,7 +155,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
     <div class="line">
       <label for="course-prerequisites_1" class="label-input">
-        Prerequisite1
+        Prerequisite 1
       </label>
       <input type="text" id="course-prerequisites_1" name="course-prerequisites">
     </div>
