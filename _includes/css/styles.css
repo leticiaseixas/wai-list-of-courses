@@ -289,3 +289,20 @@ fieldset label:hover a {
 fieldset label:hover a:hover {
   text-decoration: underline gold;
 }
+
+
+
+
+/* test new line button */
+.group button.add-line
+{
+  margin-left: 36px;
+}
+
+.button-group button:hover {
+  cursor: pointer;
+}
+.proto
+{
+  display: none;
+}

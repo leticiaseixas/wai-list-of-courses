@@ -169,6 +169,20 @@ main > header { grid-column: 4 / span 4; }
 <button type="button" class="add-line"> Add button</button>
 
 
+<div id="accstmnt_orginfo_otherfeature" class="group">
+  <div class="field line">
+    <label for="accstmnt_orginfo_otherfeature_1">Other Featire 1</label>
+    <em>Example</em>
+    <input type="text" id="accstmnt_orginfo_otherfeature_1" name="accstmnt_orginfo_otherfeature" />
+  </div>
+  <div class="field proto">
+    <label for="accstmnt_orginfo_otherfeature_[n]">Other item [n]</label>
+    <input type="text" id="accstmnt_orginfo_otherfeature_[n]" name="accstmnt_orginfo_otherfeature" />
+  </div>
+</div>
+<button type="button" class="add-line"> Add button</button>
+
+
 
 
 
