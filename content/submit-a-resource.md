@@ -162,8 +162,8 @@ main > header { grid-column: 4 / span 4; }
       <label for="course-prerequisites_[n]">Other Prerequisite [n]</label>
       <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
     </div>
-  </div>
   <button type="button" class="add-line">Add new prerequisite</button>
+  </div>
 </fieldset>
 
 
