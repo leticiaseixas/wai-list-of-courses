@@ -271,3 +271,9 @@ fieldset label:hover a:hover {
 .add-line {
   margin-top: 2em;
 }
+
+.line .select-form{
+  margin-bottom:1em;
+  margin-top:0;
+}
+
