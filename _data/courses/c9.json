@@ -2,16 +2,34 @@
     "id": "course9",
     "title": "Web Accessibility, Part 6: Device-Independent User Input Methods",
     "provider": "Deque University",
-    "country": ["us"],
+    "country": [
+        "us"
+    ],
     "description": "Methods for ensuring keyboard, mouse, touch, and voice accessibility, including tab order, managing focus, avoiding keyboard traps, allowing gestures, touch target size, etc.",
     "type": "Training",
-    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
     "level": "Intermediate",
-    "prerequisites": "Knowledge of HTML required",
-    "topics": "Mouse Input, Keyboard Input, Touch Input, Voice Input, Input Modalities, Motion, Disappearing Content, and Transitions",
-    "language": ["en"],
+    "prerequisites": [
+        "Knowledge of HTML required"
+    ],
+    "topics": [
+        "Mouse Input, Keyboard Input, Touch Input, Voice Input",
+        "Input Modalities",
+        "Motion, Disappearing Content, and Transitions"
+    ],
+    "language": [
+        "en"
+    ],
     "format": "Online",
-    "scheduling": ["Scheduled, Unscheduled"],
+    "scheduling": [
+        "Scheduled, Unscheduled"
+    ],
     "length": "45 minutes (estimate)",
     "cost": "Paid",
     "website": "https://dequeuniversity.com/curriculum/courses/user-input",

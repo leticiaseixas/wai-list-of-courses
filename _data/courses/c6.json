@@ -15,8 +15,13 @@
         "Tester"
     ],
     "level": "Advanced",
-    "prerequisites": "Knowledge of HTML, CSS, and JavaScript is required",
-    "topics": "ARIA Concepts, ARIA Widget Examples",
+    "prerequisites": [
+        "Knowledge of HTML, CSS, and JavaScript is required"
+    ],
+    "topics": [
+        "ARIA Concepts",
+        "ARIA Widget Examples"
+    ],
     "language": [
         "en"
     ],

@@ -2,15 +2,27 @@
     "id": "course18",
     "title": "Web Accessibility Testing, Part 3: WCAG Conformance Testing, Detailed Methodology",
     "provider": "Deque University",
-    "country": ["us"],
+    "country": [
+        "us"
+    ],
     "description": "This course provides detailed, step-by-step testing methodology to meet normative WCAG Conformance Standards at levels A, AA, and AAA. Included are methods for Desktop Web, Mobile Web, Native Mobile, Assistive Technology, Kiosk, and PDF.  This course is a comprehensive approach to interpreting WCAG correctly and accurately. Deque uses this course as the basis for our professional accessibility evaluation services for our own customers.",
     "type": "Training",
-    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
     "level": "Advanced",
     "topics": "Not provided",
-    "language": ["en"],
+    "language": [
+        "en"
+    ],
     "format": "Online",
-    "scheduling": ["Scheduled, Unscheduled"],
+    "scheduling": [
+        "Scheduled, Unscheduled"
+    ],
     "length": "6 hours (estimate)",
     "cost": "Paid",
     "website": "https://dequeuniversity.com/curriculum/courses/wcagtesting",

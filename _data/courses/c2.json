@@ -15,7 +15,16 @@
         "Tester"
     ],
     "level": "Basic",
-    "topics": "Legal Context, Standards, Technical Scope and Exceptions, Electronic Content, Hardware Requirement, Software Requirements, Support Documentation and Services Requirements, Summary and Next Steps",
+    "topics": [
+        "Legal Context",
+        "Standards",
+        "Technical Scope and Exceptions",
+        "Electronic Content",
+        "Hardware Requirement",
+        "Software Requirements",
+        "Support Documentation and Services Requirements",
+        "Summary and Next Steps"
+    ],
     "language": [
         "en"
     ],

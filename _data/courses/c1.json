@@ -15,7 +15,23 @@
     "Tester"
   ],
   "level": "Basic",
-  "topics": "CPACC Certification, Basic Disability Concepts, Theoretical Models of Disability, Types of Disabilities, Disability Statistics, Disability Etiquette, Benefits of Accessible Design, Web Accessibility Principles, Universal Design for the Web, Universal Design for the Physical World, Universal Design for Learning, Usability and Accessibility, Myths and Misconceptions about Accessibility, Accessibility Standards and Laws, Organizational Governance and Management",
+  "topics": [
+    "CPACC Certification",
+    "Basic Disability Concepts",
+    "Theoretical Models of Disability",
+    "Types of Disabilities",
+    "Disability Statistics",
+    "Disability Etiquette",
+    "Benefits of Accessible Design",
+    "Web Accessibility Principles",
+    "Universal Design for the Web",
+    "Universal Design for the Physical World",
+    "Universal Design for Learning",
+    "Usability and Accessibility",
+    "Myths and Misconceptions about Accessibility",
+    "Accessibility Standards and Laws",
+    "Organizational Governance and Management"
+  ],
   "language": [
     "en"
   ],

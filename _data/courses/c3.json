@@ -15,7 +15,18 @@
         "Tester"
     ],
     "level": "Basic",
-    "topics": "The basics of accessible content, Page title, Headings, Text and typography, Color and contrast, Emphasizing content, Images, Tables, Multimedia, PDF accessibility basic techniques, Automated accessibility checks",
+    "topics": [
+        "The basics of accessible content",
+        "Page title",
+        "Headings, Text and typography",
+        "Color and contrast",
+        "Emphasizing content",
+        "Images",
+        "Tables",
+        "Multimedia",
+        "PDF accessibility basic techniques",
+        "Automated accessibility checks"
+    ],
     "language": [
         "en"
     ],

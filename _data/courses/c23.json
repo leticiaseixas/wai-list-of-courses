@@ -2,15 +2,34 @@
     "id": "course23",
     "title": "Document Accessibility",
     "provider": "Deque University",
-    "country": ["us"],
+    "country": [
+        "us"
+    ],
     "description": "Because there`s more to accessibility than just HTML pages, our modular approach to document accessibility allows your team to become familiar with the fundamentals of accessibility in the context of various other formats. Intended for content authors, and anyone who has a role to play in designing or creating documents to are meant to be downloaded on the Web, this course covers all the basics you need to ensure organizational goals for accessibility are met.  Deque`s modular training approach allows for both half-day or up to 2 full days of extended training in this topic area, with a mix of lectures and hands-on workshop exercises designed to empower participants to design, remediate, and test for accessibility on downloadable documents",
     "type": "Training",
-    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
     "level": "Basic",
-    "topics": ["Creating, remediating, and testing Office documents (Word, PowerPoint, eXcel), Creating, remediating, and testing Adobe inDesign documents, Creating, remediating, and testing Adobe ePUB documents, Creating, remediating, and testing Adobe PDF documents, Document accessibility testing methodology, following the Deque Way, Hands-on workshops and exercises"],
-    "language": ["en"],
+    "topics": [
+        "Creating, remediating, and testing Office documents (Word, PowerPoint, eXcel)",
+        "Creating, remediating, and testing Adobe inDesign documents",
+        "Creating, remediating, and testing Adobe ePUB documents",
+        "Creating, remediating, and testing Adobe PDF documents",
+        "Document accessibility testing methodology, following the Deque Way",
+        "Hands-on workshops and exercises"
+    ],
+    "language": [
+        "en"
+    ],
     "format": "Blended",
-    "scheduling": ["Scheduled"],
+    "scheduling": [
+        "Scheduled"
+    ],
     "length": "0.5 day to 2 full days",
     "cost": "Paid",
     "website": "https://dequeuniversity.com/curriculum/instructor-led/",

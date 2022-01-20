@@ -2,16 +2,37 @@
     "id": "course21",
     "title": "Mobile Web Accessibility",
     "provider": "Deque University",
-    "country": ["us"],
+    "country": [
+        "us"
+    ],
     "description": "Because mobile is an integral part of the overall Web experience, this training is vital to your development team’s overall success. This training is intended to be delivered to participants who have already successfully completed Deque’s 2-day Bootcamp and provides an overview of considerations that are specific to mobile Web design and development. Upon completion, your team will be able to create accessible experiences on mobile devices which will modernize your organization’s approach to accessibility.  Deque’s modular training approach allows for both half-day or full-day extended training in this topic area, with a mix of lectures and hands-on workshop exercises designed to empower your cross-functional team to make informed and accessible decisions beyond the desktop. ",
     "type": "Training",
-    "audience": ["Content author", "Designer", "Developer", "Manager", "Tester"],
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
     "level": "Basic",
-    "prerequisites": "Deque`s 2-day Bootcamp",
-    "topics": "Accessibility considerations for mobile design and development, Mobile Web accessibility guidelines and techniques, Accessible responsive Web design principles, Mobile Web testing methodology, following the Deque Way, Testing with screen readers in a mobile Web environment, Hands-on workshop and exercises",
-    "language": ["en"],
+    "prerequisites": [
+        "Deque`s 2-day Bootcamp"
+    ],
+    "topics": [
+        "Accessibility considerations for mobile design and development",
+        "Mobile Web accessibility guidelines and techniques",
+        "Accessible responsive Web design principles",
+        "Mobile Web testing methodology, following the Deque Way",
+        "Testing with screen readers in a mobile Web environment",
+        "Hands-on workshop and exercises"
+    ],
+    "language": [
+        "en"
+    ],
     "format": "Blended",
-    "scheduling": ["Scheduled"],
+    "scheduling": [
+        "Scheduled"
+    ],
     "length": "0.5 day to a full day",
     "cost": "Paid",
     "website": "https://dequeuniversity.com/curriculum/instructor-led/",

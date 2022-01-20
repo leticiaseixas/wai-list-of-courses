@@ -15,7 +15,15 @@
         "Tester"
     ],
     "level": "Basic",
-    "topics": "Accessibility considerations & inclusive design, Why accessibility matters, How people with disabilities use the web, Assistive Technologies and context of use, Statistics, laws and more!, Web Content Accessibility Guidelines, v2.0, Role-based accessibility and shift-left approach",
+    "topics": [
+        "Accessibility considerations & inclusive design",
+        "Why accessibility matters",
+        "How people with disabilities use the web",
+        "Assistive Technologies and context of use",
+        "Statistics, laws and more!",
+        "Web Content Accessibility Guidelines, v2.0",
+        "Role-based accessibility and shift-left approach"
+    ],
     "language": [
         "en"
     ],

@@ -15,7 +15,16 @@
         "Tester"
     ],
     "level": "Basic",
-    "topics": "Accessibility and Inclusive Design, Avoid Exclusive Design Patterns, Embrace Diversity, Create Inclusive Designs, Rethinking Affordances, The Challenge of User-Generated Content, Web Design Considerations by Disability Type, Basic Web Accessibility Checklist for Designers",
+    "topics": [
+        "Accessibility and Inclusive Design",
+        "Avoid Exclusive Design Patterns",
+        "Embrace Diversity",
+        "Create Inclusive Designs",
+        "Rethinking Affordances",
+        "The Challenge of User-Generated Content",
+        "Web Design Considerations by Disability Type",
+        "Basic Web Accessibility Checklist for Designers"
+    ],
     "language": [
         "en"
     ],
