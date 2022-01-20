@@ -1,5 +1,5 @@
 const filterForm = document.querySelector('[data-filter-form]');
-{% include sort-data-folder.liquid data=site.data.courses sortKey="name" %} 
+{% include sort-data-folder.liquid data=site.data.courses sortKey="title" %} 
 const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
