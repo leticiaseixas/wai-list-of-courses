@@ -166,16 +166,13 @@ if (filterForm) {
 // TODO
 if (document.getElementById("form-submit-a-course")) {
 
-  const divSelectNewLine = document.getElementsByClassName("div-new-line");
-  const fieldNewLine = document.getElementsByClassName("field-new-line")[0];
-  document.getElementsByClassName("button-new-line")[0].addEventListener('click', e => { addNewField(divSelectNewLine, fieldNewLine) });
-
-
-
   const divSelectLang = document.getElementById("divSelectLang");
   const fieldLang = document.getElementsByClassName("field-language")[0];
   document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang, fieldLang) });
 
+  const divSelectCountry = document.getElementById("divSelectCountry");
+  const fieldCountry = document.getElementsByClassName("field-country")[0];
+  document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry, fieldCountry) });
 
   const divInputPrerequisite = document.getElementById("divInputPrerequisite");
   const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
@@ -194,7 +191,6 @@ if (document.getElementById("form-submit-a-course")) {
     //newField.focus();
   }
  
-
 
   function _addLine() {
     var buttons = document.querySelectorAll('button.add-line');
@@ -216,7 +212,6 @@ if (document.getElementById("form-submit-a-course")) {
       });
     });
   }
-
 
 
 }
