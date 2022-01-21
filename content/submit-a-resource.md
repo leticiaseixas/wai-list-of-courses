@@ -337,7 +337,7 @@ main > header { grid-column: 4 / span 4; }
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
   </div>
   <div class="field">  
-    <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
+    <label><input type="checkbox" required> I give permission for the information about this resource to be published in the W3C's List of Courses.</label>
   </div>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
   <div class="field">
