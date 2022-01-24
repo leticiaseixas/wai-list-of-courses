@@ -279,8 +279,8 @@ fieldset label:hover a:hover {
 }
 
 
-.field input[type="checkbox"] {
-  outline: 2px solid transparent;
-  outline-offset: 5px;
-  transition: outline-offset .2s linear;
-}
+.field input[type="checkbox"]:focus {
+  outline: 2px solid #686868;
+  outline-offset: 2px;
+  transition: outline-offset 0.2s linear;
+} 
