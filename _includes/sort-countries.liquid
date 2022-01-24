@@ -1,5 +1,7 @@
 {% if data %}
 {{ data }}
+{% else %}
+{{ "not data" }}
 {% endif%}
 {% assign orderedCountries = "" | split: "," %}
 {% for country in site.data.countries %}

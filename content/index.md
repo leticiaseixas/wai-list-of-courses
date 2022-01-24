@@ -65,8 +65,7 @@ footer: >
                     </select>
                 </div>
             </fieldset>
-            {% include sort-countries.liquid data=countriesAvailable%} 
-            {{ countriesAvailable | inspect }}
+            {% include sort-countries.liquid data=countriesAvailable %}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
                 <div class="filter-options field">
