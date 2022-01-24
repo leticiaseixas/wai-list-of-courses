@@ -8,10 +8,12 @@
   {% assign nCountry =  nCountry | split: "," %}  
   {% assign orderedCountries = orderedCountries | push: nCountry %}
   {% if include.data contains country[0] %}  
-    {% assign filteredCountries = filteredCountries | push: nCountry %}
+    {% assign orderedCountries = orderedCountries | push: nCountry %}
+  {% elseif !include.data%}
+    {% assign orderedCountries = orderedCountries | push: nCountry %}
   {% endif %}
 {% endfor %}
 {% assign orderedCountries = orderedCountries | sort %}
 {% if include.data %}
-  {{ filteredCountries | inspect }}
+  {{ orderedCountries | inspect }}
 {% endif %}
