@@ -9,9 +9,10 @@
   {% assign orderedCountries = orderedCountries | push: nCountry %}
   {% if include.data contains country[0] %}  
     {% assign orderedCountries = orderedCountries | push: nCountry %}
-  {% elseif !include.data%}
-    {% assign orderedCountries = orderedCountries | push: nCountry %}
   {% endif %}
+  {% unless include.data%}
+    {% assign orderedCountries = orderedCountries | push: nCountry %}
+  {% endunless %}
 {% endfor %}
 {% assign orderedCountries = orderedCountries | sort %}
 {% if include.data %}
