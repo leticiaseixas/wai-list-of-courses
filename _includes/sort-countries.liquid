@@ -1,4 +1,5 @@
 {% assign orderedCountries = "" | split: "," %}
+{% assign filteredCountries = "" | split: "," %}
 {% for country in site.data.countries %}
   {% assign nCountry = "" %}
   {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
@@ -6,8 +7,11 @@
   {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
   {% assign nCountry =  nCountry | split: "," %}  
   {% assign orderedCountries = orderedCountries | push: nCountry %}
+  {% if include.data %}  
+    {% assign filteredCountries = filteredCountries | push: nCountry %}
+  {% endif %}
 {% endfor %}
 {% assign orderedCountries = orderedCountries | sort %}
 {% if include.data %}
-  {{ orderedCountries | where_exp: "orderedCountries[2]", "include.data contains orderedCountries[2]" }}
+  {{ filteredCountries | inspect }}
 {% endif %}
