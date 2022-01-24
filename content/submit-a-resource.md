@@ -253,8 +253,6 @@ main > header { grid-column: 4 / span 4; }
       <div class="radio-field">
           <input type="checkbox" id="course-learning-scheduled" name="course-learning-scheduled" group="learning" required>
           <label for="course-learning-scheduled">Scheduled - participants are required to attend at a specific time</label>
-      </div>
-      <div class="radio-field">
           <input type="checkbox" id="course-learning-not-scheduled" name="course-learning-not-scheduled" group="learning">
           <label for="course-learning-not-scheduled">Unscheduled - participants can attend at their own pace</label>
       </div>
