@@ -71,7 +71,7 @@ main > header { grid-column: 4 / span 4; }
       </select>
     </div>
     <div class="proto">
-      <label for="course-country_[n]" class="label-input">Other country [n]</label>
+      <label for="course-country_[n]" class="label-input">Country [n]</label>
       <select name="country" id="course-country_[n]" class="select-form" required>
           <option value=""></option>
           {% for country in orderedCountries %}
@@ -170,7 +170,7 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="course-prerequisites_1" name="course-prerequisites">
     </div>
     <div class="proto">
-      <label for="course-prerequisites_[n]" class="label-input">Other prerequisite [n]</label>
+      <label for="course-prerequisites_[n]" class="label-input">Prerequisite [n]</label>
       <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
     </div>
     <button type="button" class="add-line small">Add new prerequisite</button>
@@ -184,7 +184,7 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="course-topics_1" name="course-topics" required>
     </div>
     <div class="proto">
-      <label for="course-topics_[n]" class="label-input">Other topic [n]</label>
+      <label for="course-topics_[n]" class="label-input">Topic [n]</label>
       <input type="text" id="course-topics_[n]" name="course-topics" />
     </div>
     <button type="button" class="add-line small">Add new topic</button>
@@ -215,7 +215,7 @@ main > header { grid-column: 4 / span 4; }
       </select>
     </div>
     <div class="proto">
-      <label for="course-language_[n]" class="label-input">Other language [n]</label>
+      <label for="course-language_[n]" class="label-input">Language [n]</label>
       <select name="language" id="language_[n]" class="select-form" required> 
           <option value=""></option>
           {% for language in site.data.lang %}
