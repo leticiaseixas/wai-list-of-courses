@@ -10,7 +10,7 @@
   {% if include.data contains country[0] %}  
     {% assign orderedCountries = orderedCountries | push: nCountry %}
   {% endif %}
-  {% unless include.data%}
+  {% unless include.data and include.data.size != 0%}
     {% assign orderedCountries = orderedCountries | push: nCountry %}
   {% endunless %}
 {% endfor %}
