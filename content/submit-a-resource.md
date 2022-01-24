@@ -332,13 +332,12 @@ main > header { grid-column: 4 / span 4; }
     <label for="comments" class="label-input">Comments</label>
     <p class="expl">Let us know if you have any comments. This information will not be publicly shared.</p>
     <textarea id="comments"></textarea>
+  </div>
+  <div class="radio-field">  
     <input type="checkbox" id="check-correct-info" required> 
     <label for="check-correct-info">The information I provided is correct according to the best of my knowledge.</label>
-  </div>
-  <div class="field">  
     <input type="checkbox" id="check-publish-info" required> 
-    <label for="confirmatin-publish-info">
-    I give permission for the information about this resource to be published in the W3C's List of Courses.</label>
+    <label for="confirmatin-publish-info">I give permission for the information about this resource to be published in the W3C's List of Courses.</label>
   </div>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
   <div class="field">
