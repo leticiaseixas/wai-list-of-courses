@@ -175,7 +175,7 @@ details dt::after {
   font-weight: 700;
 }
 
-#availability .label-input{
+#availability .label-input {
   margin-top: 1em;
 }
 
@@ -264,16 +264,23 @@ fieldset label:hover a:hover {
 .button-group button:hover {
   cursor: pointer;
 }
-.proto
-{
+
+.proto {
   display: none;
 }
+
 .add-line {
   margin-top: 2em;
 }
 
-.line .select-form{
-  margin-bottom:1em;
-  margin-top:0.5em;
+.line .select-form {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
+
+.field input[type="checkbox"] {
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  transition: outline-offset .2s linear;
+}
