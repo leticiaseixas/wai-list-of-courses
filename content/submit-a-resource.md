@@ -28,9 +28,9 @@ main > header { grid-column: 4 / span 4; }
 
 <a href="../course-list">Back to List of Courses</a>
 <p>
-  This form allows you to provide information about courses, training, and certification on web accessibility. For update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
+  This form allows you to provide information about courses, training, and certification on web accessibility. To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
 
-<p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
+<p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information (except your name and email) will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
 {% include netlify-form.liquid type="start" id="form-submit-a-course" %}
   <h2 id="about-you">About you</h2>
@@ -337,7 +337,7 @@ main > header { grid-column: 4 / span 4; }
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
   </div>
   <div class="field">  
-    <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
+    <label><input type="checkbox" required> I give permission for the information about this resource to be published in the W3C's List of Courses.</label>
   </div>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
   <div class="field">
