@@ -10,9 +10,9 @@
   {% assign orderedCountries = orderedCountries | push: nCountry %}  
   {% if include.data and include.data.size != 0 %}  
     {% if include.data contains country[0] %}
-      {{country[0] | inspect}}
+      {{country[0]}}
     {% endif %}
-  {% else }
+  {% else %}
     {{"not include"}}
   {% endif %}
 {% endfor %}
