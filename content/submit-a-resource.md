@@ -85,7 +85,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="course-description" class="label-input">Description (Required)</label>
       <p class="expl">Provide a brief description of this resource (max.: 300 chars).</p>
-      <textarea id="course-description" required></textarea>
+      <textarea id="course-description" maxlength="300" required></textarea>
       <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
 
