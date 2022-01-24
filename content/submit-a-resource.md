@@ -190,7 +190,7 @@ main > header { grid-column: 4 / span 4; }
     <button type="button" class="add-line small">Add new topic</button>
   </fieldset>
 
-  <fieldset id="course-wai-curricula">
+  <fieldset class="field" id="course-wai-curricula">
     <legend>
       <h3>WAI Curricula on Web Accessibility</h3>
     </legend>
@@ -266,7 +266,7 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="course-platform">
   </div>
   
-  <fieldset id="course-accessibility-support">
+  <fieldset class="field"  id="course-accessibility-support">
     <legend><h3>Accessibility support</h3></legend>
     <p class="expl">If applicable, indicate what accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.</p>
     {% include accessibility-support.liquid %}
@@ -333,14 +333,16 @@ main > header { grid-column: 4 / span 4; }
     <p class="expl">Let us know if you have any comments. This information will not be publicly shared.</p>
     <textarea id="comments"></textarea>
   </div>
-  <div class="radio-field">  
-    <input type="checkbox" id="check-correct-info" required> 
-    <label for="check-correct-info">The information I provided is correct according to the best of my knowledge (Required).</label>
-  </div>
-  <div class="radio-field">  
-    <input type="checkbox" id="check-publish-info" required> 
-    <label for="confirmatin-publish-info">I give permission for the information about this resource to be published in the W3C's List of Courses (Required).</label>
-  </div>
+  <fieldset class="field">
+    <div class="radio-field">  
+      <input type="checkbox" id="check-correct-info" required> 
+      <label for="check-correct-info">The information I provided is correct according to the best of my knowledge (Required).</label>
+    </div>
+    <div class="radio-field">  
+      <input type="checkbox" id="check-publish-info" required> 
+      <label for="confirmatin-publish-info">I give permission for the information about this resource to be published in the W3C's List of Courses (Required).</label>
+    </div>
+  </fieldset>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
   <div class="field">
     <button type="submit">Send information</button>

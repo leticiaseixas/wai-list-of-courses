@@ -183,7 +183,7 @@ function _addLine() {
 
       proto.parentNode.insertBefore(newLine, proto);
 
-      newLine.querySelector('input, textarea').focus();
+      newLine.querySelector('input, checkbox').focus();
     });
   });
 }
