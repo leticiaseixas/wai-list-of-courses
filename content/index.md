@@ -29,6 +29,7 @@ footer: >
     <p><em>Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
     </em></p>
 </div>
+{% include sort-data-folder.liquid data=site.data.courses sortKey="title" %} 
 <div id="app">
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
@@ -65,6 +66,7 @@ footer: >
                 </div>
             </fieldset>
             {% include sort-countries.liquid %} 
+            {{ countriesAvailable = itemsSorted | map: "country"  }}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
                 <div class="filter-options field">
@@ -91,7 +93,6 @@ footer: >
         </span>      
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% include sort-data-folder.liquid data=site.data.courses sortKey="title" %} 
         {% for course in itemsSorted %}
             {% include course.liquid %}
         {% endfor %}    
