@@ -336,6 +336,8 @@ main > header { grid-column: 4 / span 4; }
   <div class="radio-field">  
     <input type="checkbox" id="check-correct-info" required> 
     <label for="check-correct-info">The information I provided is correct according to the best of my knowledge.</label>
+  </div>
+  <div class="radio-field">  
     <input type="checkbox" id="check-publish-info" required> 
     <label for="confirmatin-publish-info">I give permission for the information about this resource to be published in the W3C's List of Courses.</label>
   </div>
