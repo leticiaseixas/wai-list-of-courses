@@ -1,5 +1,5 @@
-{% if data %}
-{{ data }}
+{% if include.data %}
+{{ include.data | inspect }}
 {% else %}
 {{ "not data" }}
 {% endif%}
