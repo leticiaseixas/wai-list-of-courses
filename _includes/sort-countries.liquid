@@ -1,17 +1,13 @@
-{% if include.data %}
-{{ include.data | inspect }}
-{% else %}
-{{ "not data" }}
-{% endif%}
 {% assign orderedCountries = "" | split: "," %}
 {% for country in site.data.countries %}
-  {% if include.data contains country[0] %}
   {% assign nCountry = "" %}
   {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
   {% assign nCountry =  nCountry | split: "," %}  
   {% assign orderedCountries = orderedCountries | push: nCountry %}
-  {% endif %}
 {% endfor %}
 {% assign orderedCountries = orderedCountries | sort %}
+{% if include.data %}
+  {{ orderedCountries | inspect }}
+{% endif %}
