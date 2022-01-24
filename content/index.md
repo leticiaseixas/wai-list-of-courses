@@ -66,8 +66,6 @@ footer: >
                 </div>
             </fieldset>
             {% include sort-countries.liquid %} 
-            {% assign countriesAvailable = "" | split: "," %}
-            {% countriesAvailable = itemsSorted | map: "country"  %}
             {{ countriesAvailable | inspect }}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
