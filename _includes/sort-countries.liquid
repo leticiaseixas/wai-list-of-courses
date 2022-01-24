@@ -6,11 +6,13 @@
   {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
   {% assign nCountry =  nCountry | split: "," %}  
-  {% assign orderedCountries = orderedCountries | push: nCountry %}
+  
   {% assign orderedCountries = orderedCountries | push: nCountry %}  
   {% if include.data and include.data.size != 0 %}  
-    {{"include"}}
-  {% else %}
+    {% if include.data contains country[0] %}
+      {{country[0]}}
+    {% endif %}
+  {% else }
     {{"not include"}}
   {% endif %}
 {% endfor %}
