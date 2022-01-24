@@ -247,7 +247,7 @@ main > header { grid-column: 4 / span 4; }
     </div>    
   </fieldset>
 
-  <fieldset id="course-learning">
+  <fieldset class="field" id="course-learning">
       <legend class="label">Scheduling (Required)</legend>
       <p class="expl">Indicate the type of activities provided in this resource. Choose as many as apply.</p>
       <div class="radio-field">
