@@ -9,5 +9,5 @@
 {% endfor %}
 {% assign orderedCountries = orderedCountries | sort %}
 {% if include.data %}
-  {{ orderedCountries | where: "orderedCountries[2]", "include.data contains orderedCountries[2]" }}
+  {{ orderedCountries | where_exp: "orderedCountries[2]", "include.data contains orderedCountries[2]" }}
 {% endif %}
