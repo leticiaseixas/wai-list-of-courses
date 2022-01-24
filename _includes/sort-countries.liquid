@@ -7,7 +7,7 @@
   {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
   {% assign nCountry =  nCountry | split: "," %}  
   {% assign orderedCountries = orderedCountries | push: nCountry %}
-  {% if include.data %}  
+  {% if include.data contains country[0] %}  
     {% assign filteredCountries = filteredCountries | push: nCountry %}
   {% endif %}
 {% endfor %}
