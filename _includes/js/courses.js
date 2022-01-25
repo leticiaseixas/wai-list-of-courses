@@ -76,7 +76,8 @@ if (filterForm) {
           console.log(filter.name);
           console.log("projected: " + Object.values(projectedCounterResults).length);
           console.log("counter: " + Object.values(counterResults).length);
-          console.log("filter:" + filter);
+          console.log("filter:");
+          console.log(filter);
         }
 
         if(Object.values(projectedCounterResults).length >= Object.values(counterResults).length){
