@@ -1,18 +1,18 @@
 const filterForm = document.querySelector('[data-filter-form]');
-{% include sort-data-folder.liquid data=site.data.courses sortKey="title" %}
+{% include sort - data - folder.liquid data = site.data.courses sortKey = "title" %}
 
 const sortForm = document.querySelector('.sort-by');
 const searchForm = document.querySelector('#search');
 
 const importJsonCourses = String.raw`{{ itemsSorted | jsonify }}`;
-importJsonCourses.replace("\\","\\\\");
+importJsonCourses.replace("\\", "\\\\");
 
 const jsonCourses = JSON.parse(importJsonCourses);
 
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const importJsonCountries = String.raw`{{ itemsSorted | jsonify }}`;
-importJsonCountries.replace("\\","\\\\");
+importJsonCountries.replace("\\", "\\\\");
 
 const jsonCountry = JSON.parse(importJsonCountries);;
 
@@ -45,7 +45,7 @@ if (filterForm) {
   //Add pre-counters to filters
   showFilterCounters(filterForm);
 
-  function showFilterCounters(form){
+  function showFilterCounters(form) {
     var counterFiltersOn = getActiveFiltersList(form);
     console.log(counterFiltersOn);
     var counterResults = filterNewResultsList(counterFiltersOn);
@@ -59,36 +59,36 @@ if (filterForm) {
         filterName = att.querySelectorAll('legend')[0].innerText;
         var newFilter = false;
         projectedCounterFiltersOn.forEach(f => {
-          if(f.filterId === att.id){
-            if(!f.filterValues.includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)){
+          if (f.filterId === att.id) {
+            if (!f.filterValues.includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)) {
               f.filterValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
             }
             newFilter = true;
           }
         })
-        if(newFilter === false){
-          projectedCounterFiltersOn.push({ filterId: att.id, filterName: filterName, filterValues: attValues }); 
+        if (newFilter === false) {
+          projectedCounterFiltersOn.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
         }
         var projectedCounterResults = filterNewResultsList(projectedCounterFiltersOn);
         var counter = 0;
-        
-        if(Object.values(projectedCounterResults).length == Object.values(counterResults).length){
+
+        if (Object.values(projectedCounterResults).length != 0 && Object.values(projectedCounterResults).length == Object.values(counterResults).length) {
           console.log(filter.name);
           console.log("projected: " + Object.values(projectedCounterResults).length);
           console.log("counter: " + Object.values(counterResults).length);
         }
 
-        if(Object.values(projectedCounterResults).length >= Object.values(counterResults).length){
-          if(filter.checked){
+        if (Object.values(projectedCounterResults).length >= Object.values(counterResults).length) {
+          if (filter.checked) {
             Object.values(projectedCounterResults).forEach(r => {
-              if(r[att.id].includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)){
+              if (r[att.id].includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)) {
                 counter++;
               }
             })
-          }else{
+          } else {
             counter = Object.values(projectedCounterResults).length - Object.values(counterResults).length;
           }
-        }else if(Object.values(projectedCounterResults).length < Object.values(counterResults).length){
+        } else if (Object.values(projectedCounterResults).length < Object.values(counterResults).length) {
           counter = Object.values(projectedCounterResults).length;
         }
         att.querySelector("label[for='" + filter.id + "']").querySelector(".filterPreCounter").innerText = "(" + counter + ")";
@@ -114,7 +114,7 @@ if (filterForm) {
     console.log(searchTerm);
     var searchedResults = [];
     Object.values(newResults).forEach(o => {
-      if(o.title.toLowerCase().includes(searchTerm.toLowerCase())){
+      if (o.title.toLowerCase().includes(searchTerm.toLowerCase())) {
         searchedResults.push(o);
       }
     })
@@ -142,7 +142,7 @@ if (filterForm) {
         }
       })
 
-      if (attValues.length > 0){
+      if (attValues.length > 0) {
         activeFiltersList.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
       }
 
@@ -166,10 +166,10 @@ if (filterForm) {
     // by attribute
     filtersOnList.forEach(filter => {
       newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
-        function(r) {
-          if(x[filter.filterId] !== undefined){
+        function (r) {
+          if (x[filter.filterId] !== undefined) {
             return x[filter.filterId].includes(r);
-          }else{
+          } else {
             return false;
           }
         })
@@ -215,11 +215,11 @@ if (filterForm) {
     var list = document.querySelector('.courses-list');
     var sortedArticles = Array.from(articles);
     newResults.sort(sortList);
-    sortedArticles.sort(function(a, b){  
+    sortedArticles.sort(function (a, b) {
       return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
     });
     list.innerHTML = "";
-    
+
     for (i = 0; i < sortedArticles.length; ++i) {
       list.appendChild(sortedArticles[i]);
     }
@@ -235,17 +235,17 @@ if (filterForm) {
       totalCourses.innerText = "Sorry, but no courses match the following criteria: ";
       totalCourses.appendChild(listFiltersOnString);
       var searchTerm = searchForm.value;
-      if(searchTerm.length > 0){
+      if (searchTerm.length > 0) {
         totalCourses.innerHTML += "Searchterm: \"" + searchTerm + "\"";
       }
       hideClearButton(false);
-    }else{
+    } else {
       totalCourses.innerText = "";
       hideClearButton(true);
     }
-    if(Object.values(newResults).length === 1){
+    if (Object.values(newResults).length === 1) {
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
-    }else{
+    } else {
       totalCoursesCounter.innerText = Object.values(newResults).length + " courses";
     }
     console.log(newResults);
@@ -254,13 +254,13 @@ if (filterForm) {
 
   function sortList(a, b) {
     var selectedSort = document.querySelector('.sort-by').querySelector('select').value;
-    if(selectedSort == "alphabeticallyaz"){
+    if (selectedSort == "alphabeticallyaz") {
       return a.title.localeCompare(b.title);
-    }else if(selectedSort == "alphabeticallyza"){
+    } else if (selectedSort == "alphabeticallyza") {
       return b.title.localeCompare(a.title);
-    }else if(selectedSort == "recentlyupdated"){
+    } else if (selectedSort == "recentlyupdated") {
       return new Date(b.update) - new Date(a.update);
-    }else if(selectedSort == "recentlyadded"){
+    } else if (selectedSort == "recentlyadded") {
       return new Date(b.release) - new Date(a.release);
     }
     return false;
