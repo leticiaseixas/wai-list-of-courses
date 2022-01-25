@@ -71,6 +71,7 @@ if (filterForm) {
         }
         var projectedCounterResults = filterNewResultsList(projectedCounterFiltersOn);
         var counter = 0;
+        console.log(filter.name);
         console.log("projected: " + Object.values(projectedCounterResults).length);
         console.log("counter: " + Object.values(counterResults).length);
         if(Object.values(projectedCounterResults).length >= Object.values(counterResults).length){
