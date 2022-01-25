@@ -72,17 +72,8 @@ if (filterForm) {
         var projectedCounterResults = filterNewResultsList(projectedCounterFiltersOn);
         var counter = 0;
         
-        if(Object.values(projectedCounterResults).length != 0 && Object.values(projectedCounterResults).length == Object.values(counterResults).length){
-          console.log(filter.name);
-          console.log("projected: " + Object.values(projectedCounterResults).length);
-          console.log("counter: " + Object.values(counterResults).length);
-          console.log("filter: ");
+        if(Object.values(projectedCounterResults).length >= Object.values(counterResults).length){
           console.log(filter);
-        }
-
-        if(Object.values(projectedCounterResults).length >= Object.values(counterResults).length ||
-        Object.values(projectedCounterResults).length == Object.values(counterResults).length
-        ){
           if(filter.checked){
             Object.values(projectedCounterResults).forEach(r => {
               if(r[att.id].includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)){
