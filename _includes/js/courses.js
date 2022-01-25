@@ -81,7 +81,7 @@ if (filterForm) {
         }
 
         if(
-            (Object.values(projectedCounterResults).length != 0 && Object.values(projectedCounterResults).length == Object.values(counterResults).length)
+            (Object.values(projectedCounterResults).length != 0 && Object.values(projectedCounterResults).length == Object.values(counterResults).length) ||
             (Object.values(projectedCounterResults).length >= Object.values(counterResults).length)){
           if(filter.checked){
             Object.values(projectedCounterResults).forEach(r => {
