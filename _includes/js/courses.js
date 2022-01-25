@@ -80,7 +80,7 @@ if (filterForm) {
               }
             })
           } else if(Object.values(projectedCounterResults).length > 0){
-            console.log(filter);
+            counter = Object.values(projectedCounterResults).length;
           }
           else{
             counter = Object.values(projectedCounterResults).length - Object.values(counterResults).length;
