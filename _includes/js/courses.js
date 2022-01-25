@@ -1,9 +1,23 @@
 const filterForm = document.querySelector('[data-filter-form]');
 {% include sort-data-folder.liquid data=site.data.courses sortKey="title" %}
-const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
+
+const sortForm = document.querySelector('.sort-by');
+const searchForm = document.querySelector('#search');
+
+const importJsonCourses = String.raw`{{ itemsSorted | jsonify }}`;
+importJsonCourses.replace("\\","\\\\");
+
+const jsonCourses = JSON.parse(importJsonCourses);
+
+// const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
+
+const importJsonCountries = String.raw`{{ itemsSorted | jsonify }}`;
+importJsonCountries.replace("\\","\\\\");
+
+const jsonCountry = JSON.parse(importJsonCountries);;
+
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
-const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
 
 
 var coursesList = document.getElementById('courses-list');
