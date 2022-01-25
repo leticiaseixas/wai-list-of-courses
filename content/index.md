@@ -87,15 +87,40 @@ footer: >
         </div>
     </div>
     <div id="courses-list">
-        <span id="status">
-            <p id="total-courses">Showing {{ site.data.courses | size }} results</p>
-        </span>      
-        {% include excol.html type="all" %}
+        <div class="courses-list-header">
+            <div class="field">
+                <input type="search" id="search" placeholder="Search courses">
+            </div>
+            <span id="status">
+                <h4 id="total-courses">{{ itemsSorted | size }} courses</h4>
+            </span>
+            <div class="field" class="sort-by">
+                <h4><label for="select">Sort by</label></h4>
+                <select id="select" class="field">
+                    {% for sort in site.data.sorting %}
+                        {% if sort.selected == "true" %}
+                            <option value="{{ sort.id }}" selected>{{ sort.name }}</option>
+                        {% else %}
+                            <option value="{{ sort.id }}">{{ sort.name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>        
+            <!-- {% include excol.html type="all" %} -->
+            <!-- {% include_cached button.html label="Clear filters" class="clear-button"%} -->
+        </div>
+        <h4 id="found-tools"></h4>
+        <div class="course-list">
+            {% for course in itemsSorted %}
+                {% include courses.liquid %}
+            {% endfor %}            
+        </div>
+<!--         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         {% for course in itemsSorted %}
             {% include course.liquid %}
         {% endfor %}    
-    </div>
+ -->    </div>
     
 </div>
 <div class="button-submit-end">
