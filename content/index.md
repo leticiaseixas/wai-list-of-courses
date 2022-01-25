@@ -109,7 +109,7 @@ footer: >
             <!-- {% include excol.html type="all" %} -->
             <!-- {% include_cached button.html label="Clear filters" class="clear-button"%} -->
         </div>
-        <h4 id="found-tools"></h4>
+        <h4 id="found-courses"></h4>
         <div class="courses-list">
             {% for course in itemsSorted %}
                 {% include course.liquid %}
