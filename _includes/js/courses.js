@@ -116,7 +116,7 @@ if (filterForm) {
     //rebuild document
     rebuildList(searchedResults, filtersOn);
 
-    // callDebug(jsonFilters, jsonTools, filtersOn, newResults, toolsList);
+    // callDebug(jsonFilters, jsonCourses, filtersOn, newResults, coursesList);
   }
 
   function getActiveFiltersList(form) {
@@ -181,9 +181,9 @@ if (filterForm) {
 
   function rebuildList(newResults, filtersOn) {
 
-    const articles = toolsList.querySelectorAll('aside');
-    var totalToolsCounter = document.getElementById("total-courses");
-    var totalTools = document.getElementById("found-courses");
+    const articles = coursesList.querySelectorAll('aside');
+    var totalCoursesCounter = document.getElementById("total-courses");
+    var totalCourses = document.getElementById("found-courses");
 
     var listFiltersOnString = document.createElement('dl');
 
@@ -237,9 +237,9 @@ if (filterForm) {
       hideClearButton(true);
     }
     if(Object.values(newResults).length === 1){
-      totalCoursesCounter.innerText = Object.values(newResults).length + " tool";
+      totalCoursesCounter.innerText = Object.values(newResults).length + " course";
     }else{
-      totalCoursesCounter.innerText = Object.values(newResults).length + " tools";
+      totalCoursesCounter.innerText = Object.values(newResults).length + " courses";
     }
     console.log(newResults);
     showFilterCounters(filterForm);

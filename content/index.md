@@ -40,7 +40,7 @@ footer: >
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
-                    <label for="filter-{{ option.id }}"><span class='filterName'>{{ option.name }}</span><span class="filterPreCounter"></span></label>
+                    <label for="filter-{{ option.id }}"><span class='filterName'>{{ option.name }}</span> <span class="filterPreCounter"></span></label>
                 </div>
                 {% endfor %}
             </fieldset>
