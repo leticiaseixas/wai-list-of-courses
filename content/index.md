@@ -112,7 +112,7 @@ footer: >
         <h4 id="found-tools"></h4>
         <div class="course-list">
             {% for course in itemsSorted %}
-                {% include courses.liquid %}
+                {% include course.liquid %}
             {% endfor %}            
         </div>
 <!--         {% include excol.html type="all" %}
