@@ -1,5 +1,5 @@
 const filterForm = document.querySelector('[data-filter-form]');
-{% include sort - data - folder.liquid data = site.data.courses sortKey = "title" %}
+{% include sort-data-folder.liquid data=site.data.courses sortKey="title" %}
 
 const sortForm = document.querySelector('.sort-by');
 const searchForm = document.querySelector('#search');
@@ -72,7 +72,7 @@ if (filterForm) {
         var projectedCounterResults = filterNewResultsList(projectedCounterFiltersOn);
         var counter = 0;
 
-        if (Object.values(projectedCounterResults).length != 0 && Object.values(projectedCounterResults).length == Object.values(counterResults).length) {
+        if (Object.values(projectedCounterResults).length != 0 && (Object.values(projectedCounterResults).length == Object.values(counterResults).length)) {
  //       if (Object.values(projectedCounterResults).length >= Object.values(counterResults).length) {
           if (filter.checked) {
             Object.values(projectedCounterResults).forEach(r => {
