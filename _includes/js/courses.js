@@ -73,7 +73,7 @@ if (filterForm) {
         var counter = 0;
         
         if(Object.values(projectedCounterResults).length >= Object.values(counterResults).length){
-          console.log(filter);
+          
           if(filter.checked){
             Object.values(projectedCounterResults).forEach(r => {
               if(r[att.id].includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)){
@@ -82,6 +82,8 @@ if (filterForm) {
             })
           }else{
             counter = Object.values(projectedCounterResults).length - Object.values(counterResults).length;
+            console.log(filter);
+            console.log(counter);
           }
         }else if(Object.values(projectedCounterResults).length < Object.values(counterResults).length){
           counter = Object.values(projectedCounterResults).length;
