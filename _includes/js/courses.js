@@ -80,9 +80,9 @@ if (filterForm) {
           console.log(filter);
         }
 
-        if(
-            (Object.values(projectedCounterResults).length != 0 && Object.values(projectedCounterResults).length == Object.values(counterResults).length) ||
-            (Object.values(projectedCounterResults).length >= Object.values(counterResults).length)){
+        if(Object.values(projectedCounterResults).length >= Object.values(counterResults).length ||
+        Object.values(projectedCounterResults).length == Object.values(counterResults).length
+        ){
           if(filter.checked){
             Object.values(projectedCounterResults).forEach(r => {
               if(r[att.id].includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)){
