@@ -110,7 +110,7 @@ footer: >
             <!-- {% include_cached button.html label="Clear filters" class="clear-button"%} -->
         </div>
         <h4 id="found-tools"></h4>
-        <div class="course-list">
+        <div class="courses-list">
             {% for course in itemsSorted %}
                 {% include course.liquid %}
             {% endfor %}            
