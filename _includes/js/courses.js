@@ -207,11 +207,6 @@ if (filterForm) {
         attValues.innerText = f.filterValues.join(', ');
       listFiltersOnString.appendChild(attValues);
     });
-    
-    if(filtersOn.length > 0)
-      hideClearButton(false);
-    else 
-      hideClearButton(true);
 
     //Sort items
     var list = document.querySelector('.courses-list');
@@ -233,16 +228,22 @@ if (filterForm) {
         el.hidden = false;
     })
 
+        
     if (Object.values(newResults).length === 0) {
       totalCourses.innerText = "Sorry, but no courses match the following criteria: ";
-      totalCourses.appendChild(listFiltersOnString);
-      var searchTerm = searchForm.value;
-      if(searchTerm.length > 0){
-        totalCourses.innerHTML += "Searchterm: \"" + searchTerm + "\"";
-      }
-    }else{
-      totalCourses.innerText = "";
     }
+    
+    if(filtersOn.length > 0)
+      hideClearButton(false);
+    else 
+      hideClearButton(true);
+
+    totalCourses.appendChild(listFiltersOnString);
+    var searchTerm = searchForm.value;
+    if(searchTerm.length > 0){
+       totalCourses.innerHTML += "Search term: \"" + searchTerm + "\"";
+    }
+    
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
     }else{
