@@ -235,10 +235,10 @@ if (filterForm) {
       if(searchTerm.length > 0){
         totalCourses.innerHTML += "Searchterm: \"" + searchTerm + "\"";
       }
-      hideClearButton(false);
+      hideClearButton(true);
     }else{
       totalCourses.innerText = "";
-      hideClearButton(true);
+      hideClearButton(false);
     }
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
