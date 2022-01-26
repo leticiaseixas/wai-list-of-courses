@@ -235,10 +235,10 @@ if (filterForm) {
       if(searchTerm.length > 0){
         totalCourses.innerHTML += "Searchterm: \"" + searchTerm + "\"";
       }
-      hideClearButton(true);
+      hideClearButton(false);
     }else{
       totalCourses.innerText = "";
-      hideClearButton(false);
+      hideClearButton(true);
     }
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
@@ -265,6 +265,7 @@ if (filterForm) {
 
   function hideClearButton(isHidden) {
     document.querySelectorAll('.button-clear-button').forEach(item => { item.hidden = isHidden });
+    console.log("Clear button hidden? " + isHidden)
   }
 
   function clearFilters() {
