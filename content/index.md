@@ -106,8 +106,8 @@ footer: >
                     {% endfor %}
                 </select>
             </div>        
-            <!-- {% include excol.html type="all" %} -->
-            <!-- {% include_cached button.html label="Clear filters" class="clear-button"%} -->
+            {% include excol.html type="all" %}
+            {% include_cached button.html label="Clear filters" class="clear-button"%}
         </div>
         <h4 id="found-courses"></h4>
         <div class="courses-list">
@@ -115,8 +115,9 @@ footer: >
                 {% include course.liquid %}
             {% endfor %}            
         </div>
-<!--         {% include excol.html type="all" %}
+        {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
+        <!--         
         {% for course in itemsSorted %}
             {% include course.liquid %}
         {% endfor %}    
