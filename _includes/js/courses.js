@@ -183,11 +183,13 @@ if (filterForm) {
 
     newResults.sort(sortList);
 
-    console.log(newResults)
+    
 
     sortedArticles.sort(function (a, b) {
       return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
     });
+
+    console.log(sortedArticles);
 
     list.innerHTML = "";
 
