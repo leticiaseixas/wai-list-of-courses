@@ -190,7 +190,8 @@ if (filterForm) {
     var totalCoursesCounter = document.getElementById("total-courses");
     var filterCoursesString = document.getElementById("filter-courses");
 
-    var listFiltersOnString = document.createElement('dl');
+    var listFiltersOnString = document.createElement('h4').innerText = "Current filtering criteria:";
+    listFiltersOnString = document.createElement('dl');
 
     filtersOn.forEach(f => {
 
@@ -228,6 +229,7 @@ if (filterForm) {
       else
         el.hidden = false;
     })
+
 
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
