@@ -240,19 +240,32 @@ if (filterForm) {
 
     var searchTerm = searchForm.value;
     filterCoursesString.innerText = "";
-    if(filtersOn.length > 0){
+
+    if (searchTerm.length > 0){
+      var attName = document.createElement('dt');
+      attName.innerText = "Searchterm: \"";
+      listFiltersOnString.appendChild(attName);
+
+      var attValues = document.createElement('dd');
+      attValues.innerText = searchTerm + "\"";
+      listFiltersOnString.appendChild(attValues);
+
+      // filterCoursesString.appendChild += "Searchterm: \"" + searchTerm + "\"";
+    }
+
+
+    if(filtersOn.length > 0 || searchTerm > 0){
       var headerFiltering = document.createElement('h4');
       headerFiltering.innerText = "Current filtering criteria:";
       filterCoursesString.appendChild(headerFiltering);
       filterCoursesString.appendChild(listFiltersOnString);
       hideClearButton(false);
-    } else if (searchTerm.length > 0){
-        filterCoursesString.appendChild += "Searchterm: \"" + searchTerm + "\"";
     }
     else {
       filterCoursesString.innerText = "";
       hideClearButton(true);
     }
+    
 
     if (Object.values(newResults).length === 0) 
       filterCoursesString.innerText = "Sorry, but no courses match the following criteria: ";
