@@ -186,11 +186,13 @@ if (filterForm) {
   function rebuildList(newResults, filtersOn) {
 
     showFilterCounters(filterForm);
+
     const articles = coursesList.querySelectorAll('aside');
     var totalCoursesCounter = document.getElementById("total-courses");
     var filterCoursesString = document.getElementById("filter-courses");
 
-    var listFiltersOnString = document.createElement('h4').innerText = "Current filtering criteria:";
+    var listFiltersOnString = document.createElement('h4');
+    listFiltersOnString.innerText = "Current filtering criteria:";
     listFiltersOnString = document.createElement('dl');
 
     filtersOn.forEach(f => {
@@ -239,7 +241,7 @@ if (filterForm) {
 
     var searchTerm = searchForm.value;
     if(filtersOn.length > 0){
-      filterCoursesString.innerText(listFiltersOnString);
+      filterCoursesString.appendChild(listFiltersOnString);
       hideClearButton(false);
     } else if (searchTerm.length > 0){
         filterCoursesString.appendChild += "Searchterm: \"" + searchTerm + "\"";
