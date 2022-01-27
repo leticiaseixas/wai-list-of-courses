@@ -239,7 +239,7 @@ if (filterForm) {
 
     var searchTerm = searchForm.value;
     if(filtersOn.length > 0){
-      filterCoursesString.appendChild(listFiltersOnString);
+      filterCoursesString.innerText(listFiltersOnString);
       hideClearButton(false);
     } else if (searchTerm.length > 0){
         filterCoursesString.appendChild += "Searchterm: \"" + searchTerm + "\"";
