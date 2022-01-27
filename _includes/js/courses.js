@@ -181,7 +181,8 @@ if (filterForm) {
     var list = document.querySelector('.courses-list');
     var sortedArticles = Array.from(articles);
 
-    newResults.sort(sortList);
+    console.log(newResults);
+    //newResults.sort(sortList);
 
     /*
     sortedArticles.sort(function (a, b) {
@@ -203,6 +204,8 @@ if (filterForm) {
         el.hidden = false;
     })
     updateHeaderList(newResults, filtersOn);
+    
+    // update counters?
     //console.log(newResults);
     //showFilterCounters(filterForm);
   }
