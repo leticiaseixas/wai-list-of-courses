@@ -247,7 +247,7 @@ if (filterForm) {
       hideClearButton(true);
     }
 
-    if (Object.values(newResults).length === 0) {
+    if (Object.values(newResults).length === 0) 
       filterCoursesString.innerText = "Sorry, but no courses match the following criteria: ";
 
     console.log(newResults);
