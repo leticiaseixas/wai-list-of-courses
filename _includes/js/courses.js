@@ -275,7 +275,7 @@ if (filterForm) {
       filterCoursesString.appendChild(headerFiltering);
     }
     //console.log(newResults);
-    showFilterCounters(filterForm);
+    //showFilterCounters(filterForm);
   }
 
   function sortList(a, b) {
