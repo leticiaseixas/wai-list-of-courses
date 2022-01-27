@@ -185,6 +185,7 @@ if (filterForm) {
 
   function rebuildList(newResults, filtersOn) {
 
+    showFilterCounters(filterForm);
     const articles = coursesList.querySelectorAll('aside');
     var totalCoursesCounter = document.getElementById("total-courses");
     var filterCoursesString = document.getElementById("filter-courses");
@@ -234,6 +235,8 @@ if (filterForm) {
       totalCoursesCounter.innerText = Object.values(newResults).length + " courses";
     }
 
+    console.log("filtersOn");
+    console.log(filtersOn);
     if(filtersOn.length > 0){
       filterCoursesString.appendChild(listFiltersOnString);
       hideClearButton(false);
