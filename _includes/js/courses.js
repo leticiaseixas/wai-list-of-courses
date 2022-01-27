@@ -229,18 +229,18 @@ if (filterForm) {
     })
 
     if(filtersOn.length > 0){
-      totalCourses.appendChild(listFiltersOnString);
+      totalCoursesCounter.appendChild(listFiltersOnString);
       var searchTerm = searchForm.value;
       if(searchTerm.length > 0){
-        totalCourses.innerHTML += "Searchterm: \"" + searchTerm + "\"";
+        totalCoursesCounter.innerHTML += "Searchterm: \"" + searchTerm + "\"";
       }
       hideClearButton(false);
     }
 
     if (Object.values(newResults).length === 0) {
-      totalCourses.innerText = "Sorry, but no courses match the following criteria: ";
+      totalCoursesCounter.innerText = "Sorry, but no courses match the following criteria: ";
     }else{
-      totalCourses.innerText = "";
+      totalCoursesCounter.innerText = "";
       hideClearButton(true);
     }
     if(Object.values(newResults).length === 1){
