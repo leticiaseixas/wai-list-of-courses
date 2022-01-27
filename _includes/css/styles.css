@@ -289,6 +289,8 @@ fieldset label:hover a:hover {
 .courses-list-header {
   display: grid;
   grid-gap: 1em;
+  border-bottom: 1px solid var(--line-grey);
+  padding-bottom: 1em;
 }
 
 .courses-list-header .field {
