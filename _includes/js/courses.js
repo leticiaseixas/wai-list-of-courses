@@ -189,7 +189,7 @@ if (filterForm) {
 
     const articles = coursesList.querySelectorAll('aside');
     var totalCoursesCounter = document.getElementById("total-courses");
-    var filterCoursesString = document.getElementById("filter-courses");
+    var filterCoursesString = document.getElementById("filter-courses-info");
 
     var listFiltersOnString = document.createElement('dl');
 
@@ -232,8 +232,6 @@ if (filterForm) {
         el.hidden = false;
     })
 
-    console.log(listFiltersOnString);
-
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
     }else{
@@ -241,6 +239,7 @@ if (filterForm) {
     }
 
     var searchTerm = searchForm.value;
+    filterCoursesString.innerText = "";
     if(filtersOn.length > 0){
       var headerFiltering = document.createElement('h4');
       headerFiltering.innerText = "Current filtering criteria:";

@@ -107,7 +107,7 @@ footer: >
                 </select>
             </div>       
         </div>
-        <div id="filter-courses"></div>
+        <div id="filter-courses-info"></div>
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         {% include excol.html type="all" %}
         <div class="courses-list">
