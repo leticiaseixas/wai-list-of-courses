@@ -114,11 +114,6 @@ main>header {
   padding: 8px;
 }
 
-
-.button-clear-button {
-  margin-bottom: 2em;
-}
-
 .button-clear-button[hidden] {
   display: none !important;
 }

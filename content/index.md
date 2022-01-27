@@ -107,9 +107,9 @@ footer: >
                 </select>
             </div>       
         </div>
+        <h4 id="filter-courses"></h4>
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         {% include excol.html type="all" %}
-        <h4 id="found-courses"></h4>
         <div class="courses-list">
             {% for course in itemsSorted %}
                 {% include course.liquid %}

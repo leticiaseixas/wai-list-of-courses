@@ -187,7 +187,7 @@ if (filterForm) {
 
     const articles = coursesList.querySelectorAll('aside');
     var totalCoursesCounter = document.getElementById("total-courses");
-    var totalCourses = document.getElementById("found-courses");
+    var filterCoursesString = document.getElementById("filter-courses");
 
     var listFiltersOnString = document.createElement('dl');
 
@@ -228,26 +228,30 @@ if (filterForm) {
         el.hidden = false;
     })
 
-    if(filtersOn.length > 0)
-      hideClearButton(false);
-    else
-      hideClearButton(true);
-
-
-    if (Object.values(newResults).length === 0) {
-      totalCourses.innerText = "Sorry, but no courses match the following criteria: ";
-      totalCourses.appendChild(listFiltersOnString);
-      var searchTerm = searchForm.value;
-      if(searchTerm.length > 0){
-        totalCourses.innerHTML += "Searchterm: \"" + searchTerm + "\"";
-      }
-    }else{
-      totalCourses.innerText = "";
-    }
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
     }else{
       totalCoursesCounter.innerText = Object.values(newResults).length + " courses";
+    }
+
+    if(filtersOn.length > 0){
+      filterCoursesString.appendChild(listFiltersOnString);
+      hideClearButton(false);
+    }
+    else {
+      filterCoursesString.innerText = "";
+      hideClearButton(true);
+    }
+
+    if (Object.values(newResults).length === 0) {
+      filterCoursesString.innerText = "Sorry, but no courses match the following criteria: ";
+      filterCoursesString.appendChild(listFiltersOnString);
+      var searchTerm = searchForm.value;
+      if(searchTerm.length > 0){
+        filterCoursesString.innerHTML += "Searchterm: \"" + searchTerm + "\"";
+      }
+    }else{
+      filterCoursesString.innerText = "";
     }
     console.log(newResults);
     showFilterCounters(filterForm);
