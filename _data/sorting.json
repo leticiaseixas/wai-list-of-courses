@@ -10,5 +10,17 @@
         "name": "Alphabetically (Z to A)",
         "selected": "false",
         "sortkey": "title"
+    },
+    {
+        "id": "recentlyupdated",
+        "name": "Most recently updated",
+        "selected": "false",
+        "sortkey": "updated"
+    },
+    {
+        "id": "recentlyadded",
+        "name": "Most recently added",
+        "selected": "false",
+        "sortkey": "info_last_updated"
     }
 ]

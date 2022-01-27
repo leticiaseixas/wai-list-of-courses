@@ -279,7 +279,7 @@ if (filterForm) {
     } else if (selectedSort == "alphabeticallyza") {
       return b.title.localeCompare(a.title);
     } else if (selectedSort == "recentlyupdated") {
-      return new Date(b.update) - new Date(a.update);
+      return new Date(b.info_last_updated) - new Date(a.info_last_updated);
     } else if (selectedSort == "recentlyadded") {
       return new Date(b.release) - new Date(a.release);
     }
