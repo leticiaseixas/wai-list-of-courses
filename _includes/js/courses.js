@@ -241,11 +241,11 @@ if (filterForm) {
 
     if (searchTerm.length > 0){
       var attName = document.createElement('dt');
-      attName.innerText = "Searchterm: \"";
+      attName.innerText = "Searchterm: ";
       listFiltersOnString.appendChild(attName);
 
       var attValues = document.createElement('dd');
-      attValues.innerText = searchTerm + "\"";
+      attValues.innerText = "\"" + searchTerm + "\"";
       listFiltersOnString.appendChild(attValues);
 
       console.log("search: "+searchTerm);
