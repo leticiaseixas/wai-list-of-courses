@@ -253,7 +253,7 @@ if (filterForm) {
     }
 
 
-    if(filtersOn.length > 0 || searchTerm > 0){
+    if(filtersOn.length > 0 || searchTerm.length > 0){
       var headerFiltering = document.createElement('h4');
       headerFiltering.innerText = "Current filtering criteria:";
       filterCoursesString.appendChild(headerFiltering);
@@ -266,10 +266,12 @@ if (filterForm) {
     }
     
 
-    if (Object.values(newResults).length === 0) 
-      filterCoursesString.innerText = "Sorry, but no courses match the following criteria: ";
-
-    console.log(newResults);
+    if (Object.values(newResults).length === 0) {}
+      var headerFiltering = document.createElement('h4');
+      headerFiltering.innerText =  "Sorry, but no courses match the following criteria: ";
+      filterCoursesString.appendChild(headerFiltering);
+    }
+    //console.log(newResults);
     showFilterCounters(filterForm);
   }
 
