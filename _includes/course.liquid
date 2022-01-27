@@ -2,7 +2,7 @@
 {% capture course_section_identifier %}aside_{{ course.id }}{% endcapture %}
 {% capture course_details_id %}details_{{course.id}}{% endcapture %}
 
-{% include box.html type="start" title=course_title id=course.id name=course.title %}
+{% include box.html type="start" title=course_title id=course.title %}
 {{ course.description }}
 {% include excol.html type="start" id=course_details_id %}
 #### Details
