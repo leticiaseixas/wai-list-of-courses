@@ -29,7 +29,8 @@ footer: >
     <p><em>Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
     </em></p>
 </div>
-{% include sort-data-folder.liquid data=site.data.courses sortKey="title" %} 
+{% assign defaultSort = site.data.sorting.first.sortkey %}
+{% include sort-data-folder.liquid data=site.data.courses sortKey=defaultSort %} 
 <div id="app">
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
