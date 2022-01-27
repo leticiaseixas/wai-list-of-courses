@@ -276,6 +276,9 @@ if (filterForm) {
   }
 
   function sortList(a, b) {
+    console.log("Sort:");
+    console.log(a);
+    console.log(b);
     var selectedSort = document.querySelector('.sort-by').querySelector('select').value;
     if(selectedSort == "alphabeticallyaz"){
       return a.title.localeCompare(b.title);
