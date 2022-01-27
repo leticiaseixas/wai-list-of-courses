@@ -195,6 +195,8 @@ if (filterForm) {
     listFiltersOnString.innerText = "Current filtering criteria:";
     listFiltersOnString = document.createElement('dl');
 
+    console.log(listFiltersOnString);
+
     filtersOn.forEach(f => {
 
       var attName = document.createElement('dt');
