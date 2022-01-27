@@ -184,8 +184,9 @@ if (filterForm) {
     newResults.sort(sortList);
 
     console.log(sortedArticles);
+    
     sortedArticles.sort(function (a, b) {
-      return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
+      return newResults.findIndex(x => x.title === a.innerText) - newResults.findIndex(x => x.title === b.innerText);
     });
       
     console.log(sortedArticles);
