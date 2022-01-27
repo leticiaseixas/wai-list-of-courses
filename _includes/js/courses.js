@@ -181,14 +181,13 @@ if (filterForm) {
     var list = document.querySelector('.courses-list');
     var sortedArticles = Array.from(articles);
 
-    console.log(newResults);
-    //newResults.sort(sortList);
+    newResults.sort(sortList);
 
-    /*
+    console.log(sortedArticles);
     sortedArticles.sort(function (a, b) {
       return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
     });
-    */
+      
     console.log(sortedArticles);
 
     list.innerHTML = "";
