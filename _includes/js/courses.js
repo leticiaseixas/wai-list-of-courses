@@ -1,35 +1,32 @@
-const filterForm = document.querySelector('[data-filter-form]');
 {% include sort-data-folder.liquid data=site.data.courses sortKey="title" %}
+// const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
+const filterForm = document.querySelector('[data-filter-form]');
+const submitForm = document.querySelector('#form-submit-a-course');
 const sortForm = document.querySelector('.sort-by');
 const searchForm = document.querySelector('#search');
-
 const importJsonCourses = String.raw`{{ itemsSorted | jsonify }}`;
 importJsonCourses.replace("\\","\\\\");
-
 const jsonCourses = JSON.parse(importJsonCourses);
-
-// const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const importJsonCountries = String.raw`{{ itemsSorted | jsonify }}`;
 importJsonCountries.replace("\\","\\\\");
-
 const jsonCountry = JSON.parse(importJsonCountries);;
 
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
+const coursesList = document.getElementById('courses-list');
 
-
-var coursesList = document.getElementById('courses-list');
-
-document.querySelectorAll('.button-clear-button').forEach(item => {
-  item.hidden = true;
-  item.addEventListener('click', e => { clearFilters() });
-})
 
 // if (filterForm && sortForm && search) {
 
 if (filterForm) {
+
+  document.querySelectorAll('.button-clear-button').forEach(item => {
+    item.hidden = true;
+    item.addEventListener('click', e => { clearFilters() });
+  })
+
   filterForm.addEventListener('change', el => {
     filterJson(filterForm);
   });
@@ -210,7 +207,7 @@ if (filterForm) {
       else
         el.hidden = false;
     })
-    updateHeaderList(newResults, filtersOn, searchedResults );
+    updateHeaderList(newResults, filtersOn);
     //console.log(newResults);
     //showFilterCounters(filterForm);
   }
@@ -332,7 +329,8 @@ if (filterForm) {
 
 }
 
-if (document.getElementById("form-submit-a-course")) {
+
+if (submitForm) {
   _addLine();
 }
 
