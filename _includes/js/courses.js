@@ -213,7 +213,10 @@ if (filterForm) {
     //Sort items
     var list = document.querySelector('.courses-list');
     var sortedArticles = Array.from(articles);
+    console.log("Sort:");
+    console.log(newResults);
     newResults.sort(sortList);
+    console.log(newResults);
     sortedArticles.sort(function(a, b){  
       return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
     });
@@ -276,9 +279,6 @@ if (filterForm) {
   }
 
   function sortList(a, b) {
-    console.log("Sort:");
-    console.log(a);
-    console.log(b);
     var selectedSort = document.querySelector('.sort-by').querySelector('select').value;
     if(selectedSort == "alphabeticallyaz"){
       return a.title.localeCompare(b.title);
