@@ -21,6 +21,6 @@
         "id": "recentlyadded",
         "name": "Most recently added",
         "selected": "false",
-        "sortkey": "title"
+        "sortkey": "info_last_updated"
     }
 ]
