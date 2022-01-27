@@ -232,6 +232,7 @@ if (filterForm) {
         el.hidden = false;
     })
 
+    console.log(listFiltersOnString);
 
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
