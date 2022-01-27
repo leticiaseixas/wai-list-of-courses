@@ -228,22 +228,21 @@ if (filterForm) {
         el.hidden = false;
     })
 
-        
+    if(filtersOn.length > 0){
+      totalCourses.appendChild(listFiltersOnString);
+      var searchTerm = searchForm.value;
+      if(searchTerm.length > 0){
+        totalCourses.innerHTML += "Searchterm: \"" + searchTerm + "\"";
+      }
+      hideClearButton(false);
+    }
+
     if (Object.values(newResults).length === 0) {
       totalCourses.innerText = "Sorry, but no courses match the following criteria: ";
-    }
-    
-    if(filtersOn.length > 0)
-      hideClearButton(false);
-    else 
+    }else{
+      totalCourses.innerText = "";
       hideClearButton(true);
-
-    totalCourses.appendChild(listFiltersOnString);
-    var searchTerm = searchForm.value;
-    if(searchTerm.length > 0){
-       totalCourses.innerHTML += "Search term: \"" + searchTerm + "\"";
     }
-    
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
     }else{
@@ -269,7 +268,6 @@ if (filterForm) {
 
   function hideClearButton(isHidden) {
     document.querySelectorAll('.button-clear-button').forEach(item => { item.hidden = isHidden });
-    console.log("Clear button hidden? " + isHidden)
   }
 
   function clearFilters() {
