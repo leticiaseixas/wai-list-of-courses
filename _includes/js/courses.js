@@ -193,8 +193,6 @@ if (filterForm) {
 
     var listFiltersOnString = document.createElement('dl');
 
-    console.log(listFiltersOnString);
-
     filtersOn.forEach(f => {
 
       var attName = document.createElement('dt');
@@ -250,6 +248,7 @@ if (filterForm) {
       attValues.innerText = searchTerm + "\"";
       listFiltersOnString.appendChild(attValues);
 
+      console.log("search: "+searchTerm);
       // filterCoursesString.appendChild += "Searchterm: \"" + searchTerm + "\"";
     }
 
