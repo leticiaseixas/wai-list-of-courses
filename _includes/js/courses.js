@@ -231,7 +231,7 @@ if (filterForm) {
     if(filtersOn.length > 0)
       hideClearButton(false);
     else
-    hideClearButton(true);
+      hideClearButton(true);
 
 
     if (Object.values(newResults).length === 0) {
@@ -241,10 +241,8 @@ if (filterForm) {
       if(searchTerm.length > 0){
         totalCourses.innerHTML += "Searchterm: \"" + searchTerm + "\"";
       }
-      hideClearButton(false);
     }else{
       totalCourses.innerText = "";
-      hideClearButton(true);
     }
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";

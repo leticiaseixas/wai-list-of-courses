@@ -284,3 +284,37 @@ fieldset label:hover a:hover {
   outline-offset: 2px;
   transition: outline-offset 0.2s linear;
 } 
+
+
+.courses-list-header {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.courses-list-header .field {
+  grid-column: 1 / 5;
+  margin: 0;
+  align-self: center;
+}
+
+.courses-list-header #status {
+  grid-column: 5 / 8;
+  align-self: center;
+}
+
+.courses-list-header #status h4 {
+  margin: 0;
+}
+
+.courses-list-header .sort-by {
+  grid-column: 8 / 8;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.courses-list-header .sort-by h4 {
+  float: left;
+  margin: 0;
+  margin-right: 0.5em
+}

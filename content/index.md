@@ -105,7 +105,9 @@ footer: >
                         {% endif %}
                     {% endfor %}
                 </select>
-            </div>        
+            </div>       
+        </div>
+        <div>     
             {% include excol.html type="all" %}
             {% include_cached button.html label="Clear filters" class="clear-button"%}
         </div>
