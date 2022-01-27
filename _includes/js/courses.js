@@ -186,7 +186,7 @@ if (filterForm) {
     console.log(sortedArticles);
     
     sortedArticles.sort(function (a, b) {
-      return newResults.findIndex(x => x.title === a.innerText) - newResults.findIndex(x => x.title === b.innerText);
+      return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
     });
       
     console.log(sortedArticles);
