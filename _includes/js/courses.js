@@ -47,9 +47,8 @@ if (filterForm) {
 
   function showFilterCounters(form){
     var counterFiltersOn = getActiveFiltersList(form);
-    console.log(counterFiltersOn);
     var counterResults = filterNewResultsList(counterFiltersOn);
-    console.log(counterResults);
+    
     var projectedCounterFiltersOn = counterFiltersOn;
     form.querySelectorAll('fieldset').forEach(att => {
       att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
@@ -98,25 +97,23 @@ if (filterForm) {
 
     // selecting filters on
     var filtersOn = getActiveFiltersList(form);
-    console.log(filtersOn);
-
+    
     // filtering results
     var newResults = [];
 
     newResults = filterNewResultsList(filtersOn);
-    console.log(newResults);
+    
 
     //Filter on search term
     var searchTerm = searchForm.value;
-    console.log(searchTerm);
+    
     var searchedResults = [];
     Object.values(newResults).forEach(o => {
       if(o.title.toLowerCase().includes(searchTerm.toLowerCase())){
         searchedResults.push(o);
       }
     })
-    console.log(searchedResults);
-
+    
     //rebuild document
     rebuildList(searchedResults, filtersOn);
 
@@ -213,10 +210,7 @@ if (filterForm) {
     //Sort items
     var list = document.querySelector('.courses-list');
     var sortedArticles = Array.from(articles);
-    console.log("Sort:");
-    console.log(newResults);
     newResults.sort(sortList);
-    console.log(newResults);
     sortedArticles.sort(function(a, b){  
       return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
     });
@@ -250,9 +244,6 @@ if (filterForm) {
       var attValues = document.createElement('dd');
       attValues.innerText = "\"" + searchTerm + "\"";
       listFiltersOnString.appendChild(attValues);
-
-      console.log("search: "+searchTerm);
-      // filterCoursesString.appendChild += "Searchterm: \"" + searchTerm + "\"";
     }
 
 
