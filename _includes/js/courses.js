@@ -266,7 +266,7 @@ if (filterForm) {
     }
     
 
-    if (Object.values(newResults).length === 0) {}
+    if (Object.values(newResults).length === 0) {
       var headerFiltering = document.createElement('h4');
       headerFiltering.innerText =  "Sorry, but no courses match the following criteria: ";
       filterCoursesString.appendChild(headerFiltering);
