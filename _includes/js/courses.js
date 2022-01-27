@@ -185,9 +185,40 @@ if (filterForm) {
     showFilterCounters(filterForm);
 
     const articles = coursesList.querySelectorAll('aside');
+
+    //Sort items
+    var list = document.querySelector('.courses-list');
+    var sortedArticles = Array.from(articles);
+    
+    newResults.sort(sortList);
+    
+    console.log(newResults)
+    
+    sortedArticles.sort(function(a, b){  
+      return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
+    });
+    
+    list.innerHTML = "";
+    
+    for (i = 0; i < sortedArticles.length; ++i) {
+      list.appendChild(sortedArticles[i]);
+    }
+
+    sortedArticles.forEach(el => {
+      if (!Object.values(newResults).find(o => o.id === el.id))
+        el.hidden = true;
+      else
+        el.hidden = false;
+    })
+    updateHeaderList(newResults, filtersOn, searchedResults );
+    //console.log(newResults);
+    //showFilterCounters(filterForm);
+  }
+
+  function updateHeaderList(newResults, filtersOn){
+
     var totalCoursesCounter = document.getElementById("total-courses");
     var filterCoursesString = document.getElementById("filter-courses-info");
-
     var listFiltersOnString = document.createElement('dl');
 
     filtersOn.forEach(f => {
@@ -207,27 +238,6 @@ if (filterForm) {
       listFiltersOnString.appendChild(attValues);
     });
 
-    //Sort items
-    var list = document.querySelector('.courses-list');
-    var sortedArticles = Array.from(articles);
-    newResults.sort(sortList);
-    
-    /*sortedArticles.sort(function(a, b){  
-      return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
-    });
-    */
-    list.innerHTML = "";
-    
-    for (i = 0; i < sortedArticles.length; ++i) {
-      list.appendChild(sortedArticles[i]);
-    }
-
-    sortedArticles.forEach(el => {
-      if (!Object.values(newResults).find(o => o.id === el.id))
-        el.hidden = true;
-      else
-        el.hidden = false;
-    })
 
     if(Object.values(newResults).length === 1){
       totalCoursesCounter.innerText = Object.values(newResults).length + " course";
@@ -267,9 +277,8 @@ if (filterForm) {
       headerFiltering.innerText =  "Sorry, but no courses match the following criteria: ";
       filterCoursesString.appendChild(headerFiltering);
     }
-    //console.log(newResults);
-    //showFilterCounters(filterForm);
   }
+
 
   function sortList(a, b) {
     var selectedSort = document.querySelector('.sort-by').querySelector('select').value;
