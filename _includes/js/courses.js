@@ -299,6 +299,7 @@ if (filterForm) {
     filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
     document.getElementById("search").value = "";
     document.getElementById("filter-courses-info").innerText = "";
+    hideClearButton(true);
   }
 
 
