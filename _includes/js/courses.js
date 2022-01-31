@@ -189,14 +189,14 @@ if (filterForm) {
       newResultsList = newResultsList.reduce((a, c) => a.filter(i => c.includes(i)));
 
 
-      var searchTerm = searchForm.value;
-      var searchedResults = [];
-  
-      Object.values(newResultsList).forEach(o => {
-        if (o.title.toLowerCase().includes(searchTerm.toLowerCase())) {
-          searchedResults.push(o);
-        }
-      })
+    var searchTerm = searchForm.value;
+    var searchedResults = [];
+
+    Object.values(newResultsList).forEach(o => {
+      if (o.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+        searchedResults.push(o);
+      }
+    })
 
     return searchedResults;
   }
@@ -240,7 +240,7 @@ if (filterForm) {
     selectLang.length = 0;
     var opt = document.createElement("option");
     opt.value = "";
-    opt.innerHTML = "--Select an option--"; 
+    opt.innerHTML = "--Select an option--";
     selectLang.appendChild(opt);
 
     countries = countries.flat();
@@ -249,19 +249,19 @@ if (filterForm) {
     selectCountry.length = 0;
     opt = document.createElement("option");
     opt.value = "";
-    opt.innerHTML = "--Select an option--"; 
+    opt.innerHTML = "--Select an option--";
     selectCountry.appendChild(opt);
 
     langs.forEach(l => {
       opt = document.createElement("option");
       opt.value = l;
-      opt.innerHTML = jsonLang[l].name + " (" + jsonLang[l].nativeName + ")"; 
+      opt.innerHTML = jsonLang[l].name + " (" + jsonLang[l].nativeName + ")";
       selectLang.appendChild(opt);
     })
     countries.forEach(c => {
       opt = document.createElement("option");
       opt.value = c;
-      opt.innerHTML = jsonCountry[c].name + " (" + jsonCountry[c].nativeName + ")"; 
+      opt.innerHTML = jsonCountry[c].name + " (" + jsonCountry[c].nativeName + ")";
       selectCountry.appendChild(opt);
     })
   }
@@ -352,11 +352,11 @@ if (filterForm) {
 
   function clearFilters() {
     //rebuildList(jsonCourses, []);
-     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-     filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-     document.getElementById("search").value = "";
-     document.getElementById("filter-courses-info").innerText = "";
-     filterJson(filterForm)
+    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+    filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
+    document.getElementById("search").value = "";
+    document.getElementById("filter-courses-info").innerText = "";
+    filterJson(filterForm)
     hideClearButton(true);
   }
 
