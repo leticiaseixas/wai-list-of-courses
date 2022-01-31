@@ -262,8 +262,8 @@ if (filterForm) {
     })
     countries.forEach(c => {
       opt = document.createElement("option");
-      opt.value = l;
-      opt.innerHTML = jsonCountry[l].name + " (" + jsonCountry[l].nativeName + ")"; 
+      opt.value = c;
+      opt.innerHTML = jsonCountry[c].name + " (" + jsonCountry[c].nativeName + ")"; 
       selectLang.appendChild(opt);
     })
   }
