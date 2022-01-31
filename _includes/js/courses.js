@@ -257,13 +257,13 @@ if (filterForm) {
     langs.forEach(l => {
       opt = document.createElement("option");
       opt.value = l;
-      opt.innerHTML = jsonLang[l].name + "(" + jsonLang[l].nativeName + ")"; 
+      opt.innerHTML = jsonLang[l].name + " (" + jsonLang[l].nativeName + ")"; 
       selectLang.appendChild(opt);
     })
     countries.forEach(c => {
       opt = document.createElement("option");
       opt.value = l;
-      opt.innerHTML = jsonCountry[l].name + "(" + jsonCountry[l].nativeName + ")"; 
+      opt.innerHTML = jsonCountry[l].name + " (" + jsonCountry[l].nativeName + ")"; 
       selectLang.appendChild(opt);
     })
   }
