@@ -347,7 +347,7 @@ function _addLine() {
 
       newLine.querySelector('input, checkbox, select').focus();
 
-      console.log(parent.querySelector('button.remove-line'));
+      parent.querySelector('button.remove-line').disabled = false;
 
     });
   });
@@ -364,6 +364,9 @@ function _addLine() {
       lines = parent.querySelectorAll('.line');      
       last = lines[lines.length - 1];
       last.querySelector('input, checkbox, select').focus();
+
+      if(lines.length <= 0)
+        button.disabled = true;
     });
   });
 
