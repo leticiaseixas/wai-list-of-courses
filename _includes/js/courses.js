@@ -364,7 +364,7 @@ function _addLine() {
       lines = parent.querySelectorAll('.line');      
       last = lines[lines.length - 1];
       last.querySelector('input, checkbox, select').focus();
-
+      console.log(lines);
       if(lines.length <= 0)
         button.disabled = true;
     });
