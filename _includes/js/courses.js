@@ -231,7 +231,7 @@ if (filterForm) {
     showFilterCounters(filterForm);
     //update lang country
     
-    updateSelectFilters(newResults.map(e => e.language), newResults.map(e => e.countries));
+    updateSelectFilters(newResults.map(e => e.language), newResults.map(e => e.country));
   }
 
   function updateSelectFilters(langs, countries){
