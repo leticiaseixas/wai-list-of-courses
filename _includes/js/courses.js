@@ -355,9 +355,8 @@ function _addLine() {
       var parent = event.target.parentNode;
       var lines = parent.querySelectorAll('.line');
       var proto = parent.querySelector('.proto');
-      console.log(parent);
-      console.log(lines);
-      console.log(proto);
+      var last = lines[lines.length - 1];
+      last.parentNode.removeChild(last);
     });
   });
 
