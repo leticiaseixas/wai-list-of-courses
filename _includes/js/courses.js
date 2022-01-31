@@ -240,6 +240,11 @@ if (filterForm) {
     langs = [...new Set(langs)];
     selectLang = filterForm.querySelector('#language')
     selectLang.length = 0;
+    var opt = document.createElement("option");
+    opt.value = "";
+    opt.innerHTML = "--Select an option--"; 
+    selectLang.appendChild(opt);
+
     countries = countries.flat();
     countries = [...new Set(countries)];
     selectCountry = filterForm.querySelector('#country');
@@ -247,11 +252,10 @@ if (filterForm) {
 
     langs.forEach(l => {
       console.log(jsonLang[l]);
-      var opt = document.createElement("option");
+      opt = document.createElement("option");
       opt.value = l;
-      opt.innerHTML = jsonLang[l].name; 
+      opt.innerHTML = jsonLang[l].name + "(" + jsonLang[l].nativeName + ")"; 
       selectLang.appendChild(opt);
-      index++;
     })
 
 
