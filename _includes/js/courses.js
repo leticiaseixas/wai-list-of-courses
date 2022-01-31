@@ -353,10 +353,11 @@ function _addLine() {
   Array.prototype.forEach.call(buttons, function addClickListener(button) {
     button.addEventListener('click', function (event) {
       var parent = event.target.parentNode;
-      var lines = parent.querySelectorAll('.line');
-      var proto = parent.querySelector('.proto');
+      var lines = parent.querySelectorAll('.line');      
       var last = lines[lines.length - 1];
       last.parentNode.removeChild(last);
+      last = lines[lines.length - 1];
+      last.querySelector('input, checkbox, select').focus();
     });
   });
 
