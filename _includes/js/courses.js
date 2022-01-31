@@ -46,6 +46,9 @@ if (filterForm) {
     var counterFiltersOn = getActiveFiltersList(form);
     var counterResults = filterNewResultsList(counterFiltersOn);
 
+    console.log(counterFiltersOn);
+    console.log(counterResults);
+
     var projectedCounterFiltersOn = counterFiltersOn;
     form.querySelectorAll('fieldset').forEach(att => {
       att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
@@ -204,7 +207,7 @@ if (filterForm) {
     
     // update counters?
     //console.log(newResults);
-    //showFilterCounters(filterForm);
+    
   }
 
   function updateHeaderList(newResults, filtersOn) {
