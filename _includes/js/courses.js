@@ -126,19 +126,9 @@ if (filterForm) {
     var newResults = [];
     newResults = filterNewResultsList(filtersOn);
 
-    var searchTerm = searchForm.value;
-    var searchedResults = [];
-
-    Object.values(newResults).forEach(o => {
-      if (o.title.toLowerCase().includes(searchTerm.toLowerCase())) {
-        searchedResults.push(o);
-      }
-    })
 
     //rebuild document
-    rebuildList(searchedResults, filtersOn);
-
-    // callDebug(jsonFilters, jsonCourses, filtersOn, newResults, coursesList);
+    rebuildList(newResults, filtersOn);
   }
 
   function getActiveFiltersList(form) {
@@ -198,7 +188,17 @@ if (filterForm) {
     else
       newResultsList = newResultsList.reduce((a, c) => a.filter(i => c.includes(i)));
 
-    return newResultsList;
+
+      var searchTerm = searchForm.value;
+      var searchedResults = [];
+  
+      Object.values(newResultsList).forEach(o => {
+        if (o.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+          searchedResults.push(o);
+        }
+      })
+
+    return searchedResults;
   }
 
   function rebuildList(newResults, filtersOn) {
@@ -229,8 +229,6 @@ if (filterForm) {
     })
     updateHeaderList(newResults, filtersOn);
     showFilterCounters(filterForm);
-    //update lang country
-
     updateSelectFilters(newResults.map(e => e.language), newResults.map(e => e.country));
   }
 
@@ -361,19 +359,6 @@ if (filterForm) {
     hideClearButton(true);
   }
 
-
-  function callDebug(jsonFilters, jsonCourses, filtersOn, newResults, coursesList) {
-    console.log("Filters:");
-    console.log(jsonFilters);
-    console.log("Courses:");
-    console.log(jsonCourses);
-    console.log("Filters On:");
-    console.log(filtersOn);
-    console.log("Results:");
-    console.log(newResults);
-    console.log("coursesList");
-    console.log(coursesList);
-  }
 
   function clean(obj) {
     for (var propName in obj) {
