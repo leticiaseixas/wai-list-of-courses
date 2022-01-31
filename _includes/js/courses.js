@@ -1,4 +1,4 @@
-{% include sort - data - folder.liquid data = site.data.courses sortKey = "title" %}
+{% include sort-data-folder.liquid data = site.data.courses sortKey = "title" %}
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const filterForm = document.querySelector('[data-filter-form]');
