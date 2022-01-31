@@ -175,6 +175,7 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
     </div>
     <button type="button" class="add-line small">Add new prerequisite</button>
+    <button type="button" class="remove-line small" disabled>Remove last prerequisite</button>
   </fieldset>
 
   <fieldset class="field" id="topics">
@@ -189,6 +190,7 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="course-topics_[n]" name="course-topics" />
     </div>
     <button type="button" class="add-line small">Add new topic</button>
+    <button type="button" class="remove-line small" disabled>Remove last topic</button>
   </fieldset>
 
   <fieldset class="field" id="course-wai-curricula">
@@ -225,6 +227,7 @@ main > header { grid-column: 4 / span 4; }
       </select>
       </div>
     <button type="button" class="add-line small">Add new language</button>
+    <button type="button" class="remove-line small" disabled>Remove last language</button>
   </fieldset>
 
 
