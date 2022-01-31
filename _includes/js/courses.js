@@ -61,16 +61,8 @@ if (filterForm) {
         var counterCurrentFilter = newResults.length;
         filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
 
-        // atualizar lang + country
-        console.log(newResults);
-        var lang;
-        var country;
-
       })
     })
-
-    // atualiza select
-
   }
 
 
@@ -211,8 +203,6 @@ if (filterForm) {
 
   function rebuildList(newResults, filtersOn) {
 
-    
-
     const articles = coursesList.querySelectorAll('aside');
 
     //Sort items
@@ -220,7 +210,6 @@ if (filterForm) {
     var sortedArticles = Array.from(articles);
 
     newResults.sort(sortList);
-
 
     sortedArticles.sort(function (a, b) {
       return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
@@ -239,10 +228,9 @@ if (filterForm) {
         el.hidden = false;
     })
     updateHeaderList(newResults, filtersOn);
-
-    // update counters?
-    //console.log(newResults);
     showFilterCounters(filterForm);
+    //update lang country
+    console.log(newResults);
 
   }
 
