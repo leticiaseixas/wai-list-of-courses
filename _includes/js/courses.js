@@ -1,4 +1,4 @@
-{% include sort-data-folder.liquid data = site.data.courses sortKey = "title" %}
+{% include sort - data - folder.liquid data = site.data.courses sortKey = "title" %}
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const filterForm = document.querySelector('[data-filter-form]');
@@ -230,24 +230,30 @@ if (filterForm) {
     updateHeaderList(newResults, filtersOn);
     showFilterCounters(filterForm);
     //update lang country
-    
+
     updateSelectFilters(newResults.map(e => e.language), newResults.map(e => e.country));
   }
 
-  function updateSelectFilters(langs, countries){
+  function updateSelectFilters(langs, countries) {
 
     langs = langs.flat();
     langs = [...new Set(langs)];
-
+    selectLang = filterForm.querySelector('#language').length = 0;
     countries = countries.flat();
     countries = [...new Set(countries)];
+    selectCountry = filterForm.querySelector('#country');
 
-    langs.forEach(l=>{
+    langs.forEach(l => {
       console.log(jsonLang[l]);
+      var opt = document.createElement("option");
+      opt.value = l;
+      opt.innerHTML = jsonLang[l].name; 
+      selectLang.appendChild(opt);
+      index++;
     })
 
 
-    countries.forEach(c=>{
+    countries.forEach(c => {
       console.log(jsonCountry[c]);
     })
 
