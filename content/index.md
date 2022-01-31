@@ -23,6 +23,8 @@ footer: >
 <style> 
 {% include css/styles.css %}
 </style>
+<a href="#left-col" class="button button--skip-link">Skip to filters</a>
+<a href="#courses-list" class="button button--skip-link">Skip to results</a>
 <div class="header-sup">
     <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add or update information about a course, training, or certification on web accessibility, please use the following button.</p>
     {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-a-resource" %}
