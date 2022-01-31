@@ -249,20 +249,20 @@ if (filterForm) {
     countries = [...new Set(countries)];
     selectCountry = filterForm.querySelector('#country');
     selectCountry.length = 0;
+    selectCountry.appendChild(opt);
 
     langs.forEach(l => {
-      console.log(jsonLang[l]);
       opt = document.createElement("option");
       opt.value = l;
       opt.innerHTML = jsonLang[l].name + "(" + jsonLang[l].nativeName + ")"; 
       selectLang.appendChild(opt);
     })
-
-
     countries.forEach(c => {
-      console.log(jsonCountry[c]);
+      opt = document.createElement("option");
+      opt.value = l;
+      opt.innerHTML = jsonCountry[l].name + "(" + jsonCountry[l].nativeName + ")"; 
+      selectLang.appendChild(opt);
     })
-
   }
 
 
