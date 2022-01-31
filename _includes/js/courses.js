@@ -238,10 +238,12 @@ if (filterForm) {
 
     langs = langs.flat();
     langs = [...new Set(langs)];
-    selectLang = filterForm.querySelector('#language').length = 0;
+    selectLang = filterForm.querySelector('#language')
+    selectLang.length = 0;
     countries = countries.flat();
     countries = [...new Set(countries)];
     selectCountry = filterForm.querySelector('#country');
+    selectCountry.length = 0;
 
     langs.forEach(l => {
       console.log(jsonLang[l]);
