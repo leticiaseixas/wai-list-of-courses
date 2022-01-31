@@ -56,14 +56,20 @@ if (filterForm) {
         var currentFilterValue = filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText;
 
         criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [currentFilterValue] });
-        console.log(criteria);
-
-        var counterCurrentFilter = filterNewResultsList(criteria).length;
+        
+        var newResults = filterNewResultsList(criteria);
+        var counterCurrentFilter = newResults.length;
         filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
 
-      })
+        // atualizar lang + country
+        console.log(newResults);
+        var lang;
+        var country;
 
+      })
     })
+
+    // atualiza select
 
   }
 
