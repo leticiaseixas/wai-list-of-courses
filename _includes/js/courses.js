@@ -204,7 +204,7 @@ if (filterForm) {
     
     // update counters?
     //console.log(newResults);
-    showFilterCounters(filterForm);
+    //showFilterCounters(filterForm);
   }
 
   function updateHeaderList(newResults, filtersOn) {
