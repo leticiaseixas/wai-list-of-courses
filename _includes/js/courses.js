@@ -330,9 +330,9 @@ if (submitForm) {
 }
 
 function _addLine() {
-  var buttons = document.querySelectorAll('button.add-line');
+  var buttonsAdd = document.querySelectorAll('button.add-line');
 
-  Array.prototype.forEach.call(buttons, function addClickListener(button) {
+  Array.prototype.forEach.call(buttonsAdd, function addClickListener(button) {
     button.addEventListener('click', function (event) {
       var parent = event.target.parentNode;
       var lines = parent.querySelectorAll('.line');
@@ -349,13 +349,16 @@ function _addLine() {
     });
   });
 
-  var buttons = document.querySelectorAll('button.remove-line');
-  Array.prototype.forEach.call(buttons, function addClickListener(button) {
+  var buttonsRemove = document.querySelectorAll('button.remove-line');
+  
+  Array.prototype.forEach.call(buttonsRemove, function addClickListener(button) {
     button.addEventListener('click', function (event) {
       var parent = event.target.parentNode;
-      var lines = parent.querySelectorAll('.line');      
+      var lines = parent.querySelectorAll('.line');
       var last = lines[lines.length - 1];
       last.parentNode.removeChild(last);
+      
+      lines = parent.querySelectorAll('.line');      
       last = lines[lines.length - 1];
       last.querySelector('input, checkbox, select').focus();
     });
