@@ -9,7 +9,7 @@ const importJsonCourses = String.raw`{{ itemsSorted | jsonify }}`;
 importJsonCourses.replace("\\", "\\\\");
 const jsonCourses = JSON.parse(importJsonCourses);
 
-const importJsonCountries = String.raw`{{ itemsSorted | jsonify }}`;
+const importJsonCountries = String.raw`{{ site.data.countries | jsonify }}`;
 importJsonCountries.replace("\\", "\\\\");
 const jsonCountry = JSON.parse(importJsonCountries);;
 
@@ -48,7 +48,7 @@ if (filterForm) {
     filterForm.querySelectorAll('fieldset').forEach(filterTypeFS => {
 
       filterTypeFS.querySelectorAll('input[type="checkbox"]').forEach(filter => {
-        
+
         var criteria = getActiveFiltersList(filterForm);
 
         var currentFilterID = filterTypeFS.id;
@@ -56,7 +56,7 @@ if (filterForm) {
         var currentFilterValue = filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText;
 
         criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [currentFilterValue] });
-        
+
         var newResults = filterNewResultsList(criteria);
         var counterCurrentFilter = newResults.length;
         filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
@@ -230,9 +230,19 @@ if (filterForm) {
     updateHeaderList(newResults, filtersOn);
     showFilterCounters(filterForm);
     //update lang country
-    console.log(newResults);
-
+    
+    updateSelectFilters(newResults.map(e => e.language), newResults.map(e => e.countries));
   }
+
+  function updateSelectFilters(langs, countries){
+
+    console.log(jsonLang);
+    console.log(jsonCountry);
+    console.log("---");
+    console.log(langs);
+    console.log(countries);
+  }
+
 
   function updateHeaderList(newResults, filtersOn) {
 
