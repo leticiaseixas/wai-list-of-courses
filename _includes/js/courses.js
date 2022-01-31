@@ -241,6 +241,12 @@ if (filterForm) {
     console.log("---");
     console.log(langs);
     console.log(countries);
+
+    langs.forEach(l=>{
+      console.log(jsonLang[l[0]]);
+    })
+
+
   }
 
 
