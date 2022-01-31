@@ -249,6 +249,9 @@ if (filterForm) {
     countries = [...new Set(countries)];
     selectCountry = filterForm.querySelector('#country');
     selectCountry.length = 0;
+    opt = document.createElement("option");
+    opt.value = "";
+    opt.innerHTML = "--Select an option--"; 
     selectCountry.appendChild(opt);
 
     langs.forEach(l => {
