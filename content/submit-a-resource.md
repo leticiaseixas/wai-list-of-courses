@@ -80,7 +80,7 @@ main > header { grid-column: 4 / span 4; }
       </select>    
       </div>
     <button type="button" class="add-line small">Add new country</button>
-    <button type="button" class="remove-line small">Remove last country</button>
+    <button type="button" class="remove-line small" disabled>Remove last country</button>
   </fieldset>
 
   <div class="field">

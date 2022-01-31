@@ -346,6 +346,9 @@ function _addLine() {
       proto.parentNode.insertBefore(newLine, proto);
 
       newLine.querySelector('input, checkbox, select').focus();
+
+      console.log(newLine.querySelector('button.remove-lne'));
+
     });
   });
 
