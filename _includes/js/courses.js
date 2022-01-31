@@ -262,7 +262,7 @@ if (filterForm) {
       opt = document.createElement("option");
       opt.value = c;
       opt.innerHTML = jsonCountry[c].name + " (" + jsonCountry[c].nativeName + ")"; 
-      selectLang.appendChild(opt);
+      selectCountry.appendChild(opt);
     })
   }
 
