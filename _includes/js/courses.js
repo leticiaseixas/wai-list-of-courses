@@ -42,7 +42,35 @@ if (filterForm) {
   //Add pre-counters to filters
   showFilterCounters(filterForm);
 
-  function showFilterCounters(form) {
+
+  function showFilterCounters(filterForm) {
+
+    filterForm.querySelectorAll('fieldset').forEach(filterTypeFS => {
+
+      filterTypeFS.querySelectorAll('input[type="checkbox"]').forEach(filter => {
+        
+        var criteria = getActiveFiltersList(filterForm);
+
+        var currentFilterID = filterTypeFS.id;
+        var currentFilterName = filterTypeFS.querySelectorAll('legend')[0].innerText;
+        var currentFilterValue = filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText;
+
+        criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [currentFilterValue] });
+        console.log(criteria);
+
+        var counterCurrentFilter = filterNewResultsList(criteria).length;
+        filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
+
+      })
+
+    })
+
+  }
+
+
+
+
+  function _showFilterCounters(form) {
     var counterFiltersOn = getActiveFiltersList(form);
     var counterResults = filterNewResultsList(counterFiltersOn);
 
@@ -50,6 +78,7 @@ if (filterForm) {
     console.log(counterResults);
 
     var projectedCounterFiltersOn = counterFiltersOn;
+
     form.querySelectorAll('fieldset').forEach(att => {
       att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         projectedCounterFiltersOn = getActiveFiltersList(form);
@@ -176,7 +205,7 @@ if (filterForm) {
 
   function rebuildList(newResults, filtersOn) {
 
-    showFilterCounters(filterForm);
+    
 
     const articles = coursesList.querySelectorAll('aside');
 
@@ -186,11 +215,11 @@ if (filterForm) {
 
     newResults.sort(sortList);
 
-       
+
     sortedArticles.sort(function (a, b) {
       return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
     });
-      
+
     list.innerHTML = "";
 
     for (i = 0; i < sortedArticles.length; ++i) {
@@ -204,10 +233,11 @@ if (filterForm) {
         el.hidden = false;
     })
     updateHeaderList(newResults, filtersOn);
-    
+
     // update counters?
     //console.log(newResults);
-    
+    showFilterCounters(filterForm);
+
   }
 
   function updateHeaderList(newResults, filtersOn) {
@@ -356,19 +386,19 @@ function _addLine() {
   });
 
   var buttonsRemove = document.querySelectorAll('button.remove-line');
-  
+
   Array.prototype.forEach.call(buttonsRemove, function addClickListener(button) {
     button.addEventListener('click', function (event) {
       var parent = event.target.parentNode;
       var lines = parent.querySelectorAll('.line');
       var last = lines[lines.length - 1];
       last.parentNode.removeChild(last);
-      
-      lines = parent.querySelectorAll('.line');      
+
+      lines = parent.querySelectorAll('.line');
       last = lines[lines.length - 1];
       last.querySelector('input, checkbox, select').focus();
-      
-      if(lines.length <= 1)
+
+      if (lines.length <= 1)
         button.disabled = true;
     });
   });
