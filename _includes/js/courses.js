@@ -347,7 +347,7 @@ function _addLine() {
 
       newLine.querySelector('input, checkbox, select').focus();
 
-      console.log(newLine.querySelector('button.remove-lne'));
+      console.log(newLine.querySelector('button.remove-line'));
 
     });
   });
