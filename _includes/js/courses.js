@@ -236,16 +236,19 @@ if (filterForm) {
 
   function updateSelectFilters(langs, countries){
 
-    console.log(jsonLang);
-    console.log(jsonCountry);
-    console.log("---");
-    console.log(langs);
-    console.log(countries);
+    langs = langs.flat();
+    langs = [...new Set(langs)];
+
+    countries = countries.flat();
+    countries = [...new Set(countries)];
 
     langs.forEach(l=>{
       console.log(jsonLang[l[0]]);
     })
 
+    countries.forEach(c=>{
+      console.log(jsonCountry[c[0]]);
+    })
 
   }
 
