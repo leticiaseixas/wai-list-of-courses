@@ -351,11 +351,12 @@ if (filterForm) {
   }
 
   function clearFilters() {
-    rebuildList(jsonCourses, []);
-    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-    filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-    document.getElementById("search").value = "";
-    document.getElementById("filter-courses-info").innerText = "";
+    //rebuildList(jsonCourses, []);
+     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+     filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
+     document.getElementById("search").value = "";
+     document.getElementById("filter-courses-info").innerText = "";
+     filterJson(filterForm)
     hideClearButton(true);
   }
 

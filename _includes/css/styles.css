@@ -185,6 +185,7 @@ details dt::after {
 
 #disclaimer {
   border: 1px solid var(--line-grey);
+  margin-top: 2em;
 }
 
 #disclaimer h2 {
