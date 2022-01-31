@@ -348,6 +348,19 @@ function _addLine() {
       newLine.querySelector('input, checkbox, select').focus();
     });
   });
+
+  var buttons = document.querySelectorAll('button.remove-line');
+  Array.prototype.forEach.call(buttons, function addClickListener(button) {
+    button.addEventListener('click', function (event) {
+      var parent = event.target.parentNode;
+      var lines = parent.querySelectorAll('.line');
+      var proto = parent.querySelector('.proto');
+      console.log(parent);
+      console.log(lines);
+      console.log(proto);
+    });
+  });
+
 }
 
 
