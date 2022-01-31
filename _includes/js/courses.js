@@ -243,11 +243,12 @@ if (filterForm) {
     countries = [...new Set(countries)];
 
     langs.forEach(l=>{
-      console.log(jsonLang[l[0]]);
+      console.log(jsonLang[l]);
     })
 
+
     countries.forEach(c=>{
-      console.log(jsonCountry[c[0]]);
+      console.log(jsonCountry[c]);
     })
 
   }
