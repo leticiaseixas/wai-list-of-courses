@@ -41,10 +41,10 @@ footer: >
             <fieldset id="{{ filter.id }}">
                 <legend class="label">
                 {{ filter.name }}
-                {% if filter.info %} {% include image.html src="info.svg" alt="alternative text" class="icon" %}
+                {% if filter.info %}
                 <details>
-                    <summary>Life Story</summary>
-                <div>Nothing special, I think you're pretty cool.</div>
+                    <summary>{% include image.html src="info.svg" alt="alternative text" class="icon" %}</summary>
+                    <div>{{site.data.helpers[filter.id].description}}</div>
                 </details>
                 {% endif %}
                 </legend>
