@@ -46,7 +46,7 @@ footer: >
                 {% include excol.html type="start" id="optional-id" %}
                 Show info
                 {% include excol.html type="middle" %}
-                {{ site.data.helpers[filter.id] }}
+                text
                 {% include excol.html type="end" %}
                 {% endif %}
                 </legend>
