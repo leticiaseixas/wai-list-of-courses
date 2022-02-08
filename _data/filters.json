@@ -124,15 +124,15 @@
         "name": "Free"
       },
       {
-        "id": "certificates_for_purchase",
+        "id": "free_certificates_for_purchase",
         "name": "Free with certificates for purchase"
       },
       {
-        "id": "limited_time",
+        "id": "free_limited_time",
         "name": "Free for limited content or duration"
       },
       {
-        "id": "reduced_for_some",
+        "id": "free_or_reduced_for_some",
         "name": "Free or reduced fee for some"
       },
       {
