@@ -79,7 +79,6 @@
   {
     "id": "format",
     "name": "Format",
-    "info": "true",
     "type": "checkbox",
     "options": [
       {
@@ -103,16 +102,17 @@
   {
     "id": "scheduling",
     "name": "Scheduling",
-    "info": "true",
     "type": "checkbox",
     "options": [
       {
         "id": "scheduled",
-        "name": "Scheduled"
+        "name": "Scheduled",
+        "info": "true"
       },
       {
         "id": "unscheduled",
-        "name": "Unscheduled"
+        "name": "Unscheduled",
+        "info": "true"
       }
     ]
   },
