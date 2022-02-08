@@ -35,10 +35,11 @@ if (filterForm) {
     filterJson(filterForm);
   });
 
-  searchForm.addEventListener('keyup', el => {
+  searchForm.addEventListener('change', el => {
     filterJson(filterForm);
   });
 
+  
   //Add pre-counters to filters
   showFilterCounters(filterForm);
 
