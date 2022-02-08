@@ -42,7 +42,6 @@ footer: >
                 <legend class="label">
                 {{ filter.name }}
                 {% if filter.info %} 
-                {% include image.html src="info.svg" alt="alternative text" class="icon" %}
                 {% include excol.html type="start" id="optional-id" %}
                 Show info
                 {% include excol.html type="middle" %}
