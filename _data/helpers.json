@@ -6,7 +6,7 @@
     },
     {
         "id": "scheduling",
-        "name": "Scheduling",
+        "name": "scheduling",
         "description": "Consider the type of activities as Scheduled: participants are required to attend at a specific time, and Unscheduled: participants can attend at their own pace."
       }
   ]

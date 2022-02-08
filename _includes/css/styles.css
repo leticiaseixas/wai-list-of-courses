@@ -322,7 +322,7 @@ img.icon {
   --img-width: 15px;
 }
 
-#helper div {
+.helper div {
   background-color: var(--cloudy-subtle);
   padding:0.5em;
   margin: 0.5em;

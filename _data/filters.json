@@ -103,6 +103,7 @@
   {
     "id": "scheduling",
     "name": "Scheduling",
+    "info": "true",
     "type": "checkbox",
     "options": [
       {
