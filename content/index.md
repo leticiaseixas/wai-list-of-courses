@@ -45,7 +45,8 @@ footer: >
                     <summary>
                         {{ filter.name }} {% include image.html src="info.svg" alt="alternative text" class="icon" %}
                     </summary>
-                    <div>Info {{ site.data.helpers | where: "id", filter.id }}</div>
+                    {% assign helper = site.data.helpers | where: "id", filter.id %}
+                    <div>Info {{ helper.description }}</div>
                 </details>
                 {% else %}
                     {{ filter.name }}
