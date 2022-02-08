@@ -43,12 +43,23 @@ footer: >
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
+                    {% if option.info %}
+                    <details class="helper">
+                    <summary>
+                        <label for="filter-{{ option.id }}">
+                        <span class='filterName'>{{ option.name }}</span> 
+                        <span class="filterPreCounter"></span>
+                        {% include image.html src="info.svg" alt="alternative text" class="icon" %}
+                    </label>
+                    </summary>
+                    {% assign helper = site.data.helpers | where: "id", filter.id %}
+                    <div>{{ helper[0].description }}</div>
+                    </details>
+                    {% else %}
                     <label for="filter-{{ option.id }}">
                         <span class='filterName'>{{ option.name }}</span> 
                         <span class="filterPreCounter"></span>
                     </label>
-                    {% if option.info %}
-                        INFO
                     {% endif %}
                 </div>
                 {% endfor %}
