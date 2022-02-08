@@ -2,7 +2,7 @@
     {
       "id": "format",
       "name": "Format",
-      "description": "Helper for format<br/>info"
+      "description": "Consider: <ul><li>Face-to-face</li><li>Online</li><li>Hybrid</li><li>Blended</li></ul>"
     },
     {
         "id": "scheduling",
