@@ -43,13 +43,9 @@ footer: >
                 {{ filter.name }}
                 {% if filter.info %} {% include image.html src="info.svg" alt="alternative text" class="icon" %}{% endif %}
                 {% include excol.html type="start" id="optional-id" %}
-
-### Heading
-
+Show info
 {% include excol.html type="middle" %}
-
 Content of the expand/collapse.
-
 {% include excol.html type="end" %}
                 </legend>
                 {% for option in filter.options %}
