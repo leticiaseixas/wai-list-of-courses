@@ -41,12 +41,17 @@ footer: >
             <fieldset id="{{ filter.id }}">
                 <legend class="label">
                 {{ filter.name }}
+                {% if filter.info %} {% include image.html src="info.svg" alt="alternative text" class="icon" %}{% endif %}
+                {% include excol.html type="start" id="optional-id" %}
+
+### Heading
+
+{% include excol.html type="middle" %}
+
+Content of the expand/collapse.
+
+{% include excol.html type="end" %}
                 </legend>
-                {% include excol.html type="start"%}
-                Show info
-                {% include excol.html type="middle" %}
-                Text
-                {% include excol.html type="end" %}
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
