@@ -2,6 +2,11 @@
     {
       "id": "format",
       "name": "Format",
-      "description": "helper text for Format"
-    }
+      "description": "Consider Face-to-face: all teaching sessions provided on-site, Online: all teaching sessions provided online, Hybrid: teaching sessions provided simultaneously on-site and online, and Blended: teaching sessions provided either on-site or online."
+    },
+    {
+        "id": "scheduling",
+        "name": "Scheduling",
+        "description": "Consider the type of activities as Scheduled: participants are required to attend at a specific time, and Unscheduled: participants can attend at their own pace."
+      }
   ]
