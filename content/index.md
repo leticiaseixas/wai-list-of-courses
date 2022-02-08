@@ -49,7 +49,6 @@ footer: >
                 Text
                 {% include excol.html type="end" %}
                 {% endif %}
-
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
