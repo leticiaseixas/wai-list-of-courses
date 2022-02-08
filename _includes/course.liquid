@@ -73,9 +73,6 @@ Platform
 
 {% assign hasASupport = false %}
 {% assign aSupport = "" | split: "," %}
-
-
-
 {% if course.accessibility_support %}
 {% include filtered-accessibility-support.liquid data = course.accessibility_support %}
 {% assign hasASupport = true %}
