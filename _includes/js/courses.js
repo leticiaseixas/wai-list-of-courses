@@ -38,10 +38,6 @@ if (filterForm) {
   searchForm.addEventListener('keyup', el => {
     filterJson(filterForm);
   });
-  
-  searchForm.addEventListener('click', el => {
-    filterJson(filterForm);
-  });
 
   //Add pre-counters to filters
   showFilterCounters(filterForm);
@@ -303,6 +299,8 @@ if (filterForm) {
 
     var searchTerm = searchForm.value;
     filterCoursesString.innerText = "";
+
+    alert(searchTerm);
 
     if (searchTerm.length > 0) {
       var attName = document.createElement('dt');
