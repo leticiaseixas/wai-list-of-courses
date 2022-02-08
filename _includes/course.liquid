@@ -118,9 +118,9 @@ Reviews page
 : Not provided
 {% endif %}
 
-This information was last updated on {{ course.info_last_updated | date: "%y %b, %d" }}.
-{% if course.course_content_last_update %}
-The content of this resource was last updated on {{ course.content_last_updated | date: "%y %b, %d" }}.
+This information was last updated on {{ course.info_last_updated | date: "%d, %b %y" }}.
+{% if course.content_last_updated %}
+The content of this resource was last updated on {{ course.content_last_updated | date: "%d, %b %y" }}.
 {% endif %}
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
