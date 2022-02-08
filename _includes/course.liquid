@@ -1,4 +1,4 @@
-{% capture course_title %}<a href="{{ course.website }}">{{ course.title }}</a> by {{ course.provider }}{% endcapture %}
+{% capture course_title %}<a href="{{ course.website }}">{{ course.title }}{% include_cached icon.html name="external-link" %}</a> by {{ course.provider }}{% endcapture %}
 {% capture course_section_identifier %}aside_{{ course.id }}{% endcapture %}
 {% capture course_details_id %}details_{{course.id}}{% endcapture %}
 
@@ -109,11 +109,11 @@ Availability
 {% if course.end_date %} to {{ course.end_date | date: "%-d %B %Y" }}{% endif %}{% endif %}
 
 Website
-: <a href="{{ course.website}}" rel="external">{{ course.website }}</a>
+: <a href="{{ course.website}}" rel="external">{{ course.website }}{% include_cached icon.html name="external-link" %}</a>
 
 Reviews page
 {% if course.reviews %}
-: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}</a>
+: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}{% include_cached icon.html name="external-link" %}</a>
 {% else %}
 : Not provided
 {% endif %}
