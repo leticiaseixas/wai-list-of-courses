@@ -35,7 +35,11 @@ if (filterForm) {
     filterJson(filterForm);
   });
 
-  searchForm.addEventListener('change', el => {
+  searchForm.addEventListener('keyup', el => {
+    filterJson(filterForm);
+  });
+  
+  searchForm.addEventListener('click', el => {
     filterJson(filterForm);
   });
 
