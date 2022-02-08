@@ -26,7 +26,8 @@
     ],
     "format": "Online",
     "scheduling": [
-        "Scheduled, Unscheduled"
+        "Scheduled", 
+        "Unscheduled"
     ],
     "length": "75 minutes (estimate)",
     "cost": "Paid",

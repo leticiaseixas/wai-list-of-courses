@@ -286,7 +286,7 @@ main > header { grid-column: 4 / span 4; }
     <legend class="label">Cost (Required)</legend>
     <div class="radio-field">
       <input type="radio" name="course-cost" id="course-cost-free">
-      <label for="course-cost-free">Free</label>
+      <label for="course-cost-free">Free of charge</label>
     </div> 
     <div class="radio-field">
       <input type="radio" name="course-cost" id="course-cost-free-certificates-for-purchase" required>

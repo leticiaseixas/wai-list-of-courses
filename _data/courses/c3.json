@@ -32,7 +32,8 @@
     ],
     "format": "Online",
     "scheduling": [
-        "Scheduled, Unscheduled"
+        "Scheduled",
+        "Unscheduled"
     ],
     "length": "90 minutes (online self-paced class, estimate)",
     "cost": "Paid",
