@@ -91,9 +91,13 @@ Platform
 
 {{ aSupport | inspect }}
 
+{{ course.topics | inspect }}
+
+
 Accessibility support
 : {% for s in aSupport %}
 * {{ s }}{% endfor %}
+
 
 {% assign hasASupport = false %}
 Accessibility support
