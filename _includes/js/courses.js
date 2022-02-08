@@ -39,7 +39,7 @@ if (filterForm) {
     filterJson(filterForm);
   });
   searchForm.addEventListener('search', () => {
-    alert("The term searched for was ");
+    filterJson(filterForm);
    })
    
 
