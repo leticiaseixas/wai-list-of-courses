@@ -15,13 +15,15 @@
         "Tester"
     ],
     "level": "Advanced",
-    "topics": ["Not provided"],
+    "topics": [
+        "Not provided"
+    ],
     "language": [
         "en"
     ],
     "format": "Online",
     "scheduling": [
-        "Scheduled", 
+        "Scheduled",
         "Unscheduled"
     ],
     "length": "6 hours (estimate)",
