@@ -89,13 +89,6 @@ Platform
 {% endif %}
 
 
-{{ course.accessibility_support | inspect }}
-
-{{ aSupport | inspect }}
-
-{{ course.topics | inspect }}
-
-
 Accessibility support
 : {% for s in aSupport %}
 * {{ s }}{% endfor %}
