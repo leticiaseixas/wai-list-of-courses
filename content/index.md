@@ -39,7 +39,7 @@ footer: >
             <h2>Filters</h2>
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
-                <legend class="label">{{ filter.name }}</legend>
+                <legend class="label">{{ filter.name }}{% if filter.info %} {% include_cached icon.html name="info" %}</legend>
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">

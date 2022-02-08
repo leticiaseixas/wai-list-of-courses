@@ -79,6 +79,7 @@
   {
     "id": "format",
     "name": "Format",
+    "info": "true",
     "type": "checkbox",
     "options": [
       {
