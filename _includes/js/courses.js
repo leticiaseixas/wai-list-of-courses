@@ -18,7 +18,6 @@ const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const coursesList = document.getElementById('courses-list');
 
 
-alert(excols);
 
 // if (filterForm && sortForm && search) {
 
