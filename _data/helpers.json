@@ -7,6 +7,6 @@
     {
         "id": "scheduling",
         "name": "Scheduling",
-        "description": "Helper for scheduling"
+        "description": "Consider: -Scheduled -Unscheduled"
       }
   ]
