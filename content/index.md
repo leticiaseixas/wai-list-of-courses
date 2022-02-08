@@ -42,13 +42,11 @@ footer: >
                 <legend class="label">
                 {{ filter.name }}
                 </legend>
-                {% if filter.info %} 
                 {% include excol.html type="start"%}
                 Show info
                 {% include excol.html type="middle" %}
                 Text
                 {% include excol.html type="end" %}
-                {% endif %}
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
