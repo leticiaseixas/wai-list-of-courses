@@ -36,7 +36,6 @@ if (filterForm) {
   });
 
   searchForm.addEventListener('change', el => {
-    alert(el);
     filterJson(filterForm);
   });
 
