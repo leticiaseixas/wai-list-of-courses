@@ -197,7 +197,7 @@ if (filterForm) {
     var searchedResults = [];
 
     Object.values(newResultsList).forEach(o => {
-      console.log(o.topics.join());
+      console.log(o.topics);
       if (o.title.toLowerCase().includes(searchTerm.toLowerCase())) {
         searchedResults.push(o);
       }
