@@ -42,13 +42,9 @@ footer: >
                 <legend class="label">
                 {{ filter.name }}
                 {% if filter.info %} {% include image.html src="info.svg" alt="alternative text" class="icon" %}
-                <details id="optional-id" >
-                    <summary markdown="block">
-                        ### Heading
-                    </summary>
-                    <div markdown="block">
-                        Content of the expand/collapse.
-                    </div>
+                <details>
+                    <summary>Life Story</summary>
+                <div>Nothing special, I think you're pretty cool.</div>
                 </details>
                 {% endif %}
                 </legend>
