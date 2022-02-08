@@ -40,12 +40,15 @@ footer: >
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
                 <legend class="label">
-                {{ filter.name }}
                 {% if filter.info %}
                 <details>
-                    <summary>{% include image.html src="info.svg" alt="alternative text" class="icon" %}</summary>
+                    <summary>
+                        {{ filter.name }}{% include image.html src="info.svg" alt="alternative text" class="icon" %}
+                    </summary>
                     <div>{{site.data.helpers[filter.id].description}}</div>
                 </details>
+                {% else %}
+                    {{ filter.name }}
                 {% endif %}
                 </legend>
                 {% for option in filter.options %}
