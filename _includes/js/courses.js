@@ -17,8 +17,6 @@ const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const coursesList = document.getElementById('courses-list');
 
-
-
 // if (filterForm && sortForm && search) {
 
 if (filterForm) {
@@ -42,7 +40,6 @@ if (filterForm) {
   searchForm.addEventListener('search', () => {
     filterJson(filterForm);
   })
-
 
   //Add pre-counters to filters
   showFilterCounters(filterForm);

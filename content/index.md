@@ -51,14 +51,6 @@ footer: >
                 {% else %}
                     {{ filter.name }}
                 {% endif %}
-                {% if filter.info %}
-                    {{ filter.name }} {% include image.html src="info.svg" alt="alternative text" class="icon" %}
-                    {% assign helper = site.data.helpers | where: "id", filter.id %}
-                        <div class="helper">{{ helper[0].description }}</div>
-                {% else %}
-                    {{ filter.name }}
-                {% endif %}
-
                 </legend>
                 {% for option in filter.options %}
                 <div class="filter-options field">
