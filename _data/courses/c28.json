@@ -36,9 +36,8 @@
     ],
     "platform": "Zoom",
     "accessibility_support": [
-        "caption-audio",
-        "material-ahead-of-time",
-        "A captioned recording with transcript will be shared with attendees after the live event"
+        "digital-accessibility-caption-audio",
+        "general-accessibility-material-ahead-of-time"
     ],
     "other_accessibility_support": [
         "A captioned recording with transcript will be shared with attendees after the live event"
