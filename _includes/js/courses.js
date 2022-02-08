@@ -35,11 +35,10 @@ if (filterForm) {
     filterJson(filterForm);
   });
 
-  searchForm.addEventListener('change', el => {
+  searchForm.addEventListener('onchange', el => {
     filterJson(filterForm);
   });
 
-  
   //Add pre-counters to filters
   showFilterCounters(filterForm);
 
