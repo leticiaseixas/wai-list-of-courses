@@ -27,8 +27,7 @@
         "en"
     ],
     "format": "Online",
-    "scheduling": [
-        "Scheduled",
+    "scheduling": [        
         "Unscheduled"
     ],
     "length": "30 minutes (estimate)",
