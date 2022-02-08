@@ -330,3 +330,13 @@ img.icon {
   border: solid 1px var(--line-grey);
   margin-left:-2em;
 }
+
+.helper {
+  background-color: var(--cloudy-subtle);
+  padding:0.5em;
+  margin: 0.5em;
+  font-weight: normal;
+  border: solid 1px var(--line-grey);
+  margin-left:-2em;
+  display: none !important;
+}
