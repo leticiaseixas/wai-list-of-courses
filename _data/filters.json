@@ -120,7 +120,7 @@
     "type": "checkbox",
     "options": [
       {
-        "id": "free",
+        "id": "free_free",
         "name": "Free"
       },
       {
