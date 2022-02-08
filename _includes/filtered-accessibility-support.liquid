@@ -7,7 +7,6 @@
 {%- for aSubGroup in aGroups -%}
     {%- for aSupport in aSubGroup -%}
         {% if include.data contains aSupport.id %}
-            {{ include.data | inspect }}
             {% assign aSupportAux = "" | split: "," %}
             {% assign aSupportAux = aSupportAux | push: aSupport.id %}
             {% assign aSupportAux = aSupportAux | push: aSupport.name %}
@@ -26,5 +25,3 @@
         {%- endfor -%}
     {%- endfor -%}
 {%- endfor -%}
-
-{{ filteredItems }}
