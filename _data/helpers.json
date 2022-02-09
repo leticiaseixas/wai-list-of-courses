@@ -2,11 +2,11 @@
     {
       "id": "format",
       "name": "Format",
-      "description": "Consider: <ul><li>Face-to-face</li><li>Online</li><li>Hybrid</li><li>Blended</li></ul>"
+      "description": "Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul>"
     },
     {
         "id": "scheduling",
         "name": "Scheduling",
-        "description": "Consider: -Scheduled -Unscheduled"
+        "description": "Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li>"
       }
   ]
