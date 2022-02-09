@@ -330,8 +330,9 @@ img.icon {
   border: transparent;
 }
 
-.icon:focus {
+.icon:focus, .icon:hover {
   background: transparent;
+  border:transparent;
 }
 
 
