@@ -329,4 +329,5 @@ img.icon {
   font-weight: normal;
   border: solid 1px var(--line-grey);
   margin-left:-2em;
+  width:100%
 }
