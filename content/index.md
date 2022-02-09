@@ -39,7 +39,6 @@ footer: >
             <h2>Filters</h2>
             <button class="icon"> 
                 <image src="/content-images/wai-course-list/info.svg"/>
-                More info
             </button> 
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
