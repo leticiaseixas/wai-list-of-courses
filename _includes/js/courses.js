@@ -44,7 +44,7 @@ if (filterForm) {
   filterForm.querySelectorAll('.icon').forEach(icon => {
     helper = icon.parentElement.nextElementSibling;
     helper.hidden = true;
-    icon.addEventListener('click', e => { openInfoFilter(icon)});
+    icon.addEventListener('click', e => { openInfoFilter(helper)});
   });
 
   function openInfoFilter(helper){
