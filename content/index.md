@@ -38,7 +38,7 @@ footer: >
         <form data-filter-form action="...">
             <h2>Filters</h2>
             <button>
-                <img src="/info.svg" alt="More info about this">
+                <img src="info.svg" alt="More info about this">
             </button>
             {% include_cached button.html type="icon" label="Icon Button" class="icon" icon="info" %}
             {% for filter in site.data.filters %}
