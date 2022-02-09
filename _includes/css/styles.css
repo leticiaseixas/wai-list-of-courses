@@ -322,12 +322,12 @@ img.icon {
   --img-width: 15px;
 }
 
-.helper div {
+.helper{
   background-color: var(--cloudy-subtle);
   padding:0.5em;
   margin: 0.5em;
   font-weight: normal;
   border: solid 1px var(--line-grey);
   margin-left:-2em;
-  width:100%
+  width:100%;
 }
