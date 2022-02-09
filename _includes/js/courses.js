@@ -41,6 +41,15 @@ if (filterForm) {
     filterJson(filterForm);
   })
 
+  filterForm.querySelectorAll('.icon').forEach(icon => {
+    icon.addEventListener('click', e => { openInfoFilter(icon)});
+  });
+
+  function openInfoFilter(icon){
+    console.log(icon);
+  }
+
+
   //Add pre-counters to filters
   showFilterCounters(filterForm);
 
