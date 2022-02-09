@@ -42,14 +42,15 @@ if (filterForm) {
   })
 
   filterForm.querySelectorAll('.icon').forEach(icon => {
-    helper = icon.parentElement.nextElementSibling;
-    helper.hidden = true;
-    icon.addEventListener('click', e => { openInfoFilter(helper)});
+    icon.parentElement.nextElementSibling.hidden = true;
+    icon.addEventListener('click', e => { 
+      console.log(icon.parentElement.nextElementSibling);
+      icon.parentElement.nextElementSibling.hidden = false;
+    });
   });
 
   function openInfoFilter(helper){
-    console.log(helper);
-    helper.hidden = false;
+    
   }
 
 
