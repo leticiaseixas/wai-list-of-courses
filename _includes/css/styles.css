@@ -323,6 +323,13 @@ img.icon {
   cursor: pointer;
 }
 
+.icon {
+  --img-width: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: transparent;
+}
+
 .helper{
   background-color: var(--cloudy-subtle);
   padding:0.5em;

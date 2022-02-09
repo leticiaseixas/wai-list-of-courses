@@ -37,7 +37,7 @@ footer: >
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2>Filters</h2>
-            <button> 
+            <button class="icon"> 
                 <image src="/content-images/wai-course-list/info.svg"/>
                 More info
             </button> 
