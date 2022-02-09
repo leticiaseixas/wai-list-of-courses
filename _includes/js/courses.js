@@ -45,14 +45,15 @@ if (filterForm) {
     var helper;
     helper = icon.parentElement.nextElementSibling;
     helper.hidden = true;
-    icon.addEventListener('click', e => { 
-      console.log(helper);
-      helper.hidden = false;
+    icon.addEventListener('click', e => {
+      hideShowHelper(helper);
     });
   });
 
   function openInfoFilter(helper){
-    
+    console.log(helper);
+    //helper.hidden = false;
+    helper = (helper.hidden) ? false : true;
   }
 
 
