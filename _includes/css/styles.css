@@ -330,3 +330,7 @@ img.icon {
   border: solid 1px var(--line-grey);
   width:90%;
 }
+
+.helper[hidden] {
+  display: none !important;
+}

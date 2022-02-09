@@ -42,10 +42,12 @@ if (filterForm) {
   })
 
   filterForm.querySelectorAll('.icon').forEach(icon => {
-    icon.parentElement.nextElementSibling.hidden = true;
+    var helper;
+    helper = icon.parentElement.nextElementSibling;
+    helper.hidden = true;
     icon.addEventListener('click', e => { 
-      console.log(icon.parentElement.nextElementSibling);
-      icon.parentElement.nextElementSibling.hidden = false;
+      console.log(helper);
+      helper.hidden = false;
     });
   });
 

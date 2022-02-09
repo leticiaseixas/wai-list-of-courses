@@ -43,7 +43,7 @@ footer: >
                     <legend class="label">{{ filter.name }} {% include image.html src="info.svg" alt="alternative text" class="icon" %}</legend>
                     {% assign helper = site.data.helpers | where: "id", filter.id %}
                     <div class="helper">
-                        {{ filter.name }}{{ helper[0].description }}
+                        {{ helper[0].description }}
                     </div>
                  {% else %}
                     <legend class="label">{{ filter.name }}</legend>
