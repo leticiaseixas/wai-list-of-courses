@@ -37,6 +37,7 @@ footer: >
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2>Filters</h2>
+            {% include_cached button.html type="icon" label="Icon Button" class="icon" icon="info" %}
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
                 {% if filter.info %}

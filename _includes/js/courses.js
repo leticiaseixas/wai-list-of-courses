@@ -46,16 +46,9 @@ if (filterForm) {
     helper = icon.parentElement.nextElementSibling;
     helper.hidden = true;
     icon.addEventListener('click', e => {
-      hideShowHelper(helper);
+      changeHidden(helper);
     });
   });
-
-  function openInfoFilter(helper){
-    console.log(helper);
-    //helper.hidden = false;
-    helper = (helper.hidden) ? false : true;
-  }
-
 
   //Add pre-counters to filters
   showFilterCounters(filterForm);
@@ -369,6 +362,14 @@ if (filterForm) {
   function hideClearButton(isHidden) {
     document.querySelectorAll('.button-clear-button').forEach(item => { item.hidden = isHidden });
   }
+
+  function changeHidden(el){
+    if (el.hidden) 
+      el.hidden = false;
+    else
+      el.hidden = true;
+  }
+
 
   function clearFilters() {
     //rebuildList(jsonCourses, []);
