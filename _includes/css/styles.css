@@ -330,6 +330,11 @@ img.icon {
   border: transparent;
 }
 
+.icon:focus {
+  background: transparent;
+}
+
+
 .helper{
   background-color: var(--cloudy-subtle);
   padding:0.5em;
