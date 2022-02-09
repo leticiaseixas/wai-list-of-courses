@@ -46,7 +46,7 @@ if (filterForm) {
   });
 
   function openInfoFilter(icon){
-    console.log(icon);
+    console.log(icon.parentElement.nextElementSibling);
   }
 
 
