@@ -76,60 +76,6 @@ if (filterForm) {
     })
   }
 
-
-
-
-  function _showFilterCounters(form) {
-    var counterFiltersOn = getActiveFiltersList(form);
-    var counterResults = filterNewResultsList(counterFiltersOn);
-
-    console.log(counterFiltersOn);
-    console.log(counterResults);
-
-    var projectedCounterFiltersOn = counterFiltersOn;
-
-    form.querySelectorAll('fieldset').forEach(att => {
-      att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
-        projectedCounterFiltersOn = getActiveFiltersList(form);
-        var attValues = [];
-        attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
-        filterName = att.querySelectorAll('legend')[0].innerText;
-        var newFilter = false;
-        projectedCounterFiltersOn.forEach(f => {
-          if (f.filterId === att.id) {
-            if (!f.filterValues.includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)) {
-              f.filterValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
-            }
-            newFilter = true;
-          }
-        })
-        if (newFilter === false) {
-          projectedCounterFiltersOn.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
-        }
-        var projectedCounterResults = filterNewResultsList(projectedCounterFiltersOn);
-        var counter = 0;
-
-        if (Object.values(projectedCounterResults).length >= Object.values(counterResults).length) {
-          if (filter.checked) {
-            Object.values(projectedCounterResults).forEach(r => {
-              if (r[att.id].includes(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText)) {
-                counter++;
-              }
-            })
-          } else if (Object.values(projectedCounterResults).length > 0) {
-            counter = Object.values(projectedCounterResults).length;
-          }
-          else {
-            counter = Object.values(projectedCounterResults).length - Object.values(counterResults).length;
-          }
-        } else if (Object.values(projectedCounterResults).length < Object.values(counterResults).length) {
-          counter = Object.values(projectedCounterResults).length;
-        }
-        att.querySelector("label[for='" + filter.id + "']").querySelector(".filterPreCounter").innerText = "(" + counter + ")";
-      })
-    });
-  }
-
   function filterJson(form) {
     //form = document.querySelector('[data-filter-form]');
 
@@ -397,49 +343,49 @@ if (filterForm) {
 
 if (submitForm) {
   _addLine();
-}
-
-function _addLine() {
-  var buttonsAdd = document.querySelectorAll('button.add-line');
-
-  Array.prototype.forEach.call(buttonsAdd, function addClickListener(button) {
-    button.addEventListener('click', function (event) {
-      var parent = event.target.parentNode;
-      var lines = parent.querySelectorAll('.line');
-      var proto = parent.querySelector('.proto');
-      var newLine = proto.cloneNode(true);
-
-      newLine.classList.remove('proto');
-      newLine.classList.add('line');
-      newLine.innerHTML = newLine.innerHTML.replace(/\[n\]/g, lines.length + 1);
-
-      proto.parentNode.insertBefore(newLine, proto);
-
-      newLine.querySelector('input, checkbox, select').focus();
-
-      parent.querySelector('button.remove-line').disabled = false;
-
+  
+  function _addLine() {
+    var buttonsAdd = document.querySelectorAll('button.add-line');
+  
+    Array.prototype.forEach.call(buttonsAdd, function addClickListener(button) {
+      button.addEventListener('click', function (event) {
+        var parent = event.target.parentNode;
+        var lines = parent.querySelectorAll('.line');
+        var proto = parent.querySelector('.proto');
+        var newLine = proto.cloneNode(true);
+  
+        newLine.classList.remove('proto');
+        newLine.classList.add('line');
+        newLine.innerHTML = newLine.innerHTML.replace(/\[n\]/g, lines.length + 1);
+  
+        proto.parentNode.insertBefore(newLine, proto);
+  
+        newLine.querySelector('input, checkbox, select').focus();
+  
+        parent.querySelector('button.remove-line').disabled = false;
+  
+      });
     });
-  });
-
-  var buttonsRemove = document.querySelectorAll('button.remove-line');
-
-  Array.prototype.forEach.call(buttonsRemove, function addClickListener(button) {
-    button.addEventListener('click', function (event) {
-      var parent = event.target.parentNode;
-      var lines = parent.querySelectorAll('.line');
-      var last = lines[lines.length - 1];
-      last.parentNode.removeChild(last);
-
-      lines = parent.querySelectorAll('.line');
-      last = lines[lines.length - 1];
-      last.querySelector('input, checkbox, select').focus();
-
-      if (lines.length <= 1)
-        button.disabled = true;
+  
+    var buttonsRemove = document.querySelectorAll('button.remove-line');
+  
+    Array.prototype.forEach.call(buttonsRemove, function addClickListener(button) {
+      button.addEventListener('click', function (event) {
+        var parent = event.target.parentNode;
+        var lines = parent.querySelectorAll('.line');
+        var last = lines[lines.length - 1];
+        last.parentNode.removeChild(last);
+  
+        lines = parent.querySelectorAll('.line');
+        last = lines[lines.length - 1];
+        last.querySelector('input, checkbox, select').focus();
+  
+        if (lines.length <= 1)
+          button.disabled = true;
+      });
     });
-  });
-
+  
+  }
 }
 
 
