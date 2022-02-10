@@ -207,6 +207,7 @@ if (filterForm) {
 
       if (
         o.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        o.provider.toLowerCase().includes(searchTerm.toLowerCase()) ||
         o.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
         o.topics.join().toLowerCase().includes(searchTerm.toLowerCase())) {
         searchedResults.push(o);
