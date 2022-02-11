@@ -1,19 +1,24 @@
+// lista de id
+// include.data
+
+
 {%- assign filteredItems = "" | split: "," -%}
 {%- for curricula in site.data.wai-curricula -%}
-    {%- assign auxCurricula = "" | split: "," -%}     
-    {%- assign auxCurricula = auxCurricula | push: curricula.name -%}
-    {%- for modules in curricula.modules -%}
-    {%- assign auxCurriculaModules = "" | split: "," -%}
-        {%- if include.data contains modules.id -%}
-            {%- assign auxModules = "" | split: "," -%}
-            {%- assign auxModules = auxModules | push: modules.name -%}
-            {%- assign auxModules = auxModules | push: modules.link -%}
-            {%- assign auxCurriculaModules  = auxCurriculaModules | concat: auxModules -%}
-            {%- assign auxCurricula = auxCurricula | push: auxCurriculaModules -%}
-        {%- endif -%}
+
+    // dev modules
+    {%- assign modulesAux = "" | split: "," -%}
+    {%- assign modulesAux = modulesAux | push: curricula.name -%}
+
+    {%- for module in curricula.modules -%}
+        {% if include.data contains module.id %}
+            {{ module.name }}
+        {% endif %}    
+    
     {%- endfor -%}
-    {% if auxCurricula%}
-        {%- assign filteredItems  = filteredItems | push: auxCurricula -%}
-    {%- endif -%}
+
+
+
 {%- endfor -%}
+
+
 
