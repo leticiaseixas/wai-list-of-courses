@@ -1,20 +1,29 @@
 {%- assign filteredItems = "" | split: "," -%}
 
 {%- for curricula in site.data.wai-curricula -%}
+    
     {%- assign auxCurricula = "" | split: "," -%}     
     {%- assign auxCurricula = auxCurricula | push: curricula.name -%}
 
     {%- for modules in curricula.modules -%}
+        {%- assign auxModules = "" | split: "," -%}        
+        
         {%- if include.data contains modules.id -%}
-            {%- assign auxModules = "" | split: "," -%}
-            {%- assign auxModules = auxModules | push: modules.name -%}
-            {%- assign auxModules = auxModules | push: modules.link -%}
-            {%- assign auxCurricula  = auxCurricula | concat: auxModules -%}
+            {%- assign auxModule = "" | split: "," -%}
+            {%- assign auxModule = auxModule | push: modules.name -%}
+            {%- assign auxModule = auxModule | push: modules.link -%}    
+            {%- assign auxModules  = auxModules | push: auxModule -%}
         {%- endif -%}
+
+        {%- assign auxCurricula = auxCurricula | push: auxModules -%}
+
     {%- endfor -%}
-    {% if auxCurricula%}
+
+    {% if auxModules%}
         {%- assign filteredItems  = filteredItems | push: auxCurricula -%}
     {%- endif -%}
+
 {%- endfor -%}
 
 {{ filteredItems | inspect }}
+
