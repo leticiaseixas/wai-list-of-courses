@@ -1,10 +1,8 @@
 {%- assign filteredItems = "" | split: "," -%}
 
 {%- for curricula in site.data.wai-curricula -%}
-    {{ curricula.name }}
     {%- for modules in curricula.modules -%}
         {%- if include.data contains modules.id -%}
-            {{ modules.name }}
             {%- assign aux = "" | split: "," -%}
             {%- assign aux = aux | push: curricula.name -%}
             {%- assign aux = aux | push: modules.name -%}
@@ -12,3 +10,4 @@
         {%- endif -%}
     {%- endfor -%}
 {%- endfor -%}
+{{filteredItems}}
