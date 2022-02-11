@@ -39,22 +39,18 @@ Topics
 : {% for topic in course.topics %}
 * {{ topic }}{% endfor %}
 
+
+{% include excol.html type="start" id="optional-id" %}
 WAI Curricula module
+{% include excol.html type="middle" %}
+Content of the expand/collapse.
+{% include excol.html type="end" %}
 {% if course.wai_curricula_link %}
 : <a href="{{ course.wai_curricula_link}}" rel="external">{{ course.wai_curricula }}</a>
 {% else %}
 : Not provided
 {% endif %}
 
-{% include excol.html type="start" id="optional-id" %}
-
-### Heading
-
-{% include excol.html type="middle" %}
-
-Content of the expand/collapse.
-
-{% include excol.html type="end" %}
 
 
 
