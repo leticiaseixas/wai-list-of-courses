@@ -1,13 +1,13 @@
 {%- assign filteredItems = "" | split: "," -%}
 
-{%- for modules in site.data.wai-curricula -%}
-    {{ modules.name }}
-    {%- for module in modules -%}
-        {%- if include.data contains module.id -%}
-            {{ module.name }}
+{%- for curricula in site.data.wai-curricula -%}
+    {{ curricula.name }}
+    {%- for modules in curricula.modules -%}
+        {%- if include.data contains modules.id -%}
+            {{ modules.name }}
             {%- assign aux = "" | split: "," -%}
+            {%- assign aux = aux | push: curricula.name -%}
             {%- assign aux = aux | push: modules.name -%}
-            {%- assign aux = aux | push: module.name -%}
             {%- assign filteredItems  = filteredItems | push: aux -%}
         {%- endif -%}
     {%- endfor -%}
