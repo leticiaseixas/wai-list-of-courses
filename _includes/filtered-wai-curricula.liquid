@@ -4,17 +4,27 @@
     {%- assign auxCurricula = "" | split: "," -%}     
     {%- assign auxCurricula = auxCurricula | push: curricula.name -%}
 
+
+    
     {%- for modules in curricula.modules -%}
+    
+    {%- assign auxCurriculaModules = "" | split: "," -%}
         {%- if include.data contains modules.id -%}
             {%- assign auxModules = "" | split: "," -%}
             {%- assign auxModules = auxModules | push: modules.name -%}
             {%- assign auxModules = auxModules | push: modules.link -%}
-            {%- assign auxCurricula  = auxCurricula | push: auxModules -%}
+            {%- assign auxCurriculaModules  = auxCurriculaModules | push: auxModules -%}
         {%- endif -%}
+
+    {%- assign auxCurricula = auxCurricula | push: auxCurriculaModules -%}
+
     {%- endfor -%}
+
     {% if auxCurricula%}
         {%- assign filteredItems  = filteredItems | push: auxCurricula -%}
     {%- endif -%}
+
 {%- endfor -%}
 
 {{ filteredItems | inspect }}
+
