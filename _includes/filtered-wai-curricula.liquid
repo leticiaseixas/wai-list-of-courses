@@ -8,8 +8,8 @@
             {%- assign auxModules = "" | split: "," -%}
             {%- assign auxModules = auxModules | push: modules.name -%}
             {%- assign auxModules = auxModules | push: modules.link -%}
-            {%- assign auxCurriculaModules  = auxCurriculaModules | push: auxModules -%}
-            {%- assign auxCurricula = auxCurricula | concat: auxCurriculaModules -%}
+            {%- assign auxCurriculaModules  = auxCurriculaModules | concat: auxModules -%}
+            {%- assign auxCurricula = auxCurricula | push: auxCurriculaModules -%}
         {%- endif -%}
     {%- endfor -%}
     {% if auxCurricula%}
