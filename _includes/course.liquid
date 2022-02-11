@@ -45,8 +45,8 @@ Topics
 WAI Curricula module  {% include image.html src="info.svg" alt="alternative text" class="icon" %}
 </summary>
 {% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
-<div>{{ helper }}</div>
-{% include excol.html type="end" %}
+<div>{{ helper.description }}</div>
+</details>
 {% if course.wai_curricula_link %}
 : <a href="{{ course.wai_curricula_link}}" rel="external">{{ course.wai_curricula }}</a>
 {% else %}
