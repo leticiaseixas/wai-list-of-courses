@@ -49,7 +49,7 @@ WAI Curricula module: {% include image.html src="info.svg" alt="alternative text
 </details>
 {% if course.wai_curricula %}
 {% for module in filteredItems %}
-    {{module[0]}}: {{module[1]}}
+{{module[0]}} - {{module[1]}}
 {% endfor %}
 {% else %} Not provided {% endif %}
 
