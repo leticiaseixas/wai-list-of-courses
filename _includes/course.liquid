@@ -51,7 +51,7 @@ WAI Curricula module: {% include image.html src="info.svg" alt="alternative text
 {% for modules in filteredItems %}
 * {{modules[0]}}
 {% for module in modules[1] %}
- * {{module[0]}}
+ * {{ module | inspect }}
  {% endfor %}
 {% endfor %}
 {% else %} Not provided {% endif %}
