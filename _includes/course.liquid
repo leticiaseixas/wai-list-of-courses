@@ -49,8 +49,6 @@ WAI Curricula module: {% include image.html src="info.svg" alt="alternative text
 <div>{{ helper[0].description }}</div>
 </details>
 
-
-
 {% if course.wai_curricula %}
 
 {% assign currentModuleName = filteredItems[0][0] %}
@@ -58,12 +56,11 @@ WAI Curricula module: {% include image.html src="info.svg" alt="alternative text
     {% if currentModuleName == modules[0] %}
         {{ modules[0] }}
     {% else %}
-        {% currentModuleName = modules[0] %}
+        {% assign currentModuleName = modules[0] %}
         {{ modules[0] }}
     {% endif %}
     {{ modules[1] }}
 {% endfor %}
-
 
 
 {% else %} Not provided {% endif %}
