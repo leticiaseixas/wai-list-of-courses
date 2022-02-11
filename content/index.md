@@ -37,20 +37,21 @@ footer: >
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2>Filters</h2>
-            <button class="icon"> 
-                <image src="/content-images/wai-course-list/info.svg"/>
-            </button> 
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
+                <legend class="label">
                 {% if filter.info %}
-                    <legend class="label">{{ filter.name }} {% include image.html src="info.svg" alt="alternative text" class="icon" %}</legend>
+                <details class="helper">
+                    <summary>
+                        {{ filter.name }} {% include image.html src="info.svg" alt="alternative text" class="icon" %}
+                    </summary>
                     {% assign helper = site.data.helpers | where: "id", filter.id %}
-                    <div class="helper">
-                        {{ helper[0].description }}
-                    </div>
-                 {% else %}
-                    <legend class="label">{{ filter.name }}</legend>
+                    <div>{{ helper[0].description }}</div>
+                </details>
+                {% else %}
+                    {{ filter.name }}
                 {% endif %}
+                </legend>
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">

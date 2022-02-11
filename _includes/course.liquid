@@ -41,9 +41,10 @@ Topics
 
 
 {% include excol.html type="start" id="optional-id" %}
-WAI Curricula module
+WAI Curricula module  {% include image.html src="info.svg" alt="alternative text" class="icon" %}
 {% include excol.html type="middle" %}
-Content of the expand/collapse.
+{% assign helper = site.data.helpers | where: "id", "curricula" %}
+{{ helper }}
 {% include excol.html type="end" %}
 {% if course.wai_curricula_link %}
 : <a href="{{ course.wai_curricula_link}}" rel="external">{{ course.wai_curricula }}</a>
