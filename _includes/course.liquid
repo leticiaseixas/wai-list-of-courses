@@ -46,6 +46,19 @@ WAI Curricula module
 : Not provided
 {% endif %}
 
+{% include excol.html type="start" id="optional-id" %}
+
+### Heading
+
+{% include excol.html type="middle" %}
+
+Content of the expand/collapse.
+
+{% include excol.html type="end" %}
+
+
+
+
 {% assign language = "" | split: "," %}
 {% for langIndex in course.language %}
 {% capture langLabel %}
