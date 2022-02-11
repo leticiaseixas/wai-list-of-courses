@@ -323,27 +323,11 @@ img.icon {
   cursor: pointer;
 }
 
-.icon {
-  --img-width: 20px;
-  cursor: pointer;
-  background: transparent;
-  border: transparent;
-}
 
-.icon:focus, .icon:hover {
-  background: transparent;
-  border:transparent;
-}
-
-
-.helper{
+.helper div{
   background-color: var(--cloudy-subtle);
   padding:0.5em;
   font-weight: normal;
   border: solid 1px var(--line-grey);
   width:90%;
-}
-
-.helper[hidden] {
-  display: none !important;
 }

@@ -40,11 +40,12 @@ Topics
 * {{ topic }}{% endfor %}
 
 
-{% include excol.html type="start" id="optional-id" %}
+<details class="helper">
+<summary>
 WAI Curricula module  {% include image.html src="info.svg" alt="alternative text" class="icon" %}
-{% include excol.html type="middle" %}
-{% assign helper = site.data.helpers | where: "id", "curricula" %}
-{{ helper }}
+</summary>
+{% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
+<div>{{ helper }}</div>
 {% include excol.html type="end" %}
 {% if course.wai_curricula_link %}
 : <a href="{{ course.wai_curricula_link}}" rel="external">{{ course.wai_curricula }}</a>
