@@ -330,4 +330,5 @@ img.icon {
   font-weight: normal;
   border: solid 1px var(--line-grey);
   width:90%;
+  margin: 0em !important;
 }
