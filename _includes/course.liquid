@@ -48,7 +48,9 @@ WAI Curricula module: {% include image.html src="info.svg" alt="alternative text
 <div>{{ helper[0].description }}</div>
 </details>
 {% if course.wai_curricula_link %}
-<a href="{{ course.wai_curricula_link}}" rel="external">{{ course.wai_curricula }}</a>
+{% for module in filteredItems %}
+    {{module[0]}}: {{module[1]}}
+{% endfor %}
 {% else %} Not provided {% endif %}
 
 
