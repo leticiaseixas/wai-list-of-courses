@@ -1,13 +1,21 @@
-
 {%- assign filteredItems = "" | split: "," -%}
+
 {%- for curricula in site.data.wai-curricula -%}
-    {%- for module in curricula.modules -%}
-        {% if include.data contains module.id %}
-            {%- assign filteredItems = filteredItems | push: curricula.name -%}
-            {%- assign filteredItems = filteredItems | push: module.name -%}
-        {% endif %}    
+    {%- assign auxCurricula = "" | split: "," -%}     
+    {%- assign auxCurricula = auxCurricula | push: curricula.name -%}
+
+    {%- for modules in curricula.modules -%}
+        {%- if include.data contains modules.id -%}
+            {%- assign auxModules = "" | split: "," -%}
+            {%- assign auxModules = auxModules | push: modules.name -%}
+            {%- assign auxModules = auxModules | push: modules.link -%}
+            {%- assign auxCurricula  = auxCurricula | push: auxModules -%}
+        {%- endif -%}
     {%- endfor -%}
+    {% if auxCurricula%}
+        {%- assign filteredItems  = filteredItems | push: auxCurricula -%}
+    {%- endif -%}
 {%- endfor -%}
 
-
+{{ filteredItems | inspect }}
 
