@@ -3,8 +3,6 @@
 {%- for curricula in site.data.wai-curricula -%}
     {%- for modules in curricula.modules -%}
         {%- if include.data contains modules.id -%}
-        {%- assign aux = "" | split: "," -%}
-            {%- assign aux = aux | push: curricula.name -%}
             {%- assign aux = aux | push: modules.name -%}
             {%- assign aux = aux | push: modules.link -%}
             {%- assign filteredItems  = filteredItems | push: aux -%}
