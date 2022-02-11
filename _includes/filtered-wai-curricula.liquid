@@ -1,2 +1,27 @@
-{% assign module = site.data.wai-curricula | map: "modules" %}
-{{ module }}
+// lista de id
+// include.data
+
+
+{%- assign filteredItems = "" | split: "," -%}
+{%- for curricula in site.data.wai-curricula -%}
+
+    // dev modules
+    {%- assign modulesAux = "" | split: "," -%}
+    {%- assign modulesAux = modulesAux | push: curricula.name -%}
+
+    {%- for module in curricula.modules -%}
+        {%- assign moduleAux = "" | split: "," -%}
+        {%- assign moduleAux = modulesAux | push: curricula.name -%}
+
+        {% if include.data contains module.id %}
+            {{ module.name }}
+        {% endif %}    
+    
+    {%- endfor -%}
+
+
+
+{%- endfor -%}
+
+
+
