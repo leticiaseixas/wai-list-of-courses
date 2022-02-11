@@ -40,7 +40,6 @@ Topics
 * {{ topic }}{% endfor %}
 
 {% include filtered-wai-curricula.liquid data = course.wai_curricula %}
-{{ filteredItems | inspect }}
 <details class="helper">
 <summary>
 WAI Curricula module: {% include image.html src="info.svg" alt="alternative text" class="icon" %}
@@ -50,16 +49,14 @@ WAI Curricula module: {% include image.html src="info.svg" alt="alternative text
 </details>
 
 {% if course.wai_curricula %}
-
 {% assign currentModuleName = filteredItems[0][0] %}
+{{ currentModuleName }}
 {% for modules in filteredItems %}
-    {% if currentModuleName == modules[0] %}
-        {{ modules[0] }}
-    {% else %}
-        {% assign currentModuleName = modules[0] %}
-        {{ modules[0] }}
-    {% endif %}
-    {{ modules[1] }}
+{% if modules.first %}
+  {{ modules.first }}:
+{% else %}
+    {{ modules }}
+{% endif %}
 {% endfor %}
 
 
