@@ -40,13 +40,16 @@ Topics
 * {{ topic }}{% endfor %}
 
 {% include filtered-wai-curricula.liquid data = course.wai_curricula %}
-WAI Curricula module: <details class="helper"><summary>{% include image.html src="info.svg" alt="alternative text" class="icon" %}</summary>
+<details class="helper">
+<summary>
+WAI Curricula module: {% include image.html src="info.svg" alt="alternative text" class="icon" %}
+</summary>
 {% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
 <div>{{ helper[0].description }}</div>
 </details>
 {% if course.wai_curricula %}
 {% for module in filteredItems %}
-* {{module[0]}} - {{module[1]}}
+* {{module[0]}} - <a href="{{module[2]}}" rel="external">{{module[1]}}</a>
 {% endfor %}
 {% else %} Not provided {% endif %}
 
