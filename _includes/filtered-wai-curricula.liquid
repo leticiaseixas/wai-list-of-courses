@@ -3,8 +3,6 @@
 {%- for curricula in site.data.wai-curricula -%}
     {%- assign auxCurricula = "" | split: "," -%}     
     {%- assign auxCurricula = auxCurricula | push: curricula.name -%}
-
-
     
     {%- for modules in curricula.modules -%}
     
@@ -14,9 +12,9 @@
             {%- assign auxModules = auxModules | push: modules.name -%}
             {%- assign auxModules = auxModules | push: modules.link -%}
             {%- assign auxCurriculaModules  = auxCurriculaModules | push: auxModules -%}
+            {%- assign auxCurricula = auxCurricula | push: auxCurriculaModules -%}
+        
         {%- endif -%}
-
-    {%- assign auxCurricula = auxCurricula | push: auxCurriculaModules -%}
 
     {%- endfor -%}
 
@@ -28,3 +26,61 @@
 
 {{ filteredItems | inspect }}
 
+
+{
+    "id": "foundations_modules",
+    "name": "Foundations Modules",
+    "link": "https://www.w3.org/WAI/curricula/foundation-modules/",
+    "modules": [
+        {
+            "id": "foundations_modules1",
+            "name": "Module 1: What is Web Accessibility",
+            "link": "https://www.w3.org/WAI/curricula/foundation-modules/what-is-web-accessibility/"
+        },
+        {
+            "id": "foundations_modules2",
+            "name": "Module 2: People and Digital Technology",
+            "link": "https://www.w3.org/WAI/curricula/foundation-modules/people-and-digital-technology/"
+        },
+        {
+            "id": "foundations_modules3",
+            "name": "Module 3: Business Case and Benefits",
+            "link": "https://www.w3.org/WAI/curricula/foundation-modules/business-case-and-benefits/"
+        },
+        {
+            "id": "foundations_modules4",
+            "name": "Module 4: Principles, Standards, and Checks",
+            "link": "https://www.w3.org/WAI/curricula/foundation-modules/principles-standards-and-checks/"
+        },
+        {
+            "id": "foundations_modules5",
+            "name": "Module 5: Getting Started with Accessibility",
+            "link": "https://www.w3.org/WAI/curricula/foundation-modules/getting-started-with-accessibility/"
+        }
+    ]
+},
+
+[
+    [
+        "Foundations Modules", 
+        [
+            "Module 3: Business Case and Benefits", 
+            "https://www.w3.org/WAI/curricula/foundation-modules/business-case-and-benefits/"
+        ]
+    ],
+    [
+        "Developer Modules", 
+        [
+            "Module 1: Page Structure", 
+            "https://www.w3.org/WAI/curricula/developer-modules/page-structure/"
+        ], 
+        [
+            "Module 2: Menus", 
+            "https://www.w3.org/WAI/curricula/developer-modules/menus/"
+        ], 
+        [
+            "Module 3: Images", 
+            "https://www.w3.org/WAI/curricula/developer-modules/images/"
+        ]
+    ]
+]
