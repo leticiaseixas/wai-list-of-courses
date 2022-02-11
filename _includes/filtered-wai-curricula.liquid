@@ -9,7 +9,7 @@
             {%- assign auxModules = "" | split: "," -%}
             {%- assign auxModules = auxModules | push: modules.name -%}
             {%- assign auxModules = auxModules | push: modules.link -%}
-            {%- assign auxCurricula  = auxCurricula | push: auxModules -%}
+            {%- assign auxCurricula  = auxCurricula | concat: auxModules -%}
         {%- endif -%}
     {%- endfor -%}
     {% if auxCurricula%}
