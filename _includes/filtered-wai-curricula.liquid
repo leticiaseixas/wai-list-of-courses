@@ -1,1 +1,2 @@
-{{ site.data.wai-curricula | where: "modules.id", "developer_modules2" }}
+{% assign module = site.data.wai-curricula | where: "modules.id", "developer_modules2" %}
+{{ module }}
