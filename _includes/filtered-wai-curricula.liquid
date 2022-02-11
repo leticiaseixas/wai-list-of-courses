@@ -11,6 +11,7 @@
     {%- endfor -%}
     {% if auxCurricula %}
         {%- assign filteredItems  = filteredItems | push: auxCurricula -%}
+    {% endif %}
 {%- endfor -%}
 
 {{ filteredItems | inspect }}
