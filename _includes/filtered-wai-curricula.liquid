@@ -1,9 +1,6 @@
 {%- assign filteredItems = "" | split: "," -%}
-{%- assign curricula = site.data.wai-curricula | map: "modules" -%}
 
-
-
-{%- for modules in curricula -%}
+{%- for modules in site.data.wai-curricula -%}
     {{ modules.name }}
     {%- for module in modules -%}
         {%- if include.data contains module.id -%}
