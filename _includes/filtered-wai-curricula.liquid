@@ -12,5 +12,8 @@
     {%- endfor -%}
 {%- endfor -%}
 
+
+{{ filteredItems | group_by: filteredItems[0] }}
+
 {{ filteredItems | inspect }}
 
