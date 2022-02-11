@@ -2,12 +2,16 @@
 {%- assign curricula = site.data.wai-curricula | map: "modules" -%}
 
 {{ include.data }}
-{{ curricula | inspect }}
 
 {%- for modules in curricula -%}
     {%- for module in modules -%}
         {%- if include.data contains module.id -%}
             {{ module.name }}
+            {%- assign aux = "" | split: "," -%}
+            {%- assign aux = aux | push: modules.name -%}
+            {%- assign aux = aux | push: module.name -%}
+            {%- assign filteredItems  = filteredItems | push: aux -%}
         {%- endif -%}
     {%- endfor -%}
 {%- endfor -%}
+{{ filteredItems | inspect }}
