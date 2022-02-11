@@ -12,10 +12,9 @@
             {%- assign auxCurricula  = auxCurricula | push: auxModules -%}
         {%- endif -%}
     {%- endfor -%}
-    {% if auxCurricula%}
-        {%- assign filteredItems  = filteredItems | push: auxCurricula -%}
-    {%- endif -%}
+
+    {%- assign filteredItems  = filteredItems | push: auxCurricula -%}
+
 {%- endfor -%}
 
 {{ filteredItems | inspect }}
-
