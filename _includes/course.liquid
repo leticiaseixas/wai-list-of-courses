@@ -47,7 +47,7 @@ WAI Curricula module: {% include image.html src="info.svg" alt="alternative text
 {% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
 <div>{{ helper[0].description }}</div>
 </details>
-{% if course.wai_curricula_link %}
+{% if course.wai_curricula %}
 {% for module in filteredItems %}
     {{module[0]}}: {{module[1]}}
 {% endfor %}
