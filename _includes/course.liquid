@@ -39,7 +39,7 @@ Topics
 : {% for topic in course.topics %}
 * {{ topic }}{% endfor %}
 
-
+{% include filtered-wai-curricula.liquid data = course.wai_curricula %}
 <details class="helper">
 <summary>
 WAI Curricula module: {% include image.html src="info.svg" alt="alternative text" class="icon" %}

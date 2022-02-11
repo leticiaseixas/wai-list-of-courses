@@ -20,6 +20,11 @@
         "Literacy tools",
         "Some cool screen reader-related apps"
     ],
+    "wai_curricula": [
+        "developer_modules1",
+        "developer_modules2",
+        "developer_modules3"
+    ],
     "language": [
         "en"
     ],
