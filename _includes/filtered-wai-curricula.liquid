@@ -1,20 +1,31 @@
+
 {%- assign filteredItems = "" | split: "," -%}
 
+
+
 {%- for curricula in site.data.wai-curricula -%}
-    {%- assign auxCurricula = "" | split: "," -%}     
-    {%- assign auxCurricula = auxCurricula | push: curricula.name -%}
 
-    {%- for modules in curricula.modules -%}
-        {%- if include.data contains modules.id -%}
-            {%- assign auxModules = "" | split: "," -%}
-            {%- assign auxModules = auxModules | push: modules.name -%}
-            {%- assign auxModules = auxModules | push: modules.link -%}
-            {%- assign auxCurricula  = auxCurricula | push: auxModules -%}
-        {%- endif -%}
+{%- assign curriculaAux = "" | split: "," -%}
+
+    {%- assign modulesAux = "" | split: "," -%}
+
+    {%- assign curriculaAux = curriculaAux  | push : curricula.name -%}
+    
+    {% for module in curricula.modules  %}
+
+        {% if include.data contains module.id %}
+        
+            {%- assign moduleAux = "" | split: "," -%}
+            {%- assign moduleAux = moduleAux | push : module.id -%}
+            {%- assign moduleAux = moduleAux | push : module.name -%}
+            {%- assign moduleAux = moduleAux | push : module.link -%}
+            {%- assign modulesAux = modulesAux:  | push : moduleAux -%}
+
+        {% endif %}
+
     {%- endfor -%}
-
-    {%- assign filteredItems  = filteredItems | push: auxCurricula -%}
+    
+    {%- assign curriculaAux = curriculaAux  | push : modulesAux -%}
+    {%- assign filteredItems = filteredItems  | push : curriculaAux -%}
 
 {%- endfor -%}
-
-{{ filteredItems | inspect }}

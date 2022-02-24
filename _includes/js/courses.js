@@ -1,4 +1,4 @@
-{% include sort-data-folder.liquid data = site.data.courses sortKey = "title" %}
+{% include sort-data-folder.liquid data = site.data.submissions sortKey = "title" %}
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const filterForm = document.querySelector('[data-filter-form]');
@@ -345,7 +345,7 @@ if (submitForm) {
   _addLine();
   
   function _addLine() {
-    var buttonsAdd = document.querySelectorAll('button.add-line');
+    var buttonsAdd = document.querySelectorAll('button.add_line');
   
     Array.prototype.forEach.call(buttonsAdd, function addClickListener(button) {
       button.addEventListener('click', function (event) {
@@ -362,12 +362,12 @@ if (submitForm) {
   
         newLine.querySelector('input, checkbox, select').focus();
   
-        parent.querySelector('button.remove-line').disabled = false;
+        parent.querySelector('button.remove_line').disabled = false;
   
       });
     });
   
-    var buttonsRemove = document.querySelectorAll('button.remove-line');
+    var buttonsRemove = document.querySelectorAll('button.remove_line');
   
     Array.prototype.forEach.call(buttonsRemove, function addClickListener(button) {
       button.addEventListener('click', function (event) {
