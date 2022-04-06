@@ -224,19 +224,19 @@ main > header { grid-column: 4 / span 4; }
   <legend class="label">{{strings.format_legend}}</legend>
   <div class="radio-field">
     <input type="radio" name="format" id="format_face_to_face" value="format_face_to_face">
-    <label for="format-face-to-face">{{strings.format_face_to_face}}</label>
+    <label for="format_face_to_face">{{strings.format_face_to_face}}</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="format" id="format_online"  value="format_online">
-    <label for="format-online">{{strings.format_online}}</label>
+    <label for="format_online">{{strings.format_online}}</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="format" id="format_hybrid" value="format_hybrid">
-    <label for="format-hybrid">{{strings.format_hybrid}}</label>
+    <label for="format_hybrid">{{strings.format_hybrid}}</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="format" id="format_blended" value="format_blended">
-    <label for="format-blended">{{strings.format_blended}}</label>
+    <label for="format_blended">{{strings.format_blended}}</label>
   </div>    
 </fieldset>
 <fieldset class="field fieldset_check" id="scheduling">
