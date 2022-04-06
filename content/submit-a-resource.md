@@ -30,6 +30,10 @@ main > header { grid-column: 4 / span 4; }
 {% include sort-countries.liquid %} 
 {% include submission-form.liquid type="start" name="course_submission" version="1"%}
 
+
+{% include_cached button.html type="fake" label="Open preview" class="fake start-preview" %}
+
+
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 <p>{{strings.sub_header_info_form}}</p> 
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
@@ -56,7 +60,7 @@ main > header { grid-column: 4 / span 4; }
   <label for="provider" class="label_input">{{strings.provider_label}}</label>
   <input type="text" id="provider" required>
 </div>
-<fieldset class="field" id="country">
+<fieldset class="field fieldset_select_text" id="country">
   <legend class="label">{{strings.country_legend}}</legend>
   <p class="expl">{{strings.country_expl}}</p>
   <div class="line">
@@ -70,7 +74,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="country_[n]" class="label_input">{{strings.countryn_label}} [n]</label>
-    <select name="country" id="country_[n]" class="select_form" required>
+    <select name="country" id="country_[n]" class="select_form" required class="input_hidden" >
       <option value=""></option>
       {% for country in orderedCountries %}
       <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -86,7 +90,7 @@ main > header { grid-column: 4 / span 4; }
   <textarea id="description" maxlength="350" required></textarea>
   <p><em>{{strings.description_expl_details}}</em></p>
 </div>
-<fieldset class="field" id="type">
+<fieldset class="field fieldset_radio" id="type">
   <legend class="label">{{strings.type_label}}</legend>
   <div class="radio-field">
     <input type="radio" name="type" id="type_graduate" value="type_graduate" required>
@@ -110,14 +114,14 @@ main > header { grid-column: 4 / span 4; }
   </div>  
   <div>
     <label for="type_new" class="visuallyhidden">{{strings.type_new}}</label>
-    <input type="text" id="type_new">
+    <input type="text" id="type_new" class='new-option-field'>
   </div>
 </fieldset>
-<fieldset class="field" id="audience">
+<fieldset class="field fieldset_check" id="audience">
   <legend class="label">{{strings.audience_label}}</legend>
   <div class="radio-field">
     <input type="checkbox" name="audience_content_author" id="audience_content_author" value="audience_content_author" group="audience" required>
-    <label for="audience_content_-_author">{{strings.audience_content_author}}</label>
+    <label for="audience_content_author">{{strings.audience_content_author}}</label>
   </div>
   <div class="radio-field">
     <input type="checkbox" name="audience_designer" id="audience_designer" value="audience_designer" group="audience">
@@ -140,7 +144,7 @@ main > header { grid-column: 4 / span 4; }
     <label for="audience_other">{{strings.audience_other}}</label>
   </div>
 </fieldset>
- <fieldset class="field" id="level">
+ <fieldset class="field fieldset_radio" id="level">
   <legend class="label">{{strings.level_label}}</legend>
   <p class="expl">{{strings.level_expl}}</p>
   <div class="radio-field">
@@ -156,21 +160,21 @@ main > header { grid-column: 4 / span 4; }
     <label for="level-advanced">{{strings.level_advanced}}</label>
   </div>
 </fieldset>
-<fieldset class="field" id="prerequisites">
+<fieldset class="field fieldset_text" id="prerequisites">
   <legend class="label">{{strings.prerequisites_legend}}</legend>
   <p class="expl">{{strings.prerequisites_expl}}</p>
   <div class="line">
     <label for="prerequisites_1" class="label_input">{{strings.prerequisites1_label}}</label>
-    <input type="text" id="prerequisites_1" name="prerequisites">
+    <input type="text" id="prerequisites_1">
   </div>
   <div class="proto">
     <label for="prerequisites_[n]" class="label_input">{{strings.prerequisitesn_label}} [n]</label>
-    <input type="text" id="prerequisites_[n]" name="prerequisites" />
+    <input type="text" id="prerequisites_[n]" class="input_hidden"  />
   </div>
   <button type="button" class="add_line small">{{strings.add_new_prerequisite_button}}</button>
   <button type="button" class="remove_line small" disabled>{{strings.remove_last_prerequisite_button}}</button>
 </fieldset>
-<fieldset class="field" id="topics">
+<fieldset class="field fieldset_text" id="topics">
   <legend class="label">{{strings.topics_legend}}</legend>
   <p class="expl">{{strings.topics_expl}}</p>
   <div class="line">
@@ -179,12 +183,12 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="topics_[n]" class="label_input">{{strings.topicsn_label}} [n]</label>
-    <input type="text" id="topics_[n]" name="topics" />
+    <input type="text" id="topics_[n]" name="topics" class="input_hidden" />
   </div>
   <button type="button" class="add_line small">{{strings.add_new_topic_button}}</button>
   <button type="button" class="remove_line small" disabled>{{strings.remove_last_topic_button}}</button>
 </fieldset>
-<fieldset class="field" id="curricula">
+<fieldset class="field fieldset_check_title" id="curricula">
   <legend>
     <h3>{{strings.curricula_label}}</h3>
   </legend>
@@ -192,7 +196,7 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">{{strings.curricula_expl_details}}</p>
     {% include wai-curricula.liquid %}
 </fieldset>
-<fieldset class="field" id="language">
+<fieldset class="field fieldset_select_text" id="language">
   <legend class="label">{{strings.language_legend}}</legend>
   <p class="expl">{{strings.language_expl}}</p>
   <div class="line">
@@ -216,7 +220,7 @@ main > header { grid-column: 4 / span 4; }
   <button type="button" class="add_line small">{{strings.add_new_language_button}}</button>
   <button type="button" class="remove_line small" disabled>{{strings.remove_last_language_button}}</button>
 </fieldset>
-<fieldset class="field" id="format">
+<fieldset class="field fieldset_radio" id="format">
   <legend class="label">{{strings.format_legend}}</legend>
   <div class="radio-field">
     <input type="radio" name="format" id="format_face_to_face" value="format_face_to_face">
@@ -235,7 +239,7 @@ main > header { grid-column: 4 / span 4; }
     <label for="format-blended">{{strings.format_blended}}</label>
   </div>    
 </fieldset>
-<fieldset class="field" id="scheduling">
+<fieldset class="field fieldset_check" id="scheduling">
   <legend class="label">{{strings.scheduling_legend}}</legend>
   <p class="expl">{{strings.scheduling_expl}}</p>
   <div class="radio-field">
@@ -252,17 +256,17 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">{{strings.platform_expl}}</p>
   <input type="text" id="platform">
 </div>
-<fieldset class="field" id="accessibility-support">
+<fieldset class="field fieldset_check" id="accessibility-support">
   <legend><h3>{{strings.asupport_legend}}</h3></legend>
   <p class="expl">{{strings.asupport_expl}}</p>
   {% include accessibility-support.liquid %}
 </fieldset>
 <div class="field">
-  <legend class="label">{{strings.length_label}}</legend>
+  <label for="length" class="label_input">{{strings.length_label}}</label>
   <p class="expl">{{strings.length_expl}}</p>
   <input type="text" id="length">
 </div>
-<fieldset class="field" id="cost">
+<fieldset class="field fieldset_radio" id="cost">
   <legend class="label">{{strings.cost_legend}}</legend>
   <div class="radio-field">
     <input type="radio" name="cost" id="cost_free">
@@ -296,16 +300,16 @@ main > header { grid-column: 4 / span 4; }
   <input type="url" name="reviews" id="reviews">
 </div>
 <div class="field">
-  <label for="content_update"  class="label_input">{{strings.content_update_label}}</label>
+  <label for="content_update" class="label_input">{{strings.content_update_label}}</label>
   <p class="expl">{{strings.content_update_expl}}</p>
   <input type="date" id="content_update" required>
 </div>
 <div class="field" id="availability">
   <legend class="label">{{strings.availability}}</legend>
-  <label for="start-date" class="label_input">{{strings.start_date_label}}</label>
+  <label for="start_date" class="label_input">{{strings.start_date_label}}</label>
   <p class="expl">{{strings.start_date_expl}}</p>
   <input type="date" id="start_date" required>
-  <label for="end-date" class="label_input">{{strings.end_date_label}}</label>
+  <label for="end_date" class="label_input">{{strings.end_date_label}}</label>
   <p class="expl">{{strings.end_date_expl}}</p>
   <input type="date" id="end_date">
 </div>
@@ -333,5 +337,18 @@ main > header { grid-column: 4 / span 4; }
 
 <script>
 {% include js/courses.js %}
+{% include js/preview.js %}
 </script>
 {% include submission-form.liquid type="end"%}
+
+<div id="preview-submission-overlay" aria-modal=true role="dialog">
+<div class="overlay-content">
+{% include_cached button.html type="icon" label=strings.quit_preview class="close_preview icon" icon="ex-circle" %}
+  <h2>{{ strings.preview_title }}</h2>  
+  <p>{{ strings.preview_info }}</p>
+  <div class="details_preview box"></div>
+  {% include_cached button.html type="icon" label=strings.back_to_form class="close_preview" icon="arrow-left" %}
+  <button class="button button-submit_form" type="submit"><span>{{ strings.send_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
+
+</div>
+</div>
