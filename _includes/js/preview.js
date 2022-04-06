@@ -46,10 +46,11 @@ function getPreviewSubmission(e) {
             else {
                 value = el.value;
 
-                if (elType === "date")
+                if (elType === "date") {
 
                     value = new Date(value);
-                value = value.toLocaleDateString(undefined, options);
+                    value = value.toLocaleDateString(undefined, options);
+                }
 
             }
 
