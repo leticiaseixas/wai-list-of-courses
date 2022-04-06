@@ -74,7 +74,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="country_[n]" class="label_input">{{strings.countryn_label}} [n]</label>
-    <select name="country" id="country_[n]" class="select_form" required class="input_hidden" >
+    <select name="country" id="country_[n]" class="select_form input_hidden" required >
       <option value=""></option>
       {% for country in orderedCountries %}
       <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -210,7 +210,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="language_[n]" class="label_input">{{strings.languagen_label}} [n]</label>
-    <select name="language" id="language_[n]" class="select_form" required> 
+    <select name="language" id="language_[n]" class="select_form input_hidden" required> 
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
