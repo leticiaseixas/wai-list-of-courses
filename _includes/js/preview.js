@@ -83,6 +83,9 @@ function getPreviewSubmission(e) {
             list.appendChild(listItem);
 
         }
+        if (el.classList.contains('fieldset_select_text')){
+            console.log("TODO: Country && Lang");
+        }
 
         if (el.classList.contains('fieldset_check') || el.classList.contains('fieldset_check_title')) {
 
