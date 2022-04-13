@@ -152,6 +152,7 @@ main>header {
     }
 }
 
+
 #courses-list dd {
     margin: 0 0 1em 0;
 }
@@ -162,7 +163,7 @@ details dt::after {
 
 #courses-list dt {
     float: left;
-    margin: 0 0.5em 0 0;
+    margin: 0 .5em 0 0;
 }
 
 #courses-list dd ul {
@@ -452,11 +453,6 @@ details .helperinfo {
 }
 
 
-
-
-
-
-
 #preview-submission-overlay  {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
@@ -492,6 +488,7 @@ details .helperinfo {
 .details_preview {
     text-align: left;
     margin-bottom: 2em;
+    padding-left: 2em;
 }
   
 .overlay-content button {
