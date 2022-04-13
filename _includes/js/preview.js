@@ -11,6 +11,8 @@ function getPreviewSubmission() {
     const overlay = document.getElementById("preview-submission-overlay");
     const overlayContent = overlay.querySelector(".overlay-content");
 
+
+
     overlayContent.querySelectorAll('.button-close_preview').forEach(el => {
         el.addEventListener('click', e => {
             closePreviewOverlay();
@@ -26,14 +28,14 @@ function getPreviewSubmission() {
     const data = document.getElementById('form-submit-a-course').elements;
 
     var detailsPreview = document.querySelector(".details_preview");
-    
+
     detailsPreview.innerText = "";
-    
+
     var list = document.createElement("dl");
     detailsPreview.appendChild(list);
 
 
-    
+
 
 
     Array.from(data).forEach(el => {
@@ -153,6 +155,7 @@ function getPreviewSubmission() {
 
 
         }
+        handleKeyboard();
     });
 
 
@@ -180,18 +183,33 @@ function getPreviewSubmission() {
     }
 
 
+    function closePreviewOverlay() {
+        overlay.style.display = "none";
+        document.activeElement.blur();
+    }
+
+    function getFieldsetText(str) {
+        if (str.querySelector('h3'))
+            return str.querySelector('h3').innerText;
+        return str.innerText;
+    }
+
+
+
+    function handleKeyboard() {
+
+        var focusableElements = overlayContent.querySelectorAll('button');
+        var firstElementOfModal = focusableElements[0];
+        var lastElementOfModal = focusableElements[focusableElements.length - 1];
+        firstElementOfModal.focus();
+
+        window.addEventListener("keyup", function (event) {
+            if (event.key === "Escape")
+                closePreviewOverlay();
+            
+        })
+    }
 }
 
 
-function closePreviewOverlay() {
-    var overlay = document.getElementById("preview-submission-overlay");
-    overlay.style.display = "none";
-}
-
-
-function getFieldsetText(str) {
-    if (str.querySelector('h3'))
-        return str.querySelector('h3').innerText;
-    return str.innerText;
-}
 
