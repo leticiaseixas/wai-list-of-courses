@@ -2,15 +2,11 @@ const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
 
 document.querySelector('.start-preview').addEventListener('click', e => {
-    getPreviewSubmission(e);
+    getPreviewSubmission();
 })
 
 
-//function getPreviewSubmission() {
-function getPreviewSubmission(e) {
-
-    e.preventDefault();
-
+function getPreviewSubmission() {
 
     const overlay = document.getElementById("preview-submission-overlay");
     const overlayContent = overlay.querySelector(".overlay-content");
@@ -21,15 +17,27 @@ function getPreviewSubmission(e) {
         })
     })
 
+    overlayContent.querySelector('.button-submit_form').addEventListener('click', e => {
+        document.getElementById('form-submit-a-course').submit();
+    })
+
     overlay.style.display = "flex";
 
     const data = document.getElementById('form-submit-a-course').elements;
 
     var detailsPreview = document.querySelector(".details_preview");
-    detailsPreview.innerText = "";
+    
+    var header = document.querySelector(".box-h");
+    var infoDetails = document.querySelector(".box-i");
+    
+    header.innerText = "";
+    infoDetails.innerText = "";
 
-    var list = document.createElement("ul");
+    var list = document.createElement("dl");
     detailsPreview.appendChild(list);
+
+
+    
 
 
     Array.from(data).forEach(el => {
@@ -47,30 +55,21 @@ function getPreviewSubmission(e) {
                 value = el.value;
 
                 if (elType === "date") {
-
                     value = new Date(value);
                     value = value.toLocaleDateString(undefined, options);
                 }
-
             }
 
-            var listItem = document.createElement("li");
-            listItem.innerText = label + ": " + value;
-            list.appendChild(listItem);
+            appendList(label, value);
         }
-
         if (el.classList.contains('fieldset_radio')) {
 
             var radiosChecked = el.querySelector("input[type='radio']:checked");
-
-
             var label = getFieldsetText(el.querySelector("legend"));
 
             var value = "";
             if (radiosChecked) value = document.querySelector("label[for='" + radiosChecked.id + "']").innerText;
             else value = "{{strings.not_provided}}";
-
-            var listItem = document.createElement("li");
 
             var newField = el.querySelector('.new-option-field');
 
@@ -78,86 +77,115 @@ function getPreviewSubmission(e) {
                 value += " (" + newField.value + ")";
             }
 
-            listItem.innerText = label + ": " + value;
-
-            list.appendChild(listItem);
+            appendList(label, value);
 
         }
-        if (el.classList.contains('fieldset_select_text')){
-            console.log("TODO: Country && Lang");
-        }
+        if (el.classList.contains('fieldset_select_text')) {
 
+            var selectedFilled = el.querySelectorAll(".select_form:not(.input_hidden)");
+            var selectValues = [];
+
+            selectedFilled.forEach(function (e) {
+                var val = e.options[e.selectedIndex].text;
+                if (val !== "") selectValues.push(val);
+            });
+
+            var label = el.querySelector("legend").innerText;
+            var value = (selectValues.length === 0 ? "{{strings.not_provided}}" : selectValues.join(', '));
+
+            appendList(label, value);
+
+        }
         if (el.classList.contains('fieldset_check') || el.classList.contains('fieldset_check_title')) {
-
-
-            var label = getFieldsetText(el.querySelector("legend"));
-
-            var listItem = document.createElement("li");
-            listItem.innerText = label + ":";
-            list.appendChild(listItem);
 
 
             var checks = el.querySelectorAll("input[type='checkbox']:checked");
 
             if (checks) {
-
                 if (el.classList.contains('fieldset_check_title')) {
+
+                    var finalLabel = getFieldsetText(el);
+                    var finalValue = [];
 
                     el.querySelectorAll('details').forEach(d => {
 
-                        var subListTitle = document.createElement("ul");
-                        var subListItems = document.createElement("li");
-                        subListItems.innerText = d.querySelector('h4').innerText + ": ";
-                        subListTitle.appendChild(subListItems);
+                        var checkedValues = d.querySelectorAll("input[type='checkbox']:checked");
+                        var val = [];
 
-                        var checksItem = d.querySelectorAll("input[type='checkbox']:checked");
+                        checkedValues.forEach(c => {
+                            val.push(el.querySelector("label[for='" + c.id + "']").innerText);
+                        })
 
-                        if (checksItem.length === 0) {
+                        var label = d.querySelector('h4').innerText;
 
-                            subListItems.innerText += "{{strings.not_provided}}";
+                        var value = label + ": " + (val.length === 0 ? "{{strings.not_provided}}" : val.join(', '));
 
-                        }
-                        else {
+                        finalValue.push(value);
 
-                            var subListItemsList = document.createElement("ul");
-                            subListItems.appendChild(subListItemsList);
-
-                            checksItem.forEach(c => {
-
-                                var subListItemsListItem = document.createElement("li");
-                                subListItemsListItem.innerText = el.querySelector("label[for='" + c.id + "']").innerText;
-
-                                subListItemsList.appendChild(subListItemsListItem);
-                            })
-                        }
-                        listItem.appendChild(subListTitle);
                     });
+
+
+                    //console.log(finalLabel);
+                    //console.log(finalValue);
+
+                    appendList(finalLabel, finalValue, true);
+
+
                 }
-
                 else {
-                    var sublist = document.createElement("ul");
 
-                    checks.forEach(c => {
+                    var selectedFilled = el.querySelectorAll(".select_form:not(.input_hidden)");
+                    var selectValues = [];
 
-                        var subListItem = document.createElement("li");
-                        subListItem.innerText = el.querySelector("label[for='" + c.id + "']").innerText;
-                        sublist.appendChild(subListItem);
-                    })
+                    checks.forEach(function (e) {
+                        val = el.querySelector("label[for='" + e.id + "']").innerText;
+                        if (val !== "") selectValues.push(val);
+                    });
 
+                    var label = getFieldsetText(el.querySelector("legend"));
+                    var value = (selectValues.length === 0 ? "{{strings.not_provided}}" : selectValues.join('; '));
 
-                    if (checks.length === 0) {
-
-                        listItem.innerText += " {{strings.not_provided}}";
-
-                    }
-
-                    listItem.appendChild(sublist);
-
+                    appendList(label, value);
                 }
             }
+
+
+            //var label = getFieldsetText(el.querySelector("legend"));
+
+
+            // appendList(label, value);
+
+
         }
     });
+
+
+
+    function appendList(label, value, isSubList = false) {
+
+        var listItem = document.createElement("dt");
+        listItem.innerText = label;
+        list.appendChild(listItem);
+
+        if (isSubList) {
+
+            value.forEach(v => {
+                var listValue = document.createElement("dd");
+                listValue.innerText = v;
+                list.appendChild(listValue);
+            });
+
+        }
+        else {
+            var listValue = document.createElement("dd");
+            listValue.innerText = value;
+            list.appendChild(listValue);
+        }
+    }
+
+
 }
+
 
 function closePreviewOverlay() {
     var overlay = document.getElementById("preview-submission-overlay");
@@ -166,8 +194,8 @@ function closePreviewOverlay() {
 
 
 function getFieldsetText(str) {
-
     if (str.querySelector('h3'))
         return str.querySelector('h3').innerText;
     return str.innerText;
 }
+

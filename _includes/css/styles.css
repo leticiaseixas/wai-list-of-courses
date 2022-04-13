@@ -358,6 +358,7 @@ fieldset label:hover a:hover {
     display: none !important;
 }
 
+
 .infobox h4{
     border: 1px solid var(--line-grey);
     background-color: #f3f3f3;
@@ -470,6 +471,7 @@ details .helperinfo {
     background-color: rgba(255, 255, 255, 0.8); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     overflow: scroll;
+    
 }
   
 .overlay-content {
@@ -507,3 +509,4 @@ details .helperinfo {
     margin-right: 2em;
     margin-top: 2em;
 }
+

@@ -31,12 +31,15 @@ main > header { grid-column: 4 / span 4; }
 {% include submission-form.liquid type="start" name="course_submission" version="1"%}
 
 
-{% include_cached button.html type="fake" label="Open preview" class="fake start-preview" %}
+
 
 
 <a href="../course-list">{{strings.back_to_list_link}}</a>
+
 <p>{{strings.sub_header_info_form}}</p> 
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
+
+<button type="button" class="start-preview">Start preview</button>
 
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
@@ -68,13 +71,13 @@ main > header { grid-column: 4 / span 4; }
       <select name="country" id="country1" class="select_form" required>
         <option value=""></option>
         {% for country in orderedCountries %}
-        <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+        <option value="{{ country[2] }}">{{ country[0] }} ({{country[1]}})</option>
         {% endfor %}
       </select>
   </div>
   <div class="proto">
     <label for="country_[n]" class="label_input">{{strings.countryn_label}} [n]</label>
-    <select name="country" id="country_[n]" class="select_form input_hidden" required >
+    <select name="country" id="country_[n]" class="select_form input_hidden">
       <option value=""></option>
       {% for country in orderedCountries %}
       <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -90,7 +93,7 @@ main > header { grid-column: 4 / span 4; }
   <textarea id="description" maxlength="350" required></textarea>
   <p><em>{{strings.description_expl_details}}</em></p>
 </div>
-<fieldset class="field fieldset_radio" id="type">
+<fieldset class="field fieldset_radio other_field" id="type">
   <legend class="label">{{strings.type_label}}</legend>
   <div class="radio-field">
     <input type="radio" name="type" id="type_graduate" value="type_graduate" required>
@@ -109,12 +112,12 @@ main > header { grid-column: 4 / span 4; }
     <label for="type_certification">{{strings.type_certification}}</label>
   </div>
   <div class="radio-field">
-    <input type="radio" name="type" id="type_other" value="type_other">
+    <input type="radio" name="type" id="type_other" value="type_other" class="option_field_other">
     <label for="type_other">{{strings.type_other}}</label>
   </div>  
-  <div>
+  <div class='hidden-element'>
     <label for="type_new" class="visuallyhidden">{{strings.type_new}}</label>
-    <input type="text" id="type_new" class='new-option-field'>
+    <input type="text" id="type_new" class="new-option-field">
   </div>
 </fieldset>
 <fieldset class="field fieldset_check" id="audience">
@@ -210,7 +213,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="language_[n]" class="label_input">{{strings.languagen_label}} [n]</label>
-    <select name="language" id="language_[n]" class="select_form input_hidden" required> 
+    <select name="language" id="language_[n]" class="select_form input_hidden"> 
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -341,7 +344,7 @@ main > header { grid-column: 4 / span 4; }
 </script>
 {% include submission-form.liquid type="end"%}
 
-<div id="preview-submission-overlay" aria-modal=true role="dialog">
+<div id="preview-submission-overlay" aria-modal="true" role="dialog">
 <div class="overlay-content">
 {% include_cached button.html type="icon" label=strings.quit_preview class="close_preview icon" icon="ex-circle" %}
   <h2>{{ strings.preview_title }}</h2>  

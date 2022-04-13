@@ -5,11 +5,11 @@ const filterForm = document.querySelector('[data-filter-form]');
 const submitForm = document.querySelector('#form-submit-a-course');
 const sortForm = document.querySelector('.sort-by');
 const searchForm = document.querySelector('#search');
-const importJsonCourses = String.raw `{{ itemsSorted | jsonify }}`;
+const importJsonCourses = String.raw`{{ itemsSorted | jsonify }}`;
 importJsonCourses.replace("\\", "\\\\");
 const jsonCourses = JSON.parse(importJsonCourses);
 
-const importJsonCountries = String.raw `{{ site.data.countries | jsonify }}`;
+const importJsonCountries = String.raw`{{ site.data.countries | jsonify }}`;
 importJsonCountries.replace("\\", "\\\\");
 const jsonCountry = JSON.parse(importJsonCountries);;
 
@@ -40,7 +40,6 @@ if (filterForm) {
     searchForm.addEventListener('search', () => {
         filterJson(filterForm);
     })
-
 
 
     //Add pre-counters to filters
@@ -121,7 +120,7 @@ if (filterForm) {
         // by attribute
         filtersOnList.forEach(filter => {
             newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
-                function(r) {
+                function (r) {
                     if (x[filter.filterId] !== undefined) {
                         return x[filter.filterId].includes(r);
                     } else {
@@ -165,7 +164,7 @@ if (filterForm) {
 
         newResults.sort(sortList);
 
-        sortedArticles.sort(function(a, b) {
+        sortedArticles.sort(function (a, b) {
             return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
         });
 
@@ -245,12 +244,12 @@ if (filterForm) {
 
 
         if (Object.values(newResults).length === 1) {
-            totalCoursesCounter.innerText = "Showing "; 
+            totalCoursesCounter.innerText = "Showing ";
             totalCoursesCounter.appendChild(document.createElement("span").innerText = Object.values(newResults).length + " course");
             document.querySelector('.excol-all').hidden = false;
 
         } else {
-            totalCoursesCounter.innerText = "Showing "; 
+            totalCoursesCounter.innerText = "Showing ";
             totaltext = document.createElement("span");
             totaltext.innerText = Object.values(newResults).length + " courses";
             totalCoursesCounter.appendChild(totaltext);
@@ -258,7 +257,7 @@ if (filterForm) {
         }
 
         var searchTerm = searchForm.value;
-        
+
 
         if (searchTerm.length > 0) {
             var attName = document.createElement('dt');
@@ -291,7 +290,7 @@ if (filterForm) {
             filterCoursesString.appendChild(listFiltersOnString);
             document.querySelector('.excol-all').hidden = true;
         }
-        else{
+        else {
             document.getElementById('default-results-title').classList.remove("hidden-element");
             document.getElementById('no-results-title').classList.add("hidden-element");
         }
@@ -339,13 +338,19 @@ if (filterForm) {
 
 
 if (submitForm) {
+
     _addLine();
+
+    submitForm.querySelectorAll('.other_field input[type="radio"]').forEach(item => {
+        item.addEventListener('change', changeHandlerOtherField);
+    });
+
 
     function _addLine() {
         var buttonsAdd = document.querySelectorAll('button.add_line');
 
         Array.prototype.forEach.call(buttonsAdd, function addClickListener(button) {
-            button.addEventListener('click', function(event) {
+            button.addEventListener('click', function (event) {
                 var parent = event.target.parentNode;
                 var lines = parent.querySelectorAll('.line');
                 var proto = parent.querySelector('.proto');
@@ -368,22 +373,34 @@ if (submitForm) {
         var buttonsRemove = document.querySelectorAll('button.remove_line');
 
         Array.prototype.forEach.call(buttonsRemove, function addClickListener(button) {
-            button.addEventListener('click', function(event) {
+            button.addEventListener('click', function (event) {
                 var parent = event.target.parentNode;
                 var lines = parent.querySelectorAll('.line');
                 var last = lines[lines.length - 1];
-                
+
                 last.parentNode.removeChild(last);
 
                 lines = parent.querySelectorAll('.line');
                 last = lines[lines.length - 1];
                 last.querySelector('input, checkbox, select').focus();
-                
+
                 if (lines.length <= 1)
                     button.disabled = true;
             });
         });
 
+    }
+
+    function changeHandlerOtherField() {
+
+        var newField = this.parentNode.parentNode.querySelector('input[type="text"]');
+
+        if (this.classList.contains('option_field_other')) {
+            newField.parentNode.classList.remove('hidden-element');
+            newField.focus();
+        }
+        else
+            newField.parentNode.classList.add('hidden-element');
     }
 }
 
