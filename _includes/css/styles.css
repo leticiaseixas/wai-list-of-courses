@@ -418,35 +418,11 @@ details .helperinfo {
 
 .helperbutton {
     margin-left: .5em;
-    border: 2px solid var(--line-grey) !important;
+    border: 1px solid var(--line-grey) !important;
     background: var(--pure-white);
     border-radius: 5px;
 }
 
-.helperbutton:hover,
-.helperbutton:focus {
-    background: var(--off-white);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    color: black;
-}
-
-.helperbutton::before {
-    content: " ";
-    background: url(/wai-course-list/content-images/wai-course-list/info.svg) no-repeat !important ;
-    margin-right: .2em;
-    background-size: 18px;
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-}
-
-.helperbutton::after {
-    content: unset !important;
-}
-
-.helperbutton[aria-expanded=true] {
-    background: var(--off-white);
-}
 
 .standalone-resource__prevnext {
     grid-column: 2/10;

@@ -11,7 +11,7 @@ permalink: course-list/submit-a-resource
 ref: /teach-advocate/course-list/
 changelog: /teach-advocate/course-list/changelog/
 acknowledgements: /teach-advocate/course-list/acknowledgements/
-description:  # NEW: add a 150ish-character-description for social media   # translate the description
+description:  # NEW: aa 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
 footer: 
    <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>

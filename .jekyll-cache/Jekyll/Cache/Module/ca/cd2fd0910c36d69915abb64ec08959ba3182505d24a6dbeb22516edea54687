@@ -8,12 +8,12 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/wai-course-list/assets/scripts/main.js?1649856175688728000";
+      element.src = "/wai-course-list/assets/scripts/main.js?1649857541692237000";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/wai-course-list/assets/css/style.css?1649856175688728000">
+  <link rel="stylesheet" href="/wai-course-list/assets/css/style.css?1649857541692237000">
 
 :ET
