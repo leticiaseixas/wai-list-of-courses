@@ -27,12 +27,8 @@ function getPreviewSubmission() {
 
     var detailsPreview = document.querySelector(".details_preview");
     
-    var header = document.querySelector(".box-h");
-    var infoDetails = document.querySelector(".box-i");
+    detailsPreview.innerText = "";
     
-    header.innerText = "";
-    infoDetails.innerText = "";
-
     var list = document.createElement("dl");
     detailsPreview.appendChild(list);
 
