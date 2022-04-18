@@ -10,7 +10,7 @@
 
 {%- if include.type == 'start' -%}
   {%- if include.action == nil -%}
-    {% assign action = "/wai-course-list/functions/form-action.js" %}
+    {% assign action = '/.netlify/functions/form-action' %}
   {% else %}
     {% assign action = include.action %}
   {%- endif -%}
