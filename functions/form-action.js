@@ -6,6 +6,10 @@ const https = require('https')
 const { isArray } = require('util')
 const { v1: uuidv1 } = require('uuid') // use v1, timebased so unique each call
 
+
+console.log("form action");
+
+
 // GitHub dispatch web hook handler used to triggerthe workflow
 const GITHUB_DISPATCH_EVENT = 'form-submission'
 const GITHUB_URI = '/repos/w3c/wai-interactive-lists/dispatches'
