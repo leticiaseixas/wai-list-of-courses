@@ -39,7 +39,7 @@ main > header { grid-column: 4 / span 4; }
 <p>{{strings.sub_header_info_form}}</p> 
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
-<button type="button" class="start-preview">Start preview</button>
+
 
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
