@@ -17,6 +17,7 @@ const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const coursesList = document.getElementById('courses-list');
 
+
 // if (filterForm && sortForm && search) {
 
 if (filterForm) {
@@ -40,6 +41,15 @@ if (filterForm) {
     searchForm.addEventListener('search', () => {
         filterJson(filterForm);
     })
+
+
+    searchForm.onkeydown = function (e) {
+        e = e || window.event;
+        switch (e.which || e.keyCode) {
+              case 13 : handleKeyboardSearch();
+                  break;
+        }
+      }
 
 
     //Add pre-counters to filters
@@ -332,6 +342,12 @@ if (filterForm) {
             }
         }
         return obj
+    }
+
+    function handleKeyboardSearch(){
+        if(searchForm.value !== ""){
+            document.querySelector("#status").focus();
+        }
     }
 
 }

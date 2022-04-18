@@ -52,7 +52,8 @@ content_updated: The content of this resource was last updated on
 
 # Form strings
 back_to_list_link: Back to List of Courses
-sub_header_info_form: This form allows you to provide information about courses, training, and certification on web accessibility. To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
+sub_header_info_form: This form allows you to provide information about courses, training, and certification on web accessibility. 
+# To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information (except your name and email) will be publicly available as this page generates a Pull Request on our GitHub repository.
 about_you: About you
 about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.
@@ -68,7 +69,7 @@ country1_label: Country 1 (Required)
 countryn_label: Country
 description_label: Description (Required)
 description_expl: Provide a brief description of this resource (max. 350 chars).
-description_expl_details: Please enter only plain text (no HTML). URIs are not linked..
+description_expl_details: Please enter only plain text (no HTML). URIs are not linked.
 type_label: Type of resource (Required)
 type_graduate: Graduate program
 type_undergraduate: Undergraduate program
@@ -88,7 +89,7 @@ level_expl: Indicate the level of digital accessibility proficiency required.
 level_basic: Basic
 level_intermediate: Intermediate
 level_advanced: Advanced
-prerequisites_legend: Prerequisites (Required)
+prerequisites_legend: Prerequisites
 prerequisites_expl: For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.
 prerequisites1_label: Prerequisite 1
 prerequisitesn_label: Prerequisite

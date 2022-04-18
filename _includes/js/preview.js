@@ -25,9 +25,9 @@ function getPreviewSubmission() {
 
     overlay.style.display = "flex";
 
-    const data = document.getElementById('form-submit-a-course').elements;
+    const data = document.getElementById('form-submit-a-course');
 
-    var detailsPreview = document.querySelector(".details_preview");
+    var detailsPreview = document.querySelector(".details-preview");
 
     detailsPreview.innerText = "";
 
@@ -38,14 +38,18 @@ function getPreviewSubmission() {
 
 
 
-    Array.from(data).forEach(el => {
+    Array.from(data.elements).forEach(el => {
 
         var elType = el.getAttribute("type");
 
 
         if ((elType === "text" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
 
-            var label = document.querySelector("label[for='" + el.id + "']").innerText;
+            var label = document.querySelector("label[for='" + el.id + "']");
+            if(label === null) 
+                label = el.closest('fieldset').querySelector('legend').innerText;
+            else
+                label = label.innerText;
 
             var value = "";
             if (el.value === "") value = "{{strings.not_provided}}";
@@ -102,10 +106,10 @@ function getPreviewSubmission() {
             if (checks) {
                 if (el.classList.contains('fieldset_check_title')) {
 
-                    var finalLabel = getFieldsetText(el);
+                    var finalLabel = el.querySelector('legend').innerText;
                     var finalValue = [];
 
-                    el.querySelectorAll('details').forEach(d => {
+                    el.querySelectorAll('.subitems').forEach(d => {
 
                         var checkedValues = d.querySelectorAll("input[type='checkbox']:checked");
                         var val = [];
@@ -114,9 +118,9 @@ function getPreviewSubmission() {
                             val.push(el.querySelector("label[for='" + c.id + "']").innerText);
                         })
 
-                        var label = d.querySelector('h4').innerText;
+                        var label = d.querySelector('p').innerText;
 
-                        var value = label + ": " + (val.length === 0 ? "{{strings.not_provided}}" : val.join(', '));
+                        var value = label + ": " + (val.length === 0 ? "{{strings.not_provided}}" : val.join('; '));
 
                         finalValue.push(value);
 
@@ -186,6 +190,9 @@ function getPreviewSubmission() {
     function closePreviewOverlay() {
         overlay.style.display = "none";
         document.activeElement.blur();
+
+        document.removeEventListener('keydown', handleKeyDown, false);
+
     }
 
     function getFieldsetText(str) {
@@ -206,9 +213,45 @@ function getPreviewSubmission() {
         window.addEventListener("keyup", function (event) {
             if (event.key === "Escape")
                 closePreviewOverlay();
-            
+
         })
+
+        document.addEventListener('keydown', handleKeyDown, false);
+
+
     }
+
+
+    function handleKeyDown(e) {
+        let tab = 9; // the keycode for tab
+
+        if (e.keyCode == tab) {
+
+            let focusableElements = overlay.querySelectorAll('button, a, textarea, input')
+            let focusableElementsAmount = focusableElements.length;
+
+            if (focusableElementsAmount == 1) {
+                e.preventDefault();
+                return false;
+            }
+
+            let firstElement = focusableElements[0];
+            let lastElement = focusableElements[focusableElementsAmount - 1];
+            let shiftPressed = e.shiftKey;
+
+            if (e.target == lastElement && !shiftPressed) {
+                e.preventDefault();
+                firstElement.focus();
+            }
+
+            if (e.target == firstElement && shiftPressed) {
+                e.preventDefault();
+                lastElement.focus();
+            }
+        }
+    }
+
+
 }
 
 

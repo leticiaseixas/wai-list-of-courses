@@ -117,7 +117,7 @@ footer: >
                 </select>
             </div>     
         </div>
-        <div id="status">
+        <div id="status" tabindex="0">
             <h4 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} {{ strings.courses }}</span></h4>
         </div>  
         <div class="box hidden-element results-box">

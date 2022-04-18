@@ -171,8 +171,20 @@ details dt::after {
 }
 
 .label_input {
-    /* font-size: 1.25rem; */
-    font-weight: 700;
+    font-size: 1rem ;
+}
+
+fieldset {
+    margin-top: 2.5em !important;
+}
+
+fieldset>p {
+    margin-top: .25em !important
+}
+
+.fieldset-subtitles{
+    margin-top: 1.5em !important;
+    color: var(--wai-green);
 }
 
 #availability .label_input {
@@ -271,12 +283,15 @@ fieldset label:hover a:hover {
 }
 
 .add_line {
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 .line .select_form {
     margin-bottom: 1em;
     margin-top: 0.5em;
+    height: 2em !important;
+    background: white;
 }
 
 .field input[type="checkbox"]:focus {
@@ -385,22 +400,26 @@ fieldset label:hover a:hover {
 
 
 
-#search::placeholder {
+::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--grey);
     opacity: 1;
     /* Firefox */
 }
 
-#search:-ms-input-placeholder {
+:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: var(--grey);
 }
 
-#search::-ms-input-placeholder {
+::-ms-input-placeholder {
     /* Microsoft Edge */
     color: var(--grey);
 }
+
+
+
+
 
 
 details .helperinfo {
@@ -461,7 +480,7 @@ details .helperinfo {
     margin-top: 2rem;
 }
   
-.details_preview {
+.details-preview {
     text-align: left;
     margin-bottom: 2em;
     padding-left: 2em;
