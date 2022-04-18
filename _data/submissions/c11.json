@@ -1,0 +1,38 @@
+{
+    "id": "course11",
+    "title": "Web Accessibility, Part 4: Responsive Design and Zoom",
+    "provider": "Deque University",
+    "country": [
+        "us"
+    ],
+    "description": "Techniques for mobile device and low vision design and zoom.",
+    "type": "Training",
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+        "Knowledge of HTML required"
+    ],
+    "topics": [
+        "Responsive Design, Zoom, Orientation, Click/Touch Target Size, Quiz"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled", 
+        "Unscheduled"
+    ],
+    "length": "30 minutes (estimate)",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/courses/responsive-zoom",
+    "info_last_updated": "2022-01-01",
+    "content_last_updated": "2022-01-01",
+    "start_date": "2022-01-01"
+}

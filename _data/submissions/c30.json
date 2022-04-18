@@ -1,0 +1,41 @@
+{
+    "id": "course30",
+    "title": "Embedding accessibility at every stage of your project",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "Are your projects accessible and inclusive first time, every time? This course is aimed at those wishing to create a robust accessibility policy, mainly product owners / managers in development environments and managers at an organisational level. As an accessibility policy affects all roles throughout the development process the content may also be suitable for roles including developers, testers, designers and content creators.",
+    "type": "Training",
+    "audience": [
+        "Manager"
+    ],
+    "level": "Basic",
+    "topics": [
+        "Why an accessibility policy is needed and stages of implementation",
+        "Scope and coverage",
+        "Responding to accessibility feedback, evaluating policy success and reviewing your policy"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "digital-accessibility-caption-audio",
+        "general-accessibility-material-ahead-of-time"
+    ],
+    "other_accessibility_support": [
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h31",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/embedding-accessibility-every-stage-your-project",
+    "info_last_updated": "2022-01-01",
+    "content_last_updated": "2022-01-01",
+    "start_date": "2022-01-01",
+    "end_date": "2022-03-31"
+}

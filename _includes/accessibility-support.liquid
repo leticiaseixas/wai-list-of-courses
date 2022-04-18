@@ -1,0 +1,27 @@
+{% for support in site.data.accessibility-support %}
+
+<p class="fieldset-subtitles">{{ support.type }}</p>
+
+{% for option in support.options %}
+
+{% if option.options %}
+<p class="expl">{{ option.name }}, {{strings.asupport_including}}: </p>
+{% for details in option.options %}
+<div class="radio-field">  
+    <input type="checkbox" id="{{ details.id }}" name="{{ details.id }}" value="{{ details.id }}">
+    <label for="{{ details.id }}">{{ details.name }}</label>
+</div>
+{% endfor %}
+{% else %}
+<div class="radio-field">
+    <input type="checkbox" id="{{ option.id }}" name="{{ option.id }}" value="{{ option.id }}">
+    <label for="{{ option.id }}">{{ option.name }}</label>
+</div>    
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<div class="field">
+    <label for="asupport_other">{{strings.asupport_other}}</label>
+    <textarea id="asupport_other"></textarea>
+</div>

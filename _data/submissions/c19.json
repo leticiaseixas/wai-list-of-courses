@@ -1,0 +1,41 @@
+{
+    "id": "course19",
+    "title": "Accessibility Bootcamp",
+    "provider": "Deque University",
+    "country": [
+        "us"
+    ],
+    "description": "This two-day training is our most popular course, and offers an overview of everything your team needs to know in order to begin their journey down the path of Web accessibility. This Bootcamp is intended to be the foundation upon which all accessibility knowledge can later be built. While the second day of the Bootcamp is most suitable for web developers and quality assurance professionals, the first day is intended for every member of a cross-functional team. ",
+    "type": "Training",
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
+    "level": "Basic",
+    "topics": [
+        "Web accessibility fundamentals",
+        "Accessibility checkpoints: semantics and interactions",
+        "Accessibility checkpoints: inclusive design and user experience",
+        "Issue prioritization and real-life examples",
+        "Accessibility core rules and testing tools",
+        "Manual accessibility testing process",
+        "Screen reader accessibility testing process",
+        "Hands-on workshops and exercises"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Blended",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "length": "2 full days",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/instructor-led/",
+    "info_last_updated": "2022-01-01",
+    "content_last_updated": "2022-01-01",
+    "start_date": "2022-01-01"
+}

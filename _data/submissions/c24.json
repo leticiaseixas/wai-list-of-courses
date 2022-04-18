@@ -1,0 +1,50 @@
+{
+    "id": "course24",
+    "title": "How to begin your own accessibility testing",
+    "provider": "AbilityNet",
+    "country": [
+        "gb"
+    ],
+    "description": "Learn how to use manual and automated accessibility testing tools, and about testing with disabled users",
+    "type": "Training",
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester",
+        "Trainers/Teachers/Academics"
+    ],
+    "level": "Basic",
+    "prerequisites": [
+        "General knowledge of accessibility"
+    ],
+    "topics": [
+        "Accessibility checks",
+        "Limitations of basic checks",
+        "Selecting and using appropriate accessibility checkers to support testing",
+        "Identifying accessibility issues and understand some approaches to prioritising issues"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled"
+    ],
+    "platform": "Zoom",
+    "accessibility_support": [
+        "digital-accessibility-caption-audio",
+        "general-accessibility-material-ahead-of-time"
+    ],
+    "other_accessibility_support": [
+        "A captioned recording with transcript will be shared with attendees after the live event"
+    ],
+    "length": "1h30",
+    "cost": "Free or reduced fee for some",
+    "website": "https://abilitynet.org.uk/training/introduction-to-DIY-accessibility-testing",
+    "info_last_updated": "2022-01-01",
+    "content_last_updated": "2022-01-01",
+    "start_date": "2022-01-01",
+    "end_date": "2022-12-31"
+}

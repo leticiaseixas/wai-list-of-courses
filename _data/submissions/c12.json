@@ -1,0 +1,38 @@
+{
+    "id": "course12",
+    "title": "Web Accessibility, Part 3: Visual Design and Colors",
+    "provider": "Deque University",
+    "country": [
+        "us"
+    ],
+    "description": "Techniques for accessible visual design, including use of color, color contrast, visual layout, visual focus indicator, etc.",
+    "type": "Training",
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+        "Knowledge of HTML required"
+    ],
+    "topics": [
+        "Color, Contrast, Visual Layout, Target Size, Reading Order, Focus Order, Typography, CSS-Generated Content and Hidden Content"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled", 
+        "Unscheduled"
+    ],
+    "length": "75 minutes (estimate)",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/courses/visual-design",
+    "info_last_updated": "2022-01-01",
+    "content_last_updated": "2022-01-01",
+    "start_date": "2022-01-01"
+}

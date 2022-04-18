@@ -1,0 +1,42 @@
+{
+    "id": "course8",
+    "title": "Web Accessibility, Part 7: Form Labels, Instructions, and Validation",
+    "provider": "Deque University",
+    "country": [
+        "us"
+    ],
+    "description": "Ensuring users can understand and interact successfully with forms, including field labels, group labels, instructions, required fields, HTML5 input types, form validation (success and error messages), etc.",
+    "type": "Training",
+    "audience": [
+        "Content author",
+        "Designer",
+        "Developer",
+        "Manager",
+        "Tester"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+        "Knowledge of HTML required"
+    ],
+    "topics": [
+        "Labels, Group Labels",
+        "Instructions & Other Helpful Info",
+        "Dynamic Forms & Custom Widgets",
+        "Form Validation",
+        "Using Forms with Screen Readers"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "Online",
+    "scheduling": [
+        "Scheduled", 
+        "Unscheduled"
+    ],
+    "length": "90 minutes (estimate)",
+    "cost": "Paid",
+    "website": "https://dequeuniversity.com/curriculum/courses/forms",
+    "info_last_updated": "2022-01-01",
+    "content_last_updated": "2022-01-01",
+    "start_date": "2022-01-01"
+}
