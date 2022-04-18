@@ -26,9 +26,11 @@ footer:
 main > header { grid-column: 4 / span 4; }
 </style>
 {% assign strings = site.data.strings %}
-{% include netlify-form.liquid type="start" id="form-submit-a-course" %}
 {% include sort-countries.liquid %} 
-{% include submission-form.liquid type="start" name="course_submission" version="1"%}
+
+{%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" -%}
+
+<button type="button" class="start-preview">Start preview</button>
 
 
 <a href="../course-list">{{strings.back_to_list_link}}</a>
@@ -359,13 +361,12 @@ main > header { grid-column: 4 / span 4; }
   <button type="submit">{{strings.send_form_button}}</button>
 </div>
 
-{% include netlify-form.liquid type="end"%}
+{% include submission-form.liquid type="end"%}
 
 <script>
 {% include js/courses.js %}
 {% include js/preview.js %}
 </script>
-{% include submission-form.liquid type="end"%}
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">

@@ -10,7 +10,7 @@
 
 {%- if include.type == 'start' -%}
   {%- if include.action == nil -%}
-    {% assign action = "/.netlify/functions/form-action" %}
+    {% assign action = '/.netlify/functions/form-action' %}
   {% else %}
     {% assign action = include.action %}
   {%- endif -%}
@@ -39,7 +39,7 @@
       const form = document.querySelector('form')
       const submitButton = form.querySelector('button[type="submit"]')
       submitButton.addEventListener('click', (event) => {
-        console.log('submission-form.liquid submit event');
+        
         const requiredCheckboxes = form.querySelectorAll('input[type="checkbox"][required][group]')
         const groups = Array.from(requiredCheckboxes).map((n) => n.getAttribute('group'))
         const uniqueGroups = [...new Set(groups)]
@@ -56,6 +56,10 @@
           }
         })
       })
+      form.onsubmit = function(e) {    
+        e.preventDefault();
+        getPreviewSubmission();
+      };
     </script>
   {% endif %}
 {%- endif -%}

@@ -10,6 +10,7 @@ function getPreviewSubmission() {
 
     const overlay = document.getElementById("preview-submission-overlay");
     const overlayContent = overlay.querySelector(".overlay-content");
+    const dataForm = document.querySelector('form');
 
 
 
@@ -20,12 +21,11 @@ function getPreviewSubmission() {
     })
 
     overlayContent.querySelector('.button-submit_form').addEventListener('click', e => {
-        document.getElementById('form-submit-a-course').submit();
+        dataForm.submit();
     })
 
     overlay.style.display = "flex";
 
-    const data = document.getElementById('form-submit-a-course');
 
     var detailsPreview = document.querySelector(".details-preview");
 
@@ -38,7 +38,7 @@ function getPreviewSubmission() {
 
 
 
-    Array.from(data.elements).forEach(el => {
+    Array.from(dataForm.elements).forEach(el => {
 
         var elType = el.getAttribute("type");
 
