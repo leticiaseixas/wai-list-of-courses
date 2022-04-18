@@ -31,9 +31,6 @@ main > header { grid-column: 4 / span 4; }
 {% include submission-form.liquid type="start" name="course_submission" version="1"%}
 
 
-
-
-
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 
 <p>{{strings.sub_header_info_form}}</p> 
@@ -377,7 +374,7 @@ main > header { grid-column: 4 / span 4; }
   <p>{{ strings.preview_info }}</p>
   <div class="details-preview box"></div>
   {% include_cached button.html type="icon" label=strings.back_to_form class="close_preview" icon="arrow-left" %}
-  <button class="button button-submit_form" type="submit"><span>{{ strings.send_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
+  <button class="button button-submit_form" type="submit"><span>{{ strings.send_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
 
 </div>
 </div>
