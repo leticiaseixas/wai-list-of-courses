@@ -2,6 +2,9 @@
 title: 'Form Submitted'
 permalink: /success
 ---
+<style> 
+{% include css/styles.css %}
+</style>
 
 {% assign strings = site.data.strings %}
 
