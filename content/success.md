@@ -3,6 +3,8 @@ title: 'Form Submitted'
 permalink: /success
 ---
 
-# Submission succesfull
+{% assign strings = site.data.strings %}
 
-[list](/course-list/)
+{{ strings.success.message }}
+
+[{{strings.back_to_list_link}}](/course-list/)
