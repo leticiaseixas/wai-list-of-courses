@@ -32,6 +32,8 @@ footer: >
     <p><em> {{ strings.sub_header_note }}
     </em></p>
 </div>
+    {% include_cached button.html type="link" label="s" class="more" href="sucess" %}
+        {% include_cached button.html type="link" label="f" class="more" href="failure" %}
 {% assign defaultSort = site.data.sorting.first.sortkey %}
 {% include sort-data-folder.liquid data=site.data.submissions sortKey=defaultSort %} 
 <div id="app">
