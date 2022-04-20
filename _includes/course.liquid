@@ -30,7 +30,7 @@
 : {{ strings[course.level] }}
 
 {{ strings.prerequisites }}
-{% if course.prerequisites %}
+{% if course.prerequisites != "" %}
 : {{ course.prerequisites | join: "; "}}
 {% else %}
 : {{ strings.not_provided }}
@@ -131,15 +131,14 @@
 : {{ strings[course.cost]}}
 
 {{ strings.availability }}
-: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}
-{% if course.end_date != "" %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
+: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{% if course.end_date != "" %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
 
 {{ strings.website }}
-: <a href="{{ course.website}}" rel="external">{{ course.website }}{% include_cached icon.html name="external-link" %}</a>
+: <a href="{{ course.website}}" rel="external">{{ course.website }} {% include_cached icon.html name="external-link" %}</a>
 
 {{ strings.reviews_page }}
 {% if course.reviews != "" %}
-: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}{% include_cached icon.html name="external-link" %}</a>
+: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }} {% include_cached icon.html name="external-link" %}</a>
 {% else %}
 : {{ strings.not_provided }}
 {% endif %}
