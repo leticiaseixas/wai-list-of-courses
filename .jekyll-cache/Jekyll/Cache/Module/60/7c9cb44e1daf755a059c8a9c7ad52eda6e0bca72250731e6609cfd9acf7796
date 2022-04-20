@@ -1,0 +1,19 @@
+I"®
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/wai-course-list/assets/scripts/main.js?1650293976801091000";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/wai-course-list/assets/css/style.css?1650293976801091000">
+
+:ET
