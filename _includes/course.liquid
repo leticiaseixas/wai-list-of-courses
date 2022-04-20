@@ -90,7 +90,7 @@
 </div>
 
 {{ strings.platform }}
-{% if course.platform %}
+{% if course.platform !== "" %}
 : {{ course.platform}}
 {% else %}
 : {{ strings.not_provided }}
