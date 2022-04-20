@@ -13,5 +13,5 @@ main > header { grid-column: 4 / span 4; }
 
 {{ strings.success_message }}
 
-[{{strings.back_to_list_link}}](/course-list/)
+<a href="../course-list">{{strings.back_to_list_link}}</a>
 </div>
