@@ -121,7 +121,7 @@
 
 
 {{ strings.length }}
-{% if course.length %}
+{% if course.length != "" %}
 : {{ course.length }}
 {% else %}
 : {{ strings.not_provided }}
@@ -132,13 +132,13 @@
 
 {{ strings.availability }}
 : {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}
-{% if course.end_date %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
+{% if course.end_date != "" %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
 
 {{ strings.website }}
 : <a href="{{ course.website}}" rel="external">{{ course.website }}{% include_cached icon.html name="external-link" %}</a>
 
 {{ strings.reviews_page }}
-{% if course.reviews %}
+{% if course.reviews != "" %}
 : <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}{% include_cached icon.html name="external-link" %}</a>
 {% else %}
 : {{ strings.not_provided }}
