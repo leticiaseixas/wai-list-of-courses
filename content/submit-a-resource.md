@@ -18,6 +18,7 @@ footer:
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
+<!-- markdownlint-disable no-inline-html -->
 
 <div style="grid-column: 4 / span 4">
 
@@ -28,9 +29,8 @@ main > header { grid-column: 4 / span 4; }
 {% assign strings = site.data.strings %}
 {% include sort-countries.liquid %} 
 
-{%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" -%}
+{%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" args="repository:wai-course-list" -%}
 
-<button type="button" class="start-preview">Start preview</button>
 
 
 <a href="../course-list">{{strings.back_to_list_link}}</a>
@@ -72,7 +72,7 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">{{strings.country_expl}}</p>
   <div class="line">
     <label for="country1" class="label_input">{{strings.country1_label}}</label>
-      <select name="country" id="country1" class="select_form" required>
+      <select name="country[]" id="country1" class="select_form" required>
         <option value=""></option>
         {% for country in orderedCountries %}
         <option value="{{ country[2] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -81,7 +81,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="country_[n]" class="label_input">{{strings.countryn_label}} [n]</label>
-    <select name="country" id="country_[n]" class="select_form input_hidden" disabled>
+    <select name="country[]" id="country_[n]" class="select_form input_hidden" disabled>
       <option value=""></option>
       {% for country in orderedCountries %}
       <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -214,7 +214,7 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">{{strings.language_expl}}</p>
   <div class="line">
     <label for="language_1" class="label_input">{{strings.language1_label}}</label>
-    <select name="language" id="language_1" class="select_form" required> 
+    <select name="language[]" id="language_1" class="select_form" required> 
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -223,7 +223,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="language_[n]" class="label_input">{{strings.languagen_label}} [n]</label>
-    <select name="language" id="language_[n]" class="select_form input_hidden" disabled> 
+    <select name="language[]" id="language_[n]" class="select_form input_hidden" disabled> 
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
