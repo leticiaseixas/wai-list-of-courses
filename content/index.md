@@ -24,8 +24,8 @@ footer: >
 {% include css/styles.css %}
 </style>
 {% assign strings = site.data.strings %}
-<a href="#left-col" id="skip_link_filters" class="button button--skip-link">{{ strings.skip_to_filters }}</a>
-<a href="#courses-list" id="skip_link_results" class="button button--skip-link">{{ strings.skip_to_results }}</a>
+<a href="" id="skip_link_filters" class="button button--skip-link">{{ strings.skip_to_filters }}</a>
+<a href="" id="skip_link_results" class="button button--skip-link">{{ strings.skip_to_results }}</a>
 <div class="header-sup" id="main">
     <p>{{ strings.sub_header_info_list }}</p>
     {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}
