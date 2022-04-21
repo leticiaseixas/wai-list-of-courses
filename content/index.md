@@ -1,19 +1,37 @@
 ---
+# NEW: Comments for new repos start with "NEW". Please delete the NEW comments. Leave the other comments for translators. Also, search for @@s to replace. For multi-page resources and other frontmatter info, see: https://wai-website-theme.netlify.app/writing/frontmatter/
+# Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
+# In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 title: "List of Accessibility Courses"
 title_html: "List of Accessibility Courses:<br>Education, training, and certification" 
 nav_title: "List of Courses"
 doc-note-type: draft
-lang: en
-last_updated: 2021-@@-@@
+lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
+# translators:    # remove from the beginning of this line and the lines below: "# " (the hash sign and the space)
+# - name: "Jan Doe"   # Replace Jan Doe with translator name
+# - name: "Jan Doe"   # Replace Jan Doe with name, or delete this line if not multiple translators
+# contributors:
+# - name: "Jan Doe"   # Replace Jan Doe with contributor name, or delete this line if none
+# - name: "Jan Doe"   # Replace Jan Doe with name, or delete this line if not multiple contributors
 github:
-  repository: w3c/wai-course-list
-  path: content/index.md
-permalink: /course-list/
-ref: /teach-advocate/course-list/
-changelog: /teach-advocate/course-list/changelog/
-acknowledgements: /teach-advocate/course-list/acknowledgements/
+  repository: leticiaseixas/wai-list-of-courses
+  path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
+permalink: /list-of-courses/   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
+# NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
+# navigation:
+  # previous: /teach-advocate/course-list/@@
+  # next: /teach-advocate/course-list/@@
+ref: /teach-advocate/course-list/   # Translators, do not change this
+changelog: /teach-advocate/course-list/changelog/  # NEW: set up a changelog so it's ready for later
+acknowledgements: /teach-advocate/course-list/acknowledgements/  # NEW: delete if don't have a separate acknowledgements page. And delete it in the footer below.
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
+# In the footer below:
+# Do not translate or change CHANGELOG or ACKNOWLEDGEMENTS.
+# Translate the other words below, including "Date:" and "Editor:"
+# Translate the Working Group name. Leave the Working Group acronym in English.
+# Do not change the dates in the footer below.
 footer: >
    <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
@@ -23,58 +41,36 @@ footer: >
 <style> 
 {% include css/styles.css %}
 </style>
-{% assign strings = site.data.strings %}
-<a href="#left-col" class="button button--skip-link">{{ strings.skip_to_filters }}</a>
-<a href="#courses-list" class="button button--skip-link">{{ strings.skip_to_results }}</a>
-<div class="header-sup" id="main">
-    <p>{{ strings.sub_header_info_list }}</p>
-    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}
-    <p><em> {{ strings.sub_header_note }}
-    </em></p>
+<div class="header-sup">
+    <p> The List of Courses provides information about offers of courses, training, and certification on web accessibility from different providers, so that people can make informed decisions when they choose an offer. This page provides a list of offers that you can filter to find ones that match your particular needs. 
+    </p>
+    <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
+    {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}
 </div>
-    {% include_cached button.html type="link" label="s" class="more" href="sucess" %}
-        {% include_cached button.html type="link" label="f" class="more" href="failure" %}
-{% assign defaultSort = site.data.sorting.first.sortkey %}
-{% include sort-data-folder.liquid data=site.data.submissions sortKey=defaultSort %} 
 <div id="app">
-    <div id="left-col" class="courses-filters">
+    <div id="left-col" class="offers-filters">
         <form data-filter-form action="...">
-            <h2>{{ strings.filters_title }}</h2>
+            <h2>Filters</h2>
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
-                {% if filter.info %}
                 <legend class="label">{{ filter.name }}</legend>
-                <button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false"
-                        aria-controls="info_about{{ filter.name}}" data-target="#info_about{{ filter.name }}" data-showtext="{{ strings.show_info }}"
-                        data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-                {% assign helper = site.data.helpers | where: "id", filter.id %}
-                <div class="helperinfo" id="info_about{{ filter.name}}" hidden="hidden">
-                    <p>{{ helper[0].description }}</p>
-                </div>
-                {% else %}
-                 <legend class="label">{{ filter.name }}</legend>
-                {% endif %}
+<!--                 {% if filter.name == "Format" %}
+                    {% include resource-link.html label="Show info" href="#"%}
+                {% endif %} -->
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
-                    <label for="filter-{{ option.id }}"><span class='filterName'>{{ option.name }}</span> <span class="filterPreCounter"></span></label>
+                    <label for="filter-{{ option.id }}">{{ option.name }}</label>
                 </div>
                 {% endfor %}
             </fieldset>
             {% endfor %}
-            {% assign langAvailable = "" | split: "," %}
-            {% assign countriesAvailable = "" | split: "," %}
-            {% for course in site.data.submissions %}
-                {% assign langAvailable = langAvailable | concat: course[1].language %} 
-                {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
-            {% endfor %}
-            {% assign langAvailable = langAvailable | uniq %}
-            {% assign countriesAvailable = countriesAvailable | uniq %}
+            {% assign langAvailable = site.data.offers | map: "language" | uniq %}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
                     <select name="language" id="language">
-                        <option value="">--{{ strings.select_option_default }}--</option>
+                        <option value="">--Select an option--</option>
                         {% for language in langAvailable %}
                         <option value="{{ language }}">{{ site.data.lang[language].name }} ({{
                             site.data.lang[language].nativeName}})</option>
@@ -82,73 +78,50 @@ footer: >
                     </select>
                 </div>
             </fieldset>
-            {% include sort-countries.liquid data=countriesAvailable %}
+            {% assign countriesAvailable = site.data.offers | map: "country" | uniq %}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
                 <div class="filter-options field">
                     <select name="country" id="country">
-                        <option value="">--{{ strings.select_option_default }}--</option>
-                        {% for country in orderedCountries %}
-                        <option value="{{ country[2] }}">{{ country[0] }} ({{ country[1] }})</option>
+                        <option value="">--Select an option--</option>
+                        {% for country in countriesAvailable %}
+                        <option value="{{ country }}">{{ site.data.countries[country].name }} ({{
+                            site.data.countries[country].nativeName}})</option>
                         {% endfor %}
                     </select>
                 </div>
             </fieldset>
         </form>
-        {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
+        {% include_cached button.html label="Clear filters" class="clear-button"%}
         <div id="disclaimer">
-            <h2>{{ strings.disclaimer_title }}</h2>
-            {{ strings.disclaimer_text }}
+            <h2>Important Disclaimer</h2>
+            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of offers in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+            <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
+            <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
         </div>
     </div>
-    <div id="courses-list">
-        <div class="courses-list-header">
-            <div class="field">
-                <input type="search" id="search" placeholder="Search courses">
-            </div>
-            <div class="field" class="sort-by">
-                <h4><label for="select">{{ strings.sortby_title }}</label></h4>
-                <select id="select" class="field">
-                    {% for sort in site.data.sorting %}
-                        {% if sort.selected == "true" %}
-                            <option value="{{ sort.id }}" selected>{{ sort.name }}</option>
-                        {% else %}
-                            <option value="{{ sort.id }}">{{ sort.name }}</option>
-                        {% endif %}
-                    {% endfor %}
-                </select>
-            </div>     
-        </div>
-        <div id="status" tabindex="0">
-            <h4 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} {{ strings.courses }}</span></h4>
-        </div>  
-        <div class="box hidden-element results-box">
-            <div id="filter-courses-info" class="box-h">
-                <h4 id="default-results-title">Current filter criteria</h4>
-                <h4 id="no-results-title">Sorry, but no courses match the following criteria:</h4>
-                <div class="div-clear-filters">
-                    {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button" %}
-                </div>
-            </div>
-            <div class="details-criteria box-i"></div>
-        </div>
+    <div id="offers-list">
+        <span id="status">
+            <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+        </span>
+        <div class="field" class="sort-by">
+            <label for="select">Sort by</label>
+            <select id="select">
+                <option selected="selected">Alphabetically (A to Z)</option>
+                <option>Most recently updated</option>
+            </select>
+        </div>        
         {% include excol.html type="all" %}
-        <div class="courses-list">
-            {% for course in itemsSorted %}
-                {% include course.liquid %}
-            {% endfor %}            
-        </div>
-        <!--         
-        {% for course in itemsSorted %}
-            {% include course.liquid %}
-        {% endfor %}    
- -->    </div>
-    
-</div>
-<div class="button-submit-end">
-    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}  
+        {% include_cached button.html label="Clear filters" class="clear-button"%}
+        {% assign offers = site.data.offers | sort: 'name' %}
+        {% for offer in offers %}
+            {% include offer.liquid %}
+        {% endfor %}      
+        {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}  
+    </div>
 </div>
 
+
 <script>
-{% include js/courses.js %}
+{% include js/offers.js %}
 </script>
