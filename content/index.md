@@ -37,7 +37,7 @@ footer: >
 <div id="app">
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
-            <h2 tabindex="0" id="filters_title">{{ strings.filters_title }}</h2>
+            <h2 id="filters_title">{{ strings.filters_title }}</h2>
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
                 {% if filter.info %}
