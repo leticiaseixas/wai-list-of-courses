@@ -28,7 +28,7 @@ if (filterForm) {
         filterForm.querySelector('#filters_title').focus();
     });
     document.querySelector('#skip_link_results').addEventListener('click', e => {
-        filterForm.querySelector('#total-courses').focus();
+        filterForm.querySelector('#status').focus();
     });
 
     document.querySelectorAll('.button-clear-button').forEach(item => {
