@@ -106,8 +106,8 @@
 {% assign aSupport = aSupport | push: accessibilitySupport[1] %}
 {% endfor %}
 {% endif %}
-{% if course.accessibility_support_other %}
-{% assign aSupport = aSupport | push: course.other_accessibility_support %}
+{% if course.accessibility_support_other != "" %}
+{% assign aSupport = aSupport | push: course.accessibility_support_other %}
 {% assign hasASupport = true %}
 {% endif %}
 
