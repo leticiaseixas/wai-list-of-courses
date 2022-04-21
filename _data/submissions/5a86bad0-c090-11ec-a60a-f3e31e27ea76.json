@@ -8,7 +8,7 @@
     "non-digital-accessibility-sufficient-contrast",
     "non-digital-accessibility-description-of-visual-information"
   ],
-  "accessibility_support_other": "",
+  "accessibility_support_other": "Additional accessibility support may be requested",
   "audience": [
     "audience_content_author",
     "audience_designer",
