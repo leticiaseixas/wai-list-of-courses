@@ -20,7 +20,7 @@
 : {{ country | join: "; "}}
 
 {{ strings.type_resource }}
-: {{ strings[course.type_resource] }}{%if course.type_resource == "type_other" && course.type_resource_new != "" %} - {{course.type_resource_new}}{%endif%}
+: {{ strings[course.type_resource] }}{%if (course.type_resource == "type_other" && course.type_resource_new) != "" %} - {{course.type_resource_new}}{%endif%}
 
 {{ strings.audience }}
 : {% for cb in course.audience %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
