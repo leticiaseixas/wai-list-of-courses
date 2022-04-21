@@ -1,11 +1,19 @@
 {% for curricula in site.data.wai-curricula %}
-<div class="subitems">
-<p class="fieldset-subtitles">{{ curricula.name }}</p>
+{% include excol.html type="start" id="optional-id" %}
+{{ curricula.name }}
+<!-- {% capture info_label%}More information about the {{curricula.name}}{% endcapture %}
+{{ curricula.name }}{% include resource-link.html label=info_label href=curricula.link %} -->
+
+{% include excol.html type="middle" %}
+
 {% for modules in curricula.modules %}
 <div class="radio-field">
-    <input type="checkbox" id="{{ modules.id }}" name="wai_curricula[]" value="{{ modules.id }}"  group="wai_curricula">
-    <label for="{{ modules.id }}">{{ modules.name }}</label>
+    <input type="checkbox" id="offer-{{ modules.id }}" name="offer-{{ modules.id }}">
+    <label for="offer-{{ modules.id }}">{{ modules.name }}</label>
 </div>
+
 {% endfor %}
-</div>
+
+{% include excol.html type="end" %}
+
 {% endfor %}
