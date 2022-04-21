@@ -362,6 +362,8 @@ fieldset label:hover a:hover {
     background: var(--off-white);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     color: black;
+    outline-offset: 2px;
+    outline-color: white;
 }
 
 .button-clear-button::before {
