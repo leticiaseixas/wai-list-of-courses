@@ -23,6 +23,14 @@ const coursesList = document.getElementById('courses-list');
 
 if (filterForm) {
 
+
+    document.querySelector('#skip_link_filters').addEventListener('click', e => {
+        filterForm.querySelector('#filters_title').focus();
+    });
+    document.querySelector('#skip_link_results').addEventListener('click', e => {
+        filterForm.querySelector('#total-courses').focus();
+    });
+
     document.querySelectorAll('.button-clear-button').forEach(item => {
         item.hidden = true;
         item.addEventListener('click', e => { clearFilters() });
