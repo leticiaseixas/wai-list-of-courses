@@ -26,10 +26,25 @@ footer:
 {% include css/styles.css %}
 main > header { grid-column: 4 / span 4; }
 </style>
+
 {% assign strings = site.data.strings %}
 {% include sort-countries.liquid %} 
 
-{%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" args="repository:wai-course-list" -%}
+<script>
+  // TODO this may not be the best place for the handler
+function onSubmit(e) {
+  e.preventDefault();
+  getPreviewSubmission();
+};
+</script>
+
+{%- include list-submission-form.liquid type="start"
+                                   name="submission"
+                                   version="1"
+                                   success="/success.html"
+                                   failure="/failure.html"
+                                   repository="wai-course-list"
+                                   onsubmit="onSubmit" -%}
 
 
 
@@ -86,7 +101,7 @@ main > header { grid-column: 4 / span 4; }
       {% for country in orderedCountries %}
       <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
       {% endfor %}
-    </select>    
+    </select>
   </div>
   <button type="button" class="add_line button-small">{{strings.add_new_country_button}}</button>
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_country_button}}</button>
@@ -361,7 +376,7 @@ main > header { grid-column: 4 / span 4; }
   <button type="submit">{{strings.send_form_button}}</button>
 </div>
 
-{% include submission-form.liquid type="end"%}
+{% include list-submission-form.liquid type="end"%}
 
 <script>
 {% include js/courses.js %}

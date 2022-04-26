@@ -1,3 +1,6 @@
+I"Ÿ <div style="grid-column: 2 / span 6">
+
+<style> 
 .minimal-header-container {
     display: grid !important;
     grid-column-gap: 32px;
@@ -525,3 +528,17 @@ details .helperinfo {
 }
 
 
+
+main > header { grid-column: 2 / span 6; }
+</style>
+
+
+
+<div>
+Your information has been submitted for review, and you should receive a reply within a month.
+</div>
+
+
+<a href="../course-list">Back to List of Courses</a>
+</div>
+:ET

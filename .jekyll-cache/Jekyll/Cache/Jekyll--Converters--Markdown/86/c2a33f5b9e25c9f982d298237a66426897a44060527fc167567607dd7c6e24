@@ -1,0 +1,2467 @@
+I"tE<style> 
+.minimal-header-container {
+    display: grid !important;
+    grid-column-gap: 32px;
+}
+
+@media (min-width: 40em) {
+    main {
+        display: contents;
+    }
+}
+
+.header-sup {
+    grid-column: 1 / 8;
+    margin-bottom: 48px;
+}
+
+.button-submit-end {
+    grid-column: 2 / 8;
+    margin-top: 2em;
+}
+
+@media (min-width: 72em) {
+    .header-sup {
+        grid-column: 2 / 10;
+    }
+}
+
+main>header {
+    grid-column: 1 / 10;
+}
+
+@media (min-width: 72em) {
+    main>header {
+        grid-column: 2 / 9;
+    }
+}
+
+.box {
+    grid-column: 1 / 9;
+}
+
+.header-sup p:first-child {
+    margin-top: 0;
+    font-size: 125%;
+}
+
+.header-sup .button {
+    margin-bottom: 2em;
+}
+
+
+#app {
+    display: contents;
+}
+
+#left-col h2 {
+    margin: 20px 0 20px;
+}
+
+#left-col legend {
+    font-size: 100%;
+}
+
+.courses-filters {
+    padding-right: 2em;
+}
+
+@media (min-width: 60em) {
+    .courses-filters {
+        grid-column: 1 / 4;
+        border-right: 1px solid #ccc;
+    }
+}
+
+@media (min-width: 72em) {
+    .courses-filters {
+        grid-column: 2 / 4;
+    }
+}
+
+.courses-filters input {
+    margin-right: .5em;
+}
+
+#language,
+#country {
+    width: 100%;
+}
+
+.select_form {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.accessibility-support {
+    display: inline !important;
+}
+
+.length-container {
+    display: flex;
+}
+
+.length-value {
+    flex: 1;
+    margin-right: 2em;
+}
+
+.length-unit {
+    flex: 5;
+}
+
+.length-unit select {
+    padding: 8px;
+}
+
+.button-clear-button[hidden] {
+    display: none !important;
+}
+
+
+.filter-options {
+    margin: 0;
+}
+
+.filter-options input,
+label,
+select {
+    cursor: pointer;
+}
+
+#left-col .field label {
+    display: inline !important;
+}
+
+#courses-list {
+    padding-top: 2em;
+    margin-top: 2em;
+    border-top: 1px solid #ccc;
+}
+
+@media (min-width: 60em) {
+    #courses-list {
+        grid-column: 4 / span 7;
+        padding-top: 0;
+        margin-top: 0;
+        border-top: 0;
+    }
+}
+
+@media (min-width: 72em) {
+    #courses-list {
+        grid-column: 4 / span 6;
+    }
+}
+
+
+#courses-list dd {
+    margin: 0 0 1em 0;
+}
+
+details dt::after {
+    content: ":";
+}
+
+#courses-list dt {
+    float: left;
+    margin: 0 .5em 0 0;
+}
+
+#courses-list dd ul {
+    margin: 3em 3em 0 0;
+}
+
+.label_input {
+    font-size: 1rem;
+}
+
+fieldset {
+    margin-top: 2.5em !important;
+}
+
+fieldset>p {
+    margin-top: .25em !important
+}
+
+.fieldset-subtitles {
+    margin-top: 1.5em !important;
+    color: var(--wai-green);
+}
+
+#availability .label_input {
+    margin-top: 1em;
+}
+
+#courses-list details>div {
+    border-top: solid 1px var(--line-grey);
+    margin-left: -48px;
+    margin-right: -16px;
+    margin-bottom: -8px;
+    padding-left: 16px;
+}
+
+#disclaimer {
+    border: 1px solid var(--line-grey);
+    margin-top: 2em;
+}
+
+#disclaimer h2 {
+    background-color: gold;
+    margin: 0px !important;
+    padding: 10px;
+    font-size: 1.3em;
+    color: var(--off-black);
+}
+
+#disclaimer p {
+    padding: 10px;
+}
+
+.status:not([hidden]) {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
+
+/*
+.submit-a-course {
+  grid-column: 8 / 10;
+  align-self: start;
+  justify-self: end;
+  margin-bottom: 2em;
+}
+
+@media ( min-width: 72em) {
+  .submit-a-course {
+    grid-column: 7 / 9;
+  }
+}
+*/
+
+
+#helpimprove {
+    grid-column: 2 / 10;
+}
+
+@media (min-width: 60em) {
+    .default-grid.page-footer .inner {
+        grid-column: 2/10;
+    }
+}
+
+.page-footer .inner {
+    grid-area: content;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+/* quick fix to link contrast - to better discuss */
+
+fieldset label:hover a {
+    color: var(--off-white);
+}
+
+fieldset label:hover a:hover {
+    text-decoration: underline gold;
+}
+
+
+/* new line button */
+
+.button-group button:hover {
+    cursor: pointer;
+}
+
+.proto {
+    display: none;
+}
+
+.add_line {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.line .select_form {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    height: 2em !important;
+    background: white;
+}
+
+.field input[type="checkbox"]:focus {
+    outline: 2px solid #686868;
+    outline-offset: 2px;
+    transition: outline-offset 0.2s linear;
+}
+
+.courses-list-header {
+    display: grid;
+    grid-gap: 1em;
+    border-bottom: 1px solid var(--line-grey);
+    padding-bottom: 1em;
+}
+
+
+.courses-list-header .field {
+    grid-column: 1 / 7;
+    margin: 0;
+    align-self: center;
+}
+
+.courses-list-header .sort-by {
+    grid-column: 7 / 8;
+    align-self: center;
+}
+
+@media (max-width: 60em) {
+
+    .courses-list-header .field {
+        grid-column: 1 / 8;
+    }
+
+    .courses-list-header .sort-by {
+        grid-column: 1 / 8;
+    }
+}
+
+#status {
+    margin: 0;
+}
+
+#filter-courses-info {
+    background-color: var(--ocean);
+    color: var(--pure-white);
+    display: grid;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+#filter-courses-info button {
+    margin: 0;
+    padding: .3em;
+}
+
+.button-clear-button {
+    color: var(--off-black);
+    border: 2px solid var(--line-grey);
+}
+
+.button-clear-button:hover, .button-clear-button:focus {
+    background: var(--off-white);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    color: black;
+    outline-offset: 2px;
+    outline-color: white;
+}
+
+.button-clear-button::before {
+    margin: 0;
+    margin-right: .3em;
+    margin-top: .2em;
+    content: url(/content-images/wai-course-list/clear.svg) !important;
+}
+
+.button-clear-button::before {
+    margin: 0;
+    margin-right: .3em;
+    margin-top: .2em;
+    content: url(/content-images/wai-course-list/clear.svg) !important;
+}
+
+
+
+
+#filter-courses-info .div-clear-filters {
+    grid-column: 3/3;
+    text-align: right;
+}
+
+
+.hidden-element {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+
+.infobox h4 {
+    border: 1px solid var(--line-grey);
+    background-color: #f3f3f3;
+    padding: 1em;
+    font-size: .85em;
+}
+
+.infobox {
+    background-color: var(--pure-white);
+    padding: 1em;
+    font-size: .85em;
+}
+
+#status span {
+    color: var(--wai-green);
+    font-weight: bold;
+}
+
+.courses-list-header .sort-by label {
+    float: left;
+    margin: 0;
+    margin-right: 0.5em
+}
+
+
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--grey);
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--grey);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--grey);
+}
+
+
+
+
+
+
+details .helperinfo {
+    margin-right: 16px;
+}
+
+.helperinfo {
+    font-size: 1rem;
+    padding: 1px 15px;
+    background-color: #edf4fa;
+    border: solid 1px #2D6197;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.helperbutton {
+    margin-left: .5em;
+    border: 1px solid var(--line-grey) !important;
+    background: var(--pure-white);
+    border-radius: 5px;
+}
+
+
+.standalone-resource__prevnext {
+    grid-column: 2/10;
+}
+
+
+#preview-submission-overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    /*align-items: center;*/
+    justify-content: center;
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    overflow: scroll;
+
+}
+
+.overlay-content {
+    width: 50em;
+    height: min-content;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 5rem;
+    padding-bottom: 5em;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-top: 2rem;
+}
+
+.details-preview {
+    text-align: left;
+    margin-bottom: 2em;
+    padding: 0 3em 0 1em;
+}
+
+.overlay-content ul {
+    line-height: 3em;
+}
+
+.overlay-content .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+
+
+</style>
+
+<p><a href="#filters_title" class="button button--skip-link">Skip to filters</a>
+<a href="#status" class="button button--skip-link">Skip to results</a></p>
+<div class="header-sup" id="main">
+    <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add information about a course, training, or certification on web accessibility, please use the following button.</p>
+    <a class="button button-more" href="submit-a-resource"><span>Submit a course, training, or certification</span></a>
+    <p><em> Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
+    </em></p>
+</div>
+
+<div id="app">
+    <div id="left-col" class="courses-filters">
+        <form data-filter-form="" action="...">
+            <h2 id="filters_title">Filters</h2>
+            
+            <fieldset id="type_resource">
+                
+                 <legend class="label">Type of resource</legend>
+                
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-type_graduate" name="type_graduate" />
+                    <label for="filter-type_graduate"><span class="filterName">Graduate program</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-type_undergraduate" name="type_undergraduate" />
+                    <label for="filter-type_undergraduate"><span class="filterName">Undergraduate program</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-type_training" name="type_training" />
+                    <label for="filter-type_training"><span class="filterName">Training</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-type_certification" name="type_certification" />
+                    <label for="filter-type_certification"><span class="filterName">Professional certification</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-type_other" name="type_other" />
+                    <label for="filter-type_other"><span class="filterName">Other</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset id="audience">
+                
+                 <legend class="label">Audience</legend>
+                
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-audience_content_author" name="audience_content_author" />
+                    <label for="filter-audience_content_author"><span class="filterName">Content author</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-audience_designer" name="audience_designer" />
+                    <label for="filter-audience_designer"><span class="filterName">Designer</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-audience_developer" name="audience_developer" />
+                    <label for="filter-audience_developer"><span class="filterName">Developer</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-audience_manager" name="audience_manager" />
+                    <label for="filter-audience_manager"><span class="filterName">Manager</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-audience_tester" name="audience_tester" />
+                    <label for="filter-audience_tester"><span class="filterName">Tester</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-audience_other" name="audience_other" />
+                    <label for="filter-audience_other"><span class="filterName">Other</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset id="level">
+                
+                 <legend class="label">Level</legend>
+                
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-level_basic" name="level_basic" />
+                    <label for="filter-level_basic"><span class="filterName">Basic</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-level_intermediate" name="level_intermediate" />
+                    <label for="filter-level_intermediate"><span class="filterName">Intermediate</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-level_advanced" name="level_advanced" />
+                    <label for="filter-level_advanced"><span class="filterName">Advanced</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset id="format">
+                
+                <legend class="label">Format</legend>
+                <button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_aboutFormat" data-target="#info_aboutFormat" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+                
+                <div class="helperinfo" id="info_aboutFormat" hidden="hidden">
+                    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+                </div>
+                
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-format_face_to_face" name="format_face_to_face" />
+                    <label for="filter-format_face_to_face"><span class="filterName">Face-to-face</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-format_online" name="format_online" />
+                    <label for="filter-format_online"><span class="filterName">Online</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-format_hybrid" name="format_hybrid" />
+                    <label for="filter-format_hybrid"><span class="filterName">Hybrid</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-format_blended" name="format_blended" />
+                    <label for="filter-format_blended"><span class="filterName">Blended</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset id="learning">
+                
+                <legend class="label">Scheduling</legend>
+                <button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_aboutScheduling" data-target="#info_aboutScheduling" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+                
+                <div class="helperinfo" id="info_aboutScheduling" hidden="hidden">
+                    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+                </div>
+                
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-learning_scheduled" name="learning_scheduled" />
+                    <label for="filter-learning_scheduled"><span class="filterName">Scheduled</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-learning_unscheduled" name="learning_unscheduled" />
+                    <label for="filter-learning_unscheduled"><span class="filterName">Unscheduled</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset id="cost">
+                
+                 <legend class="label">Cost</legend>
+                
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-cost_free" name="cost_free" />
+                    <label for="filter-cost_free"><span class="filterName">Free of charge</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-cost_certificates_for_purchase" name="cost_certificates_for_purchase" />
+                    <label for="filter-cost_certificates_for_purchase"><span class="filterName">Free with certificates for purchase</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-cost_limited_time" name="cost_limited_time" />
+                    <label for="filter-cost_limited_time"><span class="filterName">Free for limited content or duration</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-cost_reduced_for_some" name="cost_reduced_for_some" />
+                    <label for="filter-cost_reduced_for_some"><span class="filterName">Free or reduced fee for some</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+                <div class="filter-options field">
+                    <input type="checkbox" id="filter-cost_paid" name="cost_paid" />
+                    <label for="filter-cost_paid"><span class="filterName">Paid</span> <span class="filterPreCounter"></span></label>
+                </div>
+                
+            </fieldset>
+            
+            
+            
+            
+            
+            
+            <fieldset id="language-filter">
+                <legend>Language</legend>
+                <div class="filter-options field">
+                    <select name="language" id="language">
+                        <option value="">--Select an option--</option>
+                        
+                        <option value="en">English (English)</option>
+                        
+                        <option value="es">Spanish (español)</option>
+                        
+                        <option value="fr">French (français)</option>
+                        
+                        <option value="pt">European Portuguese (Português Europeu)</option>
+                        
+                        <option value="hr">Croatian (hrvatski)</option>
+                        
+                    </select>
+                </div>
+            </fieldset>
+            
+
+
+
+            <fieldset id="contry-filter">
+                <legend>Country</legend>
+                <div class="filter-options field">
+                    <select name="country" id="country">
+                        <option value="">--Select an option--</option>
+                        
+                        <option value="hr">Croatia (Hrvatska)</option>
+                        
+                        <option value="fr">France (France)</option>
+                        
+                        <option value="gr">Greece (Ελλάδα)</option>
+                        
+                        <option value="pt">Portugal (Portugal)</option>
+                        
+                        <option value="es">Spain (España)</option>
+                        
+                        <option value="gb">United Kingdom (United Kingdom)</option>
+                        
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+        <button class="button button-secondary button-clear-button" type="submit"><span>Clear filters</span></button>
+        <div id="disclaimer">
+            <h2>Important Disclaimer</h2>
+            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of resources in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p> <p>Courses descriptions, search criteria, and other information in this database are provider-submitted. W3C does not verify the accuracy of the information.</p> <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
+        </div>
+    </div>
+    <div id="courses-list">
+        <div class="courses-list-header">
+            <div class="field">
+                <input type="search" id="search" placeholder="Search courses" />
+            </div>
+            <div class="sort-by">
+                <label for="select">Sort by</label>
+                <select id="select" class="field">
+                    
+                        
+                            <option value="recentlyupdated" selected="">Most recently updated</option>
+                        
+                    
+                        
+                            <option value="alphabeticallyaz">Alphabetically (A to Z)</option>
+                        
+                    
+                        
+                            <option value="alphabeticallyza">Alphabetically (Z to A)</option>
+                        
+                    
+                </select>
+            </div>     
+        </div>
+        <div id="status" tabindex="0">
+            <h4 id="total-courses">Showing <span>5 courses</span></h4>
+        </div>  
+        <div class="box hidden-element results-box">
+            <div id="filter-courses-info" class="box-h">
+                <h4 id="default-results-title">Current filter criteria</h4>
+                <h4 id="no-results-title">Sorry, but no courses match the following criteria:</h4>
+                <div class="div-clear-filters">
+                    <button class="button button-secondary button-clear-button" type="submit"><span>Clear filters</span></button>
+                </div>
+            </div>
+            <div class="details-criteria box-i"></div>
+        </div>
+        <div class="excol-all"></div>
+        <div class="courses-list">
+            
+                
+
+
+
+<aside class="box" id="Mobile Accessible Design"><header class="box-h "> <a href="https://course.com">Mobile Accessible Design<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by XProvider</header><div class="box-i">
+This training provides an overview of the specifications for developing accessible web content for mobile applications. You will also learn how to test your applications, creating accessible experiences on mobile devices for different users. This course is intended for participants who have experience in designing, developing, and testing mobile applications.
+<details id="details_c334730-bf39-11ec-af6f-8d0d15d36157"><summary>
+              <h4 id="details">Details</h4>
+            </summary>
+  <div>
+
+              <dl>
+                <dt>Country</dt>
+                <dd>Spain (España)</dd>
+                <dt>Type of resource</dt>
+                <dd>Training</dd>
+                <dt>Audience</dt>
+                <dd>Designer;   Developer;   Tester</dd>
+                <dt>Level</dt>
+                <dd>Advanced</dd>
+                <dt>Prerequisites</dt>
+                <dd>
+                  <p>Not provided</p>
+                </dd>
+                <dt>Topics</dt>
+                <dd>Accessible mobile design and development; Mobile web accessibility guidelines and standards; Testing with screen reader users on mobile devices</dd>
+                <dt>WAI Curricula on Web Accessibility</dt>
+                <dd>
+                  <p>Not provided
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curriculac334730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_wai_curriculac334730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+
+              <div class="helperinfo" id="info_about_wai_curriculac334730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+              <dl>
+                <dt>Language</dt>
+                <dd>Spanish (español)</dd>
+                <dt>Format</dt>
+                <dd>
+                  <p>Hybrid - teaching sessions are provided simultaneously on-site and online
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_formatc334730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_formatc334730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_formatc334730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Scheduling</dt>
+                <dd>
+                  <p>Scheduled - participants are required to attend at a specific time;   Unscheduled - participants can attend at their own pace 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_schedulingc334730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_schedulingc334730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_schedulingc334730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Platform</dt>
+                <dd>
+                  <p>Zoom and Moodle</p>
+                </dd>
+                <dt>Accessibility support</dt>
+                <dd>
+                  <ul>
+                    <li>Material provided ahead of time, if requested</li>
+                    <li>Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings</li>
+                    <li><a href="https://www.w3.org/WAI/media/av/captions/">Captions</a> and/or <a href="https://www.w3.org/WAI/media/av/transcripts/">transcripts</a> for audio</li>
+                    <li>Text and important visuals can be resized without loss of content or functionality - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text">Understanding Resize text guidance</a></li>
+                    <li>Sufficient contrast between colors (“luminance contrast”) - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Understanding contrast guidance</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources">Contrast evaluation tools</a></li>
+                    <li>Reduced use of motion or animations - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html">Understanding Animation from Interactions guidance</a></li>
+                    <li><a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - integrated description, audio description, or text description</li>
+                    <li>All content meets at least <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> Level AA</li>
+                  </ul>
+                </dd>
+                <dt>Length</dt>
+                <dd>
+                  <p>2 days</p>
+                </dd>
+                <dt>Cost</dt>
+                <dd>Paid</dd>
+                <dt>Availability</dt>
+                <dd>From 11 December 2021 to 30 June 2023.</dd>
+                <dt>Website</dt>
+                <dd><a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></dd>
+                <dt>Reviews page</dt>
+                <dd>
+                  <p><a href="https://course.com/reviews" rel="external">https://course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></p>
+                </dd>
+              </dl>
+
+              <p>This information was last updated on 7 March 2022.</p>
+
+              <p>The content of this resource was last updated on 9 September 2021.</p>
+
+            </div>
+</details>
+</div></aside>
+            
+                
+
+
+
+<aside class="box" id="Document accessibility"><header class="box-h "> <a href="https://course.com">Document accessibility<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by XProvider</header><div class="box-i">
+In this course, you will become familiar with the accessibility of different types of content. This course covers all the basics you need to ensure all your downloadable documents are accessible through this 3 hours training. You will learn how to create, remediate, and test for accessible documents.
+<details id="details_c2f34730-bf39-11ec-af6f-8d0d15d36157"><summary>
+              <h4 id="details-1">Details</h4>
+            </summary>
+  <div>
+
+              <dl>
+                <dt>Country</dt>
+                <dd>Croatia (Hrvatska)</dd>
+                <dt>Type of resource</dt>
+                <dd>Training</dd>
+                <dt>Audience</dt>
+                <dd>Content author;   Designer;   Developer;   Manager;   Tester;   Other</dd>
+                <dt>Level</dt>
+                <dd>Basic</dd>
+                <dt>Prerequisites</dt>
+                <dd>
+                  <p>Not provided</p>
+                </dd>
+                <dt>Topics</dt>
+                <dd>Creating and testing accessible documents; Accessible PDF documents; Accessible Office documents; Accessible ePUB documents</dd>
+                <dt>WAI Curricula on Web Accessibility</dt>
+                <dd>
+                  <p>Not provided
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curriculac2f34730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_wai_curriculac2f34730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+
+              <div class="helperinfo" id="info_about_wai_curriculac2f34730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+              <dl>
+                <dt>Language</dt>
+                <dd>English (English)
+; 
+Croatian (hrvatski)</dd>
+                <dt>Format</dt>
+                <dd>
+                  <p>Hybrid - teaching sessions are provided simultaneously on-site and online
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_formatc2f34730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_formatc2f34730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_formatc2f34730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Scheduling</dt>
+                <dd>
+                  <p>Scheduled - participants are required to attend at a specific time;   Unscheduled - participants can attend at their own pace 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_schedulingc2f34730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_schedulingc2f34730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_schedulingc2f34730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Platform</dt>
+                <dd>
+                  <p>Zoom and Moodle</p>
+                </dd>
+                <dt>Accessibility support</dt>
+                <dd>
+                  <ul>
+                    <li>Material provided ahead of time, if requested</li>
+                    <li>Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings</li>
+                    <li><a href="https://www.w3.org/WAI/media/av/captions/">Captions</a> and/or <a href="https://www.w3.org/WAI/media/av/transcripts/">transcripts</a> for audio</li>
+                    <li>Text and important visuals can be resized without loss of content or functionality - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text">Understanding Resize text guidance</a></li>
+                    <li>Sufficient contrast between colors (“luminance contrast”) - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Understanding contrast guidance</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources">Contrast evaluation tools</a></li>
+                    <li>Reduced use of motion or animations - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html">Understanding Animation from Interactions guidance</a></li>
+                    <li><a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - integrated description, audio description, or text description</li>
+                    <li>All content meets at least <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> Level AA</li>
+                  </ul>
+                </dd>
+                <dt>Length</dt>
+                <dd>
+                  <p>3 hours</p>
+                </dd>
+                <dt>Cost</dt>
+                <dd>Free of charge</dd>
+                <dt>Availability</dt>
+                <dd>From 1 September 2022 to 30 June 2023.</dd>
+                <dt>Website</dt>
+                <dd><a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></dd>
+                <dt>Reviews page</dt>
+                <dd>
+                  <p><a href="https://course.com/reviews" rel="external">https://course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></p>
+                </dd>
+              </dl>
+
+              <p>This information was last updated on 18 March 2022.</p>
+
+              <p>The content of this resource was last updated on 1 April 2022.</p>
+
+            </div>
+</details>
+</div></aside>
+            
+                
+
+
+
+<aside class="box" id="Introduction to Web Accessibility"><header class="box-h "> <a href="https://course.com">Introduction to Web Accessibility<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by XYV Courses</header><div class="box-i">
+This course provides an overview of important concepts of Web accessibility. The course covers how each team member shoud understand the different roles and responsabilities when it comes to integrating accessibility in the project development.
+<details id="details_04599c60-c024-11ec-b369-e53d5c11a288"><summary>
+              <h4 id="details-2">Details</h4>
+            </summary>
+  <div>
+
+              <dl>
+                <dt>Country</dt>
+                <dd>Greece (Ελλάδα)</dd>
+                <dt>Type of resource</dt>
+                <dd>Training</dd>
+                <dt>Audience</dt>
+                <dd>Content author;   Designer;   Tester;   Developer;   Manager</dd>
+                <dt>Level</dt>
+                <dd>Basic</dd>
+                <dt>Prerequisites</dt>
+                <dd>
+                  <p>HTML; CSS</p>
+                </dd>
+                <dt>Topics</dt>
+                <dd>Inclusive design; Accessibility standards and guidelines; Integrating accessibility in the project developement</dd>
+                <dt>WAI Curricula on Web Accessibility</dt>
+                <dd>
+                  <p><button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula04599c60-c024-11ec-b369-e53d5c11a288" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+
+              <div class="helperinfo" id="info_about_curricula04599c60-c024-11ec-b369-e53d5c11a288" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+              <ul>
+                <li>Foundations Modules: <a href="https://www.w3.org/WAI/curricula/foundation-modules/what-is-web-accessibility/" rel="external">Module 1: What is Web Accessibility</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/people-and-digital-technology/" rel="external">Module 2: People and Digital Technology</a></li>
+                <li>Developer Modules: <a href="https://www.w3.org/WAI/curricula/developer-modules/page-structure/" rel="external">Module 1: Page Structure</a></li>
+                <li>Designer Modules:</li>
+              </ul>
+
+              <dl>
+                <dt>Language</dt>
+                <dd>English (English)
+; 
+Spanish (español)</dd>
+                <dt>Format</dt>
+                <dd>
+                  <p>Face-to-face - all teaching sessions are provided on-site
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format04599c60-c024-11ec-b369-e53d5c11a288" data-target="#info_about_format04599c60-c024-11ec-b369-e53d5c11a288" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_format04599c60-c024-11ec-b369-e53d5c11a288" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Scheduling</dt>
+                <dd>
+                  <p>Scheduled - participants are required to attend at a specific time 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling04599c60-c024-11ec-b369-e53d5c11a288" data-target="#info_about_scheduling04599c60-c024-11ec-b369-e53d5c11a288" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_scheduling04599c60-c024-11ec-b369-e53d5c11a288" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Platform</dt>
+                <dd>
+                  <p>Zoom</p>
+                </dd>
+                <dt>Accessibility support</dt>
+                <dd>
+                  <ul>
+                    <li>Material provided ahead of time, if requested</li>
+                    <li>Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings</li>
+                    <li><a href="https://www.w3.org/WAI/media/av/captions/">Captions</a> and/or <a href="https://www.w3.org/WAI/media/av/transcripts/">transcripts</a> for audio</li>
+                  </ul>
+                </dd>
+                <dt>Length</dt>
+                <dd>
+                  <p>3 weeks</p>
+                </dd>
+                <dt>Cost</dt>
+                <dd>Free of charge</dd>
+                <dt>Availability</dt>
+                <dd>From 7 April 2022 to 10 April 2022.</dd>
+                <dt>Website</dt>
+                <dd><a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></dd>
+                <dt>Reviews page</dt>
+                <dd>
+                  <p><a href="https://course.com/reviews" rel="external">https://course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></p>
+                </dd>
+              </dl>
+
+              <p>This information was last updated on 19 April 2022.</p>
+
+              <p>The content of this resource was last updated on 13 January 2022.</p>
+
+            </div>
+</details>
+</div></aside>
+            
+                
+
+
+
+<aside class="box" id="Accessibility Testing"><header class="box-h "> <a href="https://course.com">Accessibility Testing<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by Accessible University</header><div class="box-i">
+This training provide the baselines of accessibility testing. You will learn how to conduct accessibility evaluations, from using automatic tools to including users with disabilities. This training also provides insights on how to conduct large escale accessibility evaluations and how to better understand accessibility compliance with current standards such as WCAG.
+<details id="details_4a86bad0-c090-11ec-a60a-f3e31e27ea76"><summary>
+              <h4 id="details-3">Details</h4>
+            </summary>
+  <div>
+
+              <dl>
+                <dt>Country</dt>
+                <dd>United Kingdom (United Kingdom)</dd>
+                <dt>Type of resource</dt>
+                <dd>Training</dd>
+                <dt>Audience</dt>
+                <dd>Tester;   Developer;   Manager</dd>
+                <dt>Level</dt>
+                <dd>Intermediate</dd>
+                <dt>Prerequisites</dt>
+                <dd>
+                  <p>Accessibility basic</p>
+                </dd>
+                <dt>Topics</dt>
+                <dd>Inclusive design; Accessibility checks; Tools for accessibility evaluation; Accessibility standards and guidelines</dd>
+                <dt>WAI Curricula on Web Accessibility</dt>
+                <dd>
+                  <p><button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+
+              <div class="helperinfo" id="info_about_curricula4a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+              <ul>
+                <li>Foundations Modules: <a href="https://www.w3.org/WAI/curricula/foundation-modules/what-is-web-accessibility/" rel="external">Module 1: What is Web Accessibility</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/people-and-digital-technology/" rel="external">Module 2: People and Digital Technology</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/business-case-and-benefits/" rel="external">Module 3: Business Case and Benefits</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/principles-standards-and-checks/" rel="external">Module 4: Principles, Standards, and Checks</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/getting-started-with-accessibility/" rel="external">Module 5: Getting Started with Accessibility</a></li>
+                <li>Developer Modules:</li>
+                <li>Designer Modules:</li>
+              </ul>
+
+              <dl>
+                <dt>Language</dt>
+                <dd>English (English)</dd>
+                <dt>Format</dt>
+                <dd>
+                  <p>Face-to-face - all teaching sessions are provided on-site
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_format4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_format4a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Scheduling</dt>
+                <dd>
+                  <p>Scheduled - participants are required to attend at a specific time 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_scheduling4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_scheduling4a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Platform</dt>
+                <dd>
+                  <p>Not provided</p>
+                </dd>
+                <dt>Accessibility support</dt>
+                <dd>
+                  <ul>
+                    <li>Material provided ahead of time, if requested</li>
+                    <li>Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings</li>
+                    <li>Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible</li>
+                    <li><a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald">Assistive listening devices</a> (ALD), <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps">interpreters</a>, and <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions">captioners</a>, provided as needed</li>
+                    <li>Text and important visuals big enough to be read even from the back of the room</li>
+                    <li>Sufficient contrast between colors (“luminance contrast”) - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Understanding contrast guidance</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources">contrast evaluation tools</a></li>
+                    <li><a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - audio description and text description</li>
+                  </ul>
+                </dd>
+                <dt>Length</dt>
+                <dd>
+                  <p>2 weeks</p>
+                </dd>
+                <dt>Cost</dt>
+                <dd>Paid</dd>
+                <dt>Availability</dt>
+                <dd>From 1 October 2022 to 30 November 2022.</dd>
+                <dt>Website</dt>
+                <dd><a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></dd>
+                <dt>Reviews page</dt>
+                <dd>
+                  <p><a href="https://www.course.com/reviews" rel="external">https://www.course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></p>
+                </dd>
+              </dl>
+
+              <p>This information was last updated on 20 April 2022.</p>
+
+              <p>The content of this resource was last updated on 1 April 2022.</p>
+
+            </div>
+</details>
+</div></aside>
+            
+                
+
+
+
+<aside class="box" id="EN 301 549 Fundamentals"><header class="box-h "> <a href="https://course.com">EN 301 549 Fundamentals<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by Accessible University</header><div class="box-i">
+EN 301 549 is a European standard for digital accessibility and it applies to all digital technology, including websites, software, electronic devices, and mobile apps. This course aims to provide a comprehensive overview of this standard. 
+<details id="details_5a86bad0-c090-11ec-a60a-f3e31e27ea76"><summary>
+              <h4 id="details-4">Details</h4>
+            </summary>
+  <div>
+
+              <dl>
+                <dt>Country</dt>
+                <dd>France (France)
+; 
+Portugal (Portugal)</dd>
+                <dt>Type of resource</dt>
+                <dd>Other - Workshop</dd>
+                <dt>Audience</dt>
+                <dd>Content author;   Designer;   Tester;   Developer;   Manager</dd>
+                <dt>Level</dt>
+                <dd>Advanced</dd>
+                <dt>Prerequisites</dt>
+                <dd>
+                  <p>Web accessibility basics</p>
+                </dd>
+                <dt>Topics</dt>
+                <dd>Legal context; Accessibility standards</dd>
+                <dt>WAI Curricula on Web Accessibility</dt>
+                <dd>
+                  <p>Not provided
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curricula5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_wai_curricula5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+
+              <div class="helperinfo" id="info_about_wai_curricula5a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+              <dl>
+                <dt>Language</dt>
+                <dd>French (français)
+; 
+European Portuguese (Português Europeu)</dd>
+                <dt>Format</dt>
+                <dd>
+                  <p>Hybrid - teaching sessions are provided simultaneously on-site and online
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_format5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_format5a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Scheduling</dt>
+                <dd>
+                  <p>Scheduled - participants are required to attend at a specific time 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_scheduling5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button></p>
+                </dd>
+              </dl>
+              <div class="helperinfo" id="info_about_scheduling5a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+              <dl>
+                <dt>Platform</dt>
+                <dd>
+                  <p>Zoom</p>
+                </dd>
+                <dt>Accessibility support</dt>
+                <dd>
+                  <ul>
+                    <li>Material provided ahead of time, if requested</li>
+                    <li>Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings</li>
+                    <li>Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible</li>
+                    <li><a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald">Assistive listening devices</a> (ALD), <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps">interpreters</a>, and <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions">captioners</a>, provided as needed</li>
+                    <li>Text and important visuals big enough to be read even from the back of the room</li>
+                    <li>Sufficient contrast between colors (“luminance contrast”) - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Understanding contrast guidance</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources">contrast evaluation tools</a></li>
+                    <li><a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - audio description and text description</li>
+                    <li>Additional accessibility support may be requested</li>
+                  </ul>
+                </dd>
+                <dt>Length</dt>
+                <dd>
+                  <p>2 weeks</p>
+                </dd>
+                <dt>Cost</dt>
+                <dd>Free with certificates for purchase</dd>
+                <dt>Availability</dt>
+                <dd>From 1 October 2022 to 30 November 2022.</dd>
+                <dt>Website</dt>
+                <dd><a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></dd>
+                <dt>Reviews page</dt>
+                <dd>
+                  <p><a href="https://www.course.com/reviews" rel="external">https://www.course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a></p>
+                </dd>
+              </dl>
+
+              <p>This information was last updated on 20 April 2022.</p>
+
+              <p>The content of this resource was last updated on 1 February 2022.</p>
+
+            </div>
+</details>
+</div></aside>
+                        
+        </div>
+        <!--         
+        
+            
+
+
+
+<aside class="box" id="Mobile Accessible Design"><header class="box-h "> <a href="https://course.com">Mobile Accessible Design<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by XProvider</header><div class="box-i">
+This training provides an overview of the specifications for developing accessible web content for mobile applications. You will also learn how to test your applications, creating accessible experiences on mobile devices for different users. This course is intended for participants who have experience in designing, developing, and testing mobile applications.
+<details id="details_c334730-bf39-11ec-af6f-8d0d15d36157" ><summary markdown="block">
+#### Details
+</summary>
+  <div markdown="block">
+
+
+
+
+Country
+: 
+Spain (España)
+
+
+Type of resource
+: Training
+
+Audience
+:  Designer;   Developer;   Tester 
+
+
+Level
+: Advanced
+
+Prerequisites
+
+: Not provided
+
+
+Topics
+: Accessible mobile design and development; Mobile web accessibility guidelines and standards; Testing with screen reader users on mobile devices
+
+
+WAI Curricula on Web Accessibility
+
+: Not provided
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curriculac334730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_wai_curriculac334730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+
+<div class="helperinfo" id="info_about_wai_curriculac334730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+
+
+
+
+Language
+: 
+Spanish (español)
+
+
+
+
+Format
+
+: Hybrid - teaching sessions are provided simultaneously on-site and online
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_formatc334730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_formatc334730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_formatc334730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+
+Scheduling
+
+:  Scheduled - participants are required to attend at a specific time;   Unscheduled - participants can attend at their own pace 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_schedulingc334730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_schedulingc334730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_schedulingc334730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+Platform
+
+: Zoom and Moodle
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accessibility support
+: 
+* Material provided ahead of time, if requested
+* Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings
+* <a href="https://www.w3.org/WAI/media/av/captions/">Captions</a> and/or <a href="https://www.w3.org/WAI/media/av/transcripts/">transcripts</a> for audio
+* Text and important visuals can be resized without loss of content or functionality - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text">Understanding Resize text guidance</a>
+* Sufficient contrast between colors (“luminance contrast”) - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Understanding contrast guidance</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources">Contrast evaluation tools</a>
+* Reduced use of motion or animations - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html">Understanding Animation from Interactions guidance</a>
+* <a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - integrated description, audio description, or text description
+* All content meets at least <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> Level AA
+
+
+
+Length
+
+: 2 days
+
+
+Cost
+: Paid
+
+Availability
+: From 11 December 2021 to 30 June 2023.
+
+Website
+: <a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+Reviews page
+
+: <a href="https://course.com/reviews" rel="external">https://course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+
+This information was last updated on 7 March 2022.
+
+The content of this resource was last updated on 9 September 2021.
+
+</div>
+</details>
+</div></aside>
+        
+            
+
+
+
+<aside class="box" id="Document accessibility"><header class="box-h "> <a href="https://course.com">Document accessibility<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by XProvider</header><div class="box-i">
+In this course, you will become familiar with the accessibility of different types of content. This course covers all the basics you need to ensure all your downloadable documents are accessible through this 3 hours training. You will learn how to create, remediate, and test for accessible documents.
+<details id="details_c2f34730-bf39-11ec-af6f-8d0d15d36157" ><summary markdown="block">
+#### Details
+</summary>
+  <div markdown="block">
+
+
+
+
+Country
+: 
+Croatia (Hrvatska)
+
+
+Type of resource
+: Training
+
+Audience
+:  Content author;   Designer;   Developer;   Manager;   Tester;   Other 
+
+
+Level
+: Basic
+
+Prerequisites
+
+: Not provided
+
+
+Topics
+: Creating and testing accessible documents; Accessible PDF documents; Accessible Office documents; Accessible ePUB documents
+
+
+WAI Curricula on Web Accessibility
+
+: Not provided
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curriculac2f34730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_wai_curriculac2f34730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+
+<div class="helperinfo" id="info_about_wai_curriculac2f34730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+
+
+
+
+Language
+: 
+English (English)
+; 
+Croatian (hrvatski)
+
+
+
+
+Format
+
+: Hybrid - teaching sessions are provided simultaneously on-site and online
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_formatc2f34730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_formatc2f34730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_formatc2f34730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+
+Scheduling
+
+:  Scheduled - participants are required to attend at a specific time;   Unscheduled - participants can attend at their own pace 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_schedulingc2f34730-bf39-11ec-af6f-8d0d15d36157" data-target="#info_about_schedulingc2f34730-bf39-11ec-af6f-8d0d15d36157" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_schedulingc2f34730-bf39-11ec-af6f-8d0d15d36157" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+Platform
+
+: Zoom and Moodle
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accessibility support
+: 
+* Material provided ahead of time, if requested
+* Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings
+* <a href="https://www.w3.org/WAI/media/av/captions/">Captions</a> and/or <a href="https://www.w3.org/WAI/media/av/transcripts/">transcripts</a> for audio
+* Text and important visuals can be resized without loss of content or functionality - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text">Understanding Resize text guidance</a>
+* Sufficient contrast between colors (“luminance contrast”) - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Understanding contrast guidance</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources">Contrast evaluation tools</a>
+* Reduced use of motion or animations - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html">Understanding Animation from Interactions guidance</a>
+* <a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - integrated description, audio description, or text description
+* All content meets at least <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> Level AA
+
+
+
+Length
+
+: 3 hours
+
+
+Cost
+: Free of charge
+
+Availability
+: From 1 September 2022 to 30 June 2023.
+
+Website
+: <a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+Reviews page
+
+: <a href="https://course.com/reviews" rel="external">https://course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+
+This information was last updated on 18 March 2022.
+
+The content of this resource was last updated on 1 April 2022.
+
+</div>
+</details>
+</div></aside>
+        
+            
+
+
+
+<aside class="box" id="Introduction to Web Accessibility"><header class="box-h "> <a href="https://course.com">Introduction to Web Accessibility<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by XYV Courses</header><div class="box-i">
+This course provides an overview of important concepts of Web accessibility. The course covers how each team member shoud understand the different roles and responsabilities when it comes to integrating accessibility in the project development.
+<details id="details_04599c60-c024-11ec-b369-e53d5c11a288" ><summary markdown="block">
+#### Details
+</summary>
+  <div markdown="block">
+
+
+
+
+Country
+: 
+Greece (Ελλάδα)
+
+
+Type of resource
+: Training
+
+Audience
+:  Content author;   Designer;   Tester;   Developer;   Manager 
+
+
+Level
+: Basic
+
+Prerequisites
+
+: HTML; CSS
+
+
+Topics
+: Inclusive design; Accessibility standards and guidelines; Integrating accessibility in the project developement
+
+
+WAI Curricula on Web Accessibility
+
+: 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula04599c60-c024-11ec-b369-e53d5c11a288" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+
+<div class="helperinfo" id="info_about_curricula04599c60-c024-11ec-b369-e53d5c11a288" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+* Foundations Modules: <a href="https://www.w3.org/WAI/curricula/foundation-modules/what-is-web-accessibility/" rel="external">Module 1: What is Web Accessibility</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/people-and-digital-technology/" rel="external">Module 2: People and Digital Technology</a>
+* Developer Modules: <a href="https://www.w3.org/WAI/curricula/developer-modules/page-structure/" rel="external">Module 1: Page Structure</a>
+* Designer Modules: 
+
+
+
+
+
+Language
+: 
+English (English)
+; 
+Spanish (español)
+
+
+
+
+Format
+
+: Face-to-face - all teaching sessions are provided on-site
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format04599c60-c024-11ec-b369-e53d5c11a288" data-target="#info_about_format04599c60-c024-11ec-b369-e53d5c11a288" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_format04599c60-c024-11ec-b369-e53d5c11a288" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+
+Scheduling
+
+:  Scheduled - participants are required to attend at a specific time 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling04599c60-c024-11ec-b369-e53d5c11a288" data-target="#info_about_scheduling04599c60-c024-11ec-b369-e53d5c11a288" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_scheduling04599c60-c024-11ec-b369-e53d5c11a288" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+Platform
+
+: Zoom
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accessibility support
+: 
+* Material provided ahead of time, if requested
+* Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings
+* <a href="https://www.w3.org/WAI/media/av/captions/">Captions</a> and/or <a href="https://www.w3.org/WAI/media/av/transcripts/">transcripts</a> for audio
+
+
+
+Length
+
+: 3 weeks
+
+
+Cost
+: Free of charge
+
+Availability
+: From 7 April 2022 to 10 April 2022.
+
+Website
+: <a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+Reviews page
+
+: <a href="https://course.com/reviews" rel="external">https://course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+
+This information was last updated on 19 April 2022.
+
+The content of this resource was last updated on 13 January 2022.
+
+</div>
+</details>
+</div></aside>
+        
+            
+
+
+
+<aside class="box" id="Accessibility Testing"><header class="box-h "> <a href="https://course.com">Accessibility Testing<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by Accessible University</header><div class="box-i">
+This training provide the baselines of accessibility testing. You will learn how to conduct accessibility evaluations, from using automatic tools to including users with disabilities. This training also provides insights on how to conduct large escale accessibility evaluations and how to better understand accessibility compliance with current standards such as WCAG.
+<details id="details_4a86bad0-c090-11ec-a60a-f3e31e27ea76" ><summary markdown="block">
+#### Details
+</summary>
+  <div markdown="block">
+
+
+
+
+Country
+: 
+United Kingdom (United Kingdom)
+
+
+Type of resource
+: Training
+
+Audience
+:  Tester;   Developer;   Manager 
+
+
+Level
+: Intermediate
+
+Prerequisites
+
+: Accessibility basic
+
+
+Topics
+: Inclusive design; Accessibility checks; Tools for accessibility evaluation; Accessibility standards and guidelines
+
+
+WAI Curricula on Web Accessibility
+
+: 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+
+<div class="helperinfo" id="info_about_curricula4a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+* Foundations Modules: <a href="https://www.w3.org/WAI/curricula/foundation-modules/what-is-web-accessibility/" rel="external">Module 1: What is Web Accessibility</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/people-and-digital-technology/" rel="external">Module 2: People and Digital Technology</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/business-case-and-benefits/" rel="external">Module 3: Business Case and Benefits</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/principles-standards-and-checks/" rel="external">Module 4: Principles, Standards, and Checks</a>; <a href="https://www.w3.org/WAI/curricula/foundation-modules/getting-started-with-accessibility/" rel="external">Module 5: Getting Started with Accessibility</a>
+* Developer Modules: 
+* Designer Modules: 
+
+
+
+
+
+Language
+: 
+English (English)
+
+
+
+
+Format
+
+: Face-to-face - all teaching sessions are provided on-site
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_format4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_format4a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+
+Scheduling
+
+:  Scheduled - participants are required to attend at a specific time 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_scheduling4a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_scheduling4a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+Platform
+
+: Not provided
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accessibility support
+: 
+* Material provided ahead of time, if requested
+* Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings
+* Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible
+* <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald">Assistive listening devices</a> (ALD), <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps">interpreters</a>, and <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions">captioners</a>, provided as needed
+* Text and important visuals big enough to be read even from the back of the room
+* Sufficient contrast between colors (“luminance contrast”) - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Understanding contrast guidance</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources">contrast evaluation tools</a>
+* <a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - audio description and text description
+
+
+
+Length
+
+: 2 weeks
+
+
+Cost
+: Paid
+
+Availability
+: From 1 October 2022 to 30 November 2022.
+
+Website
+: <a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+Reviews page
+
+: <a href="https://www.course.com/reviews" rel="external">https://www.course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+
+This information was last updated on 20 April 2022.
+
+The content of this resource was last updated on 1 April 2022.
+
+</div>
+</details>
+</div></aside>
+        
+            
+
+
+
+<aside class="box" id="EN 301 549 Fundamentals"><header class="box-h "> <a href="https://course.com">EN 301 549 Fundamentals<svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a> by Accessible University</header><div class="box-i">
+EN 301 549 is a European standard for digital accessibility and it applies to all digital technology, including websites, software, electronic devices, and mobile apps. This course aims to provide a comprehensive overview of this standard. 
+<details id="details_5a86bad0-c090-11ec-a60a-f3e31e27ea76" ><summary markdown="block">
+#### Details
+</summary>
+  <div markdown="block">
+
+
+
+
+Country
+: 
+France (France)
+; 
+Portugal (Portugal)
+
+
+Type of resource
+: Other - Workshop
+
+Audience
+:  Content author;   Designer;   Tester;   Developer;   Manager 
+
+
+Level
+: Advanced
+
+Prerequisites
+
+: Web accessibility basics
+
+
+Topics
+: Legal context; Accessibility standards
+
+
+WAI Curricula on Web Accessibility
+
+: Not provided
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curricula5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_wai_curricula5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+
+<div class="helperinfo" id="info_about_wai_curricula5a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules.</a></p>
+</div>
+
+
+
+
+
+Language
+: 
+French (français)
+; 
+European Portuguese (Português Europeu)
+
+
+
+
+Format
+
+: Hybrid - teaching sessions are provided simultaneously on-site and online
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_format5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_format5a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul></p>
+</div>
+
+
+Scheduling
+
+:  Scheduled - participants are required to attend at a specific time 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-target="#info_about_scheduling5a86bad0-c090-11ec-a60a-f3e31e27ea76" data-showtext="Show info" data-hidetext="Hide info">Show info</button>
+<div class="helperinfo" id="info_about_scheduling5a86bad0-c090-11ec-a60a-f3e31e27ea76" hidden="hidden">
+    <p>Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul></p>
+</div>
+
+Platform
+
+: Zoom
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accessibility support
+: 
+* Material provided ahead of time, if requested
+* Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings
+* Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible
+* <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald">Assistive listening devices</a> (ALD), <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps">interpreters</a>, and <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions">captioners</a>, provided as needed
+* Text and important visuals big enough to be read even from the back of the room
+* Sufficient contrast between colors (“luminance contrast”) - see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Understanding contrast guidance</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources">contrast evaluation tools</a>
+* <a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - audio description and text description
+* Additional accessibility support may be requested
+
+
+
+Length
+
+: 2 weeks
+
+
+Cost
+: Free with certificates for purchase
+
+Availability
+: From 1 October 2022 to 30 November 2022.
+
+Website
+: <a href="https://course.com" rel="external">https://course.com <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+Reviews page
+
+: <a href="https://www.course.com/reviews" rel="external">https://www.course.com/reviews <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-external-link"></use></svg></a>
+
+
+This information was last updated on 20 April 2022.
+
+The content of this resource was last updated on 1 February 2022.
+
+</div>
+</details>
+</div></aside>
+            
+ -->    </div>
+    
+</div>
+<div class="button-submit-end">
+    <a class="button button-more" href="submit-a-resource"><span>Submit a course, training, or certification</span></a>  
+</div>
+
+<script>
+
+
+// const jsonCourses = JSON.parse('[{"accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","non-digital-accessibility-accessible-facility","non-digital-accessibility-assistive-listening-devices","non-digital-accessibility-text-and-visuals-big-enough","non-digital-accessibility-sufficient-contrast","non-digital-accessibility-description-of-visual-information"],"accessibility_support_other":"","audience":["audience_tester","audience_developer","audience_manager"],"check_correct_info":"on","check_publish_info":"on","comments":"No further comments.","content_update":"2022-04-01","cost":"cost_paid","country":["gb"],"description":"This training provide the baselines of accessibility testing. You will learn how to conduct accessibility evaluations, from using automatic tools to including users with disabilities. This training also provides insights on how to conduct large escale accessibility evaluations and how to better understand accessibility compliance with current standards such as WCAG.","end_date":"2022-11-30","form_name":"submission","form_version":"1","format":"format_face_to_face","language":["en"],"learning":["learning_scheduled"],"length":"2 weeks","level":"level_intermediate","platform":"","prerequisites":"Accessibility basic","provider":"Accessible University","reviews":"https://www.course.com/reviews","start_date":"2022-10-01","submission_date":"2022-04-20T09:57:29.982Z","submission_ref":"4a86bad0-c090-11ec-a60a-f3e31e27ea76","submitter_email":"test@email.com","submitter_name":"Test Name","title":"Accessibility Testing","topics":["Inclusive design","Accessibility checks","Tools for accessibility evaluation","Accessibility standards and guidelines"],"type_resource":"type_training","type_resource_new":"","wai_curricula":["foundations_modules1","foundations_modules2","foundations_modules3","foundations_modules4","foundations_modules5"],"website":"https://course.com"},{"form_name":"submission","form_version":"1","submission_ref":"c2f34730-bf39-11ec-af6f-8d0d15d36157","submission_date":"2022-03-18T17:05:32.963Z","submitter_name":"Test Name","submitter_email":"email@test.com","title":"Document accessibility","provider":"XProvider","country":["hr"],"description":"In this course, you will become familiar with the accessibility of different types of content. This course covers all the basics you need to ensure all your downloadable documents are accessible through this 3 hours training. You will learn how to create, remediate, and test for accessible documents.","type_resource":"type_training","type_resource_new":"","audience":["audience_content_author","audience_designer","audience_developer","audience_manager","audience_tester","audience_other"],"level":"level_basic","prerequisites":"","topics":["Creating and testing accessible documents","Accessible PDF documents","Accessible Office documents","Accessible ePUB documents"],"wai_curricula":"","language":["en","hr"],"format":"format_hybrid","learning":["learning_scheduled","learning_unscheduled"],"platform":"Zoom and Moodle","accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","digital-accessibility-caption-audio","digital-accessibility-text-and-visuals-can-be-resized","digital-accessibility-sufficient-contrast","digital-accessibility-motions-or-animations","digital-accessibility-description-of-visual-information","digital-accessibility-all-content-meets-wcag"],"accessibility_support_other":"","length":"3 hours","cost":"cost_free","website":"https://course.com","reviews":"https://course.com/reviews","content_update":"2022-04-01","start_date":"2022-09-01","end_date":"2023-06-30","comments":"Further comments.","check_correct_info":"on","check_publish_info":"on"},{"accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","non-digital-accessibility-accessible-facility","non-digital-accessibility-assistive-listening-devices","non-digital-accessibility-text-and-visuals-big-enough","non-digital-accessibility-sufficient-contrast","non-digital-accessibility-description-of-visual-information"],"accessibility_support_other":"Additional accessibility support may be requested","audience":["audience_content_author","audience_designer","audience_tester","audience_developer","audience_manager"],"check_correct_info":"on","check_publish_info":"on","comments":"No further comments.","content_update":"2022-02-01","cost":"cost_certificates_for_purchase","country":["fr","pt"],"description":"EN 301 549 is a European standard for digital accessibility and it applies to all digital technology, including websites, software, electronic devices, and mobile apps. This course aims to provide a comprehensive overview of this standard. ","end_date":"2022-11-30","form_name":"submission","form_version":"1","format":"format_hybrid","language":["fr","pt"],"learning":["learning_scheduled"],"length":"2 weeks","level":"level_advanced","platform":"Zoom","prerequisites":"Web accessibility basics","provider":"Accessible University","reviews":"https://www.course.com/reviews","start_date":"2022-10-01","submission_date":"2022-04-20T09:57:29.982Z","submission_ref":"5a86bad0-c090-11ec-a60a-f3e31e27ea76","submitter_email":"test@email.com","submitter_name":"Test Name","title":"EN 301 549 Fundamentals","topics":["Legal context","Accessibility standards"],"type_resource":"type_other","type_resource_new":"Workshop","wai_curricula":"","website":"https://course.com"},{"accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","digital-accessibility-caption-audio"],"accessibility_support_other":"","audience":["audience_content_author","audience_designer","audience_tester","audience_developer","audience_manager"],"check_correct_info":"on","check_publish_info":"on","comments":"Further comments concerning this course.","content_update":"2022-01-13","cost":"cost_free","country":["gr"],"description":"This course provides an overview of important concepts of Web accessibility. The course covers how each team member shoud understand the different roles and responsabilities when it comes to integrating accessibility in the project development.","end_date":"2022-04-10","form_name":"submission","form_version":"1","format":"format_face_to_face","language":["en","es"],"learning":["learning_scheduled"],"length":"3 weeks","level":"level_basic","platform":"Zoom","prerequisites":["HTML","CSS"],"provider":"XYV Courses","reviews":"https://course.com/reviews","start_date":"2022-04-07","submission_date":"2022-04-19T21:02:26.598Z","submission_ref":"04599c60-c024-11ec-b369-e53d5c11a288","submitter_email":"test@email.com","submitter_name":"Test name","title":"Introduction to Web Accessibility","topics":["Inclusive design","Accessibility standards and guidelines","Integrating accessibility in the project developement"],"type_resource":"type_training","type_resource_new":"","wai_curricula":["foundations_modules1","foundations_modules2","developer_modules1"],"website":"https://course.com"},{"form_name":"submission","form_version":"1","submission_ref":"c334730-bf39-11ec-af6f-8d0d15d36157","submission_date":"2022-03-07T17:05:32.963Z","submitter_name":"Test Name","submitter_email":"email@test.com","title":"Mobile Accessible Design","provider":"XProvider","country":["es"],"description":"This training provides an overview of the specifications for developing accessible web content for mobile applications. You will also learn how to test your applications, creating accessible experiences on mobile devices for different users. This course is intended for participants who have experience in designing, developing, and testing mobile applications.","type_resource":"type_training","type_resource_new":"","audience":["audience_designer","audience_developer","audience_tester"],"level":"level_advanced","prerequisites":"","topics":["Accessible mobile design and development","Mobile web accessibility guidelines and standards","Testing with screen reader users on mobile devices"],"wai_curricula":"","language":["es"],"format":"format_hybrid","learning":["learning_scheduled","learning_unscheduled"],"platform":"Zoom and Moodle","accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","digital-accessibility-caption-audio","digital-accessibility-text-and-visuals-can-be-resized","digital-accessibility-sufficient-contrast","digital-accessibility-motions-or-animations","digital-accessibility-description-of-visual-information","digital-accessibility-all-content-meets-wcag"],"accessibility_support_other":"","length":"2 days","cost":"cost_paid","website":"https://course.com","reviews":"https://course.com/reviews","content_update":"2021-09-09","start_date":"2021-12-11","end_date":"2023-06-30","comments":"Further comments.","check_correct_info":"on","check_publish_info":"on"}]');
+
+const filterForm = document.querySelector('[data-filter-form]');
+const submitForm = document.querySelector('form');
+const sortForm = document.querySelector('.sort-by');
+const searchForm = document.querySelector('#search');
+const importJsonCourses = String.raw`[{"accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","non-digital-accessibility-accessible-facility","non-digital-accessibility-assistive-listening-devices","non-digital-accessibility-text-and-visuals-big-enough","non-digital-accessibility-sufficient-contrast","non-digital-accessibility-description-of-visual-information"],"accessibility_support_other":"","audience":["audience_tester","audience_developer","audience_manager"],"check_correct_info":"on","check_publish_info":"on","comments":"No further comments.","content_update":"2022-04-01","cost":"cost_paid","country":["gb"],"description":"This training provide the baselines of accessibility testing. You will learn how to conduct accessibility evaluations, from using automatic tools to including users with disabilities. This training also provides insights on how to conduct large escale accessibility evaluations and how to better understand accessibility compliance with current standards such as WCAG.","end_date":"2022-11-30","form_name":"submission","form_version":"1","format":"format_face_to_face","language":["en"],"learning":["learning_scheduled"],"length":"2 weeks","level":"level_intermediate","platform":"","prerequisites":"Accessibility basic","provider":"Accessible University","reviews":"https://www.course.com/reviews","start_date":"2022-10-01","submission_date":"2022-04-20T09:57:29.982Z","submission_ref":"4a86bad0-c090-11ec-a60a-f3e31e27ea76","submitter_email":"test@email.com","submitter_name":"Test Name","title":"Accessibility Testing","topics":["Inclusive design","Accessibility checks","Tools for accessibility evaluation","Accessibility standards and guidelines"],"type_resource":"type_training","type_resource_new":"","wai_curricula":["foundations_modules1","foundations_modules2","foundations_modules3","foundations_modules4","foundations_modules5"],"website":"https://course.com"},{"form_name":"submission","form_version":"1","submission_ref":"c2f34730-bf39-11ec-af6f-8d0d15d36157","submission_date":"2022-03-18T17:05:32.963Z","submitter_name":"Test Name","submitter_email":"email@test.com","title":"Document accessibility","provider":"XProvider","country":["hr"],"description":"In this course, you will become familiar with the accessibility of different types of content. This course covers all the basics you need to ensure all your downloadable documents are accessible through this 3 hours training. You will learn how to create, remediate, and test for accessible documents.","type_resource":"type_training","type_resource_new":"","audience":["audience_content_author","audience_designer","audience_developer","audience_manager","audience_tester","audience_other"],"level":"level_basic","prerequisites":"","topics":["Creating and testing accessible documents","Accessible PDF documents","Accessible Office documents","Accessible ePUB documents"],"wai_curricula":"","language":["en","hr"],"format":"format_hybrid","learning":["learning_scheduled","learning_unscheduled"],"platform":"Zoom and Moodle","accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","digital-accessibility-caption-audio","digital-accessibility-text-and-visuals-can-be-resized","digital-accessibility-sufficient-contrast","digital-accessibility-motions-or-animations","digital-accessibility-description-of-visual-information","digital-accessibility-all-content-meets-wcag"],"accessibility_support_other":"","length":"3 hours","cost":"cost_free","website":"https://course.com","reviews":"https://course.com/reviews","content_update":"2022-04-01","start_date":"2022-09-01","end_date":"2023-06-30","comments":"Further comments.","check_correct_info":"on","check_publish_info":"on"},{"accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","non-digital-accessibility-accessible-facility","non-digital-accessibility-assistive-listening-devices","non-digital-accessibility-text-and-visuals-big-enough","non-digital-accessibility-sufficient-contrast","non-digital-accessibility-description-of-visual-information"],"accessibility_support_other":"Additional accessibility support may be requested","audience":["audience_content_author","audience_designer","audience_tester","audience_developer","audience_manager"],"check_correct_info":"on","check_publish_info":"on","comments":"No further comments.","content_update":"2022-02-01","cost":"cost_certificates_for_purchase","country":["fr","pt"],"description":"EN 301 549 is a European standard for digital accessibility and it applies to all digital technology, including websites, software, electronic devices, and mobile apps. This course aims to provide a comprehensive overview of this standard. ","end_date":"2022-11-30","form_name":"submission","form_version":"1","format":"format_hybrid","language":["fr","pt"],"learning":["learning_scheduled"],"length":"2 weeks","level":"level_advanced","platform":"Zoom","prerequisites":"Web accessibility basics","provider":"Accessible University","reviews":"https://www.course.com/reviews","start_date":"2022-10-01","submission_date":"2022-04-20T09:57:29.982Z","submission_ref":"5a86bad0-c090-11ec-a60a-f3e31e27ea76","submitter_email":"test@email.com","submitter_name":"Test Name","title":"EN 301 549 Fundamentals","topics":["Legal context","Accessibility standards"],"type_resource":"type_other","type_resource_new":"Workshop","wai_curricula":"","website":"https://course.com"},{"accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","digital-accessibility-caption-audio"],"accessibility_support_other":"","audience":["audience_content_author","audience_designer","audience_tester","audience_developer","audience_manager"],"check_correct_info":"on","check_publish_info":"on","comments":"Further comments concerning this course.","content_update":"2022-01-13","cost":"cost_free","country":["gr"],"description":"This course provides an overview of important concepts of Web accessibility. The course covers how each team member shoud understand the different roles and responsabilities when it comes to integrating accessibility in the project development.","end_date":"2022-04-10","form_name":"submission","form_version":"1","format":"format_face_to_face","language":["en","es"],"learning":["learning_scheduled"],"length":"3 weeks","level":"level_basic","platform":"Zoom","prerequisites":["HTML","CSS"],"provider":"XYV Courses","reviews":"https://course.com/reviews","start_date":"2022-04-07","submission_date":"2022-04-19T21:02:26.598Z","submission_ref":"04599c60-c024-11ec-b369-e53d5c11a288","submitter_email":"test@email.com","submitter_name":"Test name","title":"Introduction to Web Accessibility","topics":["Inclusive design","Accessibility standards and guidelines","Integrating accessibility in the project developement"],"type_resource":"type_training","type_resource_new":"","wai_curricula":["foundations_modules1","foundations_modules2","developer_modules1"],"website":"https://course.com"},{"form_name":"submission","form_version":"1","submission_ref":"c334730-bf39-11ec-af6f-8d0d15d36157","submission_date":"2022-03-07T17:05:32.963Z","submitter_name":"Test Name","submitter_email":"email@test.com","title":"Mobile Accessible Design","provider":"XProvider","country":["es"],"description":"This training provides an overview of the specifications for developing accessible web content for mobile applications. You will also learn how to test your applications, creating accessible experiences on mobile devices for different users. This course is intended for participants who have experience in designing, developing, and testing mobile applications.","type_resource":"type_training","type_resource_new":"","audience":["audience_designer","audience_developer","audience_tester"],"level":"level_advanced","prerequisites":"","topics":["Accessible mobile design and development","Mobile web accessibility guidelines and standards","Testing with screen reader users on mobile devices"],"wai_curricula":"","language":["es"],"format":"format_hybrid","learning":["learning_scheduled","learning_unscheduled"],"platform":"Zoom and Moodle","accessibility_support":["general-accessibility-material-ahead-of-time","general-accessibility-pre-check-available","digital-accessibility-caption-audio","digital-accessibility-text-and-visuals-can-be-resized","digital-accessibility-sufficient-contrast","digital-accessibility-motions-or-animations","digital-accessibility-description-of-visual-information","digital-accessibility-all-content-meets-wcag"],"accessibility_support_other":"","length":"2 days","cost":"cost_paid","website":"https://course.com","reviews":"https://course.com/reviews","content_update":"2021-09-09","start_date":"2021-12-11","end_date":"2023-06-30","comments":"Further comments.","check_correct_info":"on","check_publish_info":"on"}]`;
+importJsonCourses.replace("\\", "\\\\");
+const jsonCourses = JSON.parse(importJsonCourses);
+
+const importJsonCountries = String.raw`{"ad":{"name":"Andorra","nativeName":"Andorra"},"ae":{"name":"United Arab Emirates","nativeName":"دولة الإمارات العربية المتحدة"},"af":{"name":"Afghanistan","nativeName":"افغانستان"},"ag":{"name":"Antigua and Barbuda","nativeName":"Antigua and Barbuda"},"ai":{"name":"Anguilla","nativeName":"Anguilla"},"al":{"name":"Albania","nativeName":"Shqipëria"},"am":{"name":"Armenia","nativeName":"Հայաստան"},"ao":{"name":"Angola","nativeName":"Angola"},"aq":{"name":"Antarctica","nativeName":"Antarctica"},"ar":{"name":"Argentina","nativeName":"Argentina"},"as":{"name":"American Samoa","nativeName":"American Samoa"},"at":{"name":"Austria","nativeName":"Österreich"},"au":{"name":"Australia","nativeName":"Australia"},"aw":{"name":"Aruba","nativeName":"Aruba"},"ax":{"name":"Åland","nativeName":"Åland"},"az":{"name":"Azerbaijan","nativeName":"Azərbaycan"},"ba":{"name":"Bosnia and Herzegovina","nativeName":"Bosna i Hercegovina"},"bb":{"name":"Barbados","nativeName":"Barbados"},"bd":{"name":"Bangladesh","nativeName":"Bangladesh"},"be":{"name":"Belgium","nativeName":"België"},"bf":{"name":"Burkina Faso","nativeName":"Burkina Faso"},"bg":{"name":"Bulgaria","nativeName":"България"},"bh":{"name":"Bahrain","nativeName":"‏البحرين"},"bi":{"name":"Burundi","nativeName":"Burundi"},"bj":{"name":"Benin","nativeName":"Bénin"},"bl":{"name":"Saint Barthélemy","nativeName":"Saint-Barthélemy"},"bm":{"name":"Bermuda","nativeName":"Bermuda"},"bn":{"name":"Brunei","nativeName":"Negara Brunei Darussalam"},"bo":{"name":"Bolivia","nativeName":"Bolivia"},"bq":{"name":"Bonaire","nativeName":"Bonaire"},"br":{"name":"Brazil","nativeName":"Brasil"},"bs":{"name":"Bahamas","nativeName":"Bahamas"},"bt":{"name":"Bhutan","nativeName":"ʼbrug-yul"},"bv":{"name":"Bouvet Island","nativeName":"Bouvetøya"},"bw":{"name":"Botswana","nativeName":"Botswana"},"by":{"name":"Belarus","nativeName":"Белару́сь"},"bz":{"name":"Belize","nativeName":"Belize"},"ca":{"name":"Canada","nativeName":"Canada"},"cc":{"name":"Cocos [Keeling] Islands","nativeName":"Cocos (Keeling) Islands"},"cd":{"name":"Democratic Republic of the Congo","nativeName":"République démocratique du Congo"},"cf":{"name":"Central African Republic","nativeName":"Ködörösêse tî Bêafrîka"},"cg":{"name":"Republic of the Congo","nativeName":"République du Congo"},"ch":{"name":"Switzerland","nativeName":"Schweiz"},"ci":{"name":"Ivory Coast","nativeName":"Côte d'Ivoire"},"ck":{"name":"Cook Islands","nativeName":"Cook Islands"},"cl":{"name":"Chile","nativeName":"Chile"},"cm":{"name":"Cameroon","nativeName":"Cameroon"},"cn":{"name":"China","nativeName":"中国"},"co":{"name":"Colombia","nativeName":"Colombia"},"cr":{"name":"Costa Rica","nativeName":"Costa Rica"},"cu":{"name":"Cuba","nativeName":"Cuba"},"cv":{"name":"Cape Verde","nativeName":"Cabo Verde"},"cw":{"name":"Curacao","nativeName":"Curaçao"},"cx":{"name":"Christmas Island","nativeName":"Christmas Island"},"cy":{"name":"Cyprus","nativeName":"Κύπρος"},"cz":{"name":"Czech Republic","nativeName":"Česká republika"},"de":{"name":"Germany","nativeName":"Deutschland"},"dj":{"name":"Djibouti","nativeName":"Djibouti"},"dk":{"name":"Denmark","nativeName":"Danmark"},"dm":{"name":"Dominica","nativeName":"Dominica"},"do":{"name":"Dominican Republic","nativeName":"República Dominicana"},"dz":{"name":"Algeria","nativeName":"الجزائر"},"ec":{"name":"Ecuador","nativeName":"Ecuador"},"ee":{"name":"Estonia","nativeName":"Eesti"},"eg":{"name":"Egypt","nativeName":"مصر‎"},"eh":{"name":"Western Sahara","nativeName":"الصحراء الغربية"},"er":{"name":"Eritrea","nativeName":"ኤርትራ"},"es":{"name":"Spain","nativeName":"España"},"et":{"name":"Ethiopia","nativeName":"ኢትዮጵያ"},"fi":{"name":"Finland","nativeName":"Suomi"},"fj":{"name":"Fiji","nativeName":"Fiji"},"fk":{"name":"Falkland Islands","nativeName":"Falkland Islands"},"fm":{"name":"Micronesia","nativeName":"Micronesia"},"fo":{"name":"Faroe Islands","nativeName":"Føroyar"},"fr":{"name":"France","nativeName":"France"},"ga":{"name":"Gabon","nativeName":"Gabon"},"gb":{"name":"United Kingdom","nativeName":"United Kingdom"},"gd":{"name":"Grenada","nativeName":"Grenada"},"ge":{"name":"Georgia","nativeName":"საქართველო"},"gf":{"name":"French Guiana","nativeName":"Guyane française"},"gg":{"name":"Guernsey","nativeName":"Guernsey"},"gh":{"name":"Ghana","nativeName":"Ghana"},"gi":{"name":"Gibraltar","nativeName":"Gibraltar"},"gl":{"name":"Greenland","nativeName":"Kalaallit Nunaat"},"gm":{"name":"Gambia","nativeName":"Gambia"},"gn":{"name":"Guinea","nativeName":"Guinée"},"gp":{"name":"Guadeloupe","nativeName":"Guadeloupe"},"gq":{"name":"Equatorial Guinea","nativeName":"Guinea Ecuatorial"},"gr":{"name":"Greece","nativeName":"Ελλάδα"},"gs":{"name":"South Georgia and the South Sandwich Islands","nativeName":"South Georgia"},"gt":{"name":"Guatemala","nativeName":"Guatemala"},"gu":{"name":"Guam","nativeName":"Guam"},"gw":{"name":"Guinea-Bissau","nativeName":"Guiné-Bissau"},"gy":{"name":"Guyana","nativeName":"Guyana"},"hk":{"name":"Hong Kong","nativeName":"香港"},"hm":{"name":"Heard Island and McDonald Islands","nativeName":"Heard Island and McDonald Islands"},"hn":{"name":"Honduras","nativeName":"Honduras"},"hr":{"name":"Croatia","nativeName":"Hrvatska"},"ht":{"name":"Haiti","nativeName":"Haïti"},"hu":{"name":"Hungary","nativeName":"Magyarország"},"id":{"name":"Indonesia","nativeName":"Indonesia"},"ie":{"name":"Ireland","nativeName":"Éire"},"il":{"name":"Israel","nativeName":"יִשְׂרָאֵל"},"im":{"name":"Isle of Man","nativeName":"Isle of Man"},"in":{"name":"India","nativeName":"भारत"},"io":{"name":"British Indian Ocean Territory","nativeName":"British Indian Ocean Territory"},"iq":{"name":"Iraq","nativeName":"العراق"},"ir":{"name":"Iran","nativeName":"ایران"},"is":{"name":"Iceland","nativeName":"Ísland"},"it":{"name":"Italy","nativeName":"Italia"},"je":{"name":"Jersey","nativeName":"Jersey"},"jm":{"name":"Jamaica","nativeName":"Jamaica"},"jo":{"name":"Jordan","nativeName":"الأردن"},"jp":{"name":"Japan","nativeName":"日本"},"ke":{"name":"Kenya","nativeName":"Kenya"},"kg":{"name":"Kyrgyzstan","nativeName":"Кыргызстан"},"kh":{"name":"Cambodia","nativeName":"Kâmpŭchéa"},"ki":{"name":"Kiribati","nativeName":"Kiribati"},"km":{"name":"Comoros","nativeName":"Komori"},"kn":{"name":"Saint Kitts and Nevis","nativeName":"Saint Kitts and Nevis"},"kp":{"name":"North Korea","nativeName":"북한"},"kr":{"name":"South Korea","nativeName":"대한민국"},"kw":{"name":"Kuwait","nativeName":"الكويت"},"ky":{"name":"Cayman Islands","nativeName":"Cayman Islands"},"kz":{"name":"Kazakhstan","nativeName":"Қазақстан"},"la":{"name":"Laos","nativeName":"ສປປລາວ"},"lb":{"name":"Lebanon","nativeName":"لبنان"},"lc":{"name":"Saint Lucia","nativeName":"Saint Lucia"},"li":{"name":"Liechtenstein","nativeName":"Liechtenstein"},"lk":{"name":"Sri Lanka","nativeName":"śrī laṃkāva"},"lr":{"name":"Liberia","nativeName":"Liberia"},"ls":{"name":"Lesotho","nativeName":"Lesotho"},"lt":{"name":"Lithuania","nativeName":"Lietuva"},"lu":{"name":"Luxembourg","nativeName":"Luxembourg"},"lv":{"name":"Latvia","nativeName":"Latvija"},"ly":{"name":"Libya","nativeName":"‏ليبيا"},"ma":{"name":"Morocco","nativeName":"المغرب"},"mc":{"name":"Monaco","nativeName":"Monaco"},"md":{"name":"Moldova","nativeName":"Moldova"},"me":{"name":"Montenegro","nativeName":"Црна Гора"},"mf":{"name":"Saint Martin","nativeName":"Saint-Martin"},"mg":{"name":"Madagascar","nativeName":"Madagasikara"},"mh":{"name":"Marshall Islands","nativeName":"M̧ajeļ"},"mk":{"name":"North Macedonia","nativeName":"Северна Македонија"},"ml":{"name":"Mali","nativeName":"Mali"},"mm":{"name":"Myanmar [Burma]","nativeName":"မြန်မာ"},"mn":{"name":"Mongolia","nativeName":"Монгол улс"},"mo":{"name":"Macao","nativeName":"澳門"},"mp":{"name":"Northern Mariana Islands","nativeName":"Northern Mariana Islands"},"mq":{"name":"Martinique","nativeName":"Martinique"},"mr":{"name":"Mauritania","nativeName":"موريتانيا"},"ms":{"name":"Montserrat","nativeName":"Montserrat"},"mt":{"name":"Malta","nativeName":"Malta"},"mu":{"name":"Mauritius","nativeName":"Maurice"},"mv":{"name":"Maldives","nativeName":"Maldives"},"mw":{"name":"Malawi","nativeName":"Malawi"},"mx":{"name":"Mexico","nativeName":"México"},"my":{"name":"Malaysia","nativeName":"Malaysia"},"mz":{"name":"Mozambique","nativeName":"Moçambique"},"na":{"name":"Namibia","nativeName":"Namibia"},"nc":{"name":"New Caledonia","nativeName":"Nouvelle-Calédonie"},"ne":{"name":"Niger","nativeName":"Niger"},"nf":{"name":"Norfolk Island","nativeName":"Norfolk Island"},"ng":{"name":"Nigeria","nativeName":"Nigeria"},"ni":{"name":"Nicaragua","nativeName":"Nicaragua"},"nl":{"name":"Netherlands","nativeName":"Nederland"},"no":{"name":"Norway","nativeName":"Norge"},"np":{"name":"Nepal","nativeName":"नपल"},"nr":{"name":"Nauru","nativeName":"Nauru"},"nu":{"name":"Niue","nativeName":"Niuē"},"nz":{"name":"New Zealand","nativeName":"New Zealand"},"om":{"name":"Oman","nativeName":"عمان"},"pa":{"name":"Panama","nativeName":"Panamá"},"pe":{"name":"Peru","nativeName":"Perú"},"pf":{"name":"French Polynesia","nativeName":"Polynésie française"},"pg":{"name":"Papua New Guinea","nativeName":"Papua Niugini"},"ph":{"name":"Philippines","nativeName":"Pilipinas"},"pk":{"name":"Pakistan","nativeName":"Pakistan"},"pl":{"name":"Poland","nativeName":"Polska"},"pm":{"name":"Saint Pierre and Miquelon","nativeName":"Saint-Pierre-et-Miquelon"},"pn":{"name":"Pitcairn Islands","nativeName":"Pitcairn Islands"},"pr":{"name":"Puerto Rico","nativeName":"Puerto Rico"},"ps":{"name":"Palestine","nativeName":"فلسطين"},"pt":{"name":"Portugal","nativeName":"Portugal"},"pw":{"name":"Palau","nativeName":"Palau"},"py":{"name":"Paraguay","nativeName":"Paraguay"},"qa":{"name":"Qatar","nativeName":"قطر"},"re":{"name":"Réunion","nativeName":"La Réunion"},"ro":{"name":"Romania","nativeName":"România"},"rs":{"name":"Serbia","nativeName":"Србија"},"ru":{"name":"Russia","nativeName":"Россия"},"rw":{"name":"Rwanda","nativeName":"Rwanda"},"sa":{"name":"Saudi Arabia","nativeName":"العربية السعودية"},"sb":{"name":"Solomon Islands","nativeName":"Solomon Islands"},"sc":{"name":"Seychelles","nativeName":"Seychelles"},"sd":{"name":"Sudan","nativeName":"السودان"},"se":{"name":"Sweden","nativeName":"Sverige"},"sg":{"name":"Singapore","nativeName":"Singapore"},"sh":{"name":"Saint Helena","nativeName":"Saint Helena"},"si":{"name":"Slovenia","nativeName":"Slovenija"},"sj":{"name":"Svalbard and Jan Mayen","nativeName":"Svalbard og Jan Mayen"},"sk":{"name":"Slovakia","nativeName":"Slovensko"},"sl":{"name":"Sierra Leone","nativeName":"Sierra Leone"},"sm":{"name":"San Marino","nativeName":"San Marino"},"sn":{"name":"Senegal","nativeName":"Sénégal"},"so":{"name":"Somalia","nativeName":"Soomaaliya"},"sr":{"name":"Suriname","nativeName":"Suriname"},"ss":{"name":"South Sudan","nativeName":"South Sudan"},"st":{"name":"São Tomé and Príncipe","nativeName":"São Tomé e Príncipe"},"sv":{"name":"El Salvador","nativeName":"El Salvador"},"sx":{"name":"Sint Maarten","nativeName":"Sint Maarten"},"sy":{"name":"Syria","nativeName":"سوريا"},"sz":{"name":"Swaziland","nativeName":"Swaziland"},"tc":{"name":"Turks and Caicos Islands","nativeName":"Turks and Caicos Islands"},"td":{"name":"Chad","nativeName":"Tchad"},"tf":{"name":"French Southern Territories","nativeName":"Territoire des Terres australes et antarctiques fr"},"tg":{"name":"Togo","nativeName":"Togo"},"th":{"name":"Thailand","nativeName":"ประเทศไทย"},"tj":{"name":"Tajikistan","nativeName":"Тоҷикистон"},"tk":{"name":"Tokelau","nativeName":"Tokelau"},"tl":{"name":"East Timor","nativeName":"Timor-Leste"},"tm":{"name":"Turkmenistan","nativeName":"Türkmenistan"},"tn":{"name":"Tunisia","nativeName":"تونس"},"to":{"name":"Tonga","nativeName":"Tonga"},"tr":{"name":"Turkey","nativeName":"Türkiye"},"tt":{"name":"Trinidad and Tobago","nativeName":"Trinidad and Tobago"},"tv":{"name":"Tuvalu","nativeName":"Tuvalu"},"tw":{"name":"Taiwan","nativeName":"臺灣"},"tz":{"name":"Tanzania","nativeName":"Tanzania"},"ua":{"name":"Ukraine","nativeName":"Україна"},"ug":{"name":"Uganda","nativeName":"Uganda"},"um":{"name":"U.S. Minor Outlying Islands","nativeName":"United States Minor Outlying Islands"},"us":{"name":"United States","nativeName":"United States"},"uy":{"name":"Uruguay","nativeName":"Uruguay"},"uz":{"name":"Uzbekistan","nativeName":"O‘zbekiston"},"va":{"name":"Vatican City","nativeName":"Vaticano"},"vc":{"name":"Saint Vincent and the Grenadines","nativeName":"Saint Vincent and the Grenadines"},"ve":{"name":"Venezuela","nativeName":"Venezuela"},"vg":{"name":"British Virgin Islands","nativeName":"British Virgin Islands"},"vi":{"name":"U.S. Virgin Islands","nativeName":"United States Virgin Islands"},"vn":{"name":"Vietnam","nativeName":"Việt Nam"},"vu":{"name":"Vanuatu","nativeName":"Vanuatu"},"wf":{"name":"Wallis and Futuna","nativeName":"Wallis et Futuna"},"ws":{"name":"Samoa","nativeName":"Samoa"},"xk":{"name":"Kosovo","nativeName":"Republika e Kosovës"},"ye":{"name":"Yemen","nativeName":"اليَمَن"},"yt":{"name":"Mayotte","nativeName":"Mayotte"},"za":{"name":"South Africa","nativeName":"South Africa"},"zm":{"name":"Zambia","nativeName":"Zambia"},"zw":{"name":"Zimbabwe","nativeName":"Zimbabwe"}}`;
+importJsonCountries.replace("\\", "\\\\");
+const jsonCountry = JSON.parse(importJsonCountries);;
+
+const jsonFilters = JSON.parse('[{"id":"type_resource","name":"Type of resource","type":"checkbox","options":[{"id":"type_graduate","name":"Graduate program"},{"id":"type_undergraduate","name":"Undergraduate program"},{"id":"type_training","name":"Training"},{"id":"type_certification","name":"Professional certification"},{"id":"type_other","name":"Other"}]},{"id":"audience","name":"Audience","type":"checkbox","options":[{"id":"audience_content_author","name":"Content author"},{"id":"audience_designer","name":"Designer"},{"id":"audience_developer","name":"Developer"},{"id":"audience_manager","name":"Manager"},{"id":"audience_tester","name":"Tester"},{"id":"audience_other","name":"Other"}]},{"id":"level","name":"Level","type":"checkbox","options":[{"id":"level_basic","name":"Basic"},{"id":"level_intermediate","name":"Intermediate"},{"id":"level_advanced","name":"Advanced"}]},{"id":"format","name":"Format","info":"true","type":"checkbox","options":[{"id":"format_face_to_face","name":"Face-to-face"},{"id":"format_online","name":"Online"},{"id":"format_hybrid","name":"Hybrid"},{"id":"format_blended","name":"Blended"}]},{"id":"learning","name":"Scheduling","info":"true","type":"checkbox","options":[{"id":"learning_scheduled","name":"Scheduled"},{"id":"learning_unscheduled","name":"Unscheduled"}]},{"id":"cost","name":"Cost","type":"checkbox","options":[{"id":"cost_free","name":"Free of charge"},{"id":"cost_certificates_for_purchase","name":"Free with certificates for purchase"},{"id":"cost_limited_time","name":"Free for limited content or duration"},{"id":"cost_reduced_for_some","name":"Free or reduced fee for some"},{"id":"cost_paid","name":"Paid"}]}]');
+const jsonLang = JSON.parse('{"ab":{"name":"Abkhaz","nativeName":"аҧсуа"},"aa":{"name":"Afar","nativeName":"Afaraf"},"af":{"name":"Afrikaans","nativeName":"Afrikaans"},"ak":{"name":"Akan","nativeName":"Akan"},"sq":{"name":"Albanian","nativeName":"Shqip"},"am":{"name":"Amharic","nativeName":"አማርኛ"},"ar":{"name":"Arabic","nativeName":"العربية","rtl":true},"an":{"name":"Aragonese","nativeName":"Aragonés"},"hy":{"name":"Armenian","nativeName":"Հայերեն"},"as":{"name":"Assamese","nativeName":"অসমীয়া"},"av":{"name":"Avaric","nativeName":"авар мацӀ, магӀарул мацӀ"},"ae":{"name":"Avestan","nativeName":"avesta"},"ay":{"name":"Aymara","nativeName":"aymar aru"},"az":{"name":"Azerbaijani","nativeName":"azərbaycan dili"},"bm":{"name":"Bambara","nativeName":"bamanankan"},"ba":{"name":"Bashkir","nativeName":"башҡорт теле"},"eu":{"name":"Basque","nativeName":"euskara, euskera"},"be":{"name":"Belarusian","nativeName":"Беларуская"},"bn":{"name":"Bengali","nativeName":"বাংলা"},"bh":{"name":"Bihari","nativeName":"भोजपुरी"},"bi":{"name":"Bislama","nativeName":"Bislama"},"bs":{"name":"Bosnian","nativeName":"bosanski jezik"},"br":{"name":"Breton","nativeName":"brezhoneg"},"bg":{"name":"Bulgarian","nativeName":"български език"},"my":{"name":"Burmese","nativeName":"ဗမာစာ"},"ca":{"name":"Catalan","nativeName":"Català"},"ch":{"name":"Chamorro","nativeName":"Chamoru"},"ce":{"name":"Chechen","nativeName":"нохчийн мотт"},"ny":{"name":"Chichewa; Chewa; Nyanja","nativeName":"chiCheŵa, chinyanja"},"zh":{"name":"Chinese","nativeName":"中文 (Zhōngwén), 汉语, 漢語"},"zh-hans":{"name":"Simplified Chinese","nativeName":"简体中文"},"zh-hant":{"name":"Traditional Chinese","nativeName":"繁體中文"},"cv":{"name":"Chuvash","nativeName":"чӑваш чӗлхи"},"kw":{"name":"Cornish","nativeName":"Kernewek"},"co":{"name":"Corsican","nativeName":"corsu, lingua corsa"},"cr":{"name":"Cree","nativeName":"ᓀᐦᐃᔭᐍᐏᐣ"},"hr":{"name":"Croatian","nativeName":"hrvatski"},"cs":{"name":"Czech","nativeName":"čeština"},"da":{"name":"Danish","nativeName":"dansk"},"dv":{"name":"Divehi; Dhivehi; Maldivian;","nativeName":"ދިވެހި"},"nl":{"name":"Dutch","nativeName":"Nederlands"},"en":{"name":"English","nativeName":"English"},"eo":{"name":"Esperanto","nativeName":"Esperanto"},"et":{"name":"Estonian","nativeName":"eesti"},"ee":{"name":"Ewe","nativeName":"Eʋegbe"},"fo":{"name":"Faroese","nativeName":"føroyskt"},"fj":{"name":"Fijian","nativeName":"vosa Vakaviti"},"fi":{"name":"Finnish","nativeName":"suomi"},"fr":{"name":"French","nativeName":"français"},"ff":{"name":"Fula; Fulah; Pulaar; Pular","nativeName":"Fulfulde, Pulaar, Pular"},"gl":{"name":"Galician","nativeName":"Galego"},"ka":{"name":"Georgian","nativeName":"ქართული"},"de":{"name":"German","nativeName":"Deutsch"},"el":{"name":"Greek","nativeName":"Ελληνικά"},"gn":{"name":"Guaraní","nativeName":"Avañeẽ"},"gu":{"name":"Gujarati","nativeName":"ગુજરાતી"},"ht":{"name":"Haitian; Haitian Creole","nativeName":"Kreyòl ayisyen"},"ha":{"name":"Hausa","nativeName":"Hausa, هَوُسَ"},"he":{"name":"Hebrew","nativeName":"עברית","rtl":true},"hz":{"name":"Herero","nativeName":"Otjiherero"},"hi":{"name":"Hindi","nativeName":"हिन्दी, हिंदी"},"ho":{"name":"Hiri Motu","nativeName":"Hiri Motu"},"hu":{"name":"Hungarian","nativeName":"Magyar"},"ia":{"name":"Interlingua","nativeName":"Interlingua"},"id":{"name":"Indonesian","nativeName":"Bahasa Indonesia"},"ie":{"name":"Interlingue","nativeName":"Originally called Occidental; then Interlingue after WWII"},"ga":{"name":"Irish","nativeName":"Gaeilge"},"ig":{"name":"Igbo","nativeName":"Asụsụ Igbo"},"ik":{"name":"Inupiaq","nativeName":"Iñupiaq, Iñupiatun"},"io":{"name":"Ido","nativeName":"Ido"},"is":{"name":"Icelandic","nativeName":"Íslenska"},"it":{"name":"Italian","nativeName":"Italiano"},"iu":{"name":"Inuktitut","nativeName":"ᐃᓄᒃᑎᑐᑦ"},"ja":{"name":"Japanese","nativeName":"日本語"},"jv":{"name":"Javanese","nativeName":"basa Jawa"},"kl":{"name":"Kalaallisut, Greenlandic","nativeName":"kalaallisut, kalaallit oqaasii"},"kn":{"name":"Kannada","nativeName":"ಕನ್ನಡ"},"kr":{"name":"Kanuri","nativeName":"Kanuri"},"ks":{"name":"Kashmiri","nativeName":"कश्मीरी, كشميري‎"},"kk":{"name":"Kazakh","nativeName":"Қазақ тілі"},"km":{"name":"Khmer","nativeName":"ភាសាខ្មែរ"},"ki":{"name":"Kikuyu, Gikuyu","nativeName":"Gĩkũyũ"},"rw":{"name":"Kinyarwanda","nativeName":"Ikinyarwanda"},"ky":{"name":"Kirghiz, Kyrgyz","nativeName":"кыргыз тили"},"kv":{"name":"Komi","nativeName":"коми кыв"},"kg":{"name":"Kongo","nativeName":"KiKongo"},"ko":{"name":"Korean","nativeName":"한국어"},"kok":{"name":"Konkani","nativeName":"कोंकणी"},"ku":{"name":"Kurdish","nativeName":"Kurdî, كوردی‎"},"kj":{"name":"Kwanyama, Kuanyama","nativeName":"Kuanyama"},"la":{"name":"Latin","nativeName":"latine, lingua latina"},"lb":{"name":"Luxembourgish, Letzeburgesch","nativeName":"Lëtzebuergesch"},"lg":{"name":"Luganda","nativeName":"Luganda"},"li":{"name":"Limburgish, Limburgan, Limburger","nativeName":"Limburgs"},"ln":{"name":"Lingala","nativeName":"Lingála"},"lo":{"name":"Lao","nativeName":"ພາສາລາວ"},"lt":{"name":"Lithuanian","nativeName":"lietuvių kalba"},"lu":{"name":"Luba-Katanga","nativeName":""},"lv":{"name":"Latvian","nativeName":"latviešu valoda"},"gv":{"name":"Manx","nativeName":"Gaelg, Gailck"},"mk":{"name":"Macedonian","nativeName":"македонски јазик"},"mg":{"name":"Malagasy","nativeName":"Malagasy fiteny"},"ms":{"name":"Malay","nativeName":"bahasa Melayu, بهاس ملايو‎"},"ml":{"name":"Malayalam","nativeName":"മലയാളം"},"mt":{"name":"Maltese","nativeName":"Malti"},"mi":{"name":"Māori","nativeName":"te reo Māori"},"mr":{"name":"Marathi (Marāṭhī)","nativeName":"मराठी"},"mh":{"name":"Marshallese","nativeName":"Kajin M̧ajeļ"},"mn":{"name":"Mongolian","nativeName":"монгол"},"na":{"name":"Nauru","nativeName":"Ekakairũ Naoero"},"nv":{"name":"Navajo, Navaho","nativeName":"Diné bizaad, Dinékʼehǰí"},"nb":{"name":"Norwegian Bokmål","nativeName":"Norsk bokmål"},"nd":{"name":"North Ndebele","nativeName":"isiNdebele"},"ne":{"name":"Nepali","nativeName":"नेपाली"},"ng":{"name":"Ndonga","nativeName":"Owambo"},"nn":{"name":"Norwegian Nynorsk","nativeName":"Norsk nynorsk"},"no":{"name":"Norwegian","nativeName":"Norsk"},"ii":{"name":"Nuosu","nativeName":"ꆈꌠ꒿ Nuosuhxop"},"nr":{"name":"South Ndebele","nativeName":"isiNdebele"},"oc":{"name":"Occitan","nativeName":"Occitan"},"oj":{"name":"Ojibwe, Ojibwa","nativeName":"ᐊᓂᔑᓈᐯᒧᐎᓐ"},"cu":{"name":"Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic","nativeName":"ѩзыкъ словѣньскъ"},"om":{"name":"Oromo","nativeName":"Afaan Oromoo"},"or":{"name":"Oriya","nativeName":"ଓଡ଼ିଆ"},"os":{"name":"Ossetian, Ossetic","nativeName":"ирон æвзаг"},"pa":{"name":"Panjabi, Punjabi","nativeName":"ਪੰਜਾਬੀ, پنجابی‎"},"pi":{"name":"Pāli","nativeName":"पाऴि"},"fa":{"name":"Persian","nativeName":"فارسی"},"pl":{"name":"Polish","nativeName":"polski"},"ps":{"name":"Pashto, Pushto","nativeName":"پښتو"},"pt":{"name":"European Portuguese","nativeName":"Português Europeu"},"pt-BR":{"name":"Brazilian Portuguese","nativeName":"Português do Brasil"},"qu":{"name":"Quechua","nativeName":"Runa Simi, Kichwa"},"rm":{"name":"Romansh","nativeName":"rumantsch grischun"},"rn":{"name":"Kirundi","nativeName":"kiRundi"},"ro":{"name":"Romanian, Moldavian, Moldovan","nativeName":"română"},"ru":{"name":"Russian","nativeName":"русский язык"},"sa":{"name":"Sanskrit (Saṁskṛta)","nativeName":"संस्कृतम्"},"sc":{"name":"Sardinian","nativeName":"sardu"},"sd":{"name":"Sindhi","nativeName":"सिन्धी, سنڌي، سندھی‎"},"se":{"name":"Northern Sami","nativeName":"Davvisámegiella"},"sm":{"name":"Samoan","nativeName":"gagana faa Samoa"},"sg":{"name":"Sango","nativeName":"yângâ tî sängö"},"sr":{"name":"Serbian","nativeName":"српски језик"},"gd":{"name":"Scottish Gaelic; Gaelic","nativeName":"Gàidhlig"},"sn":{"name":"Shona","nativeName":"chiShona"},"si":{"name":"Sinhala, Sinhalese","nativeName":"සිංහල"},"sk":{"name":"Slovak","nativeName":"slovenčina"},"sl":{"name":"Slovene","nativeName":"slovenščina"},"so":{"name":"Somali","nativeName":"Soomaaliga, af Soomaali"},"st":{"name":"Southern Sotho","nativeName":"Sesotho"},"es":{"name":"Spanish","nativeName":"español"},"su":{"name":"Sundanese","nativeName":"Basa Sunda"},"sw":{"name":"Swahili","nativeName":"Kiswahili"},"ss":{"name":"Swati","nativeName":"SiSwati"},"sv":{"name":"Swedish","nativeName":"svenska"},"ta":{"name":"Tamil","nativeName":"தமிழ்"},"te":{"name":"Telugu","nativeName":"తెలుగు"},"tg":{"name":"Tajik","nativeName":"тоҷикӣ, toğikī, تاجیکی‎"},"th":{"name":"Thai","nativeName":"ไทย"},"ti":{"name":"Tigrinya","nativeName":"ትግርኛ"},"bo":{"name":"Tibetan","nativeName":"བོད་ཡིག"},"tk":{"name":"Turkmen","nativeName":"Türkmen, Түркмен"},"tl":{"name":"Tagalog","nativeName":"Tagalog, ᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔"},"tn":{"name":"Tswana","nativeName":"Setswana"},"to":{"name":"Tonga (Tonga Islands)","nativeName":"faka Tonga"},"tr":{"name":"Turkish","nativeName":"Türkçe"},"ts":{"name":"Tsonga","nativeName":"Xitsonga"},"tt":{"name":"Tatar","nativeName":"татарча, tatarça, تاتارچا‎"},"tw":{"name":"Twi","nativeName":"Twi"},"ty":{"name":"Tahitian","nativeName":"Reo Tahiti"},"ug":{"name":"Uighur, Uyghur","nativeName":"Uyƣurqə, ئۇيغۇرچە‎"},"uk":{"name":"Ukrainian","nativeName":"українська"},"ur":{"name":"Urdu","nativeName":"اردو"},"uz":{"name":"Uzbek","nativeName":"zbek, Ўзбек, أۇزبېك‎"},"ve":{"name":"Venda","nativeName":"Tshivenḓa"},"vi":{"name":"Vietnamese","nativeName":"Tiếng Việt"},"vo":{"name":"Volapük","nativeName":"Volapük"},"wa":{"name":"Walloon","nativeName":"Walon"},"cy":{"name":"Welsh","nativeName":"Cymraeg"},"wo":{"name":"Wolof","nativeName":"Wollof"},"fy":{"name":"Western Frisian","nativeName":"Frysk"},"xh":{"name":"Xhosa","nativeName":"isiXhosa"},"yi":{"name":"Yiddish","nativeName":"ייִדיש"},"yo":{"name":"Yoruba","nativeName":"Yorùbá"},"za":{"name":"Zhuang, Chuang","nativeName":"Saɯ cueŋƅ, Saw cuengh"}}');
+const coursesList = document.getElementById('courses-list');
+
+
+// if (filterForm && sortForm && search) {
+
+if (filterForm) {
+
+    document.querySelectorAll('.button-clear-button').forEach(item => {
+        item.hidden = true;
+        item.addEventListener('click', e => { clearFilters() });
+    })
+
+    filterForm.addEventListener('change', el => {
+        filterJson();
+    });
+
+    sortForm.querySelector('select').addEventListener('change', el => {
+        filterJson();
+    });
+
+    searchForm.addEventListener('keyup', el => {
+        filterJson();
+    });
+    searchForm.addEventListener('search', () => {
+        filterJson();
+    })
+
+
+    searchForm.onkeydown = function (e) {
+        e = e || window.event;
+        switch (e.which || e.keyCode) {
+              case 13 : handleKeyboardSearch();
+                  break;
+        }
+      }
+
+
+    //Add pre-counters to filters
+    showFilterCounters(filterForm);
+
+
+    function showFilterCounters(filterForm) {
+
+        filterForm.querySelectorAll('fieldset').forEach(filterTypeFS => {
+
+            filterTypeFS.querySelectorAll('input[type="checkbox"]').forEach(filter => {
+
+                var criteria = getActiveFiltersList(filterForm);
+
+                var currentFilterID = filterTypeFS.id;
+                var currentFilterName = filterTypeFS.querySelectorAll('legend')[0].innerText;
+
+                criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
+    
+
+                var newResults = filterNewResultsList(criteria);
+                var counterCurrentFilter = newResults.length;
+                filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
+
+            })
+        })
+    }
+
+    function filterJson() {
+        //form = document.querySelector('[data-filter-form]');
+
+        var filtersOn = getActiveFiltersList(filterForm);
+        var newResults = [];
+        newResults = filterNewResultsList(filtersOn);
+
+
+        //rebuild document
+        rebuildList(newResults, filtersOn);
+    }
+
+    function getActiveFiltersList(form) {
+        var activeFiltersList = [];
+        var attValues = [];
+
+        // for each attribute group
+        form.querySelectorAll('fieldset').forEach(att => {
+
+            attValues = [];
+            filterName = att.querySelectorAll('legend')[0].innerText;
+
+            att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
+                if (filter.checked) {
+                    //attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
+                    attValues.push({optionID: filter.name, optionName: att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText});
+                }
+            })
+            if (attValues.length > 0) {
+                activeFiltersList.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
+            }
+
+            att.querySelectorAll('select').forEach(filter => {
+                attValues = [];
+                if (filter.value !== "") {
+                    
+                    attValues.push({optionID: filter.value, optionName: filter.options[filter.selectedIndex].text})
+                    activeFiltersList.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
+                }
+
+            });
+
+        });
+
+        //console.log(activeFiltersList);
+        return activeFiltersList;
+    }
+
+    function filterNewResultsList(filtersOnList) {
+        var newResultsList = [];
+        
+        // by attribute
+        filtersOnList.forEach(filter => {
+            
+            newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
+                function (r) {
+                    if (x[filter.filterId] !== undefined) {
+                        return x[filter.filterId].includes(r.optionID);
+                    } else {
+                        return false;
+                    }
+                })));
+        })
+
+        // if no filter, show all courses
+        if (newResultsList.length === 0)
+            newResultsList = jsonCourses;
+        // intersection between results [courses]
+        else
+            newResultsList = newResultsList.reduce((a, c) => a.filter(i => c.includes(i)));
+
+
+        var searchTerm = searchForm.value;
+        var searchedResults = [];
+
+        Object.values(newResultsList).forEach(o => {
+
+            if (
+                o.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                o.provider.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                o.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                o.topics.join().toLowerCase().includes(searchTerm.toLowerCase())) {
+                searchedResults.push(o);
+            }
+        })
+
+        return searchedResults;
+    }
+
+    function rebuildList(newResults, filtersOn) {
+        
+        const articles = coursesList.querySelectorAll('aside');
+
+        //Sort items
+        var list = document.querySelector('.courses-list');
+        var sortedArticles = Array.from(articles);
+
+        newResults.sort(sortList);
+
+        sortedArticles.sort(function (a, b) {
+            return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
+        });
+
+        list.innerHTML = "";
+
+        for (i = 0; i < sortedArticles.length; ++i) {
+            list.appendChild(sortedArticles[i]);
+        }
+
+        sortedArticles.forEach(el => {
+            if (!Object.values(newResults).find(o => o.title === el.id))
+                el.hidden = true;
+            else
+                el.hidden = false;
+        })
+        updateHeaderList(newResults, filtersOn);
+        showFilterCounters(filterForm);
+        
+        updateSelectFilters(newResults.map(e => e.language), newResults.map(e => e.country));
+                
+        filtersOn.forEach(el => {
+            if(el.filterId === "language" || el.filterId === "country")
+                document.getElementById(el.filterId).value = el.filterValues[0].optionID;
+        })
+            
+    }
+
+    function updateSelectFilters(langs, countries) {
+        langs = langs.flat();
+        langs = [...new Set(langs)];
+        selectLang = filterForm.querySelector('#language')
+        selectLang.length = 0;
+        var opt = document.createElement("option");
+        opt.value = "";
+        opt.innerHTML = "--Select an option--";
+        selectLang.appendChild(opt);
+
+        countries = countries.flat();
+        countries = [...new Set(countries)];
+        selectCountry = filterForm.querySelector('#country');
+        selectCountry.length = 0;
+        opt = document.createElement("option");
+        opt.value = "";
+        opt.innerHTML = "--Select an option--";
+        selectCountry.appendChild(opt);
+
+        langs.forEach(l => {
+            opt = document.createElement("option");
+            opt.value = l;
+            opt.innerHTML = jsonLang[l].name + " (" + jsonLang[l].nativeName + ")";
+            selectLang.appendChild(opt);
+        })
+        countries.forEach(c => {
+            opt = document.createElement("option");
+            opt.value = c;
+            opt.innerHTML = jsonCountry[c].name + " (" + jsonCountry[c].nativeName + ")";
+            selectCountry.appendChild(opt);
+        })
+    }
+
+
+    function updateHeaderList(newResults, filtersOn) {
+
+        
+        var listFiltersOnString = document.createElement('dl');
+        var totalCoursesCounter = document.getElementById("total-courses");
+
+        filtersOn.forEach(f => {
+
+            var attName = document.createElement('dt');
+            attName.innerText = f.filterName + ':';
+            listFiltersOnString.appendChild(attName);
+
+            var attValues = document.createElement('dd');
+
+            if (f.filterId == 'language' || f.filterId == 'country'){
+                attValues.innerText = f.filterValues[0].optionName;
+            }
+            else{
+                // attValues.innerText = f.filterValues.join(', ');
+                attValues.innerText = "";
+                f.filterValues.forEach((fv, i) => {
+                    attValues.innerText += fv.optionName;
+                    if (i != (f.filterValues.length - 1)) {
+                        attValues.innerText += "; ";
+                      }
+                })
+            }
+                
+            listFiltersOnString.appendChild(attValues);
+        });
+
+        totalCoursesCounter.innerText = "Showing ";
+        var newContent = document.createElement("span");
+            
+        totalCoursesCounter.appendChild(newContent);
+
+        document.querySelector('.excol-all').hidden = false;
+
+        newContent.innerText = Object.values(newResults).length + " courses";
+        
+        if (Object.values(newResults).length === 1) {
+            newContent.innerText = Object.values(newResults).length + " course";
+        } 
+
+        var searchTerm = searchForm.value;
+
+
+        if (searchTerm.length > 0) {
+            var attName = document.createElement('dt');
+            attName.innerText = "Searchterm: ";
+            listFiltersOnString.appendChild(attName);
+
+            var attValues = document.createElement('dd');
+            attValues.innerText = "\"" + searchTerm + "\"";
+            listFiltersOnString.appendChild(attValues);
+        }
+
+        var titleResults = document.querySelector('#filter-courses-info h4');
+        var filterCoursesString = document.querySelector('.details-criteria');
+        filterCoursesString.innerText = "";
+
+
+        if (filtersOn.length > 0 || searchTerm.length > 0) {
+            filterCoursesString.appendChild(listFiltersOnString);
+            document.querySelector('.results-box').classList.remove('hidden-element');
+            hideClearButton(false);
+        } else {
+            hideClearButton(true);
+            document.querySelector('.results-box').classList.add('hidden-element');
+        }
+
+
+        if (Object.values(newResults).length === 0) {
+            document.getElementById('default-results-title').classList.add("hidden-element");
+            document.getElementById('no-results-title').classList.remove("hidden-element");
+            filterCoursesString.appendChild(listFiltersOnString);
+            document.querySelector('.excol-all').hidden = true;
+        }
+        else {
+            document.getElementById('default-results-title').classList.remove("hidden-element");
+            document.getElementById('no-results-title').classList.add("hidden-element");
+        }
+    }
+
+
+    function sortList(a, b) {
+        var selectedSort = document.querySelector('.sort-by').querySelector('select').value;
+        if (selectedSort == "alphabeticallyaz") {
+            return a.title.localeCompare(b.title);
+        } else if (selectedSort == "alphabeticallyza") {
+            return b.title.localeCompare(a.title);
+        } else if (selectedSort == "recentlyupdated") {
+            return new Date(b.info_last_updated) - new Date(a.info_last_updated);
+        }
+        return false;
+    }
+
+    function hideClearButton(isHidden) {
+        document.querySelectorAll('.button-clear-button').forEach(item => { item.hidden = isHidden });
+    }
+
+
+
+    function clearFilters() {
+        //rebuildList(jsonCourses, []);
+        filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+        filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
+        document.getElementById("search").value = "";
+        filterJson();
+        hideClearButton(true);
+    }
+
+
+    function clean(obj) {
+        for (var propName in obj) {
+            if (obj[propName].length === 0) {
+                delete obj[propName];
+            }
+        }
+        return obj
+    }
+
+    function handleKeyboardSearch(){
+        if(searchForm.value !== ""){
+            document.querySelector("#status").focus();
+        }
+    }
+
+}
+
+
+if (submitForm) {
+
+    _addLine();
+
+    submitForm.querySelectorAll('.other_field input[type="radio"]').forEach(item => {
+        item.addEventListener('change', changeHandlerOtherField);
+    });
+
+
+    function _addLine() {
+        var buttonsAdd = document.querySelectorAll('button.add_line');
+
+        Array.prototype.forEach.call(buttonsAdd, function addClickListener(button) {
+            button.addEventListener('click', function (event) {
+                var parent = event.target.parentNode;
+                var lines = parent.querySelectorAll('.line');
+                var proto = parent.querySelector('.proto');
+                var newLine = proto.cloneNode(true);
+
+                newLine.classList.remove('proto');
+                newLine.classList.add('line');
+                newLine.innerHTML = newLine.innerHTML.replace(/\[n\]/g, lines.length + 1);
+
+                proto.parentNode.insertBefore(newLine, proto);
+
+                newLine.querySelector('input, checkbox, select').disabled = false;
+                newLine.querySelector('input, checkbox, select').focus();
+                newLine.querySelector('input, checkbox, select').classList.remove('input_hidden');
+
+                parent.querySelector('button.remove_line').disabled = false;
+
+            });
+        });
+
+        var buttonsRemove = document.querySelectorAll('button.remove_line');
+
+        Array.prototype.forEach.call(buttonsRemove, function addClickListener(button) {
+            button.addEventListener('click', function (event) {
+                var parent = event.target.parentNode;
+                var lines = parent.querySelectorAll('.line');
+                var last = lines[lines.length - 1];
+
+                last.parentNode.removeChild(last);
+
+                lines = parent.querySelectorAll('.line');
+                last = lines[lines.length - 1];
+                last.querySelector('input, checkbox, select').focus();
+
+                if (lines.length <= 1)
+                    button.disabled = true;
+            });
+        });
+
+    }
+
+    function changeHandlerOtherField() {
+
+        var newField = this.parentNode.parentNode.querySelector('input[type="text"]');
+
+        if (this.classList.contains('option_field_other')) {
+            newField.parentNode.classList.remove('hidden-element');
+            newField.focus();
+        }
+        else
+            newField.parentNode.classList.add('hidden-element');
+    }
+}
+
+
+
+</script>
+
+:ET
